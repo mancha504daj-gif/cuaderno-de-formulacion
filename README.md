@@ -7,10 +7,12 @@ Sitio en español sobre formulación cosmética, con cálculos a la vista y fuen
 - **Seis secciones:** piel, limpieza, protección solar, maquillaje, cabello y fragancias, más una de emulsiones.
 - **44 productos con 47 recetas**, cada una con su razón, pasos, controles, fallas y hoja de laboratorio. Son propuestas sin ensayar.
 - **Lecciones, glosario y preguntas** por sección, y fundamentos de laboratorio, conservación y estabilidad.
-- **Cinco calculadoras:** HLB, Stokes, conservante y pH, jabón y materia activa.
-- **Doce laboratorios** armados con bloques. Cada uno muestra sus ecuaciones, sus supuestos y su fuente.
+- **Seis calculadoras:** HLB, Stokes, conservante y pH, jabón, materia activa y conteo en placa.
+- **Microbiología** con once lecciones sobre el conteo en placa, la búsqueda de patógenos y el ensayo del conservante.
+- **Trece laboratorios** armados con bloques. Cada uno muestra sus ecuaciones, sus supuestos y su fuente.
 - **Escenas animadas** que se mueven con la ecuación que explican (WebGL 2, sin bibliotecas).
 - **Editor de bloques** para cambiar la apariencia de una página o armar un laboratorio sin programar.
+- **Cuentas opcionales** con Google o correo. Guardan ensayos, recetas, laboratorios, avance y cambios de apariencia en todos los dispositivos. Sin cuenta, el sitio guarda en el navegador.
 
 ## Verlo en tu computadora
 
@@ -33,6 +35,10 @@ En RStudio también sirve **Render Website**.
 | Un dato | los `.json` de `datos` |
 | Una ecuación de las calculadoras | `js/motor.mjs` |
 | Una escena | `js/escenas.mjs` y `js/escenas2.mjs` |
+
+## Cuentas
+
+Usan Firebase (Authentication y Firestore). La configuración pública está en `js/configuracion.mjs`; con `CONFIG = null` el sitio funciona sin cuentas. Las reglas de `firestore.rules` dejan leer y escribir a cada quien lo suyo. Para cambiarlas: `firebase deploy --only firestore:rules --project TU_PROYECTO`.
 
 ## Comprobar los cálculos
 

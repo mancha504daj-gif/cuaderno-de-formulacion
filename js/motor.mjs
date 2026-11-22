@@ -97,6 +97,23 @@ export function evaluar(n, vars) {
   }
 }
 
+export function ufc(placas, { min = 25, max = 250 } = {}) {
+  if (!placas.length) throw new Error("Agrega al menos una placa.");
+  const p = placas.map((x) => { const c = num(x.colonias, "colonias"), v = num(x.volumen, "volumen"), d = num(x.dilucion, "dilución"); if (c < 0 || v <= 0 || d < 0) throw new Error("Revisa los datos de la placa."); return { c, q: v * 10 ** -d }; });
+  const red = (x) => Number(x.toPrecision(2)), suma = (l, k) => l.reduce((a, x) => a + x[k], 0), fm = (x) => red(x).toLocaleString("en-US").replaceAll(",", " ");
+  const buenas = p.filter((x) => x.c >= min && x.c <= max);
+  if (buenas.length) { const n = suma(buenas, "c") / suma(buenas, "q"); return { valor: n, texto: fm(n), nota: "contable" }; }
+  if (p.every((x) => x.c === 0)) { const n = 1 / suma(p.filter((x) => x.q === Math.max(...p.map((y) => y.q))), "q"); return { valor: n, texto: `menos de ${fm(n)}`, nota: "sin colonias" }; }
+  if (p.every((x) => x.c > max)) { const q = Math.min(...p.map((x) => x.q)), n = max / q; return { valor: n, texto: `más de ${fm(n)}`, nota: "incontable: diluye más" }; }
+  const bajas = p.filter((x) => x.c < min), mayor = Math.max(...bajas.map((x) => x.q)), u = bajas.filter((x) => x.q === mayor), n = suma(u, "c") / suma(u, "q");
+  return { valor: n, texto: fm(n), nota: "estimado: pocas colonias" };
+}
+export function reduccionLog(inicial, final) {
+  const a = num(inicial, "inicial"), b = num(final, "final");
+  if (a <= 0 || b <= 0) throw new Error("Los conteos deben ser mayores que cero.");
+  return Math.log10(a / b);
+}
+
 export function escalarFormula(fases, lote) {
   const L = num(lote, "lote");
   if (L <= 0) throw new Error("El lote debe ser mayor que cero.");

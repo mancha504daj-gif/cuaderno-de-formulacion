@@ -7,6 +7,7 @@ page-layout: full
 Cada laboratorio se armó con bloques. Al final muestra sus ecuaciones con los valores que tengas puestos; la deducción está en [De dónde salen las fórmulas](modelos.qmd). Puedes cambiarlo o hacer otro en el [editor](editor.qmd).
 
 ```{=html}
+<div data-mis-laboratorios></div>
 <div class="tarjas" data-laboratorios></div>
 <noscript><p>Esta lista necesita JavaScript.</p></noscript>
 ```

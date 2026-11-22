@@ -27,6 +27,7 @@ website:
       - { text: En el laboratorio, href: fundamentos/laboratorio.qmd }
       - { text: Emulsiones, href: fundamentos/emulsiones.qmd }
       - { text: Conservación, href: fundamentos/conservacion.qmd }
+      - { text: Microbiología, href: fundamentos/microbiologia.qmd }
       - { text: Estabilidad, href: fundamentos/estabilidad.qmd }
       - { text: De dónde salen las fórmulas, href: modelos.qmd }
       - { text: Glosario, href: glosario.qmd }
@@ -36,6 +37,7 @@ website:
       - { text: Calculadoras, href: calculadoras/index.qmd }
       - { text: Mis recetas, href: mis-recetas.qmd }
       - { text: Mis ensayos, href: cuaderno.qmd }
+      - { text: Mi cuenta, href: cuenta.qmd }
       - text: "---"
       - { text: Editor, href: editor.qmd }
       - { text: Del cuaderno al registro, href: honduras.qmd }

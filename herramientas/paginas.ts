@@ -84,7 +84,7 @@ ${otros}.
 }
 for await (const e of Deno.readDir("producto")) if (e.name.endsWith(".qmd") && !vivas.has(e.name)) await Deno.remove("producto/" + e.name);
 const caja = (t: Reg, at: string) => ":::: {" + at + "}\n**" + t.palabra + "**\n\n" + t.def + (t.ej ? " *" + t.ej + "*" : "") + "\n\n::::\n";
-for (const s of [...Object.keys(SEC), "emulsiones", "base"]) await escribe("_inc/terminos-" + s + ".md", "::: {.fichas .sin-glosa}\n\n" + ter.filter((t) => t.secciones.includes(s)).map((t) => caja(t, ".termino-caja")).join("\n") + "\n:::\n");
+for (const s of [...Object.keys(SEC), "emulsiones", "microbiologia", "base"]) await escribe("_inc/terminos-" + s + ".md", "::: {.fichas .sin-glosa}\n\n" + ter.filter((t) => t.secciones.includes(s)).map((t) => caja(t, ".termino-caja")).join("\n") + "\n:::\n");
 await escribe("_inc/glosario.md", "::: {.fichas .sin-glosa #lista-terminos}\n\n" + ter.slice().sort((a, b) => a.palabra.localeCompare(b.palabra, "es")).map((t) => caja(t, '.termino-caja data-ficha="t"')).join("\n") + "\n:::\n");
 const usos = (id: string) => recs.filter((r) => r.fases.some((f: Reg) => f.ingredientes.some((i: Reg) => i.id === id)));
 const clases = [...new Set(ing.map((i) => i.clase as string))].sort((a, b) => a.localeCompare(b, "es"));

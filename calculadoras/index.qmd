@@ -13,4 +13,5 @@ toc: false
 | [Stokes](stokes.qmd) | ¿Con qué velocidad sube o baja una gota? |
 | [Conservante y pH](conservante.qmd) | ¿Cuánto ácido queda activo a mi pH? |
 | [Jabón](jabon.qmd) | ¿Cuánta base y agua pide mi mezcla de aceites? |
+| [Conteo en placa](conteo.qmd) | ¿Cuántos microbios hay por gramo? |
 | [Materia activa](activa.qmd) | ¿Cuánto tensioactivo comercial peso? |

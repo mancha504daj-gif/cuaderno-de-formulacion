@@ -3,6 +3,8 @@ import { escalarFormula } from "./motor.mjs";
 import { dibujarLaboratorio } from "./laboratorio.mjs";
 import { crema, portadaLiquida, gotaIndice } from "./crema.mjs";
 import { botonPausa } from "./base.mjs";
+import * as A from "./almacen.mjs";
+import { insignia, pagina as paginaCuenta } from "./cuenta.mjs";
 
 export const raiz = new URL("../", import.meta.url);
 export const COLORES = { rosa: "#b3245c", azul: "#10269b", oliva: "#4d5a2c", ocre: "#8a5200", uva: "#5c1f3a", petroleo: "#00616f", violeta: "#3f2463", carbon: "#15171f", terracota: "#9a4320" };
@@ -40,9 +42,17 @@ try {
   const ix = await (await fetch(new URL("aspecto/indice.json", raiz))).json();
   if (ix.includes(clave)) await aplicar((await (await fetch(new URL(`aspecto/${clave}.json`, raiz))).json()).aspecto);
 } catch { }
+const enEditor = window.parent !== window;
+let mio = null;
+const misCambios = async () => { if (enEditor) return; const d = A.uno("aspecto", clave)?.aspecto ?? null, f = JSON.stringify(d); if (f === mio) return; const habia = mio !== null && mio !== "null"; mio = f; if (d) await aplicar(d); else if (habia) await aplicar({}); };
+await misCambios().catch(() => {});
+addEventListener("cuaderno-actualizado", () => misCambios().catch(() => {}));
 document.documentElement.dataset.listo = "si";
 if (!matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("mueve");
 
+for (const x of document.querySelectorAll("[data-cuenta]")) paginaCuenta(x);
+for (const x of document.querySelectorAll("[data-mis-laboratorios]")) { const pinta = () => { const l = A.respaldo().cosas.filter((c) => c.tipo === "laboratorio" && c.datos?.documento?.partes?.length); x.replaceChildren(...(l.length ? [h("h2", {}, "Mis laboratorios"), h("ul", {}, ...l.map((c) => h("li", {}, h("a", { href: `mi-laboratorio.html?id=${encodeURIComponent(c.id)}` }, c.datos.titulo || "Sin título"))))] : [])); }; pinta(); addEventListener("cuaderno-actualizado", pinta); A.alCambiar(pinta); }
+for (const x of document.querySelectorAll("[data-mi-laboratorio]")) { const id = new URLSearchParams(location.search).get("id") ?? "", pinta = () => { const j = A.uno("laboratorio", id); if (j?.documento) { x.replaceChildren(h("h2", {}, j.titulo ?? ""), h("p", { class: "ordenes" }, h("a", { class: "boton", href: `editor.html?mio=${encodeURIComponent(id)}` }, "Abrir en el editor")), h("div", {})); dibujarLaboratorio(j.documento, x.lastChild); } else x.replaceChildren(aviso("Ese laboratorio no está en este dispositivo. Si lo hiciste en otro, entra en tu cuenta.")); }; pinta(); addEventListener("cuaderno-actualizado", pinta); }
 const varios = document.querySelectorAll("[data-receta], [data-productos], [data-preguntas], [data-busca], [data-hoja], [data-cuaderno], [data-mis-recetas], [data-avance]");
 if (varios.length || document.querySelector("section.level2")) {
   const [R, A] = await Promise.all([import("./receta.mjs"), import("./aprender.mjs")]);
@@ -90,7 +100,7 @@ for (const el of document.querySelectorAll("[data-formula]")) {
   } catch { el.replaceChildren(aviso("No se pudo abrir la fórmula.")); }
 }
 
-crema(); gotaIndice(); botonPausa();
+insignia(raiz); crema(); gotaIndice(); botonPausa();
 addEventListener("pointerover", (e) => { const b = e.target.closest?.("main button, .archivo"); if (!b || b.contains(e.relatedTarget)) return; const r = b.getBoundingClientRect(); b.style.setProperty("--mx", `${e.clientX - r.left}px`); b.style.setProperty("--my", `${e.clientY - r.top}px`); });
 const portada = document.querySelector(".portada");
 if (portada) {

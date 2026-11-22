@@ -1,0 +1,9 @@
+---
+title: "Contar en placa"
+toc: false
+---
+
+```{=html}
+<div data-lab="contar-en-placa"><p>Cargando.</p></div>
+<p><a href="../editor.html?lab=contar-en-placa">Abrir en el editor</a></p>
+```

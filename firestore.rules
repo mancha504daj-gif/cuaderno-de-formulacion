@@ -1,0 +1,22 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /usuarios/{uid}/cosas/{cosa} {
+      allow read, delete: if request.auth != null && request.auth.uid == uid;
+      allow create, update: if request.auth != null && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['tipo', 'id', 'datos', 'cambio', 'borrado'])
+        && request.resource.data.keys().hasAll(['tipo', 'id', 'datos', 'cambio', 'borrado'])
+        && request.resource.data.tipo in ['ensayo', 'receta', 'laboratorio', 'aspecto', 'avance', 'preferencia']
+        && request.resource.data.id is string
+        && request.resource.data.id.matches('^[A-Za-z0-9_-]{1,80}$')
+        && cosa == request.resource.data.tipo + '.' + request.resource.data.id
+        && request.resource.data.datos is string
+        && request.resource.data.datos.size() <= 400000
+        && request.resource.data.cambio is number
+        && request.resource.data.borrado is bool;
+    }
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

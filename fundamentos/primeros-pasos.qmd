@@ -4,7 +4,7 @@ toc: false
 page-layout: full
 ---
 
-Si nunca hiciste un cosmético, empieza aquí. Esta página te da las palabras, la forma de leer una fórmula y un camino de ocho pasos.
+Si nunca hiciste un cosmético, empieza aquí. Esta página te da las palabras, la forma de leer una fórmula y un camino de nueve pasos.
 
 ## Las palabras que vas a usar
 
@@ -50,6 +50,7 @@ Para 50 g de esa loción, el emulsionante pesa 4.0 × 50/100 = 2.0 g. Con 10 g, 
 <li data-paso="balsamo"><a href="../producto/balsamo-labial.html">Haz un bálsamo labial.</a> Sin agua: no necesita conservante.</li>
 <li data-paso="gel"><a href="../producto/gel-hidratante.html">Haz un gel.</a> Aprendes a hidratar un espesante y a medir pH.</li>
 <li data-paso="conservacion"><a href="conservacion.html">Estudia conservación</a> antes de usar nada con agua.</li>
+<li data-paso="microbiologia"><a href="microbiologia.html">Aprende a contar microbios</a> antes de poner algo en la piel.</li>
 <li data-paso="emulsiones"><a href="emulsiones.html">Estudia emulsiones.</a></li>
 <li data-paso="locion"><a href="../producto/locion-corporal.html">Haz la loción ligera</a> y comprueba su tipo.</li>
 <li data-paso="estabilidad"><a href="estabilidad.html">Ponla a prueba</a> durante 90 días y anota en tu hoja.</li>

@@ -29,6 +29,20 @@ Ingrediente que se pone por un efecto concreto. *Niacinamida.*
 ::::
 
 :::: {.termino-caja data-ficha="t"}
+**Aerobio**
+
+Que crece con aire.
+
+::::
+
+:::: {.termino-caja data-ficha="t"}
+**Agar**
+
+Gel de algas que sostiene el medio en la placa.
+
+::::
+
+:::: {.termino-caja data-ficha="t"}
 **Aglutinante**
 
 Une el polvo al comprimirlo. *Estearato de zinc con aceite.*
@@ -71,9 +85,30 @@ Frena que los aceites se enrancien. No mata microbios. *Tocoferol.*
 ::::
 
 :::: {.termino-caja data-ficha="t"}
+**Aséptico**
+
+Hecho sin dejar entrar microbios de fuera. *Abrir un tubo junto al mechero.*
+
+::::
+
+:::: {.termino-caja data-ficha="t"}
+**Autoclave**
+
+Olla a presión que esteriliza con vapor a 121 °C.
+
+::::
+
+:::: {.termino-caja data-ficha="t"}
 **Bálsamo**
 
 En este sitio, un producto sin agua, sólido o semisólido. *Bálsamo labial.*
+
+::::
+
+:::: {.termino-caja data-ficha="t"}
+**Blanco**
+
+Prueba sin muestra. Si crece, algo se contaminó.
 
 ::::
 
@@ -134,6 +169,13 @@ Dos gotas se funden en una. No tiene vuelta. *Aceite flotando sobre una crema vi
 ::::
 
 :::: {.termino-caja data-ficha="t"}
+**Colonia**
+
+Montón de microbios que nació de uno o de unos pocos.
+
+::::
+
+:::: {.termino-caja data-ficha="t"}
 **Conservante**
 
 Ingrediente que frena bacterias y hongos. *Fenoxietanol.*
@@ -176,6 +218,13 @@ Escamas que cubren la fibra del cabello.
 ::::
 
 :::: {.termino-caja data-ficha="t"}
+**Dilución decimal**
+
+Una parte de muestra en diez partes totales. 10⁻² es repetirlo dos veces. *1 mL en 9 mL.*
+
+::::
+
+:::: {.termino-caja data-ficha="t"}
 **Dispersión**
 
 Repartir partículas y mantenerlas separadas: humectar, desaglomerar, estabilizar.
@@ -204,6 +253,13 @@ Molécula con una parte que ama el agua y otra que ama el aceite. Se coloca entr
 ::::
 
 :::: {.termino-caja data-ficha="t"}
+**Enriquecimiento**
+
+Dejar crecer en caldo para detectar lo poco.
+
+::::
+
+:::: {.termino-caja data-ficha="t"}
 **Esfuerzo de fluencia**
 
 El empujón mínimo para que empiece a fluir. *La pasta de dientes.*
@@ -214,6 +270,13 @@ El empujón mínimo para que empiece a fluir. *La pasta de dientes.*
 **Estabilidad**
 
 Que el producto no cambie con el tiempo, el calor o el frío. *Ciclos de −10 a 40 °C.*
+
+::::
+
+:::: {.termino-caja data-ficha="t"}
+**Estéril**
+
+Sin nada vivo. *Un tubo salido del autoclave.*
 
 ::::
 
@@ -344,6 +407,20 @@ Nombre internacional de un ingrediente cosmético. Es el que va en la etiqueta. 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
+**Incubar**
+
+Mantener a temperatura fija mientras crece. *30 °C, 48 h.*
+
+::::
+
+:::: {.termino-caja data-ficha="t"}
+**Inóculo**
+
+Microbios que agregas a propósito.
+
+::::
+
+:::: {.termino-caja data-ficha="t"}
 **Jabón**
 
 Sal de un ácido graso. Se hace con grasa y una base.
@@ -407,6 +484,13 @@ La parte del ingrediente que es tensioactivo. El resto es agua. *SLES líquido: 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
+**Medio de cultivo**
+
+Alimento para microbios, líquido o en gel. *Agar malta.*
+
+::::
+
+:::: {.termino-caja data-ficha="t"}
 **Micela**
 
 Grupo de tensioactivos con las colas hacia adentro. Ahí se esconde la grasa.
@@ -417,6 +501,13 @@ Grupo de tensioactivos con las colas hacia adentro. Ahí se esconde la grasa.
 **Nacarado**
 
 Lámina que refleja la luz. Se rompe si la mueles.
+
+::::
+
+:::: {.termino-caja data-ficha="t"}
+**Neutralizante**
+
+Apaga al conservante para que crezca lo que hay. *Caldo letheen.*
 
 ::::
 
@@ -459,6 +550,13 @@ Aceite en agua: las gotas son de aceite. Se enjuaga y se siente ligera. *Casi to
 **Oclusivo**
 
 Forma una película que frena la salida de agua. *Vaselina.*
+
+::::
+
+:::: {.termino-caja data-ficha="t"}
+**Patógeno**
+
+Que puede enfermar. *Pseudomonas aeruginosa.*
 
 ::::
 
@@ -512,6 +610,13 @@ Proteína del cabello y la piel.
 ::::
 
 :::: {.termino-caja data-ficha="t"}
+**Reducción logarítmica**
+
+Cuántas veces baja por diez. 3 log es de un millón a mil.
+
+::::
+
+:::: {.termino-caja data-ficha="t"}
 **Sangrado**
 
 El aceite del labial corre por las arrugas.
@@ -557,6 +662,13 @@ Barra o líquido limpiador sin jabón, hecho con tensioactivos sintéticos.
 **Tensioactivo**
 
 Molécula con cabeza que ama el agua y cola que ama la grasa. Limpia, hace espuma o emulsiona. *Sodium Laureth Sulfate.*
+
+::::
+
+:::: {.termino-caja data-ficha="t"}
+**UFC**
+
+Unidad formadora de colonia: lo que dio origen a una colonia visible. *14 000 UFC/g.*
 
 ::::
 

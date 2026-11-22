@@ -1,0 +1,619 @@
+{
+ "version": 2,
+ "clase": "laboratorio",
+ "titulo": "Contar en placa",
+ "bloques": {
+  "blocks": {
+   "languageVersion": 0,
+   "blocks": [
+    {
+     "type": "paso",
+     "fields": {
+      "TEXTO": "Elige una carga y busca la dilución que da una placa contable: de 25 a 250 colonias."
+     },
+     "next": {
+      "block": {
+       "type": "entrada",
+       "fields": {
+        "VAR": "lg",
+        "ETIQUETA": "Carga, log de UFC/g",
+        "UNIDAD": "",
+        "MIN": 0,
+        "MAX": 7,
+        "PASO": 0.1,
+        "VALOR": 5
+       },
+       "next": {
+        "block": {
+         "type": "entrada",
+         "fields": {
+          "VAR": "n",
+          "ETIQUETA": "Dilución, 10 a la menos",
+          "UNIDAD": "",
+          "MIN": 0,
+          "MAX": 6,
+          "PASO": 1,
+          "VALOR": 1
+         },
+         "next": {
+          "block": {
+           "type": "entrada",
+           "fields": {
+            "VAR": "V",
+            "ETIQUETA": "Volumen sembrado",
+            "UNIDAD": "mL",
+            "MIN": 0.1,
+            "MAX": 1,
+            "PASO": 0.1,
+            "VALOR": 0.1
+           },
+           "next": {
+            "block": {
+             "type": "calculo",
+             "fields": {
+              "VAR": "N",
+              "ETIQUETA": "colonias esperadas",
+              "UNIDAD": ""
+             },
+             "inputs": {
+              "EXPR": {
+               "block": {
+                "type": "operacion",
+                "fields": {
+                 "OP": "*"
+                },
+                "inputs": {
+                 "A": {
+                  "block": {
+                   "type": "operacion",
+                   "fields": {
+                    "OP": "*"
+                   },
+                   "inputs": {
+                    "A": {
+                     "block": {
+                      "type": "operacion",
+                      "fields": {
+                       "OP": "^"
+                      },
+                      "inputs": {
+                       "A": {
+                        "block": {
+                         "type": "numero",
+                         "fields": {
+                          "V": 10
+                         }
+                        }
+                       },
+                       "B": {
+                        "block": {
+                         "type": "variable",
+                         "fields": {
+                          "V": "lg"
+                         }
+                        }
+                       }
+                      }
+                     }
+                    },
+                    "B": {
+                     "block": {
+                      "type": "operacion",
+                      "fields": {
+                       "OP": "^"
+                      },
+                      "inputs": {
+                       "A": {
+                        "block": {
+                         "type": "numero",
+                         "fields": {
+                          "V": 10
+                         }
+                        }
+                       },
+                       "B": {
+                        "block": {
+                         "type": "operacion",
+                         "fields": {
+                          "OP": "*"
+                         },
+                         "inputs": {
+                          "A": {
+                           "block": {
+                            "type": "numero",
+                            "fields": {
+                             "V": -1
+                            }
+                           }
+                          },
+                          "B": {
+                           "block": {
+                            "type": "variable",
+                            "fields": {
+                             "V": "n"
+                            }
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 },
+                 "B": {
+                  "block": {
+                   "type": "variable",
+                   "fields": {
+                    "V": "V"
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             },
+             "next": {
+              "block": {
+               "type": "escena_petri",
+               "inputs": {
+                "lg": {
+                 "block": {
+                  "type": "variable",
+                  "fields": {
+                   "V": "lg"
+                  }
+                 }
+                },
+                "dil": {
+                 "block": {
+                  "type": "variable",
+                  "fields": {
+                   "V": "n"
+                  }
+                 }
+                },
+                "vol": {
+                 "block": {
+                  "type": "variable",
+                  "fields": {
+                   "V": "V"
+                  }
+                 }
+                }
+               },
+               "next": {
+                "block": {
+                 "type": "salida",
+                 "fields": {
+                  "ETIQUETA": "colonias esperadas",
+                  "UNIDAD": "",
+                  "DEC": 0
+                 },
+                 "inputs": {
+                  "EXPR": {
+                   "block": {
+                    "type": "variable",
+                    "fields": {
+                     "V": "N"
+                    }
+                   }
+                  }
+                 },
+                 "next": {
+                  "block": {
+                   "type": "salida",
+                   "fields": {
+                    "ETIQUETA": "UFC por gramo que calcularías con esa placa",
+                    "UNIDAD": "UFC/g",
+                    "DEC": 0
+                   },
+                   "inputs": {
+                    "EXPR": {
+                     "block": {
+                      "type": "operacion",
+                      "fields": {
+                       "OP": "/"
+                      },
+                      "inputs": {
+                       "A": {
+                        "block": {
+                         "type": "variable",
+                         "fields": {
+                          "V": "N"
+                         }
+                        }
+                       },
+                       "B": {
+                        "block": {
+                         "type": "operacion",
+                         "fields": {
+                          "OP": "*"
+                         },
+                         "inputs": {
+                          "A": {
+                           "block": {
+                            "type": "variable",
+                            "fields": {
+                             "V": "V"
+                            }
+                           }
+                          },
+                          "B": {
+                           "block": {
+                            "type": "operacion",
+                            "fields": {
+                             "OP": "^"
+                            },
+                            "inputs": {
+                             "A": {
+                              "block": {
+                               "type": "numero",
+                               "fields": {
+                                "V": 10
+                               }
+                              }
+                             },
+                             "B": {
+                              "block": {
+                               "type": "operacion",
+                               "fields": {
+                                "OP": "*"
+                               },
+                               "inputs": {
+                                "A": {
+                                 "block": {
+                                  "type": "numero",
+                                  "fields": {
+                                   "V": -1
+                                  }
+                                 }
+                                },
+                                "B": {
+                                 "block": {
+                                  "type": "variable",
+                                  "fields": {
+                                   "V": "n"
+                                  }
+                                 }
+                                }
+                               }
+                              }
+                             }
+                            }
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   },
+                   "next": {
+                    "block": {
+                     "type": "si",
+                     "fields": {
+                      "OP": ">",
+                      "TEXTO": "Más de 250: no se puede contar. Diluye más."
+                     },
+                     "inputs": {
+                      "A": {
+                       "block": {
+                        "type": "variable",
+                        "fields": {
+                         "V": "N"
+                        }
+                       }
+                      },
+                      "B": {
+                       "block": {
+                        "type": "numero",
+                        "fields": {
+                         "V": 250
+                        }
+                       }
+                      }
+                     },
+                     "next": {
+                      "block": {
+                       "type": "si",
+                       "fields": {
+                        "OP": "<",
+                        "TEXTO": "Menos de 25: el azar pesa demasiado. Siembra más o diluye menos."
+                       },
+                       "inputs": {
+                        "A": {
+                         "block": {
+                          "type": "variable",
+                          "fields": {
+                           "V": "N"
+                          }
+                         }
+                        },
+                        "B": {
+                         "block": {
+                          "type": "numero",
+                          "fields": {
+                           "V": 25
+                          }
+                         }
+                        }
+                       },
+                       "next": {
+                        "block": {
+                         "type": "pregunta",
+                         "fields": {
+                          "TEXTO": "Con cien mil UFC/g y 0.1 mL, ¿qué dilución cuentas?",
+                          "OPCIONES": "10⁻¹; 10⁻²; 10⁻⁴",
+                          "CORRECTA": 2,
+                          "EXPLICA": "100 000 × 0.01 × 0.1 = 100 colonias."
+                         },
+                         "next": {
+                          "block": {
+                           "type": "supuesto",
+                           "fields": {
+                            "TEXTO": "Cada microbio da una colonia. Los que están pegados dan una sola."
+                           },
+                           "next": {
+                            "block": {
+                             "type": "supuesto",
+                             "fields": {
+                              "TEXTO": "El neutralizante apagó al conservante."
+                             },
+                             "next": {
+                              "block": {
+                               "type": "supuesto",
+                               "fields": {
+                                "TEXTO": "Es el promedio esperado. Dos placas reales difieren por azar, cerca de la raíz del número de colonias."
+                               },
+                               "next": {
+                                "block": {
+                                 "type": "fuente",
+                                 "fields": {
+                                  "TEXTO": "FDA, Bacteriological Analytical Manual, capítulo 23 (julio de 2024) y capítulo 3 (sin DOI)."
+                                 }
+                                }
+                               }
+                              }
+                             }
+                            }
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     },
+     "x": 30,
+     "y": 30
+    }
+   ]
+  }
+ },
+ "documento": {
+  "partes": [
+   {
+    "t": "paso",
+    "texto": "Elige una carga y busca la dilución que da una placa contable: de 25 a 250 colonias."
+   },
+   {
+    "t": "entrada",
+    "nombre": "lg",
+    "etiqueta": "Carga, log de UFC/g",
+    "unidad": "",
+    "min": 0,
+    "max": 7,
+    "paso": 0.1,
+    "valor": 5
+   },
+   {
+    "t": "entrada",
+    "nombre": "n",
+    "etiqueta": "Dilución, 10 a la menos",
+    "unidad": "",
+    "min": 0,
+    "max": 6,
+    "paso": 1,
+    "valor": 1
+   },
+   {
+    "t": "entrada",
+    "nombre": "V",
+    "etiqueta": "Volumen sembrado",
+    "unidad": "mL",
+    "min": 0.1,
+    "max": 1,
+    "paso": 0.1,
+    "valor": 0.1
+   },
+   {
+    "t": "calculo",
+    "nombre": "N",
+    "etiqueta": "colonias esperadas",
+    "unidad": "",
+    "expr": {
+     "t": "bin",
+     "op": "*",
+     "a": {
+      "t": "bin",
+      "op": "*",
+      "a": {
+       "t": "bin",
+       "op": "^",
+       "a": {
+        "t": "num",
+        "v": 10
+       },
+       "b": {
+        "t": "var",
+        "v": "lg"
+       }
+      },
+      "b": {
+       "t": "bin",
+       "op": "^",
+       "a": {
+        "t": "num",
+        "v": 10
+       },
+       "b": {
+        "t": "bin",
+        "op": "*",
+        "a": {
+         "t": "num",
+         "v": -1
+        },
+        "b": {
+         "t": "var",
+         "v": "n"
+        }
+       }
+      }
+     },
+     "b": {
+      "t": "var",
+      "v": "V"
+     }
+    }
+   },
+   {
+    "t": "escena",
+    "tipo": "petri",
+    "valores": {
+     "lg": {
+      "t": "var",
+      "v": "lg"
+     },
+     "dil": {
+      "t": "var",
+      "v": "n"
+     },
+     "vol": {
+      "t": "var",
+      "v": "V"
+     }
+    }
+   },
+   {
+    "t": "salida",
+    "etiqueta": "colonias esperadas",
+    "unidad": "",
+    "dec": 0,
+    "expr": {
+     "t": "var",
+     "v": "N"
+    }
+   },
+   {
+    "t": "salida",
+    "etiqueta": "UFC por gramo que calcularías con esa placa",
+    "unidad": "UFC/g",
+    "dec": 0,
+    "expr": {
+     "t": "bin",
+     "op": "/",
+     "a": {
+      "t": "var",
+      "v": "N"
+     },
+     "b": {
+      "t": "bin",
+      "op": "*",
+      "a": {
+       "t": "var",
+       "v": "V"
+      },
+      "b": {
+       "t": "bin",
+       "op": "^",
+       "a": {
+        "t": "num",
+        "v": 10
+       },
+       "b": {
+        "t": "bin",
+        "op": "*",
+        "a": {
+         "t": "num",
+         "v": -1
+        },
+        "b": {
+         "t": "var",
+         "v": "n"
+        }
+       }
+      }
+     }
+    }
+   },
+   {
+    "t": "si",
+    "op": ">",
+    "a": {
+     "t": "var",
+     "v": "N"
+    },
+    "b": {
+     "t": "num",
+     "v": 250
+    },
+    "texto": "Más de 250: no se puede contar. Diluye más."
+   },
+   {
+    "t": "si",
+    "op": "<",
+    "a": {
+     "t": "var",
+     "v": "N"
+    },
+    "b": {
+     "t": "num",
+     "v": 25
+    },
+    "texto": "Menos de 25: el azar pesa demasiado. Siembra más o diluye menos."
+   },
+   {
+    "t": "pregunta",
+    "texto": "Con cien mil UFC/g y 0.1 mL, ¿qué dilución cuentas?",
+    "opciones": "10⁻¹; 10⁻²; 10⁻⁴",
+    "correcta": 2,
+    "explica": "100 000 × 0.01 × 0.1 = 100 colonias."
+   },
+   {
+    "t": "supuesto",
+    "texto": "Cada microbio da una colonia. Los que están pegados dan una sola."
+   },
+   {
+    "t": "supuesto",
+    "texto": "El neutralizante apagó al conservante."
+   },
+   {
+    "t": "supuesto",
+    "texto": "Es el promedio esperado. Dos placas reales difieren por azar, cerca de la raíz del número de colonias."
+   },
+   {
+    "t": "fuente",
+    "texto": "FDA, Bacteriological Analytical Manual, capítulo 23 (julio de 2024) y capítulo 3 (sin DOI)."
+   }
+  ]
+ }
+}

@@ -84,6 +84,8 @@ Bajar 3 log es pasar de un millón a mil. [Laboratorio: ensayo del conservante](
 
 ISO 17516 fija un máximo de 1000 UFC/g, o 100 en ojos, mucosas y menores de tres años, sin cuatro patógenos en 1 g.
 
+El paso a paso está en [microbiología](microbiologia.qmd).
+
 **Antes de ponerlo en la piel.** Un producto que no se separa puede estar contaminado. Sin recuento y sin ensayo del conservante, se queda en el laboratorio.
 
 ## Comprueba lo que aprendiste
