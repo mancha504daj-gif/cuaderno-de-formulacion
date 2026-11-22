@@ -1,0 +1,16 @@
+---
+title: "Calculadoras"
+toc: false
+---
+
+```{=html}
+<figure class="cabeza" style="--color:#15171f"><div class="marco"><img src="../fotos/jabonera.jpg" alt="Pilas de jabón de Alepo curándose"></div><h1>Calculadoras</h1></figure>
+```
+
+| Calculadora | Responde |
+|---|---|
+| [HLB](hlb.qmd) | ¿Qué mezcla de emulsionantes pide mi fase oleosa? |
+| [Stokes](stokes.qmd) | ¿Con qué velocidad sube o baja una gota? |
+| [Conservante y pH](conservante.qmd) | ¿Cuánto ácido queda activo a mi pH? |
+| [Jabón](jabon.qmd) | ¿Cuánta base y agua pide mi mezcla de aceites? |
+| [Materia activa](activa.qmd) | ¿Cuánto tensioactivo comercial peso? |

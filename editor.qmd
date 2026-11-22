@@ -1,0 +1,22 @@
+---
+title: Editor
+page-layout: full
+sidebar: false
+toc: false
+---
+
+[Volver al inicio](index.qmd)
+
+```{=html}
+<div role="tablist" aria-label="Qué editar"><button type="button" role="tab" id="m-asp" aria-selected="true">Apariencia de una página</button> <button type="button" role="tab" id="m-lab" aria-selected="false">Laboratorio</button></div>
+<div class="barra">
+  <div class="campo" id="c-pagina"><label for="pagina">Página</label><select id="pagina"><option value="piel/index.html">Cuidado de la piel</option><option value="limpieza/index.html">Limpieza</option><option value="solar/index.html">Protección solar</option><option value="maquillaje/index.html">Maquillaje</option><option value="cabello/index.html">Cabello</option><option value="fragancias/index.html">Fragancias</option><option value="fundamentos/emulsiones.html">Emulsiones</option><option value="ejemplos/locion-de-almendras.html">Loción de almendras</option><option value="index.html">Portada</option></select></div>
+  <div class="campo" id="c-titulo" hidden><label for="titulo">Nombre del laboratorio</label><input id="titulo" type="text"></div>
+  <div class="ordenes"><button type="button" id="descargar">Descargar</button><label class="archivo">Abrir archivo<input id="abrir" type="file" accept=".json,application/json"></label><button type="button" id="deshacer">Deshacer</button><button type="button" id="rehacer">Rehacer</button><button type="button" id="restaurar">Volver al original</button><button type="button" id="ejemplo" hidden>Abrir ejemplo</button><button type="button" id="anterior" hidden>Recuperar anterior</button><p id="estado" role="status"></p></div>
+</div>
+<div class="taller"><div id="mesa"></div><div><iframe id="marco" title="Vista de la página"></iframe><div id="vista" hidden></div></div></div>
+<script src="https://cdn.jsdelivr.net/npm/blockly@11.2.2/blockly.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/blockly@11.2.2/msg/es.js"></script>
+<script type="module" src="js/editor.mjs"></script>
+```
+

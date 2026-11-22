@@ -1,0 +1,18 @@
+---
+title: Créditos de las fotos
+toc: false
+---
+
+Fotos de Wikimedia Commons, reducidas a 1280 px y recortadas en pantalla.
+
+| Foto | Autor | Licencia |
+|---|---|---|
+| [Frasco de crema abierto con su tapa azul](https://commons.wikimedia.org/wiki/File:Day_cream_02.jpg) | Benff | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| [Labiales de varios tonos](https://commons.wikimedia.org/wiki/File:DifferentColorsOfLipsticks.JPG) | Raysonho @ Open Grid Scheduler / Grid Engine | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) |
+| [Paleta de sombras y brochas](https://commons.wikimedia.org/wiki/File:Makeup_brushes_and_eyeshadows_(Unsplash).jpg) | freestocks.org freestocks | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) |
+| [Frascos de perfume de piel](https://commons.wikimedia.org/wiki/File:Camel_skin_Perfume_Bottles_from_Kannauj.jpg) | David Prasad | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) |
+| [Una persona aplica protector a un niño](https://commons.wikimedia.org/wiki/File:Applying_sunscreen.jpg) | National Cancer Institute | Public domain |
+| [Champú sólido con espuma](https://commons.wikimedia.org/wiki/File:Lush_shampoo_bar.jpg) | RuanaLush | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| [Pilas de jabón de Alepo curándose](https://commons.wikimedia.org/wiki/File:Aleppo_soap_03.jpg) | Bernard Gagnon | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) |
+| [Película de jabón con islas de colores](https://commons.wikimedia.org/wiki/File:Lipid_Islands_on_Soap_Bubble.jpg) | KarlGaff | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
+| [Frasco de perfume de vidrio](https://commons.wikimedia.org/wiki/File:Perfume_glass_bottle.jpg) | Santeri Viinamäki | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |

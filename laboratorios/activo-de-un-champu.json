@@ -1,0 +1,527 @@
+{
+ "version": 2,
+ "clase": "laboratorio",
+ "titulo": "Activo de un champú",
+ "bloques": {
+  "blocks": {
+   "languageVersion": 0,
+   "blocks": [
+    {
+     "type": "paso",
+     "fields": {
+      "TEXTO": "Ajusta la materia prima y mira cuánta cabe en el lote."
+     },
+     "next": {
+      "block": {
+       "type": "entrada",
+       "fields": {
+        "VAR": "p",
+        "ETIQUETA": "Activo de la materia prima",
+        "UNIDAD": "%",
+        "MIN": 25,
+        "MAX": 70,
+        "PASO": 1,
+        "VALOR": 28
+       },
+       "next": {
+        "block": {
+         "type": "entrada",
+         "fields": {
+          "VAR": "a",
+          "ETIQUETA": "Activo que quieres",
+          "UNIDAD": "%",
+          "MIN": 4,
+          "MAX": 20,
+          "PASO": 0.5,
+          "VALOR": 12
+         },
+         "next": {
+          "block": {
+           "type": "entrada",
+           "fields": {
+            "VAR": "L",
+            "ETIQUETA": "Lote",
+            "UNIDAD": "g",
+            "MIN": 100,
+            "MAX": 2000,
+            "PASO": 50,
+            "VALOR": 500
+           },
+           "next": {
+            "block": {
+             "type": "escena_activa",
+             "inputs": {
+              "pct": {
+               "block": {
+                "type": "variable",
+                "fields": {
+                 "V": "p"
+                }
+               }
+              },
+              "final": {
+               "block": {
+                "type": "variable",
+                "fields": {
+                 "V": "a"
+                }
+               }
+              }
+             },
+             "next": {
+              "block": {
+               "type": "salida",
+               "fields": {
+                "ETIQUETA": "de materia prima",
+                "UNIDAD": "g",
+                "DEC": 1
+               },
+               "inputs": {
+                "EXPR": {
+                 "block": {
+                  "type": "operacion",
+                  "fields": {
+                   "OP": "/"
+                  },
+                  "inputs": {
+                   "A": {
+                    "block": {
+                     "type": "operacion",
+                     "fields": {
+                      "OP": "*"
+                     },
+                     "inputs": {
+                      "A": {
+                       "block": {
+                        "type": "variable",
+                        "fields": {
+                         "V": "L"
+                        }
+                       }
+                      },
+                      "B": {
+                       "block": {
+                        "type": "variable",
+                        "fields": {
+                         "V": "a"
+                        }
+                       }
+                      }
+                     }
+                    }
+                   },
+                   "B": {
+                    "block": {
+                     "type": "variable",
+                     "fields": {
+                      "V": "p"
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               },
+               "next": {
+                "block": {
+                 "type": "salida",
+                 "fields": {
+                  "ETIQUETA": "de agua y lo demás",
+                  "UNIDAD": "g",
+                  "DEC": 1
+                 },
+                 "inputs": {
+                  "EXPR": {
+                   "block": {
+                    "type": "operacion",
+                    "fields": {
+                     "OP": "-"
+                    },
+                    "inputs": {
+                     "A": {
+                      "block": {
+                       "type": "variable",
+                       "fields": {
+                        "V": "L"
+                       }
+                      }
+                     },
+                     "B": {
+                      "block": {
+                       "type": "operacion",
+                       "fields": {
+                        "OP": "/"
+                       },
+                       "inputs": {
+                        "A": {
+                         "block": {
+                          "type": "operacion",
+                          "fields": {
+                           "OP": "*"
+                          },
+                          "inputs": {
+                           "A": {
+                            "block": {
+                             "type": "variable",
+                             "fields": {
+                              "V": "L"
+                             }
+                            }
+                           },
+                           "B": {
+                            "block": {
+                             "type": "variable",
+                             "fields": {
+                              "V": "a"
+                             }
+                            }
+                           }
+                          }
+                         }
+                        },
+                        "B": {
+                         "block": {
+                          "type": "variable",
+                          "fields": {
+                           "V": "p"
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 },
+                 "next": {
+                  "block": {
+                   "type": "curva",
+                   "fields": {
+                    "ETIQUETA": "g de materia prima",
+                    "VAR": "a"
+                   },
+                   "inputs": {
+                    "EXPR": {
+                     "block": {
+                      "type": "operacion",
+                      "fields": {
+                       "OP": "/"
+                      },
+                      "inputs": {
+                       "A": {
+                        "block": {
+                         "type": "operacion",
+                         "fields": {
+                          "OP": "*"
+                         },
+                         "inputs": {
+                          "A": {
+                           "block": {
+                            "type": "variable",
+                            "fields": {
+                             "V": "L"
+                            }
+                           }
+                          },
+                          "B": {
+                           "block": {
+                            "type": "variable",
+                            "fields": {
+                             "V": "a"
+                            }
+                           }
+                          }
+                         }
+                        }
+                       },
+                       "B": {
+                        "block": {
+                         "type": "variable",
+                         "fields": {
+                          "V": "p"
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   },
+                   "next": {
+                    "block": {
+                     "type": "si",
+                     "fields": {
+                      "OP": ">",
+                      "TEXTO": "La materia prima ocupa más del 60 % del lote. Busca un grado más concentrado."
+                     },
+                     "inputs": {
+                      "A": {
+                       "block": {
+                        "type": "operacion",
+                        "fields": {
+                         "OP": "/"
+                        },
+                        "inputs": {
+                         "A": {
+                          "block": {
+                           "type": "variable",
+                           "fields": {
+                            "V": "a"
+                           }
+                          }
+                         },
+                         "B": {
+                          "block": {
+                           "type": "variable",
+                           "fields": {
+                            "V": "p"
+                           }
+                          }
+                         }
+                        }
+                       }
+                      },
+                      "B": {
+                       "block": {
+                        "type": "numero",
+                        "fields": {
+                         "V": 0.6
+                        }
+                       }
+                      }
+                     },
+                     "next": {
+                      "block": {
+                       "type": "pregunta",
+                       "fields": {
+                        "TEXTO": "Si pasas de una materia al 28 % a una al 70 %, ¿cuánta pesas?",
+                        "OPCIONES": "la misma; 2.5 veces menos; 2.5 veces más",
+                        "CORRECTA": 2,
+                        "EXPLICA": "70/28 = 2.5, y el activo tiene que ser el mismo."
+                       },
+                       "next": {
+                        "block": {
+                         "type": "supuesto",
+                         "fields": {
+                          "TEXTO": "Balance de masa: todo el activo del lote entra con la materia prima."
+                         },
+                         "next": {
+                          "block": {
+                           "type": "supuesto",
+                           "fields": {
+                            "TEXTO": "El porcentaje real está en el certificado de tu lote."
+                           },
+                           "next": {
+                            "block": {
+                             "type": "fuente",
+                             "fields": {
+                              "TEXTO": "Balance de masa. Intervalos de activo por tensioactivo: datos del sitio, con su catálogo citado."
+                             }
+                            }
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     },
+     "x": 30,
+     "y": 30
+    }
+   ]
+  }
+ },
+ "documento": {
+  "partes": [
+   {
+    "t": "paso",
+    "texto": "Ajusta la materia prima y mira cuánta cabe en el lote."
+   },
+   {
+    "t": "entrada",
+    "nombre": "p",
+    "etiqueta": "Activo de la materia prima",
+    "unidad": "%",
+    "min": 25,
+    "max": 70,
+    "paso": 1,
+    "valor": 28
+   },
+   {
+    "t": "entrada",
+    "nombre": "a",
+    "etiqueta": "Activo que quieres",
+    "unidad": "%",
+    "min": 4,
+    "max": 20,
+    "paso": 0.5,
+    "valor": 12
+   },
+   {
+    "t": "entrada",
+    "nombre": "L",
+    "etiqueta": "Lote",
+    "unidad": "g",
+    "min": 100,
+    "max": 2000,
+    "paso": 50,
+    "valor": 500
+   },
+   {
+    "t": "escena",
+    "tipo": "activa",
+    "valores": {
+     "pct": {
+      "t": "var",
+      "v": "p"
+     },
+     "final": {
+      "t": "var",
+      "v": "a"
+     }
+    }
+   },
+   {
+    "t": "salida",
+    "etiqueta": "de materia prima",
+    "unidad": "g",
+    "dec": 1,
+    "expr": {
+     "t": "bin",
+     "op": "/",
+     "a": {
+      "t": "bin",
+      "op": "*",
+      "a": {
+       "t": "var",
+       "v": "L"
+      },
+      "b": {
+       "t": "var",
+       "v": "a"
+      }
+     },
+     "b": {
+      "t": "var",
+      "v": "p"
+     }
+    }
+   },
+   {
+    "t": "salida",
+    "etiqueta": "de agua y lo demás",
+    "unidad": "g",
+    "dec": 1,
+    "expr": {
+     "t": "bin",
+     "op": "-",
+     "a": {
+      "t": "var",
+      "v": "L"
+     },
+     "b": {
+      "t": "bin",
+      "op": "/",
+      "a": {
+       "t": "bin",
+       "op": "*",
+       "a": {
+        "t": "var",
+        "v": "L"
+       },
+       "b": {
+        "t": "var",
+        "v": "a"
+       }
+      },
+      "b": {
+       "t": "var",
+       "v": "p"
+      }
+     }
+    }
+   },
+   {
+    "t": "curva",
+    "etiqueta": "g de materia prima",
+    "variable": "a",
+    "expr": {
+     "t": "bin",
+     "op": "/",
+     "a": {
+      "t": "bin",
+      "op": "*",
+      "a": {
+       "t": "var",
+       "v": "L"
+      },
+      "b": {
+       "t": "var",
+       "v": "a"
+      }
+     },
+     "b": {
+      "t": "var",
+      "v": "p"
+     }
+    }
+   },
+   {
+    "t": "si",
+    "op": ">",
+    "a": {
+     "t": "bin",
+     "op": "/",
+     "a": {
+      "t": "var",
+      "v": "a"
+     },
+     "b": {
+      "t": "var",
+      "v": "p"
+     }
+    },
+    "b": {
+     "t": "num",
+     "v": 0.6
+    },
+    "texto": "La materia prima ocupa más del 60 % del lote. Busca un grado más concentrado."
+   },
+   {
+    "t": "pregunta",
+    "texto": "Si pasas de una materia al 28 % a una al 70 %, ¿cuánta pesas?",
+    "opciones": "la misma; 2.5 veces menos; 2.5 veces más",
+    "correcta": 2,
+    "explica": "70/28 = 2.5, y el activo tiene que ser el mismo."
+   },
+   {
+    "t": "supuesto",
+    "texto": "Balance de masa: todo el activo del lote entra con la materia prima."
+   },
+   {
+    "t": "supuesto",
+    "texto": "El porcentaje real está en el certificado de tu lote."
+   },
+   {
+    "t": "fuente",
+    "texto": "Balance de masa. Intervalos de activo por tensioactivo: datos del sitio, con su catálogo citado."
+   }
+  ]
+ }
+}

@@ -1,0 +1,455 @@
+{
+ "version": 2,
+ "clase": "laboratorio",
+ "titulo": "FPS y cantidad aplicada",
+ "bloques": {
+  "blocks": {
+   "languageVersion": 0,
+   "blocks": [
+    {
+     "type": "paso",
+     "fields": {
+      "TEXTO": "El FPS de la etiqueta se mide con 2 mg/cm². Pon menos y mira cuánta radiación cruza."
+     },
+     "next": {
+      "block": {
+       "type": "entrada",
+       "fields": {
+        "VAR": "fps",
+        "ETIQUETA": "FPS de la etiqueta",
+        "UNIDAD": "",
+        "MIN": 4,
+        "MAX": 50,
+        "PASO": 1,
+        "VALOR": 30
+       },
+       "next": {
+        "block": {
+         "type": "entrada",
+         "fields": {
+          "VAR": "q",
+          "ETIQUETA": "Cantidad aplicada",
+          "UNIDAD": "mg/cm²",
+          "MIN": 0.1,
+          "MAX": 4,
+          "PASO": 0.1,
+          "VALOR": 1
+         },
+         "next": {
+          "block": {
+           "type": "calculo",
+           "fields": {
+            "VAR": "F",
+            "ETIQUETA": "FPS que queda",
+            "UNIDAD": ""
+           },
+           "inputs": {
+            "EXPR": {
+             "block": {
+              "type": "operacion",
+              "fields": {
+               "OP": "^"
+              },
+              "inputs": {
+               "A": {
+                "block": {
+                 "type": "variable",
+                 "fields": {
+                  "V": "fps"
+                 }
+                }
+               },
+               "B": {
+                "block": {
+                 "type": "operacion",
+                 "fields": {
+                  "OP": "/"
+                 },
+                 "inputs": {
+                  "A": {
+                   "block": {
+                    "type": "variable",
+                    "fields": {
+                     "V": "q"
+                    }
+                   }
+                  },
+                  "B": {
+                   "block": {
+                    "type": "numero",
+                    "fields": {
+                     "V": 2
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           },
+           "next": {
+            "block": {
+             "type": "escena_solar",
+             "inputs": {
+              "fps": {
+               "block": {
+                "type": "variable",
+                "fields": {
+                 "V": "fps"
+                }
+               }
+              },
+              "q": {
+               "block": {
+                "type": "variable",
+                "fields": {
+                 "V": "q"
+                }
+               }
+              }
+             },
+             "next": {
+              "block": {
+               "type": "salida",
+               "fields": {
+                "ETIQUETA": "FPS que queda",
+                "UNIDAD": "",
+                "DEC": 1
+               },
+               "inputs": {
+                "EXPR": {
+                 "block": {
+                  "type": "variable",
+                  "fields": {
+                   "V": "F"
+                  }
+                 }
+                }
+               },
+               "next": {
+                "block": {
+                 "type": "salida",
+                 "fields": {
+                  "ETIQUETA": "de la radiación que quema cruza",
+                  "UNIDAD": "%",
+                  "DEC": 1
+                 },
+                 "inputs": {
+                  "EXPR": {
+                   "block": {
+                    "type": "operacion",
+                    "fields": {
+                     "OP": "/"
+                    },
+                    "inputs": {
+                     "A": {
+                      "block": {
+                       "type": "numero",
+                       "fields": {
+                        "V": 100
+                       }
+                      }
+                     },
+                     "B": {
+                      "block": {
+                       "type": "variable",
+                       "fields": {
+                        "V": "F"
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 },
+                 "next": {
+                  "block": {
+                   "type": "curva",
+                   "fields": {
+                    "ETIQUETA": "FPS que queda",
+                    "VAR": "q"
+                   },
+                   "inputs": {
+                    "EXPR": {
+                     "block": {
+                      "type": "operacion",
+                      "fields": {
+                       "OP": "^"
+                      },
+                      "inputs": {
+                       "A": {
+                        "block": {
+                         "type": "variable",
+                         "fields": {
+                          "V": "fps"
+                         }
+                        }
+                       },
+                       "B": {
+                        "block": {
+                         "type": "operacion",
+                         "fields": {
+                          "OP": "/"
+                         },
+                         "inputs": {
+                          "A": {
+                           "block": {
+                            "type": "variable",
+                            "fields": {
+                             "V": "q"
+                            }
+                           }
+                          },
+                          "B": {
+                           "block": {
+                            "type": "numero",
+                            "fields": {
+                             "V": 2
+                            }
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   },
+                   "next": {
+                    "block": {
+                     "type": "si",
+                     "fields": {
+                      "OP": "<",
+                      "TEXTO": "Con menos de 2 mg/cm², la cantidad del ensayo, la protección es menor que la de la etiqueta."
+                     },
+                     "inputs": {
+                      "A": {
+                       "block": {
+                        "type": "variable",
+                        "fields": {
+                         "V": "q"
+                        }
+                       }
+                      },
+                      "B": {
+                       "block": {
+                        "type": "numero",
+                        "fields": {
+                         "V": 2
+                        }
+                       }
+                      }
+                     },
+                     "next": {
+                      "block": {
+                       "type": "pregunta",
+                       "fields": {
+                        "TEXTO": "Con FPS 30 y la mitad de la cantidad, ¿cuánto queda?",
+                        "OPCIONES": "15; 5.5; 28",
+                        "CORRECTA": 2,
+                        "EXPLICA": "Queda la raíz cuadrada de 30, que es 5.5."
+                       },
+                       "next": {
+                        "block": {
+                         "type": "supuesto",
+                         "fields": {
+                          "TEXTO": "La relación exponencial se midió en la espalda de 20 personas con un protector FPS 4 y de 0.5 a 4 mg/cm². Para otros FPS es una extrapolación del modelo."
+                         },
+                         "next": {
+                          "block": {
+                           "type": "supuesto",
+                           "fields": {
+                            "TEXTO": "La radiación que cruza se toma como 1/FPS. No cuenta el sudor, el roce ni las zonas sin cubrir."
+                           },
+                           "next": {
+                            "block": {
+                             "type": "fuente",
+                             "fields": {
+                              "TEXTO": "Faurschou y Wulf 2007, Br. J. Dermatol. 156:716-719, DOI 10.1111/j.1365-2133.2006.07684.x (PubMed)."
+                             }
+                            }
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     },
+     "x": 30,
+     "y": 30
+    }
+   ]
+  }
+ },
+ "documento": {
+  "partes": [
+   {
+    "t": "paso",
+    "texto": "El FPS de la etiqueta se mide con 2 mg/cm². Pon menos y mira cuánta radiación cruza."
+   },
+   {
+    "t": "entrada",
+    "nombre": "fps",
+    "etiqueta": "FPS de la etiqueta",
+    "unidad": "",
+    "min": 4,
+    "max": 50,
+    "paso": 1,
+    "valor": 30
+   },
+   {
+    "t": "entrada",
+    "nombre": "q",
+    "etiqueta": "Cantidad aplicada",
+    "unidad": "mg/cm²",
+    "min": 0.1,
+    "max": 4,
+    "paso": 0.1,
+    "valor": 1
+   },
+   {
+    "t": "calculo",
+    "nombre": "F",
+    "etiqueta": "FPS que queda",
+    "unidad": "",
+    "expr": {
+     "t": "bin",
+     "op": "^",
+     "a": {
+      "t": "var",
+      "v": "fps"
+     },
+     "b": {
+      "t": "bin",
+      "op": "/",
+      "a": {
+       "t": "var",
+       "v": "q"
+      },
+      "b": {
+       "t": "num",
+       "v": 2
+      }
+     }
+    }
+   },
+   {
+    "t": "escena",
+    "tipo": "solar",
+    "valores": {
+     "fps": {
+      "t": "var",
+      "v": "fps"
+     },
+     "q": {
+      "t": "var",
+      "v": "q"
+     }
+    }
+   },
+   {
+    "t": "salida",
+    "etiqueta": "FPS que queda",
+    "unidad": "",
+    "dec": 1,
+    "expr": {
+     "t": "var",
+     "v": "F"
+    }
+   },
+   {
+    "t": "salida",
+    "etiqueta": "de la radiación que quema cruza",
+    "unidad": "%",
+    "dec": 1,
+    "expr": {
+     "t": "bin",
+     "op": "/",
+     "a": {
+      "t": "num",
+      "v": 100
+     },
+     "b": {
+      "t": "var",
+      "v": "F"
+     }
+    }
+   },
+   {
+    "t": "curva",
+    "etiqueta": "FPS que queda",
+    "variable": "q",
+    "expr": {
+     "t": "bin",
+     "op": "^",
+     "a": {
+      "t": "var",
+      "v": "fps"
+     },
+     "b": {
+      "t": "bin",
+      "op": "/",
+      "a": {
+       "t": "var",
+       "v": "q"
+      },
+      "b": {
+       "t": "num",
+       "v": 2
+      }
+     }
+    }
+   },
+   {
+    "t": "si",
+    "op": "<",
+    "a": {
+     "t": "var",
+     "v": "q"
+    },
+    "b": {
+     "t": "num",
+     "v": 2
+    },
+    "texto": "Con menos de 2 mg/cm², la cantidad del ensayo, la protección es menor que la de la etiqueta."
+   },
+   {
+    "t": "pregunta",
+    "texto": "Con FPS 30 y la mitad de la cantidad, ¿cuánto queda?",
+    "opciones": "15; 5.5; 28",
+    "correcta": 2,
+    "explica": "Queda la raíz cuadrada de 30, que es 5.5."
+   },
+   {
+    "t": "supuesto",
+    "texto": "La relación exponencial se midió en la espalda de 20 personas con un protector FPS 4 y de 0.5 a 4 mg/cm². Para otros FPS es una extrapolación del modelo."
+   },
+   {
+    "t": "supuesto",
+    "texto": "La radiación que cruza se toma como 1/FPS. No cuenta el sudor, el roce ni las zonas sin cubrir."
+   },
+   {
+    "t": "fuente",
+    "texto": "Faurschou y Wulf 2007, Br. J. Dermatol. 156:716-719, DOI 10.1111/j.1365-2133.2006.07684.x (PubMed)."
+   }
+  ]
+ }
+}

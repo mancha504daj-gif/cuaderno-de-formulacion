@@ -1,0 +1,13 @@
+---
+title: Materia activa
+---
+
+$$g = \frac{lote \times \%\,activo}{\%\,activo\ comercial}$$
+
+```{=html}
+<div class="calc" data-calc="activa"><p>Cargando.</p></div>
+```
+
+**Comprobación.** 8 % de SLES en 1000 g pide 113.5 g de la pasta al 70.5 % o 296.3 g del líquido al 27 %.
+
+**Referencias.** Catálogos de proveedores, citados en cada resultado.

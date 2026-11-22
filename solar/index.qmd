@@ -1,0 +1,58 @@
+---
+title: "Protección solar"
+toc: false
+page-layout: full
+---
+
+```{=html}
+<figure class="cabeza" style="--color:#8a5200"><div class="marco"><img src="../fotos/solar.jpg" alt="Una persona aplica protector a un niño"></div><h1>Protección solar</h1></figure>
+```
+
+## La cantidad manda
+
+:::: {.modelo data-escena="solar"}
+
+::: {.acto}
+El FPS de una etiqueta se mide con 2 mg/cm². Con FPS 30 bien puesto, cruza cerca de 3 % de la radiación que quema.
+:::
+
+::: {.acto}
+Con la mitad de la cantidad, 1 mg/cm², el FPS cae a su raíz cuadrada. De 30 quedan 5.5.
+:::
+
+::: {.acto}
+Con la cuarta parte, 0.5 mg/cm², cae a su raíz cuarta: 2.3. En el estudio citan esa cantidad como la que suele ponerse la gente en la playa.
+
+[Abrir el laboratorio](../laboratorio/fps-y-cantidad.qmd): prueba otras cantidades.
+:::
+
+::::
+
+## Qué se puede estimar
+
+El método de Mansur calcula un FPS a partir de la absorbancia entre 290 y 320 nm:
+
+$$FPS = 10 \sum_{290}^{320} EE(\lambda)\, I(\lambda)\, A(\lambda)$$
+
+| λ (nm) | 290 | 295 | 300 | 305 | 310 | 315 | 320 |
+|---|---|---|---|---|---|---|---|
+| EE × I | 0.0150 | 0.0817 | 0.2874 | 0.3278 | 0.1864 | 0.0839 | 0.0180 |
+
+Dutra midió diez protectores comerciales y tres coincidieron con su etiqueta. Uno rotulado FPS 30 dio 19. Sirve para aprender y comparar; un FPS declarado exige el ensayo normalizado (ISO 24444).
+
+## Por qué no conviene el protector casero
+
+En un estudio de 15 recetas caseras, 12 dieron menos de FPS 6 y las otras tres no tenían filtro.
+
+## Límites europeos que cambiaron
+
+| Filtro | Límite |
+|---|---|
+| Homosalato | 7.34 %, solo en productos faciales |
+| Benzofenona-3 | 6 % cara, 2.2 % cuerpo, 0.5 % como estabilizante |
+| Octocrileno | 10 %, o 9 % en aerosol con propelente |
+| 4-MBC | prohibido |
+
+## Referencias
+
+Sayre et al. 1979, DOI [10.1111/j.1751-1097.1979.tb07090.x](https://doi.org/10.1111/j.1751-1097.1979.tb07090.x). Dutra et al. 2004, DOI [10.1590/S1516-93322004000300014](https://doi.org/10.1590/S1516-93322004000300014). Mansur et al. 1986, *An. Bras. Dermatol.* 61:121-124 (sin DOI). CosIng, Anexo VI, exportación del 13-11-2026. Recetas caseras: Couteau et al. 2021, *J. Cosmet. Dermatol.* 20:1788-1794, DOI [10.1111/jocd.13783](https://doi.org/10.1111/jocd.13783). Cantidad y FPS: Faurschou y Wulf 2007, *Br. J. Dermatol.* 156:716-719, DOI [10.1111/j.1365-2133.2006.07684.x](https://doi.org/10.1111/j.1365-2133.2006.07684.x) (PubMed).

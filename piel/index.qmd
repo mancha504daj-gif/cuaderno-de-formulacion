@@ -1,0 +1,92 @@
+---
+title: "Cuidado de la piel"
+toc: false
+page-layout: full
+---
+
+```{=html}
+<figure class="cabeza" style="--color:#b3245c"><div class="marco"><img src="../fotos/piel.jpg" alt="Frasco de crema abierto con su tapa azul"></div><h1>Cuidado de la piel</h1></figure>
+```
+
+## Qué abarca
+
+Lociones, cremas, sérums y bálsamos. En este sitio **bálsamo** es un producto sin agua; en inglés *balm* a veces nombra una loción.
+
+## Cuatro clases de ingrediente
+
+| Clase | Qué hace | Ejemplos |
+|---|---|---|
+| Humectante | Atrae agua hacia la capa externa | glicerina, urea, ácido hialurónico |
+| Emoliente | Rellena y suaviza | ésteres, triglicéridos, aceites |
+| Oclusivo | Frena la pérdida de agua | vaselina, dimeticona, ceras |
+| Otros | Aporta lípidos o película | ceramidas, colesterol, proteínas |
+
+Con aire seco, un humectante solo puede favorecer la pérdida de agua. Combínalo con un oclusivo.
+
+## Qué hace cada clase
+
+:::: {.modelo data-escena="piel"}
+
+::: {.acto}
+La capa externa de la piel son células planas con lípidos entre ellas. El agua sube por los huecos y se evapora. Con la piel seca, las células se encogen y sus bordes se levantan.
+:::
+
+::: {.acto}
+**Humectante.** La glicerina o la urea atraen agua y la retienen entre las células. Con aire seco, solas, pueden favorecer la pérdida.
+:::
+
+::: {.acto}
+**Emoliente.** Los ésteres y aceites rellenan los huecos y bajan los bordes.
+:::
+
+::: {.acto}
+**Humectante con oclusivo.** La vaselina, la dimeticona o las ceras dejan una película. El agua llega arriba y se queda.
+:::
+
+::: {.acto}
+Mueve tú la película.
+
+[Abrir el laboratorio](../laboratorio/agua-que-pierde-la-piel.qmd): cuánta agua sale al día.
+:::
+
+::::
+
+## Esqueleto de una loción O/W
+
+Mira un caso calculado: [loción de almendras](../ejemplos/locion-de-almendras.qmd).
+
+Son rangos de partida para un ensayo, propuestos en este proyecto y pendientes de contrastar en el laboratorio.
+
+| Fase | Función | % |
+|---|---|---|
+| A, acuosa | agua | c.s.p. 100 |
+| A | humectante | 2 a 5 |
+| A | espesante | 0.2 a 0.5 |
+| B, oleosa | emolientes | 10 a 20 |
+| B | emulsionante | 3 a 5 |
+| C, en frío | conservante y activos | según su límite |
+
+1. Calienta A y B por separado a la misma temperatura, unos grados sobre la cera que funde más alto.
+2. Agrega B sobre A con agitación intensa.
+3. Agita hasta enfriar y agrega C por debajo de la temperatura que tolere cada ingrediente.
+4. Mide pH y ajústalo. Revisa el [conservante a ese pH](../calculadoras/conservante.qmd).
+
+## Elige según la piel
+
+| Piel | Empieza por |
+|---|---|
+| Normal | humectante con emoliente |
+| Grasa | base acuosa y emolientes ligeros |
+| Seca | humectante con oclusivo |
+| Sensible | sin fragancia |
+
+## Pruebas que debes registrar
+
+Aspecto, color, olor, pH, viscosidad, peso y separación. Baki propone de tres a seis ciclos entre −10 °C y 25 o 40 °C, con 24 h por etapa. Benson propone cinco ciclos de 12 h entre −10 y 40 °C. Anota cuál usaste.
+
+Un producto con agua y sin conservante puede contaminarse sin que lo veas. Antes de vender en Honduras necesitas licencia sanitaria, buenas prácticas de manufactura y registro ante la ARSA.
+
+## Referencias
+
+Baki 2023, ISBN 978-1-119-70977-0, pp. 72, 148-149 y 250-259. Benson et al. 2019, DOI [10.1201/9780429190674](https://doi.org/10.1201/9780429190674), p. 296. Acuerdo 0418-ARSA-2023 y RTCA 71.03.35:21.
+

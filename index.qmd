@@ -1,0 +1,16 @@
+---
+pagetitle: "Cuaderno de formulación"
+page-layout: custom
+sidebar: false
+toc: false
+---
+
+```{=html}
+<section class="portada">
+  <div class="fondo" aria-hidden="true"><img src="fotos/piel.jpg" alt="" data-de="piel" loading="lazy"><img src="fotos/jabonera.jpg" alt="" data-de="limpieza" loading="lazy"><img src="fotos/solar.jpg" alt="" data-de="solar" loading="lazy"><img src="fotos/maquillaje.jpg" alt="" data-de="maquillaje" class="ve"><img src="fotos/champu.jpg" alt="" data-de="cabello" loading="lazy"><img src="fotos/frasco.jpg" alt="" data-de="fragancias" loading="lazy"></div>
+  <header><h1>Cuaderno de formulación</h1><nav aria-label="Herramientas"><a href="fundamentos/emulsiones.html">Emulsiones</a><a href="calculadoras/index.html">Calculadoras</a><a href="laboratorios.html">Laboratorios</a><a href="ingredientes.html">Ingredientes</a><a href="editor.html">Editor</a></nav></header>
+  <ol><li style="--n:0"><a href="piel/index.html" data-de="piel">Cuidado de la piel<small>lociones, cremas, sérums</small></a></li><li style="--n:1"><a href="limpieza/index.html" data-de="limpieza">Limpieza<small>jabón, gel, limpiador</small></a></li><li style="--n:2"><a href="solar/index.html" data-de="solar">Protección solar<small>filtros y FPS</small></a></li><li style="--n:3"><a href="maquillaje/index.html" data-de="maquillaje">Maquillaje<small>labial, polvo, máscara</small></a></li><li style="--n:4"><a href="cabello/index.html" data-de="cabello">Cabello<small>champú, acondicionador</small></a></li><li style="--n:5"><a href="fragancias/index.html" data-de="fragancias">Fragancias<small>notas, límites, alérgenos</small></a></li></ol>
+</section>
+<section class="entrada" id="ejemplo" data-pieza="ejemplo" data-nombre="Loción de almendras"><figure><img src="fotos/piel.jpg" alt="Frasco de crema abierto con su tapa azul"></figure><div><h2>Loción de almendras</h2><div class="dato" data-formula="locion-almendras"></div><p><a href="ejemplos/locion-de-almendras.html">Ver cómo se calculó</a></p></div></section>
+<section class="entrada alterna" id="laboratorio" data-pieza="laboratorio" data-nombre="Laboratorio de cremado"><figure class="viva" data-previa="stokes" data-valores='{"paso":2,"radio":1.6}'></figure><div><h2>Laboratorio de cremado</h2><p>Cambia el tamaño de la gota y la viscosidad, y mira cuánto sube el aceite en la probeta.</p><p><a href="laboratorio/cremado.html">Entrar al laboratorio</a></p></div></section>
+```

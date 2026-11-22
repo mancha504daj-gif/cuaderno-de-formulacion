@@ -1,0 +1,509 @@
+{
+ "version": 2,
+ "clase": "laboratorio",
+ "titulo": "Agua que pierde la piel",
+ "bloques": {
+  "blocks": {
+   "languageVersion": 0,
+   "blocks": [
+    {
+     "type": "paso",
+     "fields": {
+      "TEXTO": "Cambia cuánto frena la película y mira las gotas que escapan."
+     },
+     "next": {
+      "block": {
+       "type": "entrada",
+       "fields": {
+        "VAR": "J",
+        "ETIQUETA": "Pérdida de agua sin producto",
+        "UNIDAD": "g/m² h",
+        "MIN": 5,
+        "MAX": 40,
+        "PASO": 1,
+        "VALOR": 10
+       },
+       "next": {
+        "block": {
+         "type": "entrada",
+         "fields": {
+          "VAR": "A",
+          "ETIQUETA": "Área de piel",
+          "UNIDAD": "m²",
+          "MIN": 0.01,
+          "MAX": 1.8,
+          "PASO": 0.01,
+          "VALOR": 1
+         },
+         "next": {
+          "block": {
+           "type": "entrada",
+           "fields": {
+            "VAR": "o",
+            "ETIQUETA": "Agua que frena la película",
+            "UNIDAD": "%",
+            "MIN": 0,
+            "MAX": 99,
+            "PASO": 1,
+            "VALOR": 30
+           },
+           "next": {
+            "block": {
+             "type": "escena_piel",
+             "inputs": {
+              "oclusion": {
+               "block": {
+                "type": "variable",
+                "fields": {
+                 "V": "o"
+                }
+               }
+              }
+             },
+             "next": {
+              "block": {
+               "type": "salida",
+               "fields": {
+                "ETIQUETA": "de agua al día",
+                "UNIDAD": "g",
+                "DEC": 0
+               },
+               "inputs": {
+                "EXPR": {
+                 "block": {
+                  "type": "operacion",
+                  "fields": {
+                   "OP": "*"
+                  },
+                  "inputs": {
+                   "A": {
+                    "block": {
+                     "type": "operacion",
+                     "fields": {
+                      "OP": "*"
+                     },
+                     "inputs": {
+                      "A": {
+                       "block": {
+                        "type": "operacion",
+                        "fields": {
+                         "OP": "*"
+                        },
+                        "inputs": {
+                         "A": {
+                          "block": {
+                           "type": "variable",
+                           "fields": {
+                            "V": "J"
+                           }
+                          }
+                         },
+                         "B": {
+                          "block": {
+                           "type": "variable",
+                           "fields": {
+                            "V": "A"
+                           }
+                          }
+                         }
+                        }
+                       }
+                      },
+                      "B": {
+                       "block": {
+                        "type": "numero",
+                        "fields": {
+                         "V": 24
+                        }
+                       }
+                      }
+                     }
+                    }
+                   },
+                   "B": {
+                    "block": {
+                     "type": "operacion",
+                     "fields": {
+                      "OP": "-"
+                     },
+                     "inputs": {
+                      "A": {
+                       "block": {
+                        "type": "numero",
+                        "fields": {
+                         "V": 1
+                        }
+                       }
+                      },
+                      "B": {
+                       "block": {
+                        "type": "operacion",
+                        "fields": {
+                         "OP": "/"
+                        },
+                        "inputs": {
+                         "A": {
+                          "block": {
+                           "type": "variable",
+                           "fields": {
+                            "V": "o"
+                           }
+                          }
+                         },
+                         "B": {
+                          "block": {
+                           "type": "numero",
+                           "fields": {
+                            "V": 100
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               },
+               "next": {
+                "block": {
+                 "type": "curva",
+                 "fields": {
+                  "ETIQUETA": "g de agua al día",
+                  "VAR": "o"
+                 },
+                 "inputs": {
+                  "EXPR": {
+                   "block": {
+                    "type": "operacion",
+                    "fields": {
+                     "OP": "*"
+                    },
+                    "inputs": {
+                     "A": {
+                      "block": {
+                       "type": "operacion",
+                       "fields": {
+                        "OP": "*"
+                       },
+                       "inputs": {
+                        "A": {
+                         "block": {
+                          "type": "operacion",
+                          "fields": {
+                           "OP": "*"
+                          },
+                          "inputs": {
+                           "A": {
+                            "block": {
+                             "type": "variable",
+                             "fields": {
+                              "V": "J"
+                             }
+                            }
+                           },
+                           "B": {
+                            "block": {
+                             "type": "variable",
+                             "fields": {
+                              "V": "A"
+                             }
+                            }
+                           }
+                          }
+                         }
+                        },
+                        "B": {
+                         "block": {
+                          "type": "numero",
+                          "fields": {
+                           "V": 24
+                          }
+                         }
+                        }
+                       }
+                      }
+                     },
+                     "B": {
+                      "block": {
+                       "type": "operacion",
+                       "fields": {
+                        "OP": "-"
+                       },
+                       "inputs": {
+                        "A": {
+                         "block": {
+                          "type": "numero",
+                          "fields": {
+                           "V": 1
+                          }
+                         }
+                        },
+                        "B": {
+                         "block": {
+                          "type": "operacion",
+                          "fields": {
+                           "OP": "/"
+                          },
+                          "inputs": {
+                           "A": {
+                            "block": {
+                             "type": "variable",
+                             "fields": {
+                              "V": "o"
+                             }
+                            }
+                           },
+                           "B": {
+                            "block": {
+                             "type": "numero",
+                             "fields": {
+                              "V": 100
+                             }
+                            }
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 },
+                 "next": {
+                  "block": {
+                   "type": "pregunta",
+                   "fields": {
+                    "TEXTO": "Si la película frena la mitad, ¿qué pasa con el agua que sale?",
+                    "OPCIONES": "baja a la mitad; baja a la cuarta parte; no cambia",
+                    "CORRECTA": 1,
+                    "EXPLICA": "La pérdida es proporcional a lo que deja pasar."
+                   },
+                   "next": {
+                    "block": {
+                     "type": "supuesto",
+                     "fields": {
+                      "TEXTO": "La pérdida es constante y la película frena lo mismo en toda el área."
+                     },
+                     "next": {
+                      "block": {
+                       "type": "supuesto",
+                       "fields": {
+                        "TEXTO": "Los valores iniciales son un ejemplo. Pon los que midas."
+                       },
+                       "next": {
+                        "block": {
+                         "type": "supuesto",
+                         "fields": {
+                          "TEXTO": "No cuenta el sudor."
+                         },
+                         "next": {
+                          "block": {
+                           "type": "fuente",
+                           "fields": {
+                            "TEXTO": "Balance de masa. La pérdida de agua se mide en g/m² h, a 18-21 °C y 40-60 % de humedad: Benson et al. 2019, DOI 10.1201/9780429190674, p. 182."
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     },
+     "x": 30,
+     "y": 30
+    }
+   ]
+  }
+ },
+ "documento": {
+  "partes": [
+   {
+    "t": "paso",
+    "texto": "Cambia cuánto frena la película y mira las gotas que escapan."
+   },
+   {
+    "t": "entrada",
+    "nombre": "J",
+    "etiqueta": "Pérdida de agua sin producto",
+    "unidad": "g/m² h",
+    "min": 5,
+    "max": 40,
+    "paso": 1,
+    "valor": 10
+   },
+   {
+    "t": "entrada",
+    "nombre": "A",
+    "etiqueta": "Área de piel",
+    "unidad": "m²",
+    "min": 0.01,
+    "max": 1.8,
+    "paso": 0.01,
+    "valor": 1
+   },
+   {
+    "t": "entrada",
+    "nombre": "o",
+    "etiqueta": "Agua que frena la película",
+    "unidad": "%",
+    "min": 0,
+    "max": 99,
+    "paso": 1,
+    "valor": 30
+   },
+   {
+    "t": "escena",
+    "tipo": "piel",
+    "valores": {
+     "oclusion": {
+      "t": "var",
+      "v": "o"
+     }
+    }
+   },
+   {
+    "t": "salida",
+    "etiqueta": "de agua al día",
+    "unidad": "g",
+    "dec": 0,
+    "expr": {
+     "t": "bin",
+     "op": "*",
+     "a": {
+      "t": "bin",
+      "op": "*",
+      "a": {
+       "t": "bin",
+       "op": "*",
+       "a": {
+        "t": "var",
+        "v": "J"
+       },
+       "b": {
+        "t": "var",
+        "v": "A"
+       }
+      },
+      "b": {
+       "t": "num",
+       "v": 24
+      }
+     },
+     "b": {
+      "t": "bin",
+      "op": "-",
+      "a": {
+       "t": "num",
+       "v": 1
+      },
+      "b": {
+       "t": "bin",
+       "op": "/",
+       "a": {
+        "t": "var",
+        "v": "o"
+       },
+       "b": {
+        "t": "num",
+        "v": 100
+       }
+      }
+     }
+    }
+   },
+   {
+    "t": "curva",
+    "etiqueta": "g de agua al día",
+    "variable": "o",
+    "expr": {
+     "t": "bin",
+     "op": "*",
+     "a": {
+      "t": "bin",
+      "op": "*",
+      "a": {
+       "t": "bin",
+       "op": "*",
+       "a": {
+        "t": "var",
+        "v": "J"
+       },
+       "b": {
+        "t": "var",
+        "v": "A"
+       }
+      },
+      "b": {
+       "t": "num",
+       "v": 24
+      }
+     },
+     "b": {
+      "t": "bin",
+      "op": "-",
+      "a": {
+       "t": "num",
+       "v": 1
+      },
+      "b": {
+       "t": "bin",
+       "op": "/",
+       "a": {
+        "t": "var",
+        "v": "o"
+       },
+       "b": {
+        "t": "num",
+        "v": 100
+       }
+      }
+     }
+    }
+   },
+   {
+    "t": "pregunta",
+    "texto": "Si la película frena la mitad, ¿qué pasa con el agua que sale?",
+    "opciones": "baja a la mitad; baja a la cuarta parte; no cambia",
+    "correcta": 1,
+    "explica": "La pérdida es proporcional a lo que deja pasar."
+   },
+   {
+    "t": "supuesto",
+    "texto": "La pérdida es constante y la película frena lo mismo en toda el área."
+   },
+   {
+    "t": "supuesto",
+    "texto": "Los valores iniciales son un ejemplo. Pon los que midas."
+   },
+   {
+    "t": "supuesto",
+    "texto": "No cuenta el sudor."
+   },
+   {
+    "t": "fuente",
+    "texto": "Balance de masa. La pérdida de agua se mide en g/m² h, a 18-21 °C y 40-60 % de humedad: Benson et al. 2019, DOI 10.1201/9780429190674, p. 182."
+   }
+  ]
+ }
+}

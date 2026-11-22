@@ -1,0 +1,13 @@
+---
+title: Jabón
+---
+
+```{=html}
+<div class="calc" data-calc="jabon"><p>Cargando.</p></div>
+```
+
+El SAP viene como intervalo en la norma. El cálculo usa el valor más bajo y la mezcla de lejía en porcentaje de masa.
+
+**Comprobación.** 500 g de oliva con SAP 190 y 5 % de sobreengrase piden 64.3 g de NaOH.
+
+**Referencias.** Codex CXS 210-1999, CXS 33 y CXS 211 (ed. 2015); ricino, JECFA.

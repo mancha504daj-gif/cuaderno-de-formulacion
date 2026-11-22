@@ -1,0 +1,9 @@
+/.quarto/
+/_site/
+/laboratorio/
+/aspecto/indice.json
+**/*.quarto_ipynb
+# Nunca entran libros ni fuentes de terceros
+*.pdf
+*.epub
+/datos/laboratorios.json

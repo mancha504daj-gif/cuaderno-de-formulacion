@@ -1,0 +1,17 @@
+---
+title: HLB
+---
+
+El HLB requerido de la fase oleosa es el promedio de sus aceites, ponderado por masa. La fracción del emulsionante A sale de despejar la mezcla:
+
+$$x_A = \frac{HLB_{req} - HLB_B}{HLB_A - HLB_B}$$
+
+```{=html}
+<div class="calc" data-calc="hlb"><p>Cargando.</p></div>
+```
+
+El HLB orienta los primeros ensayos. No predice estabilidad, y Griffin dio una precisión cercana a ±1. Esta tabla usa solo emulsionantes no iónicos.
+
+**Comprobación.** Con Span 80 (4.3) y Tween 80 (15.0), el HLB 10 pide 46.7 % y 53.3 %.
+
+**Referencias.** Griffin 1949, *J. Soc. Cosmet. Chem.* 1:311 (sin DOI). Griffin 1954, *J. Soc. Cosmet. Chem.* 5:249 (sin DOI). Salager et al. 2020, DOI [10.3390/cosmetics7030057](https://doi.org/10.3390/cosmetics7030057).

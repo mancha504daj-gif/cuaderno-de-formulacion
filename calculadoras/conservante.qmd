@@ -1,0 +1,15 @@
+---
+title: Conservante y pH
+---
+
+Un ácido orgánico conserva en su forma sin disociar:
+
+$$f = \frac{1}{1 + 10^{\,pH - pK_a}}$$
+
+```{=html}
+<div class="calc" data-calc="conservante"><p>Cargando.</p></div>
+```
+
+El cálculo supone una fase acuosa ideal. En una emulsión parte del ácido pasa al aceite y la concentración útil baja.
+
+**Referencias.** pKa del ácido sórbico y del benzoico: PubChem, CID 643460 y 243. Límites: Reglamento (CE) 1223/2009, Anexo V, texto consolidado al 18-05-2026. El pKa del sórbico aparece como 4.76 y como 4.5 según la fuente; aquí se usa 4.76.

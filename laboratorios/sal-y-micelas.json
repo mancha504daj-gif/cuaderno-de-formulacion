@@ -1,0 +1,567 @@
+{
+ "version": 2,
+ "clase": "laboratorio",
+ "titulo": "Sal y micelas",
+ "bloques": {
+  "blocks": {
+   "languageVersion": 0,
+   "blocks": [
+    {
+     "type": "paso",
+     "fields": {
+      "TEXTO": "Sube el sodio libre, como al echar sal, y mira en qué momento se arman las micelas."
+     },
+     "next": {
+      "block": {
+       "type": "entrada",
+       "fields": {
+        "VAR": "c",
+        "ETIQUETA": "Dodecilsulfato de sodio",
+        "UNIDAD": "mM",
+        "MIN": 2,
+        "MAX": 30,
+        "PASO": 0.5,
+        "VALOR": 6
+       },
+       "next": {
+        "block": {
+         "type": "entrada",
+         "fields": {
+          "VAR": "na",
+          "ETIQUETA": "Sodio libre en el agua",
+          "UNIDAD": "mM",
+          "MIN": 8.2,
+          "MAX": 150,
+          "PASO": 0.1,
+          "VALOR": 8.2
+         },
+         "next": {
+          "block": {
+           "type": "calculo",
+           "fields": {
+            "VAR": "CMC",
+            "ETIQUETA": "concentración micelar crítica",
+            "UNIDAD": "mM"
+           },
+           "inputs": {
+            "EXPR": {
+             "block": {
+              "type": "operacion",
+              "fields": {
+               "OP": "*"
+              },
+              "inputs": {
+               "A": {
+                "block": {
+                 "type": "numero",
+                 "fields": {
+                  "V": 8.2
+                 }
+                }
+               },
+               "B": {
+                "block": {
+                 "type": "operacion",
+                 "fields": {
+                  "OP": "^"
+                 },
+                 "inputs": {
+                  "A": {
+                   "block": {
+                    "type": "operacion",
+                    "fields": {
+                     "OP": "/"
+                    },
+                    "inputs": {
+                     "A": {
+                      "block": {
+                       "type": "numero",
+                       "fields": {
+                        "V": 8.2
+                       }
+                      }
+                     },
+                     "B": {
+                      "block": {
+                       "type": "variable",
+                       "fields": {
+                        "V": "na"
+                       }
+                      }
+                     }
+                    }
+                   }
+                  },
+                  "B": {
+                   "block": {
+                    "type": "numero",
+                    "fields": {
+                     "V": 0.678
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           },
+           "next": {
+            "block": {
+             "type": "escena_micelas",
+             "inputs": {
+              "c": {
+               "block": {
+                "type": "variable",
+                "fields": {
+                 "V": "c"
+                }
+               }
+              },
+              "cmc": {
+               "block": {
+                "type": "variable",
+                "fields": {
+                 "V": "CMC"
+                }
+               }
+              }
+             },
+             "next": {
+              "block": {
+               "type": "salida",
+               "fields": {
+                "ETIQUETA": "del tensioactivo en micelas",
+                "UNIDAD": "%",
+                "DEC": 0
+               },
+               "inputs": {
+                "EXPR": {
+                 "block": {
+                  "type": "operacion",
+                  "fields": {
+                   "OP": "*"
+                  },
+                  "inputs": {
+                   "A": {
+                    "block": {
+                     "type": "numero",
+                     "fields": {
+                      "V": 100
+                     }
+                    }
+                   },
+                   "B": {
+                    "block": {
+                     "type": "operacion",
+                     "fields": {
+                      "OP": "max"
+                     },
+                     "inputs": {
+                      "A": {
+                       "block": {
+                        "type": "numero",
+                        "fields": {
+                         "V": 0
+                        }
+                       }
+                      },
+                      "B": {
+                       "block": {
+                        "type": "operacion",
+                        "fields": {
+                         "OP": "-"
+                        },
+                        "inputs": {
+                         "A": {
+                          "block": {
+                           "type": "numero",
+                           "fields": {
+                            "V": 1
+                           }
+                          }
+                         },
+                         "B": {
+                          "block": {
+                           "type": "operacion",
+                           "fields": {
+                            "OP": "/"
+                           },
+                           "inputs": {
+                            "A": {
+                             "block": {
+                              "type": "variable",
+                              "fields": {
+                               "V": "CMC"
+                              }
+                             }
+                            },
+                            "B": {
+                             "block": {
+                              "type": "variable",
+                              "fields": {
+                               "V": "c"
+                              }
+                             }
+                            }
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               },
+               "next": {
+                "block": {
+                 "type": "curva",
+                 "fields": {
+                  "ETIQUETA": "CMC en mM",
+                  "VAR": "na"
+                 },
+                 "inputs": {
+                  "EXPR": {
+                   "block": {
+                    "type": "operacion",
+                    "fields": {
+                     "OP": "*"
+                    },
+                    "inputs": {
+                     "A": {
+                      "block": {
+                       "type": "numero",
+                       "fields": {
+                        "V": 8.2
+                       }
+                      }
+                     },
+                     "B": {
+                      "block": {
+                       "type": "operacion",
+                       "fields": {
+                        "OP": "^"
+                       },
+                       "inputs": {
+                        "A": {
+                         "block": {
+                          "type": "operacion",
+                          "fields": {
+                           "OP": "/"
+                          },
+                          "inputs": {
+                           "A": {
+                            "block": {
+                             "type": "numero",
+                             "fields": {
+                              "V": 8.2
+                             }
+                            }
+                           },
+                           "B": {
+                            "block": {
+                             "type": "variable",
+                             "fields": {
+                              "V": "na"
+                             }
+                            }
+                           }
+                          }
+                         }
+                        },
+                        "B": {
+                         "block": {
+                          "type": "numero",
+                          "fields": {
+                           "V": 0.678
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 },
+                 "next": {
+                  "block": {
+                   "type": "si",
+                   "fields": {
+                    "OP": "<",
+                    "TEXTO": "Todavía no hay micelas: todo está suelto."
+                   },
+                   "inputs": {
+                    "A": {
+                     "block": {
+                      "type": "variable",
+                      "fields": {
+                       "V": "c"
+                      }
+                     }
+                    },
+                    "B": {
+                     "block": {
+                      "type": "variable",
+                      "fields": {
+                       "V": "CMC"
+                      }
+                     }
+                    }
+                   },
+                   "next": {
+                    "block": {
+                     "type": "pregunta",
+                     "fields": {
+                      "TEXTO": "¿Qué hace la sal con la CMC?",
+                      "OPCIONES": "la sube; la baja; no la cambia",
+                      "CORRECTA": 2,
+                      "EXPLICA": "El sodio tapa la repulsión entre cabezas y cuesta menos juntarlas."
+                     },
+                     "next": {
+                      "block": {
+                       "type": "supuesto",
+                       "fields": {
+                        "TEXTO": "La recta de Corrin y Harkins se ajustó aquí a tres valores del dodecilsulfato de sodio a 25 °C: 8.2, 3.15 y 1.49 mM con 0, 30 y 100 mM de NaCl. El exponente 0.678 es ese ajuste."
+                       },
+                       "next": {
+                        "block": {
+                         "type": "supuesto",
+                         "fields": {
+                          "TEXTO": "El sodio libre se toma como la CMC más la sal agregada."
+                         },
+                         "next": {
+                          "block": {
+                           "type": "supuesto",
+                           "fields": {
+                            "TEXTO": "Por encima de la CMC, todo lo que sobra está en micelas."
+                           },
+                           "next": {
+                            "block": {
+                             "type": "fuente",
+                             "fields": {
+                              "TEXTO": "Corrin y Harkins 1947, J. Am. Chem. Soc. 69:683, DOI 10.1021/ja01195a065. Datos: Mukerjee y Mysels 1971, NSRDS-NBS 36, pp. 51-52, DOI 10.6028/NBS.NSRDS.36."
+                             }
+                            }
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     },
+     "x": 30,
+     "y": 30
+    }
+   ]
+  }
+ },
+ "documento": {
+  "partes": [
+   {
+    "t": "paso",
+    "texto": "Sube el sodio libre, como al echar sal, y mira en qué momento se arman las micelas."
+   },
+   {
+    "t": "entrada",
+    "nombre": "c",
+    "etiqueta": "Dodecilsulfato de sodio",
+    "unidad": "mM",
+    "min": 2,
+    "max": 30,
+    "paso": 0.5,
+    "valor": 6
+   },
+   {
+    "t": "entrada",
+    "nombre": "na",
+    "etiqueta": "Sodio libre en el agua",
+    "unidad": "mM",
+    "min": 8.2,
+    "max": 150,
+    "paso": 0.1,
+    "valor": 8.2
+   },
+   {
+    "t": "calculo",
+    "nombre": "CMC",
+    "etiqueta": "concentración micelar crítica",
+    "unidad": "mM",
+    "expr": {
+     "t": "bin",
+     "op": "*",
+     "a": {
+      "t": "num",
+      "v": 8.2
+     },
+     "b": {
+      "t": "bin",
+      "op": "^",
+      "a": {
+       "t": "bin",
+       "op": "/",
+       "a": {
+        "t": "num",
+        "v": 8.2
+       },
+       "b": {
+        "t": "var",
+        "v": "na"
+       }
+      },
+      "b": {
+       "t": "num",
+       "v": 0.678
+      }
+     }
+    }
+   },
+   {
+    "t": "escena",
+    "tipo": "micelas",
+    "valores": {
+     "c": {
+      "t": "var",
+      "v": "c"
+     },
+     "cmc": {
+      "t": "var",
+      "v": "CMC"
+     }
+    }
+   },
+   {
+    "t": "salida",
+    "etiqueta": "del tensioactivo en micelas",
+    "unidad": "%",
+    "dec": 0,
+    "expr": {
+     "t": "bin",
+     "op": "*",
+     "a": {
+      "t": "num",
+      "v": 100
+     },
+     "b": {
+      "t": "bin",
+      "op": "max",
+      "a": {
+       "t": "num",
+       "v": 0
+      },
+      "b": {
+       "t": "bin",
+       "op": "-",
+       "a": {
+        "t": "num",
+        "v": 1
+       },
+       "b": {
+        "t": "bin",
+        "op": "/",
+        "a": {
+         "t": "var",
+         "v": "CMC"
+        },
+        "b": {
+         "t": "var",
+         "v": "c"
+        }
+       }
+      }
+     }
+    }
+   },
+   {
+    "t": "curva",
+    "etiqueta": "CMC en mM",
+    "variable": "na",
+    "expr": {
+     "t": "bin",
+     "op": "*",
+     "a": {
+      "t": "num",
+      "v": 8.2
+     },
+     "b": {
+      "t": "bin",
+      "op": "^",
+      "a": {
+       "t": "bin",
+       "op": "/",
+       "a": {
+        "t": "num",
+        "v": 8.2
+       },
+       "b": {
+        "t": "var",
+        "v": "na"
+       }
+      },
+      "b": {
+       "t": "num",
+       "v": 0.678
+      }
+     }
+    }
+   },
+   {
+    "t": "si",
+    "op": "<",
+    "a": {
+     "t": "var",
+     "v": "c"
+    },
+    "b": {
+     "t": "var",
+     "v": "CMC"
+    },
+    "texto": "Todavía no hay micelas: todo está suelto."
+   },
+   {
+    "t": "pregunta",
+    "texto": "¿Qué hace la sal con la CMC?",
+    "opciones": "la sube; la baja; no la cambia",
+    "correcta": 2,
+    "explica": "El sodio tapa la repulsión entre cabezas y cuesta menos juntarlas."
+   },
+   {
+    "t": "supuesto",
+    "texto": "La recta de Corrin y Harkins se ajustó aquí a tres valores del dodecilsulfato de sodio a 25 °C: 8.2, 3.15 y 1.49 mM con 0, 30 y 100 mM de NaCl. El exponente 0.678 es ese ajuste."
+   },
+   {
+    "t": "supuesto",
+    "texto": "El sodio libre se toma como la CMC más la sal agregada."
+   },
+   {
+    "t": "supuesto",
+    "texto": "Por encima de la CMC, todo lo que sobra está en micelas."
+   },
+   {
+    "t": "fuente",
+    "texto": "Corrin y Harkins 1947, J. Am. Chem. Soc. 69:683, DOI 10.1021/ja01195a065. Datos: Mukerjee y Mysels 1971, NSRDS-NBS 36, pp. 51-52, DOI 10.6028/NBS.NSRDS.36."
+   }
+  ]
+ }
+}

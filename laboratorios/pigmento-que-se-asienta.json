@@ -1,0 +1,300 @@
+{
+ "version": 2,
+ "clase": "laboratorio",
+ "titulo": "Pigmento que se asienta",
+ "bloques": {
+  "blocks": {
+   "languageVersion": 0,
+   "blocks": [
+    {
+     "type": "paso",
+     "fields": {
+      "TEXTO": "Un pigmento pesa varias veces más que el aceite. Busca qué lo mantiene arriba."
+     },
+     "next": {
+      "block": {
+       "type": "entrada",
+       "fields": {
+        "VAR": "r",
+        "ETIQUETA": "Radio de la partícula",
+        "UNIDAD": "µm",
+        "MIN": 0.1,
+        "MAX": 10,
+        "PASO": 0.1,
+        "VALOR": 2
+       },
+       "next": {
+        "block": {
+         "type": "entrada",
+         "fields": {
+          "VAR": "d",
+          "ETIQUETA": "Densidad del pigmento",
+          "UNIDAD": "kg/m³",
+          "MIN": 3900,
+          "MAX": 5300,
+          "PASO": 10,
+          "VALOR": 4230
+         },
+         "next": {
+          "block": {
+           "type": "entrada",
+           "fields": {
+            "VAR": "mu",
+            "ETIQUETA": "Viscosidad del medio",
+            "UNIDAD": "Pa s",
+            "MIN": 0.1,
+            "MAX": 10,
+            "PASO": 0.1,
+            "VALOR": 1
+           },
+           "next": {
+            "block": {
+             "type": "entrada",
+             "fields": {
+              "VAR": "dias",
+              "ETIQUETA": "Tiempo",
+              "UNIDAD": "días",
+              "MIN": 1,
+              "MAX": 90,
+              "PASO": 1,
+              "VALOR": 7
+             },
+             "next": {
+              "block": {
+               "type": "probeta",
+               "inputs": {
+                "RADIO": {
+                 "block": {
+                  "type": "variable",
+                  "fields": {
+                   "V": "r"
+                  }
+                 }
+                },
+                "GOTA": {
+                 "block": {
+                  "type": "variable",
+                  "fields": {
+                   "V": "d"
+                  }
+                 }
+                },
+                "MEDIO": {
+                 "block": {
+                  "type": "numero",
+                  "fields": {
+                   "V": 964
+                  }
+                 }
+                },
+                "VISC": {
+                 "block": {
+                  "type": "variable",
+                  "fields": {
+                   "V": "mu"
+                  }
+                 }
+                },
+                "DIAS": {
+                 "block": {
+                  "type": "variable",
+                  "fields": {
+                   "V": "dias"
+                  }
+                 }
+                }
+               },
+               "next": {
+                "block": {
+                 "type": "si",
+                 "fields": {
+                  "OP": ">",
+                  "TEXTO": "Partículas así de grandes se asientan rápido. Muele más."
+                 },
+                 "inputs": {
+                  "A": {
+                   "block": {
+                    "type": "variable",
+                    "fields": {
+                     "V": "r"
+                    }
+                   }
+                  },
+                  "B": {
+                   "block": {
+                    "type": "numero",
+                    "fields": {
+                     "V": 5
+                    }
+                   }
+                  }
+                 },
+                 "next": {
+                  "block": {
+                   "type": "pregunta",
+                   "fields": {
+                    "TEXTO": "¿Qué frena más el asentamiento?",
+                    "OPCIONES": "duplicar la viscosidad; reducir el radio a la mitad",
+                    "CORRECTA": 2,
+                    "EXPLICA": "El radio entra al cuadrado: a la mitad, la velocidad baja cuatro veces."
+                   },
+                   "next": {
+                    "block": {
+                     "type": "supuesto",
+                     "fields": {
+                      "TEXTO": "El medio tiene la densidad del aceite de ricino, 964 kg/m³. Su viscosidad la eliges tú."
+                     },
+                     "next": {
+                      "block": {
+                       "type": "supuesto",
+                       "fields": {
+                        "TEXTO": "Las partículas están sueltas, lejos unas de otras. Un grumo se asienta como una partícula grande."
+                       },
+                       "next": {
+                        "block": {
+                         "type": "supuesto",
+                         "fields": {
+                          "TEXTO": "Un medio con cera que forma red no fluye por debajo de su esfuerzo de fluencia, y el pigmento puede quedarse quieto."
+                         },
+                         "next": {
+                          "block": {
+                           "type": "fuente",
+                           "fields": {
+                            "TEXTO": "Ley de Stokes: Baki 2023, ISBN 978-1-119-70977-0, p. 71. Densidades: dióxido de titanio 4.23 g/cm³, PubChem CID 26042; óxido de hierro 5.25, CID 14833; ricino 0.964, Ogorzalek et al. 2024, DOI 10.3390/app14072783."
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     },
+     "x": 30,
+     "y": 30
+    }
+   ]
+  }
+ },
+ "documento": {
+  "partes": [
+   {
+    "t": "paso",
+    "texto": "Un pigmento pesa varias veces más que el aceite. Busca qué lo mantiene arriba."
+   },
+   {
+    "t": "entrada",
+    "nombre": "r",
+    "etiqueta": "Radio de la partícula",
+    "unidad": "µm",
+    "min": 0.1,
+    "max": 10,
+    "paso": 0.1,
+    "valor": 2
+   },
+   {
+    "t": "entrada",
+    "nombre": "d",
+    "etiqueta": "Densidad del pigmento",
+    "unidad": "kg/m³",
+    "min": 3900,
+    "max": 5300,
+    "paso": 10,
+    "valor": 4230
+   },
+   {
+    "t": "entrada",
+    "nombre": "mu",
+    "etiqueta": "Viscosidad del medio",
+    "unidad": "Pa s",
+    "min": 0.1,
+    "max": 10,
+    "paso": 0.1,
+    "valor": 1
+   },
+   {
+    "t": "entrada",
+    "nombre": "dias",
+    "etiqueta": "Tiempo",
+    "unidad": "días",
+    "min": 1,
+    "max": 90,
+    "paso": 1,
+    "valor": 7
+   },
+   {
+    "t": "probeta",
+    "radio": {
+     "t": "var",
+     "v": "r"
+    },
+    "gota": {
+     "t": "var",
+     "v": "d"
+    },
+    "medio": {
+     "t": "num",
+     "v": 964
+    },
+    "visc": {
+     "t": "var",
+     "v": "mu"
+    },
+    "dias": {
+     "t": "var",
+     "v": "dias"
+    }
+   },
+   {
+    "t": "si",
+    "op": ">",
+    "a": {
+     "t": "var",
+     "v": "r"
+    },
+    "b": {
+     "t": "num",
+     "v": 5
+    },
+    "texto": "Partículas así de grandes se asientan rápido. Muele más."
+   },
+   {
+    "t": "pregunta",
+    "texto": "¿Qué frena más el asentamiento?",
+    "opciones": "duplicar la viscosidad; reducir el radio a la mitad",
+    "correcta": 2,
+    "explica": "El radio entra al cuadrado: a la mitad, la velocidad baja cuatro veces."
+   },
+   {
+    "t": "supuesto",
+    "texto": "El medio tiene la densidad del aceite de ricino, 964 kg/m³. Su viscosidad la eliges tú."
+   },
+   {
+    "t": "supuesto",
+    "texto": "Las partículas están sueltas, lejos unas de otras. Un grumo se asienta como una partícula grande."
+   },
+   {
+    "t": "supuesto",
+    "texto": "Un medio con cera que forma red no fluye por debajo de su esfuerzo de fluencia, y el pigmento puede quedarse quieto."
+   },
+   {
+    "t": "fuente",
+    "texto": "Ley de Stokes: Baki 2023, ISBN 978-1-119-70977-0, p. 71. Densidades: dióxido de titanio 4.23 g/cm³, PubChem CID 26042; óxido de hierro 5.25, CID 14833; ricino 0.964, Ogorzalek et al. 2024, DOI 10.3390/app14072783."
+   }
+  ]
+ }
+}

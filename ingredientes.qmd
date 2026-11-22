@@ -1,0 +1,13 @@
+---
+title: Ingredientes
+page-layout: full
+toc: false
+listing:
+  contents: ingredientes/*.md
+  type: table
+  fields: [title, nombre, categories]
+  field-display-names: { title: INCI, nombre: Nombre común }
+  categories: true
+  filter-ui: true
+  sort-ui: true
+---

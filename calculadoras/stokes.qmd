@@ -1,0 +1,13 @@
+---
+title: Cremado según Stokes
+---
+
+$$v = \frac{2 r^2 (\rho_{medio} - \rho_{gota})\, g}{9 \eta}$$
+
+```{=html}
+<div class="calc" data-calc="stokes"><p>Cargando.</p></div>
+```
+
+Prueba el mismo radio con la viscosidad del agua y con la de una crema. La diferencia explica por qué se espesa la fase continua.
+
+**Referencias.** Densidades: Codex CXS 210-1999 y CXS 33 (ed. 2015). Viscosidades en reposo: Dabbaghi et al. 2021, *Pharmaceutics* 13:1351, DOI [10.3390/pharmaceutics13091351](https://doi.org/10.3390/pharmaceutics13091351).

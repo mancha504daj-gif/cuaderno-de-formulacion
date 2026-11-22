@@ -1,0 +1,1097 @@
+{
+ "version": 2,
+ "clase": "laboratorio",
+ "titulo": "Vida útil con Arrhenius",
+ "bloques": {
+  "blocks": {
+   "languageVersion": 0,
+   "blocks": [
+    {
+     "type": "paso",
+     "fields": {
+      "TEXTO": "Pon lo que perdió tu activo a 40 °C y estima cuánto queda a otra temperatura."
+     },
+     "next": {
+      "block": {
+       "type": "entrada",
+       "fields": {
+        "VAR": "p",
+        "ETIQUETA": "Pérdida en un mes a 40 °C",
+        "UNIDAD": "%",
+        "MIN": 1,
+        "MAX": 30,
+        "PASO": 0.5,
+        "VALOR": 10
+       },
+       "next": {
+        "block": {
+         "type": "entrada",
+         "fields": {
+          "VAR": "Ea",
+          "ETIQUETA": "Energía de activación",
+          "UNIDAD": "kJ/mol",
+          "MIN": 40,
+          "MAX": 120,
+          "PASO": 1,
+          "VALOR": 80
+         },
+         "next": {
+          "block": {
+           "type": "entrada",
+           "fields": {
+            "VAR": "T",
+            "ETIQUETA": "Temperatura de almacenaje",
+            "UNIDAD": "°C",
+            "MIN": 5,
+            "MAX": 45,
+            "PASO": 1,
+            "VALOR": 25
+           },
+           "next": {
+            "block": {
+             "type": "entrada",
+             "fields": {
+              "VAR": "m",
+              "ETIQUETA": "Tiempo",
+              "UNIDAD": "meses",
+              "MIN": 0,
+              "MAX": 36,
+              "PASO": 1,
+              "VALOR": 12
+             },
+             "next": {
+              "block": {
+               "type": "calculo",
+               "fields": {
+                "VAR": "k40",
+                "ETIQUETA": "constante a 40 °C",
+                "UNIDAD": "1/mes"
+               },
+               "inputs": {
+                "EXPR": {
+                 "block": {
+                  "type": "operacion",
+                  "fields": {
+                   "OP": "*"
+                  },
+                  "inputs": {
+                   "A": {
+                    "block": {
+                     "type": "numero",
+                     "fields": {
+                      "V": -1
+                     }
+                    }
+                   },
+                   "B": {
+                    "block": {
+                     "type": "funcion",
+                     "fields": {
+                      "F": "ln"
+                     },
+                     "inputs": {
+                      "A": {
+                       "block": {
+                        "type": "operacion",
+                        "fields": {
+                         "OP": "-"
+                        },
+                        "inputs": {
+                         "A": {
+                          "block": {
+                           "type": "numero",
+                           "fields": {
+                            "V": 1
+                           }
+                          }
+                         },
+                         "B": {
+                          "block": {
+                           "type": "operacion",
+                           "fields": {
+                            "OP": "/"
+                           },
+                           "inputs": {
+                            "A": {
+                             "block": {
+                              "type": "variable",
+                              "fields": {
+                               "V": "p"
+                              }
+                             }
+                            },
+                            "B": {
+                             "block": {
+                              "type": "numero",
+                              "fields": {
+                               "V": 100
+                              }
+                             }
+                            }
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               },
+               "next": {
+                "block": {
+                 "type": "calculo",
+                 "fields": {
+                  "VAR": "a",
+                  "ETIQUETA": "cuánto cambia la constante entre 40 °C y T",
+                  "UNIDAD": ""
+                 },
+                 "inputs": {
+                  "EXPR": {
+                   "block": {
+                    "type": "funcion",
+                    "fields": {
+                     "F": "exp"
+                    },
+                    "inputs": {
+                     "A": {
+                      "block": {
+                       "type": "operacion",
+                       "fields": {
+                        "OP": "*"
+                       },
+                       "inputs": {
+                        "A": {
+                         "block": {
+                          "type": "operacion",
+                          "fields": {
+                           "OP": "/"
+                          },
+                          "inputs": {
+                           "A": {
+                            "block": {
+                             "type": "operacion",
+                             "fields": {
+                              "OP": "*"
+                             },
+                             "inputs": {
+                              "A": {
+                               "block": {
+                                "type": "variable",
+                                "fields": {
+                                 "V": "Ea"
+                                }
+                               }
+                              },
+                              "B": {
+                               "block": {
+                                "type": "numero",
+                                "fields": {
+                                 "V": 1000
+                                }
+                               }
+                              }
+                             }
+                            }
+                           },
+                           "B": {
+                            "block": {
+                             "type": "numero",
+                             "fields": {
+                              "V": 8.314
+                             }
+                            }
+                           }
+                          }
+                         }
+                        },
+                        "B": {
+                         "block": {
+                          "type": "operacion",
+                          "fields": {
+                           "OP": "-"
+                          },
+                          "inputs": {
+                           "A": {
+                            "block": {
+                             "type": "operacion",
+                             "fields": {
+                              "OP": "/"
+                             },
+                             "inputs": {
+                              "A": {
+                               "block": {
+                                "type": "numero",
+                                "fields": {
+                                 "V": 1
+                                }
+                               }
+                              },
+                              "B": {
+                               "block": {
+                                "type": "numero",
+                                "fields": {
+                                 "V": 313.15
+                                }
+                               }
+                              }
+                             }
+                            }
+                           },
+                           "B": {
+                            "block": {
+                             "type": "operacion",
+                             "fields": {
+                              "OP": "/"
+                             },
+                             "inputs": {
+                              "A": {
+                               "block": {
+                                "type": "numero",
+                                "fields": {
+                                 "V": 1
+                                }
+                               }
+                              },
+                              "B": {
+                               "block": {
+                                "type": "operacion",
+                                "fields": {
+                                 "OP": "+"
+                                },
+                                "inputs": {
+                                 "A": {
+                                  "block": {
+                                   "type": "variable",
+                                   "fields": {
+                                    "V": "T"
+                                   }
+                                  }
+                                 },
+                                 "B": {
+                                  "block": {
+                                   "type": "numero",
+                                   "fields": {
+                                    "V": 273.15
+                                   }
+                                  }
+                                 }
+                                }
+                               }
+                              }
+                             }
+                            }
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 },
+                 "next": {
+                  "block": {
+                   "type": "calculo",
+                   "fields": {
+                    "VAR": "k",
+                    "ETIQUETA": "constante a la temperatura T",
+                    "UNIDAD": "1/mes"
+                   },
+                   "inputs": {
+                    "EXPR": {
+                     "block": {
+                      "type": "operacion",
+                      "fields": {
+                       "OP": "*"
+                      },
+                      "inputs": {
+                       "A": {
+                        "block": {
+                         "type": "variable",
+                         "fields": {
+                          "V": "k40"
+                         }
+                        }
+                       },
+                       "B": {
+                        "block": {
+                         "type": "variable",
+                         "fields": {
+                          "V": "a"
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   },
+                   "next": {
+                    "block": {
+                     "type": "escena_vida",
+                     "inputs": {
+                      "queda": {
+                       "block": {
+                        "type": "operacion",
+                        "fields": {
+                         "OP": "*"
+                        },
+                        "inputs": {
+                         "A": {
+                          "block": {
+                           "type": "numero",
+                           "fields": {
+                            "V": 100
+                           }
+                          }
+                         },
+                         "B": {
+                          "block": {
+                           "type": "funcion",
+                           "fields": {
+                            "F": "exp"
+                           },
+                           "inputs": {
+                            "A": {
+                             "block": {
+                              "type": "operacion",
+                              "fields": {
+                               "OP": "*"
+                              },
+                              "inputs": {
+                               "A": {
+                                "block": {
+                                 "type": "operacion",
+                                 "fields": {
+                                  "OP": "*"
+                                 },
+                                 "inputs": {
+                                  "A": {
+                                   "block": {
+                                    "type": "numero",
+                                    "fields": {
+                                     "V": -1
+                                    }
+                                   }
+                                  },
+                                  "B": {
+                                   "block": {
+                                    "type": "variable",
+                                    "fields": {
+                                     "V": "k"
+                                    }
+                                   }
+                                  }
+                                 }
+                                }
+                               },
+                               "B": {
+                                "block": {
+                                 "type": "variable",
+                                 "fields": {
+                                  "V": "m"
+                                 }
+                                }
+                               }
+                              }
+                             }
+                            }
+                           }
+                          }
+                         }
+                        }
+                       }
+                      },
+                      "T": {
+                       "block": {
+                        "type": "variable",
+                        "fields": {
+                         "V": "T"
+                        }
+                       }
+                      }
+                     },
+                     "next": {
+                      "block": {
+                       "type": "salida",
+                       "fields": {
+                        "ETIQUETA": "queda del activo",
+                        "UNIDAD": "%",
+                        "DEC": 1
+                       },
+                       "inputs": {
+                        "EXPR": {
+                         "block": {
+                          "type": "operacion",
+                          "fields": {
+                           "OP": "*"
+                          },
+                          "inputs": {
+                           "A": {
+                            "block": {
+                             "type": "numero",
+                             "fields": {
+                              "V": 100
+                             }
+                            }
+                           },
+                           "B": {
+                            "block": {
+                             "type": "funcion",
+                             "fields": {
+                              "F": "exp"
+                             },
+                             "inputs": {
+                              "A": {
+                               "block": {
+                                "type": "operacion",
+                                "fields": {
+                                 "OP": "*"
+                                },
+                                "inputs": {
+                                 "A": {
+                                  "block": {
+                                   "type": "operacion",
+                                   "fields": {
+                                    "OP": "*"
+                                   },
+                                   "inputs": {
+                                    "A": {
+                                     "block": {
+                                      "type": "numero",
+                                      "fields": {
+                                       "V": -1
+                                      }
+                                     }
+                                    },
+                                    "B": {
+                                     "block": {
+                                      "type": "variable",
+                                      "fields": {
+                                       "V": "k"
+                                      }
+                                     }
+                                    }
+                                   }
+                                  }
+                                 },
+                                 "B": {
+                                  "block": {
+                                   "type": "variable",
+                                   "fields": {
+                                    "V": "m"
+                                   }
+                                  }
+                                 }
+                                }
+                               }
+                              }
+                             }
+                            }
+                           }
+                          }
+                         }
+                        }
+                       },
+                       "next": {
+                        "block": {
+                         "type": "curva",
+                         "fields": {
+                          "ETIQUETA": "% que queda",
+                          "VAR": "m"
+                         },
+                         "inputs": {
+                          "EXPR": {
+                           "block": {
+                            "type": "operacion",
+                            "fields": {
+                             "OP": "*"
+                            },
+                            "inputs": {
+                             "A": {
+                              "block": {
+                               "type": "numero",
+                               "fields": {
+                                "V": 100
+                               }
+                              }
+                             },
+                             "B": {
+                              "block": {
+                               "type": "funcion",
+                               "fields": {
+                                "F": "exp"
+                               },
+                               "inputs": {
+                                "A": {
+                                 "block": {
+                                  "type": "operacion",
+                                  "fields": {
+                                   "OP": "*"
+                                  },
+                                  "inputs": {
+                                   "A": {
+                                    "block": {
+                                     "type": "operacion",
+                                     "fields": {
+                                      "OP": "*"
+                                     },
+                                     "inputs": {
+                                      "A": {
+                                       "block": {
+                                        "type": "numero",
+                                        "fields": {
+                                         "V": -1
+                                        }
+                                       }
+                                      },
+                                      "B": {
+                                       "block": {
+                                        "type": "variable",
+                                        "fields": {
+                                         "V": "k"
+                                        }
+                                       }
+                                      }
+                                     }
+                                    }
+                                   },
+                                   "B": {
+                                    "block": {
+                                     "type": "variable",
+                                     "fields": {
+                                      "V": "m"
+                                     }
+                                    }
+                                   }
+                                  }
+                                 }
+                                }
+                               }
+                              }
+                             }
+                            }
+                           }
+                          }
+                         },
+                         "next": {
+                          "block": {
+                           "type": "si",
+                           "fields": {
+                            "OP": "<",
+                            "TEXTO": "Queda menos de 90 % del activo."
+                           },
+                           "inputs": {
+                            "A": {
+                             "block": {
+                              "type": "operacion",
+                              "fields": {
+                               "OP": "*"
+                              },
+                              "inputs": {
+                               "A": {
+                                "block": {
+                                 "type": "numero",
+                                 "fields": {
+                                  "V": 100
+                                 }
+                                }
+                               },
+                               "B": {
+                                "block": {
+                                 "type": "funcion",
+                                 "fields": {
+                                  "F": "exp"
+                                 },
+                                 "inputs": {
+                                  "A": {
+                                   "block": {
+                                    "type": "operacion",
+                                    "fields": {
+                                     "OP": "*"
+                                    },
+                                    "inputs": {
+                                     "A": {
+                                      "block": {
+                                       "type": "operacion",
+                                       "fields": {
+                                        "OP": "*"
+                                       },
+                                       "inputs": {
+                                        "A": {
+                                         "block": {
+                                          "type": "numero",
+                                          "fields": {
+                                           "V": -1
+                                          }
+                                         }
+                                        },
+                                        "B": {
+                                         "block": {
+                                          "type": "variable",
+                                          "fields": {
+                                           "V": "k"
+                                          }
+                                         }
+                                        }
+                                       }
+                                      }
+                                     },
+                                     "B": {
+                                      "block": {
+                                       "type": "variable",
+                                       "fields": {
+                                        "V": "m"
+                                       }
+                                      }
+                                     }
+                                    }
+                                   }
+                                  }
+                                 }
+                                }
+                               }
+                              }
+                             }
+                            },
+                            "B": {
+                             "block": {
+                              "type": "numero",
+                              "fields": {
+                               "V": 90
+                              }
+                             }
+                            }
+                           },
+                           "next": {
+                            "block": {
+                             "type": "pregunta",
+                             "fields": {
+                              "TEXTO": "Si sube la energía de activación, ¿qué pasa a 25 °C?",
+                              "OPCIONES": "dura más de lo que sugiere 40 °C; dura menos",
+                              "CORRECTA": 1,
+                              "EXPLICA": "Con más energía de activación, enfriar frena más la reacción."
+                             },
+                             "next": {
+                              "block": {
+                               "type": "supuesto",
+                               "fields": {
+                                "TEXTO": "Un solo mecanismo químico de primer orden y sin cambio de fase."
+                               },
+                               "next": {
+                                "block": {
+                                 "type": "supuesto",
+                                 "fields": {
+                                  "TEXTO": "No predice separación de la emulsión, cambios de viscosidad ni crecimiento microbiano."
+                                 },
+                                 "next": {
+                                  "block": {
+                                   "type": "supuesto",
+                                   "fields": {
+                                    "TEXTO": "La energía de activación se mide con tu fórmula. El valor inicial es solo un ejemplo."
+                                   },
+                                   "next": {
+                                    "block": {
+                                     "type": "fuente",
+                                     "fields": {
+                                      "TEXTO": "Ecuación de Arrhenius. Límites del ensayo acelerado: Cosmetics Europe y CTFA 2004 (sin DOI). Retinoides, primer orden y ensayo en tiempo real: Temova Rakuša et al. 2021, DOI 10.1111/jocd.13852."
+                                     }
+                                    }
+                                   }
+                                  }
+                                 }
+                                }
+                               }
+                              }
+                             }
+                            }
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     },
+     "x": 30,
+     "y": 30
+    }
+   ]
+  }
+ },
+ "documento": {
+  "partes": [
+   {
+    "t": "paso",
+    "texto": "Pon lo que perdió tu activo a 40 °C y estima cuánto queda a otra temperatura."
+   },
+   {
+    "t": "entrada",
+    "nombre": "p",
+    "etiqueta": "Pérdida en un mes a 40 °C",
+    "unidad": "%",
+    "min": 1,
+    "max": 30,
+    "paso": 0.5,
+    "valor": 10
+   },
+   {
+    "t": "entrada",
+    "nombre": "Ea",
+    "etiqueta": "Energía de activación",
+    "unidad": "kJ/mol",
+    "min": 40,
+    "max": 120,
+    "paso": 1,
+    "valor": 80
+   },
+   {
+    "t": "entrada",
+    "nombre": "T",
+    "etiqueta": "Temperatura de almacenaje",
+    "unidad": "°C",
+    "min": 5,
+    "max": 45,
+    "paso": 1,
+    "valor": 25
+   },
+   {
+    "t": "entrada",
+    "nombre": "m",
+    "etiqueta": "Tiempo",
+    "unidad": "meses",
+    "min": 0,
+    "max": 36,
+    "paso": 1,
+    "valor": 12
+   },
+   {
+    "t": "calculo",
+    "nombre": "k40",
+    "etiqueta": "constante a 40 °C",
+    "unidad": "1/mes",
+    "expr": {
+     "t": "bin",
+     "op": "*",
+     "a": {
+      "t": "num",
+      "v": -1
+     },
+     "b": {
+      "t": "fun",
+      "f": "ln",
+      "a": {
+       "t": "bin",
+       "op": "-",
+       "a": {
+        "t": "num",
+        "v": 1
+       },
+       "b": {
+        "t": "bin",
+        "op": "/",
+        "a": {
+         "t": "var",
+         "v": "p"
+        },
+        "b": {
+         "t": "num",
+         "v": 100
+        }
+       }
+      }
+     }
+    }
+   },
+   {
+    "t": "calculo",
+    "nombre": "a",
+    "etiqueta": "cuánto cambia la constante entre 40 °C y T",
+    "unidad": "",
+    "expr": {
+     "t": "fun",
+     "f": "exp",
+     "a": {
+      "t": "bin",
+      "op": "*",
+      "a": {
+       "t": "bin",
+       "op": "/",
+       "a": {
+        "t": "bin",
+        "op": "*",
+        "a": {
+         "t": "var",
+         "v": "Ea"
+        },
+        "b": {
+         "t": "num",
+         "v": 1000
+        }
+       },
+       "b": {
+        "t": "num",
+        "v": 8.314
+       }
+      },
+      "b": {
+       "t": "bin",
+       "op": "-",
+       "a": {
+        "t": "bin",
+        "op": "/",
+        "a": {
+         "t": "num",
+         "v": 1
+        },
+        "b": {
+         "t": "num",
+         "v": 313.15
+        }
+       },
+       "b": {
+        "t": "bin",
+        "op": "/",
+        "a": {
+         "t": "num",
+         "v": 1
+        },
+        "b": {
+         "t": "bin",
+         "op": "+",
+         "a": {
+          "t": "var",
+          "v": "T"
+         },
+         "b": {
+          "t": "num",
+          "v": 273.15
+         }
+        }
+       }
+      }
+     }
+    }
+   },
+   {
+    "t": "calculo",
+    "nombre": "k",
+    "etiqueta": "constante a la temperatura T",
+    "unidad": "1/mes",
+    "expr": {
+     "t": "bin",
+     "op": "*",
+     "a": {
+      "t": "var",
+      "v": "k40"
+     },
+     "b": {
+      "t": "var",
+      "v": "a"
+     }
+    }
+   },
+   {
+    "t": "escena",
+    "tipo": "vida",
+    "valores": {
+     "queda": {
+      "t": "bin",
+      "op": "*",
+      "a": {
+       "t": "num",
+       "v": 100
+      },
+      "b": {
+       "t": "fun",
+       "f": "exp",
+       "a": {
+        "t": "bin",
+        "op": "*",
+        "a": {
+         "t": "bin",
+         "op": "*",
+         "a": {
+          "t": "num",
+          "v": -1
+         },
+         "b": {
+          "t": "var",
+          "v": "k"
+         }
+        },
+        "b": {
+         "t": "var",
+         "v": "m"
+        }
+       }
+      }
+     },
+     "T": {
+      "t": "var",
+      "v": "T"
+     }
+    }
+   },
+   {
+    "t": "salida",
+    "etiqueta": "queda del activo",
+    "unidad": "%",
+    "dec": 1,
+    "expr": {
+     "t": "bin",
+     "op": "*",
+     "a": {
+      "t": "num",
+      "v": 100
+     },
+     "b": {
+      "t": "fun",
+      "f": "exp",
+      "a": {
+       "t": "bin",
+       "op": "*",
+       "a": {
+        "t": "bin",
+        "op": "*",
+        "a": {
+         "t": "num",
+         "v": -1
+        },
+        "b": {
+         "t": "var",
+         "v": "k"
+        }
+       },
+       "b": {
+        "t": "var",
+        "v": "m"
+       }
+      }
+     }
+    }
+   },
+   {
+    "t": "curva",
+    "etiqueta": "% que queda",
+    "variable": "m",
+    "expr": {
+     "t": "bin",
+     "op": "*",
+     "a": {
+      "t": "num",
+      "v": 100
+     },
+     "b": {
+      "t": "fun",
+      "f": "exp",
+      "a": {
+       "t": "bin",
+       "op": "*",
+       "a": {
+        "t": "bin",
+        "op": "*",
+        "a": {
+         "t": "num",
+         "v": -1
+        },
+        "b": {
+         "t": "var",
+         "v": "k"
+        }
+       },
+       "b": {
+        "t": "var",
+        "v": "m"
+       }
+      }
+     }
+    }
+   },
+   {
+    "t": "si",
+    "op": "<",
+    "a": {
+     "t": "bin",
+     "op": "*",
+     "a": {
+      "t": "num",
+      "v": 100
+     },
+     "b": {
+      "t": "fun",
+      "f": "exp",
+      "a": {
+       "t": "bin",
+       "op": "*",
+       "a": {
+        "t": "bin",
+        "op": "*",
+        "a": {
+         "t": "num",
+         "v": -1
+        },
+        "b": {
+         "t": "var",
+         "v": "k"
+        }
+       },
+       "b": {
+        "t": "var",
+        "v": "m"
+       }
+      }
+     }
+    },
+    "b": {
+     "t": "num",
+     "v": 90
+    },
+    "texto": "Queda menos de 90 % del activo."
+   },
+   {
+    "t": "pregunta",
+    "texto": "Si sube la energía de activación, ¿qué pasa a 25 °C?",
+    "opciones": "dura más de lo que sugiere 40 °C; dura menos",
+    "correcta": 1,
+    "explica": "Con más energía de activación, enfriar frena más la reacción."
+   },
+   {
+    "t": "supuesto",
+    "texto": "Un solo mecanismo químico de primer orden y sin cambio de fase."
+   },
+   {
+    "t": "supuesto",
+    "texto": "No predice separación de la emulsión, cambios de viscosidad ni crecimiento microbiano."
+   },
+   {
+    "t": "supuesto",
+    "texto": "La energía de activación se mide con tu fórmula. El valor inicial es solo un ejemplo."
+   },
+   {
+    "t": "fuente",
+    "texto": "Ecuación de Arrhenius. Límites del ensayo acelerado: Cosmetics Europe y CTFA 2004 (sin DOI). Retinoides, primer orden y ensayo en tiempo real: Temova Rakuša et al. 2021, DOI 10.1111/jocd.13852."
+   }
+  ]
+ }
+}

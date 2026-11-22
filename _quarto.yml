@@ -1,0 +1,45 @@
+project:
+  type: website
+  output-dir: _site
+  pre-render: herramientas/paginas.ts
+  resources: ["js/*.mjs", "datos/*.json", "laboratorios/*.json", "aspecto/*.json", "fotos/*"]
+  render: ["*.qmd", "fundamentos/*.qmd", "piel/*.qmd", "limpieza/*.qmd", "solar/*.qmd", "maquillaje/*.qmd", "cabello/*.qmd", "fragancias/*.qmd", "ejemplos/*.qmd", "calculadoras/*.qmd", "laboratorio/*.qmd", "ingredientes/*.md"]
+website:
+  title: "Cuaderno de formulación"
+  description: "Formulación cosmética con cálculos a la vista y fuentes citadas."
+  search: { location: sidebar, type: overlay }
+  sidebar:
+    style: docked
+    search: true
+    contents:
+      - { text: Inicio, href: index.qmd }
+      - text: "---"
+      - { text: Cuidado de la piel, href: piel/index.qmd }
+      - { text: Limpieza, href: limpieza/index.qmd }
+      - { text: Protección solar, href: solar/index.qmd }
+      - { text: Maquillaje, href: maquillaje/index.qmd }
+      - { text: Cabello, href: cabello/index.qmd }
+      - { text: Fragancias, href: fragancias/index.qmd }
+      - text: "---"
+      - { text: Emulsiones, href: fundamentos/emulsiones.qmd }
+      - { text: Loción de almendras, href: ejemplos/locion-de-almendras.qmd }
+      - { text: Calculadoras, href: calculadoras/index.qmd }
+      - { text: Laboratorios, href: laboratorios.qmd }
+      - { text: De dónde salen las fórmulas, href: modelos.qmd }
+      - { text: Ingredientes, href: ingredientes.qmd }
+      - text: "---"
+      - { text: Editor, href: editor.qmd }
+      - { text: Alcance, href: alcance.qmd }
+      - { text: Créditos de las fotos, href: creditos.qmd }
+lang: es
+format:
+  html:
+    theme: [default, css/estilo.scss]
+    toc: true
+    link-external-newwindow: false
+    include-after-body:
+      text: |
+        <script type="module">
+        const o = document.querySelector('meta[name="quarto:offset"]')?.content ?? "./";
+        await import(new URL(o + "js/sitio.mjs", location.href).href);
+        </script>

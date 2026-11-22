@@ -1,0 +1,53 @@
+---
+title: "Cabello"
+toc: false
+page-layout: full
+---
+
+```{=html}
+<figure class="cabeza" style="--color:#00616f"><div class="marco"><img src="../fotos/champu.jpg" alt="Champú sólido con espuma"></div><h1>Cabello</h1></figure>
+```
+
+## Por qué un catiónico acondiciona
+
+El punto isoeléctrico del cabello está cerca de pH 3.67. Al pH de un champú o acondicionador queda con carga negativa y atrae a los catiónicos, que dejan sus cadenas grasas hacia afuera y bajan la fricción.
+
+:::: {.modelo data-escena="cabello"}
+
+::: {.acto}
+Por encima de pH 3.67 la fibra queda negativa. Los catiónicos buscan esas cargas y dejan sus colas hacia afuera.
+:::
+
+::: {.acto}
+Cerca del punto isoeléctrico casi no hay carga, y se sueltan.
+:::
+
+::: {.acto}
+A más pH, más sitios negativos. Mueve tú el pH.
+:::
+
+::::
+
+No mezcles aniónicos y catiónicos en la misma fórmula sin ensayarlo: suelen precipitar.
+
+## Esqueleto de un acondicionador
+
+Rango de dos ejemplos tomados de patentes; úsalo como punto de partida.
+
+| Función | Ejemplo | % |
+|---|---|---|
+| alcohol graso | Cetyl o Stearyl Alcohol | 2.5 a 6.0 |
+| amidoamina | Stearamidopropyl Dimethylamine | 1.0 a 1.5 |
+| cuaternario | Distearyldimonium Chloride | 0.75 a 1.0 |
+| ajuste de pH | Citric Acid | 0.2 |
+
+## Límites europeos
+
+| Ingrediente | Con enjuague | Sin enjuague |
+|---|---|---|
+| Cetrimonium Chloride | 2.5 % | 1.0 % en cabello, 0.5 % en cara |
+| Behentrimonium Chloride | 5.0 % | 3.0 % |
+
+## Referencias
+
+Benson et al. 2019, DOI [10.1201/9780429190674](https://doi.org/10.1201/9780429190674), p. 157. Barel, Paye y Maibach 2009, DOI [10.1201/b15273](https://doi.org/10.1201/b15273), pp. 690-691. CosIng, Anexo III, entradas 286 y 287, exportación del 13-11-2026.

@@ -1,0 +1,98 @@
+---
+title: "Emulsiones"
+toc: false
+page-layout: full
+---
+
+```{=html}
+<figure class="cabeza" style="--color:#3f2463"><div class="marco"><img src="../fotos/burbuja.jpg" alt="Película de jabón con islas de colores"></div><h1>Emulsiones</h1></figure>
+```
+
+Una emulsión reparte gotas de un líquido dentro de otro con el que no se mezcla. Si el aceite queda en gotas, es O/W; si el agua queda en gotas, es W/O.
+
+## Quién decide el tipo
+
+Decide el emulsionante. La fase donde es más soluble tiende a quedar por fuera (regla de Bancroft). Una fórmula con 75 % de agua puede salir W/O si elegiste un emulsionante lipófilo.
+
+## HLB
+
+Griffin ordenó los emulsionantes no iónicos por el peso de su parte hidrófila. Para ésteres de polioles usó $HLB = 20(1 - S/A)$, con $S$ el índice de saponificación del éster y $A$ el índice de acidez del ácido graso. Para etoxilados usó $HLB = E/5$, con $E$ el porcentaje de óxido de etileno.
+
+Cada aceite pide un HLB. Las tablas no coinciden: la vaselina figura con 10.5 y con 7. Por eso la [calculadora](../calculadoras/hlb.qmd) trabaja con intervalos.
+
+## Por qué se separan
+
+:::: {.modelo data-escena="fallas"}
+
+::: {.acto}
+Una emulsión estable: gotas repartidas, que se cruzan sin unirse.
+:::
+
+::: {.acto}
+**Cremado.** Suben por ser más ligeras, y las grandes primero. Al agitar vuelven.
+:::
+
+::: {.acto}
+**Floculación.** Se agrupan sin fundirse. También vuelven al agitar.
+:::
+
+::: {.acto}
+**Coalescencia.** Se funden. Ya no hay vuelta.
+:::
+
+::: {.acto}
+**Maduración de Ostwald.** Las pequeñas se disuelven y alimentan a las grandes, sin tocarse.
+:::
+
+::: {.acto}
+**Inversión.** El aceite pasa a ser el medio y el agua queda en gotas.
+:::
+
+::::
+
+| Falla | Qué ocurre | ¿Vuelve al agitar? |
+|---|---|---|
+| Cremado o sedimentación | Las gotas suben o bajan por densidad | Sí |
+| Floculación | Las gotas se agrupan sin fundirse | Sí |
+| Coalescencia | Las gotas se funden | No |
+| Maduración de Ostwald | Las grandes crecen a costa de las pequeñas | No |
+| Inversión de fases | O/W pasa a W/O o al revés | No |
+
+La [calculadora de Stokes](../calculadoras/stokes.qmd) estima la primera fila. Las demás piden ensayo.
+
+## Por qué más gotas espesan
+
+:::: {.modelo data-escena="cizalla"}
+
+::: {.acto}
+Con 20 % de gotas, cada una encuentra por dónde pasar.
+:::
+
+::: {.acto}
+Con 45 % se estorban, y el mismo esfuerzo mueve menos.
+:::
+
+::: {.acto}
+Cerca del empaque máximo casi no fluye. Krieger y Dougherty lo escribieron así, con $\phi$ la fracción de gotas:
+
+$$\frac{\eta}{\eta_0} = \left(1 - \frac{\phi}{\phi_m}\right)^{-2.5\,\phi_m}$$
+
+[Abrir el laboratorio](../laboratorio/viscosidad-de-una-emulsion.qmd): busca dónde se dispara.
+
+[Abrir el laboratorio](../laboratorio/balanza-de-emulsionantes.qmd): elige el par de emulsionantes.
+:::
+
+::::
+
+Krieger y Dougherty 1959, DOI [10.1122/1.548848](https://doi.org/10.1122/1.548848). Es un modelo de esferas rígidas; una gota líquida se deforma y estorba menos.
+
+## Cómo saber qué tipo obtuviste
+
+1. Agrega un colorante hidrosoluble y mira al microscopio. Fondo coloreado: O/W. Gotas coloreadas: W/O.
+2. Diluye una muestra. La emulsión acepta su fase externa y se rompe con la interna.
+3. Mide la conductividad. Una O/W conduce; una W/O casi no.
+
+## Referencias
+
+Griffin 1949, *J. Soc. Cosmet. Chem.* 1:311 (sin DOI). Griffin 1954, 5:249 (sin DOI). Salager et al. 2020, DOI [10.3390/cosmetics7030057](https://doi.org/10.3390/cosmetics7030057). Baki 2023, *Introduction to Cosmetic Formulation and Technology*, 2.ª ed., ISBN 978-1-119-70977-0, pp. 69-72, 213-215 y 260.
+
