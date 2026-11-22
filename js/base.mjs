@@ -71,10 +71,10 @@ export function pincelada(g, x, y, dy, color, t) {
 
 export function botonPausa() {
   if (calma.matches || document.querySelector(".pausa")) return;
-  const b = h("button", { type: "button", class: "pausa", onclick: () => {
-    pausado = !pausado; b.textContent = pausado ? "Reanudar movimiento" : "Pausar movimiento";
+  const b = h("button", { type: "button", class: "pausa", "aria-label": "Pausar movimiento", title: "Pausar movimiento", onclick: () => {
+    pausado = !pausado; b.title = pausado ? "Reanudar movimiento" : "Pausar movimiento"; b.setAttribute("aria-label", b.title);
     document.documentElement.classList.toggle("pausado", pausado);
     for (const l of lienzos) l.arranca();
-  } }, "Pausar movimiento");
+  } });
   (document.querySelector("main") ?? document.body).append(b);
 }
