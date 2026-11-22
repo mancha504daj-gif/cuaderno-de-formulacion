@@ -1,0 +1,213 @@
+{
+ "version": 2,
+ "clase": "laboratorio",
+ "titulo": "Cremado de una emulsión",
+ "bloques": {
+  "blocks": {
+   "languageVersion": 0,
+   "blocks": [
+    {
+     "type": "paso",
+     "fields": {
+      "TEXTO": "Gotas de girasol en agua. Cambia el radio y la viscosidad, y mira la probeta."
+     },
+     "next": {
+      "block": {
+       "type": "entrada",
+       "fields": {
+        "VAR": "radio",
+        "ETIQUETA": "Radio de gota",
+        "UNIDAD": "µm",
+        "MIN": 0.5,
+        "MAX": 20,
+        "PASO": 0.5,
+        "VALOR": 1
+       },
+       "next": {
+        "block": {
+         "type": "entrada",
+         "fields": {
+          "VAR": "visc",
+          "ETIQUETA": "Viscosidad del medio",
+          "UNIDAD": "Pa s",
+          "MIN": 0.001,
+          "MAX": 0.2,
+          "PASO": 0.001,
+          "VALOR": 0.001
+         },
+         "next": {
+          "block": {
+           "type": "entrada",
+           "fields": {
+            "VAR": "dias",
+            "ETIQUETA": "Tiempo",
+            "UNIDAD": "días",
+            "MIN": 0,
+            "MAX": 30,
+            "PASO": 1,
+            "VALOR": 3
+           },
+           "next": {
+            "block": {
+             "type": "probeta",
+             "fields": {},
+             "inputs": {
+              "RADIO": {
+               "block": {
+                "type": "variable",
+                "fields": {
+                 "V": "radio"
+                }
+               }
+              },
+              "GOTA": {
+               "block": {
+                "type": "numero",
+                "fields": {
+                 "V": 919
+                }
+               }
+              },
+              "MEDIO": {
+               "block": {
+                "type": "numero",
+                "fields": {
+                 "V": 998
+                }
+               }
+              },
+              "VISC": {
+               "block": {
+                "type": "variable",
+                "fields": {
+                 "V": "visc"
+                }
+               }
+              },
+              "DIAS": {
+               "block": {
+                "type": "variable",
+                "fields": {
+                 "V": "dias"
+                }
+               }
+              }
+             },
+             "next": {
+              "block": {
+               "type": "pregunta",
+               "fields": {
+                "TEXTO": "Si la gota mide el doble de radio, ¿cuánto más rápido sube?",
+                "OPCIONES": "el doble; cuatro veces; ocho veces",
+                "CORRECTA": 2,
+                "EXPLICA": "La velocidad crece con el cuadrado del radio."
+               },
+               "next": {
+                "block": {
+                 "type": "supuesto",
+                 "fields": {
+                  "TEXTO": "La viscosidad del control es la del medio en reposo."
+                 },
+                 "next": {
+                  "block": {
+                   "type": "fuente",
+                   "fields": {
+                    "TEXTO": "Ley de Stokes. Densidad del girasol: Codex CXS 210-1999, 0.918 a 0.923 relativa; aquí 919 kg/m³."
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     },
+     "x": 30,
+     "y": 30
+    }
+   ]
+  }
+ },
+ "documento": {
+  "partes": [
+   {
+    "t": "paso",
+    "texto": "Gotas de girasol en agua. Cambia el radio y la viscosidad, y mira la probeta."
+   },
+   {
+    "t": "entrada",
+    "nombre": "radio",
+    "etiqueta": "Radio de gota",
+    "unidad": "µm",
+    "min": 0.5,
+    "max": 20,
+    "paso": 0.5,
+    "valor": 1
+   },
+   {
+    "t": "entrada",
+    "nombre": "visc",
+    "etiqueta": "Viscosidad del medio",
+    "unidad": "Pa s",
+    "min": 0.001,
+    "max": 0.2,
+    "paso": 0.001,
+    "valor": 0.001
+   },
+   {
+    "t": "entrada",
+    "nombre": "dias",
+    "etiqueta": "Tiempo",
+    "unidad": "días",
+    "min": 0,
+    "max": 30,
+    "paso": 1,
+    "valor": 3
+   },
+   {
+    "t": "probeta",
+    "radio": {
+     "t": "var",
+     "v": "radio"
+    },
+    "gota": {
+     "t": "num",
+     "v": 919
+    },
+    "medio": {
+     "t": "num",
+     "v": 998
+    },
+    "visc": {
+     "t": "var",
+     "v": "visc"
+    },
+    "dias": {
+     "t": "var",
+     "v": "dias"
+    }
+   },
+   {
+    "t": "pregunta",
+    "texto": "Si la gota mide el doble de radio, ¿cuánto más rápido sube?",
+    "opciones": "el doble; cuatro veces; ocho veces",
+    "correcta": 2,
+    "explica": "La velocidad crece con el cuadrado del radio."
+   },
+   {
+    "t": "supuesto",
+    "texto": "La viscosidad del control es la del medio en reposo."
+   },
+   {
+    "t": "fuente",
+    "texto": "Ley de Stokes. Densidad del girasol: Codex CXS 210-1999, 0.918 a 0.923 relativa; aquí 919 kg/m³."
+   }
+  ]
+ }
+}

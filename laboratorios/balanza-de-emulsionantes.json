@@ -1,0 +1,623 @@
+{
+ "version": 2,
+ "clase": "laboratorio",
+ "titulo": "Balanza de emulsionantes",
+ "bloques": {
+  "blocks": {
+   "languageVersion": 0,
+   "blocks": [
+    {
+     "type": "paso",
+     "fields": {
+      "TEXTO": "Equilibra la balanza: busca cuánto Span 80 pide este aceite."
+     },
+     "next": {
+      "block": {
+       "type": "entrada",
+       "fields": {
+        "VAR": "pide",
+        "ETIQUETA": "HLB que pide el aceite",
+        "UNIDAD": "",
+        "MIN": 5,
+        "MAX": 14.5,
+        "PASO": 0.1,
+        "VALOR": 10
+       },
+       "next": {
+        "block": {
+         "type": "entrada",
+         "fields": {
+          "VAR": "a",
+          "ETIQUETA": "Span 80 en la mezcla",
+          "UNIDAD": "%",
+          "MIN": 0,
+          "MAX": 100,
+          "PASO": 0.1,
+          "VALOR": 70
+         },
+         "next": {
+          "block": {
+           "type": "calculo",
+           "fields": {
+            "VAR": "H",
+            "ETIQUETA": "HLB de la mezcla",
+            "UNIDAD": ""
+           },
+           "inputs": {
+            "EXPR": {
+             "block": {
+              "type": "operacion",
+              "fields": {
+               "OP": "/"
+              },
+              "inputs": {
+               "A": {
+                "block": {
+                 "type": "operacion",
+                 "fields": {
+                  "OP": "+"
+                 },
+                 "inputs": {
+                  "A": {
+                   "block": {
+                    "type": "operacion",
+                    "fields": {
+                     "OP": "*"
+                    },
+                    "inputs": {
+                     "A": {
+                      "block": {
+                       "type": "variable",
+                       "fields": {
+                        "V": "a"
+                       }
+                      }
+                     },
+                     "B": {
+                      "block": {
+                       "type": "numero",
+                       "fields": {
+                        "V": 4.3
+                       }
+                      }
+                     }
+                    }
+                   }
+                  },
+                  "B": {
+                   "block": {
+                    "type": "operacion",
+                    "fields": {
+                     "OP": "*"
+                    },
+                    "inputs": {
+                     "A": {
+                      "block": {
+                       "type": "operacion",
+                       "fields": {
+                        "OP": "-"
+                       },
+                       "inputs": {
+                        "A": {
+                         "block": {
+                          "type": "numero",
+                          "fields": {
+                           "V": 100
+                          }
+                         }
+                        },
+                        "B": {
+                         "block": {
+                          "type": "variable",
+                          "fields": {
+                           "V": "a"
+                          }
+                         }
+                        }
+                       }
+                      }
+                     },
+                     "B": {
+                      "block": {
+                       "type": "numero",
+                       "fields": {
+                        "V": 15
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               },
+               "B": {
+                "block": {
+                 "type": "numero",
+                 "fields": {
+                  "V": 100
+                 }
+                }
+               }
+              }
+             }
+            }
+           },
+           "next": {
+            "block": {
+             "type": "escena_hlb",
+             "inputs": {
+              "a": {
+               "block": {
+                "type": "variable",
+                "fields": {
+                 "V": "a"
+                }
+               }
+              },
+              "pide": {
+               "block": {
+                "type": "variable",
+                "fields": {
+                 "V": "pide"
+                }
+               }
+              }
+             },
+             "next": {
+              "block": {
+               "type": "salida",
+               "fields": {
+                "ETIQUETA": "HLB de la mezcla",
+                "UNIDAD": "",
+                "DEC": 2
+               },
+               "inputs": {
+                "EXPR": {
+                 "block": {
+                  "type": "variable",
+                  "fields": {
+                   "V": "H"
+                  }
+                 }
+                }
+               },
+               "next": {
+                "block": {
+                 "type": "salida",
+                 "fields": {
+                  "ETIQUETA": "Span 80 que equilibra",
+                  "UNIDAD": "%",
+                  "DEC": 1
+                 },
+                 "inputs": {
+                  "EXPR": {
+                   "block": {
+                    "type": "operacion",
+                    "fields": {
+                     "OP": "/"
+                    },
+                    "inputs": {
+                     "A": {
+                      "block": {
+                       "type": "operacion",
+                       "fields": {
+                        "OP": "*"
+                       },
+                       "inputs": {
+                        "A": {
+                         "block": {
+                          "type": "numero",
+                          "fields": {
+                           "V": 100
+                          }
+                         }
+                        },
+                        "B": {
+                         "block": {
+                          "type": "operacion",
+                          "fields": {
+                           "OP": "-"
+                          },
+                          "inputs": {
+                           "A": {
+                            "block": {
+                             "type": "numero",
+                             "fields": {
+                              "V": 15
+                             }
+                            }
+                           },
+                           "B": {
+                            "block": {
+                             "type": "variable",
+                             "fields": {
+                              "V": "pide"
+                             }
+                            }
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     },
+                     "B": {
+                      "block": {
+                       "type": "operacion",
+                       "fields": {
+                        "OP": "-"
+                       },
+                       "inputs": {
+                        "A": {
+                         "block": {
+                          "type": "numero",
+                          "fields": {
+                           "V": 15
+                          }
+                         }
+                        },
+                        "B": {
+                         "block": {
+                          "type": "numero",
+                          "fields": {
+                           "V": 4.3
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 },
+                 "next": {
+                  "block": {
+                   "type": "si",
+                   "fields": {
+                    "OP": ">",
+                    "TEXTO": "Le sobra Tween: la mezcla es más hidrófila de lo que pide el aceite."
+                   },
+                   "inputs": {
+                    "A": {
+                     "block": {
+                      "type": "operacion",
+                      "fields": {
+                       "OP": "-"
+                      },
+                      "inputs": {
+                       "A": {
+                        "block": {
+                         "type": "variable",
+                         "fields": {
+                          "V": "H"
+                         }
+                        }
+                       },
+                       "B": {
+                        "block": {
+                         "type": "variable",
+                         "fields": {
+                          "V": "pide"
+                         }
+                        }
+                       }
+                      }
+                     }
+                    },
+                    "B": {
+                     "block": {
+                      "type": "numero",
+                      "fields": {
+                       "V": 0.5
+                      }
+                     }
+                    }
+                   },
+                   "next": {
+                    "block": {
+                     "type": "si",
+                     "fields": {
+                      "OP": ">",
+                      "TEXTO": "Le sobra Span: la mezcla es más lipófila de lo que pide el aceite."
+                     },
+                     "inputs": {
+                      "A": {
+                       "block": {
+                        "type": "operacion",
+                        "fields": {
+                         "OP": "-"
+                        },
+                        "inputs": {
+                         "A": {
+                          "block": {
+                           "type": "variable",
+                           "fields": {
+                            "V": "pide"
+                           }
+                          }
+                         },
+                         "B": {
+                          "block": {
+                           "type": "variable",
+                           "fields": {
+                            "V": "H"
+                           }
+                          }
+                         }
+                        }
+                       }
+                      },
+                      "B": {
+                       "block": {
+                        "type": "numero",
+                        "fields": {
+                         "V": 0.5
+                        }
+                       }
+                      }
+                     },
+                     "next": {
+                      "block": {
+                       "type": "pregunta",
+                       "fields": {
+                        "TEXTO": "Con un aceite que pide HLB 10, ¿cuánto Span 80 equilibra?",
+                        "OPCIONES": "30 %; 46.7 %; 60 %",
+                        "CORRECTA": 2,
+                        "EXPLICA": "(15 − 10)/(15 − 4.3) = 0.467."
+                       },
+                       "next": {
+                        "block": {
+                         "type": "supuesto",
+                         "fields": {
+                          "TEXTO": "El HLB de una mezcla es el promedio por masa de los dos."
+                         },
+                         "next": {
+                          "block": {
+                           "type": "supuesto",
+                           "fields": {
+                            "TEXTO": "Es una guía empírica: no predice la estabilidad. Griffin dio una precisión cercana a ±1."
+                           },
+                           "next": {
+                            "block": {
+                             "type": "fuente",
+                             "fields": {
+                              "TEXTO": "Griffin 1949, J. Soc. Cosmet. Chem. 1:311, y 1954, 5:249 (sin DOI). Span 80 = 4.3 y Tween 80 = 15.0, en los datos del sitio."
+                             }
+                            }
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     },
+     "x": 30,
+     "y": 30
+    }
+   ]
+  }
+ },
+ "documento": {
+  "partes": [
+   {
+    "t": "paso",
+    "texto": "Equilibra la balanza: busca cuánto Span 80 pide este aceite."
+   },
+   {
+    "t": "entrada",
+    "nombre": "pide",
+    "etiqueta": "HLB que pide el aceite",
+    "unidad": "",
+    "min": 5,
+    "max": 14.5,
+    "paso": 0.1,
+    "valor": 10
+   },
+   {
+    "t": "entrada",
+    "nombre": "a",
+    "etiqueta": "Span 80 en la mezcla",
+    "unidad": "%",
+    "min": 0,
+    "max": 100,
+    "paso": 0.1,
+    "valor": 70
+   },
+   {
+    "t": "calculo",
+    "nombre": "H",
+    "etiqueta": "HLB de la mezcla",
+    "unidad": "",
+    "expr": {
+     "t": "bin",
+     "op": "/",
+     "a": {
+      "t": "bin",
+      "op": "+",
+      "a": {
+       "t": "bin",
+       "op": "*",
+       "a": {
+        "t": "var",
+        "v": "a"
+       },
+       "b": {
+        "t": "num",
+        "v": 4.3
+       }
+      },
+      "b": {
+       "t": "bin",
+       "op": "*",
+       "a": {
+        "t": "bin",
+        "op": "-",
+        "a": {
+         "t": "num",
+         "v": 100
+        },
+        "b": {
+         "t": "var",
+         "v": "a"
+        }
+       },
+       "b": {
+        "t": "num",
+        "v": 15
+       }
+      }
+     },
+     "b": {
+      "t": "num",
+      "v": 100
+     }
+    }
+   },
+   {
+    "t": "escena",
+    "tipo": "hlb",
+    "valores": {
+     "a": {
+      "t": "var",
+      "v": "a"
+     },
+     "pide": {
+      "t": "var",
+      "v": "pide"
+     }
+    }
+   },
+   {
+    "t": "salida",
+    "etiqueta": "HLB de la mezcla",
+    "unidad": "",
+    "dec": 2,
+    "expr": {
+     "t": "var",
+     "v": "H"
+    }
+   },
+   {
+    "t": "salida",
+    "etiqueta": "Span 80 que equilibra",
+    "unidad": "%",
+    "dec": 1,
+    "expr": {
+     "t": "bin",
+     "op": "/",
+     "a": {
+      "t": "bin",
+      "op": "*",
+      "a": {
+       "t": "num",
+       "v": 100
+      },
+      "b": {
+       "t": "bin",
+       "op": "-",
+       "a": {
+        "t": "num",
+        "v": 15
+       },
+       "b": {
+        "t": "var",
+        "v": "pide"
+       }
+      }
+     },
+     "b": {
+      "t": "bin",
+      "op": "-",
+      "a": {
+       "t": "num",
+       "v": 15
+      },
+      "b": {
+       "t": "num",
+       "v": 4.3
+      }
+     }
+    }
+   },
+   {
+    "t": "si",
+    "op": ">",
+    "a": {
+     "t": "bin",
+     "op": "-",
+     "a": {
+      "t": "var",
+      "v": "H"
+     },
+     "b": {
+      "t": "var",
+      "v": "pide"
+     }
+    },
+    "b": {
+     "t": "num",
+     "v": 0.5
+    },
+    "texto": "Le sobra Tween: la mezcla es más hidrófila de lo que pide el aceite."
+   },
+   {
+    "t": "si",
+    "op": ">",
+    "a": {
+     "t": "bin",
+     "op": "-",
+     "a": {
+      "t": "var",
+      "v": "pide"
+     },
+     "b": {
+      "t": "var",
+      "v": "H"
+     }
+    },
+    "b": {
+     "t": "num",
+     "v": 0.5
+    },
+    "texto": "Le sobra Span: la mezcla es más lipófila de lo que pide el aceite."
+   },
+   {
+    "t": "pregunta",
+    "texto": "Con un aceite que pide HLB 10, ¿cuánto Span 80 equilibra?",
+    "opciones": "30 %; 46.7 %; 60 %",
+    "correcta": 2,
+    "explica": "(15 − 10)/(15 − 4.3) = 0.467."
+   },
+   {
+    "t": "supuesto",
+    "texto": "El HLB de una mezcla es el promedio por masa de los dos."
+   },
+   {
+    "t": "supuesto",
+    "texto": "Es una guía empírica: no predice la estabilidad. Griffin dio una precisión cercana a ±1."
+   },
+   {
+    "t": "fuente",
+    "texto": "Griffin 1949, J. Soc. Cosmet. Chem. 1:311, y 1954, 5:249 (sin DOI). Span 80 = 4.3 y Tween 80 = 15.0, en los datos del sitio."
+   }
+  ]
+ }
+}

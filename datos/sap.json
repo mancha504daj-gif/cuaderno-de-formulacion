@@ -1,0 +1,170 @@
+[
+ {
+  "nombre": "coco",
+  "inci": "Cocos Nucifera Oil",
+  "min": 248,
+  "max": 265,
+  "fuente": "Codex CXS 210-1999 (rev. 2015) Tablas 1 y 2 https://www.fao.org/input/download/standards/336/CXS_210e_2015.pdf"
+ },
+ {
+  "nombre": "babasu",
+  "inci": "Orbignya Oleifera Seed Oil",
+  "min": 245,
+  "max": 256,
+  "fuente": "Codex CXS 210-1999 (rev. 2015) Tablas 1 y 2 https://www.fao.org/input/download/standards/336/CXS_210e_2015.pdf"
+ },
+ {
+  "nombre": "palmiste",
+  "inci": "Elaeis Guineensis Kernel Oil",
+  "min": 230,
+  "max": 254,
+  "fuente": "Codex CXS 210-1999 (rev. 2015) Tablas 1 y 2 https://www.fao.org/input/download/standards/336/CXS_210e_2015.pdf"
+ },
+ {
+  "nombre": "palma",
+  "inci": "Elaeis Guineensis Oil",
+  "min": 190,
+  "max": 209,
+  "fuente": "Codex CXS 210-1999 (rev. 2015) Tablas 1 y 2 https://www.fao.org/input/download/standards/336/CXS_210e_2015.pdf"
+ },
+ {
+  "nombre": "oleina de palma",
+  "inci": "Elaeis Guineensis Oil (fraccion oleina; verificar INCI)",
+  "min": 194,
+  "max": 202,
+  "fuente": "Codex CXS 210-1999 (rev. 2015) Tablas 1 y 2 https://www.fao.org/input/download/standards/336/CXS_210e_2015.pdf"
+ },
+ {
+  "nombre": "estearina de palma",
+  "inci": "Elaeis Guineensis Oil (fraccion estearina; verificar INCI)",
+  "min": 193,
+  "max": 205,
+  "fuente": "Codex CXS 210-1999 (rev. 2015) Tablas 1 y 2 https://www.fao.org/input/download/standards/336/CXS_210e_2015.pdf"
+ },
+ {
+  "nombre": "cacahuate (mani)",
+  "inci": "Arachis Hypogaea Oil",
+  "min": 187,
+  "max": 196,
+  "fuente": "Codex CXS 210-1999 (rev. 2015) Tablas 1 y 2 https://www.fao.org/input/download/standards/336/CXS_210e_2015.pdf"
+ },
+ {
+  "nombre": "algodón",
+  "inci": "Gossypium Herbaceum Seed Oil",
+  "min": 189,
+  "max": 198,
+  "fuente": "Codex CXS 210-1999 (rev. 2015) Tablas 1 y 2 https://www.fao.org/input/download/standards/336/CXS_210e_2015.pdf"
+ },
+ {
+  "nombre": "pepita de uva",
+  "inci": "Vitis Vinifera Seed Oil",
+  "min": 188,
+  "max": 194,
+  "fuente": "Codex CXS 210-1999 (rev. 2015) Tablas 1 y 2 https://www.fao.org/input/download/standards/336/CXS_210e_2015.pdf"
+ },
+ {
+  "nombre": "maíz",
+  "inci": "Zea Mays Germ Oil",
+  "min": 187,
+  "max": 195,
+  "fuente": "Codex CXS 210-1999 (rev. 2015) Tablas 1 y 2 https://www.fao.org/input/download/standards/336/CXS_210e_2015.pdf"
+ },
+ {
+  "nombre": "colza bajo erucico (canola)",
+  "inci": "Canola Oil",
+  "min": 182,
+  "max": 193,
+  "fuente": "Codex CXS 210-1999 (rev. 2015) Tablas 1 y 2 https://www.fao.org/input/download/standards/336/CXS_210e_2015.pdf"
+ },
+ {
+  "nombre": "salvado de arroz",
+  "inci": "Oryza Sativa Bran Oil",
+  "min": 180,
+  "max": 199,
+  "fuente": "Codex CXS 210-1999 (rev. 2015) Tablas 1 y 2 https://www.fao.org/input/download/standards/336/CXS_210e_2015.pdf"
+ },
+ {
+  "nombre": "cártamo",
+  "inci": "Carthamus Tinctorius Seed Oil",
+  "min": 186,
+  "max": 198,
+  "fuente": "Codex CXS 210-1999 (rev. 2015) Tablas 1 y 2 https://www.fao.org/input/download/standards/336/CXS_210e_2015.pdf"
+ },
+ {
+  "nombre": "cártamo alto oleico",
+  "inci": "Carthamus Tinctorius Seed Oil (alto oleico)",
+  "min": 186,
+  "max": 194,
+  "fuente": "Codex CXS 210-1999 (rev. 2015) Tablas 1 y 2 https://www.fao.org/input/download/standards/336/CXS_210e_2015.pdf"
+ },
+ {
+  "nombre": "ajonjoli (sésamo)",
+  "inci": "Sesamum Indicum Seed Oil",
+  "min": 186,
+  "max": 195,
+  "fuente": "Codex CXS 210-1999 (rev. 2015) Tablas 1 y 2 https://www.fao.org/input/download/standards/336/CXS_210e_2015.pdf"
+ },
+ {
+  "nombre": "soya",
+  "inci": "Glycine Soja Oil",
+  "min": 189,
+  "max": 195,
+  "fuente": "Codex CXS 210-1999 (rev. 2015) Tablas 1 y 2 https://www.fao.org/input/download/standards/336/CXS_210e_2015.pdf"
+ },
+ {
+  "nombre": "girasol",
+  "inci": "Helianthus Annuus Seed Oil",
+  "min": 188,
+  "max": 194,
+  "fuente": "Codex CXS 210-1999 (rev. 2015) Tablas 1 y 2 https://www.fao.org/input/download/standards/336/CXS_210e_2015.pdf"
+ },
+ {
+  "nombre": "girasol alto oleico",
+  "inci": "Helianthus Annuus Seed Oil (alto oleico)",
+  "min": 182,
+  "max": 194,
+  "fuente": "Codex CXS 210-1999 (rev. 2015) Tablas 1 y 2 https://www.fao.org/input/download/standards/336/CXS_210e_2015.pdf"
+ },
+ {
+  "nombre": "girasol medio oleico",
+  "inci": "Helianthus Annuus Seed Oil (medio oleico)",
+  "min": 190,
+  "max": 191,
+  "fuente": "Codex CXS 210-1999 (rev. 2015) Tablas 1 y 2 https://www.fao.org/input/download/standards/336/CXS_210e_2015.pdf"
+ },
+ {
+  "nombre": "oliva (virgen / refinado / oliva)",
+  "inci": "Olea Europaea Fruit Oil",
+  "min": 184,
+  "max": 196,
+  "fuente": "Codex CXS 33-1981 (rev. 2015) Sec. 3 y Apendice 3 https://www.fao.org/input/download/standards/88/CXS_033e_2015.pdf"
+ },
+ {
+  "nombre": "orujo de oliva",
+  "inci": "Olea Europaea Fruit Oil (orujo; verificar INCI)",
+  "min": 182,
+  "max": 193,
+  "fuente": "Codex CXS 33-1981 (rev. 2015) Sec. 3 y Apendice 3 https://www.fao.org/input/download/standards/88/CXS_033e_2015.pdf"
+ },
+ {
+  "nombre": "manteca de cerdo",
+  "inci": "Lard",
+  "min": 192,
+  "max": 203,
+  "fuente": "Codex CXS 211-1999 (rev. 2015) Sec. 3 y Apendice 2 https://www.fao.org/input/download/standards/337/CXS_211e_2015.pdf"
+ },
+ {
+  "nombre": "sebo comestible",
+  "inci": "Tallow",
+  "min": 190,
+  "max": 202,
+  "fuente": "Codex CXS 211-1999 (rev. 2015) Sec. 3 y Apendice 2 https://www.fao.org/input/download/standards/337/CXS_211e_2015.pdf"
+ },
+ {
+  "nombre": "ricino",
+  "inci": "Ricinus Communis Seed Oil",
+  "min": 176,
+  "max": 185,
+  "fuente": "SAP: JECFA Castor Oil (27a JECFA 1983; FNP 52) https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-120.pdf ; ricinoleico 85-92 % (especificacion de proveedor BP/Ph. Eur.) https://www.itwreagents.com/download_file/tds/144564/en/td"
+ }
+]

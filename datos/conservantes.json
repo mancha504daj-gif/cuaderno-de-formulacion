@@ -1,0 +1,24 @@
+[
+ {
+  "inci": "Benzoic Acid; Sodium Benzoate",
+  "nombre": "ácido benzoico / benzoato sódico",
+  "pka": 4.2,
+  "limite": 0.5,
+  "anexo": "V/1",
+  "sal": "benzoato de sodio",
+  "mAcido": 122.12,
+  "mSal": 144.1,
+  "fuente": "pKa: PubChem. Límite: Reg. (CE) 1223/2009, texto consolidado al 18-05-2026"
+ },
+ {
+  "inci": "Sorbic Acid; Potassium Sorbate",
+  "nombre": "ácido sórbico / sorbato potásico",
+  "pka": 4.76,
+  "limite": 0.6,
+  "anexo": "V/4",
+  "sal": "sorbato de potasio",
+  "mAcido": 112.13,
+  "mSal": 150.22,
+  "fuente": "pKa: PubChem. Límite: Reg. (CE) 1223/2009, texto consolidado al 18-05-2026"
+ }
+]

@@ -1,0 +1,511 @@
+{
+ "version": 2,
+ "clase": "laboratorio",
+ "titulo": "Conservante y pH",
+ "bloques": {
+  "blocks": {
+   "languageVersion": 0,
+   "blocks": [
+    {
+     "type": "paso",
+     "fields": {
+      "TEXTO": "Busca el pH que deja activa la mitad del ácido sórbico."
+     },
+     "next": {
+      "block": {
+       "type": "entrada",
+       "fields": {
+        "VAR": "pH",
+        "ETIQUETA": "pH del producto",
+        "UNIDAD": "",
+        "MIN": 3,
+        "MAX": 8,
+        "PASO": 0.1,
+        "VALOR": 5.5
+       },
+       "next": {
+        "block": {
+         "type": "entrada",
+         "fields": {
+          "VAR": "pKa",
+          "ETIQUETA": "pKa del ácido",
+          "UNIDAD": "",
+          "MIN": 2,
+          "MAX": 7,
+          "PASO": 0.01,
+          "VALOR": 4.76
+         },
+         "next": {
+          "block": {
+           "type": "escena_acido",
+           "inputs": {
+            "pH": {
+             "block": {
+              "type": "variable",
+              "fields": {
+               "V": "pH"
+              }
+             }
+            },
+            "pKa": {
+             "block": {
+              "type": "variable",
+              "fields": {
+               "V": "pKa"
+              }
+             }
+            }
+           },
+           "next": {
+            "block": {
+             "type": "salida",
+             "fields": {
+              "ETIQUETA": "del ácido queda sin disociar",
+              "UNIDAD": "%",
+              "DEC": 1
+             },
+             "inputs": {
+              "EXPR": {
+               "block": {
+                "type": "operacion",
+                "fields": {
+                 "OP": "/"
+                },
+                "inputs": {
+                 "A": {
+                  "block": {
+                   "type": "numero",
+                   "fields": {
+                    "V": 100
+                   }
+                  }
+                 },
+                 "B": {
+                  "block": {
+                   "type": "operacion",
+                   "fields": {
+                    "OP": "+"
+                   },
+                   "inputs": {
+                    "A": {
+                     "block": {
+                      "type": "numero",
+                      "fields": {
+                       "V": 1
+                      }
+                     }
+                    },
+                    "B": {
+                     "block": {
+                      "type": "operacion",
+                      "fields": {
+                       "OP": "^"
+                      },
+                      "inputs": {
+                       "A": {
+                        "block": {
+                         "type": "numero",
+                         "fields": {
+                          "V": 10
+                         }
+                        }
+                       },
+                       "B": {
+                        "block": {
+                         "type": "operacion",
+                         "fields": {
+                          "OP": "-"
+                         },
+                         "inputs": {
+                          "A": {
+                           "block": {
+                            "type": "variable",
+                            "fields": {
+                             "V": "pH"
+                            }
+                           }
+                          },
+                          "B": {
+                           "block": {
+                            "type": "variable",
+                            "fields": {
+                             "V": "pKa"
+                            }
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             },
+             "next": {
+              "block": {
+               "type": "curva",
+               "fields": {
+                "ETIQUETA": "% sin disociar",
+                "VAR": "pH"
+               },
+               "inputs": {
+                "EXPR": {
+                 "block": {
+                  "type": "operacion",
+                  "fields": {
+                   "OP": "/"
+                  },
+                  "inputs": {
+                   "A": {
+                    "block": {
+                     "type": "numero",
+                     "fields": {
+                      "V": 100
+                     }
+                    }
+                   },
+                   "B": {
+                    "block": {
+                     "type": "operacion",
+                     "fields": {
+                      "OP": "+"
+                     },
+                     "inputs": {
+                      "A": {
+                       "block": {
+                        "type": "numero",
+                        "fields": {
+                         "V": 1
+                        }
+                       }
+                      },
+                      "B": {
+                       "block": {
+                        "type": "operacion",
+                        "fields": {
+                         "OP": "^"
+                        },
+                        "inputs": {
+                         "A": {
+                          "block": {
+                           "type": "numero",
+                           "fields": {
+                            "V": 10
+                           }
+                          }
+                         },
+                         "B": {
+                          "block": {
+                           "type": "operacion",
+                           "fields": {
+                            "OP": "-"
+                           },
+                           "inputs": {
+                            "A": {
+                             "block": {
+                              "type": "variable",
+                              "fields": {
+                               "V": "pH"
+                              }
+                             }
+                            },
+                            "B": {
+                             "block": {
+                              "type": "variable",
+                              "fields": {
+                               "V": "pKa"
+                              }
+                             }
+                            }
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               },
+               "next": {
+                "block": {
+                 "type": "si",
+                 "fields": {
+                  "OP": ">",
+                  "TEXTO": "Queda menos de 10 % sin disociar. Baja el pH."
+                 },
+                 "inputs": {
+                  "A": {
+                   "block": {
+                    "type": "operacion",
+                    "fields": {
+                     "OP": "-"
+                    },
+                    "inputs": {
+                     "A": {
+                      "block": {
+                       "type": "variable",
+                       "fields": {
+                        "V": "pH"
+                       }
+                      }
+                     },
+                     "B": {
+                      "block": {
+                       "type": "variable",
+                       "fields": {
+                        "V": "pKa"
+                       }
+                      }
+                     }
+                    }
+                   }
+                  },
+                  "B": {
+                   "block": {
+                    "type": "numero",
+                    "fields": {
+                     "V": 1
+                    }
+                   }
+                  }
+                 },
+                 "next": {
+                  "block": {
+                   "type": "pregunta",
+                   "fields": {
+                    "TEXTO": "¿A qué pH queda activa la mitad?",
+                    "OPCIONES": "3.0; 4.76; 7.0",
+                    "CORRECTA": 2,
+                    "EXPLICA": "Cuando el pH iguala al pKa, la mitad está sin disociar."
+                   },
+                   "next": {
+                    "block": {
+                     "type": "supuesto",
+                     "fields": {
+                      "TEXTO": "El ácido es débil y pierde un solo protón."
+                     },
+                     "next": {
+                      "block": {
+                       "type": "supuesto",
+                       "fields": {
+                        "TEXTO": "La solución se comporta como ideal y a 25 °C."
+                       },
+                       "next": {
+                        "block": {
+                         "type": "supuesto",
+                         "fields": {
+                          "TEXTO": "Todo el ácido está en el agua; en una emulsión, parte pasa al aceite."
+                         },
+                         "next": {
+                          "block": {
+                           "type": "fuente",
+                           "fields": {
+                            "TEXTO": "Henderson-Hasselbalch; pKa del ácido sórbico, PubChem CID 643460."
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     },
+     "x": 30,
+     "y": 30
+    }
+   ]
+  }
+ },
+ "documento": {
+  "partes": [
+   {
+    "t": "paso",
+    "texto": "Busca el pH que deja activa la mitad del ácido sórbico."
+   },
+   {
+    "t": "entrada",
+    "nombre": "pH",
+    "etiqueta": "pH del producto",
+    "unidad": "",
+    "min": 3,
+    "max": 8,
+    "paso": 0.1,
+    "valor": 5.5
+   },
+   {
+    "t": "entrada",
+    "nombre": "pKa",
+    "etiqueta": "pKa del ácido",
+    "unidad": "",
+    "min": 2,
+    "max": 7,
+    "paso": 0.01,
+    "valor": 4.76
+   },
+   {
+    "t": "escena",
+    "tipo": "acido",
+    "valores": {
+     "pH": {
+      "t": "var",
+      "v": "pH"
+     },
+     "pKa": {
+      "t": "var",
+      "v": "pKa"
+     }
+    }
+   },
+   {
+    "t": "salida",
+    "etiqueta": "del ácido queda sin disociar",
+    "unidad": "%",
+    "dec": 1,
+    "expr": {
+     "t": "bin",
+     "op": "/",
+     "a": {
+      "t": "num",
+      "v": 100
+     },
+     "b": {
+      "t": "bin",
+      "op": "+",
+      "a": {
+       "t": "num",
+       "v": 1
+      },
+      "b": {
+       "t": "bin",
+       "op": "^",
+       "a": {
+        "t": "num",
+        "v": 10
+       },
+       "b": {
+        "t": "bin",
+        "op": "-",
+        "a": {
+         "t": "var",
+         "v": "pH"
+        },
+        "b": {
+         "t": "var",
+         "v": "pKa"
+        }
+       }
+      }
+     }
+    }
+   },
+   {
+    "t": "curva",
+    "etiqueta": "% sin disociar",
+    "variable": "pH",
+    "expr": {
+     "t": "bin",
+     "op": "/",
+     "a": {
+      "t": "num",
+      "v": 100
+     },
+     "b": {
+      "t": "bin",
+      "op": "+",
+      "a": {
+       "t": "num",
+       "v": 1
+      },
+      "b": {
+       "t": "bin",
+       "op": "^",
+       "a": {
+        "t": "num",
+        "v": 10
+       },
+       "b": {
+        "t": "bin",
+        "op": "-",
+        "a": {
+         "t": "var",
+         "v": "pH"
+        },
+        "b": {
+         "t": "var",
+         "v": "pKa"
+        }
+       }
+      }
+     }
+    }
+   },
+   {
+    "t": "si",
+    "op": ">",
+    "a": {
+     "t": "bin",
+     "op": "-",
+     "a": {
+      "t": "var",
+      "v": "pH"
+     },
+     "b": {
+      "t": "var",
+      "v": "pKa"
+     }
+    },
+    "b": {
+     "t": "num",
+     "v": 1
+    },
+    "texto": "Queda menos de 10 % sin disociar. Baja el pH."
+   },
+   {
+    "t": "pregunta",
+    "texto": "¿A qué pH queda activa la mitad?",
+    "opciones": "3.0; 4.76; 7.0",
+    "correcta": 2,
+    "explica": "Cuando el pH iguala al pKa, la mitad está sin disociar."
+   },
+   {
+    "t": "supuesto",
+    "texto": "El ácido es débil y pierde un solo protón."
+   },
+   {
+    "t": "supuesto",
+    "texto": "La solución se comporta como ideal y a 25 °C."
+   },
+   {
+    "t": "supuesto",
+    "texto": "Todo el ácido está en el agua; en una emulsión, parte pasa al aceite."
+   },
+   {
+    "t": "fuente",
+    "texto": "Henderson-Hasselbalch; pKa del ácido sórbico, PubChem CID 643460."
+   }
+  ]
+ }
+}

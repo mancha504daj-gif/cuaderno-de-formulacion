@@ -1,0 +1,473 @@
+{
+ "version": 2,
+ "clase": "laboratorio",
+ "titulo": "Viscosidad de una emulsión",
+ "bloques": {
+  "blocks": {
+   "languageVersion": 0,
+   "blocks": [
+    {
+     "type": "paso",
+     "fields": {
+      "TEXTO": "Agrega gotas y mira cuánto se frena el flujo con el mismo esfuerzo."
+     },
+     "next": {
+      "block": {
+       "type": "entrada",
+       "fields": {
+        "VAR": "fi",
+        "ETIQUETA": "Fracción de gotas en volumen",
+        "UNIDAD": "",
+        "MIN": 0,
+        "MAX": 0.6,
+        "PASO": 0.01,
+        "VALOR": 0.2
+       },
+       "next": {
+        "block": {
+         "type": "entrada",
+         "fields": {
+          "VAR": "fm",
+          "ETIQUETA": "Empaque máximo",
+          "UNIDAD": "",
+          "MIN": 0.62,
+          "MAX": 0.74,
+          "PASO": 0.01,
+          "VALOR": 0.64
+         },
+         "next": {
+          "block": {
+           "type": "escena_cizalla",
+           "inputs": {
+            "fi": {
+             "block": {
+              "type": "variable",
+              "fields": {
+               "V": "fi"
+              }
+             }
+            },
+            "fm": {
+             "block": {
+              "type": "variable",
+              "fields": {
+               "V": "fm"
+              }
+             }
+            }
+           },
+           "next": {
+            "block": {
+             "type": "salida",
+             "fields": {
+              "ETIQUETA": "veces la viscosidad del medio",
+              "UNIDAD": "",
+              "DEC": 2
+             },
+             "inputs": {
+              "EXPR": {
+               "block": {
+                "type": "operacion",
+                "fields": {
+                 "OP": "^"
+                },
+                "inputs": {
+                 "A": {
+                  "block": {
+                   "type": "operacion",
+                   "fields": {
+                    "OP": "-"
+                   },
+                   "inputs": {
+                    "A": {
+                     "block": {
+                      "type": "numero",
+                      "fields": {
+                       "V": 1
+                      }
+                     }
+                    },
+                    "B": {
+                     "block": {
+                      "type": "operacion",
+                      "fields": {
+                       "OP": "/"
+                      },
+                      "inputs": {
+                       "A": {
+                        "block": {
+                         "type": "variable",
+                         "fields": {
+                          "V": "fi"
+                         }
+                        }
+                       },
+                       "B": {
+                        "block": {
+                         "type": "variable",
+                         "fields": {
+                          "V": "fm"
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 },
+                 "B": {
+                  "block": {
+                   "type": "operacion",
+                   "fields": {
+                    "OP": "*"
+                   },
+                   "inputs": {
+                    "A": {
+                     "block": {
+                      "type": "numero",
+                      "fields": {
+                       "V": -2.5
+                      }
+                     }
+                    },
+                    "B": {
+                     "block": {
+                      "type": "variable",
+                      "fields": {
+                       "V": "fm"
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             },
+             "next": {
+              "block": {
+               "type": "curva",
+               "fields": {
+                "ETIQUETA": "veces la viscosidad",
+                "VAR": "fi"
+               },
+               "inputs": {
+                "EXPR": {
+                 "block": {
+                  "type": "operacion",
+                  "fields": {
+                   "OP": "^"
+                  },
+                  "inputs": {
+                   "A": {
+                    "block": {
+                     "type": "operacion",
+                     "fields": {
+                      "OP": "-"
+                     },
+                     "inputs": {
+                      "A": {
+                       "block": {
+                        "type": "numero",
+                        "fields": {
+                         "V": 1
+                        }
+                       }
+                      },
+                      "B": {
+                       "block": {
+                        "type": "operacion",
+                        "fields": {
+                         "OP": "/"
+                        },
+                        "inputs": {
+                         "A": {
+                          "block": {
+                           "type": "variable",
+                           "fields": {
+                            "V": "fi"
+                           }
+                          }
+                         },
+                         "B": {
+                          "block": {
+                           "type": "variable",
+                           "fields": {
+                            "V": "fm"
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   },
+                   "B": {
+                    "block": {
+                     "type": "operacion",
+                     "fields": {
+                      "OP": "*"
+                     },
+                     "inputs": {
+                      "A": {
+                       "block": {
+                        "type": "numero",
+                        "fields": {
+                         "V": -2.5
+                        }
+                       }
+                      },
+                      "B": {
+                       "block": {
+                        "type": "variable",
+                        "fields": {
+                         "V": "fm"
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               },
+               "next": {
+                "block": {
+                 "type": "si",
+                 "fields": {
+                  "OP": ">",
+                  "TEXTO": "Cerca del empaque, un poco más de gotas espesa mucho."
+                 },
+                 "inputs": {
+                  "A": {
+                   "block": {
+                    "type": "variable",
+                    "fields": {
+                     "V": "fi"
+                    }
+                   }
+                  },
+                  "B": {
+                   "block": {
+                    "type": "numero",
+                    "fields": {
+                     "V": 0.5
+                    }
+                   }
+                  }
+                 },
+                 "next": {
+                  "block": {
+                   "type": "pregunta",
+                   "fields": {
+                    "TEXTO": "¿Qué espesa más veces?",
+                    "OPCIONES": "pasar de 10 a 20 % de gotas; pasar de 50 a 60 %",
+                    "CORRECTA": 2,
+                    "EXPLICA": "Con empaque 0.64, de 10 a 20 % sube unas 1.4 veces; de 50 a 60 %, unas 7."
+                   },
+                   "next": {
+                    "block": {
+                     "type": "supuesto",
+                     "fields": {
+                      "TEXTO": "Las gotas se comportan como esferas rígidas e iguales."
+                     },
+                     "next": {
+                      "block": {
+                       "type": "supuesto",
+                       "fields": {
+                        "TEXTO": "El esfuerzo es bajo y las gotas no floculan. Una gota líquida que se deforma estorba menos."
+                       },
+                       "next": {
+                        "block": {
+                         "type": "fuente",
+                         "fields": {
+                          "TEXTO": "Krieger y Dougherty 1959, Trans. Soc. Rheol. 3:137-152, DOI 10.1122/1.548848. Modelos para emulsiones: Pal 2023, Foods, DOI 10.3390/foods12183483."
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     },
+     "x": 30,
+     "y": 30
+    }
+   ]
+  }
+ },
+ "documento": {
+  "partes": [
+   {
+    "t": "paso",
+    "texto": "Agrega gotas y mira cuánto se frena el flujo con el mismo esfuerzo."
+   },
+   {
+    "t": "entrada",
+    "nombre": "fi",
+    "etiqueta": "Fracción de gotas en volumen",
+    "unidad": "",
+    "min": 0,
+    "max": 0.6,
+    "paso": 0.01,
+    "valor": 0.2
+   },
+   {
+    "t": "entrada",
+    "nombre": "fm",
+    "etiqueta": "Empaque máximo",
+    "unidad": "",
+    "min": 0.62,
+    "max": 0.74,
+    "paso": 0.01,
+    "valor": 0.64
+   },
+   {
+    "t": "escena",
+    "tipo": "cizalla",
+    "valores": {
+     "fi": {
+      "t": "var",
+      "v": "fi"
+     },
+     "fm": {
+      "t": "var",
+      "v": "fm"
+     }
+    }
+   },
+   {
+    "t": "salida",
+    "etiqueta": "veces la viscosidad del medio",
+    "unidad": "",
+    "dec": 2,
+    "expr": {
+     "t": "bin",
+     "op": "^",
+     "a": {
+      "t": "bin",
+      "op": "-",
+      "a": {
+       "t": "num",
+       "v": 1
+      },
+      "b": {
+       "t": "bin",
+       "op": "/",
+       "a": {
+        "t": "var",
+        "v": "fi"
+       },
+       "b": {
+        "t": "var",
+        "v": "fm"
+       }
+      }
+     },
+     "b": {
+      "t": "bin",
+      "op": "*",
+      "a": {
+       "t": "num",
+       "v": -2.5
+      },
+      "b": {
+       "t": "var",
+       "v": "fm"
+      }
+     }
+    }
+   },
+   {
+    "t": "curva",
+    "etiqueta": "veces la viscosidad",
+    "variable": "fi",
+    "expr": {
+     "t": "bin",
+     "op": "^",
+     "a": {
+      "t": "bin",
+      "op": "-",
+      "a": {
+       "t": "num",
+       "v": 1
+      },
+      "b": {
+       "t": "bin",
+       "op": "/",
+       "a": {
+        "t": "var",
+        "v": "fi"
+       },
+       "b": {
+        "t": "var",
+        "v": "fm"
+       }
+      }
+     },
+     "b": {
+      "t": "bin",
+      "op": "*",
+      "a": {
+       "t": "num",
+       "v": -2.5
+      },
+      "b": {
+       "t": "var",
+       "v": "fm"
+      }
+     }
+    }
+   },
+   {
+    "t": "si",
+    "op": ">",
+    "a": {
+     "t": "var",
+     "v": "fi"
+    },
+    "b": {
+     "t": "num",
+     "v": 0.5
+    },
+    "texto": "Cerca del empaque, un poco más de gotas espesa mucho."
+   },
+   {
+    "t": "pregunta",
+    "texto": "¿Qué espesa más veces?",
+    "opciones": "pasar de 10 a 20 % de gotas; pasar de 50 a 60 %",
+    "correcta": 2,
+    "explica": "Con empaque 0.64, de 10 a 20 % sube unas 1.4 veces; de 50 a 60 %, unas 7."
+   },
+   {
+    "t": "supuesto",
+    "texto": "Las gotas se comportan como esferas rígidas e iguales."
+   },
+   {
+    "t": "supuesto",
+    "texto": "El esfuerzo es bajo y las gotas no floculan. Una gota líquida que se deforma estorba menos."
+   },
+   {
+    "t": "fuente",
+    "texto": "Krieger y Dougherty 1959, Trans. Soc. Rheol. 3:137-152, DOI 10.1122/1.548848. Modelos para emulsiones: Pal 2023, Foods, DOI 10.3390/foods12183483."
+   }
+  ]
+ }
+}

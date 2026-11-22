@@ -1,0 +1,622 @@
+[
+ {
+  "inci": "Persea Gratissima Oil",
+  "nombre": "aceite de aguacate",
+  "valores": [
+   {
+    "min": 11.1,
+    "max": 11.1,
+    "fuente": "doi:10.21608/bfsa.2025.426817.2764",
+    "informal": true
+   }
+  ],
+  "min": 11.1,
+  "max": 11.1
+ },
+ {
+  "inci": "Gossypium Herbaceum Seed Oil",
+  "nombre": "aceite de algodón",
+  "valores": [
+   {
+    "min": 7.5,
+    "max": 7.5,
+    "fuente": "https://library.scconline.org/is-cacheable/1708618371170/Classification-Surface-Active-Agents-HLB.pdf (Griffin 1949 sin DOI)",
+    "informal": false
+   }
+  ],
+  "min": 7.5,
+  "max": 7.5
+ },
+ {
+  "inci": "Prunus Amygdalus Dulcis Oil",
+  "nombre": "aceite de almendra dulce",
+  "valores": [
+   {
+    "min": 6,
+    "max": 6,
+    "fuente": "doi:10.3390/cosmetics7020043",
+    "informal": true
+   },
+   {
+    "min": 7,
+    "max": 7,
+    "fuente": "https://hlbcalc.com/materials",
+    "informal": true
+   }
+  ],
+  "min": 6,
+  "max": 7
+ },
+ {
+  "inci": "Argania Spinosa Kernel Oil",
+  "nombre": "aceite de argán",
+  "valores": [
+   {
+    "min": 11,
+    "max": 11,
+    "fuente": "doi:10.3390/colloids8020021",
+    "informal": false
+   }
+  ],
+  "min": 11,
+  "max": 11
+ },
+ {
+  "inci": "Cocos Nucifera Oil",
+  "nombre": "aceite de coco",
+  "valores": [
+   {
+    "min": 5,
+    "max": 5,
+    "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (ISBN 1-870228-17-0)",
+    "informal": true
+   },
+   {
+    "min": 8,
+    "max": 8,
+    "fuente": "https://hlbcalc.com/materials",
+    "informal": true
+   }
+  ],
+  "min": 5,
+  "max": 8
+ },
+ {
+  "inci": "Simmondsia Chinensis Seed Oil",
+  "nombre": "aceite de jojoba",
+  "valores": [
+   {
+    "min": 6,
+    "max": 7,
+    "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (ISBN 1-870228-17-0)",
+    "informal": true
+   }
+  ],
+  "min": 6,
+  "max": 7
+ },
+ {
+  "inci": "Zea Mays Germ Oil",
+  "nombre": "aceite de maíz",
+  "valores": [
+   {
+    "min": 6,
+    "max": 6,
+    "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (ISBN 1-870228-17-0)",
+    "informal": false
+   }
+  ],
+  "min": 6,
+  "max": 6
+ },
+ {
+  "inci": "Olea Europaea Fruit Oil",
+  "nombre": "aceite de oliva",
+  "valores": [
+   {
+    "min": 11.1,
+    "max": 11.1,
+    "fuente": "doi:10.21608/bfsa.2025.426817.2764",
+    "informal": true
+   },
+   {
+    "min": 7,
+    "max": 7,
+    "fuente": "https://hlbcalc.com/materials",
+    "informal": true
+   }
+  ],
+  "min": 7,
+  "max": 11.1
+ },
+ {
+  "inci": "Ricinus Communis Seed Oil",
+  "nombre": "aceite de ricino",
+  "valores": [
+   {
+    "min": 14,
+    "max": 14,
+    "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (ISBN 1-870228-17-0)",
+    "informal": true
+   }
+  ],
+  "min": 14,
+  "max": 14
+ },
+ {
+  "inci": "Cannabis Sativa Seed Oil",
+  "nombre": "aceite de semilla de cáñamo",
+  "valores": [
+   {
+    "min": 9,
+    "max": 9,
+    "fuente": "doi:10.3390/colloids8020021",
+    "informal": false
+   }
+  ],
+  "min": 9,
+  "max": 9
+ },
+ {
+  "inci": "Glycine Soja Oil",
+  "nombre": "aceite de soya",
+  "valores": [
+   {
+    "min": 6,
+    "max": 6,
+    "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (ISBN 1-870228-17-0)",
+    "informal": false
+   }
+  ],
+  "min": 6,
+  "max": 6
+ },
+ {
+  "inci": "Mink Oil",
+  "nombre": "aceite de visón",
+  "valores": [
+   {
+    "min": 5,
+    "max": 5,
+    "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (ISBN 1-870228-17-0)",
+    "informal": false
+   }
+  ],
+  "min": 5,
+  "max": 5
+ },
+ {
+  "inci": "Paraffinum Liquidum",
+  "nombre": "aceite mineral blanco ligero (Marcol GX)",
+  "valores": [
+   {
+    "min": 10,
+    "max": 10,
+    "fuente": "https://library.scconline.org/is-cacheable/1708618371170/Classification-Surface-Active-Agents-HLB.pdf (Griffin 1949 J Soc Cosmet Chem 1:311 sin DOI)",
+    "informal": false
+   },
+   {
+    "min": 10.5,
+    "max": 10.5,
+    "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 J Soc Cosmet Chem 5:249 sin DOI)",
+    "informal": false
+   },
+   {
+    "min": 10,
+    "max": 11,
+    "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (Rieger 1997 ISBN 1-870228-17-0)",
+    "informal": false
+   },
+   {
+    "min": 10.5,
+    "max": 10.5,
+    "fuente": "doi:10.3390/cosmetics7020043",
+    "informal": false
+   },
+   {
+    "min": 10,
+    "max": 10,
+    "fuente": "https://hlbcalc.com/materials",
+    "informal": true
+   }
+  ],
+  "min": 10,
+  "max": 11
+ },
+ {
+  "inci": "Stearic Acid",
+  "nombre": "ácido esteárico",
+  "valores": [
+   {
+    "min": 17,
+    "max": 17,
+    "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 sin DOI)",
+    "informal": true
+   },
+   {
+    "min": 15,
+    "max": 15,
+    "fuente": "https://hlbcalc.com/materials",
+    "informal": true
+   }
+  ],
+  "min": 15,
+  "max": 17
+ },
+ {
+  "inci": "Isostearic Acid",
+  "nombre": "ácido isoesteárico",
+  "valores": [
+   {
+    "min": 15,
+    "max": 16,
+    "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (ISBN 1-870228-17-0)",
+    "informal": true
+   }
+  ],
+  "min": 15,
+  "max": 16
+ },
+ {
+  "inci": "Oleic Acid",
+  "nombre": "ácido oleico",
+  "valores": [
+   {
+    "min": 17,
+    "max": 17,
+    "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (ISBN 1-870228-17-0)",
+    "informal": false
+   }
+  ],
+  "min": 17,
+  "max": 17
+ },
+ {
+  "inci": "Cetyl Alcohol",
+  "nombre": "alcohol cetílico",
+  "valores": [
+   {
+    "min": 13,
+    "max": 13,
+    "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 sin DOI)",
+    "informal": false
+   },
+   {
+    "min": 15.5,
+    "max": 15.5,
+    "fuente": "doi:10.3390/cosmetics7020043",
+    "informal": false
+   },
+   {
+    "min": 15.5,
+    "max": 15.5,
+    "fuente": "https://hlbcalc.com/materials",
+    "informal": true
+   }
+  ],
+  "min": 13,
+  "max": 15.5
+ },
+ {
+  "inci": "Cetearyl Alcohol",
+  "nombre": "alcohol cetoestearílico",
+  "valores": [
+   {
+    "min": 15.5,
+    "max": 15.5,
+    "fuente": "https://hlbcalc.com/materials",
+    "informal": true
+   }
+  ],
+  "min": 15.5,
+  "max": 15.5
+ },
+ {
+  "inci": "Stearyl Alcohol",
+  "nombre": "alcohol estearílico",
+  "valores": [
+   {
+    "min": 15,
+    "max": 16,
+    "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (ISBN 1-870228-17-0)",
+    "informal": false
+   }
+  ],
+  "min": 15,
+  "max": 16
+ },
+ {
+  "inci": "C12-15 Alkyl Benzoate",
+  "nombre": "benzoato de alquilo C12-15",
+  "valores": [
+   {
+    "min": 13,
+    "max": 13,
+    "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (ISBN 1-870228-17-0)",
+    "informal": true
+   }
+  ],
+  "min": 13,
+  "max": 13
+ },
+ {
+  "inci": "Euphorbia Cerifera Cera",
+  "nombre": "cera candelilla",
+  "valores": [
+   {
+    "min": 14.5,
+    "max": 14.5,
+    "fuente": "https://library.scconline.org/is-cacheable/1708618371170/Classification-Surface-Active-Agents-HLB.pdf (Griffin 1949 sin DOI)",
+    "informal": true
+   }
+  ],
+  "min": 14.5,
+  "max": 14.5
+ },
+ {
+  "inci": "Copernicia Cerifera Cera",
+  "nombre": "cera carnauba",
+  "valores": [
+   {
+    "min": 14.5,
+    "max": 14.5,
+    "fuente": "https://library.scconline.org/is-cacheable/1708618371170/Classification-Surface-Active-Agents-HLB.pdf (Griffin 1949 sin DOI)",
+    "informal": true
+   },
+   {
+    "min": 15,
+    "max": 15,
+    "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (ISBN 1-870228-17-0)",
+    "informal": false
+   }
+  ],
+  "min": 14.5,
+  "max": 15
+ },
+ {
+  "inci": "Cera Alba",
+  "nombre": "cera de abejas blanca",
+  "valores": [
+   {
+    "min": 10,
+    "max": 16,
+    "fuente": "https://library.scconline.org/is-cacheable/1708618371170/Classification-Surface-Active-Agents-HLB.pdf (Griffin 1949 sin DOI)",
+    "informal": true
+   },
+   {
+    "min": 12,
+    "max": 12,
+    "fuente": "https://hlbcalc.com/materials",
+    "informal": true
+   }
+  ],
+  "min": 10,
+  "max": 16
+ },
+ {
+  "inci": "Microcrystalline Wax",
+  "nombre": "cera microcristalina",
+  "valores": [
+   {
+    "min": 9.5,
+    "max": 9.5,
+    "fuente": "https://library.scconline.org/is-cacheable/1708618371170/Classification-Surface-Active-Agents-HLB.pdf (Griffin 1949 sin DOI)",
+    "informal": false
+   }
+  ],
+  "min": 9.5,
+  "max": 9.5
+ },
+ {
+  "inci": "Cyclomethicone",
+  "nombre": "ciclometicona",
+  "valores": [
+   {
+    "min": 7,
+    "max": 8,
+    "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (ISBN 1-870228-17-0)",
+    "informal": false
+   }
+  ],
+  "min": 7,
+  "max": 8
+ },
+ {
+  "inci": "Cyclopentasiloxane",
+  "nombre": "ciclopentasiloxano (D5)",
+  "valores": [
+   {
+    "min": 7.5,
+    "max": 7.5,
+    "fuente": "https://hlbcalc.com/materials",
+    "informal": true
+   }
+  ],
+  "min": 7.5,
+  "max": 7.5
+ },
+ {
+  "inci": "Dimethicone",
+  "nombre": "dimeticona",
+  "valores": [
+   {
+    "min": 9,
+    "max": 9,
+    "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (ISBN 1-870228-17-0)",
+    "informal": true
+   }
+  ],
+  "min": 9,
+  "max": 9
+ },
+ {
+  "inci": "Squalane",
+  "nombre": "escualano",
+  "valores": [
+   {
+    "min": 11,
+    "max": 11,
+    "fuente": "https://hlbcalc.com/materials",
+    "informal": true
+   }
+  ],
+  "min": 11,
+  "max": 11
+ },
+ {
+  "inci": "Acetylated Lanolin",
+  "nombre": "lanolina acetilada",
+  "valores": [
+   {
+    "min": 14,
+    "max": 14,
+    "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (ISBN 1-870228-17-0)",
+    "informal": false
+   }
+  ],
+  "min": 14,
+  "max": 14
+ },
+ {
+  "inci": "Lanolin",
+  "nombre": "lanolina anhidra USP",
+  "valores": [
+   {
+    "min": 15,
+    "max": 15,
+    "fuente": "https://library.scconline.org/is-cacheable/1708618371170/Classification-Surface-Active-Agents-HLB.pdf (Griffin 1949 sin DOI)",
+    "informal": true
+   },
+   {
+    "min": 9,
+    "max": 9,
+    "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (ISBN 1-870228-17-0)",
+    "informal": false
+   }
+  ],
+  "min": 9,
+  "max": 15
+ },
+ {
+  "inci": "Theobroma Cacao Seed Butter",
+  "nombre": "manteca de cacao",
+  "valores": [
+   {
+    "min": 6,
+    "max": 6,
+    "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (ISBN 1-870228-17-0)",
+    "informal": true
+   }
+  ],
+  "min": 6,
+  "max": 6
+ },
+ {
+  "inci": "Butyrospermum Parkii Butter",
+  "nombre": "manteca de karité",
+  "valores": [
+   {
+    "min": 8,
+    "max": 8,
+    "fuente": "https://hlbcalc.com/materials",
+    "informal": true
+   }
+  ],
+  "min": 8,
+  "max": 8
+ },
+ {
+  "inci": "Isopropyl Myristate",
+  "nombre": "miristato de isopropilo",
+  "valores": [
+   {
+    "min": 11,
+    "max": 12,
+    "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (ISBN 1-870228-17-0)",
+    "informal": true
+   }
+  ],
+  "min": 11,
+  "max": 12
+ },
+ {
+  "inci": "Isopropyl Palmitate",
+  "nombre": "palmitato de isopropilo",
+  "valores": [
+   {
+    "min": 11,
+    "max": 12,
+    "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (ISBN 1-870228-17-0)",
+    "informal": true
+   }
+  ],
+  "min": 11,
+  "max": 12
+ },
+ {
+  "inci": "Paraffin",
+  "nombre": "parafina (doméstica)",
+  "valores": [
+   {
+    "min": 9,
+    "max": 9,
+    "fuente": "https://library.scconline.org/is-cacheable/1708618371170/Classification-Surface-Active-Agents-HLB.pdf (Griffin 1949 sin DOI)",
+    "informal": false
+   },
+   {
+    "min": 10,
+    "max": 10,
+    "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (ISBN 1-870228-17-0)",
+    "informal": false
+   }
+  ],
+  "min": 9,
+  "max": 10
+ },
+ {
+  "inci": "Caprylic/Capric Triglyceride",
+  "nombre": "triglicéridos caprílico/cáprico (MCT)",
+  "valores": [
+   {
+    "min": 5,
+    "max": 5,
+    "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (ISBN 1-870228-17-0)",
+    "informal": true
+   },
+   {
+    "min": 10,
+    "max": 10,
+    "fuente": "https://hlbcalc.com/materials",
+    "informal": true
+   }
+  ],
+  "min": 5,
+  "max": 10
+ },
+ {
+  "inci": "Petrolatum",
+  "nombre": "vaselina blanca (White Perfecta)",
+  "valores": [
+   {
+    "min": 10.5,
+    "max": 10.5,
+    "fuente": "https://library.scconline.org/is-cacheable/1708618371170/Classification-Surface-Active-Agents-HLB.pdf (Griffin 1949 sin DOI)",
+    "informal": false
+   },
+   {
+    "min": 7,
+    "max": 8,
+    "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (ISBN 1-870228-17-0)",
+    "informal": false
+   },
+   {
+    "min": 7.5,
+    "max": 7.5,
+    "fuente": "https://hlbcalc.com/materials",
+    "informal": true
+   }
+  ],
+  "min": 7,
+  "max": 10.5
+ }
+]

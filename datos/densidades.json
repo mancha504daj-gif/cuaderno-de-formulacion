@@ -1,0 +1,72 @@
+[
+ {
+  "nombre": "cacahuate",
+  "inci": "Arachis Hypogaea Oil",
+  "min": 910.4,
+  "max": 918.3,
+  "fuente": "Codex CXS 210-1999 (ed. 2015) Tabla 2 p. 10"
+ },
+ {
+  "nombre": "algodón",
+  "inci": "Gossypium Herbaceum Seed Oil",
+  "min": 916.3,
+  "max": 924.3,
+  "fuente": "Codex CXS 210-1999 (ed. 2015) Tabla 2 p. 10"
+ },
+ {
+  "nombre": "semilla de uva",
+  "inci": "Vitis Vinifera Seed Oil",
+  "min": 918.3,
+  "max": 924.3,
+  "fuente": "Codex CXS 210-1999 (ed. 2015) Tabla 2 p. 10"
+ },
+ {
+  "nombre": "maíz",
+  "inci": "Zea Mays Oil",
+  "min": 915.3,
+  "max": 923.3,
+  "fuente": "Codex CXS 210-1999 (ed. 2015) Tabla 2 p. 10"
+ },
+ {
+  "nombre": "colza bajo erucico (canola)",
+  "inci": "Canola Oil",
+  "min": 912.4,
+  "max": 918.3,
+  "fuente": "Codex CXS 210-1999 (ed. 2015) Tabla 2 p. 11"
+ },
+ {
+  "nombre": "cártamo",
+  "inci": "Carthamus Tinctorius Seed Oil",
+  "min": 920.3,
+  "max": 925.3,
+  "fuente": "Codex CXS 210-1999 (ed. 2015) Tabla 2 p. 11"
+ },
+ {
+  "nombre": "sésamo",
+  "inci": "Sesamum Indicum Seed Oil",
+  "min": 913.4,
+  "max": 922.3,
+  "fuente": "Codex CXS 210-1999 (ed. 2015) Tabla 2 p. 11"
+ },
+ {
+  "nombre": "soya",
+  "inci": "Glycine Soja Oil",
+  "min": 917.3,
+  "max": 923.3,
+  "fuente": "Codex CXS 210-1999 (ed. 2015) Tabla 2 p. 11"
+ },
+ {
+  "nombre": "girasol",
+  "inci": "Helianthus Annuus Seed Oil",
+  "min": 916.3,
+  "max": 921.3,
+  "fuente": "Codex CXS 210-1999 (ed. 2015) Tabla 2 p. 11"
+ },
+ {
+  "nombre": "oliva",
+  "inci": "Olea Europaea Fruit Oil",
+  "min": 908.4,
+  "max": 914.4,
+  "fuente": "Codex CXS 33 (ed. 2015) seccion 3"
+ }
+]

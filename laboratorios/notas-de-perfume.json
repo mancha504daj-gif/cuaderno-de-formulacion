@@ -1,0 +1,717 @@
+{
+ "version": 2,
+ "clase": "laboratorio",
+ "titulo": "Notas de un perfume",
+ "bloques": {
+  "blocks": {
+   "languageVersion": 0,
+   "blocks": [
+    {
+     "type": "paso",
+     "fields": {
+      "TEXTO": "Mueve el tiempo y mira qué nota se va primero. La unidad es la vida media del limoneno."
+     },
+     "next": {
+      "block": {
+       "type": "entrada",
+       "fields": {
+        "VAR": "t",
+        "ETIQUETA": "Tiempo, en vidas medias del limoneno",
+        "UNIDAD": "",
+        "MIN": 0,
+        "MAX": 40,
+        "PASO": 0.1,
+        "VALOR": 3
+       },
+       "next": {
+        "block": {
+         "type": "escena_notas",
+         "inputs": {
+          "t": {
+           "block": {
+            "type": "variable",
+            "fields": {
+             "V": "t"
+            }
+           }
+          }
+         },
+         "next": {
+          "block": {
+           "type": "salida",
+           "fields": {
+            "ETIQUETA": "queda de limoneno",
+            "UNIDAD": "%",
+            "DEC": 1
+           },
+           "inputs": {
+            "EXPR": {
+             "block": {
+              "type": "operacion",
+              "fields": {
+               "OP": "*"
+              },
+              "inputs": {
+               "A": {
+                "block": {
+                 "type": "numero",
+                 "fields": {
+                  "V": 100
+                 }
+                }
+               },
+               "B": {
+                "block": {
+                 "type": "operacion",
+                 "fields": {
+                  "OP": "^"
+                 },
+                 "inputs": {
+                  "A": {
+                   "block": {
+                    "type": "numero",
+                    "fields": {
+                     "V": 0.5
+                    }
+                   }
+                  },
+                  "B": {
+                   "block": {
+                    "type": "variable",
+                    "fields": {
+                     "V": "t"
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           },
+           "next": {
+            "block": {
+             "type": "salida",
+             "fields": {
+              "ETIQUETA": "queda de linalool",
+              "UNIDAD": "%",
+              "DEC": 1
+             },
+             "inputs": {
+              "EXPR": {
+               "block": {
+                "type": "operacion",
+                "fields": {
+                 "OP": "*"
+                },
+                "inputs": {
+                 "A": {
+                  "block": {
+                   "type": "numero",
+                   "fields": {
+                    "V": 100
+                   }
+                  }
+                 },
+                 "B": {
+                  "block": {
+                   "type": "operacion",
+                   "fields": {
+                    "OP": "^"
+                   },
+                   "inputs": {
+                    "A": {
+                     "block": {
+                      "type": "numero",
+                      "fields": {
+                       "V": 0.5
+                      }
+                     }
+                    },
+                    "B": {
+                     "block": {
+                      "type": "operacion",
+                      "fields": {
+                       "OP": "/"
+                      },
+                      "inputs": {
+                       "A": {
+                        "block": {
+                         "type": "operacion",
+                         "fields": {
+                          "OP": "*"
+                         },
+                         "inputs": {
+                          "A": {
+                           "block": {
+                            "type": "variable",
+                            "fields": {
+                             "V": "t"
+                            }
+                           }
+                          },
+                          "B": {
+                           "block": {
+                            "type": "numero",
+                            "fields": {
+                             "V": 0.16
+                            }
+                           }
+                          }
+                         }
+                        }
+                       },
+                       "B": {
+                        "block": {
+                         "type": "numero",
+                         "fields": {
+                          "V": 1.55
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             },
+             "next": {
+              "block": {
+               "type": "salida",
+               "fields": {
+                "ETIQUETA": "queda de vainillina",
+                "UNIDAD": "%",
+                "DEC": 1
+               },
+               "inputs": {
+                "EXPR": {
+                 "block": {
+                  "type": "operacion",
+                  "fields": {
+                   "OP": "*"
+                  },
+                  "inputs": {
+                   "A": {
+                    "block": {
+                     "type": "numero",
+                     "fields": {
+                      "V": 100
+                     }
+                    }
+                   },
+                   "B": {
+                    "block": {
+                     "type": "operacion",
+                     "fields": {
+                      "OP": "^"
+                     },
+                     "inputs": {
+                      "A": {
+                       "block": {
+                        "type": "numero",
+                        "fields": {
+                         "V": 0.5
+                        }
+                       }
+                      },
+                      "B": {
+                       "block": {
+                        "type": "operacion",
+                        "fields": {
+                         "OP": "/"
+                        },
+                        "inputs": {
+                         "A": {
+                          "block": {
+                           "type": "operacion",
+                           "fields": {
+                            "OP": "*"
+                           },
+                           "inputs": {
+                            "A": {
+                             "block": {
+                              "type": "variable",
+                              "fields": {
+                               "V": "t"
+                              }
+                             }
+                            },
+                            "B": {
+                             "block": {
+                              "type": "numero",
+                              "fields": {
+                               "V": 0.000118
+                              }
+                             }
+                            }
+                           }
+                          }
+                         },
+                         "B": {
+                          "block": {
+                           "type": "numero",
+                           "fields": {
+                            "V": 1.55
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               },
+               "next": {
+                "block": {
+                 "type": "curva",
+                 "fields": {
+                  "ETIQUETA": "% de linalool que queda",
+                  "VAR": "t"
+                 },
+                 "inputs": {
+                  "EXPR": {
+                   "block": {
+                    "type": "operacion",
+                    "fields": {
+                     "OP": "*"
+                    },
+                    "inputs": {
+                     "A": {
+                      "block": {
+                       "type": "numero",
+                       "fields": {
+                        "V": 100
+                       }
+                      }
+                     },
+                     "B": {
+                      "block": {
+                       "type": "operacion",
+                       "fields": {
+                        "OP": "^"
+                       },
+                       "inputs": {
+                        "A": {
+                         "block": {
+                          "type": "numero",
+                          "fields": {
+                           "V": 0.5
+                          }
+                         }
+                        },
+                        "B": {
+                         "block": {
+                          "type": "operacion",
+                          "fields": {
+                           "OP": "/"
+                          },
+                          "inputs": {
+                           "A": {
+                            "block": {
+                             "type": "operacion",
+                             "fields": {
+                              "OP": "*"
+                             },
+                             "inputs": {
+                              "A": {
+                               "block": {
+                                "type": "variable",
+                                "fields": {
+                                 "V": "t"
+                                }
+                               }
+                              },
+                              "B": {
+                               "block": {
+                                "type": "numero",
+                                "fields": {
+                                 "V": 0.16
+                                }
+                               }
+                              }
+                             }
+                            }
+                           },
+                           "B": {
+                            "block": {
+                             "type": "numero",
+                             "fields": {
+                              "V": 1.55
+                             }
+                            }
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 },
+                 "next": {
+                  "block": {
+                   "type": "si",
+                   "fields": {
+                    "OP": "<",
+                    "TEXTO": "La salida ya casi no se nota: queda menos de 5 % del limoneno."
+                   },
+                   "inputs": {
+                    "A": {
+                     "block": {
+                      "type": "operacion",
+                      "fields": {
+                       "OP": "*"
+                      },
+                      "inputs": {
+                       "A": {
+                        "block": {
+                         "type": "numero",
+                         "fields": {
+                          "V": 100
+                         }
+                        }
+                       },
+                       "B": {
+                        "block": {
+                         "type": "operacion",
+                         "fields": {
+                          "OP": "^"
+                         },
+                         "inputs": {
+                          "A": {
+                           "block": {
+                            "type": "numero",
+                            "fields": {
+                             "V": 0.5
+                            }
+                           }
+                          },
+                          "B": {
+                           "block": {
+                            "type": "variable",
+                            "fields": {
+                             "V": "t"
+                            }
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    },
+                    "B": {
+                     "block": {
+                      "type": "numero",
+                      "fields": {
+                       "V": 5
+                      }
+                     }
+                    }
+                   },
+                   "next": {
+                    "block": {
+                     "type": "pregunta",
+                     "fields": {
+                      "TEXTO": "¿Cuál queda al final?",
+                      "OPCIONES": "limoneno; linalool; vainillina",
+                      "CORRECTA": 3,
+                      "EXPLICA": "Su presión de vapor es unas 13 000 veces menor que la del limoneno."
+                     },
+                     "next": {
+                      "block": {
+                       "type": "supuesto",
+                       "fields": {
+                        "TEXTO": "Cada sustancia se evapora sola, con una rapidez proporcional a su presión de vapor a 25 °C."
+                       },
+                       "next": {
+                        "block": {
+                         "type": "supuesto",
+                         "fields": {
+                          "TEXTO": "No cuenta la retención en la piel, el alcohol, los fijadores ni la ley de Raoult de una mezcla concentrada."
+                         },
+                         "next": {
+                          "block": {
+                           "type": "supuesto",
+                           "fields": {
+                            "TEXTO": "No da horas: da proporciones entre notas."
+                           },
+                           "next": {
+                            "block": {
+                             "type": "fuente",
+                             "fields": {
+                              "TEXTO": "Presiones de vapor a 25 °C, en mmHg, PubChem: limoneno 1.55 (CID 22311), linalool 0.16 (CID 6549), vainillina 1.18 × 10⁻⁴ (CID 1183)."
+                             }
+                            }
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     },
+     "x": 30,
+     "y": 30
+    }
+   ]
+  }
+ },
+ "documento": {
+  "partes": [
+   {
+    "t": "paso",
+    "texto": "Mueve el tiempo y mira qué nota se va primero. La unidad es la vida media del limoneno."
+   },
+   {
+    "t": "entrada",
+    "nombre": "t",
+    "etiqueta": "Tiempo, en vidas medias del limoneno",
+    "unidad": "",
+    "min": 0,
+    "max": 40,
+    "paso": 0.1,
+    "valor": 3
+   },
+   {
+    "t": "escena",
+    "tipo": "notas",
+    "valores": {
+     "t": {
+      "t": "var",
+      "v": "t"
+     }
+    }
+   },
+   {
+    "t": "salida",
+    "etiqueta": "queda de limoneno",
+    "unidad": "%",
+    "dec": 1,
+    "expr": {
+     "t": "bin",
+     "op": "*",
+     "a": {
+      "t": "num",
+      "v": 100
+     },
+     "b": {
+      "t": "bin",
+      "op": "^",
+      "a": {
+       "t": "num",
+       "v": 0.5
+      },
+      "b": {
+       "t": "var",
+       "v": "t"
+      }
+     }
+    }
+   },
+   {
+    "t": "salida",
+    "etiqueta": "queda de linalool",
+    "unidad": "%",
+    "dec": 1,
+    "expr": {
+     "t": "bin",
+     "op": "*",
+     "a": {
+      "t": "num",
+      "v": 100
+     },
+     "b": {
+      "t": "bin",
+      "op": "^",
+      "a": {
+       "t": "num",
+       "v": 0.5
+      },
+      "b": {
+       "t": "bin",
+       "op": "/",
+       "a": {
+        "t": "bin",
+        "op": "*",
+        "a": {
+         "t": "var",
+         "v": "t"
+        },
+        "b": {
+         "t": "num",
+         "v": 0.16
+        }
+       },
+       "b": {
+        "t": "num",
+        "v": 1.55
+       }
+      }
+     }
+    }
+   },
+   {
+    "t": "salida",
+    "etiqueta": "queda de vainillina",
+    "unidad": "%",
+    "dec": 1,
+    "expr": {
+     "t": "bin",
+     "op": "*",
+     "a": {
+      "t": "num",
+      "v": 100
+     },
+     "b": {
+      "t": "bin",
+      "op": "^",
+      "a": {
+       "t": "num",
+       "v": 0.5
+      },
+      "b": {
+       "t": "bin",
+       "op": "/",
+       "a": {
+        "t": "bin",
+        "op": "*",
+        "a": {
+         "t": "var",
+         "v": "t"
+        },
+        "b": {
+         "t": "num",
+         "v": 0.000118
+        }
+       },
+       "b": {
+        "t": "num",
+        "v": 1.55
+       }
+      }
+     }
+    }
+   },
+   {
+    "t": "curva",
+    "etiqueta": "% de linalool que queda",
+    "variable": "t",
+    "expr": {
+     "t": "bin",
+     "op": "*",
+     "a": {
+      "t": "num",
+      "v": 100
+     },
+     "b": {
+      "t": "bin",
+      "op": "^",
+      "a": {
+       "t": "num",
+       "v": 0.5
+      },
+      "b": {
+       "t": "bin",
+       "op": "/",
+       "a": {
+        "t": "bin",
+        "op": "*",
+        "a": {
+         "t": "var",
+         "v": "t"
+        },
+        "b": {
+         "t": "num",
+         "v": 0.16
+        }
+       },
+       "b": {
+        "t": "num",
+        "v": 1.55
+       }
+      }
+     }
+    }
+   },
+   {
+    "t": "si",
+    "op": "<",
+    "a": {
+     "t": "bin",
+     "op": "*",
+     "a": {
+      "t": "num",
+      "v": 100
+     },
+     "b": {
+      "t": "bin",
+      "op": "^",
+      "a": {
+       "t": "num",
+       "v": 0.5
+      },
+      "b": {
+       "t": "var",
+       "v": "t"
+      }
+     }
+    },
+    "b": {
+     "t": "num",
+     "v": 5
+    },
+    "texto": "La salida ya casi no se nota: queda menos de 5 % del limoneno."
+   },
+   {
+    "t": "pregunta",
+    "texto": "¿Cuál queda al final?",
+    "opciones": "limoneno; linalool; vainillina",
+    "correcta": 3,
+    "explica": "Su presión de vapor es unas 13 000 veces menor que la del limoneno."
+   },
+   {
+    "t": "supuesto",
+    "texto": "Cada sustancia se evapora sola, con una rapidez proporcional a su presión de vapor a 25 °C."
+   },
+   {
+    "t": "supuesto",
+    "texto": "No cuenta la retención en la piel, el alcohol, los fijadores ni la ley de Raoult de una mezcla concentrada."
+   },
+   {
+    "t": "supuesto",
+    "texto": "No da horas: da proporciones entre notas."
+   },
+   {
+    "t": "fuente",
+    "texto": "Presiones de vapor a 25 °C, en mmHg, PubChem: limoneno 1.55 (CID 22311), linalool 0.16 (CID 6549), vainillina 1.18 × 10⁻⁴ (CID 1183)."
+   }
+  ]
+ }
+}

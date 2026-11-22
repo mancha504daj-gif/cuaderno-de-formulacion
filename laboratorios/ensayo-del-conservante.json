@@ -1,0 +1,483 @@
+{
+ "version": 2,
+ "clase": "laboratorio",
+ "titulo": "Ensayo del conservante",
+ "bloques": {
+  "blocks": {
+   "languageVersion": 0,
+   "blocks": [
+    {
+     "type": "paso",
+     "fields": {
+      "TEXTO": "Busca hasta qué D el producto baja 3 log en 7 días."
+     },
+     "next": {
+      "block": {
+       "type": "entrada",
+       "fields": {
+        "VAR": "n0",
+        "ETIQUETA": "Inóculo, en log de UFC/g",
+        "UNIDAD": "",
+        "MIN": 4,
+        "MAX": 7,
+        "PASO": 0.1,
+        "VALOR": 6
+       },
+       "next": {
+        "block": {
+         "type": "entrada",
+         "fields": {
+          "VAR": "D",
+          "ETIQUETA": "Días para bajar un log",
+          "UNIDAD": "días",
+          "MIN": 0.5,
+          "MAX": 10,
+          "PASO": 0.1,
+          "VALOR": 2
+         },
+         "next": {
+          "block": {
+           "type": "entrada",
+           "fields": {
+            "VAR": "dias",
+            "ETIQUETA": "Tiempo",
+            "UNIDAD": "días",
+            "MIN": 0,
+            "MAX": 28,
+            "PASO": 0.5,
+            "VALOR": 7
+           },
+           "next": {
+            "block": {
+             "type": "escena_placa",
+             "inputs": {
+              "n0": {
+               "block": {
+                "type": "variable",
+                "fields": {
+                 "V": "n0"
+                }
+               }
+              },
+              "D": {
+               "block": {
+                "type": "variable",
+                "fields": {
+                 "V": "D"
+                }
+               }
+              },
+              "dias": {
+               "block": {
+                "type": "variable",
+                "fields": {
+                 "V": "dias"
+                }
+               }
+              }
+             },
+             "next": {
+              "block": {
+               "type": "salida",
+               "fields": {
+                "ETIQUETA": "baja en el recuento",
+                "UNIDAD": "log",
+                "DEC": 2
+               },
+               "inputs": {
+                "EXPR": {
+                 "block": {
+                  "type": "operacion",
+                  "fields": {
+                   "OP": "min"
+                  },
+                  "inputs": {
+                   "A": {
+                    "block": {
+                     "type": "variable",
+                     "fields": {
+                      "V": "n0"
+                     }
+                    }
+                   },
+                   "B": {
+                    "block": {
+                     "type": "operacion",
+                     "fields": {
+                      "OP": "/"
+                     },
+                     "inputs": {
+                      "A": {
+                       "block": {
+                        "type": "variable",
+                        "fields": {
+                         "V": "dias"
+                        }
+                       }
+                      },
+                      "B": {
+                       "block": {
+                        "type": "variable",
+                        "fields": {
+                         "V": "D"
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               },
+               "next": {
+                "block": {
+                 "type": "curva",
+                 "fields": {
+                  "ETIQUETA": "log de UFC/g que quedan",
+                  "VAR": "dias"
+                 },
+                 "inputs": {
+                  "EXPR": {
+                   "block": {
+                    "type": "operacion",
+                    "fields": {
+                     "OP": "max"
+                    },
+                    "inputs": {
+                     "A": {
+                      "block": {
+                       "type": "numero",
+                       "fields": {
+                        "V": 0
+                       }
+                      }
+                     },
+                     "B": {
+                      "block": {
+                       "type": "operacion",
+                       "fields": {
+                        "OP": "-"
+                       },
+                       "inputs": {
+                        "A": {
+                         "block": {
+                          "type": "variable",
+                          "fields": {
+                           "V": "n0"
+                          }
+                         }
+                        },
+                        "B": {
+                         "block": {
+                          "type": "operacion",
+                          "fields": {
+                           "OP": "/"
+                          },
+                          "inputs": {
+                           "A": {
+                            "block": {
+                             "type": "variable",
+                             "fields": {
+                              "V": "dias"
+                             }
+                            }
+                           },
+                           "B": {
+                            "block": {
+                             "type": "variable",
+                             "fields": {
+                              "V": "D"
+                             }
+                            }
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 },
+                 "next": {
+                  "block": {
+                   "type": "si",
+                   "fields": {
+                    "OP": "<",
+                    "TEXTO": "A los 7 días no baja 3 log: no cumple el criterio A para bacterias."
+                   },
+                   "inputs": {
+                    "A": {
+                     "block": {
+                      "type": "operacion",
+                      "fields": {
+                       "OP": "min"
+                      },
+                      "inputs": {
+                       "A": {
+                        "block": {
+                         "type": "variable",
+                         "fields": {
+                          "V": "n0"
+                         }
+                        }
+                       },
+                       "B": {
+                        "block": {
+                         "type": "operacion",
+                         "fields": {
+                          "OP": "/"
+                         },
+                         "inputs": {
+                          "A": {
+                           "block": {
+                            "type": "numero",
+                            "fields": {
+                             "V": 7
+                            }
+                           }
+                          },
+                          "B": {
+                           "block": {
+                            "type": "variable",
+                            "fields": {
+                             "V": "D"
+                            }
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    },
+                    "B": {
+                     "block": {
+                      "type": "numero",
+                      "fields": {
+                       "V": 3
+                      }
+                     }
+                    }
+                   },
+                   "next": {
+                    "block": {
+                     "type": "pregunta",
+                     "fields": {
+                      "TEXTO": "¿Cuál es el D más alto que cumple 3 log a los 7 días?",
+                      "OPCIONES": "1.0; 2.33; 7.0",
+                      "CORRECTA": 2,
+                      "EXPLICA": "7 días entre 3 log son 2.33 días por log."
+                     },
+                     "next": {
+                      "block": {
+                       "type": "supuesto",
+                       "fields": {
+                        "TEXTO": "La muerte es de primer orden: el log del recuento baja en línea recta. Muchas curvas reales traen hombro o cola."
+                       },
+                       "next": {
+                        "block": {
+                         "type": "supuesto",
+                         "fields": {
+                          "TEXTO": "Una sola cepa y una sola inoculación. No reemplaza el ensayo con las cinco cepas."
+                         },
+                         "next": {
+                          "block": {
+                           "type": "fuente",
+                           "fields": {
+                            "TEXTO": "ISO 11930:2019. El criterio A se tomó del resumen de Microchem Laboratory, no del texto de la norma. Definición de log de reducción: Halla et al. 2018, DOI 10.3390/molecules23071571."
+                           }
+                          }
+                         }
+                        }
+                       }
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     },
+     "x": 30,
+     "y": 30
+    }
+   ]
+  }
+ },
+ "documento": {
+  "partes": [
+   {
+    "t": "paso",
+    "texto": "Busca hasta qué D el producto baja 3 log en 7 días."
+   },
+   {
+    "t": "entrada",
+    "nombre": "n0",
+    "etiqueta": "Inóculo, en log de UFC/g",
+    "unidad": "",
+    "min": 4,
+    "max": 7,
+    "paso": 0.1,
+    "valor": 6
+   },
+   {
+    "t": "entrada",
+    "nombre": "D",
+    "etiqueta": "Días para bajar un log",
+    "unidad": "días",
+    "min": 0.5,
+    "max": 10,
+    "paso": 0.1,
+    "valor": 2
+   },
+   {
+    "t": "entrada",
+    "nombre": "dias",
+    "etiqueta": "Tiempo",
+    "unidad": "días",
+    "min": 0,
+    "max": 28,
+    "paso": 0.5,
+    "valor": 7
+   },
+   {
+    "t": "escena",
+    "tipo": "placa",
+    "valores": {
+     "n0": {
+      "t": "var",
+      "v": "n0"
+     },
+     "D": {
+      "t": "var",
+      "v": "D"
+     },
+     "dias": {
+      "t": "var",
+      "v": "dias"
+     }
+    }
+   },
+   {
+    "t": "salida",
+    "etiqueta": "baja en el recuento",
+    "unidad": "log",
+    "dec": 2,
+    "expr": {
+     "t": "bin",
+     "op": "min",
+     "a": {
+      "t": "var",
+      "v": "n0"
+     },
+     "b": {
+      "t": "bin",
+      "op": "/",
+      "a": {
+       "t": "var",
+       "v": "dias"
+      },
+      "b": {
+       "t": "var",
+       "v": "D"
+      }
+     }
+    }
+   },
+   {
+    "t": "curva",
+    "etiqueta": "log de UFC/g que quedan",
+    "variable": "dias",
+    "expr": {
+     "t": "bin",
+     "op": "max",
+     "a": {
+      "t": "num",
+      "v": 0
+     },
+     "b": {
+      "t": "bin",
+      "op": "-",
+      "a": {
+       "t": "var",
+       "v": "n0"
+      },
+      "b": {
+       "t": "bin",
+       "op": "/",
+       "a": {
+        "t": "var",
+        "v": "dias"
+       },
+       "b": {
+        "t": "var",
+        "v": "D"
+       }
+      }
+     }
+    }
+   },
+   {
+    "t": "si",
+    "op": "<",
+    "a": {
+     "t": "bin",
+     "op": "min",
+     "a": {
+      "t": "var",
+      "v": "n0"
+     },
+     "b": {
+      "t": "bin",
+      "op": "/",
+      "a": {
+       "t": "num",
+       "v": 7
+      },
+      "b": {
+       "t": "var",
+       "v": "D"
+      }
+     }
+    },
+    "b": {
+     "t": "num",
+     "v": 3
+    },
+    "texto": "A los 7 días no baja 3 log: no cumple el criterio A para bacterias."
+   },
+   {
+    "t": "pregunta",
+    "texto": "¿Cuál es el D más alto que cumple 3 log a los 7 días?",
+    "opciones": "1.0; 2.33; 7.0",
+    "correcta": 2,
+    "explica": "7 días entre 3 log son 2.33 días por log."
+   },
+   {
+    "t": "supuesto",
+    "texto": "La muerte es de primer orden: el log del recuento baja en línea recta. Muchas curvas reales traen hombro o cola."
+   },
+   {
+    "t": "supuesto",
+    "texto": "Una sola cepa y una sola inoculación. No reemplaza el ensayo con las cinco cepas."
+   },
+   {
+    "t": "fuente",
+    "texto": "ISO 11930:2019. El criterio A se tomó del resumen de Microchem Laboratory, no del texto de la norma. Definición de log de reducción: Halla et al. 2018, DOI 10.3390/molecules23071571."
+   }
+  ]
+ }
+}

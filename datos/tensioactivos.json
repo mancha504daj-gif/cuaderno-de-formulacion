@@ -1,0 +1,296 @@
+[
+ {
+  "inci": "Sodium Laureth Sulfate (2EO)",
+  "nombre": "Texapon N 70 (BASF)",
+  "min": 70.5,
+  "max": 70.5,
+  "fuente": "https://promo.basf.com/campaign/TechCell/arquivos/Standard%20Surfactants%20&%20Alcohols.pdf"
+ },
+ {
+  "inci": "Sodium Laureth Sulfate (2EO)",
+  "nombre": "Texapon HBN HPH (BASF)",
+  "min": 27,
+  "max": 27,
+  "fuente": "https://promo.basf.com/campaign/TechCell/arquivos/Standard%20Surfactants%20&%20Alcohols.pdf"
+ },
+ {
+  "inci": "Sodium Laureth Sulfate (2EO)",
+  "nombre": "Texapon N 25 (BASF)",
+  "min": 25,
+  "max": 25,
+  "fuente": "https://promo.basf.com/campaign/TechCell/arquivos/Standard%20Surfactants%20&%20Alcohols.pdf"
+ },
+ {
+  "inci": "Sodium Laureth Sulfate (1EO)",
+  "nombre": "Texapon N 701 (BASF)",
+  "min": 70,
+  "max": 70,
+  "fuente": "https://promo.basf.com/campaign/TechCell/arquivos/Standard%20Surfactants%20&%20Alcohols.pdf"
+ },
+ {
+  "inci": "Sodium Laureth Sulfate (3EO)",
+  "nombre": "Texapon N 703 (BASF)",
+  "min": 69.5,
+  "max": 69.5,
+  "fuente": "https://promo.basf.com/campaign/TechCell/arquivos/Standard%20Surfactants%20&%20Alcohols.pdf"
+ },
+ {
+  "inci": "Sodium Lauryl Sulfate",
+  "nombre": "Texapon LS 30 (BASF)",
+  "min": 29,
+  "max": 29,
+  "fuente": "https://promo.basf.com/campaign/TechCell/arquivos/Standard%20Surfactants%20&%20Alcohols.pdf"
+ },
+ {
+  "inci": "Sodium Lauryl Sulfate",
+  "nombre": "Texapon K 12 G (BASF)",
+  "min": 97,
+  "max": 97,
+  "fuente": "https://promo.basf.com/campaign/TechCell/arquivos/Standard%20Surfactants%20&%20Alcohols.pdf"
+ },
+ {
+  "inci": "Sodium Lauryl Sulfate",
+  "nombre": "Empicol LZ/B (Innospec)",
+  "min": 92,
+  "max": 92,
+  "fuente": "https://innospec.com/wp-content/uploads/2020/09/EMEA-Product-Guide.pdf"
+ },
+ {
+  "inci": "Ammonium Lauryl Sulfate",
+  "nombre": "Texapon ALS BENZ (BASF)",
+  "min": 27.5,
+  "max": 27.5,
+  "fuente": "https://promo.basf.com/campaign/TechCell/arquivos/Standard%20Surfactants%20&%20Alcohols.pdf"
+ },
+ {
+  "inci": "Ammonium Lauryl Sulfate",
+  "nombre": "Empicol AL 30/AV (Innospec)",
+  "min": 28,
+  "max": 28,
+  "fuente": "https://innospec.com/wp-content/uploads/2020/09/EMEA-Product-Guide.pdf"
+ },
+ {
+  "inci": "Ammonium Laureth Sulfate (3EO)",
+  "nombre": "Texapon ALES 70 (BASF)",
+  "min": 69,
+  "max": 69,
+  "fuente": "https://promo.basf.com/campaign/TechCell/arquivos/Standard%20Surfactants%20&%20Alcohols.pdf"
+ },
+ {
+  "inci": "Magnesium Laureth Sulfate",
+  "nombre": "Empicol EGC 70 (Innospec)",
+  "min": 70,
+  "max": 70,
+  "fuente": "https://innospec.com/wp-content/uploads/2020/09/EMEA-Product-Guide.pdf"
+ },
+ {
+  "inci": "Sodium Coco-Sulfate",
+  "nombre": "Sulfopon 1216 G (BASF)",
+  "min": 92.5,
+  "max": 92.5,
+  "fuente": "https://promo.basf.com/campaign/TechCell/arquivos/Standard%20Surfactants%20&%20Alcohols.pdf"
+ },
+ {
+  "inci": "Sodium C14-16 Olefin Sulfonate",
+  "nombre": "Nansa LSS 38/AV (Innospec)",
+  "min": 38,
+  "max": 38,
+  "fuente": "https://innospec.com/wp-content/uploads/2020/09/EMEA-Product-Guide.pdf"
+ },
+ {
+  "inci": "Sodium Cocoyl Isethionate",
+  "nombre": "Hostapon SCI-85 P (Clariant)",
+  "min": 85,
+  "max": 85,
+  "fuente": "https://www.clariant.com/en/Solutions/Products/2014/01/16/15/30/Hostapon-SCI85-P"
+ },
+ {
+  "inci": "Sodium Cocoyl Isethionate",
+  "nombre": "Pureact I-78 (Innospec)",
+  "min": 78,
+  "max": 78,
+  "fuente": "https://innospec.com/wp-content/uploads/2020/09/EMEA-Product-Guide.pdf"
+ },
+ {
+  "inci": "Sodium Lauroyl Methyl Isethionate",
+  "nombre": "Iselux (Innospec)",
+  "min": 80,
+  "max": 80,
+  "fuente": "https://innospec.com/wp-content/uploads/2020/09/EMEA-Product-Guide.pdf"
+ },
+ {
+  "inci": "Sodium Lauroyl Sarcosinate",
+  "nombre": "Crodasinic LS30 (Croda)",
+  "min": 30,
+  "max": 30,
+  "fuente": "https://www.crodabeauty.com/en-gb/products/product/170-crodasinic_1_ls30"
+ },
+ {
+  "inci": "Sodium Cocoyl Glutamate",
+  "nombre": "Protelan AG 37 (Zschimmer & Schwarz)",
+  "min": 25,
+  "max": 25,
+  "fuente": "https://www.knowde.com/stores/zschimmer-schwarz-personal-care/products/protelan-ag-37"
+ },
+ {
+  "inci": "Disodium Cocoyl Glutamate",
+  "nombre": "Maprosyl 25G-HP (Stepan)",
+  "min": 25,
+  "max": 25,
+  "fuente": "https://knowde.com/stores/stepan-company/products/maprosyl-25g-hp"
+ },
+ {
+  "inci": "Sodium Lauroyl Glutamate",
+  "nombre": "Pureact GLT (Innospec)",
+  "min": 20,
+  "max": 20,
+  "fuente": "https://innospec.com/wp-content/uploads/2020/09/EMEA-Product-Guide.pdf"
+ },
+ {
+  "inci": "Disodium Laureth Sulfosuccinate",
+  "nombre": "Empicol SDD/O (Innospec)",
+  "min": 33,
+  "max": 33,
+  "fuente": "https://innospec.com/wp-content/uploads/2020/09/EMEA-Product-Guide.pdf"
+ },
+ {
+  "inci": "Disodium 2-Sulfolaurate",
+  "nombre": "Texapon SFA (BASF)",
+  "min": 29.5,
+  "max": 29.5,
+  "fuente": "https://promo.basf.com/campaign/TechCell/arquivos/Standard%20Surfactants%20&%20Alcohols.pdf"
+ },
+ {
+  "inci": "Sodium Methyl Cocoyl Taurate",
+  "nombre": "Pureact WS Conc (Innospec)",
+  "min": 30,
+  "max": 30,
+  "fuente": "https://innospec.com/wp-content/uploads/2020/09/EMEA-Product-Guide.pdf"
+ },
+ {
+  "inci": "Sodium Cocoyl Glycinate",
+  "nombre": "Pureact SCG (Innospec)",
+  "min": 30,
+  "max": 30,
+  "fuente": "https://innospec.com/wp-content/uploads/2020/09/EMEA-Product-Guide.pdf"
+ },
+ {
+  "inci": "Potassium Cocoate",
+  "nombre": "Nansa PC 38/F (Innospec)",
+  "min": 35,
+  "max": 35,
+  "fuente": "https://innospec.com/wp-content/uploads/2020/09/EMEA-Product-Guide.pdf"
+ },
+ {
+  "inci": "Cocamidopropyl Betaine",
+  "nombre": "Dehyton KE UP (BASF)",
+  "min": 30,
+  "max": 30,
+  "fuente": "https://promo.basf.com/campaign/TechCell/arquivos/Standard%20Surfactants%20&%20Alcohols.pdf"
+ },
+ {
+  "inci": "Cocamidopropyl Betaine",
+  "nombre": "Dehyton PK 45 (BASF)",
+  "min": 39,
+  "max": 39,
+  "fuente": "https://promo.basf.com/campaign/TechCell/arquivos/Standard%20Surfactants%20&%20Alcohols.pdf"
+ },
+ {
+  "inci": "Cocamidopropyl Betaine",
+  "nombre": "Empigen BS/FA (Innospec)",
+  "min": 30,
+  "max": 30,
+  "fuente": "https://innospec.com/wp-content/uploads/2020/09/EMEA-Product-Guide.pdf"
+ },
+ {
+  "inci": "Coco-Betaine",
+  "nombre": "Dehyton AB 30 (BASF)",
+  "min": 31,
+  "max": 31,
+  "fuente": "https://promo.basf.com/campaign/TechCell/arquivos/Standard%20Surfactants%20&%20Alcohols.pdf"
+ },
+ {
+  "inci": "Lauryl Betaine",
+  "nombre": "Empigen BB (Innospec)",
+  "min": 30,
+  "max": 30,
+  "fuente": "https://innospec.com/wp-content/uploads/2020/09/EMEA-Product-Guide.pdf"
+ },
+ {
+  "inci": "Sodium Cocoamphoacetate",
+  "nombre": "Dehyton MC (BASF)",
+  "min": 32,
+  "max": 32,
+  "fuente": "https://promo.basf.com/campaign/TechCell/arquivos/Standard%20Surfactants%20&%20Alcohols.pdf"
+ },
+ {
+  "inci": "Sodium Lauroamphoacetate",
+  "nombre": "Pureact LAA (Innospec)",
+  "min": 30,
+  "max": 30,
+  "fuente": "https://innospec.com/wp-content/uploads/2020/09/EMEA-Product-Guide.pdf"
+ },
+ {
+  "inci": "Disodium Cocoamphodiacetate",
+  "nombre": "Empigen 5151 (Innospec)",
+  "min": 50,
+  "max": 50,
+  "fuente": "https://innospec.com/wp-content/uploads/2020/09/EMEA-Product-Guide.pdf"
+ },
+ {
+  "inci": "Lauramine Oxide",
+  "nombre": "Empigen OB (Innospec)",
+  "min": 30,
+  "max": 30,
+  "fuente": "https://innospec.com/wp-content/uploads/2020/09/EMEA-Product-Guide.pdf"
+ },
+ {
+  "inci": "Decyl Glucoside",
+  "nombre": "Glucosurf 100 (Indorama)",
+  "min": 50,
+  "max": 50,
+  "fuente": "https://indovinya.indoramaventures.com/wp-content/uploads/2024/09/Indorama-Ventures-GLUCOSURF-ENG.pdf"
+ },
+ {
+  "inci": "Lauryl Glucoside",
+  "nombre": "Glucosurf 120 (Indorama)",
+  "min": 50,
+  "max": 50,
+  "fuente": "https://indovinya.indoramaventures.com/wp-content/uploads/2024/09/Indorama-Ventures-GLUCOSURF-ENG.pdf"
+ },
+ {
+  "inci": "Coco-Glucoside",
+  "nombre": "Pureact Gluco C (Innospec)",
+  "min": 50,
+  "max": 50,
+  "fuente": "https://innospec.com/wp-content/uploads/2020/09/EMEA-Product-Guide.pdf"
+ },
+ {
+  "inci": "Caprylyl/Capryl Glucoside",
+  "nombre": "Glucosurf 810 (Indorama)",
+  "min": 50,
+  "max": 50,
+  "fuente": "https://indovinya.indoramaventures.com/wp-content/uploads/2024/09/Indorama-Ventures-GLUCOSURF-ENG.pdf"
+ },
+ {
+  "inci": "Cocamide MEA",
+  "nombre": "Comperlan 100 (BASF)",
+  "min": 95.5,
+  "max": 95.5,
+  "fuente": "https://promo.basf.com/campaign/TechCell/arquivos/Standard%20Surfactants%20&%20Alcohols.pdf"
+ },
+ {
+  "inci": "Cocamide DEA",
+  "nombre": "Comperlan KD (BASF)",
+  "min": 94,
+  "max": 94,
+  "fuente": "https://promo.basf.com/campaign/TechCell/arquivos/Standard%20Surfactants%20&%20Alcohols.pdf"
+ },
+ {
+  "inci": "Cetrimonium Chloride",
+  "nombre": "cloruro de cetrimonio liquido (sin marca)",
+  "min": 25,
+  "max": 25,
+  "fuente": "https://www.azelispc-us.com/?p=38752"
+ }
+]

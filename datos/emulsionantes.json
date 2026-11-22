@@ -1,0 +1,303 @@
+[
+ {
+  "inci": "Glycol Distearate",
+  "nombre": "etilenglicol diestearato",
+  "hlb": 1.5,
+  "texto": "1.5",
+  "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (Rieger 1997 ISBN 1-870228-17-0)"
+ },
+ {
+  "inci": "Sorbitan Trioleate",
+  "nombre": "Span 85",
+  "hlb": 1.8,
+  "texto": "1.8",
+  "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 sin DOI)"
+ },
+ {
+  "inci": "Sorbitan Tristearate",
+  "nombre": "Span 65",
+  "hlb": 2.1,
+  "texto": "2.1",
+  "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 sin DOI)"
+ },
+ {
+  "inci": "Propylene Glycol Stearate",
+  "nombre": "propilenglicol monoestearato",
+  "hlb": 3.4,
+  "texto": "3.4",
+  "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 sin DOI)"
+ },
+ {
+  "inci": "Sorbitan Sesquioleate",
+  "nombre": "Arlacel 83 / Arlacel C",
+  "hlb": 3.7,
+  "texto": "3.7",
+  "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 sin DOI)"
+ },
+ {
+  "inci": "Glyceryl Stearate",
+  "nombre": "monoestearato de glicerilo no autoemulsionable (Atmul 67)",
+  "hlb": 3.8,
+  "texto": "3.8",
+  "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 sin DOI)"
+ },
+ {
+  "inci": "Polyglyceryl-3 Polyricinoleate",
+  "nombre": "PGPR",
+  "hlb": 4,
+  "texto": "4",
+  "fuente": "https://hlbcalc.com/materials"
+ },
+ {
+  "inci": "Sorbitan Oleate",
+  "nombre": "Span 80",
+  "hlb": 4.3,
+  "texto": "4.3",
+  "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 sin DOI)"
+ },
+ {
+  "inci": "Sorbitan Stearate",
+  "nombre": "Span 60",
+  "hlb": 4.7,
+  "texto": "4.7",
+  "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 sin DOI)"
+ },
+ {
+  "inci": "Sorbitan Isostearate",
+  "nombre": "Span 120",
+  "hlb": 4.7,
+  "texto": "4.7",
+  "fuente": "https://hlbcalc.com/materials"
+ },
+ {
+  "inci": "Steareth-2",
+  "nombre": "Brij S2",
+  "hlb": 4.9,
+  "texto": "4.9",
+  "fuente": "https://media.knowde.com/image/upload/v1616232367/production/Collateral/241359/Brij_Series_1120HCDS218v22.pdf"
+ },
+ {
+  "inci": "Polyglyceryl-2 Dipolyhydroxystearate",
+  "nombre": "Dehymuls PGPH",
+  "hlb": 5,
+  "texto": "5",
+  "fuente": "https://hlbcalc.com/materials"
+ },
+ {
+  "inci": "Polyglyceryl-4 Isostearate",
+  "nombre": "Isolan GI 34",
+  "hlb": 5,
+  "texto": "5",
+  "fuente": "https://hlbcalc.com/materials"
+ },
+ {
+  "inci": "Cetyl PEG/PPG-10/1 Dimethicone",
+  "nombre": "Abil EM 90",
+  "hlb": 5,
+  "texto": "5",
+  "fuente": "https://hlbcalc.com/materials"
+ },
+ {
+  "inci": "PEG-30 Dipolyhydroxystearate",
+  "nombre": "Dehymuls LE",
+  "hlb": 6,
+  "texto": "6",
+  "fuente": "https://hlbcalc.com/materials"
+ },
+ {
+  "inci": "Sorbitan Palmitate",
+  "nombre": "Span 40",
+  "hlb": 6.7,
+  "texto": "6.7",
+  "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 sin DOI)"
+ },
+ {
+  "inci": "Sucrose Dioleate",
+  "nombre": "dioleato de sacarosa",
+  "hlb": 7.1,
+  "texto": "7.1",
+  "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (ISBN 1-870228-17-0)"
+ },
+ {
+  "inci": "PEG-4 Oleate",
+  "nombre": "oleato de PEG-4",
+  "hlb": 8,
+  "texto": "8.0",
+  "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (ISBN 1-870228-17-0)"
+ },
+ {
+  "inci": "Sorbitan Laurate",
+  "nombre": "Span 20",
+  "hlb": 8.6,
+  "texto": "8.6",
+  "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 sin DOI)"
+ },
+ {
+  "inci": "Cetearyl Olivate (and) Sorbitan Olivate",
+  "nombre": "Olivem 1000",
+  "hlb": 9,
+  "texto": "9",
+  "fuente": "https://www.hallstar.com/webfoo/wp-content/uploads/olivem-1000-brochure.pdf"
+ },
+ {
+  "inci": "Laureth-4",
+  "nombre": "Brij 30",
+  "hlb": 9.5,
+  "texto": "9.5",
+  "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 sin DOI)"
+ },
+ {
+  "inci": "Polysorbate 61",
+  "nombre": "Tween 61",
+  "hlb": 9.6,
+  "texto": "9.6",
+  "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 sin DOI)"
+ },
+ {
+  "inci": "Polysorbate 81",
+  "nombre": "Tween 81",
+  "hlb": 10,
+  "texto": "10.0",
+  "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 sin DOI)"
+ },
+ {
+  "inci": "Polysorbate 65",
+  "nombre": "Tween 65",
+  "hlb": 10.5,
+  "texto": "10.5",
+  "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 sin DOI)"
+ },
+ {
+  "inci": "Polysorbate 85",
+  "nombre": "Tween 85",
+  "hlb": 11,
+  "texto": "11",
+  "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 sin DOI)"
+ },
+ {
+  "inci": "Glyceryl Stearate (and) PEG-100 Stearate",
+  "nombre": "Arlacel 165 / Arlacel 170 / Simulsol 165",
+  "hlb": 11,
+  "texto": "11",
+  "fuente": "https://hlbcalc.com/materials"
+ },
+ {
+  "inci": "Cetearyl Glucoside",
+  "nombre": "glucósido cetearílico",
+  "hlb": 11,
+  "texto": "11",
+  "fuente": "https://hlbcalc.com/materials"
+ },
+ {
+  "inci": "PEG-8 Stearate",
+  "nombre": "Myrj 45",
+  "hlb": 11.1,
+  "texto": "11.1",
+  "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 sin DOI)"
+ },
+ {
+  "inci": "PEG-8 Laurate",
+  "nombre": "PEG 400 monolaurato",
+  "hlb": 13.1,
+  "texto": "13.1",
+  "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 sin DOI)"
+ },
+ {
+  "inci": "Polysorbate 21",
+  "nombre": "Tween 21",
+  "hlb": 13.3,
+  "texto": "13.3",
+  "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 sin DOI)"
+ },
+ {
+  "inci": "PEG-35 Castor Oil",
+  "nombre": "Kolliphor EL",
+  "hlb": 13.5,
+  "texto": "13-14",
+  "fuente": "doi:10.3390/colloids8020021"
+ },
+ {
+  "inci": "Polysorbate 60",
+  "nombre": "Tween 60",
+  "hlb": 14.9,
+  "texto": "14.9",
+  "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 sin DOI)"
+ },
+ {
+  "inci": "Polysorbate 80",
+  "nombre": "Tween 80",
+  "hlb": 15,
+  "texto": "15.0",
+  "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 sin DOI)"
+ },
+ {
+  "inci": "Ceteareth-20",
+  "nombre": "Eumulgin B2",
+  "hlb": 15.5,
+  "texto": "15.5",
+  "fuente": "https://hlbcalc.com/materials"
+ },
+ {
+  "inci": "Steareth-21",
+  "nombre": "Brij S721",
+  "hlb": 15.5,
+  "texto": "15.5",
+  "fuente": "https://media.knowde.com/image/upload/v1616232367/production/Collateral/241359/Brij_Series_1120HCDS218v22.pdf"
+ },
+ {
+  "inci": "Polyglyceryl-10 Laurate",
+  "nombre": "poligliceril-10 laurato",
+  "hlb": 15.5,
+  "texto": "15.5",
+  "fuente": "https://hlbcalc.com/materials"
+ },
+ {
+  "inci": "Polysorbate 40",
+  "nombre": "Tween 40",
+  "hlb": 15.6,
+  "texto": "15.6",
+  "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 sin DOI)"
+ },
+ {
+  "inci": "Oleth-20",
+  "nombre": "oleth-20",
+  "hlb": 15.7,
+  "texto": "15.7",
+  "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (ISBN 1-870228-17-0)"
+ },
+ {
+  "inci": "Ceteth-20",
+  "nombre": "ceteth-20",
+  "hlb": 15.7,
+  "texto": "15.7",
+  "fuente": "https://ifscc.org/wp-content/uploads/2018/05/4-Intro-to-Cosmetic-Emulsions-and-Emulsification.pdf (ISBN 1-870228-17-0)"
+ },
+ {
+  "inci": "Polysorbate 20",
+  "nombre": "Tween 20",
+  "hlb": 16.7,
+  "texto": "16.7",
+  "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 sin DOI)"
+ },
+ {
+  "inci": "Laureth-23",
+  "nombre": "Brij 35",
+  "hlb": 16.9,
+  "texto": "16.9",
+  "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 sin DOI)"
+ },
+ {
+  "inci": "PEG-40 Stearate",
+  "nombre": "Myrj 52",
+  "hlb": 16.9,
+  "texto": "16.9",
+  "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 sin DOI)"
+ },
+ {
+  "inci": "PEG-100 Stearate",
+  "nombre": "Atlas G-2159 / Myrj",
+  "hlb": 18.8,
+  "texto": "18.8",
+  "fuente": "https://library.scconline.org/is-cacheable/1708619266684/Calculation-HLB-Values-Non-Ionic-Surfactants.pdf (Griffin 1954 sin DOI)"
+ }
+]
