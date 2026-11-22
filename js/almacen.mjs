@@ -51,6 +51,8 @@ async function conecta() {
   })().catch((e) => { nube = null; throw e; }));
 }
 
+export const prepara = () => { conecta().catch(() => {}); };
+
 export async function sincroniza() {
   if (!usuario) return;
   if (corriendo) { await corriendo; return sincroniza2(); }
