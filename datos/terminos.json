@@ -775,5 +775,149 @@
   "secciones": [
    "fragancias"
   ]
+ },
+ {
+  "id": "ufc",
+  "palabra": "UFC",
+  "def": "Unidad formadora de colonia: lo que dio origen a una colonia visible.",
+  "ej": "14 000 UFC/g.",
+  "secciones": [
+   "microbiologia"
+  ]
+ },
+ {
+  "id": "colonia",
+  "palabra": "Colonia",
+  "def": "Montón de microbios que nació de uno o de unos pocos.",
+  "ej": "",
+  "secciones": [
+   "microbiologia"
+  ]
+ },
+ {
+  "id": "medio",
+  "palabra": "Medio de cultivo",
+  "def": "Alimento para microbios, líquido o en gel.",
+  "ej": "Agar malta.",
+  "secciones": [
+   "microbiologia"
+  ]
+ },
+ {
+  "id": "agar",
+  "palabra": "Agar",
+  "def": "Gel de algas que sostiene el medio en la placa.",
+  "ej": "",
+  "secciones": [
+   "microbiologia"
+  ]
+ },
+ {
+  "id": "aseptico",
+  "palabra": "Aséptico",
+  "def": "Hecho sin dejar entrar microbios de fuera.",
+  "ej": "Abrir un tubo junto al mechero.",
+  "secciones": [
+   "microbiologia"
+  ]
+ },
+ {
+  "id": "esteril",
+  "palabra": "Estéril",
+  "def": "Sin nada vivo.",
+  "ej": "Un tubo salido del autoclave.",
+  "secciones": [
+   "microbiologia"
+  ]
+ },
+ {
+  "id": "autoclave",
+  "palabra": "Autoclave",
+  "def": "Olla a presión que esteriliza con vapor a 121 °C.",
+  "ej": "",
+  "secciones": [
+   "microbiologia"
+  ]
+ },
+ {
+  "id": "dilucion",
+  "palabra": "Dilución decimal",
+  "def": "Una parte de muestra en diez partes totales. 10⁻² es repetirlo dos veces.",
+  "ej": "1 mL en 9 mL.",
+  "secciones": [
+   "microbiologia"
+  ]
+ },
+ {
+  "id": "neutralizante",
+  "palabra": "Neutralizante",
+  "def": "Apaga al conservante para que crezca lo que hay.",
+  "ej": "Caldo letheen.",
+  "secciones": [
+   "microbiologia"
+  ]
+ },
+ {
+  "id": "incubar",
+  "palabra": "Incubar",
+  "def": "Mantener a temperatura fija mientras crece.",
+  "ej": "30 °C, 48 h.",
+  "secciones": [
+   "microbiologia"
+  ]
+ },
+ {
+  "id": "blanco",
+  "palabra": "Blanco",
+  "def": "Prueba sin muestra. Si crece, algo se contaminó.",
+  "ej": "",
+  "secciones": [
+   "microbiologia"
+  ]
+ },
+ {
+  "id": "inoculo",
+  "palabra": "Inóculo",
+  "def": "Microbios que agregas a propósito.",
+  "ej": "",
+  "secciones": [
+   "microbiologia"
+  ]
+ },
+ {
+  "id": "enriquecer",
+  "palabra": "Enriquecimiento",
+  "def": "Dejar crecer en caldo para detectar lo poco.",
+  "ej": "",
+  "secciones": [
+   "microbiologia"
+  ]
+ },
+ {
+  "id": "aerobio",
+  "palabra": "Aerobio",
+  "def": "Que crece con aire.",
+  "ej": "",
+  "secciones": [
+   "microbiologia"
+  ]
+ },
+ {
+  "id": "patogeno",
+  "palabra": "Patógeno",
+  "def": "Que puede enfermar.",
+  "ej": "Pseudomonas aeruginosa.",
+  "secciones": [
+   "microbiologia"
+  ]
+ },
+ {
+  "id": "logred",
+  "palabra": "Reducción logarítmica",
+  "def": "Cuántas veces baja por diez. 3 log es de un millón a mil.",
+  "ej": "",
+  "secciones": [
+   "microbiologia"
+  ]
  }
 ]

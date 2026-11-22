@@ -270,7 +270,23 @@ function mezcla2() {
   return { L, s };
 }
 
+function petri() {
+  const s = { paso: 0, lg: 4, dil: 1, vol: 0.1 };
+  const N = 320, p = Array.from({ length: N }, (_, i) => { const r = Math.sqrt((i + 0.5) / N), a = i * 2.39996; return { x: 240 + Math.cos(a) * r * 164, y: 268 + Math.sin(a) * r * 164, f: i * 1.3, a: 0, k: Math.abs(Math.sin((i + 1) * 12.9898) * 43758.5453) % 1 }; }), orden = [...p].sort((a, b) => a.k - b.k);
+  orden.forEach((x, i) => { x.i = i; });
+  const CO = ["#fff2c9", "#ffd08a", "#ffe9a8"];
+  const L = lienzo("Placa con colonias: su número depende de la carga, la dilución y el volumen sembrado", (g, dt, t, fs, G) => {
+    const n = 10 ** s.lg * 10 ** -s.dil * s.vol, ver = Math.min(N, Math.round(n));
+    G.gota(240, 268, 196, "#c8843f", { clara: 0.62, brillo: 0.6, est: 1 + Math.sin(t * 0.5) * 0.004 });
+    for (const x of p) { x.a = va(x.a, x.i < ver ? 1 : 0, dt, 1.2 + x.k * 2); if (x.a < 0.03) continue; const r = (n > 250 ? 6.2 : 7.4) * x.a * (0.75 + x.k * 0.5); G.gota(x.x + Math.sin(t * 0.4 + x.f) * 0.5, x.y, r, CO[Math.floor(x.k * 3)], { clara: 0.02, peso: 2.6, est: 1 + Math.sin(t + x.f) * 0.03 }); }
+    texto(g, n > 250 ? "incontable: diluye más" : n < 25 ? "muy pocas: siembra más" : "placa contable", 240, 34, fs(28), { serif: true });
+    texto(g, `${n >= 10 ? Math.round(n).toLocaleString("en-US").replaceAll(",", " ") : n.toFixed(1)} colonias esperadas`, 240, 494, fs(19), { peso: 600 });
+  }, 480, 520, () => s.color || "#7a3350");
+  return { L, s };
+}
+
 export const NUEVAS = {
+  petri: { nombre: "placa con colonias", crear: petri, color: "#7a3350", pie: "Colonias esperadas en promedio. Dos placas reales difieren por azar. El dibujo muestra hasta 320.", controles: [["lg", "Carga, log de UFC/g", { min: 0, max: 7, paso: 0.1, valor: 4 }], ["dil", "Dilución, 10⁻ⁿ", { min: 0, max: 6, paso: 1, valor: 1 }]], pasos: [{ lg: 5, dil: 1 }, { lg: 5, dil: 2 }, { lg: 5, dil: 3 }, {}], bloque: ["lg", "dil", "vol"] },
   mezcla: { nombre: "ingredientes", crear: mezcla2, color: "#8d2a52", pie: "", controles: [], pasos: [{}], oculta: true },
   piel: { nombre: "piel y agua", crear: piel, color: "#8d2a52", pie: "Esquema: las células, el agua y la película no están a escala. La película frena la fracción de gotas que pongas.", controles: [["oclusion", "Agua que frena la película", { min: 0, max: 100, paso: 1, valor: 0, unidad: "%" }]], pasos: [{ oclusion: 0 }, { oclusion: 0 }, { oclusion: 15 }, { oclusion: 80 }, {}], libre: { paso: 4 } },
   solar: { nombre: "protector y sol", crear: solar, color: "#8a5200", pie: "Cada rayo cruza con la probabilidad 1/FPS. La piel y la película son esquema.", controles: [["fps", "FPS de la etiqueta", { min: 2, max: 50, paso: 1, valor: 30 }], ["q", "Cantidad aplicada", { min: 0, max: 4, paso: 0.1, valor: 2, unidad: "mg/cm²" }]], pasos: [{ fps: 30, q: 2 }, { fps: 30, q: 1 }, { fps: 30, q: 0.5 }] },

@@ -180,5 +180,44 @@
    "c": 1,
    "e": "Pueden crecer sin que los veas."
   }
+ ],
+ "microbiologia": [
+  {
+   "p": "Sembraste sin neutralizante y no creció nada. ¿El producto está limpio?",
+   "o": [
+    "Sí",
+    "No se sabe"
+   ],
+   "c": 1,
+   "e": "El conservante pudo impedir que creciera en la placa."
+  },
+  {
+   "p": "Placas de 0.1 mL de la 10⁻² con 60 y 64 colonias. ¿Cuánto hay?",
+   "o": [
+    "620 UFC/g",
+    "62 000 UFC/g",
+    "6200 UFC/g"
+   ],
+   "c": 1,
+   "e": "124/(2 × 0.1 × 0.01) = 62 000 UFC/g."
+  },
+  {
+   "p": "Una máscara de pestañas da 400 UFC/g. ¿Cumple ISO 17516?",
+   "o": [
+    "Sí, es menos de 1000",
+    "No, en ojos el máximo es 100"
+   ],
+   "c": 1,
+   "e": "La zona de los ojos tiene el límite bajo."
+  },
+  {
+   "p": "Crecieron colonias en el blanco. ¿Qué haces?",
+   "o": [
+    "Restarlas",
+    "Repetir el ensayo"
+   ],
+   "c": 1,
+   "e": "No sabes de dónde vino el resto."
+  }
  ]
 }

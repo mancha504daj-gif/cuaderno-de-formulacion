@@ -182,7 +182,24 @@ function lamina(el, tipo, pie) {
   return E;
 }
 
-export const CALCULADORAS = { hlb, stokes, conservante, jabon, activa };
+async function conteo(el) {
+  const sal = h("div", { class: "salida", "aria-live": "polite" }), lista = h("div"), filas = [];
+  const medio = h("select", { onchange: () => calc() }, h("option", { value: "a" }, "Aerobios, de 25 a 250 colonias"), h("option", { value: "h" }, "Hongos y levaduras, de 10 a 150"));
+  const zona = h("select", { onchange: () => calc() }, h("option", { value: 1000 }, "Uso general"), h("option", { value: 100 }, "Ojos, mucosas o menores de 3 años"));
+  let esc = null;
+  const nueva = (dil, vol, col) => { const D = h("input", { type: "number", min: 0, max: 8, step: 1, value: dil, "aria-label": "Dilución 10 a la menos", oninput: () => calc() }), V = h("input", { type: "number", min: 0.01, step: "any", value: vol, "aria-label": "Mililitros sembrados", oninput: () => calc() }), C = h("input", { type: "number", min: 0, step: 1, value: col, "aria-label": "Colonias", oninput: () => calc() }), fila = { D, V, C }; const r = h("div", { class: "renglon placa" }, h("label", {}, "10⁻ⁿ", D), h("label", {}, "mL", V), h("label", {}, "colonias", C), h("button", { type: "button", onclick: () => { filas.splice(filas.indexOf(fila), 1); r.remove(); calc(); } }, "Quitar")); filas.push(fila); lista.append(r); };
+  const calc = protege(sal, () => {
+    const u = M.ufc(filas.map((x) => ({ colonias: x.C.value, dilucion: x.D.value, volumen: x.V.value })), medio.value === "h" ? { min: 10, max: 150 } : {});
+    esc?.poner({ lg: Math.max(0, Math.log10(Math.max(1, u.valor))), dil: Number(filas[0].D.value), vol: Number(filas[0].V.value) });
+    sal.replaceChildren(h("p", { class: "cifra" }, u.texto, h("small", {}, `UFC por gramo (${u.nota})`)), h("p", {}, `El límite de ISO 17516 suma aerobios, hongos y levaduras: ${zona.value} UFC/g. ${u.valor > Number(zona.value) ? "Este conteo solo ya lo pasa." : "Este conteo no lo pasa; falta sumar el otro y descartar patógenos."}`), fuentes(["Conteo: FDA, BAM, capítulo 23 (julio de 2024) y capítulo 3.", "Límites: ISO 17516:2014, citados por BAM capítulo 23."]));
+  });
+  nueva(1, 0.1, 132); nueva(1, 0.1, 148); nueva(2, 0.1, 14); nueva(2, 0.1, 11);
+  el.replaceChildren(h("div", { class: "panel" }, campo("Qué contaste", medio), campo("Producto", zona), lista, h("button", { type: "button", onclick: () => { nueva(1, 0.1, 0); calc(); } }, "Agregar placa")), sal);
+  esc = lamina(el, "petri", "La placa dibuja las colonias que esperarías en la primera fila.");
+  calc();
+}
+
+export const CALCULADORAS = { conteo, hlb, stokes, conservante, jabon, activa };
 
 export async function montar(el) {
   try {

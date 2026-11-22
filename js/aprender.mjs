@@ -1,6 +1,7 @@
 import { h, aviso } from "./elementos.mjs";
 import { lee, nota, raiz } from "./receta.mjs";
 import { escena, CAT, botonPausa } from "./escenas.mjs";
+import * as A from "./almacen.mjs";
 
 export async function productos(el) {
   try {
@@ -52,12 +53,11 @@ export function buscador(el) {
   el.replaceChildren(i);
 }
 
-const KP = "cuaderno-avance";
 export function avance(el) {
-  const lee2 = () => { try { return new Set(JSON.parse(localStorage.getItem(KP)) ?? []); } catch { return new Set(); } }, v = lee2();
-  const cajas = [...el.querySelectorAll("li")], marca = h("p", { class: "cifra" });
-  const pinta = () => marca.replaceChildren(`${v.size} de ${cajas.length}`, h("small", {}, "pasos hechos, guardados en este navegador"));
-  cajas.forEach((li, n) => { const k = li.dataset.paso ?? String(n), b = h("input", { type: "checkbox", "aria-label": "Hecho", checked: v.has(k), onchange: (x) => { x.target.checked ? v.add(k) : v.delete(k); try { localStorage.setItem(KP, JSON.stringify([...v])); } catch { marca.title = "Sin guardar"; } pinta(); } }); li.replaceChildren(b, h("span", {}, ...li.childNodes)); });
-  for (const k of [...v]) if (!cajas.some((li, n) => (li.dataset.paso ?? String(n)) === k)) v.delete(k);
+  const cajas = [...el.querySelectorAll("li")], marca = h("p", { class: "cifra" }), leeV = () => new Set(A.uno("avance", "camino") ?? []);
+  let v = leeV();
+  const pares = cajas.map((li, n) => { const k = li.dataset.paso ?? String(n), b = h("input", { type: "checkbox", "aria-label": "Hecho", onchange: (x) => { x.target.checked ? v.add(k) : v.delete(k); A.guarda("avance", "camino", [...v]); pinta(); } }); li.replaceChildren(b, h("span", {}, ...li.childNodes)); return [k, b]; });
+  const pinta = () => { for (const [k, b] of pares) b.checked = v.has(k); marca.replaceChildren(`${pares.filter(([k]) => v.has(k)).length} de ${cajas.length}`, h("small", {}, A.quien() ? "pasos hechos, guardados en tu cuenta" : "pasos hechos, guardados en este navegador")); };
   pinta(); el.prepend(marca);
+  addEventListener("cuaderno-actualizado", () => { v = leeV(); pinta(); }); A.alCambiar(() => { v = leeV(); pinta(); });
 }

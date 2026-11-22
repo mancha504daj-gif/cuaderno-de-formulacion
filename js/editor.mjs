@@ -1,5 +1,6 @@
 import { dibujarLaboratorio } from "./laboratorio.mjs";
 import { CAT, ROTULOS, huecos } from "./escenas.mjs";
+import * as A from "./almacen.mjs";
 const B = window.Blockly, $ = (id) => document.getElementById(id);
 const fotos = await (await fetch("fotos/creditos.json")).json();
 const COLORES = [["rosa", "rosa"], ["azul", "azul"], ["oliva", "oliva"], ["ocre", "ocre"], ["uva", "uva"], ["petróleo", "petroleo"], ["violeta", "violeta"], ["carbón", "carbon"], ["terracota", "terracota"]];
@@ -63,16 +64,18 @@ function aspecto() {
 }
 
 let modo = "asp", espera, cargando = false;
-const K = () => `cuaderno-${modo === "lab" ? "lab" : "asp-" + $("pagina").value}`;
+let labId = "borrador";
+const nuevoId = () => `lab-${Date.now().toString(36)}${Math.random().toString(36).slice(2, 5)}`;
 const estado = (t) => { $("estado").textContent = t; };
-const guarda = (k, j) => { try { localStorage.setItem(k, JSON.stringify(j)); return true; } catch { return false; } };
-const lee = (k) => { try { return JSON.parse(localStorage.getItem(k)); } catch { return null; } };
+const guarda = (j) => (modo === "lab" ? A.guarda("laboratorio", labId, j) : A.guarda("aspecto", cuaderno.clave, j));
+const lee = () => (modo === "lab" ? A.uno("laboratorio", labId) : A.uno("aspecto", cuaderno.clave));
+function misLabs() { const l = A.lista("laboratorio"), s = $("mislabs"), ids = A.respaldo().cosas.filter((c) => c.tipo === "laboratorio"); s.replaceChildren(...[["", "Laboratorio nuevo"], ...ids.map((c) => [c.id, c.datos?.titulo || "Sin título"])].map(([v, t]) => { const o = document.createElement("option"); o.value = v; o.textContent = t; o.selected = v === labId; return o; })); return l.length; }
 const limpio = (t) => t.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") || "laboratorio";
 const archivo = () => modo === "lab"
   ? { version: 2, clase: "laboratorio", titulo: $("titulo").value.trim() || "Laboratorio sin título", bloques: B.serialization.workspaces.save(ws), documento: laboratorio() }
   : { version: 2, clase: "aspecto", pagina: cuaderno.clave, bloques: B.serialization.workspaces.save(ws), aspecto: aspecto() };
-function pon(bloques) { cargando = true; try { B.serialization.workspaces.load(bloques, ws, { recordUndo: true }); } finally { cargando = false; } }
-function vacio() { cargando = true; ws.clear(); cargando = false; }
+function pon(bloques) { clearTimeout(espera); cargando = true; B.Events.disable(); try { B.serialization.workspaces.load(bloques, ws); } finally { B.Events.enable(); cargando = false; } }
+function vacio() { clearTimeout(espera); cargando = true; B.Events.disable(); try { ws.clear(); } finally { B.Events.enable(); cargando = false; } }
 async function muestra() {
   if (modo === "lab") dibujarLaboratorio(laboratorio(), $("vista"));
   else if (cuaderno) { const a = aspecto(); await cuaderno.aplicar(a ?? {}); }
@@ -82,7 +85,9 @@ function cambio() {
   espera = setTimeout(async () => {
     if (modo === "asp" && !cuaderno) return;
     await muestra();
-    estado(guarda(K(), archivo()) ? "Borrador guardado en este navegador." : "Este navegador no guarda borradores. Descarga tu trabajo.");
+    const ok = guarda(archivo());
+    if (modo === "lab") misLabs();
+    estado(ok ? (A.quien() ? "Guardado en tu cuenta: lo verás en tus dispositivos." : "Guardado en este navegador. Entra en tu cuenta para verlo en otros dispositivos.") : "No se pudo guardar. Descarga tu trabajo.");
   }, 160);
 }
 ws.addChangeListener((e) => { if (!e.isUiEvent && !cargando && !ws.isDragging()) cambio(); });
@@ -100,7 +105,7 @@ async function abrePagina() {
   for (let i = 0; i < 60 && m.contentDocument.documentElement.dataset.listo !== "si"; i++) await new Promise((r) => setTimeout(r, 100));
   cuaderno = m.contentWindow.cuaderno;
   if (!cuaderno) return estado("No se pudo abrir la página.");
-  const g = lee(K());
+  const g = lee();
   let guardado = null;
   if (!g) { try { const ix = await (await fetch("aspecto/indice.json")).json(); if (ix.includes(cuaderno.clave)) guardado = await (await fetch(`aspecto/${cuaderno.clave}.json`)).json(); } catch { } }
   try { pon((g ?? guardado)?.bloques ?? bloquesDePagina()); } catch { pon(bloquesDePagina()); }
@@ -108,24 +113,26 @@ async function abrePagina() {
 }
 async function abreLab(nombre) {
   vacio();
-  let g = nombre ? null : lee(K());
-  if (nombre) { if (!/^[a-z0-9-]+$/.test(nombre)) return estado("Nombre no válido."); try { const r = await fetch(`laboratorios/${nombre}.json`); if (!r.ok) throw 0; g = await r.json(); const antes = lee(K()); if (antes) guarda(K() + "-anterior", antes); } catch { return estado("No existe ese laboratorio."); } }
+  if (nombre) labId = nuevoId();
+  let g = nombre ? null : lee();
+  if (nombre) { if (!/^[a-z0-9-]+$/.test(nombre)) return estado("Nombre no válido."); try { const r = await fetch(`laboratorios/${nombre}.json`); if (!r.ok) throw 0; g = await r.json(); } catch { return estado("No existe ese laboratorio."); } }
   if (g) { try { pon(g.bloques); $("titulo").value = g.titulo ?? ""; } catch { estado("Ese laboratorio tiene bloques que el editor no conoce."); } }
-  ws.clearUndo(); await muestra(); $("anterior").hidden = !lee(K() + "-anterior");
+  ws.clearUndo(); await muestra(); $("anterior").hidden = true; misLabs();
 }
 async function cambiaModo(m, lab) {
   clearTimeout(espera); modo = m;
   for (const [id, x] of [["m-asp", "asp"], ["m-lab", "lab"]]) $(id).setAttribute("aria-selected", String(m === x));
-  $("c-pagina").hidden = $("marco").hidden = m !== "asp"; $("c-titulo").hidden = $("vista").hidden = $("ejemplo").hidden = m !== "lab"; $("restaurar").hidden = m !== "asp"; $("anterior").hidden = true;
+  $("c-pagina").hidden = $("marco").hidden = m !== "asp"; $("c-titulo").hidden = $("vista").hidden = $("ejemplo").hidden = $("c-mislabs").hidden = $("borrarlab").hidden = m !== "lab"; $("restaurar").hidden = m !== "asp"; $("anterior").hidden = true;
   ws.updateToolbox(CAJAS[m]);
   if (m === "asp") await abrePagina(); else { cuaderno = null; await abreLab(lab); }
 }
 $("m-asp").onclick = () => cambiaModo("asp"); $("m-lab").onclick = () => cambiaModo("lab");
 $("pagina").onchange = abrePagina;
 $("deshacer").onclick = () => ws.undo(false); $("rehacer").onclick = () => ws.undo(true);
-$("restaurar").onclick = () => { if (cuaderno) { pon(bloquesDePagina()); cambio(); } };
 $("ejemplo").onclick = () => abreLab("cremado");
-$("anterior").onclick = () => { const g = lee(K() + "-anterior"); if (g) { guarda(K() + "-anterior", archivo()); pon(g.bloques); $("titulo").value = g.titulo ?? ""; cambio(); } };
+$("mislabs").onchange = async () => { labId = $("mislabs").value || nuevoId(); vacio(); $("titulo").value = ""; await abreLab(); };
+$("borrarlab").onclick = async () => { if (!A.uno("laboratorio", labId) || !confirm("¿Borrar este laboratorio? No se puede deshacer.")) return; A.borra("laboratorio", labId); labId = nuevoId(); $("titulo").value = ""; await abreLab(); };
+$("restaurar").onclick = async () => { if (!cuaderno) return; pon(bloquesDePagina()); A.borra("aspecto", cuaderno.clave); await muestra(); estado("La página volvió a su versión original."); };
 $("descargar").onclick = () => {
   if (modo === "asp" && !cuaderno) return;
   const j = archivo(), n = modo === "lab" ? limpio(j.titulo) : j.pagina, a = document.createElement("a"), u = URL.createObjectURL(new Blob([JSON.stringify(j, null, 1)], { type: "application/json" }));
@@ -140,12 +147,13 @@ $("abrir").onchange = async (e) => {
     const m = j.clase === "laboratorio" ? "lab" : "asp";
     if (m !== modo) await cambiaModo(m);
     if (m === "asp" && j.pagina !== cuaderno?.clave) throw new Error(`Ese archivo es de la página ${j.pagina}. Elígela primero.`);
-    if (m === "lab") guarda(K() + "-anterior", archivo());
-    pon(j.bloques); if (m === "lab") { $("titulo").value = j.titulo ?? ""; $("anterior").hidden = false; }
+    if (m === "lab") labId = nuevoId();
+    pon(j.bloques); if (m === "lab") { $("titulo").value = j.titulo ?? ""; }
     cambio(); estado(`Abriste ${f.name}.`);
   } catch (x) { estado(x instanceof SyntaxError ? "Ese archivo no es JSON." : x.message); }
   e.target.value = "";
 };
 window.editorDeBloques = { ws, laboratorio, aspecto, archivo };
-const lab = new URLSearchParams(location.search).get("lab");
-await cambiaModo(lab ? "lab" : "asp", lab);
+const qs = new URLSearchParams(location.search), lab = qs.get("lab");
+if (qs.get("mio") && /^[A-Za-z0-9_-]{1,80}$/.test(qs.get("mio"))) labId = qs.get("mio");
+await cambiaModo(lab || qs.get("mio") ? "lab" : "asp", lab);
