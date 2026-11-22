@@ -1,0 +1,159 @@
+{
+ "slug": "jabon-liquido-de-oliva",
+ "titulo": "Jabón líquido de oliva y coco",
+ "producto": "jabon-liquido",
+ "tipo": "jabon",
+ "nivel": 3,
+ "tiempo": 180,
+ "lote": 830.7,
+ "pH": "9 a 10.5",
+ "estado": "sin ensayar",
+ "porque": "La potasa da jabón blando que se disuelve en agua. Con KOH al 90 % hay que pesar más para poner la misma base.",
+ "fases": [
+  {
+   "nombre": "A, aceites",
+   "ingredientes": [
+    {
+     "id": "oliva",
+     "pct": 14.4453
+    },
+    {
+     "id": "coco",
+     "pct": 9.6302
+    }
+   ]
+  },
+  {
+   "nombre": "B, lejía",
+   "ingredientes": [
+    {
+     "id": "agua",
+     "pct": 16.316
+    },
+    {
+     "id": "koh",
+     "pct": 5.4387
+    }
+   ]
+  },
+  {
+   "nombre": "C, dilución",
+   "ingredientes": [
+    {
+     "id": "agua",
+     "pct": 54.1698
+    }
+   ]
+  }
+ ],
+ "jabon": {
+  "aceites": [
+   [
+    "oliva",
+    120,
+    184
+   ],
+   [
+    "coco",
+    80,
+    248
+   ]
+  ],
+  "base": "KOH",
+  "sobreengrase": 3,
+  "pureza": 90,
+  "lejia": 25,
+  "dilucion": 450
+ },
+ "pasos": [
+  "Ponte guantes, lentes y manga larga. Trabaja con ventilación y sin niños ni mascotas cerca.",
+  "Pesa el agua en un recipiente resistente al calor y la potasa aparte.",
+  "Agrega la potasa al agua, poco a poco, y agita. Nunca al revés. Se calienta y suelta vapor: no lo respires.",
+  "Deja que la lejía baje a unos 40 °C. Aquí lejía significa la solución de potasa; el cloro de lavar es otra sustancia.",
+  "Funde los aceites sólidos, mézclalos con los líquidos y déjalos a unos 40 °C.",
+  "Vierte la lejía sobre los aceites y mezcla con batidora de mano, a pulsos, hasta que una gota deje huella en la superficie.",
+  "Calienta la pasta en baño de agua, tapada, unas 3 h. Mezcla cada 30 min hasta que quede translúcida.",
+  "Disuelve 1 g en 10 mL de agua caliente: si queda transparente, terminó.",
+  "Agrega el agua de dilución caliente y deja que se disuelva toda la noche.",
+  "Mide el pH y deja reposar una semana."
+ ],
+ "cambia": [
+  "Más coco: más espuma.",
+  "Más agua: más fluido. Este jabón no espesa con sal como un champú."
+ ],
+ "controles": [
+  [
+   "pH",
+   "de 9 a 10.5",
+   "solución al 1 %"
+  ],
+  [
+   "Álcali libre",
+   "sin color con fenolftaleína en el centro",
+   "corta una barra y pon una gota; maneja el indicador con guantes"
+  ],
+  [
+   "Pérdida de peso",
+   "hasta que se estabilice",
+   "pesa la misma barra cada semana"
+  ],
+  [
+   "Espuma",
+   "altura a 0 y 5 min",
+   "probeta agitada, solución al 1 %"
+  ]
+ ],
+ "fallas": [
+  [
+   "Polvo blanco en la superficie",
+   "ceniza de carbonato",
+   "cubre el molde y cura con menos aire"
+  ],
+  [
+   "Se separa en el molde",
+   "faltó mezclar o temperatura baja",
+   "vuelve a fundir y mezcla"
+  ],
+  [
+   "Pica o quema",
+   "álcali sin reaccionar",
+   "no lo uses; revisa la pesada y el SAP"
+  ],
+  [
+   "Queda blando",
+   "mucho aceite líquido o sobreengrase",
+   "cura más tiempo o sube el coco"
+  ]
+ ],
+ "avisos": [
+  "La potasa quema piel y ojos. Si te cae, enjuaga con agua 15 min y busca atención médica.",
+  "Diluido lleva agua a pH alto: aun así analiza microbios."
+ ],
+ "fuentes": [
+  "SAP: Codex CXS 210-1999 y CXS 33 (ed. 2015); ricino, JECFA."
+ ],
+ "cuenta": {
+  "jabon": {
+   "aceites": [
+    [
+     "oliva",
+     120,
+     184
+    ],
+    [
+     "coco",
+     80,
+     248
+    ]
+   ],
+   "base": "KOH",
+   "sobreengrase": 3,
+   "pureza": 90,
+   "lejia": 25,
+   "dilucion": 450,
+   "gramos": 45.2,
+   "agua": 135.5,
+   "masa": 200
+  }
+ }
+}

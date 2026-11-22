@@ -244,7 +244,34 @@ function fallas() {
   return { L, s };
 }
 
+function mezcla2() {
+  const s = { paso: 0, items: [], unir: 0, foco: -1 };
+  let de = null, gotas = [], u = 0;
+  const L = lienzo("Gotas de cada ingrediente, con área proporcional a su porcentaje, que se juntan al mezclar", (g, dt, t, fs, G) => {
+    if (de !== s.items) {
+      de = s.items; const n = Math.max(1, ...s.items.map((x) => x.fase + 1));
+      gotas = s.items.map((x, i) => { const an = (x.fase / n) * TAU - Math.PI / 2, cx = 240 + Math.cos(an) * (n > 1 ? 112 : 0), cy = 264 + Math.sin(an) * (n > 1 ? 112 : 0), b = i * 2.4; return { ...x, cx, cy, x: cx + Math.cos(b) * 60, y: cy + Math.sin(b) * 60, r: Math.max(7, 13.5 * Math.sqrt(x.pct)), f: i * 1.7, k: rgb(x.color) }; });
+    }
+    u = va(u, s.unir, dt, 1.3);
+    const q = suave(u);
+    gotas.forEach((p, i) => {
+      let fx = (mezcla(p.cx, 240, q) - p.x) * (1.1 + q), fy = (mezcla(p.cy, 264, q) - p.y) * (1.1 + q);
+      for (const o of gotas) if (o !== p) { const dx = p.x - o.x, dy = p.y - o.y, D = (p.r + o.r) * mezcla(1.22, 0.42, q), d = Math.hypot(dx, dy); if (d < D && d > 0.5) { const k = ((D - d) / d) * 4.5; fx += dx * k; fy += dy * k; } }
+      const giro = Math.sin(Math.PI * Math.min(1, u)) * 2.6; fx += -(p.y - 264) * giro; fy += (p.x - 240) * giro;
+      p.x += lim(fx, -420, 420) * dt; p.y += lim(fy, -420, 420) * dt;
+      p.x += (lim(p.x, p.r + 6, 474 - p.r) - p.x) * 5 * dt; p.y += (lim(p.y, p.r + 56, 508 - p.r) - p.y) * 5 * dt;
+      p.br = va(p.br ?? 0, s.foco === i ? 1 : 0, dt, 8);
+      G.gota(p.x + Math.sin(t * 0.7 + p.f) * 2, p.y + Math.cos(t * 0.6 + p.f) * 2, p.r * (1 + p.br * 0.14), p.k, { clara: 0.36, brillo: 1 + p.br, est: 1 + Math.sin(t * 1.6 + p.f) * 0.03 + p.br * 0.05 });
+    });
+    gotas.forEach((p) => { if ((p.r > 34 && q < 0.5) || p.br > 0.3) { g.globalAlpha = p.br > 0.3 ? 1 : 1 - q * 2; const m = p.nombre.split(/,| al /)[0]; texto(g, m.length > 22 ? m.slice(0, 21) + "…" : m, p.x, p.y, p.br > 0.3 ? fs(17) : Math.min(fs(15), (p.r * 3.2) / Math.max(4, m.length) + 5), { color: p.br > 0.3 ? "#fff" : "#2a0f18", peso: 700, sombra: p.br > 0.3 }); } });
+    g.globalAlpha = 1;
+    texto(g, u > 0.6 ? "todo junto" : "separados por fase", 240, 32, fs(26), { serif: true });
+  }, 480, 520, () => s.color || "#8d2a52");
+  return { L, s };
+}
+
 export const NUEVAS = {
+  mezcla: { nombre: "ingredientes", crear: mezcla2, color: "#8d2a52", pie: "", controles: [], pasos: [{}], oculta: true },
   piel: { nombre: "piel y agua", crear: piel, color: "#8d2a52", pie: "Esquema: las células, el agua y la película no están a escala. La película frena la fracción de gotas que pongas.", controles: [["oclusion", "Agua que frena la película", { min: 0, max: 100, paso: 1, valor: 0, unidad: "%" }]], pasos: [{ oclusion: 0 }, { oclusion: 0 }, { oclusion: 15 }, { oclusion: 80 }, {}], libre: { paso: 4 } },
   solar: { nombre: "protector y sol", crear: solar, color: "#8a5200", pie: "Cada rayo cruza con la probabilidad 1/FPS. La piel y la película son esquema.", controles: [["fps", "FPS de la etiqueta", { min: 2, max: 50, paso: 1, valor: 30 }], ["q", "Cantidad aplicada", { min: 0, max: 4, paso: 0.1, valor: 2, unidad: "mg/cm²" }]], pasos: [{ fps: 30, q: 2 }, { fps: 30, q: 1 }, { fps: 30, q: 0.5 }] },
   cizalla: { nombre: "emulsión en flujo", crear: cizalla, color: "#3f2463", pie: "El número de gotas sigue la fracción de volumen; la velocidad baja con la viscosidad calculada, en escala comprimida.", controles: [["fi", "Fracción de gotas", { min: 0, max: 0.6, paso: 0.01, valor: 0.2 }], ["fm", "Empaque máximo", { min: 0.62, max: 0.74, paso: 0.01, valor: 0.64 }]], pasos: [{ fi: 0.2 }, { fi: 0.45 }, { fi: 0.58 }] },

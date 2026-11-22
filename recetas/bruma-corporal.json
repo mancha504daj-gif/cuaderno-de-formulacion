@@ -1,0 +1,115 @@
+{
+ "slug": "bruma-corporal",
+ "titulo": "Bruma corporal",
+ "producto": "bruma",
+ "tipo": "limpia",
+ "nivel": 1,
+ "tiempo": 30,
+ "lote": 100,
+ "pH": "5.5",
+ "estado": "sin ensayar",
+ "porque": "Sin alcohol, la fragancia no se disuelve en agua. El Tween la esconde en micelas: suele pedir de 3 a 5 partes por cada parte de fragancia.",
+ "fases": [
+  {
+   "nombre": "A",
+   "ingredientes": [
+    {
+     "id": "agua",
+     "pct": 92.1
+    },
+    {
+     "id": "glicerina",
+     "pct": 2
+    }
+   ]
+  },
+  {
+   "nombre": "B",
+   "ingredientes": [
+    {
+     "id": "tween20",
+     "pct": 4
+    },
+    {
+     "id": "fragancia",
+     "pct": 1
+    }
+   ]
+  },
+  {
+   "nombre": "C",
+   "ingredientes": [
+    {
+     "id": "fenoxi",
+     "pct": 0.8
+    },
+    {
+     "id": "ehg",
+     "pct": 0.1
+    }
+   ]
+  }
+ ],
+ "pasos": [
+  "Mezcla la fragancia con el Tween 20.",
+  "Agrega el agua poco a poco, agitando: debe quedar transparente.",
+  "Agrega la glicerina y la fase C.",
+  "Mide el pH y envasa con atomizador."
+ ],
+ "cambia": [
+  "Si queda turbia, sube el Tween de 1 en 1 %."
+ ],
+ "controles": [
+  [
+   "pH",
+   "el de la receta ± 0.3",
+   "medidor"
+  ],
+  [
+   "Viscosidad",
+   "registra husillo, rpm y temperatura",
+   "viscosímetro o copa"
+  ],
+  [
+   "Espuma",
+   "altura a 0, 1 y 5 min",
+   "probeta agitada, solución al 1 %"
+  ],
+  [
+   "Aspecto",
+   "sin turbidez nueva",
+   "4 °C, ambiente y 40 °C"
+  ],
+  [
+   "Microbiología",
+   "sin crecimiento",
+   "placas a t0 y a 28 días"
+  ]
+ ],
+ "fallas": [
+  [
+   "No espesa",
+   "poca sal o pH alto",
+   "ajusta el pH y sigue la curva de sal"
+  ],
+  [
+   "Se adelgazó al poner sal",
+   "te pasaste del máximo",
+   "diluye con más tensioactivo: con sal no se recupera"
+  ],
+  [
+   "Se enturbia en frío",
+   "fragancia o fase que no se disuelve",
+   "baja la fragancia o usa un solubilizante"
+  ]
+ ],
+ "avisos": [
+  "Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.",
+  "No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad.",
+  "Comprueba el certificado IFRA de la fragancia."
+ ],
+ "fuentes": [
+  "Proporciones propuestas en este proyecto.",
+  "Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026."
+ ]
+}

@@ -1,0 +1,111 @@
+{
+ "slug": "aceite-corporal-ligero",
+ "titulo": "Aceite corporal ligero",
+ "producto": "aceite-corporal",
+ "tipo": "anhidro",
+ "nivel": 1,
+ "tiempo": 15,
+ "lote": 100,
+ "pH": null,
+ "estado": "sin ensayar",
+ "porque": "Mezclar aceites que se extienden rápido, medio y lento da una sensación que dura. En un estudio, los aceites vegetales extendieron peor que los sintéticos y aumentaron más la hidratación.",
+ "fases": [
+  {
+   "nombre": "A",
+   "ingredientes": [
+    {
+     "id": "cct",
+     "pct": 50
+    },
+    {
+     "id": "almendras",
+     "pct": 29.5
+    },
+    {
+     "id": "girasol",
+     "pct": 15
+    },
+    {
+     "id": "escualano",
+     "pct": 5
+    }
+   ]
+  },
+  {
+   "nombre": "C",
+   "ingredientes": [
+    {
+     "id": "toco",
+     "pct": 0.5
+    }
+   ]
+  }
+ ],
+ "pasos": [
+  "Pesa los aceites en un vaso seco.",
+  "Mezcla 5 min sin calentar.",
+  "Agrega el tocoferol y mezcla.",
+  "Filtra si ves partículas y envasa en vidrio oscuro."
+ ],
+ "cambia": [
+  "Más CCT: más ligero.",
+  "Cambia almendras por jojoba si hay alergia."
+ ],
+ "controles": [
+  [
+   "Aspecto",
+   "liso, sin granos ni gotas de aceite",
+   "a 24 h y a 7 días"
+  ],
+  [
+   "Dureza",
+   "registra la penetración",
+   "aguja o peso conocido"
+  ],
+  [
+   "Punto de fusión",
+   "registra el intervalo",
+   "capilar o baño con termómetro"
+  ],
+  [
+   "Calor",
+   "sin gotas en la superficie",
+   "40 °C, 7 días"
+  ],
+  [
+   "Olor",
+   "sin rancio",
+   "a 1 y a 3 meses"
+  ]
+ ],
+ "fallas": [
+  [
+   "Granos",
+   "enfrió despacio o la manteca cristalizó mal",
+   "funde otra vez y enfría más rápido"
+  ],
+  [
+   "Suda aceite",
+   "poca cera o demasiado aceite líquido",
+   "sube la cera de 1 en 1 %"
+  ],
+  [
+   "Se parte",
+   "demasiada cera dura",
+   "baja la cera y sube el aceite"
+  ],
+  [
+   "Huele rancio",
+   "oxidación",
+   "usa aceite fresco, tocoferol y envase lleno"
+  ]
+ ],
+ "avisos": [
+  "Sin agua no necesita conservante, pero no debe entrarle agua.",
+  "Contiene aceite de frutos secos."
+ ],
+ "fuentes": [
+  "Aceites corporales: Ogorzalek et al. 2024, DOI 10.3390/app14072783.",
+  "Proporciones propuestas en este proyecto."
+ ]
+}

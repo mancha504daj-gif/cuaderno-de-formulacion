@@ -1,0 +1,159 @@
+{
+ "slug": "mascara-de-pestanas",
+ "titulo": "Máscara de pestañas",
+ "producto": "mascara",
+ "tipo": "ow",
+ "nivel": 3,
+ "tiempo": 120,
+ "lote": 100,
+ "pH": "7 a 8",
+ "estado": "sin ensayar",
+ "porque": "El jabón que emulsiona se forma dentro de la mezcla. La cera engrosa la pestaña y el polímero fija el color.",
+ "fases": [
+  {
+   "nombre": "A",
+   "ingredientes": [
+    {
+     "id": "agua",
+     "pct": 64.2
+    },
+    {
+     "id": "hec",
+     "pct": 0.5
+    },
+    {
+     "id": "vpva",
+     "pct": 5
+    },
+    {
+     "id": "tea",
+     "pct": 1.8
+    }
+   ]
+  },
+  {
+   "nombre": "B",
+   "ingredientes": [
+    {
+     "id": "estearico",
+     "pct": 5.5
+    },
+    {
+     "id": "cera_abejas",
+     "pct": 7
+    },
+    {
+     "id": "carnauba",
+     "pct": 3
+    },
+    {
+     "id": "gsse",
+     "pct": 3
+    }
+   ]
+  },
+  {
+   "nombre": "D",
+   "ingredientes": [
+    {
+     "id": "oxnegro",
+     "pct": 9
+    }
+   ]
+  },
+  {
+   "nombre": "C",
+   "ingredientes": [
+    {
+     "id": "fenoxi",
+     "pct": 0.8
+    },
+    {
+     "id": "ehg",
+     "pct": 0.2
+    }
+   ]
+  }
+ ],
+ "pasos": [
+  "Hidrata la hidroxietilcelulosa en el agua y agrega el copolímero y la trietanolamina.",
+  "Dispersa el óxido negro en esa fase y muele.",
+  "Funde la fase B a 88 °C y lleva A a la misma temperatura.",
+  "Vierte B sobre A con agitación fuerte: el esteárico y la trietanolamina forman el emulsionante en ese momento.",
+  "Enfría agitando hasta 40 °C y agrega la fase C.",
+  "Envasa en tubo limpio con cepillo nuevo."
+ ],
+ "cambia": [
+  "Carnauba a 2 % si queda dura.",
+  "Óxido a 7 % para un tono suave."
+ ],
+ "controles": [
+  [
+   "pH",
+   "el de la receta ± 0.3",
+   "medidor calibrado o tiras"
+  ],
+  [
+   "Tipo de emulsión",
+   "O/W",
+   "gota en agua: debe dispersarse. Confirma con conductividad o colorante hidrosoluble al microscopio"
+  ],
+  [
+   "Aspecto",
+   "homogéneo, sin granos",
+   "extiende una capa fina sobre vidrio"
+  ],
+  [
+   "Centrífuga",
+   "sin separación",
+   "3000 rpm, 30 min"
+  ],
+  [
+   "Ciclos",
+   "sin separación ni cambio de olor",
+   "de tres a seis ciclos entre −10 y 40 °C, 24 h por etapa"
+  ],
+  [
+   "Microbiología",
+   "sin crecimiento",
+   "placas a t0 y a 28 días; ensayo de eficacia del conservante antes de usarla"
+  ]
+ ],
+ "fallas": [
+  [
+   "Se separa una capa de aceite y vuelve al agitar",
+   "cremado: gotas grandes o medio poco viscoso",
+   "homogeneiza más tiempo o sube un poco la goma"
+  ],
+  [
+   "Se separa y no vuelve",
+   "coalescencia: falta emulsionante o el par no es el adecuado",
+   "prueba otro HLB antes de subir la dosis"
+  ],
+  [
+   "Queda granosa",
+   "las ceras cristalizaron o las fases estaban a distinta temperatura",
+   "iguala temperaturas y enfría agitando"
+  ],
+  [
+   "No se dispersa en agua",
+   "salió W/O",
+   "sube la parte hidrófila del emulsionante"
+  ],
+  [
+   "Huele mal o sale moho",
+   "conservante débil o pH alto",
+   "descártala, revisa pH y conservante"
+  ]
+ ],
+ "avisos": [
+  "Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.",
+  "Zona de los ojos: exige control microbiológico y colorantes permitidos.",
+  "No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad."
+ ],
+ "fuentes": [
+  "Grupos y rangos: fórmula de proveedor analizada en la nota 05; proporciones propias.",
+  "Higiene: Giacomel et al. 2013, DOI 10.1111/ics.12053.",
+  "Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026."
+ ]
+}

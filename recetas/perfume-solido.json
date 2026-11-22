@@ -1,0 +1,110 @@
+{
+ "slug": "perfume-solido",
+ "titulo": "Perfume sólido",
+ "producto": "perfume-solido",
+ "tipo": "anhidro",
+ "nivel": 1,
+ "tiempo": 30,
+ "lote": 100,
+ "pH": null,
+ "estado": "sin ensayar",
+ "porque": "La cera frena la evaporación. La fragancia entra por debajo de 60 °C para no perder las notas de salida.",
+ "fases": [
+  {
+   "nombre": "A",
+   "ingredientes": [
+    {
+     "id": "cera_abejas",
+     "pct": 28
+    },
+    {
+     "id": "cct",
+     "pct": 40
+    },
+    {
+     "id": "karite",
+     "pct": 21.5
+    }
+   ]
+  },
+  {
+   "nombre": "C",
+   "ingredientes": [
+    {
+     "id": "fragancia",
+     "pct": 10
+    },
+    {
+     "id": "toco",
+     "pct": 0.5
+    }
+   ]
+  }
+ ],
+ "pasos": [
+  "Pesa todo menos la fase C y fúndelo en baño de agua a 75 °C.",
+  "Mezcla hasta que no veas restos sólidos.",
+  "Retira del calor y espera a que baje unos 10 °C.",
+  "Agrega la fase C y mezcla.",
+  "Vierte en el envase caliente y deja enfriar sin moverlo. Rotula lote y fecha."
+ ],
+ "cambia": [
+  "Cera a 24 % si queda dura."
+ ],
+ "controles": [
+  [
+   "Aspecto",
+   "liso, sin granos ni gotas de aceite",
+   "a 24 h y a 7 días"
+  ],
+  [
+   "Dureza",
+   "registra la penetración",
+   "aguja o peso conocido"
+  ],
+  [
+   "Punto de fusión",
+   "registra el intervalo",
+   "capilar o baño con termómetro"
+  ],
+  [
+   "Calor",
+   "sin gotas en la superficie",
+   "40 °C, 7 días"
+  ],
+  [
+   "Olor",
+   "sin rancio",
+   "a 1 y a 3 meses"
+  ]
+ ],
+ "fallas": [
+  [
+   "Granos",
+   "enfrió despacio o la manteca cristalizó mal",
+   "funde otra vez y enfría más rápido"
+  ],
+  [
+   "Suda aceite",
+   "poca cera o demasiado aceite líquido",
+   "sube la cera de 1 en 1 %"
+  ],
+  [
+   "Se parte",
+   "demasiada cera dura",
+   "baja la cera y sube el aceite"
+  ],
+  [
+   "Huele rancio",
+   "oxidación",
+   "usa aceite fresco, tocoferol y envase lleno"
+  ]
+ ],
+ "avisos": [
+  "Comprueba el certificado IFRA de la fragancia."
+ ],
+ "fuentes": [
+  "Proporciones propuestas en este proyecto.",
+  "IFRA, 51.ª enmienda."
+ ]
+}

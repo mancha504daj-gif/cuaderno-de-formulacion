@@ -1,0 +1,115 @@
+{
+ "slug": "polvo-compacto",
+ "titulo": "Polvo compacto",
+ "producto": "polvo-compacto",
+ "tipo": "polvo",
+ "nivel": 2,
+ "tiempo": 90,
+ "lote": 100,
+ "pH": null,
+ "estado": "sin ensayar",
+ "porque": "El estearato y el aceite unen; la presión hace el resto. Más presión da pastilla dura y más aglutinante baja la cesión de color.",
+ "fases": [
+  {
+   "nombre": "A",
+   "ingredientes": [
+    {
+     "id": "mica",
+     "pct": 52
+    },
+    {
+     "id": "caolin",
+     "pct": 15
+    },
+    {
+     "id": "zn_est",
+     "pct": 6
+    },
+    {
+     "id": "silica",
+     "pct": 5
+    },
+    {
+     "id": "tio2",
+     "pct": 8
+    },
+    {
+     "id": "oxidos",
+     "pct": 6
+    }
+   ]
+  },
+  {
+   "nombre": "B",
+   "ingredientes": [
+    {
+     "id": "cct",
+     "pct": 5
+    },
+    {
+     "id": "dimeticona",
+     "pct": 3
+    }
+   ]
+  }
+ ],
+ "pasos": [
+  "Ponte mascarilla: vas a manejar polvo fino.",
+  "Muele los pigmentos con una parte de la carga hasta que el color no cambie al frotarlo.",
+  "Agrega el resto de los polvos y mezcla.",
+  "Incorpora el aglutinante gota a gota mientras mezclas.",
+  "Pasa por un tamiz fino dos veces.",
+  "Agrega los nacarados al final, sin moler.",
+  "Llena la bandeja y comprime. Empieza con poca presión y sube hasta que no se rompa al caer desde 20 cm."
+ ],
+ "cambia": [
+  "Aglutinante de 6, 8 y 10 % a la misma presión: compara.",
+  "Para rubor, cambia los óxidos por rojo."
+ ],
+ "controles": [
+  [
+   "Color",
+   "igual en las dos caras",
+   "frota sobre papel blanco"
+  ],
+  [
+   "Caída",
+   "aguanta tres caídas de 20 cm",
+   "sobre madera"
+  ],
+  [
+   "Cesión",
+   "deja color en una pasada",
+   "esponja seca"
+  ],
+  [
+   "Humedad",
+   "registra el valor",
+   "pérdida de peso a 105 °C"
+  ]
+ ],
+ "fallas": [
+  [
+   "Se rompe",
+   "poca presión o poco aglutinante",
+   "sube uno de los dos, no ambos"
+  ],
+  [
+   "No suelta color",
+   "demasiada presión o aglutinante",
+   "baja la presión"
+  ],
+  [
+   "Manchas de color",
+   "pigmento sin moler",
+   "muele más con la carga"
+  ]
+ ],
+ "avisos": [
+  "Usa mascarilla: el polvo fino irrita los pulmones."
+ ],
+ "fuentes": [
+  "Presión y aglutinante: ensayo con talco, Cosmetics & Toiletries 137(3), 2022 (sin DOI localizado).",
+  "Proporciones propuestas en este proyecto."
+ ]
+}

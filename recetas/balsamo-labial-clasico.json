@@ -1,0 +1,116 @@
+{
+ "slug": "balsamo-labial-clasico",
+ "titulo": "Bálsamo labial clásico",
+ "producto": "balsamo-labial",
+ "tipo": "anhidro",
+ "nivel": 1,
+ "tiempo": 30,
+ "lote": 100,
+ "pH": null,
+ "estado": "sin ensayar",
+ "porque": "La cera forma una red que atrapa el aceite. Más cera, más firme; más aceite, más deslizamiento. El ricino aporta brillo.",
+ "fases": [
+  {
+   "nombre": "A",
+   "ingredientes": [
+    {
+     "id": "cera_abejas",
+     "pct": 22
+    },
+    {
+     "id": "karite",
+     "pct": 20
+    },
+    {
+     "id": "coco",
+     "pct": 15
+    },
+    {
+     "id": "ricino",
+     "pct": 22.5
+    },
+    {
+     "id": "almendras",
+     "pct": 20
+    }
+   ]
+  },
+  {
+   "nombre": "C",
+   "ingredientes": [
+    {
+     "id": "toco",
+     "pct": 0.5
+    }
+   ]
+  }
+ ],
+ "pasos": [
+  "Pesa todo menos la fase C y fúndelo en baño de agua a 75 °C.",
+  "Mezcla hasta que no veas restos sólidos.",
+  "Retira del calor y espera a que baje unos 10 °C.",
+  "Agrega la fase C y mezcla.",
+  "Vierte en el envase caliente y deja enfriar sin moverlo. Rotula lote y fecha."
+ ],
+ "cambia": [
+  "Cera a 18 % para un tarro, a 25 % para una barra en clima cálido.",
+  "Cambia almendras por girasol si hay alergia."
+ ],
+ "controles": [
+  [
+   "Aspecto",
+   "liso, sin granos ni gotas de aceite",
+   "a 24 h y a 7 días"
+  ],
+  [
+   "Dureza",
+   "registra la penetración",
+   "aguja o peso conocido"
+  ],
+  [
+   "Punto de fusión",
+   "registra el intervalo",
+   "capilar o baño con termómetro"
+  ],
+  [
+   "Calor",
+   "sin gotas en la superficie",
+   "40 °C, 7 días"
+  ],
+  [
+   "Olor",
+   "sin rancio",
+   "a 1 y a 3 meses"
+  ]
+ ],
+ "fallas": [
+  [
+   "Granos",
+   "enfrió despacio o la manteca cristalizó mal",
+   "funde otra vez y enfría más rápido"
+  ],
+  [
+   "Suda aceite",
+   "poca cera o demasiado aceite líquido",
+   "sube la cera de 1 en 1 %"
+  ],
+  [
+   "Se parte",
+   "demasiada cera dura",
+   "baja la cera y sube el aceite"
+  ],
+  [
+   "Huele rancio",
+   "oxidación",
+   "usa aceite fresco, tocoferol y envase lleno"
+  ]
+ ],
+ "avisos": [
+  "Sin agua no necesita conservante.",
+  "Contiene aceite de frutos secos."
+ ],
+ "fuentes": [
+  "Método y proceso: Baki 2023, ISBN 978-1-119-70977-0, pp. 72 y 250-259.",
+  "Proporciones propuestas en este proyecto."
+ ]
+}

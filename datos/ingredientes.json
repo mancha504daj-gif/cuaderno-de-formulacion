@@ -1,0 +1,776 @@
+[
+ {
+  "id": "agua",
+  "inci": "Aqua",
+  "nombre": "agua destilada",
+  "clase": "vehículo",
+  "hace": "Disuelve lo hidrosoluble y forma la fase acuosa.",
+  "nota": "Usa agua destilada o desionizada. Los minerales del grifo alteran espesantes y conservantes."
+ },
+ {
+  "id": "glicerina",
+  "inci": "Glycerin",
+  "nombre": "glicerina",
+  "clase": "humectante",
+  "hace": "Atrae agua y la retiene en la capa externa de la piel.",
+  "nota": "Por encima de 8 a 10 % suele sentirse pegajosa."
+ },
+ {
+  "id": "urea",
+  "inci": "Urea",
+  "nombre": "urea",
+  "clase": "humectante",
+  "hace": "Retiene agua; por encima de 10 % ablanda la capa córnea.",
+  "nota": "Su pH sube con el tiempo. Amortigua con lactato y vigila el pH.",
+  "rango": [
+   "hasta 10 % como humectante",
+   "Purnamawati et al. 2017, DOI 10.3121/cmr.2017.1363"
+  ]
+ },
+ {
+  "id": "pantenol",
+  "inci": "Panthenol",
+  "nombre": "pantenol",
+  "clase": "activo",
+  "hace": "Retiene agua y suaviza.",
+  "nota": "Agrégalo por debajo de 40 °C."
+ },
+ {
+  "id": "hialuronato",
+  "inci": "Sodium Hyaluronate",
+  "nombre": "hialuronato de sodio",
+  "clase": "activo",
+  "hace": "Forma una película que retiene agua en la superficie.",
+  "nota": "Espolvorea poco a poco: tarda horas en hidratarse.",
+  "rango": [
+   "0.1 % en el ensayo clínico",
+   "nota 03 de la investigación"
+  ]
+ },
+ {
+  "id": "niacinamida",
+  "inci": "Niacinamide",
+  "nombre": "niacinamida",
+  "clase": "activo",
+  "hace": "Un ensayo clínico usó 5 % dos veces al día durante 12 semanas.",
+  "nota": "Mantén el pH cerca de 5 a 7: con ácidos fuertes se forma ácido nicotínico, que enrojece.",
+  "rango": [
+   "5 % en el ensayo clínico",
+   "nota 03 de la investigación"
+  ]
+ },
+ {
+  "id": "alantoina",
+  "inci": "Allantoin",
+  "nombre": "alantoína",
+  "clase": "activo",
+  "hace": "Suaviza y calma.",
+  "nota": "Se disuelve poco en agua fría, cerca de 0.5 %."
+ },
+ {
+  "id": "xantana",
+  "inci": "Xanthan Gum",
+  "nombre": "goma xantana",
+  "clase": "espesante",
+  "hace": "Espesa el agua y sostiene las gotas de aceite.",
+  "nota": "Mézclala primero con la glicerina: así no forma grumos.",
+  "rango": [
+   "0.1 a 0.3 %",
+   "DOI 10.3390/cosmetics12020076"
+  ]
+ },
+ {
+  "id": "hec",
+  "inci": "Hydroxyethylcellulose",
+  "nombre": "hidroxietilcelulosa",
+  "clase": "espesante",
+  "hace": "Espesa sin depender del pH ni de la sal.",
+  "nota": "Dispérsala en agua a pH 7 o menos y sube el pH para hidratarla, según el grado.",
+  "rango": [
+   "0.2 a 1 %",
+   "ficha del fabricante"
+  ]
+ },
+ {
+  "id": "pq10",
+  "inci": "Polyquaternium-10",
+  "nombre": "poliquaternio-10",
+  "clase": "acondicionador",
+  "hace": "Polímero con carga positiva que se deposita en el cabello al enjuagar.",
+  "nota": "Hidrátalo en agua antes de poner el tensioactivo."
+ },
+ {
+  "id": "vpva",
+  "inci": "VP/VA Copolymer",
+  "nombre": "copolímero VP/VA",
+  "clase": "formador de película",
+  "hace": "Deja una película que fija el peinado o el pigmento.",
+  "nota": ""
+ },
+ {
+  "id": "goma_arabiga",
+  "inci": "Acacia Senegal Gum",
+  "nombre": "goma arábiga",
+  "clase": "formador de película",
+  "hace": "Da película y cuerpo.",
+  "nota": ""
+ },
+ {
+  "id": "cct",
+  "inci": "Caprylic/Capric Triglyceride",
+  "nombre": "triglicérido caprílico/cáprico",
+  "clase": "emoliente",
+  "hace": "Aceite ligero y estable; extiende 550 mm² en 10 min.",
+  "nota": "",
+  "hlb": "5 a 15 según la fuente"
+ },
+ {
+  "id": "almendras",
+  "inci": "Prunus Amygdalus Dulcis Oil",
+  "nombre": "aceite de almendras dulces",
+  "clase": "emoliente",
+  "hace": "Suaviza y deja película.",
+  "nota": "Alergia a frutos secos: avísalo en la etiqueta.",
+  "hlb": "6 a 7"
+ },
+ {
+  "id": "girasol",
+  "inci": "Helianthus Annuus Seed Oil",
+  "nombre": "aceite de girasol",
+  "clase": "emoliente",
+  "hace": "Rico en linoleico, que se asocia a mejor reparación de la barrera.",
+  "nota": "Se enrancia: guárdalo con tocoferol y sin luz.",
+  "hlb": "7"
+ },
+ {
+  "id": "oliva",
+  "inci": "Olea Europaea Fruit Oil",
+  "nombre": "aceite de oliva",
+  "clase": "emoliente",
+  "hace": "Aceite rico en oleico; base clásica de jabón.",
+  "nota": "",
+  "hlb": "7 a 11"
+ },
+ {
+  "id": "coco",
+  "inci": "Cocos Nucifera Oil",
+  "nombre": "aceite de coco",
+  "clase": "emoliente",
+  "hace": "Funde cerca de 25 °C; en jabón da espuma y dureza.",
+  "nota": "",
+  "hlb": "5 a 8"
+ },
+ {
+  "id": "ricino",
+  "inci": "Ricinus Communis Seed Oil",
+  "nombre": "aceite de ricino",
+  "clase": "emoliente",
+  "hace": "Muy polar: moja y dispersa pigmentos, y da brillo.",
+  "nota": "",
+  "rango": [
+   "40 a 50 % en labial",
+   "Mawazi et al. 2022"
+  ],
+  "hlb": "14"
+ },
+ {
+  "id": "argan",
+  "inci": "Argania Spinosa Kernel Oil",
+  "nombre": "aceite de argán",
+  "clase": "emoliente",
+  "hace": "Suaviza el cabello y la piel.",
+  "nota": "",
+  "hlb": "11"
+ },
+ {
+  "id": "escualano",
+  "inci": "Squalane",
+  "nombre": "escualano",
+  "clase": "emoliente",
+  "hace": "Emoliente ligero que no se enrancia.",
+  "nota": "",
+  "hlb": "11"
+ },
+ {
+  "id": "jojoba",
+  "inci": "Simmondsia Chinensis Seed Oil",
+  "nombre": "aceite de jojoba",
+  "clase": "emoliente",
+  "hace": "Cera líquida estable.",
+  "nota": "",
+  "hlb": "6 a 7"
+ },
+ {
+  "id": "karite",
+  "inci": "Butyrospermum Parkii Butter",
+  "nombre": "manteca de karité",
+  "clase": "emoliente",
+  "hace": "Grasa sólida que funde al contacto con la piel.",
+  "nota": "Si se enfría despacio queda arenosa: enfría rápido y agita.",
+  "hlb": "8"
+ },
+ {
+  "id": "cacao",
+  "inci": "Theobroma Cacao Seed Butter",
+  "nombre": "manteca de cacao",
+  "clase": "emoliente",
+  "hace": "Da dureza y funde cerca de la temperatura del cuerpo.",
+  "nota": "",
+  "hlb": "6"
+ },
+ {
+  "id": "aceite_mineral",
+  "inci": "Paraffinum Liquidum",
+  "nombre": "aceite mineral",
+  "clase": "oclusivo",
+  "hace": "Frena la pérdida de agua y no se oxida.",
+  "nota": "",
+  "hlb": "10 a 12"
+ },
+ {
+  "id": "vaselina",
+  "inci": "Petrolatum",
+  "nombre": "vaselina",
+  "clase": "oclusivo",
+  "hace": "La película más oclusiva de uso común.",
+  "nota": "La cifra de 98 % que circula no está en el artículo que suele citarse.",
+  "rango": [
+   "desde 5 % como oclusivo",
+   "Purnamawati et al. 2017, DOI 10.3121/cmr.2017.1363"
+  ],
+  "hlb": "7 a 10.5"
+ },
+ {
+  "id": "lanolina",
+  "inci": "Lanolin",
+  "nombre": "lanolina anhidra",
+  "clase": "oclusivo",
+  "hace": "Retiene agua y plastifica la barra de labial.",
+  "nota": "Puede causar alergia.",
+  "rango": [
+   "2 a 20 % en labial",
+   "Mawazi et al. 2022"
+  ],
+  "hlb": "9 a 15"
+ },
+ {
+  "id": "dimeticona",
+  "inci": "Dimethicone",
+  "nombre": "dimeticona",
+  "clase": "emoliente",
+  "hace": "Deslizamiento seco y brillo.",
+  "nota": "",
+  "hlb": "5 a 9"
+ },
+ {
+  "id": "cera_abejas",
+  "inci": "Cera Alba",
+  "nombre": "cera de abejas",
+  "clase": "cera",
+  "hace": "Da cuerpo y dureza; funde cerca de 62 a 65 °C.",
+  "nota": "",
+  "rango": [
+   "3 a 10 % en labial",
+   "Mawazi et al. 2022"
+  ],
+  "hlb": "10 a 16"
+ },
+ {
+  "id": "candelilla",
+  "inci": "Euphorbia Cerifera Cera",
+  "nombre": "cera candelilla",
+  "clase": "cera",
+  "hace": "Cera vegetal dura y brillante.",
+  "nota": "La literatura le da de 61 a 89 °C de fusión: mide la tuya.",
+  "rango": [
+   "1 a 10 % en labial",
+   "Mawazi et al. 2022"
+  ],
+  "hlb": "14.5"
+ },
+ {
+  "id": "carnauba",
+  "inci": "Copernicia Cerifera Cera",
+  "nombre": "cera carnauba",
+  "clase": "cera",
+  "hace": "La más dura de las ceras vegetales; funde de 80 a 88 °C.",
+  "nota": "",
+  "rango": [
+   "1 a 5 % en labial",
+   "Mawazi et al. 2022"
+  ],
+  "hlb": "14.5 a 15"
+ },
+ {
+  "id": "cetilico",
+  "inci": "Cetyl Alcohol",
+  "nombre": "alcohol cetílico",
+  "clase": "coemulsionante",
+  "hace": "Alcohol graso: da cuerpo y estabiliza. No reseca como el etanol.",
+  "nota": "",
+  "hlb": "13 a 15.5"
+ },
+ {
+  "id": "estearilico",
+  "inci": "Stearyl Alcohol",
+  "nombre": "alcohol estearílico",
+  "clase": "coemulsionante",
+  "hace": "Alcohol graso de cadena más larga; crema más firme.",
+  "nota": "",
+  "hlb": "15 a 16"
+ },
+ {
+  "id": "cetearilico",
+  "inci": "Cetearyl Alcohol",
+  "nombre": "alcohol cetoestearílico",
+  "clase": "coemulsionante",
+  "hace": "Mezcla de cetílico y estearílico.",
+  "nota": "",
+  "hlb": "15.5"
+ },
+ {
+  "id": "estearico",
+  "inci": "Stearic Acid",
+  "nombre": "ácido esteárico",
+  "clase": "coemulsionante",
+  "hace": "Con una base forma jabón emulsionante.",
+  "nota": "",
+  "hlb": "15 a 17"
+ },
+ {
+  "id": "gspeg",
+  "inci": "Glyceryl Stearate (and) PEG-100 Stearate",
+  "nombre": "estearato de glicerilo y PEG-100",
+  "clase": "emulsionante",
+  "hace": "Emulsionante O/W autosuficiente; HLB cercano a 11.",
+  "nota": "El HLB viene de un proveedor."
+ },
+ {
+  "id": "gsse",
+  "inci": "Glyceryl Stearate SE",
+  "nombre": "estearato de glicerilo SE",
+  "clase": "emulsionante",
+  "hace": "Versión autoemulsionable: trae algo de jabón.",
+  "nota": ""
+ },
+ {
+  "id": "span80",
+  "inci": "Sorbitan Oleate",
+  "nombre": "Span 80",
+  "clase": "emulsionante",
+  "hace": "Emulsionante lipófilo, HLB 4.3: prefiere el aceite.",
+  "nota": ""
+ },
+ {
+  "id": "tween80",
+  "inci": "Polysorbate 80",
+  "nombre": "Tween 80",
+  "clase": "emulsionante",
+  "hace": "Emulsionante hidrófilo, HLB 15.0: prefiere el agua.",
+  "nota": ""
+ },
+ {
+  "id": "tween20",
+  "inci": "Polysorbate 20",
+  "nombre": "Tween 20",
+  "clase": "solubilizante",
+  "hace": "Hidrófilo, HLB 16.7: disuelve poca fragancia en agua.",
+  "nota": ""
+ },
+ {
+  "id": "tween85",
+  "inci": "Polysorbate 85",
+  "nombre": "Tween 85",
+  "clase": "emulsionante",
+  "hace": "HLB 11: hace que un aceite se enjuague.",
+  "nota": ""
+ },
+ {
+  "id": "pgpr",
+  "inci": "Polyglyceryl-3 Polyricinoleate",
+  "nombre": "PGPR",
+  "clase": "emulsionante",
+  "hace": "Emulsionante W/O, HLB cercano a 4.",
+  "nota": "El HLB es de fuente informal."
+ },
+ {
+  "id": "btms",
+  "inci": "Behentrimonium Methosulfate (and) Cetearyl Alcohol",
+  "nombre": "BTMS",
+  "clase": "acondicionador",
+  "hace": "Catiónico con alcohol graso: emulsiona y suaviza el cabello.",
+  "nota": "El porcentaje de catiónico depende del proveedor."
+ },
+ {
+  "id": "ctac",
+  "inci": "Cetrimonium Chloride",
+  "nombre": "cloruro de cetrimonio al 25 %",
+  "clase": "acondicionador",
+  "hace": "Catiónico que desenreda y quita estática.",
+  "nota": "",
+  "limite": [
+   "2.5 % con enjuague; 1.0 % en cabello sin enjuague; 0.5 % en cara",
+   "Anexo III, 286"
+  ]
+ },
+ {
+  "id": "sapdma",
+  "inci": "Stearamidopropyl Dimethylamine",
+  "nombre": "estearamidopropil dimetilamina",
+  "clase": "acondicionador",
+  "hace": "Se vuelve catiónica cuando la neutralizas con ácido.",
+  "nota": "",
+  "rango": [
+   "1.0 a 1.5 %",
+   "Barel et al. 2009, DOI 10.1201/b15273"
+  ]
+ },
+ {
+  "id": "dsdac",
+  "inci": "Distearyldimonium Chloride",
+  "nombre": "cloruro de diestearildimonio",
+  "clase": "acondicionador",
+  "hace": "Catiónico de dos colas: suavidad.",
+  "nota": "",
+  "rango": [
+   "0.75 a 1.0 %",
+   "Barel et al. 2009, DOI 10.1201/b15273"
+  ]
+ },
+ {
+  "id": "sles",
+  "inci": "Sodium Laureth Sulfate",
+  "nombre": "lauril éter sulfato de sodio, líquido al 27 %",
+  "clase": "tensioactivo",
+  "hace": "Limpia y hace espuma.",
+  "nota": "Revisa el activo en el certificado: hay pasta al 70 %.",
+  "rango": [
+   "hasta 10 % de activo",
+   "Thompson et al. 2023"
+  ]
+ },
+ {
+  "id": "capb",
+  "inci": "Cocamidopropyl Betaine",
+  "nombre": "cocamidopropil betaína al 30 %",
+  "clase": "tensioactivo",
+  "hace": "Suaviza al aniónico y ayuda a espesar.",
+  "nota": "",
+  "rango": [
+   "1 a 5 % de activo",
+   "Thompson et al. 2023"
+  ]
+ },
+ {
+  "id": "cocogluc",
+  "inci": "Coco-Glucoside",
+  "nombre": "coco glucósido al 50 %",
+  "clase": "tensioactivo",
+  "hace": "No iónico suave, de azúcar y coco.",
+  "nota": "Llega a pH 11 o 12: neutraliza antes de juzgar la viscosidad."
+ },
+ {
+  "id": "decylgluc",
+  "inci": "Decyl Glucoside",
+  "nombre": "decil glucósido al 50 %",
+  "clase": "tensioactivo",
+  "hace": "No iónico suave.",
+  "nota": "Llega a pH 11 o 12."
+ },
+ {
+  "id": "sci",
+  "inci": "Sodium Cocoyl Isethionate",
+  "nombre": "isetionato de cocoilo, polvo al 85 %",
+  "clase": "tensioactivo",
+  "hace": "Base de las barras sin jabón.",
+  "nota": "El polvo irrita al respirarlo: usa mascarilla."
+ },
+ {
+  "id": "sal",
+  "inci": "Sodium Chloride",
+  "nombre": "sal",
+  "clase": "espesante",
+  "hace": "Espesa los aniónicos hasta un máximo y después los adelgaza.",
+  "nota": "Agrégala en pasos de 0.1 a 0.2 %."
+ },
+ {
+  "id": "naoh",
+  "inci": "Sodium Hydroxide",
+  "nombre": "hidróxido de sodio (sosa)",
+  "clase": "álcali",
+  "hace": "Saponifica aceites y sube el pH.",
+  "nota": "Quema piel y ojos. Guantes, lentes y manga larga; agrégala al agua."
+ },
+ {
+  "id": "koh",
+  "inci": "Potassium Hydroxide",
+  "nombre": "hidróxido de potasio",
+  "clase": "álcali",
+  "hace": "Da jabón blando o líquido.",
+  "nota": "Quema piel y ojos. Suele tener 90 % de pureza."
+ },
+ {
+  "id": "tea",
+  "inci": "Triethanolamine",
+  "nombre": "trietanolamina",
+  "clase": "álcali",
+  "hace": "Neutraliza el ácido esteárico y forma el emulsionante.",
+  "nota": ""
+ },
+ {
+  "id": "citrico",
+  "inci": "Citric Acid",
+  "nombre": "ácido cítrico",
+  "clase": "regulador de pH",
+  "hace": "Baja el pH.",
+  "nota": "Prepara una solución al 10 % y agrega gota a gota."
+ },
+ {
+  "id": "lactico",
+  "inci": "Lactic Acid",
+  "nombre": "ácido láctico",
+  "clase": "regulador de pH",
+  "hace": "Baja el pH y, con su sal, lo amortigua.",
+  "nota": ""
+ },
+ {
+  "id": "sorbato",
+  "inci": "Potassium Sorbate",
+  "nombre": "sorbato de potasio",
+  "clase": "conservante",
+  "hace": "Frena hongos y levaduras a pH bajo.",
+  "nota": "",
+  "limite": [
+   "0.6 % como ácido",
+   "Anexo V, 4"
+  ]
+ },
+ {
+  "id": "benzoato",
+  "inci": "Sodium Benzoate",
+  "nombre": "benzoato de sodio",
+  "clase": "conservante",
+  "hace": "Frena bacterias y hongos a pH bajo.",
+  "nota": "",
+  "limite": [
+   "0.5 % como ácido sin enjuague; 2.5 % con enjuague",
+   "Anexo V, 1"
+  ]
+ },
+ {
+  "id": "fenoxi",
+  "inci": "Phenoxyethanol",
+  "nombre": "fenoxietanol",
+  "clase": "conservante",
+  "hace": "Conservante de amplio espectro que depende poco del pH.",
+  "nota": "",
+  "limite": [
+   "1 %",
+   "Anexo V, 29"
+  ]
+ },
+ {
+  "id": "ehg",
+  "inci": "Ethylhexylglycerin",
+  "nombre": "etilhexilglicerina",
+  "clase": "conservante",
+  "hace": "Refuerza al fenoxietanol.",
+  "nota": ""
+ },
+ {
+  "id": "toco",
+  "inci": "Tocopherol",
+  "nombre": "tocoferol (vitamina E)",
+  "clase": "antioxidante",
+  "hace": "Protege los aceites de la oxidación. No conserva contra microbios.",
+  "nota": ""
+ },
+ {
+  "id": "etanol",
+  "inci": "Alcohol Denat.",
+  "nombre": "alcohol etílico de 96°",
+  "clase": "vehículo",
+  "hace": "Disuelve la fragancia y se evapora.",
+  "nota": "Inflamable: lejos de llamas y chispas."
+ },
+ {
+  "id": "fragancia",
+  "inci": "Parfum",
+  "nombre": "fragancia",
+  "clase": "fragancia",
+  "hace": "Da olor.",
+  "nota": "Pide al proveedor su certificado IFRA y la lista de alérgenos."
+ },
+ {
+  "id": "lavanda",
+  "inci": "Lavandula Angustifolia Oil",
+  "nombre": "aceite esencial de lavanda",
+  "clase": "fragancia",
+  "hace": "Nota floral; aporta linalool y acetato de linalilo.",
+  "nota": "Declara sus alérgenos."
+ },
+ {
+  "id": "naranja",
+  "inci": "Citrus Sinensis Peel Oil",
+  "nombre": "aceite esencial de naranja dulce",
+  "clase": "fragancia",
+  "hace": "Nota cítrica; sobre todo limoneno.",
+  "nota": "Oxidado sensibiliza: frasco lleno, frío y oscuro."
+ },
+ {
+  "id": "cedro",
+  "inci": "Cedrus Atlantica Wood Oil",
+  "nombre": "aceite esencial de cedro",
+  "clase": "fragancia",
+  "hace": "Nota de fondo amaderada.",
+  "nota": ""
+ },
+ {
+  "id": "vainillina",
+  "inci": "Vanillin",
+  "nombre": "vainillina",
+  "clase": "fragancia",
+  "hace": "Nota de fondo dulce.",
+  "nota": "Oscurece con el tiempo."
+ },
+ {
+  "id": "mica",
+  "inci": "Mica",
+  "nombre": "mica",
+  "clase": "carga",
+  "hace": "Desliza y da brillo.",
+  "nota": "Pide origen: hay minas con trabajo infantil documentado."
+ },
+ {
+  "id": "perla",
+  "inci": "Mica (and) Titanium Dioxide",
+  "nombre": "pigmento nacarado",
+  "clase": "pigmento",
+  "hace": "Brillo y destello.",
+  "nota": "Se agrega al final y sin moler."
+ },
+ {
+  "id": "caolin",
+  "inci": "Kaolin",
+  "nombre": "caolín",
+  "clase": "carga",
+  "hace": "Arcilla que absorbe grasa.",
+  "nota": ""
+ },
+ {
+  "id": "bentonita",
+  "inci": "Bentonite",
+  "nombre": "bentonita",
+  "clase": "espesante",
+  "hace": "Arcilla que se hincha y suspende.",
+  "nota": ""
+ },
+ {
+  "id": "silica",
+  "inci": "Silica",
+  "nombre": "sílice",
+  "clase": "carga",
+  "hace": "Absorbe aceite y matifica.",
+  "nota": "Evita respirar el polvo."
+ },
+ {
+  "id": "zn_est",
+  "inci": "Zinc Stearate",
+  "nombre": "estearato de zinc",
+  "clase": "aglutinante",
+  "hace": "Une y hace que el polvo se adhiera.",
+  "nota": ""
+ },
+ {
+  "id": "oxidos",
+  "inci": "CI 77491, CI 77492, CI 77499",
+  "nombre": "óxidos de hierro",
+  "clase": "pigmento",
+  "hace": "Rojo, amarillo y negro: con ellos se arma el tono de piel.",
+  "nota": ""
+ },
+ {
+  "id": "oxnegro",
+  "inci": "CI 77499",
+  "nombre": "óxido de hierro negro",
+  "clase": "pigmento",
+  "hace": "Negro de máscaras y delineadores.",
+  "nota": ""
+ },
+ {
+  "id": "laca",
+  "inci": "CI 15850",
+  "nombre": "laca roja",
+  "clase": "pigmento",
+  "hace": "Rojo intenso para labios.",
+  "nota": "Permitida en labios; en EE. UU. no va en la zona de los ojos."
+ },
+ {
+  "id": "tio2",
+  "inci": "CI 77891",
+  "nombre": "dióxido de titanio",
+  "clase": "pigmento",
+  "hace": "Blanco que cubre.",
+  "nota": "En polvo facial suelto, la UE limita a 25 % si tiene partículas inhalables.",
+  "limite": [
+   "25 % como filtro",
+   "Anexo VI"
+  ]
+ },
+ {
+  "id": "zno",
+  "inci": "Zinc Oxide",
+  "nombre": "óxido de zinc",
+  "clase": "filtro",
+  "hace": "Dispersa y absorbe UVA y UVB; también blanquea.",
+  "nota": "",
+  "limite": [
+   "25 % como filtro",
+   "Anexo VI"
+  ]
+ },
+ {
+  "id": "mgso4",
+  "inci": "Magnesium Sulfate",
+  "nombre": "sulfato de magnesio",
+  "clase": "estabilizante",
+  "hace": "Electrolito que estabiliza emulsiones W/O.",
+  "nota": "",
+  "rango": [
+   "cerca de 0.8 % en W/O",
+   "fórmulas de proveedor"
+  ]
+ },
+ {
+  "id": "azucar",
+  "inci": "Sucrose",
+  "nombre": "azúcar",
+  "clase": "exfoliante",
+  "hace": "Arrastra células sueltas y se disuelve al enjuagar.",
+  "nota": ""
+ },
+ {
+  "id": "almidon",
+  "inci": "Zea Mays Starch",
+  "nombre": "almidón de maíz",
+  "clase": "carga",
+  "hace": "Absorbe humedad y quita grasa.",
+  "nota": ""
+ },
+ {
+  "id": "bicarbonato",
+  "inci": "Sodium Bicarbonate",
+  "nombre": "bicarbonato de sodio",
+  "clase": "efervescente",
+  "hace": "Con un ácido suelta gas; también neutraliza olores.",
+  "nota": "A dosis altas irrita las axilas."
+ },
+ {
+  "id": "palma",
+  "inci": "Elaeis Guineensis Oil",
+  "nombre": "aceite de palma",
+  "clase": "emoliente",
+  "hace": "Da dureza al jabón.",
+  "nota": "Pide origen certificado."
+ }
+]

@@ -43,6 +43,16 @@ try {
 document.documentElement.dataset.listo = "si";
 if (!matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("mueve");
 
+const varios = document.querySelectorAll("[data-receta], [data-productos], [data-preguntas], [data-busca], [data-hoja], [data-cuaderno], [data-mis-recetas], [data-avance]");
+if (varios.length || document.querySelector("section.level2")) {
+  const [R, A] = await Promise.all([import("./receta.mjs"), import("./aprender.mjs")]);
+  for (const x of varios) {
+    const d = x.dataset;
+    if (d.receta) R.verReceta(x); else if (d.productos) A.productos(x); else if (d.preguntas) A.preguntas(x); else if (d.busca) A.buscador(x); else if ("avance" in d) A.avance(x);
+    else { const E = await import("./ensayos.mjs"); if ("hoja" in d) E.hoja(x); else if ("cuaderno" in d) E.cuaderno(x); else E.misRecetas(x); }
+  }
+  if (!document.querySelector("[data-hoja], [data-mis-recetas], #mesa")) A.palabras(main).catch(() => {});
+}
 if (document.querySelector("[data-calc]")) import("./calculadoras.mjs");
 const listaLabs = document.querySelector("[data-laboratorios]");
 if (listaLabs) {
