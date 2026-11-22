@@ -1,11 +1,9 @@
-// Escenas animadas de los modelos. Cada una se mueve con la ecuación que explica.
 import { h, deslizador, colorear, llenar } from "./elementos.mjs";
 import { fraccionNoDisociada } from "./motor.mjs";
 import { rgb } from "./gel.mjs";
 import { lienzo, texto, pincelada, va, lim, mezcla, suave, TAU } from "./base.mjs";
 import { NUEVAS } from "./escenas2.mjs";
 
-/* ---------- Stokes: la tinta rodea la gota por las líneas de corriente ---------- */
 function stokes() {
   const s = { paso: 2, radio: 1, visc: 0.001, delta: 79 };
   let a = 50, vel = 0, q = 0, ae = 0, ad = 0, ac = 0, carrera = 0, fase = 0;
@@ -43,14 +41,14 @@ function stokes() {
       texto(g, "arrastre", CX + 22, CY + sg * (a + F * 0.6), fs(19), { junto: "left", color: "#ffd0da", peso: 600 });
       g.globalAlpha = ve; texto(g, "r", CX + a * 0.42, CY + a * 0.3, fs(Math.min(30, a * 0.6)), { color: "#4a1f00", serif: true, sombra: false });
     }
-    if (ac > 0.02) { // carrera: r contra 2r, en la proporción exacta 1 a 4
+    if (ac > 0.02) {
       carrera = (carrera + dt / 6) % 1;
       const k = suave(carrera / 0.8), alto = 340, y0 = 436, sale = carrera > 0.93 ? 1 - (carrera - 0.93) / 0.07 : suave(carrera / 0.06);
       g.globalAlpha = ac * 0.85;
       for (let i = 0; i <= 4; i++) texto(g, String(i), 40, y0 - (alto * i) / 4, fs(17), { serif: true });
       for (const [x, r, z, n] of [[160, 23, 0.25, "r"], [325, 46, 1, "2r"]]) {
         const sube = alto * k * z, y = y0 - sube;
-        for (let j = 1; j < 15; j++) { // estela de gotitas que se queda atrás
+        for (let j = 1; j < 15; j++) {
           const d = (j / 15) ** 1.2 * sube; if (d < r * 0.9) continue;
           G.gota(x + Math.sin(j * 2.4 + t * 1.6) * r * 0.36, y + d, r * 0.17 * (1 - j / 16) * ac * sale, "#ffdc9a", { clara: 0.8 });
         }
@@ -71,7 +69,6 @@ function stokes() {
   return { L, s };
 }
 
-/* ---------- Ácido débil: perlas que sueltan y recuperan su protón ---------- */
 function acido() {
   const s = { paso: 0, pH: 3, pKa: 4.76 }, N = 36;
   const az = (a, b) => a + Math.random() * (b - a);
@@ -87,7 +84,6 @@ function acido() {
     if (reloj > 0.07 && si.length !== meta) { reloj = 0; cambia(uno(si.length > meta ? si : no)); }
     else if (reloj > 0.7 && si.length && no.length) { reloj = 0; cambia(uno(si)); cambia(uno(no)); }
     for (const m of mol) {
-      // corriente lenta, sin rebotes
       let fx = Math.sin(m.y * 0.016 + t * 0.42 + m.f) * 17 + Math.cos(m.y * 0.007 - t * 0.3) * 9, fy = Math.cos(m.x * 0.015 - t * 0.37 + m.f * 1.7) * 17;
       for (const o of mol) if (o !== m) { const dx = m.x - o.x, dy = m.y - o.y, d2 = dx * dx + dy * dy; if (d2 < 2300 && d2 > 1) { const k = (1 - d2 / 2300) * 46 / Math.sqrt(d2); fx += dx * k; fy += dy * k; } }
       if (L.raton) { const dx = m.x - L.raton[0], dy = m.y - L.raton[1], d2 = dx * dx + dy * dy; if (d2 < 9000) { const k = (1 - d2 / 9000) * 1.5; fx += dx * k - dy * k; fy += dy * k + dx * k; } }
@@ -107,7 +103,6 @@ function acido() {
   return { L, s };
 }
 
-/* ---------- Saponificación y micela ---------- */
 function jabon() {
   const s = { paso: 0, avance: 0 };
   let p = 0;
@@ -116,19 +111,19 @@ function jabon() {
   const L = lienzo("Una grasa reacciona con la lejía, suelta glicerina y deja tres jabones, que rodean una gota de grasa", (g, dt, t, fs, G) => {
     p = va(p, s.auto ? [0, 1, 2, 3, 3][Math.floor(t / 3.4) % 5] : s.avance, dt, 1.9);
     const q = lim(p, 0, 2.9999), fin = suave((p - 2.2) / 0.75), gira = t * 0.09, n = Math.min(fs(13), 15);
-    const cola = (x, y, an, i) => { // cola que nada: ola que crece hacia la punta
+    const cola = (x, y, an, i) => {
       const c = Math.cos(an), e = Math.sin(an), vivo = mezcla(1, 0.5, fin);
       for (let i2 = 1; i2 <= 30; i2++) { const j = i2 / 2, d = j * 7.6, z = Math.sin(t * 2.1 - j * 0.42 + i * 1.7) * j * 1.15 * vivo + Math.sin(t * 0.8 + i) * j * 0.5; G.gota(x + c * d - e * z, y + e * d + c * z, mezcla(8.6, 4.6, j / 15), "#f6dc86", { clara: 0.3, peso: 0.62 }); }
     };
     const perla = (x, y, r, col, rot, tinta = "#2b3312", alfa = 1) => { G.gota(x, y, r, col, { clara: 0.08, peso: alfa }); if (rot) { g.globalAlpha = alfa; texto(g, rot, x, y + 0.5, n, { color: tinta, peso: 700, sombra: false }); g.globalAlpha = 1; } };
-    if (fin > 0.02) { // grasa: masa que respira
+    if (fin > 0.02) {
       G.gota(MX, MY, 48 * fin, "#f0b92e", { clara: 0.4 });
       for (let j = 0; j < 7; j++) { const an = (j / 7) * TAU + Math.sin(t * 0.5 + j) * 0.3; G.gota(MX + Math.cos(an) * (27 + 5 * Math.sin(t * 1.1 + j * 2)) * fin, MY + Math.sin(an) * (27 + 5 * Math.cos(t * 0.9 + j)) * fin, 27 * fin, "#f0b92e", { clara: 0.4, peso: 0.6 }); }
     }
     const [gx, gy] = ruta([[118, 260], [118, 260], [86, 262], [62, 446]], q), abre = mezcla(94, 30, suave(p - 1));
     for (let j = 0; j <= 30; j++) { const u = j / 30 - 0.5; G.gota(gx + Math.sin(u * 5 + t * 1.3) * 5 - Math.abs(u) * 6, gy + u * 2 * abre, 10, "#a9d06a", { clara: 0.3, peso: 0.5 }); }
     for (let i = 0; i < NS; i++) {
-      const th = (i / NS) * TAU + gira - Math.PI / 2, prop = i % 5 === 0 && i < 15 ? i / 5 : -1; // 0, 5 y 10 son los tres de la grasa
+      const th = (i / NS) * TAU + gira - Math.PI / 2, prop = i % 5 === 0 && i < 15 ? i / 5 : -1;
       const bam = Math.sin(t * 1.2 + i * 2.1) * 6;
       if (prop >= 0) {
         const y0 = 166 + prop * 94; let an1 = th + Math.PI; an1 = Math.atan2(Math.sin(an1), Math.cos(an1));
@@ -139,7 +134,7 @@ function jabon() {
         perla(na[0] + Math.sin(t + i) * 2, na[1] + Math.cos(t * 1.2 + i) * 2, 13.5, "#ffffff", "Na");
         const oh = ruta([[610 + prop * 60, y0 + 60], [178, y0 + 34], [gx + 25, gy + (prop - 1) * 32], [gx + 25, gy + (prop - 1) * 32]], q);
         perla(oh[0] + Math.sin(t * 1.1 + i) * 2, oh[1] + Math.cos(t + i) * 2, 13.5, "#a9dcff", "OH");
-      } else if (p > 2.02) { // los demás llegan nadando
+      } else if (p > 2.02) {
         const l = suave((p - 2.05 - (i % 4) * 0.06) / 0.72), ra = mezcla(470, R + bam, l), tw = th + (1 - l) * 1.1, x = MX + Math.cos(tw) * ra, y = MY + Math.sin(tw) * ra;
         cola(x, y, tw + Math.PI, i); perla(x, y, 16, "#ff9d66", "−", "#4a1a00"); perla(x + Math.cos(tw) * 25, y + Math.sin(tw) * 25, 13.5, "#ffffff", "Na");
       }
@@ -149,7 +144,6 @@ function jabon() {
   return { L, s };
 }
 
-/* ---------- HLB: el promedio es el punto de equilibrio ---------- */
 function hlb() {
   const s = { paso: 0, a: 80, pide: 10, HA: 4.3, HB: 15, nA: "Span 80", nB: "Tween 80" };
   let ang = 0, w = 0, xa = 0.8, pide = 10, antes = 0.8, flu = 0, fase = 0;
@@ -162,7 +156,7 @@ function hlb() {
     w += ((meta - ang) * 30 - w * 2.6) * dt; ang += w * dt;
     const px = X(pide), py = 300, c = Math.cos(ang), e = Math.sin(ang), gi = (x, y) => [px + x * c - y * e, py + x * e + y * c];
     for (let i = 0; i <= 10; i++) { const u = i / 10; G.gota(px + Math.sin(t * 0.8 + i) * 0.8, 318 + u * 74, mezcla(12, 34, u ** 1.7), "#fff3e4", { clara: 0.3, peso: 0.85 }); }
-    for (let i = 0; i <= 54; i++) { // varilla: se comba y deja pasar el material
+    for (let i = 0; i <= 54; i++) {
       const u = i / 54, x = X(0) - px + u * 380, d = (u * 380) / 19, pand = -6 * Math.sin(u * Math.PI) + Math.sin(t * 2 - u * 7) * 1.4 + w * 14 * (u - 0.5) ** 2;
       const bulto = Math.max(0, Math.sin(d * 1.5 + fase)) * Math.abs(flu) * 26 * (d > Math.min(HA, HB) && d < Math.max(HA, HB) ? 1 : 0), [gx, gy] = gi(x, pand);
       const k = HA === HB ? 0.5 : lim((d - HA) / (HB - HA), 0, 1); G.gota(gx, gy, 7.4 + bulto, CM.map((z, j) => mezcla(z, mezcla(CA[j], CB[j], k), 0.45)), { clara: 0.5, peso: 0.75 });
@@ -181,7 +175,6 @@ function hlb() {
   return { L, s };
 }
 
-/* ---------- Materia activa: el tinte se difunde, el número de perlas no cambia ---------- */
 function activa() {
   const s = { paso: 0, pct: 28, final: 12 };
   let hm = 0, ha = 0, mz = 0, ag = 0;
@@ -208,7 +201,6 @@ function activa() {
   return { L, s };
 }
 
-/* ---------- Catálogo: controles y lo que pone cada paso del relato ---------- */
 export const CAT = {
   stokes: { nombre: "gota que sube", bloque: ["radio", "visc", "delta"], crear: stokes, color: "#3f2463", pie: "La tinta sigue las líneas de corriente de Stokes de una esfera. La velocidad en pantalla está comprimida; la carrera de r contra 2r guarda la proporción.", controles: [["radio", "Radio de la gota", { min: 0.5, max: 3, paso: 0.1, valor: 1, unidad: "µm" }]], pasos: [{ radio: 1 }, {}, {}, {}] },
   acido: { nombre: "ácido y protón", bloque: ["pH", "pKa"], crear: acido, color: "#00616f", pie: "Ámbar: molécula entera. Celeste: sin protón. Blanco: protón. Los protones sueltos no están a escala; en el agua hay muchos menos.", controles: [["pH", "pH", { min: 2, max: 8, paso: 0.01, valor: 3 }]], pasos: [{ pH: 3 }, { pH: 4.76 }, { pH: 5.76 }, {}] },
@@ -219,14 +211,12 @@ export const CAT = {
 };
 export const ROTULOS = { radio: "radio en µm", visc: "viscosidad en Pa s", delta: "densidad del medio menos la de la gota", pH: "pH", pKa: "pKa", avance: "avance, de 0 a 3", a: "% del emulsionante A", pide: "HLB que pide el aceite", pct: "% activo de la materia prima", final: "% activo final", oclusion: "% de agua que frena", fps: "FPS", q: "cantidad en mg/cm²", fi: "fracción de gotas", fm: "empaque máximo", c: "tensioactivo en mM", cmc: "CMC en mM", molienda: "molienda en %", t: "tiempo en vidas medias", n0: "log inicial", D: "días por log", dias: "días", queda: "% que queda", T: "temperatura en °C", paso: "falla, de 0 a 5" };
 export const huecos = (c) => c.bloque ?? c.controles.map((x) => x[0]);
-/** Escena suelta, sin controles: la usan la ficha y la lista de laboratorios. */
 export function escena(tipo, valores = {}) {
   const { L, s } = CAT[tipo].crear();
   Object.assign(s, CAT[tipo].libre ?? {}, valores);
   return { el: L.el, color: CAT[tipo].color, poner(v) { Object.assign(s, v); L.asienta(); } };
 }
 
-/** Página de modelos: la escena queda fija y el relato la va cambiando. */
 export function relatos(doc = document) {
   const vistos = [];
   for (const caja of doc.querySelectorAll(".modelo[data-escena]")) {
@@ -253,7 +243,6 @@ export function relatos(doc = document) {
     activar(0);
   }
   if (!vistos.length) return;
-  // El acto más cercano al centro de lectura manda en su escena; la sección manda en el color del índice.
   let pedido = false, puesto = null;
   const original = document.body.style.getPropertyValue("--color") || null;
   const mide = () => {
@@ -274,6 +263,5 @@ export function relatos(doc = document) {
   addEventListener("resize", mide);
   mide();
 }
-
 
 export { botonPausa, quieto } from "./base.mjs";

@@ -1,9 +1,8 @@
-// Antes de generar el sitio: una página por laboratorio y el índice de apariencias.
 const sal = "laboratorio";
 await Deno.mkdir(sal, { recursive: true });
 await Deno.mkdir("aspecto", { recursive: true });
 const ok = (n: string) => /^[a-z0-9-]+\.json$/.test(n);
-const escribe = async (ruta: string, t: string) => { let a = ""; try { a = await Deno.readTextFile(ruta); } catch { /* nueva */ } if (a !== t) await Deno.writeTextFile(ruta, t); };
+const escribe = async (ruta: string, t: string) => { let a = ""; try { a = await Deno.readTextFile(ruta); } catch {  } if (a !== t) await Deno.writeTextFile(ruta, t); };
 const nuevos = new Set<string>();
 const lista: unknown[] = [];
 for await (const e of Deno.readDir("laboratorios")) {

@@ -1,7 +1,4 @@
-// Motor de gotas en WebGL 2. Cada gota suma a un campo; donde el campo pasa de un umbral hay material,
-// y por eso dos gotas cercanas se funden o se separan con un cuello, como un gel.
-// Se ilumina como una foto de producto: ventana de luz, borde, refracción del fondo y sombra.
-export const UMBRAL = 0.3, VISIBLE = Math.sqrt(1 - Math.sqrt(UMBRAL)); // radio que se ve, por unidad de radio de gota
+export const UMBRAL = 0.3, VISIBLE = Math.sqrt(1 - Math.sqrt(UMBRAL));
 const MAX = 900, PASO = 12;
 
 const VG = `#version 300 es
@@ -20,12 +17,12 @@ precision highp float; uniform sampler2D uA,uB; uniform vec2 uR; uniform vec4 uV
 float H(vec2 p){ p=fract(p*vec2(123.34,456.21)); p+=dot(p,p+45.32); return fract(p.x*p.y); }
 float N(vec2 p){ vec2 i=floor(p),f=fract(p); f=f*f*f*(f*(f*6.-15.)+10.); return mix(mix(H(i),H(i+vec2(1,0)),f.x),mix(H(i+vec2(0,1)),H(i+vec2(1,1)),f.x),f.y); }
 float F(vec2 p){ float s=0.,a=.5; for(int i=0;i<4;i++){ s+=a*N(p); p=mat2(1.6,1.2,-1.2,1.6)*p+7.3; a*=.5; } return s; }
-vec3 seda(vec2 p){ // líquido con pliegues suaves
+vec3 seda(vec2 p){
  vec2 q=p/300.; vec2 m=(p-uRaton)/300.; q+=m*.25*exp(-dot(m,m)*9.);
  float f=F(q*.9+vec2(uT*.035,-uT*.05)), g=F(q*.8+f*1.5+vec2(-uT*.04,uT*.03));
  float e=q.x*.8+q.y*1.1+g*2.1+f, s=.5+.5*sin(e*5.2+uT*.16), z=pow(.5+.5*sin(e*5.2+uT*.16+1.1),7.);
  vec3 c=mix(uC*.42,uC*1.12,s*.75+g*.3); c+=uL*z*(.08+.24*g); return c; }
-vec3 humo(vec2 p){ // tinta que sigue las líneas de corriente de Stokes alrededor de una esfera
+vec3 humo(vec2 p){
  vec2 x=(p-uP.xy)/uP.z; x.y*=-uQ.y; float r=max(1.0005,length(x)); float s=x.x/r*sqrt(max(0.,r*r-1.5*r+.5/r)); float l=x.y+uP.w;
  l+=.75*log(r+abs(x.y)*.0+.2)*sign(1.)*.0; float k=uP.z/50.; vec2 q=vec2(s*k,l*k);
  float f=F(vec2(q.x*1.05,q.y*.24)), g=F(vec2(q.x*2.3+f*2.2,q.y*.34+f*1.1)), w=F(vec2(q.x*5.+g*3.,q.y*.55+g*2.));
@@ -35,7 +32,6 @@ float caja(vec2 p,vec2 b,float r){ vec2 q=abs(p)-b+r; return length(max(q,0.))+m
 vec3 fondo(vec2 p){
  if(uM==1) return mix(humo(p),seda(p),uQ.x);
  vec3 c=seda(p); if(uM!=2) return c;
- // frasco: uP = nivel de materia prima, nivel total, mezcla, agitación
  vec2 j=p-vec2(240.,262.); float d=caja(j,vec2(130.,182.),46.); float cue=caja(p-vec2(240.,74.),vec2(96.,22.),14.); d=min(d,cue); d=-log(exp(-d*.12)+exp(-cue*.12))/.12;
  if(d>0.){ c*=1.-.3*exp(-d*.05); float lz=.25+.75*pow(F(p/90.+3.),2.)*2.; c+=(uL*.5+.5)*.34*lz*smoothstep(3.2,0.,abs(d-2.)); return c; }
  float n=F(p/70.+vec2(0.,uT*.2)), ola=sin(p.x*.034+uT*1.9)*3.+sin(p.x*.071-uT*2.6)*1.8;
@@ -51,7 +47,6 @@ float alt(float w){ float z=max(0.,w-${UMBRAL.toFixed(2)}); return sqrt(z/(z+.42
 void main(){
  vec2 u=gl_FragCoord.xy/uR, p=(vec2(gl_FragCoord.x,uR.y-gl_FragCoord.y)-uV.xy)/uV.z; vec2 px=1.4*uV.z/uR;
  vec4 A=texture(uA,u); vec3 c=fondo(p);
- // sombra y luz que atraviesa la gota
  vec2 so=vec2(-12.,17.)*uV.z/uR; float sh=0.; vec4 sc=vec4(0);
  for(int i=0;i<6;i++){ float an=float(i)*1.047; vec4 z=texture(uA,u+so+vec2(cos(an),sin(an))*9.*uV.z/uR); sh+=z.a; sc+=z; }
  sh=smoothstep(.1,.75,sh/6.); c*=1.-.42*sh; c+=(sc.rgb/max(sc.a,.001))*.13*smoothstep(.45,1.,sh);
@@ -62,8 +57,8 @@ void main(){
   vec3 n=normalize(vec3(-vec2(hx,hy)/2.8*B.x*.62,.62)); float fr=pow(1.-n.z,2.6);
   vec3 tras=fondo(p+vec2(-n.x,n.y)*B.x*.62); vec3 R=reflect(vec3(0,0,-1),n);
   float dif=.5+.5*dot(n,normalize(vec3(-.5,.62,.6)));
-  vec3 cu=mix(k*(.34+.8*dif),tras*(k*.85+.25)+k*.16,B.z); // B.z: transparencia
-  cu+=k*.55*smoothstep(.15,.95,dot(n.xy,normalize(vec2(.55,-.75))))*(1.-fr*.6)*(.35+.65*B.z); // luz que sale por el lado contrario
+  vec3 cu=mix(k*(.34+.8*dif),tras*(k*.85+.25)+k*.16,B.z);
+  cu+=k*.55*smoothstep(.15,.95,dot(n.xy,normalize(vec2(.55,-.75))))*(1.-fr*.6)*(.35+.65*B.z);
   cu=mix(cu,uC*.35+k*.35,fr*.4); cu+=(uL*.6+.4)*fr*.55;
   cu+=.13*fr*cos(6.283*(fr*1.1+vec3(0.,.33,.67)+uT*.02));
   vec2 v=R.xy-vec2(-.5,.56); v.x+=v.y*.25; float ven=smoothstep(.17,.1,abs(v.x))*smoothstep(.2,.12,abs(v.y)); ven*=1.-.55*smoothstep(.022,.01,abs(v.x));
@@ -104,7 +99,6 @@ export class Gel {
       this.gl = gl;
     } catch (e) { console.warn("Sin motor de gotas:", e.message); this.gl = null; }
   }
-  /** Gota en coordenadas de la escena. `r` es el radio que se ve. */
   gota(x, y, r, c, { peso = 1, brillo = 1, clara = 0.35, est = 1, giro = 0 } = {}) {
     if (this.n >= MAX || peso <= 0.01 || r <= 0.2) return;
     const k = color(c), R = r / VISIBLE;

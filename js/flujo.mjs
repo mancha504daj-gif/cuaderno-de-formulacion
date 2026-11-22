@@ -1,5 +1,3 @@
-// Dibuja el cálculo de un laboratorio como un circuito: los números entran por la izquierda,
-// recorren las operaciones y salen convertidos en el resultado. Sirve para cualquier laboratorio de bloques.
 import { evaluar } from "./motor.mjs";
 import { lienzo, texto as rotular, va as acercar } from "./base.mjs";
 import { rgb } from "./gel.mjs";
@@ -32,7 +30,7 @@ export function flujo(expr, cifra, unidad = "") {
   const L = lienzo("Circuito del cálculo: los valores recorren las operaciones hasta el resultado", (g, dt, t, fs, G) => {
     reloj += dt;
     if (reloj > 2.4) { reloj = 0; for (const o of nodos) if (o.hoja) pulso(o, false); }
-    for (const o of nodos) { // hilos de gel: lo que pasa por dentro los ensancha
+    for (const o of nodos) {
       const d = o.padre ?? sal, mira = foco && pasa(o, foco), n = Math.max(12, Math.round(Math.hypot(d.x - o.x, d.y - o.y) / 5.5));
       for (let i = 0; i <= n; i++) {
         const u = i / n, [x, y] = curva(o, d, u); let b = 0, oro = 0;

@@ -47,7 +47,7 @@ async function hlb(el) {
         return [f(o, 1), `${f(100 * x, 1)} %`, `${f(100 - 100 * x, 1)} %`];
       } catch { return [f(o, 1), "fuera del par", "fuera del par"]; }
     });
-    try { const pide = (r.min + r.max) / 2, hA = Number(ea.hlb), hB = Number(eb.hlb); if (Number.isFinite(hA) && Number.isFinite(hB)) esc?.poner({ HA: hA, HB: hB, nA: ea.nombre, nB: eb.nombre, pide, a: 100 * M.mezclaEmulsionantes(pide, hA, hB) }); } catch { /* el par no llega a ese HLB */ }
+    try { const pide = (r.min + r.max) / 2, hA = Number(ea.hlb), hB = Number(eb.hlb); if (Number.isFinite(hA) && Number.isFinite(hB)) esc?.poner({ HA: hA, HB: hB, nA: ea.nombre, nB: eb.nombre, pide, a: 100 * M.mezclaEmulsionantes(pide, hA, hB) }); } catch { }
     const out = [h("p", { class: "cifra" }, rango(r.min, r.max), h("small", {}, "HLB requerido de la fase oleosa")),
       tabla(["HLB", ea.nombre, eb.nombre], fs)];
     if (r.max - r.min > 1) out.push(aviso("Las fuentes no coinciden para estos aceites. Prepara ensayos a lo largo del intervalo y elige la emulsión más estable."));
@@ -176,7 +176,6 @@ async function activa(el) {
   calc();
 }
 
-/** Lámina con la escena del cálculo, debajo de los controles. */
 function lamina(el, tipo, pie) {
   const E = escena(tipo), c = h("div", { class: "lamina lamina-calc" }, E.el);
   c.style.setProperty("--c", E.color); el.append(c, h("p", { class: "pie-escena pie-calc" }, pie)); botonPausa();

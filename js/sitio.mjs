@@ -1,4 +1,3 @@
-// Se carga en cada página: apariencia guardada, laboratorios, fórmulas y animaciones.
 import { h, tabla, aviso, colorear } from "./elementos.mjs";
 import { escalarFormula } from "./motor.mjs";
 import { dibujarLaboratorio } from "./laboratorio.mjs";
@@ -16,7 +15,6 @@ const ORIG = { foto: foto?.getAttribute("src"), alt: foto?.alt, titulo: tit?.tex
 let fotos = null;
 const listaFotos = async () => (fotos ??= await (await fetch(new URL("fotos/creditos.json", raiz))).json());
 
-/** Aplica una apariencia. Solo acepta colores y fotos de las listas. */
 export async function aplicar(d) {
   const L = await listaFotos(), f = L.find((x) => x.archivo === d.foto);
   if (foto) { foto.src = f ? new URL(`fotos/${f.archivo}`, raiz).href : ORIG.foto; foto.alt = f ? f.descripcion : ORIG.alt; }
@@ -41,7 +39,7 @@ if (cabeza) colorear(ORIG.color);
 try {
   const ix = await (await fetch(new URL("aspecto/indice.json", raiz))).json();
   if (ix.includes(clave)) await aplicar((await (await fetch(new URL(`aspecto/${clave}.json`, raiz))).json()).aspecto);
-} catch { /* sin apariencia guardada: queda la original */ }
+} catch { }
 document.documentElement.dataset.listo = "si";
 if (!matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("mueve");
 
@@ -49,11 +47,11 @@ if (document.querySelector("[data-calc]")) import("./calculadoras.mjs");
 const listaLabs = document.querySelector("[data-laboratorios]");
 if (listaLabs) {
   const [E, M, L] = await Promise.all([import("./escenas.mjs"), import("./motor.mjs"), fetch(new URL("datos/laboratorios.json", raiz)).then((r) => r.json())]);
-  const monta = new IntersectionObserver((es) => { for (const x of es) { // solo viven las láminas que se ven
+  const monta = new IntersectionObserver((es) => { for (const x of es) {
     const l = x.target.datos, dentro = x.target.querySelector(".lienzo");
     if (!x.isIntersecting) { dentro?.remove(); continue; }
     if (dentro || !l.escena || !Object.hasOwn(E.CAT, l.escena.tipo)) continue;
-    const v = {}; for (const [k, e] of Object.entries(l.escena.valores)) { try { v[k] = M.evaluar(e, l.entradas); } catch { /* queda el valor propio */ } }
+    const v = {}; for (const [k, e] of Object.entries(l.escena.valores)) { try { v[k] = M.evaluar(e, l.entradas); } catch { } }
     const esc = E.escena(l.escena.tipo, v); x.target.style.setProperty("--c", esc.color); x.target.prepend(esc.el);
   } }, { rootMargin: "120px" });
   listaLabs.replaceChildren(...L.map((l) => { const a = h("a", { class: "tarja", href: new URL(`laboratorio/${l.archivo}.html`, raiz).href }, h("span", {}, l.titulo)); a.datos = l; monta.observe(a); return a; }));
@@ -84,14 +82,12 @@ for (const el of document.querySelectorAll("[data-formula]")) {
 
 crema(); gotaIndice(); botonPausa();
 addEventListener("pointerover", (e) => { const b = e.target.closest?.("main button, .archivo"); if (!b || b.contains(e.relatedTarget)) return; const r = b.getBoundingClientRect(); b.style.setProperty("--mx", `${e.clientX - r.left}px`); b.style.setProperty("--my", `${e.clientY - r.top}px`); });
-// Portada: cada sección trae su foto
 const portada = document.querySelector(".portada");
 if (portada) {
   portadaLiquida(portada);
   const capas = [...portada.querySelectorAll(".fondo img")];
   for (const a of portada.querySelectorAll("ol a")) for (const ev of ["pointerenter", "focus"]) a.addEventListener(ev, () => { for (const i of capas) i.classList.toggle("ve", i.dataset.de === a.dataset.de); });
 }
-// Las fotos y tablas se descubren al llegar a ellas
 if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
   const o = new IntersectionObserver((es) => { for (const e of es) if (e.isIntersecting) { e.target.classList.add("visto"); o.unobserve(e.target); } }, { threshold: 0.12 });
   for (const e of document.querySelectorAll("figure.lado, .entrada figure, .entrada > div, main h2")) { if (e.tagName !== "H2") e.classList.add("descubre"); o.observe(e); }

@@ -1,19 +1,15 @@
-// Escenas de las secciones y de los laboratorios nuevos. Usan el mismo motor de gotas que escenas.mjs.
 import { lienzo, texto, TAU, va, lim, mezcla, suave } from "./base.mjs";
 import { rgb } from "./gel.mjs";
 
 const az = (a, b) => a + Math.random() * (b - a);
 const tinte = (a, b, t) => a.map((z, i) => mezcla(z, b[i], t));
-/** Renacuajo: cabeza que busca el agua y cola grasa que ondea. */
 function cola(G, x, y, an, t, i, { largo = 9, r0 = 5.4, r1 = 3, color = "#f6dc86", vivo = 1, paso = 5.4, peso = 0.62 } = {}) {
   const c = Math.cos(an), e = Math.sin(an);
   for (let j = 1; j <= largo; j++) { const d = j * paso + 4, z = Math.sin(t * 2.2 - j * 0.5 + i * 1.7) * j * 0.8 * vivo; G.gota(x + c * d - e * z, y + e * d + c * z, mezcla(r0, r1, j / largo), color, { clara: 0.3, peso }); }
 }
-/** Corriente lenta: dos ondas cruzadas que no se repiten pronto. */
 const deriva = (m, t, k = 16) => [Math.sin(m.y * 0.016 + t * 0.42 + m.f) * k, Math.cos(m.x * 0.015 - t * 0.37 + m.f * 1.7) * k];
 const separa = (l, i, d, fuerza) => { let fx = 0, fy = 0; const m = l[i]; for (const o of l) if (o !== m && !o.fuera) { const dx = m.x - o.x, dy = m.y - o.y, D = d + (m.r ?? 0) + (o.r ?? 0), q = dx * dx + dy * dy; if (q < D * D && q > 0.5) { const h = Math.sqrt(q), k = ((D - h) / h) * fuerza; fx += dx * k; fy += dy * k; } } return [fx, fy]; };
 
-/* ---------- Piel: agua que sale entre las células ---------- */
 function piel() {
   const s = { paso: 0, oclusion: 0 };
   const cel = [];
@@ -24,7 +20,7 @@ function piel() {
   const L = lienzo("Corte de la capa externa de la piel: el agua sube entre las células y se evapora", (g, dt, t, fs, G) => {
     hu = va(hu, s.paso === 1 || s.paso === 3 || s.paso >= 4 ? 1 : 0, dt, 2); em = va(em, s.paso === 2 || s.paso >= 4 ? 1 : 0, dt, 2); oc = va(oc, s.oclusion / 100, dt, 3);
     const plena = Math.max(hu * 0.6, oc, em * 0.35);
-    for (const c of cel) { // corneocitos: secos se encogen y se levantan; con agua se hinchan
+    for (const c of cel) {
       const seco = (1 - plena) * (c.fila < 3 ? 1 - c.fila * 0.25 : 0.1), gi = Math.sin(c.f * 2.3) * 0.24 * seco + Math.sin(t * 0.7 + c.f) * 0.02;
       for (let k = -1; k <= 1; k += 0.5) G.gota(c.x + k * 33 * Math.cos(gi), c.y + k * 33 * Math.sin(gi) + Math.sin(t * 0.8 + c.f) * 1.4, mezcla(14.5, 17.5, plena) - Math.abs(k) * 4, tinte(rgb("#e7a596"), rgb("#ffc9b5"), plena), { clara: 0.18, peso: 0.6, brillo: 0.55 });
     }
@@ -47,7 +43,6 @@ function piel() {
   return { L, s };
 }
 
-/* ---------- Sol: cuánta radiación cruza la película ---------- */
 function solar() {
   const s = { paso: 0, fps: 30, q: 2 };
   let gr = 2, pasan = 0, total = 0, reloj = 0;
@@ -58,7 +53,7 @@ function solar() {
     gr = va(gr, s.q, dt, 4); reloj += dt;
     while (reloj > 0.03) { reloj -= 0.03; total++; const pasa = Math.random() < T; ray.push({ x: az(-130, 610), y: -30, v: az(330, 420), pasa, f: az(0, TAU) }); if (ray.length > 90) ray.shift(); }
     for (let k = -10; k <= 44; k++) { const x = -14 + k * 15.2; for (let j = 0; j < 4; j++) G.gota(x, piso(x) + 24 + j * 40, 27, j ? "#b9745a" : "#d8977a", { clara: 0.05, brillo: 0.4, peso: 0.6 }); }
-    const arriba = (x) => piso(x) - 5 - gr * 9 - Math.sin(x * 0.041) * gr * 2; // se acumula en los surcos y queda fina en las crestas
+    const arriba = (x) => piso(x) - 5 - gr * 9 - Math.sin(x * 0.041) * gr * 2;
     if (gr > 0.05) for (let k = -19; k <= 84; k++) { const x = -10 + k * 7.6, y0 = piso(x) - 2, y1 = arriba(x); for (let j = 0; j <= 2; j++) G.gota(x, mezcla(y0, y1, j / 2) + Math.sin(k * 0.5 + t) * 1.2, 3 + gr * 3.4, "#fff0cf", { clara: 0.42, peso: 0.55 }); }
     for (const r of ray) {
       if (r.fin) continue;
@@ -75,7 +70,6 @@ function solar() {
   return { L, s };
 }
 
-/* ---------- Emulsión en flujo: gotas que se estorban ---------- */
 function cizalla() {
   const s = { paso: 0, fi: 0.2, fm: 0.64 };
   const R = 17, AREA = 680 * 400, N = 190;
@@ -96,7 +90,6 @@ function cizalla() {
   return { L, s };
 }
 
-/* ---------- Micelas: sueltos hasta la CMC, y después en grupo ---------- */
 function micelas() {
   const s = { paso: 0, c: 4, cmc: 8.2 };
   const N = 60, POR = 10;
@@ -120,7 +113,6 @@ function micelas() {
   return { L, s };
 }
 
-/* ---------- Pigmento: grumos que se abren al moler ---------- */
 function pigmento() {
   const s = { paso: 0, molienda: 0 };
   const N = 150, K = 6, cen = Array.from({ length: K }, (_, i) => ({ x: 100 + (i % 3) * 140, y: 170 + Math.floor(i / 3) * 180 }));
@@ -139,7 +131,6 @@ function pigmento() {
   return { L, s };
 }
 
-/* ---------- Cabello: la carga de la fibra y el acondicionador ---------- */
 function cabello() {
   const s = { paso: 0, pH: 5 };
   const PI = 3.67, SI = 22;
@@ -168,7 +159,6 @@ function cabello() {
   return { L, s };
 }
 
-/* ---------- Perfume: cada nota se evapora a su paso ---------- */
 function notas() {
   const s = { paso: 0, t: 0 };
   const P = [["limoneno", 1.55, "#f3e24a", 110], ["linalool", 0.16, "#b79bff", 240], ["vainillina", 1.18e-4, "#e8a45c", 370]];
@@ -190,7 +180,6 @@ function notas() {
   return { L, s };
 }
 
-/* ---------- Conservante: recuento que baja en escala logarítmica ---------- */
 function placa() {
   const s = { paso: 0, n0: 6, D: 2, dias: 0 };
   const N = 60, b = Array.from({ length: N }, (_, i) => ({ x: az(30, 450), y: az(80, 440), an: az(0, TAU), f: az(0, TAU), a: 1, i, r: 8 }));
@@ -211,7 +200,6 @@ function placa() {
   return { L, s };
 }
 
-/* ---------- Vida útil: activo que se gasta ---------- */
 function vida() {
   const s = { paso: 0, queda: 100, T: 25 };
   const N = 50, b = Array.from({ length: N }, (_, i) => ({ x: 30 + ((i * 0.7549) % 1) * 420, y: 84 + ((i * 0.5698) % 1) * 350, f: i * 2.4, a: 1, r: 9, i }));
@@ -229,7 +217,6 @@ function vida() {
   return { L, s };
 }
 
-/* ---------- Las cinco maneras de fallar de una emulsión ---------- */
 function fallas() {
   const s = { paso: 0 };
   const N = 42, RU = [17, 12, 21, 14, 18, 10];
@@ -243,7 +230,7 @@ function fallas() {
     d.forEach((p, i) => {
       const [dx, dy] = deriva(p, t, s.paso === 1 ? 6 : 14); let fx = dx, fy = dy, meta = p.r0, [gx, gy] = separa(d, i, s.paso === 2 ? 15 : 12, s.paso === 2 ? 9 : 3.4);
       const jefe = d[i % 7], lider = i < 7;
-      if (s.paso === 1) fy -= 16 + p.r0 * p.r0 * 0.16; // la más grande sube más rápido
+      if (s.paso === 1) fy -= 16 + p.r0 * p.r0 * 0.16;
       if (s.paso === 2) { const k = gr[i % 7]; fx += (k.x - p.x) * 1.3; fy += (k.y - p.y) * 1.3; }
       if (s.paso === 3) { if (lider) { let v = 0; for (const o of d) if (o.i % 7 === i) v += o.dentro || o === p ? o.r0 ** 3 : 0; meta = Math.cbrt(v); } else { fx += (jefe.x - p.x) * 1.1; fy += (jefe.y - p.y) * 1.1; gx = gy = 0; p.dentro = p.dentro || Math.hypot(jefe.x - p.x, jefe.y - p.y) < jefe.r * 0.75; if (p.dentro) { meta = 0; p.x = jefe.x; p.y = jefe.y; } } }
       else p.dentro = false;

@@ -1,4 +1,3 @@
-// Escribe en MathML las ecuaciones que usa un laboratorio, a partir de sus bloques.
 import { evaluar } from "./motor.mjs";
 import { h, tabla } from "./elementos.mjs";
 import { escena, botonPausa, quieto } from "./escenas.mjs";
@@ -9,7 +8,6 @@ const m = (t, ...hijos) => { const e = document.createElementNS(NS, t); e.append
 const mi = (t) => { const e = m("mi", t); if (t.length > 1) e.setAttribute("mathvariant", "normal"); return e; };
 const mo = (t) => m("mo", t), fila = (...x) => m("mrow", ...x);
 const SUPER = { "-": "⁻", 0: "⁰", 1: "¹", 2: "²", 3: "³", 4: "⁴", 5: "⁵", 6: "⁶", 7: "⁷", 8: "⁸", 9: "⁹" };
-/** Número legible: hasta cuatro cifras significativas, con potencia de diez si hace falta. */
 export function cifra(v) {
   if (!Number.isFinite(v)) return "?";
   if (v === 0) return "0";
@@ -28,10 +26,9 @@ const marca = (e, s, num) => { e.setAttribute("data-s", s); if (num) e.setAttrib
 const nivel = (n) => (n.op === "max" || n.op === "min" ? 9 : n.t !== "bin" ? (n.t === "num" && n.v < 0 ? 0 : 9) : n.op === "+" || n.op === "-" ? 1 : n.op === "*" ? 2 : 3);
 const entre = (x) => fila(mo("("), x, mo(")"));
 
-/** Expresión de bloques a MathML. Con `vars` escribe valores en lugar de nombres. */
 export function escribir(n, vars) {
   if (!n) return mi("falta un bloque");
-  if (n.t === "num") { const a = Math.abs(n.v); return a === 0 || (a >= 1e-4 && a < 1e6) ? m("mn", String(n.v).replace("-", "−")) : mn(n.v); } // las constantes se escriben completas
+  if (n.t === "num") { const a = Math.abs(n.v); return a === 0 || (a >= 1e-4 && a < 1e6) ? m("mn", String(n.v).replace("-", "−")) : mn(n.v); }
   if (n.t === "var") return vars && Object.hasOwn(vars, n.v) ? marca(vars[n.v] < 0 ? entre(mn(vars[n.v])) : mn(vars[n.v]), n.v, true) : marca(mi(n.v), n.v);
   if (n.t === "fun") {
     const a = escribir(n.a, vars);
@@ -57,8 +54,6 @@ const sub = (a, b) => m("msub", mi(a), m("mtext", b));
 
 const SUP_STOKES = ["Las gotas son esferas rígidas, iguales y están lejos unas de otras.", "El flujo es lento y el medio es newtoniano: su viscosidad no cambia con el esfuerzo.", "No hay coalescencia, floculación ni maduración de Ostwald."];
 
-
-/** Los números salen de la tabla y vuelan a su lugar en la ecuación. */
 function sustituir(bloque) {
   const metas = [...bloque.querySelectorAll("[data-num][data-s]")], fin = bloque.querySelector("[data-fin]");
   if (quieto() || bloque.dataset.vuela) return;
@@ -80,7 +75,6 @@ function sustituir(bloque) {
 const tono = (x) => { const c = getComputedStyle(x).getPropertyValue("--color").trim(); return /^#[0-9a-f]{6}$/i.test(c) ? c : null; };
 const conVuelo = new IntersectionObserver((es) => { for (const e of es) if (e.isIntersecting) { conVuelo.unobserve(e.target); sustituir(e.target.closest(".calculo")); } }, { threshold: 1, rootMargin: "0px 0px -12% 0px" });
 
-/** Bloque «Con qué se calcula». Devuelve el elemento y una función que lo pone al día. */
 export function ficha(partes) {
   const usa = partes.filter((p) => ["calculo", "probeta", "salida", "curva"].includes(p.t)), reglas = partes.filter((p) => p.t === "si");
   const sup = partes.filter((p) => p.t === "supuesto").map((p) => p.texto);
@@ -89,13 +83,12 @@ export function ficha(partes) {
   const controles = Object.fromEntries(partes.filter((p) => p.t === "entrada" || p.t === "calculo").map((p) => [p.nombre, p]));
   const vivos = [], vistas = new Set(), previos = {};
   let cuenta = 0;
-  // Tocar un símbolo lo enciende en la ecuación, la tabla, el dibujo y su control.
   const mirar = (s, raiz = el.parentElement ?? el) => { for (const x of raiz.querySelectorAll("[data-s]")) x.classList.toggle("toca", !!s && x.getAttribute("data-s") === s); for (const v of vivos) v.mirar?.(s); };
   el.addEventListener("pointerover", (e) => mirar(e.target.closest?.("[data-s]")?.getAttribute("data-s") ?? null));
   el.addEventListener("pointerleave", () => mirar(null));
   el.addEventListener("focusin", (e) => mirar(e.target.closest?.("[data-s]")?.getAttribute("data-s") ?? null));
   el.addEventListener("focusout", () => mirar(null));
-  const filas = (lista) => { // [símbolo, qué es, valor, clave]
+  const filas = (lista) => {
     const tb = tabla(["Símbolo", "Qué es", "Valor"], lista.map((f) => f.slice(0, 3)));
     tb.querySelectorAll("tbody tr").forEach((tr, i) => {
       const k = lista[i][3]; if (!k) return;

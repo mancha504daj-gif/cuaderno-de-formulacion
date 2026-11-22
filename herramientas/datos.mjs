@@ -1,5 +1,3 @@
-// Convierte las tablas de ../investigacion/datos en los JSON del sitio.
-// Uso: node herramientas/datos.mjs
 import { readFileSync, writeFileSync } from "node:fs";
 const ORIGEN = new URL("../../investigacion/datos/", import.meta.url);
 function csv(nombre) {
@@ -23,7 +21,6 @@ const TILDES = { algodon: "algodón", canamo: "cáñamo", vison: "visón", acido
 const es = (s) => s.replace(/[a-z]+/g, (w) => TILDES[w] ?? w);
 const ap = (f) => f.slice(0, 260);
 
-// Las filas tomadas de tablas completas de Benson no se publican.
 const ac = new Map();
 for (const r of csv("hlb_requerido_aceites.csv")) {
   const v = rango(r.rhlb_ow);

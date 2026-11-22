@@ -1,5 +1,3 @@
-// El fondo del sitio: una crema que se mueve despacio y el índice como un vertido de bordes vivos.
-// Un solo lienzo fijo, a media resolución y 30 cuadros por segundo.
 import { quieto, registrar } from "./base.mjs";
 import { rgb } from "./gel.mjs";
 
@@ -11,7 +9,7 @@ float H(vec2 p){ p=fract(p*vec2(123.34,456.21)); p+=dot(p,p+45.32); return fract
 float N(vec2 p){ vec2 i=floor(p),f=fract(p); f=f*f*f*(f*(f*6.-15.)+10.); return mix(mix(H(i),H(i+vec2(1,0)),f.x),mix(H(i+vec2(0,1)),H(i+vec2(1,1)),f.x),f.y); }
 float B(vec2 p){ float s=0.,a=.5; for(int i=0;i<3;i++){ s+=a*N(p); p=mat2(1.6,1.2,-1.2,1.6)*p+7.3; a*=.5; } return s; }
 float smin(float a,float b,float k){ float h=clamp(.5+.5*(b-a)/k,0.,1.); return mix(b,a,h)-k*h*(1.-h); }
-float forma(vec2 p){ // distancia al vertido del índice: ondas, abombado junto al puntero y gotas que se desprenden
+float forma(vec2 p){
  float y=p.y, e=uX+7.+7.*sin(y*.0085+uT*.55)+5.*sin(y*.019-uT*.8)+uS*15.*sin(y*.012+uT*2.6);
  e+=30.*exp(-pow((y-uM.y)/84.,2.))*smoothstep(190.,0.,abs(uM.x-uX));
  float d=p.x-e; for(int i=0;i<4;i++) d=smin(d,length((p-uG[i].xy)*vec2(1.,.9))-uG[i].z,26.); return d; }
@@ -54,7 +52,7 @@ export function crema() {
     sx += (mx - sx) * (1 - Math.exp(-dt * 7)); sy += (my - sy) * (1 - Math.exp(-dt * 7));
     const dv = Math.min(1, Math.abs(scrollY - ultimo) / 70); ultimo = scrollY; sv += (dv - sv) * (1 - Math.exp(-dt * (dv > sv ? 9 : 2)));
     const G = new Float32Array(12);
-    got.forEach((g, i) => { // asoma, se estira y vuelve a la crema
+    got.forEach((g, i) => {
       g.vida += dt / (9 + i * 2.3); const l = g.vida % 1, a = Math.sin(Math.PI * l); G[i * 3] = X + 2 + a * (17 + i * 5); G[i * 3 + 1] = ((i * 0.618 + Math.floor(g.vida) * 0.37) % 1) * H + l * 90; G[i * 3 + 2] = X > 1 ? 5 + a * (7 + i * 2) : 0;
     });
     gl.uniform2f(U.R, cv.width, cv.height); gl.uniform1f(U.K, K); gl.uniform1f(U.T, t); gl.uniform1f(U.X, X); gl.uniform1f(U.S, sv); gl.uniform3fv(U.B, col.b); gl.uniform3fv(U.C, col.c); gl.uniform2f(U.M, sx, sy); gl.uniform3fv(U.G, G);
@@ -69,7 +67,6 @@ export function crema() {
   registrar(yo); talla(); cuadro(0.001); yo.arranca();
 }
 
-/* ---------- Portada: las fotos se funden como líquidos ---------- */
 const FP = `#version 300 es
 precision highp float; uniform sampler2D a,b; uniform vec2 uR,uA,uBt,uM; uniform float uT,uP; out vec4 o;
 float H(vec2 p){ p=fract(p*vec2(123.34,456.21)); p+=dot(p,p+45.32); return fract(p.x*p.y); }
@@ -118,7 +115,6 @@ export function portadaLiquida(portada) {
   va((imgs.find((x) => x.classList.contains("ve")) ?? imgs[0]).dataset.de).then(() => { fondo.prepend(cv); fondo.classList.add("liquido"); });
 }
 
-/** La gota que marca la página en el índice y sigue al puntero. */
 export function gotaIndice() {
   const b = document.getElementById("quarto-sidebar"); if (!b) return;
   const g = document.createElement("i"); g.className = "gota-indice"; g.setAttribute("aria-hidden", "true");

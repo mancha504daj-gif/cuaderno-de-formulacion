@@ -1,4 +1,3 @@
-// Editor de bloques: apariencia de las páginas y laboratorios.
 import { dibujarLaboratorio } from "./laboratorio.mjs";
 import { CAT, ROTULOS, huecos } from "./escenas.mjs";
 const B = window.Blockly, $ = (id) => document.getElementById(id);
@@ -89,7 +88,6 @@ function cambio() {
 ws.addChangeListener((e) => { if (!e.isUiEvent && !cargando && !ws.isDragging()) cambio(); });
 $("titulo").addEventListener("input", cambio);
 
-/** Bloques de la página tal como está publicada. */
 function bloquesDePagina() {
   const p = cuaderno.piezas();
   const serie = p.reduceRight((sig, x) => ({ type: "seccion", data: x.id, fields: { NOMBRE: x.nombre }, ...(sig ? { next: { block: sig } } : {}) }), null);
@@ -104,7 +102,7 @@ async function abrePagina() {
   if (!cuaderno) return estado("No se pudo abrir la página.");
   const g = lee(K());
   let guardado = null;
-  if (!g) { try { const ix = await (await fetch("aspecto/indice.json")).json(); if (ix.includes(cuaderno.clave)) guardado = await (await fetch(`aspecto/${cuaderno.clave}.json`)).json(); } catch { /* sin guardado */ } }
+  if (!g) { try { const ix = await (await fetch("aspecto/indice.json")).json(); if (ix.includes(cuaderno.clave)) guardado = await (await fetch(`aspecto/${cuaderno.clave}.json`)).json(); } catch { } }
   try { pon((g ?? guardado)?.bloques ?? bloquesDePagina()); } catch { pon(bloquesDePagina()); }
   ws.clearUndo(); await muestra(); estado("Mueve las partes o suéltalas fuera para ocultarlas.");
 }

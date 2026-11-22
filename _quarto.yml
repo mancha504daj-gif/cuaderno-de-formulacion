@@ -6,6 +6,8 @@ project:
   render: ["*.qmd", "fundamentos/*.qmd", "piel/*.qmd", "limpieza/*.qmd", "solar/*.qmd", "maquillaje/*.qmd", "cabello/*.qmd", "fragancias/*.qmd", "ejemplos/*.qmd", "calculadoras/*.qmd", "laboratorio/*.qmd", "ingredientes/*.md"]
 website:
   title: "Cuaderno de formulación"
+  site-url: "https://mancha504daj-gif.github.io/cuaderno-de-formulacion/"
+  repo-url: "https://github.com/mancha504daj-gif/cuaderno-de-formulacion"
   description: "Formulación cosmética con cálculos a la vista y fuentes citadas."
   search: { location: sidebar, type: overlay }
   sidebar:

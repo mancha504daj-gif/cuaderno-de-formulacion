@@ -1,4 +1,3 @@
-// Dibuja un laboratorio armado con bloques. Todo el texto entra como texto, no como HTML.
 import { h, deslizador, aviso } from "./elementos.mjs";
 import { evaluar, stokes, CMP } from "./motor.mjs";
 import { probeta, curva } from "./dibujos.mjs";
@@ -9,11 +8,11 @@ export function dibujarLaboratorio(doc, el) {
   const ent = {}, vivos = [], izq = [], der = [], abajo = [];
   const DER = new Set(["escena", "probeta", "curva", "salida", "si"]), ABAJO = new Set(["pregunta", "fuente"]);
   const calculos = (doc.partes ?? []).filter((p) => p.t === "calculo");
-  const vars = () => { const v = Object.fromEntries(Object.entries(ent).map(([k, x]) => [k, x.valor])); for (const c of calculos) { try { v[c.nombre] = evaluar(c.expr, v); } catch { /* quien lo use dirá qué falta */ } } return v; };
+  const vars = () => { const v = Object.fromEntries(Object.entries(ent).map(([k, x]) => [k, x.valor])); for (const c of calculos) { try { v[c.nombre] = evaluar(c.expr, v); } catch { } } return v; };
   const todo = () => { const v = vars(); for (const f of vivos) f(v); };
   const cuida = (caja, fn) => vivos.push((v) => { try { fn(v); } catch (e) { caja.replaceChildren(aviso(e.message)); } });
   for (const p of doc.partes ?? []) {
-    if (p.t === "supuesto" || p.t === "calculo") continue; // aparece en la ficha de cálculo
+    if (p.t === "supuesto" || p.t === "calculo") continue;
     const hijos = DER.has(p.t) ? der : ABAJO.has(p.t) ? abajo : izq;
     if (p.t === "titulo") hijos.push(h("h2", {}, p.texto));
     else if (p.t === "paso") hijos.push(h("p", { class: "paso" }, p.texto));
@@ -50,7 +49,7 @@ export function dibujarLaboratorio(doc, el) {
       if (!Object.hasOwn(CAT, p.tipo)) { hijos.push(aviso("Esa escena no existe.")); continue; }
       const E = escena(p.tipo), c = h("div", { class: "lamina lamina-lab" }, E.el); c.style.setProperty("--c", E.color);
       hijos.push(c, h("p", { class: "pie-escena" }, CAT[p.tipo].pie)); botonPausa();
-      vivos.push((v) => { const o = {}; for (const k of huecos(CAT[p.tipo])) { if (!p.valores?.[k]) continue; try { const x = evaluar(p.valores[k], v); if (Number.isFinite(x)) o[k] = k === "paso" ? Math.round(x) : x; } catch { /* se queda como estaba */ } } E.poner(o); });
+      vivos.push((v) => { const o = {}; for (const k of huecos(CAT[p.tipo])) { if (!p.valores?.[k]) continue; try { const x = evaluar(p.valores[k], v); if (Number.isFinite(x)) o[k] = k === "paso" ? Math.round(x) : x; } catch { } } E.poner(o); });
     } else if (p.t === "pregunta") {
       const r = h("p", { role: "status", class: "respuesta" });
       const op = p.opciones.split(";").map((x) => x.trim()).filter(Boolean);
