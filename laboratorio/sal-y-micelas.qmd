@@ -1,0 +1,9 @@
+---
+title: "Sal y micelas"
+toc: false
+---
+
+```{=html}
+<div data-lab="sal-y-micelas"><p>Cargando.</p></div>
+<p><a href="../editor.html?lab=sal-y-micelas">Abrir en el editor</a></p>
+```

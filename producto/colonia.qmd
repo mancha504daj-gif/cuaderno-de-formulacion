@@ -1,0 +1,64 @@
+---
+title: "Agua de colonia"
+toc: false
+page-layout: full
+---
+
+```{=html}
+<figure class="cabeza" style="--color:#15171f" data-alto="baja"><div class="marco"><img src="../fotos/frasco.jpg" alt="Frasco de perfume de vidrio"></div><h1>Agua de colonia</h1></figure>
+```
+
+[Fragancias](../fragancias/index.qmd). Ligera, de 3 a 5 % de fragancia. Forma: solución alcohólica.
+
+Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+
+## Agua de colonia
+
+```{=html}
+<div data-receta="agua-de-colonia"><p>Cargando.</p></div>
+```
+
+::: {.avisos}
+- El alcohol es inflamable.
+- Comprueba el certificado IFRA de la fragancia para categoría 4.
+:::
+
+### Por qué funciona
+
+Con 4 % de fragancia cae en la convención de colonia, 3 a 5 %. El agua suaviza el golpe del alcohol.
+
+### Paso a paso
+
+1. Trabaja lejos de llamas y chispas.
+2. Pesa la fragancia en un frasco de vidrio seco.
+3. Agrega el alcohol y agita hasta que quede transparente.
+4. Agrega el agua despacio. Si se enturbia, te pasaste de agua para esa fragancia.
+5. Cierra y deja macerar de 2 a 4 semanas, fresco y oscuro.
+6. Enfría 24 h a 4 °C, filtra en frío y envasa.
+
+### Cómo saber si salió bien
+
+| Control | Meta | Cómo se mide |
+|---|---|---|
+| Transparencia | límpido | a contraluz, a 20 y a 4 °C |
+| Color | sin cambio | una muestra a la luz y otra a oscuras |
+| Olor | anota a 0, 15 min, 1 h y 4 h | en tira de papel |
+| Densidad | registra | picnómetro |
+
+### Si algo falla
+
+| Qué ves | Por qué | Qué hacer |
+|---|---|---|
+| Turbio | mucha agua para esa fragancia | sube el alcohol o filtra en frío |
+| Huele a alcohol | falta maceración | espera otra semana |
+| Cambia de color | vainillina o luz | frasco oscuro |
+
+### Qué puedes cambiar
+
+- Menos agua si se enturbia.
+
+**Fuentes.** Concentraciones: Dermatocosmética, EDUCC, ISBN 978-987-626-467-9, cap. 20. IFRA, 51.ª enmienda.
+
+## Otros productos de esta sección
+
+[Acorde](acorde.qmd), [Agua de perfume](agua-de-perfume.qmd), [Perfume en aceite](perfume-en-aceite.qmd), [Perfume sólido](perfume-solido.qmd), [Bruma corporal](bruma.qmd).

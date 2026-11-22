@@ -1,0 +1,66 @@
+---
+title: "Base fluida"
+toc: false
+page-layout: full
+---
+
+```{=html}
+<figure class="cabeza" style="--color:#5c1f3a" data-alto="baja"><div class="marco"><img src="../fotos/maquillaje.jpg" alt="Labiales de varios tonos"></div><h1>Base fluida</h1></figure>
+```
+
+[Maquillaje](../maquillaje/index.qmd). Pigmento en la fase externa. Forma: emulsión W/O.
+
+Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+
+## Base fluida
+
+```{=html}
+<div data-receta="base-fluida"><p>Cargando.</p></div>
+```
+
+::: {.avisos}
+- Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.
+- No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad.
+- Usa mascarilla: el polvo fino irrita los pulmones.
+:::
+
+### Por qué funciona
+
+W/O porque resiste el sudor. El tono sale de mezclar rojo, amarillo y negro con blanco, y se ajusta a ojo sobre la piel: los modelos ópticos fallan con óxidos aglomerados.
+
+### Paso a paso
+
+1. Muele los pigmentos con 12 g del CCT.
+2. Funde la fase A a 75 °C e incorpora la pasta.
+3. Disuelve la sal y la glicerina en el agua a 75 °C.
+4. Agrega el agua al aceite en hilo fino, con agitación fuerte.
+5. Enfría agitando y agrega la fase D por debajo de 40 °C.
+
+### Cómo saber si salió bien
+
+| Control | Meta | Cómo se mide |
+|---|---|---|
+| Tipo de emulsión | W/O | gota en agua: no debe dispersarse; casi no conduce |
+| Aspecto | homogéneo | capa fina sobre vidrio |
+| Centrífuga | sin separación | 3000 rpm, 30 min |
+| Ciclos | sin separación | de tres a seis ciclos |
+| Microbiología | sin crecimiento | placas a t0 y a 28 días |
+
+### Si algo falla
+
+| Qué ves | Por qué | Qué hacer |
+|---|---|---|
+| Suelta agua | faltó cizalla o electrolito | agrega el agua más despacio y revisa la sal |
+| Se dispersa en agua | salió O/W | agrega el agua sobre el aceite y más lento |
+| Granos de polvo | pigmento sin mojar | muélelo antes con parte del aceite |
+
+### Qué puedes cambiar
+
+- Tono claro: amarillo 1.2, rojo 0.3, negro 0.1 y el resto blanco.
+- Más oscuro: baja el blanco antes de subir el negro.
+
+**Fuentes.** Grupos y rangos: corrector W/O de proveedor analizado en la nota 05; proporciones propias. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
+
+## Otros productos de esta sección
+
+[Labial](labial.qmd), [Brillo labial](brillo-labial.qmd), [Polvo compacto](polvo-compacto.qmd), [Rubor](rubor.qmd), [Sombra de ojos](sombra.qmd), [Máscara de pestañas](mascara.qmd).

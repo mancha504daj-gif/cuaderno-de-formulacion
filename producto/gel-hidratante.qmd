@@ -1,0 +1,66 @@
+---
+title: "Gel hidratante"
+toc: false
+page-layout: full
+---
+
+```{=html}
+<figure class="cabeza" style="--color:#b3245c" data-alto="baja"><div class="marco"><img src="../fotos/piel.jpg" alt="Frasco de crema abierto con su tapa azul"></div><h1>Gel hidratante</h1></figure>
+```
+
+[Cuidado de la piel](../piel/index.qmd). Sin aceite. Ligero, para piel grasa o calor. Forma: gel acuoso.
+
+Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+
+## Gel hidratante de pantenol
+
+```{=html}
+<div data-receta="gel-de-pantenol"><p>Cargando.</p></div>
+```
+
+::: {.avisos}
+- Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.
+- No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad.
+:::
+
+### Por qué funciona
+
+La hidroxietilcelulosa es neutra: ni la sal ni el pH la aguan. Sin aceite, el gel se siente ligero y hidrata poco tiempo.
+
+### Paso a paso
+
+1. Dispersa la hidroxietilcelulosa en la glicerina hasta tener una pasta sin grumos.
+2. Agrega el agua poco a poco, con agitación media, y espera de 30 a 60 min a que se hidrate.
+3. Incorpora los activos de la fase B, uno por uno.
+4. Agrega la fase C y mezcla despacio para no meter aire.
+5. Mide el pH y ajústalo.
+6. Deja reposar 24 h, revisa burbujas y grumos, y envasa.
+
+### Cómo saber si salió bien
+
+| Control | Meta | Cómo se mide |
+|---|---|---|
+| pH | el de la receta ± 0.3 | medidor o tiras |
+| Aspecto | transparente o uniforme, sin grumos | a contraluz |
+| Viscosidad | registra husillo, rpm y temperatura | viscosímetro o tiempo de caída |
+| Ciclos | sin cambio | de tres a seis ciclos |
+| Microbiología | sin crecimiento | placas a t0 y a 28 días |
+
+### Si algo falla
+
+| Qué ves | Por qué | Qué hacer |
+|---|---|---|
+| Grumos | el polímero se mojó de golpe | prehumecta con glicerina |
+| Muchas burbujas | agitación rápida | agita lento y deja reposar |
+| Se aguó | sal, pH o microbios | mide pH; si huele raro, descártalo |
+
+### Qué puedes cambiar
+
+- Sube la hidroxietilcelulosa a 1.3 % para un gel firme.
+- Agrega 3 % de escualano con 0.5 % de Tween 20 y tendrás un gel-crema.
+
+**Fuentes.** Método y proceso: Baki 2023, ISBN 978-1-119-70977-0, pp. 72 y 250-259. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
+
+## Otros productos de esta sección
+
+[Loción corporal](locion-corporal.qmd), [Crema corporal](crema-corporal.qmd), [Crema facial](crema-facial.qmd), [Crema de manos](crema-de-manos.qmd), [Sérum](serum.qmd), [Aceite corporal](aceite-corporal.qmd), [Bálsamo labial](balsamo-labial.qmd), [Ungüento](unguento.qmd), [Manteca batida](manteca-batida.qmd), [Exfoliante](exfoliante.qmd), [Mascarilla de arcilla](mascarilla.qmd).

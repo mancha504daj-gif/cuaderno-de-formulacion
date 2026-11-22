@@ -1,0 +1,53 @@
+---
+title: Del cuaderno al registro
+toc: false
+page-layout: full
+---
+
+Vender un cosmético en Honduras es un trámite sanitario. Esta página resume lo que pide el reglamento centroamericano; la ARSA tiene la última palabra y sus requisitos cambian.
+
+## Qué reglas mandan
+
+| Tema | Reglamento |
+|---|---|
+| Registro sanitario | RTCA 71.03.35:21, en vigor desde el 05-02-2024 |
+| Buenas prácticas de manufactura | RTCA 71.03.49:08 |
+| Etiquetado | RTCA 71.03.36:07 |
+| Verificación de calidad | RTCA 71.03.45:07 |
+
+El RTCA adopta los anexos II a VI del reglamento europeo con sus actualizaciones, los listados del PCPC y la base CosIng, «con preeminencia del menos restrictivo». Por prudencia, este sitio formula con los límites europeos.
+
+## Qué pide el registro
+
+1. Solicitud.
+2. Certificado de buenas prácticas o autorización de fabricación.
+3. Poderes del representante legal y del profesional responsable.
+4. Fórmula completa, con la cantidad de las sustancias restringidas, firmada por el profesional responsable.
+5. Especificaciones del producto terminado.
+6. Etiqueta o proyecto de etiqueta.
+7. Contrato con el fabricante, si fabrica un tercero.
+8. Comprobante de pago.
+
+La documentación va en español. El registro dura 5 años. Cada factor de protección solar se registra aparte. Un registro ampara los tonos y fragancias de una misma base, salvo en perfumes.
+
+## Un producto, un camino
+
+1. Fórmula estable en el laboratorio, con su hoja.
+2. Recuento y ensayo del conservante.
+3. Evaluación de seguridad por un profesional.
+4. Fabricante con buenas prácticas: propio o por contrato.
+5. Etiqueta y registro.
+
+En esta investigación no se encontró una vía simplificada para artesanos. La maquila es una salida: otro fabrica con sus permisos.
+
+## Un registro sirve en otros países
+
+Guatemala, El Salvador, Honduras, Nicaragua y Costa Rica reconocen el registro de los demás, para productos fabricados ahí. La autoridad resuelve en un máximo de 8 días hábiles. Panamá queda fuera.
+
+## Lo que no puedes decir
+
+Si la etiqueta promete curar, el producto se registra como medicamento. Para protectores solares, la Unión Europea prohíbe «bloqueador» y «protección total».
+
+## Fuentes
+
+RTCA 71.03.35:21 y Resolución COMIECO 474-2023. Resolución 231-2008. Acuerdo 0418-ARSA-2023. Recomendación 2006/647/CE. Leídos en noviembre de 2026; confirma el texto vigente.

@@ -1,15 +1,21 @@
 ---
-title: Alcance y límites
+title: "Alcance y límites"
 ---
 
-Este sitio ayuda a entender y a diseñar ensayos. Sus cálculos son estimaciones.
+Este sitio enseña a formular y a diseñar ensayos. Sus cálculos son estimaciones.
 
+- **Las recetas son propuestas sin ensayar.** Cada una lo dice. Nadie ha comprobado su estabilidad, su conservación ni su seguridad. Se llevan al laboratorio, se prueban y se corrigen aquí.
+- Nada va a la piel sin control microbiológico y evaluación de seguridad.
 - El HLB orienta la elección de emulsionantes. La estabilidad se prueba.
 - Stokes describe gotas aisladas en un medio newtoniano.
 - La fracción sin disociar no reemplaza el ensayo de eficacia del conservante.
-- Los límites citados son de la Unión Europea. Comprueba el texto vigente antes de usar un ingrediente.
-- Vender un cosmético en Honduras exige trámites ante la ARSA.
+- Los límites citados son de la Unión Europea, que el reglamento centroamericano adopta. Comprueba el texto vigente.
+- Vender en Honduras exige trámites: [Del cuaderno al registro](honduras.qmd).
 
 ## Estado de los datos
 
-Las tablas de HLB requerido reúnen valores que no coinciden y algunos de fuentes informales; la calculadora lo avisa. Faltan densidades de jojoba, karité, cacao y almendra.
+Las tablas de HLB requerido reúnen valores que no coinciden y algunos de fuentes informales; la calculadora lo avisa. Faltan densidades de jojoba, karité, cacao y almendra. Lo que hace cada ingrediente es conocimiento general del oficio, sin una cita por línea.
+
+## Quién hizo qué
+
+Lopez_Julio_34 definió el proyecto, eligió el diseño y las secciones, y decide qué se publica. Un asistente de IA (Claude) escribió el código y los textos y reunió las fuentes. La verificación en el laboratorio está pendiente.

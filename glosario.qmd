@@ -1,0 +1,13 @@
+---
+title: Glosario
+toc: false
+page-layout: full
+---
+
+Las palabras del sitio, en orden. Cuando una aparece subrayada en una lección, tócala y verás su definición.
+
+```{=html}
+<div data-busca="#lista-terminos" class="buscador"></div>
+```
+
+{{< include _inc/glosario.md >}}

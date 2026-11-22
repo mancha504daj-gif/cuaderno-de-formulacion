@@ -1,0 +1,71 @@
+---
+title: "Crema de manos"
+toc: false
+page-layout: full
+---
+
+```{=html}
+<figure class="cabeza" style="--color:#b3245c" data-alto="baja"><div class="marco"><img src="../fotos/piel.jpg" alt="Frasco de crema abierto con su tapa azul"></div><h1>Crema de manos</h1></figure>
+```
+
+[Cuidado de la piel](../piel/index.qmd). Aguanta lavados: humectante y película. Forma: emulsión O/W.
+
+Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+
+## Crema de manos con urea
+
+```{=html}
+<div data-receta="crema-de-manos-con-urea"><p>Cargando.</p></div>
+```
+
+::: {.avisos}
+- Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.
+- No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad.
+:::
+
+### Por qué funciona
+
+La urea retiene agua. Con calor o con el tiempo libera amoníaco y sube el pH: por eso entra en frío y vigilas el pH durante semanas.
+
+### Paso a paso
+
+1. Pesa la fase A. Si lleva goma, mézclala primero con la glicerina; después agrega el agua y agita hasta que no queden grumos.
+2. Pesa la fase B en otro vaso.
+3. Calienta A y B en baño de agua hasta 72 °C y mantenlas 10 min. Repón con agua caliente lo que se evaporó de A.
+4. Vierte B sobre A con el agitador encendido y homogeneiza 3 min.
+5. Baja la velocidad y sigue agitando hasta 40 °C.
+6. Disuelve la urea en 10 g del agua que apartaste, sin calentar, y agrégala con la fase C por debajo de 40 °C.
+7. Mide el pH y ajústalo gota a gota con ácido cítrico o sosa, los dos al 10 %.
+8. Pesa el lote final, completa con agua hasta el total y envasa. Rotula lote y fecha.
+
+### Cómo saber si salió bien
+
+| Control | Meta | Cómo se mide |
+|---|---|---|
+| pH | el de la receta ± 0.3 | medidor calibrado o tiras |
+| Tipo de emulsión | O/W | gota en agua: debe dispersarse. Confirma con conductividad o colorante hidrosoluble al microscopio |
+| Aspecto | homogéneo, sin granos | extiende una capa fina sobre vidrio |
+| Centrífuga | sin separación | 3000 rpm, 30 min |
+| Ciclos | sin separación ni cambio de olor | de tres a seis ciclos entre −10 y 40 °C, 24 h por etapa |
+| Microbiología | sin crecimiento | placas a t0 y a 28 días; ensayo de eficacia del conservante antes de usarla |
+
+### Si algo falla
+
+| Qué ves | Por qué | Qué hacer |
+|---|---|---|
+| Se separa una capa de aceite y vuelve al agitar | cremado: gotas grandes o medio poco viscoso | homogeneiza más tiempo o sube un poco la goma |
+| Se separa y no vuelve | coalescencia: falta emulsionante o el par no es el adecuado | prueba otro HLB antes de subir la dosis |
+| Queda granosa | las ceras cristalizaron o las fases estaban a distinta temperatura | iguala temperaturas y enfría agitando |
+| No se dispersa en agua | salió W/O | sube la parte hidrófila del emulsionante |
+| Huele mal o sale moho | conservante débil o pH alto | descártala, revisa pH y conservante |
+
+### Qué puedes cambiar
+
+- Agrega un par ácido láctico y lactato de sodio para amortiguar.
+- Sin dimeticona: cámbiala por CCT.
+
+**Fuentes.** Hidratantes: Purnamawati et al. 2017, DOI 10.3121/cmr.2017.1363. Método y proceso: Baki 2023, ISBN 978-1-119-70977-0, pp. 72 y 250-259. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
+
+## Otros productos de esta sección
+
+[Loción corporal](locion-corporal.qmd), [Crema corporal](crema-corporal.qmd), [Crema facial](crema-facial.qmd), [Gel hidratante](gel-hidratante.qmd), [Sérum](serum.qmd), [Aceite corporal](aceite-corporal.qmd), [Bálsamo labial](balsamo-labial.qmd), [Ungüento](unguento.qmd), [Manteca batida](manteca-batida.qmd), [Exfoliante](exfoliante.qmd), [Mascarilla de arcilla](mascarilla.qmd).

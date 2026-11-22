@@ -1,0 +1,99 @@
+{
+ "slug": "agua-de-perfume",
+ "titulo": "Agua de perfume",
+ "producto": "agua-de-perfume",
+ "tipo": "alcohol",
+ "nivel": 1,
+ "tiempo": 20,
+ "lote": 100,
+ "pH": null,
+ "estado": "sin ensayar",
+ "porque": "Con 12 % entra en la convención de agua de perfume, 10 a 15 %. Cuanta más fragancia, menos agua tolera.",
+ "fases": [
+  {
+   "nombre": "A",
+   "ingredientes": [
+    {
+     "id": "fragancia",
+     "pct": 12
+    }
+   ]
+  },
+  {
+   "nombre": "B",
+   "ingredientes": [
+    {
+     "id": "etanol",
+     "pct": 83
+    }
+   ]
+  },
+  {
+   "nombre": "C",
+   "ingredientes": [
+    {
+     "id": "agua",
+     "pct": 5
+    }
+   ]
+  }
+ ],
+ "pasos": [
+  "Trabaja lejos de llamas y chispas.",
+  "Pesa la fragancia en un frasco de vidrio seco.",
+  "Agrega el alcohol y agita hasta que quede transparente.",
+  "Agrega el agua despacio. Si se enturbia, te pasaste de agua para esa fragancia.",
+  "Cierra y deja macerar de 2 a 4 semanas, fresco y oscuro.",
+  "Enfría 24 h a 4 °C, filtra en frío y envasa."
+ ],
+ "cambia": [
+  "Compara 8, 12 y 16 %."
+ ],
+ "controles": [
+  [
+   "Transparencia",
+   "límpido",
+   "a contraluz, a 20 y a 4 °C"
+  ],
+  [
+   "Color",
+   "sin cambio",
+   "una muestra a la luz y otra a oscuras"
+  ],
+  [
+   "Olor",
+   "anota a 0, 15 min, 1 h y 4 h",
+   "en tira de papel"
+  ],
+  [
+   "Densidad",
+   "registra",
+   "picnómetro"
+  ]
+ ],
+ "fallas": [
+  [
+   "Turbio",
+   "mucha agua para esa fragancia",
+   "sube el alcohol o filtra en frío"
+  ],
+  [
+   "Huele a alcohol",
+   "falta maceración",
+   "espera otra semana"
+  ],
+  [
+   "Cambia de color",
+   "vainillina o luz",
+   "frasco oscuro"
+  ]
+ ],
+ "avisos": [
+  "El alcohol es inflamable.",
+  "Comprueba el certificado IFRA de la fragancia."
+ ],
+ "fuentes": [
+  "Concentraciones: Dermatocosmética, EDUCC, ISBN 978-987-626-467-9, cap. 20.",
+  "IFRA, 51.ª enmienda."
+ ]
+}

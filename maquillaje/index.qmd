@@ -8,15 +8,26 @@ page-layout: full
 <figure class="cabeza" style="--color:#5c1f3a"><div class="marco"><img src="../fotos/maquillaje.jpg" alt="Labiales de varios tonos"></div><h1>Maquillaje</h1></figure>
 ```
 
-## Esqueleto de un labial
+Aquí aprendes a mojar y moler un pigmento, a levantar una barra con ceras y a comprimir un polvo.
 
-| Función | % |
-|---|---|
-| ceras | 10 a 25 |
-| mantecas | 10 a 15 |
-| aceites | 30 a 50 |
-| cargas | 8 a 12 |
-| pigmentos | 5 a 20 |
+## Las palabras que vas a usar
+
+{{< include ../_inc/terminos-maquillaje.md >}}
+
+## Lección 1. El color
+
+| Tipo | Cómo es | Ejemplo |
+|---|---|---|
+| Pigmento inorgánico | opaco y estable | óxidos de hierro, dióxido de titanio |
+| Laca | color vivo, fijado en un sólido | CI 15850 |
+| Nacarado | lámina que refleja | mica con dióxido de titanio |
+| Colorante soluble | tiñe la piel | eosina |
+
+Con rojo, amarillo, negro y blanco se arma casi cualquier tono de piel. El ajuste se hace a ojo: los modelos ópticos suponen capas parejas y los óxidos se aglomeran.
+
+**Dónde se permite.** Cada colorante tiene su lista. En los ojos solo entran los autorizados para esa zona.
+
+## Lección 2. Moler
 
 :::: {.modelo data-escena="pigmento"}
 
@@ -29,34 +40,64 @@ Se muele en aceite de ricino, que moja los granos y los separa.
 :::
 
 ::: {.acto}
-Con los granos repartidos, el mismo peso de pigmento cubre y colorea más.
+Con los granos repartidos, el mismo peso cubre y colorea más.
 :::
 
 ::: {.acto}
-Los nacarados entran al final y sin moler: son láminas, y rotas pierden el brillo.
-
-[Abrir el laboratorio](../laboratorio/pigmento-que-se-asienta.qmd): por qué un pigmento se va al fondo.
+Los nacarados entran al final y sin moler: son láminas, y rotas pierden el brillo. [Laboratorio: por qué un pigmento se va al fondo](../laboratorio/pigmento-que-se-asienta.qmd).
 :::
 
 ::::
 
-1. Muele el pigmento en aceite de ricino.
-2. Funde ceras y aceites y agrega la pasta de pigmento.
-3. Agrega nacarados sin molerlos: se dañan.
-4. Cuela unos 10 °C por encima del punto de fusión de la mezcla, en un chorro continuo.
+Dispersar es tres pasos: humectar, desaglomerar y estabilizar. Una pasta de trabajo lleva cerca de 40 % de óxidos, o 25 % de laca, en aceite.
+
+**Ejemplo resuelto.** Un labial de 100 g lleva 10 g de laca. Para una pasta al 25 % necesitas 10/0.25 = 40 g de pasta, o sea 30 g de ricino. Esos 30 g salen del ricino de la fórmula.
+
+## Lección 3. Un labial
+
+| Grupo | % | Para qué |
+|---|---|---|
+| ceras | 10 a 25 | estructura |
+| mantecas | 10 a 15 | controlan los cristales |
+| aceites | 30 a 50 | mojan el pigmento y dan brillo |
+| cargas | 8 a 12 | textura |
+| pigmentos | 5 a 20 | color |
+
+La mezcla de varias ceras resiste mejor que una sola. Un labial bueno funde de 59 a 64 °C.
+
+| Defecto | Causa |
+|---|---|
+| Suda gotas | aceite que la cera no sostiene |
+| Se rompe | poca cera o cristales grandes |
+| Corre por las arrugas | aceite muy fluido |
+| Deja rayas | pigmento sin moler |
+
+## Lección 4. Un polvo compacto
+
+El aglutinante y la presión unen los granos. En un ensayo con talco al 3, 6 y 9 % de aglutinante y 1000 y 2000 psi, más presión dio pastillas más duras y más aglutinante bajó la cesión de color. Cambia una cosa a la vez.
+
+Estas recetas usan mica y caolín en lugar de talco: el talco exige certificar que no trae asbesto.
+
+## Lección 5. Los ojos
+
+Una máscara es agua, cera y pigmento, y el cepillo vuelve al envase cada día. Según el resumen de un estudio con 40 máscaras usadas, 79 % tenía *Staphylococcus aureus* y 13 % *Pseudomonas aeruginosa*. No se leyó el texto completo. Un producto de ojos pide más control que una loción.
 
 ```{=html}
 <figure class="lado"><img src="../fotos/sombras.jpg" alt="Paleta de sombras y brochas" loading="lazy"></figure>
 ```
 
-## Polvo compacto
+## Qué puedes hacer
 
-El aglutinante une las partículas. Un ensayo con talco probó 3, 6 y 9 % de aglutinante a 1000 y 2000 psi: más presión dio pastillas más duras, y más aglutinante redujo la cesión de color.
+```{=html}
+<div class="tarjas" data-productos="maquillaje"></div>
+```
 
-## Higiene en productos de ojos
+## Comprueba lo que aprendiste
 
-En 40 máscaras usadas, 79 % tenía *Staphylococcus aureus* y 13 % *Pseudomonas aeruginosa*. La conservación de un producto de ojos pide más cuidado que la de una loción.
+```{=html}
+<div data-preguntas="maquillaje"></div>
+```
 
-## Referencias
+## Fuentes
 
-Rigano et al. 2021, DOI [10.3390/cosmetics8040105](https://doi.org/10.3390/cosmetics8040105). Giacomel et al. 2013, DOI [10.1111/ics.12053](https://doi.org/10.1111/ics.12053). Baki 2023, ISBN 978-1-119-70977-0, pp. 511-512. *Cosmetics & Toiletries* 137(3), marzo de 2022 (revista técnica, sin DOI localizado).
+Rigano y Montoli 2021, DOI [10.3390/cosmetics8040105](https://doi.org/10.3390/cosmetics8040105). Mawazi et al. 2022, citado en la nota 05 de la investigación. Giacomel et al. 2013, DOI [10.1111/ics.12053](https://doi.org/10.1111/ics.12053) (resumen, PubMed). Baki 2023, ISBN 978-1-119-70977-0, p. 73. *Cosmetics & Toiletries* 137(3), 2022 (sin DOI localizado).

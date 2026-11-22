@@ -1,0 +1,147 @@
+{
+ "slug": "limpiador-facial-suave",
+ "titulo": "Limpiador facial suave",
+ "producto": "limpiador-facial",
+ "tipo": "limpia",
+ "nivel": 2,
+ "tiempo": 60,
+ "lote": 100,
+ "pH": "4.8 a 5",
+ "estado": "sin ensayar",
+ "porque": "Glucósido y betaína son suaves. Benzoato y sorbato solo conservan a pH bajo: si el pH sube de 5.5, el sistema se cae.",
+ "fases": [
+  {
+   "nombre": "A",
+   "ingredientes": [
+    {
+     "id": "agua",
+     "pct": 73.1
+    },
+    {
+     "id": "glicerina",
+     "pct": 3
+    },
+    {
+     "id": "xantana",
+     "pct": 0.8
+    }
+   ]
+  },
+  {
+   "nombre": "B",
+   "ingredientes": [
+    {
+     "id": "cocogluc",
+     "pct": 12
+    },
+    {
+     "id": "capb",
+     "pct": 10
+    }
+   ]
+  },
+  {
+   "nombre": "C",
+   "ingredientes": [
+    {
+     "id": "lactico",
+     "pct": 0.5
+    },
+    {
+     "id": "benzoato",
+     "pct": 0.4
+    },
+    {
+     "id": "sorbato",
+     "pct": 0.2
+    }
+   ]
+  }
+ ],
+ "pasos": [
+  "Pesa el agua y disuelve lo que pide la fase A.",
+  "Agrega los tensioactivos por la pared del vaso, con agitación lenta para no hacer espuma.",
+  "Agrega la fase C.",
+  "Mide el pH y ajústalo. Los glucósidos llegan a pH 11 o 12: bájalo antes de juzgar la viscosidad.",
+  "Si lleva sal, disuélvela en un poco de agua y agrégala en pasos de 0.2 %. Detente cuando espese lo que buscas.",
+  "Deja reposar 24 h y envasa."
+ ],
+ "cambia": [
+  "Sin xantana queda líquido, para envase espumador.",
+  "Sube el glucósido si lo quieres más limpiador."
+ ],
+ "controles": [
+  [
+   "pH",
+   "el de la receta ± 0.3",
+   "medidor"
+  ],
+  [
+   "Viscosidad",
+   "registra husillo, rpm y temperatura",
+   "viscosímetro o copa"
+  ],
+  [
+   "Espuma",
+   "altura a 0, 1 y 5 min",
+   "probeta agitada, solución al 1 %"
+  ],
+  [
+   "Aspecto",
+   "sin turbidez nueva",
+   "4 °C, ambiente y 40 °C"
+  ],
+  [
+   "Microbiología",
+   "sin crecimiento",
+   "placas a t0 y a 28 días"
+  ]
+ ],
+ "fallas": [
+  [
+   "No espesa",
+   "poca sal o pH alto",
+   "ajusta el pH y sigue la curva de sal"
+  ],
+  [
+   "Se adelgazó al poner sal",
+   "te pasaste del máximo",
+   "diluye con más tensioactivo: con sal no se recupera"
+  ],
+  [
+   "Se enturbia en frío",
+   "fragancia o fase que no se disuelve",
+   "baja la fragancia o usa un solubilizante"
+  ]
+ ],
+ "avisos": [
+  "Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.",
+  "No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad.",
+  "El pH decide si el conservante funciona: mídelo siempre."
+ ],
+ "fuentes": [
+  "Tensioactivos: Thompson et al. 2023 y catálogos de proveedor citados en la calculadora de materia activa.",
+  "pKa: PubChem, CID 243 y 643460.",
+  "Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026."
+ ],
+ "cuenta": {
+  "acidos": [
+   {
+    "sal": "benzoato",
+    "pct": 0.4,
+    "mA": 122.12,
+    "mS": 144.1,
+    "pKa": 4.2,
+    "pH": 4.9
+   },
+   {
+    "sal": "sorbato",
+    "pct": 0.2,
+    "mA": 112.13,
+    "mS": 150.22,
+    "pKa": 4.76,
+    "pH": 4.9
+   }
+  ]
+ }
+}

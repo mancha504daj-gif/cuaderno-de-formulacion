@@ -1,0 +1,9 @@
+---
+title: Catálogo de materias primas
+toc: true
+page-layout: full
+---
+
+Tablas de la investigación. Los datos de proveedor no son especificación: pide el certificado de tu lote. Un espacio vacío significa que no hallé el dato.
+
+{{< include _inc/catalogo.md >}}

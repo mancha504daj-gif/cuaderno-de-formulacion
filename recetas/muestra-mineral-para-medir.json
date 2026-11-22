@@ -1,0 +1,134 @@
+{
+ "slug": "muestra-mineral-para-medir",
+ "titulo": "Muestra mineral para medir",
+ "producto": "muestra-mineral",
+ "tipo": "wo",
+ "nivel": 3,
+ "tiempo": 90,
+ "lote": 100,
+ "pH": null,
+ "estado": "sin ensayar",
+ "porque": "El óxido de zinc protege si forma una película continua. Sirve para medir la absorbancia y calcular Mansur, y para ver cuánto cambia con la molienda. La película casera suele quedar dispareja, y ahí se quema la piel.",
+ "fases": [
+  {
+   "nombre": "A",
+   "ingredientes": [
+    {
+     "id": "cct",
+     "pct": 13
+    },
+    {
+     "id": "girasol",
+     "pct": 6
+    },
+    {
+     "id": "pgpr",
+     "pct": 4
+    }
+   ]
+  },
+  {
+   "nombre": "B",
+   "ingredientes": [
+    {
+     "id": "zno",
+     "pct": 15
+    }
+   ]
+  },
+  {
+   "nombre": "C",
+   "ingredientes": [
+    {
+     "id": "agua",
+     "pct": 56.3
+    },
+    {
+     "id": "glicerina",
+     "pct": 4
+    },
+    {
+     "id": "mgso4",
+     "pct": 0.8
+    }
+   ]
+  },
+  {
+   "nombre": "D",
+   "ingredientes": [
+    {
+     "id": "fenoxi",
+     "pct": 0.8
+    },
+    {
+     "id": "ehg",
+     "pct": 0.1
+    }
+   ]
+  }
+ ],
+ "pasos": [
+  "Muele el óxido de zinc con el aceite y el emulsionante hasta que no veas granos.",
+  "Disuelve el sulfato y la glicerina en el agua.",
+  "Agrega el agua al aceite en hilo fino, con agitación fuerte. Tarda 10 min.",
+  "Homogeneiza 5 min y agrega la fase D.",
+  "Guarda la muestra rotulada «para medir»."
+ ],
+ "cambia": [
+  "Mide con zinc al 5, 10 y 15 %.",
+  "Compara molido y sin moler."
+ ],
+ "controles": [
+  [
+   "Tipo de emulsión",
+   "W/O",
+   "gota en agua: no debe dispersarse; casi no conduce"
+  ],
+  [
+   "Aspecto",
+   "homogéneo",
+   "capa fina sobre vidrio"
+  ],
+  [
+   "Centrífuga",
+   "sin separación",
+   "3000 rpm, 30 min"
+  ],
+  [
+   "Ciclos",
+   "sin separación",
+   "de tres a seis ciclos"
+  ],
+  [
+   "Microbiología",
+   "sin crecimiento",
+   "placas a t0 y a 28 días"
+  ]
+ ],
+ "fallas": [
+  [
+   "Suelta agua",
+   "faltó cizalla o electrolito",
+   "agrega el agua más despacio y revisa la sal"
+  ],
+  [
+   "Se dispersa en agua",
+   "salió O/W",
+   "agrega el agua sobre el aceite y más lento"
+  ],
+  [
+   "Granos de polvo",
+   "pigmento sin mojar",
+   "muélelo antes con parte del aceite"
+  ]
+ ],
+ "avisos": [
+  "Esta muestra se mide en el laboratorio. No la uses como protector: nadie ha medido su FPS y una película casera puede fallar.",
+  "Usa mascarilla: el polvo fino irrita los pulmones."
+ ],
+ "fuentes": [
+  "Recetas caseras con FPS menor que 6: Couteau et al. 2021, DOI 10.1111/jocd.13783.",
+  "Mansur et al. 1986, An. Bras. Dermatol. 61:121-124 (sin DOI).",
+  "Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026."
+ ]
+}

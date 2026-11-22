@@ -1,0 +1,97 @@
+---
+title: "Conservación"
+toc: false
+page-layout: full
+---
+
+Si un producto lleva agua, algo quiere vivir en él. Aquí aprendes a frenarlo y a no confiarte.
+
+## Lección 1. Por qué se contamina
+
+Los microbios entran con las materias primas, con el envase y, sobre todo, con los dedos. Crecen mejor entre pH 5 y 8. Por debajo de 4 o por encima de 10 casi no proliferan.
+
+También cuenta el agua disponible. La mayoría de las bacterias no crece por debajo de una actividad de agua de 0.9, y la mayoría de los mohos por debajo de 0.8. Un producto sin agua no necesita conservante mientras no le entre.
+
+| Producto | Riesgo |
+|---|---|
+| Bálsamo anhidro | bajo |
+| Perfume con mucho alcohol | bajo |
+| Jabón, pH 9.5 a 10.5 | se protege en parte |
+| Emulsión W/O | menor que O/W |
+| Loción O/W, gel, champú | alto |
+| Máscara de pestañas | alto, y junto al ojo |
+
+## Lección 2. Los ácidos y el pH
+
+Benzoato y sorbato entran a la célula sin carga. El pH decide cuánto queda así.
+
+:::: {.modelo data-escena="acido"}
+
+::: {.acto}
+Cada bola amarilla es una molécula entera, la que conserva. A pH bajo casi todas están enteras.
+:::
+
+::: {.acto}
+Al pH del pKa, la mitad.
+:::
+
+::: {.acto}
+Una unidad arriba, cerca de 9 %.
+:::
+
+::: {.acto}
+Mueve tú el pH. [Laboratorio: conservante y pH](../laboratorio/conservante-y-ph.qmd).
+:::
+
+::::
+
+| pH | Sórbico activo | Benzoico activo |
+|---|---|---|
+| 4.0 | 85 % | 61 % |
+| 4.5 | 65 % | 33 % |
+| 5.0 | 37 % | 14 % |
+| 5.5 | 15 % | 4.8 % |
+| 6.0 | 5.4 % | 1.6 % |
+
+**Ejemplo resuelto.** 0.4 % de sorbato de potasio son 0.4 × 112.13/150.22 = 0.299 % de ácido sórbico. A pH 4.8 queda sin disociar 47.7 %, o sea 0.142 %.
+
+## Lección 3. Elegir
+
+| Conservante | pH | Límite europeo | Cuidado |
+|---|---|---|---|
+| Fenoxietanol | depende poco | 1.0 % | más débil frente a mohos; refuérzalo |
+| Benzoato de sodio | hasta 5 | 0.5 % como ácido, sin enjuague | mide el pH siempre |
+| Sorbato de potasio | hasta 5.5 | 0.6 % como ácido | sobre todo hongos y levaduras |
+| Alcohol bencílico | no ionizable | 1.0 % | se declara como alérgeno |
+| Metilisotiazolinona | | 0.0015 %, solo con enjuague | prohibida sin enjuague |
+
+La etilhexilglicerina debilita la membrana y refuerza al fenoxietanol. En un estudio, 0.675 % de fenoxietanol con 0.075 % de etilhexilglicerina mató rápido bacterias.
+
+Un quelante, como el EDTA o el fitato, quita el hierro que los microbios necesitan.
+
+## Lección 4. Lo que le quita fuerza
+
+- **El aceite.** Los conservantes lipófilos se van a las gotas y el agua queda sin proteger.
+- **Los polvos.** El talco quita más de 90 % de la actividad del metilparabeno.
+- **Los no iónicos.** Pueden encerrar al conservante en micelas.
+- **El pH que sube.** La urea y algunos activos lo mueven con el tiempo.
+
+## Lección 5. Comprobar
+
+El ensayo de eficacia contamina el producto a propósito y cuenta qué sobrevive. ISO 11930 usa cinco cepas y 28 días. Según un resumen de laboratorio, el criterio A pide que las bacterias bajen 3 log a los 7 días y no vuelvan a subir, y que *Candida* baje 1 log.
+
+Bajar 3 log es pasar de un millón a mil. [Laboratorio: ensayo del conservante](../laboratorio/ensayo-del-conservante.qmd).
+
+ISO 17516 fija un máximo de 1000 UFC/g, o 100 en ojos, mucosas y menores de tres años, sin cuatro patógenos en 1 g.
+
+**Antes de ponerlo en la piel.** Un producto que no se separa puede estar contaminado. Sin recuento y sin ensayo del conservante, se queda en el laboratorio.
+
+## Comprueba lo que aprendiste
+
+```{=html}
+<div data-preguntas="conservacion"></div>
+```
+
+## Fuentes
+
+Halla et al. 2018, DOI [10.3390/molecules23071571](https://doi.org/10.3390/molecules23071571). Langsrud et al. 2016, PLoS ONE 11, citado en la nota 03. Reglamento (CE) 1223/2009, Anexo V, texto consolidado al 18-05-2026. pKa: PubChem, CID 243 y 643460. Criterio A: resumen de Microchem Laboratory; no se consultó el texto de la norma. Actividad de agua: Baki 2023, ISBN 978-1-119-70977-0, p. 47.

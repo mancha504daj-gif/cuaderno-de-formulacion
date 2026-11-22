@@ -1,0 +1,70 @@
+---
+title: "Máscara de pestañas"
+toc: false
+page-layout: full
+---
+
+```{=html}
+<figure class="cabeza" style="--color:#5c1f3a" data-alto="baja"><div class="marco"><img src="../fotos/maquillaje.jpg" alt="Labiales de varios tonos"></div><h1>Máscara de pestañas</h1></figure>
+```
+
+[Maquillaje](../maquillaje/index.qmd). Jabón formado en la mezcla, cera y óxido negro. Forma: emulsión con cera.
+
+Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+
+## Máscara de pestañas
+
+```{=html}
+<div data-receta="mascara-de-pestanas"><p>Cargando.</p></div>
+```
+
+::: {.avisos}
+- Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.
+- Zona de los ojos: exige control microbiológico y colorantes permitidos.
+- No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad.
+:::
+
+### Por qué funciona
+
+El jabón que emulsiona se forma dentro de la mezcla. La cera engrosa la pestaña y el polímero fija el color.
+
+### Paso a paso
+
+1. Hidrata la hidroxietilcelulosa en el agua y agrega el copolímero y la trietanolamina.
+2. Dispersa el óxido negro en esa fase y muele.
+3. Funde la fase B a 88 °C y lleva A a la misma temperatura.
+4. Vierte B sobre A con agitación fuerte: el esteárico y la trietanolamina forman el emulsionante en ese momento.
+5. Enfría agitando hasta 40 °C y agrega la fase C.
+6. Envasa en tubo limpio con cepillo nuevo.
+
+### Cómo saber si salió bien
+
+| Control | Meta | Cómo se mide |
+|---|---|---|
+| pH | el de la receta ± 0.3 | medidor calibrado o tiras |
+| Tipo de emulsión | O/W | gota en agua: debe dispersarse. Confirma con conductividad o colorante hidrosoluble al microscopio |
+| Aspecto | homogéneo, sin granos | extiende una capa fina sobre vidrio |
+| Centrífuga | sin separación | 3000 rpm, 30 min |
+| Ciclos | sin separación ni cambio de olor | de tres a seis ciclos entre −10 y 40 °C, 24 h por etapa |
+| Microbiología | sin crecimiento | placas a t0 y a 28 días; ensayo de eficacia del conservante antes de usarla |
+
+### Si algo falla
+
+| Qué ves | Por qué | Qué hacer |
+|---|---|---|
+| Se separa una capa de aceite y vuelve al agitar | cremado: gotas grandes o medio poco viscoso | homogeneiza más tiempo o sube un poco la goma |
+| Se separa y no vuelve | coalescencia: falta emulsionante o el par no es el adecuado | prueba otro HLB antes de subir la dosis |
+| Queda granosa | las ceras cristalizaron o las fases estaban a distinta temperatura | iguala temperaturas y enfría agitando |
+| No se dispersa en agua | salió W/O | sube la parte hidrófila del emulsionante |
+| Huele mal o sale moho | conservante débil o pH alto | descártala, revisa pH y conservante |
+
+### Qué puedes cambiar
+
+- Carnauba a 2 % si queda dura.
+- Óxido a 7 % para un tono suave.
+
+**Fuentes.** Grupos y rangos: fórmula de proveedor analizada en la nota 05; proporciones propias. Higiene: Giacomel et al. 2013, DOI 10.1111/ics.12053. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
+
+## Otros productos de esta sección
+
+[Labial](labial.qmd), [Brillo labial](brillo-labial.qmd), [Polvo compacto](polvo-compacto.qmd), [Rubor](rubor.qmd), [Sombra de ojos](sombra.qmd), [Base fluida](base.qmd).

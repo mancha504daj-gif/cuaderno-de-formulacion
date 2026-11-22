@@ -1,0 +1,9 @@
+---
+title: "Notas de un perfume"
+toc: false
+---
+
+```{=html}
+<div data-lab="notas-de-perfume"><p>Cargando.</p></div>
+<p><a href="../editor.html?lab=notas-de-perfume">Abrir en el editor</a></p>
+```

@@ -1,0 +1,67 @@
+---
+title: "Gel para después del sol"
+toc: false
+page-layout: full
+---
+
+```{=html}
+<figure class="cabeza" style="--color:#8a5200" data-alto="baja"><div class="marco"><img src="../fotos/solar.jpg" alt="Una persona aplica protector a un niño"></div><h1>Gel para después del sol</h1></figure>
+```
+
+[Protección solar](../solar/index.qmd). Refresca. No protege. Forma: gel acuoso.
+
+Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+
+## Gel para después del sol
+
+```{=html}
+<div data-receta="gel-despues-del-sol"><p>Cargando.</p></div>
+```
+
+::: {.avisos}
+- Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.
+- No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad.
+- No protege del sol.
+:::
+
+### Por qué funciona
+
+Refresca porque el agua se evapora. No repara el daño del sol ni protege.
+
+### Paso a paso
+
+1. Dispersa la hidroxietilcelulosa en la glicerina hasta tener una pasta sin grumos.
+2. Agrega el agua poco a poco, con agitación media, y espera de 30 a 60 min a que se hidrate.
+3. Incorpora los activos de la fase B, uno por uno.
+4. Agrega la fase C y mezcla despacio para no meter aire.
+5. Mide el pH y ajústalo.
+6. Deja reposar 24 h, revisa burbujas y grumos, y envasa.
+
+### Cómo saber si salió bien
+
+| Control | Meta | Cómo se mide |
+|---|---|---|
+| pH | el de la receta ± 0.3 | medidor o tiras |
+| Aspecto | transparente o uniforme, sin grumos | a contraluz |
+| Viscosidad | registra husillo, rpm y temperatura | viscosímetro o tiempo de caída |
+| Ciclos | sin cambio | de tres a seis ciclos |
+| Microbiología | sin crecimiento | placas a t0 y a 28 días |
+
+### Si algo falla
+
+| Qué ves | Por qué | Qué hacer |
+|---|---|---|
+| Grumos | el polímero se mojó de golpe | prehumecta con glicerina |
+| Muchas burbujas | agitación rápida | agita lento y deja reposar |
+| Se aguó | sal, pH o microbios | mide pH; si huele raro, descártalo |
+
+### Qué puedes cambiar
+
+- Guárdalo en frío.
+- Sube el pantenol a 3 %.
+
+**Fuentes.** Método y proceso: Baki 2023, ISBN 978-1-119-70977-0, pp. 72 y 250-259. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
+
+## Otros productos de esta sección
+
+[Loción para después del sol](locion-despues-del-sol.qmd), [Muestra mineral](muestra-mineral.qmd).

@@ -2,8 +2,8 @@ project:
   type: website
   output-dir: _site
   pre-render: herramientas/paginas.ts
-  resources: ["js/*.mjs", "datos/*.json", "laboratorios/*.json", "aspecto/*.json", "fotos/*"]
-  render: ["*.qmd", "fundamentos/*.qmd", "piel/*.qmd", "limpieza/*.qmd", "solar/*.qmd", "maquillaje/*.qmd", "cabello/*.qmd", "fragancias/*.qmd", "ejemplos/*.qmd", "calculadoras/*.qmd", "laboratorio/*.qmd", "ingredientes/*.md"]
+  resources: ["js/*.mjs", "datos/*.json", "laboratorios/*.json", "aspecto/*.json", "fotos/*", "recetas/*.json"]
+  render: ["*.qmd", "fundamentos/*.qmd", "piel/*.qmd", "limpieza/*.qmd", "solar/*.qmd", "maquillaje/*.qmd", "cabello/*.qmd", "fragancias/*.qmd", "calculadoras/*.qmd", "laboratorio/*.qmd", "producto/*.qmd"]
 website:
   title: "Cuaderno de formulación"
   site-url: "https://mancha504daj-gif.github.io/cuaderno-de-formulacion/"
@@ -23,14 +23,22 @@ website:
       - { text: Cabello, href: cabello/index.qmd }
       - { text: Fragancias, href: fragancias/index.qmd }
       - text: "---"
+      - { text: Primeros pasos, href: fundamentos/primeros-pasos.qmd }
+      - { text: En el laboratorio, href: fundamentos/laboratorio.qmd }
       - { text: Emulsiones, href: fundamentos/emulsiones.qmd }
-      - { text: Loción de almendras, href: ejemplos/locion-de-almendras.qmd }
-      - { text: Calculadoras, href: calculadoras/index.qmd }
-      - { text: Laboratorios, href: laboratorios.qmd }
+      - { text: Conservación, href: fundamentos/conservacion.qmd }
+      - { text: Estabilidad, href: fundamentos/estabilidad.qmd }
       - { text: De dónde salen las fórmulas, href: modelos.qmd }
+      - { text: Glosario, href: glosario.qmd }
       - { text: Ingredientes, href: ingredientes.qmd }
       - text: "---"
+      - { text: Laboratorios, href: laboratorios.qmd }
+      - { text: Calculadoras, href: calculadoras/index.qmd }
+      - { text: Mis recetas, href: mis-recetas.qmd }
+      - { text: Mis ensayos, href: cuaderno.qmd }
+      - text: "---"
       - { text: Editor, href: editor.qmd }
+      - { text: Del cuaderno al registro, href: honduras.qmd }
       - { text: Alcance, href: alcance.qmd }
       - { text: Créditos de las fotos, href: creditos.qmd }
 lang: es

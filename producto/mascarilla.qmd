@@ -1,0 +1,66 @@
+---
+title: "Mascarilla de arcilla"
+toc: false
+page-layout: full
+---
+
+```{=html}
+<figure class="cabeza" style="--color:#b3245c" data-alto="baja"><div class="marco"><img src="../fotos/piel.jpg" alt="Frasco de crema abierto con su tapa azul"></div><h1>Mascarilla de arcilla</h1></figure>
+```
+
+[Cuidado de la piel](../piel/index.qmd). Arcilla que absorbe grasa. Forma: suspensión.
+
+Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+
+## Mascarilla de arcilla
+
+```{=html}
+<div data-receta="mascarilla-de-arcilla"><p>Cargando.</p></div>
+```
+
+::: {.avisos}
+- Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.
+- No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad.
+- Las arcillas traen microbios: pide grado cosmético y analiza.
+:::
+
+### Por qué funciona
+
+La arcilla absorbe grasa y, al secar, tira de la piel. La glicerina la hace menos tirante.
+
+### Paso a paso
+
+1. Mezcla la goma con la glicerina y agrega el agua.
+2. Espolvorea la bentonita y deja que se hinche 30 min.
+3. Agrega el caolín poco a poco.
+4. Incorpora la fase C y mide el pH.
+5. Envasa en tubo o tarro.
+
+### Cómo saber si salió bien
+
+| Control | Meta | Cómo se mide |
+|---|---|---|
+| pH | el de la receta ± 0.3 | medidor o tiras |
+| Aspecto | transparente o uniforme, sin grumos | a contraluz |
+| Viscosidad | registra husillo, rpm y temperatura | viscosímetro o tiempo de caída |
+| Ciclos | sin cambio | de tres a seis ciclos |
+| Microbiología | sin crecimiento | placas a t0 y a 28 días |
+
+### Si algo falla
+
+| Qué ves | Por qué | Qué hacer |
+|---|---|---|
+| Grumos | el polímero se mojó de golpe | prehumecta con glicerina |
+| Muchas burbujas | agitación rápida | agita lento y deja reposar |
+| Se aguó | sal, pH o microbios | mide pH; si huele raro, descártalo |
+
+### Qué puedes cambiar
+
+- Cambia 5 % de caolín por óxidos de hierro para darle color.
+- Más glicerina, menos tirantez.
+
+**Fuentes.** Proporciones propuestas en este proyecto. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
+
+## Otros productos de esta sección
+
+[Loción corporal](locion-corporal.qmd), [Crema corporal](crema-corporal.qmd), [Crema facial](crema-facial.qmd), [Crema de manos](crema-de-manos.qmd), [Gel hidratante](gel-hidratante.qmd), [Sérum](serum.qmd), [Aceite corporal](aceite-corporal.qmd), [Bálsamo labial](balsamo-labial.qmd), [Ungüento](unguento.qmd), [Manteca batida](manteca-batida.qmd), [Exfoliante](exfoliante.qmd).

@@ -1,6 +1,5 @@
 /.quarto/
 /_site/
-/laboratorio/
 /aspecto/indice.json
 **/*.quarto_ipynb
 *.pdf

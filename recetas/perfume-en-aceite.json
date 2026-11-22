@@ -1,0 +1,100 @@
+{
+ "slug": "perfume-en-aceite",
+ "titulo": "Perfume en aceite",
+ "producto": "perfume-en-aceite",
+ "tipo": "anhidro",
+ "nivel": 1,
+ "tiempo": 15,
+ "lote": 100,
+ "pH": null,
+ "estado": "sin ensayar",
+ "porque": "Sin alcohol la salida se nota menos y la mezcla dura más sobre la piel.",
+ "fases": [
+  {
+   "nombre": "A",
+   "ingredientes": [
+    {
+     "id": "fragancia",
+     "pct": 15
+    },
+    {
+     "id": "cct",
+     "pct": 84.5
+    }
+   ]
+  },
+  {
+   "nombre": "C",
+   "ingredientes": [
+    {
+     "id": "toco",
+     "pct": 0.5
+    }
+   ]
+  }
+ ],
+ "pasos": [
+  "Pesa el CCT y agrega la fragancia.",
+  "Agita hasta que quede transparente.",
+  "Agrega el tocoferol y envasa en roll-on."
+ ],
+ "cambia": [
+  "De 8 a 20 % según el certificado de la fragancia."
+ ],
+ "controles": [
+  [
+   "Aspecto",
+   "liso, sin granos ni gotas de aceite",
+   "a 24 h y a 7 días"
+  ],
+  [
+   "Dureza",
+   "registra la penetración",
+   "aguja o peso conocido"
+  ],
+  [
+   "Punto de fusión",
+   "registra el intervalo",
+   "capilar o baño con termómetro"
+  ],
+  [
+   "Calor",
+   "sin gotas en la superficie",
+   "40 °C, 7 días"
+  ],
+  [
+   "Olor",
+   "sin rancio",
+   "a 1 y a 3 meses"
+  ]
+ ],
+ "fallas": [
+  [
+   "Granos",
+   "enfrió despacio o la manteca cristalizó mal",
+   "funde otra vez y enfría más rápido"
+  ],
+  [
+   "Suda aceite",
+   "poca cera o demasiado aceite líquido",
+   "sube la cera de 1 en 1 %"
+  ],
+  [
+   "Se parte",
+   "demasiada cera dura",
+   "baja la cera y sube el aceite"
+  ],
+  [
+   "Huele rancio",
+   "oxidación",
+   "usa aceite fresco, tocoferol y envase lleno"
+  ]
+ ],
+ "avisos": [
+  "Comprueba el certificado IFRA de la fragancia."
+ ],
+ "fuentes": [
+  "Proporciones propuestas en este proyecto.",
+  "IFRA, 51.ª enmienda."
+ ]
+}

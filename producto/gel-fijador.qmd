@@ -1,0 +1,66 @@
+---
+title: "Gel fijador"
+toc: false
+page-layout: full
+---
+
+```{=html}
+<figure class="cabeza" style="--color:#00616f" data-alto="baja"><div class="marco"><img src="../fotos/champu.jpg" alt="Champú sólido con espuma"></div><h1>Gel fijador</h1></figure>
+```
+
+[Cabello](../cabello/index.qmd). Polímero que une fibras. Forma: gel con película.
+
+Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+
+## Gel fijador
+
+```{=html}
+<div data-receta="gel-fijador"><p>Cargando.</p></div>
+```
+
+::: {.avisos}
+- Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.
+- No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad.
+:::
+
+### Por qué funciona
+
+El copolímero deja una película entre fibras. La glicerina evita que se descame.
+
+### Paso a paso
+
+1. Dispersa la hidroxietilcelulosa en la glicerina hasta tener una pasta sin grumos.
+2. Agrega el agua poco a poco, con agitación media, y espera de 30 a 60 min a que se hidrate.
+3. Incorpora los activos de la fase B, uno por uno.
+4. Agrega la fase C y mezcla despacio para no meter aire.
+5. Mide el pH y ajústalo.
+6. Deja reposar 24 h, revisa burbujas y grumos, y envasa.
+
+### Cómo saber si salió bien
+
+| Control | Meta | Cómo se mide |
+|---|---|---|
+| pH | el de la receta ± 0.3 | medidor o tiras |
+| Aspecto | transparente o uniforme, sin grumos | a contraluz |
+| Viscosidad | registra husillo, rpm y temperatura | viscosímetro o tiempo de caída |
+| Ciclos | sin cambio | de tres a seis ciclos |
+| Microbiología | sin crecimiento | placas a t0 y a 28 días |
+
+### Si algo falla
+
+| Qué ves | Por qué | Qué hacer |
+|---|---|---|
+| Grumos | el polímero se mojó de golpe | prehumecta con glicerina |
+| Muchas burbujas | agitación rápida | agita lento y deja reposar |
+| Se aguó | sal, pH o microbios | mide pH; si huele raro, descártalo |
+
+### Qué puedes cambiar
+
+- Copolímero de 2 a 6 %: más fijación.
+- Glicerina a 2 % si queda quebradizo.
+
+**Fuentes.** Proporciones propuestas en este proyecto. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
+
+## Otros productos de esta sección
+
+[Champú](champu.qmd), [Champú sólido](champu-solido.qmd), [Acondicionador](acondicionador.qmd), [Mascarilla capilar](mascarilla-capilar.qmd), [Crema para peinar](crema-para-peinar.qmd), [Aceite capilar](aceite-capilar.qmd).

@@ -1,0 +1,9 @@
+---
+title: "Cremado de una emulsión"
+toc: false
+---
+
+```{=html}
+<div data-lab="cremado"><p>Cargando.</p></div>
+<p><a href="../editor.html?lab=cremado">Abrir en el editor</a></p>
+```

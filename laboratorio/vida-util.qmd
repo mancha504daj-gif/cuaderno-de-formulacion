@@ -1,0 +1,9 @@
+---
+title: "Vida útil con Arrhenius"
+toc: false
+---
+
+```{=html}
+<div data-lab="vida-util"><p>Cargando.</p></div>
+<p><a href="../editor.html?lab=vida-util">Abrir en el editor</a></p>
+```

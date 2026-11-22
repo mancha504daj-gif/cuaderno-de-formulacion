@@ -1,0 +1,66 @@
+---
+title: "Estabilidad"
+toc: false
+page-layout: full
+---
+
+Una fórmula buena el primer día puede fallar a los dos meses. Aquí aprendes a buscar esa falla antes.
+
+## Lección 1. Cinco estabilidades
+
+| Cuál | Qué puede pasar | Cómo se ve |
+|---|---|---|
+| Física | se separa, espesa o se adelgaza | a la vista, viscosidad |
+| Química | se oxida o se degrada | olor, color, pH, análisis |
+| Microbiológica | crecen microbios | recuento |
+| De desempeño | deja de hacer lo suyo | espuma, cesión, sensación |
+| Toxicológica | aparece algo dañino | evaluación de seguridad |
+
+## Lección 2. Un plan de 90 días
+
+| Día | 4 °C | Ambiente | 40 °C | Qué anotas |
+|---|---|---|---|---|
+| 0 | | x | | pH, aspecto, olor, viscosidad, masa |
+| 1 | x | x | x | aspecto |
+| 7 | x | x | x | pH, aspecto, olor |
+| 15 | x | x | x | pH, aspecto, olor |
+| 30 | x | x | x | todo |
+| 60 | x | x | x | todo |
+| 90 | x | x | x | todo y recuento |
+
+Usa el envase final y vidrio como control. Prueba de pie, acostado y de cabeza. Pesa cada envase: si pierde masa, pierde agua.
+
+Anota en la [hoja de laboratorio](../cuaderno.qmd) de la receta.
+
+## Lección 3. Pruebas que apuran
+
+- **Centrífuga:** 3000 rpm, 30 min. Si se separa ahí, reformula.
+- **Ciclos:** de −10 °C a 25 o 40 °C, 24 h por etapa, de tres a seis. Otra fuente propone cinco ciclos de 12 h entre −10 y 40 °C. Anota cuál usaste.
+- **Luz:** una muestra en la ventana y otra envuelta en aluminio.
+
+## Lección 4. Extrapolar con cuidado
+
+La ecuación de Arrhenius relaciona temperatura y velocidad:
+
+$$\ln\frac{k_2}{k_1} = \frac{E_a}{R}\left(\frac{1}{T_1} - \frac{1}{T_2}\right)$$
+
+Sirve para una sola reacción de primer orden y sin cambio de fase. No predice que una emulsión se separe ni que crezca un hongo. [Laboratorio: vida útil](../laboratorio/vida-util.qmd).
+
+En doce cosméticos con retinoides, la pérdida a seis meses fue de 0 a 80 % a 25 °C y de 40 a 100 % a 40 °C. Los autores piden medir en tiempo real.
+
+**Ejemplo resuelto.** Pierdes 10 % en un mes a 40 °C: k = −ln(0.90) = 0.105 por mes. Con Ea = 80 kJ/mol, a 25 °C la constante es 0.213 veces, o sea 0.0225 por mes. A los 12 meses queda exp(−0.0225 × 12) = 76 %.
+
+## Lección 5. Diagnosticar
+
+| Qué ves | Primera sospecha | Primera prueba |
+|---|---|---|
+| Capa arriba que vuelve al agitar | cremado | homogeneizar más |
+| Capa de aceite que no vuelve | coalescencia | otro HLB |
+| Granos | cristales de cera o manteca | enfriar más rápido |
+| pH que baja | oxidación o hidrólisis | otro aceite, antioxidante |
+| pH que sube | urea o álcali del envase | amortiguar |
+| Manchas o gas | microbios | descartar y revisar conservante |
+
+## Fuentes
+
+Baki 2023, ISBN 978-1-119-70977-0, pp. 147-149 y 212-216. Benson et al. 2019, DOI [10.1201/9780429190674](https://doi.org/10.1201/9780429190674), p. 296. Cosmetics Europe y CTFA 2004 (sin DOI). ANVISA 2004, guía de estabilidad (sin DOI). Temova Rakuša et al. 2021, DOI [10.1111/jocd.13852](https://doi.org/10.1111/jocd.13852).

@@ -1,0 +1,146 @@
+{
+ "slug": "labial-rojo-en-barra",
+ "titulo": "Labial rojo en barra",
+ "producto": "labial",
+ "tipo": "anhidro",
+ "nivel": 3,
+ "tiempo": 120,
+ "lote": 100,
+ "pH": null,
+ "estado": "sin ensayar",
+ "porque": "Las ceras dan estructura, el ricino moja el pigmento y la lanolina evita que el aceite sude. Todo cae dentro de los rangos publicados para cada grupo.",
+ "fases": [
+  {
+   "nombre": "A",
+   "ingredientes": [
+    {
+     "id": "candelilla",
+     "pct": 7
+    },
+    {
+     "id": "carnauba",
+     "pct": 3
+    },
+    {
+     "id": "cera_abejas",
+     "pct": 8
+    },
+    {
+     "id": "lanolina",
+     "pct": 10
+    },
+    {
+     "id": "karite",
+     "pct": 10
+    }
+   ]
+  },
+  {
+   "nombre": "B",
+   "ingredientes": [
+    {
+     "id": "ricino",
+     "pct": 37
+    },
+    {
+     "id": "cct",
+     "pct": 4
+    }
+   ]
+  },
+  {
+   "nombre": "D",
+   "ingredientes": [
+    {
+     "id": "laca",
+     "pct": 10
+    },
+    {
+     "id": "oxidos",
+     "pct": 2
+    },
+    {
+     "id": "mica",
+     "pct": 8
+    }
+   ]
+  },
+  {
+   "nombre": "C",
+   "ingredientes": [
+    {
+     "id": "toco",
+     "pct": 1
+    }
+   ]
+  }
+ ],
+ "pasos": [
+  "Muele la laca y los óxidos con 18 g del ricino hasta que la pasta se vea pareja en vidrio.",
+  "Funde la fase A a 88 °C.",
+  "Agrega el resto del ricino y el CCT, calientes.",
+  "Incorpora la pasta de pigmento y mezcla 10 min sin meter aire.",
+  "Agrega la mica y el tocoferol.",
+  "Cuela a unos 80 °C en molde tibio, con chorro continuo.",
+  "Enfría y desmolda. Pasa una llama rápida para dar brillo."
+ ],
+ "cambia": [
+  "Más ceras duras: aguanta el calor.",
+  "Cambia la proporción de laca y óxidos para el tono."
+ ],
+ "controles": [
+  [
+   "Aspecto",
+   "liso, sin granos ni gotas de aceite",
+   "a 24 h y a 7 días"
+  ],
+  [
+   "Dureza",
+   "registra la penetración",
+   "aguja o peso conocido"
+  ],
+  [
+   "Punto de fusión",
+   "registra el intervalo",
+   "capilar o baño con termómetro"
+  ],
+  [
+   "Calor",
+   "sin gotas en la superficie",
+   "40 °C, 7 días"
+  ],
+  [
+   "Olor",
+   "sin rancio",
+   "a 1 y a 3 meses"
+  ]
+ ],
+ "fallas": [
+  [
+   "Granos",
+   "enfrió despacio o la manteca cristalizó mal",
+   "funde otra vez y enfría más rápido"
+  ],
+  [
+   "Suda aceite",
+   "poca cera o demasiado aceite líquido",
+   "sube la cera de 1 en 1 %"
+  ],
+  [
+   "Se parte",
+   "demasiada cera dura",
+   "baja la cera y sube el aceite"
+  ],
+  [
+   "Huele rancio",
+   "oxidación",
+   "usa aceite fresco, tocoferol y envase lleno"
+  ]
+ ],
+ "avisos": [
+  "Se traga algo al usarlo: solo colorantes permitidos en labios."
+ ],
+ "fuentes": [
+  "Rangos de labial: Rigano y Montoli 2021, DOI 10.3390/cosmetics8040105; Mawazi et al. 2022."
+ ]
+}

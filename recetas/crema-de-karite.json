@@ -1,0 +1,152 @@
+{
+ "slug": "crema-de-karite",
+ "titulo": "Crema corporal de karité",
+ "producto": "crema-corporal",
+ "tipo": "ow",
+ "nivel": 1,
+ "tiempo": 60,
+ "lote": 100,
+ "pH": "5.5",
+ "estado": "sin ensayar",
+ "porque": "Junta las tres vías: la glicerina atrae agua, el aceite rellena y la manteca deja una película. La manteca debe fundirse del todo, porque los cristales que quedan vuelven arenosa la crema.",
+ "fases": [
+  {
+   "nombre": "A",
+   "ingredientes": [
+    {
+     "id": "agua",
+     "pct": 71.7
+    },
+    {
+     "id": "glicerina",
+     "pct": 5
+    },
+    {
+     "id": "xantana",
+     "pct": 0.2
+    }
+   ]
+  },
+  {
+   "nombre": "B",
+   "ingredientes": [
+    {
+     "id": "karite",
+     "pct": 8
+    },
+    {
+     "id": "almendras",
+     "pct": 6
+    },
+    {
+     "id": "cetilico",
+     "pct": 3
+    },
+    {
+     "id": "gspeg",
+     "pct": 5
+    }
+   ]
+  },
+  {
+   "nombre": "C",
+   "ingredientes": [
+    {
+     "id": "fenoxi",
+     "pct": 0.8
+    },
+    {
+     "id": "ehg",
+     "pct": 0.1
+    },
+    {
+     "id": "toco",
+     "pct": 0.2
+    }
+   ]
+  }
+ ],
+ "pasos": [
+  "Pesa la fase A. Si lleva goma, mézclala primero con la glicerina; después agrega el agua y agita hasta que no queden grumos.",
+  "Pesa la fase B en otro vaso.",
+  "Calienta A y B en baño de agua hasta 72 °C y mantenlas 10 min. Repón con agua caliente lo que se evaporó de A.",
+  "Vierte B sobre A con el agitador encendido y homogeneiza 3 min.",
+  "Baja la velocidad y sigue agitando hasta 40 °C.",
+  "Agrega la fase C y mezcla 2 min.",
+  "Mide el pH y ajústalo gota a gota con ácido cítrico o sosa, los dos al 10 %.",
+  "Pesa el lote final, completa con agua hasta el total y envasa. Rotula lote y fecha."
+ ],
+ "cambia": [
+  "Cambia 2 % de karité por vaselina: más oclusiva.",
+  "Baja el karité a 4 % para una crema de día."
+ ],
+ "controles": [
+  [
+   "pH",
+   "el de la receta ± 0.3",
+   "medidor calibrado o tiras"
+  ],
+  [
+   "Tipo de emulsión",
+   "O/W",
+   "gota en agua: debe dispersarse. Confirma con conductividad o colorante hidrosoluble al microscopio"
+  ],
+  [
+   "Aspecto",
+   "homogéneo, sin granos",
+   "extiende una capa fina sobre vidrio"
+  ],
+  [
+   "Centrífuga",
+   "sin separación",
+   "3000 rpm, 30 min"
+  ],
+  [
+   "Ciclos",
+   "sin separación ni cambio de olor",
+   "de tres a seis ciclos entre −10 y 40 °C, 24 h por etapa"
+  ],
+  [
+   "Microbiología",
+   "sin crecimiento",
+   "placas a t0 y a 28 días; ensayo de eficacia del conservante antes de usarla"
+  ]
+ ],
+ "fallas": [
+  [
+   "Se separa una capa de aceite y vuelve al agitar",
+   "cremado: gotas grandes o medio poco viscoso",
+   "homogeneiza más tiempo o sube un poco la goma"
+  ],
+  [
+   "Se separa y no vuelve",
+   "coalescencia: falta emulsionante o el par no es el adecuado",
+   "prueba otro HLB antes de subir la dosis"
+  ],
+  [
+   "Queda granosa",
+   "las ceras cristalizaron o las fases estaban a distinta temperatura",
+   "iguala temperaturas y enfría agitando"
+  ],
+  [
+   "No se dispersa en agua",
+   "salió W/O",
+   "sube la parte hidrófila del emulsionante"
+  ],
+  [
+   "Huele mal o sale moho",
+   "conservante débil o pH alto",
+   "descártala, revisa pH y conservante"
+  ]
+ ],
+ "avisos": [
+  "Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.",
+  "No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad.",
+  "Contiene aceite de frutos secos."
+ ],
+ "fuentes": [
+  "Método y proceso: Baki 2023, ISBN 978-1-119-70977-0, pp. 72 y 250-259.",
+  "Hidratantes: Purnamawati et al. 2017, DOI 10.3121/cmr.2017.1363.",
+  "Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026."
+ ]
+}

@@ -1,0 +1,66 @@
+---
+title: "Gel de ducha"
+toc: false
+page-layout: full
+---
+
+```{=html}
+<figure class="cabeza" style="--color:#4d5a2c" data-alto="baja"><div class="marco"><img src="../fotos/jabonera.jpg" alt="Pilas de jabón de Alepo curándose"></div><h1>Gel de ducha</h1></figure>
+```
+
+[Limpieza](../limpieza/index.qmd). Aniónico con betaína y sal. Forma: solución espesada.
+
+Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+
+## Gel de ducha básico
+
+```{=html}
+<div data-receta="gel-de-ducha-basico"><p>Cargando.</p></div>
+```
+
+::: {.avisos}
+- Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.
+- No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad.
+:::
+
+### Por qué funciona
+
+Lleva 8 % de SLES activo y 2.4 % de betaína. Juntos hacen micelas mixtas: menos irritación y más viscosidad.
+
+### Paso a paso
+
+1. Pesa el agua y disuelve lo que pide la fase A.
+2. Agrega los tensioactivos por la pared del vaso, con agitación lenta para no hacer espuma.
+3. Agrega la fase C.
+4. Mide el pH y ajústalo. Los glucósidos llegan a pH 11 o 12: bájalo antes de juzgar la viscosidad.
+5. Si lleva sal, disuélvela en un poco de agua y agrégala en pasos de 0.2 %. Detente cuando espese lo que buscas.
+6. Deja reposar 24 h y envasa.
+
+### Cómo saber si salió bien
+
+| Control | Meta | Cómo se mide |
+|---|---|---|
+| pH | el de la receta ± 0.3 | medidor |
+| Viscosidad | registra husillo, rpm y temperatura | viscosímetro o copa |
+| Espuma | altura a 0, 1 y 5 min | probeta agitada, solución al 1 % |
+| Aspecto | sin turbidez nueva | 4 °C, ambiente y 40 °C |
+| Microbiología | sin crecimiento | placas a t0 y a 28 días |
+
+### Si algo falla
+
+| Qué ves | Por qué | Qué hacer |
+|---|---|---|
+| No espesa | poca sal o pH alto | ajusta el pH y sigue la curva de sal |
+| Se adelgazó al poner sal | te pasaste del máximo | diluye con más tensioactivo: con sal no se recupera |
+| Se enturbia en frío | fragancia o fase que no se disuelve | baja la fragancia o usa un solubilizante |
+
+### Qué puedes cambiar
+
+- Traza tu curva de sal con 0.6, 0.8, 1.0 y 1.2 %.
+- Baja el SLES a 6 % y sube la betaína a 4 % para piel sensible.
+
+**Fuentes.** Tensioactivos: Thompson et al. 2023 y catálogos de proveedor citados en la calculadora de materia activa. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
+
+## Otros productos de esta sección
+
+[Jabón en barra](jabon-en-barra.qmd), [Jabón líquido](jabon-liquido.qmd), [Barra sin jabón](barra-sin-jabon.qmd), [Limpiador facial](limpiador-facial.qmd), [Agua micelar](agua-micelar.qmd), [Aceite desmaquillante](aceite-desmaquillante.qmd), [Bomba de baño](bomba-de-bano.qmd), [Desodorante](desodorante.qmd).

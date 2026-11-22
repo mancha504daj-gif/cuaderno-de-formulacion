@@ -91,7 +91,7 @@ Una grasa es glicerina con tres cadenas de ácido graso.
 :::
 
 ::: {.acto}
-Cada cadena necesita una base. El SAP dice cuántos miligramos de KOH saponifican un gramo de aceite. Un mol de NaOH reemplaza a un mol de KOH, así que se pasa de uno a otro con sus masas molares, 40.00 y 56.11.
+Cada cadena necesita una base. La sosa quema: guantes y lentes. El SAP dice cuántos miligramos de KOH saponifican un gramo de aceite. Un mol de NaOH reemplaza a un mol de KOH, así que se pasa de uno a otro con sus masas molares, 40.00 y 56.11.
 :::
 
 ::: {.acto}

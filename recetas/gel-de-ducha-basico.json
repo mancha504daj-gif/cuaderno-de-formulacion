@@ -1,0 +1,125 @@
+{
+ "slug": "gel-de-ducha-basico",
+ "titulo": "Gel de ducha básico",
+ "producto": "gel-de-ducha",
+ "tipo": "limpia",
+ "nivel": 1,
+ "tiempo": 45,
+ "lote": 100,
+ "pH": "5.5",
+ "estado": "sin ensayar",
+ "porque": "Lleva 8 % de SLES activo y 2.4 % de betaína. Juntos hacen micelas mixtas: menos irritación y más viscosidad.",
+ "fases": [
+  {
+   "nombre": "A",
+   "ingredientes": [
+    {
+     "id": "agua",
+     "pct": 58.2
+    },
+    {
+     "id": "glicerina",
+     "pct": 2
+    }
+   ]
+  },
+  {
+   "nombre": "B",
+   "ingredientes": [
+    {
+     "id": "sles",
+     "pct": 29.6
+    },
+    {
+     "id": "capb",
+     "pct": 8
+    }
+   ]
+  },
+  {
+   "nombre": "C",
+   "ingredientes": [
+    {
+     "id": "sal",
+     "pct": 1.2
+    },
+    {
+     "id": "fenoxi",
+     "pct": 0.8
+    },
+    {
+     "id": "ehg",
+     "pct": 0.1
+    },
+    {
+     "id": "citrico",
+     "pct": 0.1
+    }
+   ]
+  }
+ ],
+ "pasos": [
+  "Pesa el agua y disuelve lo que pide la fase A.",
+  "Agrega los tensioactivos por la pared del vaso, con agitación lenta para no hacer espuma.",
+  "Agrega la fase C.",
+  "Mide el pH y ajústalo. Los glucósidos llegan a pH 11 o 12: bájalo antes de juzgar la viscosidad.",
+  "Si lleva sal, disuélvela en un poco de agua y agrégala en pasos de 0.2 %. Detente cuando espese lo que buscas.",
+  "Deja reposar 24 h y envasa."
+ ],
+ "cambia": [
+  "Traza tu curva de sal con 0.6, 0.8, 1.0 y 1.2 %.",
+  "Baja el SLES a 6 % y sube la betaína a 4 % para piel sensible."
+ ],
+ "controles": [
+  [
+   "pH",
+   "el de la receta ± 0.3",
+   "medidor"
+  ],
+  [
+   "Viscosidad",
+   "registra husillo, rpm y temperatura",
+   "viscosímetro o copa"
+  ],
+  [
+   "Espuma",
+   "altura a 0, 1 y 5 min",
+   "probeta agitada, solución al 1 %"
+  ],
+  [
+   "Aspecto",
+   "sin turbidez nueva",
+   "4 °C, ambiente y 40 °C"
+  ],
+  [
+   "Microbiología",
+   "sin crecimiento",
+   "placas a t0 y a 28 días"
+  ]
+ ],
+ "fallas": [
+  [
+   "No espesa",
+   "poca sal o pH alto",
+   "ajusta el pH y sigue la curva de sal"
+  ],
+  [
+   "Se adelgazó al poner sal",
+   "te pasaste del máximo",
+   "diluye con más tensioactivo: con sal no se recupera"
+  ],
+  [
+   "Se enturbia en frío",
+   "fragancia o fase que no se disuelve",
+   "baja la fragancia o usa un solubilizante"
+  ]
+ ],
+ "avisos": [
+  "Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.",
+  "No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad."
+ ],
+ "fuentes": [
+  "Tensioactivos: Thompson et al. 2023 y catálogos de proveedor citados en la calculadora de materia activa.",
+  "Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026."
+ ]
+}

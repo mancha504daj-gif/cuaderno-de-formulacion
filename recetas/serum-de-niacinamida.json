@@ -1,0 +1,126 @@
+{
+ "slug": "serum-de-niacinamida",
+ "titulo": "Sérum de niacinamida",
+ "producto": "serum",
+ "tipo": "gel",
+ "nivel": 1,
+ "tiempo": 90,
+ "lote": 100,
+ "pH": "5.5 a 6",
+ "estado": "sin ensayar",
+ "porque": "Un sérum es agua con activos y poco espesante. La goma xantana se adelgaza al frotar y recupera cuerpo en reposo.",
+ "fases": [
+  {
+   "nombre": "A",
+   "ingredientes": [
+    {
+     "id": "agua",
+     "pct": 89.7
+    },
+    {
+     "id": "glicerina",
+     "pct": 3
+    },
+    {
+     "id": "xantana",
+     "pct": 0.3
+    }
+   ]
+  },
+  {
+   "nombre": "B",
+   "ingredientes": [
+    {
+     "id": "niacinamida",
+     "pct": 5
+    },
+    {
+     "id": "pantenol",
+     "pct": 1
+    },
+    {
+     "id": "hialuronato",
+     "pct": 0.1
+    }
+   ]
+  },
+  {
+   "nombre": "C",
+   "ingredientes": [
+    {
+     "id": "fenoxi",
+     "pct": 0.8
+    },
+    {
+     "id": "ehg",
+     "pct": 0.1
+    }
+   ]
+  }
+ ],
+ "pasos": [
+  "Dispersa la goma xantana en la glicerina hasta tener una pasta sin grumos.",
+  "Agrega el agua poco a poco, con agitación media, y espera de 30 a 60 min a que se hidrate.",
+  "Incorpora los activos de la fase B, uno por uno.",
+  "Agrega la fase C y mezcla despacio para no meter aire.",
+  "Mide el pH y ajústalo.",
+  "Deja reposar 24 h, revisa burbujas y grumos, y envasa."
+ ],
+ "cambia": [
+  "Baja la xantana a 0.2 % para gotero.",
+  "Cambia la niacinamida por 5 % de urea y vigila el pH."
+ ],
+ "controles": [
+  [
+   "pH",
+   "el de la receta ± 0.3",
+   "medidor o tiras"
+  ],
+  [
+   "Aspecto",
+   "transparente o uniforme, sin grumos",
+   "a contraluz"
+  ],
+  [
+   "Viscosidad",
+   "registra husillo, rpm y temperatura",
+   "viscosímetro o tiempo de caída"
+  ],
+  [
+   "Ciclos",
+   "sin cambio",
+   "de tres a seis ciclos"
+  ],
+  [
+   "Microbiología",
+   "sin crecimiento",
+   "placas a t0 y a 28 días"
+  ]
+ ],
+ "fallas": [
+  [
+   "Grumos",
+   "el polímero se mojó de golpe",
+   "prehumecta con glicerina"
+  ],
+  [
+   "Muchas burbujas",
+   "agitación rápida",
+   "agita lento y deja reposar"
+  ],
+  [
+   "Se aguó",
+   "sal, pH o microbios",
+   "mide pH; si huele raro, descártalo"
+  ]
+ ],
+ "avisos": [
+  "Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.",
+  "No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad."
+ ],
+ "fuentes": [
+  "Método y proceso: Baki 2023, ISBN 978-1-119-70977-0, pp. 72 y 250-259.",
+  "Niacinamida e hialuronato: nota 03 de la investigación.",
+  "Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026."
+ ]
+}

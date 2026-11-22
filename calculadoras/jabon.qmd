@@ -2,6 +2,8 @@
 title: Jabón
 ---
 
+Cuánta base y agua pide una mezcla de aceites. Aquí **lejía** es la solución de sosa o potasa; el cloro de lavar es otra sustancia. La base quema piel y ojos: guantes, lentes y manga larga.
+
 ```{=html}
 <div class="calc" data-calc="jabon"><p>Cargando.</p></div>
 ```

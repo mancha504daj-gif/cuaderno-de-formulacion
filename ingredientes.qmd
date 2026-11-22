@@ -1,13 +1,13 @@
 ---
 title: Ingredientes
-page-layout: full
 toc: false
-listing:
-  contents: ingredientes/*.md
-  type: table
-  fields: [title, nombre, categories]
-  field-display-names: { title: INCI, nombre: Nombre común }
-  categories: true
-  filter-ui: true
-  sort-ui: true
+page-layout: full
 ---
+
+Los ingredientes de las recetas, por función. Lo que hace cada uno es conocimiento general del oficio; cuando hay un rango, un límite o un HLB, va su fuente. El [catálogo](catalogo.qmd) reúne muchos más, con datos de norma y de proveedor.
+
+```{=html}
+<div data-busca="main" class="buscador"></div>
+```
+
+{{< include _inc/ingredientes.md >}}

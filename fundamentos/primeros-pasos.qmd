@@ -1,0 +1,66 @@
+---
+title: "Primeros pasos"
+toc: false
+page-layout: full
+---
+
+Si nunca hiciste un cosmético, empieza aquí. Esta página te da las palabras, la forma de leer una fórmula y un camino de ocho pasos.
+
+## Las palabras que vas a usar
+
+{{< include ../_inc/terminos-base.md >}}
+
+## Qué es un cosmético
+
+Un producto que se aplica sobre la piel, el cabello, las uñas, los labios o los dientes para limpiar, perfumar, proteger, mantener o cambiar el aspecto. Si promete curar, deja de ser cosmético y se regula como medicamento.
+
+## Leer una fórmula
+
+| Fase | Ingrediente | Función | % |
+|---|---|---|---|
+| A | agua | vehículo | 78.2 |
+| A | glicerina | humectante | 4.0 |
+| A | goma xantana | espesante | 0.2 |
+| B | triglicérido caprílico/cáprico | emoliente | 8.0 |
+| B | aceite de girasol | emoliente | 3.0 |
+| B | alcohol cetílico | coemulsionante | 1.5 |
+| B | estearato de glicerilo y PEG-100 | emulsionante | 4.0 |
+| C | fenoxietanol | conservante | 0.8 |
+| C | etilhexilglicerina | conservante | 0.1 |
+| C | tocoferol | antioxidante | 0.2 |
+
+Es la [loción ligera](../producto/locion-corporal.qmd). Léela así:
+
+- **Las fases dicen qué se mezcla junto.** A es lo que va en agua, B lo que va en aceite, C lo delicado.
+- **Los porcentajes son en masa y suman 100.** Si te falta, se completa con agua.
+- **La función dice por qué está.** Si no puedes decir para qué sirve un ingrediente, quítalo.
+
+## Escalar un lote
+
+$$masa = \frac{porcentaje \times lote}{100}$$
+
+Para 50 g de esa loción, el emulsionante pesa 4.0 × 50/100 = 2.0 g. Con 10 g, 0.4 g: ahí una balanza de 0.1 g se equivoca hasta 25 %. Haz lotes de 100 g para empezar.
+
+## Tu camino
+
+```{=html}
+<ol class="camino" data-avance>
+<li data-paso="palabras">Lee esta página y las palabras de arriba.</li>
+<li data-paso="laboratorio"><a href="laboratorio.html">Aprende a pesar, medir y cuidarte.</a></li>
+<li data-paso="balsamo"><a href="../producto/balsamo-labial.html">Haz un bálsamo labial.</a> Sin agua: no necesita conservante.</li>
+<li data-paso="gel"><a href="../producto/gel-hidratante.html">Haz un gel.</a> Aprendes a hidratar un espesante y a medir pH.</li>
+<li data-paso="conservacion"><a href="conservacion.html">Estudia conservación</a> antes de usar nada con agua.</li>
+<li data-paso="emulsiones"><a href="emulsiones.html">Estudia emulsiones.</a></li>
+<li data-paso="locion"><a href="../producto/locion-corporal.html">Haz la loción ligera</a> y comprueba su tipo.</li>
+<li data-paso="estabilidad"><a href="estabilidad.html">Ponla a prueba</a> durante 90 días y anota en tu hoja.</li>
+</ol>
+```
+
+## Cómo estudiar una sección
+
+1. Lee sus palabras.
+2. Haz las lecciones y mueve los controles de las escenas.
+3. Contesta las preguntas.
+4. Elige un producto y lee «Por qué funciona» antes de los pasos.
+5. Abre la hoja de laboratorio, prepáralo y anota.
+6. Cambia una sola cosa y repite.

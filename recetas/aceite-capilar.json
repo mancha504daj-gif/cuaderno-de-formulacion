@@ -1,0 +1,103 @@
+{
+ "slug": "aceite-capilar",
+ "titulo": "Aceite capilar",
+ "producto": "aceite-capilar",
+ "tipo": "anhidro",
+ "nivel": 1,
+ "tiempo": 15,
+ "lote": 100,
+ "pH": null,
+ "estado": "sin ensayar",
+ "porque": "La dimeticona lubrica la cutícula y da brillo; los aceites suavizan las puntas.",
+ "fases": [
+  {
+   "nombre": "A",
+   "ingredientes": [
+    {
+     "id": "dimeticona",
+     "pct": 40
+    },
+    {
+     "id": "cct",
+     "pct": 39.5
+    },
+    {
+     "id": "argan",
+     "pct": 20
+    }
+   ]
+  },
+  {
+   "nombre": "C",
+   "ingredientes": [
+    {
+     "id": "toco",
+     "pct": 0.5
+    }
+   ]
+  }
+ ],
+ "pasos": [
+  "Pesa todo en un vaso seco.",
+  "Mezcla sin calentar hasta que quede transparente. Si se enturbia, la dimeticona es muy viscosa para ese aceite.",
+  "Envasa con gotero."
+ ],
+ "cambia": [
+  "Sin silicona: cambia por escualano."
+ ],
+ "controles": [
+  [
+   "Aspecto",
+   "liso, sin granos ni gotas de aceite",
+   "a 24 h y a 7 días"
+  ],
+  [
+   "Dureza",
+   "registra la penetración",
+   "aguja o peso conocido"
+  ],
+  [
+   "Punto de fusión",
+   "registra el intervalo",
+   "capilar o baño con termómetro"
+  ],
+  [
+   "Calor",
+   "sin gotas en la superficie",
+   "40 °C, 7 días"
+  ],
+  [
+   "Olor",
+   "sin rancio",
+   "a 1 y a 3 meses"
+  ]
+ ],
+ "fallas": [
+  [
+   "Granos",
+   "enfrió despacio o la manteca cristalizó mal",
+   "funde otra vez y enfría más rápido"
+  ],
+  [
+   "Suda aceite",
+   "poca cera o demasiado aceite líquido",
+   "sube la cera de 1 en 1 %"
+  ],
+  [
+   "Se parte",
+   "demasiada cera dura",
+   "baja la cera y sube el aceite"
+  ],
+  [
+   "Huele rancio",
+   "oxidación",
+   "usa aceite fresco, tocoferol y envase lleno"
+  ]
+ ],
+ "avisos": [
+  "Inflamable con calor directo de plancha muy caliente: deja secar."
+ ],
+ "fuentes": [
+  "Proporciones propuestas en este proyecto."
+ ]
+}

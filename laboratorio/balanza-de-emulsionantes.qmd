@@ -1,0 +1,9 @@
+---
+title: "Balanza de emulsionantes"
+toc: false
+---
+
+```{=html}
+<div data-lab="balanza-de-emulsionantes"><p>Cargando.</p></div>
+<p><a href="../editor.html?lab=balanza-de-emulsionantes">Abrir en el editor</a></p>
+```

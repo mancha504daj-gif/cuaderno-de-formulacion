@@ -1,0 +1,9 @@
+---
+title: "Agua que pierde la piel"
+toc: false
+---
+
+```{=html}
+<div data-lab="agua-que-pierde-la-piel"><p>Cargando.</p></div>
+<p><a href="../editor.html?lab=agua-que-pierde-la-piel">Abrir en el editor</a></p>
+```

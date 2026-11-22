@@ -8,19 +8,45 @@ page-layout: full
 <figure class="cabeza" style="--color:#3f2463"><div class="marco"><img src="../fotos/burbuja.jpg" alt="Película de jabón con islas de colores"></div><h1>Emulsiones</h1></figure>
 ```
 
-Una emulsión reparte gotas de un líquido dentro de otro con el que no se mezcla. Si el aceite queda en gotas, es O/W; si el agua queda en gotas, es W/O.
+Una emulsión reparte gotas de un líquido dentro de otro con el que no se mezcla. Cremas, lociones, bases y máscaras son emulsiones.
 
-## Quién decide el tipo
+## Las palabras que vas a usar
 
-Decide el emulsionante. La fase donde es más soluble tiende a quedar por fuera (regla de Bancroft). Una fórmula con 75 % de agua puede salir W/O si elegiste un emulsionante lipófilo.
+{{< include ../_inc/terminos-emulsiones.md >}}
 
-## HLB
+## Lección 1. Quién decide el tipo
 
-Griffin ordenó los emulsionantes no iónicos por el peso de su parte hidrófila. Para ésteres de polioles usó $HLB = 20(1 - S/A)$, con $S$ el índice de saponificación del éster y $A$ el índice de acidez del ácido graso. Para etoxilados usó $HLB = E/5$, con $E$ el porcentaje de óxido de etileno.
+Si el aceite queda en gotas, es O/W. Si el agua queda en gotas, es W/O. Decide el emulsionante: la fase donde es más soluble tiende a quedar por fuera (regla de Bancroft). Una fórmula con 75 % de agua puede salir W/O si elegiste un emulsionante lipófilo.
 
-Cada aceite pide un HLB. Las tablas no coinciden: la vaselina figura con 10.5 y con 7. Por eso la [calculadora](../calculadoras/hlb.qmd) trabaja con intervalos.
+| | O/W | W/O |
+|---|---|---|
+| Se enjuaga | sí | cuesta |
+| Sensación | ligera | más grasa |
+| Conduce electricidad | sí | casi nada |
+| Ejemplo | loción | base de maquillaje |
 
-## Por qué se separan
+## Lección 2. HLB
+
+Griffin ordenó los emulsionantes no iónicos de 0 a 20. Un número bajo significa que aman el aceite; uno alto, que aman el agua.
+
+| HLB | Sirve para |
+|---|---|
+| 1 a 3 | romper espuma |
+| 4 a 6 | emulsión W/O |
+| 7 a 9 | mojar superficies |
+| 8 a 18 | emulsión O/W |
+| 13 a 15 | limpiar |
+| 10 a 18 | solubilizar |
+
+Cada aceite pide un HLB. Para una mezcla se promedia por masa. Las tablas no coinciden: la vaselina figura con 10.5 y con 7. Por eso la [calculadora](../calculadoras/hlb.qmd) trabaja con intervalos.
+
+**Ejemplo resuelto.** 12 partes de almendras (6 a 7) y 4 de karité (8): de (12 × 6 + 4 × 8)/16 = 6.5 a (12 × 7 + 4 × 8)/16 = 7.25.
+
+Para ésteres de polioles Griffin usó $HLB = 20(1 - S/A)$, con $S$ el índice de saponificación del éster y $A$ el índice de acidez del ácido graso. Para etoxilados, $HLB = E/5$, con $E$ el porcentaje de óxido de etileno.
+
+El HLB orienta los primeros ensayos y no predice estabilidad. [Laboratorio: balanza de emulsionantes](../laboratorio/balanza-de-emulsionantes.qmd).
+
+## Lección 3. Por qué se separan
 
 :::: {.modelo data-escena="fallas"}
 
@@ -60,7 +86,7 @@ Una emulsión estable: gotas repartidas, que se cruzan sin unirse.
 
 La [calculadora de Stokes](../calculadoras/stokes.qmd) estima la primera fila. Las demás piden ensayo.
 
-## Por qué más gotas espesan
+## Lección 4. Por qué más gotas espesan
 
 :::: {.modelo data-escena="cizalla"}
 
@@ -77,22 +103,36 @@ Cerca del empaque máximo casi no fluye. Krieger y Dougherty lo escribieron así
 
 $$\frac{\eta}{\eta_0} = \left(1 - \frac{\phi}{\phi_m}\right)^{-2.5\,\phi_m}$$
 
-[Abrir el laboratorio](../laboratorio/viscosidad-de-una-emulsion.qmd): busca dónde se dispara.
-
-[Abrir el laboratorio](../laboratorio/balanza-de-emulsionantes.qmd): elige el par de emulsionantes.
+[Laboratorio: viscosidad de una emulsión](../laboratorio/viscosidad-de-una-emulsion.qmd).
 :::
 
 ::::
 
-Krieger y Dougherty 1959, DOI [10.1122/1.548848](https://doi.org/10.1122/1.548848). Es un modelo de esferas rígidas; una gota líquida se deforma y estorba menos.
+Es un modelo de esferas rígidas; una gota líquida se deforma y estorba menos.
 
-## Cómo saber qué tipo obtuviste
+## Lección 5. Hacerla
+
+1. Calienta las dos fases por separado, unos grados sobre la cera que funde más alto, a la misma temperatura.
+2. Agrega la fase interna sobre la externa con agitación intensa.
+3. Agita hasta enfriar. Si dejas de agitar, las ceras cristalizan en granos.
+4. Agrega lo sensible al calor por debajo de 40 °C.
+
+En frío se ahorra energía, pero no sirve con ceras.
+
+## Lección 6. Saber qué tipo obtuviste
 
 1. Agrega un colorante hidrosoluble y mira al microscopio. Fondo coloreado: O/W. Gotas coloreadas: W/O.
 2. Diluye una muestra. La emulsión acepta su fase externa y se rompe con la interna.
 3. Mide la conductividad. Una O/W conduce; una W/O casi no.
 
-## Referencias
+Haz dos de las tres: una sola puede engañar.
 
-Griffin 1949, *J. Soc. Cosmet. Chem.* 1:311 (sin DOI). Griffin 1954, 5:249 (sin DOI). Salager et al. 2020, DOI [10.3390/cosmetics7030057](https://doi.org/10.3390/cosmetics7030057). Baki 2023, *Introduction to Cosmetic Formulation and Technology*, 2.ª ed., ISBN 978-1-119-70977-0, pp. 69-72, 213-215 y 260.
+## Comprueba lo que aprendiste
 
+```{=html}
+<div data-preguntas="emulsiones"></div>
+```
+
+## Fuentes
+
+Griffin 1949, *J. Soc. Cosmet. Chem.* 1:311 (sin DOI). Griffin 1954, 5:249 (sin DOI). Salager et al. 2020, DOI [10.3390/cosmetics7030057](https://doi.org/10.3390/cosmetics7030057). Krieger y Dougherty 1959, DOI [10.1122/1.548848](https://doi.org/10.1122/1.548848). Baki 2023, ISBN 978-1-119-70977-0, pp. 52-53, 69-72, 213-215 y 260.

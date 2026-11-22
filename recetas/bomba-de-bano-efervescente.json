@@ -1,0 +1,100 @@
+{
+ "slug": "bomba-de-bano-efervescente",
+ "titulo": "Bomba de baño",
+ "producto": "bomba-de-bano",
+ "tipo": "polvo",
+ "nivel": 1,
+ "tiempo": 40,
+ "lote": 100,
+ "pH": null,
+ "estado": "sin ensayar",
+ "porque": "El ácido y el bicarbonato reaccionan solo con agua y sueltan dióxido de carbono. Con la humedad del aire empiezan antes: por eso se rocía alcohol y no agua.",
+ "fases": [
+  {
+   "nombre": "A",
+   "ingredientes": [
+    {
+     "id": "bicarbonato",
+     "pct": 55
+    },
+    {
+     "id": "citrico",
+     "pct": 25
+    },
+    {
+     "id": "almidon",
+     "pct": 15
+    }
+   ]
+  },
+  {
+   "nombre": "B",
+   "ingredientes": [
+    {
+     "id": "cct",
+     "pct": 4.5
+    },
+    {
+     "id": "fragancia",
+     "pct": 0.5
+    }
+   ]
+  }
+ ],
+ "pasos": [
+  "Tamiza los polvos.",
+  "Mezcla el aceite con la fragancia y agrégalo gota a gota.",
+  "Rocía alcohol hasta que la mezcla se compacte en la mano.",
+  "Moldea con fuerza y deja secar 24 h en un lugar sin humedad.",
+  "Envuelve en plástico."
+ ],
+ "cambia": [
+  "La proporción que reacciona completa es 1.31 de bicarbonato por 1 de cítrico; esta deja bicarbonato de sobra.",
+  "Agrega 2 % de óxido de hierro para darle color."
+ ],
+ "controles": [
+  [
+   "Color",
+   "igual en las dos caras",
+   "frota sobre papel blanco"
+  ],
+  [
+   "Caída",
+   "aguanta tres caídas de 20 cm",
+   "sobre madera"
+  ],
+  [
+   "Cesión",
+   "deja color en una pasada",
+   "esponja seca"
+  ],
+  [
+   "Humedad",
+   "registra el valor",
+   "pérdida de peso a 105 °C"
+  ]
+ ],
+ "fallas": [
+  [
+   "Se rompe",
+   "poca presión o poco aglutinante",
+   "sube uno de los dos, no ambos"
+  ],
+  [
+   "No suelta color",
+   "demasiada presión o aglutinante",
+   "baja la presión"
+  ],
+  [
+   "Manchas de color",
+   "pigmento sin moler",
+   "muele más con la carga"
+  ]
+ ],
+ "avisos": [
+  "El cítrico irrita los ojos."
+ ],
+ "fuentes": [
+  "Proporciones propuestas en este proyecto."
+ ]
+}

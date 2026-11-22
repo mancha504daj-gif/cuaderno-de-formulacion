@@ -1,0 +1,9 @@
+---
+title: Hoja de laboratorio
+toc: false
+page-layout: full
+---
+
+```{=html}
+<div data-hoja class="hoja"><p>Cargando.</p></div>
+```

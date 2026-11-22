@@ -1,0 +1,184 @@
+{
+ "piel": [
+  {
+   "p": "Tu piel está seca y el aire también. ¿Qué eliges?",
+   "o": [
+    "Solo glicerina",
+    "Glicerina con una película oclusiva",
+    "Solo agua"
+   ],
+   "c": 1,
+   "e": "Con aire seco la glicerina sola puede sacar agua de la piel. La película la retiene."
+  },
+  {
+   "p": "Una crema se dispersa en agua como leche. ¿Qué tipo es?",
+   "o": [
+    "O/W",
+    "W/O"
+   ],
+   "c": 0,
+   "e": "La fase externa es agua, así que se diluye en agua."
+  },
+  {
+   "p": "¿Qué protege el tocoferol?",
+   "o": [
+    "Los aceites, de la oxidación",
+    "El agua, de las bacterias"
+   ],
+   "c": 0,
+   "e": "Es antioxidante. Contra microbios hace falta un conservante."
+  }
+ ],
+ "limpieza": [
+  {
+   "p": "Agregaste sal al gel y se adelgazó. ¿Qué pasó?",
+   "o": [
+    "Pasaste el máximo de la curva",
+    "Faltó sal"
+   ],
+   "c": 0,
+   "e": "Pasado el máximo, más sal no lo recupera."
+  },
+  {
+   "p": "¿Qué haces primero con la sosa?",
+   "o": [
+    "Agregarla al agua",
+    "Agregar agua a la sosa"
+   ],
+   "c": 0,
+   "e": "Al revés hierve y salpica."
+  },
+  {
+   "p": "Tienes SLES al 27 % y quieres 8 % activo en 100 g. ¿Cuánto pesas?",
+   "o": [
+    "8 g",
+    "29.6 g",
+    "27 g"
+   ],
+   "c": 1,
+   "e": "100 × 8/27 = 29.6 g."
+  }
+ ],
+ "solar": [
+  {
+   "p": "FPS 30 y la mitad de la cantidad. ¿Cuánto queda según el modelo?",
+   "o": [
+    "15",
+    "5.5",
+    "28"
+   ],
+   "c": 1,
+   "e": "La raíz de 30 es 5.5. El modelo se midió con FPS 4."
+  },
+  {
+   "p": "¿Por qué no se usa un protector casero?",
+   "o": [
+    "Es caro",
+    "Nadie midió su FPS y la película puede fallar",
+    "No huele bien"
+   ],
+   "c": 1,
+   "e": "En un estudio, 12 de 15 recetas dieron menos de FPS 6 y las otras tres no tenían filtro."
+  }
+ ],
+ "maquillaje": [
+  {
+   "p": "¿Cuándo entra el nacarado?",
+   "o": [
+    "Al principio, para molerlo",
+    "Al final, sin moler"
+   ],
+   "c": 1,
+   "e": "Es una lámina: si se rompe pierde brillo."
+  },
+  {
+   "p": "El polvo no suelta color. ¿Qué haces?",
+   "o": [
+    "Bajas presión o aglutinante",
+    "Subes los dos"
+   ],
+   "c": 0,
+   "e": "Demasiada unión frena la cesión."
+  }
+ ],
+ "cabello": [
+  {
+   "p": "¿Por qué el acondicionador lleva ácido?",
+   "o": [
+    "Para dar carga a la amidoamina",
+    "Para oler mejor"
+   ],
+   "c": 0,
+   "e": "Con ácido se vuelve catiónica y se pega a la fibra."
+  },
+  {
+   "p": "¿Puedes espesar un acondicionador con goma xantana?",
+   "o": [
+    "Sí",
+    "No: precipita con el catiónico"
+   ],
+   "c": 1,
+   "e": "La xantana es aniónica."
+  }
+ ],
+ "fragancias": [
+  {
+   "p": "¿Qué nota dura más?",
+   "o": [
+    "Limoneno",
+    "Vainillina"
+   ],
+   "c": 1,
+   "e": "Su presión de vapor es unas 13 000 veces menor."
+  },
+  {
+   "p": "El perfume se enturbió al poner agua. ¿Qué haces?",
+   "o": [
+    "Subir el alcohol o bajar el agua",
+    "Agregar más agua"
+   ],
+   "c": 0,
+   "e": "La fragancia no se disuelve en tanta agua."
+  }
+ ],
+ "emulsiones": [
+  {
+   "p": "¿Quién decide si sale O/W o W/O?",
+   "o": [
+    "La fase que hay más",
+    "El emulsionante"
+   ],
+   "c": 1,
+   "e": "La fase donde el emulsionante es más soluble tiende a quedar por fuera."
+  },
+  {
+   "p": "Reduces el radio a la mitad. ¿La velocidad de cremado?",
+   "o": [
+    "Baja a la mitad",
+    "Baja cuatro veces"
+   ],
+   "c": 1,
+   "e": "El radio entra al cuadrado."
+  }
+ ],
+ "conservacion": [
+  {
+   "p": "Benzoato a pH 6. ¿Cuánto queda activo?",
+   "o": [
+    "Casi todo",
+    "Cerca de 1.6 %"
+   ],
+   "c": 1,
+   "e": "Con pKa 4.20: 1/(1 + 10^1.8) = 1.6 %."
+  },
+  {
+   "p": "¿Un producto sin separarse está libre de microbios?",
+   "o": [
+    "Sí",
+    "No se sabe sin analizar"
+   ],
+   "c": 1,
+   "e": "Pueden crecer sin que los veas."
+  }
+ ]
+}

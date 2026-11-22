@@ -1,0 +1,9 @@
+---
+title: "FPS y cantidad aplicada"
+toc: false
+---
+
+```{=html}
+<div data-lab="fps-y-cantidad"><p>Cargando.</p></div>
+<p><a href="../editor.html?lab=fps-y-cantidad">Abrir en el editor</a></p>
+```

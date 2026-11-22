@@ -21,6 +21,20 @@ const TILDES = { algodon: "algodón", canamo: "cáñamo", vison: "visón", acido
 const es = (s) => s.replace(/[a-z]+/g, (w) => TILDES[w] ?? w);
 const ap = (f) => f.slice(0, 260);
 
+const col = (n, campos) => csv(n).filter((r) => !/Benson/i.test(r.fuente ?? "") || n === "conservantes.csv").map((r) => campos.map((k) => es(r[k] ?? "").replace(/\|.*$/s, "").replaceAll("|", "/").replace(/\s+/g, " ").trim()));
+const corta = (t) => { const d = t.match(/10\.\d{4,}\/[^\s;,)]+/); if (d) return "DOI " + d[0].replace(/\.$/, ""); const u = t.match(/https?:\/\/([^\/\s]+)/); return u ? u[1].replace(/^www\./, "") : t.slice(0, 60); };
+guardar("catalogo.json", [
+  ["Conservantes", ["INCI", "Nombre", "Límite UE (%)", "Anexo", "pKa", "Fuente"], col("conservantes.csv", ["INCI", "nombre_comun", "conc_max_ue_pct", "anexo_ue", "pka", "fuente"])],
+  ["Filtros UV", ["INCI", "Nombre", "Tipo", "Rango", "Límite UE (%)", "Fuente"], col("filtros_uv.csv", ["INCI", "nombre_comun", "tipo_organico_inorganico", "rango_uv", "conc_max_ue_pct", "fuente"])],
+  ["Pigmentos", ["CI", "INCI", "Color", "Ojos", "Labios", "Fuente"], col("pigmentos.csv", ["CI", "INCI", "color", "uso_ojos", "uso_labios", "fuente"])],
+  ["Tensioactivos", ["INCI", "Nombre comercial", "Tipo", "Activo (%)", "Fuente"], col("tensioactivos.csv", ["INCI", "nombre_comercial_tipico", "tipo", "materia_activa_comercial_pct", "fuente"])],
+  ["Emolientes", ["INCI", "Nombre", "Clase", "Sensación", "Fuente"], col("emolientes.csv", ["INCI", "nombre_comun", "clase", "sensorial", "fuente"])],
+  ["Espesantes", ["INCI", "Nombre", "Tipo", "Uso (%)", "Fuente"], col("espesantes.csv", ["INCI", "nombre comun", "tipo", "rango_uso_pct", "fuente"])],
+  ["Activos", ["INCI", "Nombre", "Uso (%)", "Límite", "Fuente"], col("activos.csv", ["INCI", "nombre_comun", "rango_uso_pct", "limite_legal", "fuente"])],
+  ["Emulsionantes", ["INCI", "Nombre", "HLB", "Método", "Fuente"], col("hlb_emulsionantes.csv", ["INCI", "nombre_comercial_o_comun", "hlb", "metodo", "fuente"])],
+  ["Aceites esenciales", ["Aceite", "Especie", "Componentes", "Máximo en piel (%)", "Fuente"], col("aceites_esenciales.csv", ["aceite", "especie", "componentes_principales", "max_dermico_pct", "fuente"])],
+].map(([nombre, cab, filas]) => ({ nombre, cab, filas: filas.map((f) => [...f.slice(0, -1), corta(f.at(-1))]) })));
+
 const ac = new Map();
 for (const r of csv("hlb_requerido_aceites.csv")) {
   const v = rango(r.rhlb_ow);

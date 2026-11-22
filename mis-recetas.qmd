@@ -1,0 +1,11 @@
+---
+title: Mis recetas
+toc: false
+page-layout: full
+---
+
+Escribe tus fórmulas o cambia las del sitio. Se guardan en este navegador y no salen de él.
+
+```{=html}
+<div data-mis-recetas><p>Cargando.</p></div>
+```

@@ -1,0 +1,120 @@
+---
+title: "Jabón en barra"
+toc: false
+page-layout: full
+---
+
+```{=html}
+<figure class="cabeza" style="--color:#4d5a2c" data-alto="baja"><div class="marco"><img src="../fotos/jabonera.jpg" alt="Pilas de jabón de Alepo curándose"></div><h1>Jabón en barra</h1></figure>
+```
+
+[Limpieza](../limpieza/index.qmd). Grasa y sosa. La receta más antigua. Forma: jabón sódico.
+
+Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+
+## Jabón de oliva y coco
+
+```{=html}
+<div data-receta="jabon-de-oliva-y-coco"><p>Cargando.</p></div>
+```
+
+::: {.avisos}
+- La sosa quema piel y ojos. Si te cae, enjuaga con agua 15 min y busca atención médica.
+- Pesa con balanza de 0.1 g. Un error de 5 g cambia el jabón.
+:::
+
+### Por qué funciona
+
+La sosa rompe las grasas en jabón y glicerina. Se calcula con el SAP más bajo de la norma y 5 % de sobreengrase: queda aceite de más y ninguna sosa libre, si pesaste bien.
+
+### Paso a paso
+
+1. Ponte guantes, lentes y manga larga. Trabaja con ventilación y sin niños ni mascotas cerca.
+2. Pesa el agua en un recipiente resistente al calor y la sosa aparte.
+3. Agrega la sosa al agua, poco a poco, y agita. Nunca al revés. Se calienta y suelta vapor: no lo respires.
+4. Deja que la lejía baje a unos 40 °C. Aquí lejía significa la solución de sosa; el cloro de lavar es otra sustancia.
+5. Funde los aceites sólidos, mézclalos con los líquidos y déjalos a unos 40 °C.
+6. Vierte la lejía sobre los aceites y mezcla con batidora de mano, a pulsos, hasta que una gota deje huella en la superficie.
+7. Vacía en el molde, tapa y espera de 24 a 48 h.
+8. Desmolda, corta y cura de 4 a 6 semanas en un lugar seco y ventilado.
+9. Antes de usarlo, mide el pH de una solución al 1 %.
+
+### Cómo saber si salió bien
+
+| Control | Meta | Cómo se mide |
+|---|---|---|
+| pH | de 9 a 10.5 | solución al 1 % |
+| Álcali libre | sin color con fenolftaleína en el centro | corta una barra y pon una gota; maneja el indicador con guantes |
+| Pérdida de peso | hasta que se estabilice | pesa la misma barra cada semana |
+| Espuma | altura a 0 y 5 min | probeta agitada, solución al 1 % |
+
+### Si algo falla
+
+| Qué ves | Por qué | Qué hacer |
+|---|---|---|
+| Polvo blanco en la superficie | ceniza de carbonato | cubre el molde y cura con menos aire |
+| Se separa en el molde | faltó mezclar o temperatura baja | vuelve a fundir y mezcla |
+| Pica o quema | álcali sin reaccionar | no lo uses; revisa la pesada y el SAP |
+| Queda blando | mucho aceite líquido o sobreengrase | cura más tiempo o sube el coco |
+
+### Qué puedes cambiar
+
+- Más coco, más espuma y más seco.
+- Cualquier cambio de aceite cambia la sosa: vuelve a calcular.
+
+**Fuentes.** SAP: Codex CXS 210-1999 y CXS 33 (ed. 2015); ricino, JECFA. Curado: 4 a 6 semanas según guías artesanales; saponificación de 18 a 24 h, Molecules 2018.
+
+## Jabón de palma, girasol y coco
+
+```{=html}
+<div data-receta="jabon-de-girasol-y-palma"><p>Cargando.</p></div>
+```
+
+::: {.avisos}
+- La sosa quema piel y ojos. Si te cae, enjuaga con agua 15 min y busca atención médica.
+:::
+
+### Por qué funciona
+
+La palma da dureza, el coco espuma y el girasol suavidad. El girasol se enrancia antes: pocas barras por lote.
+
+### Paso a paso
+
+1. Ponte guantes, lentes y manga larga. Trabaja con ventilación y sin niños ni mascotas cerca.
+2. Pesa el agua en un recipiente resistente al calor y la sosa aparte.
+3. Agrega la sosa al agua, poco a poco, y agita. Nunca al revés. Se calienta y suelta vapor: no lo respires.
+4. Deja que la lejía baje a unos 40 °C. Aquí lejía significa la solución de sosa; el cloro de lavar es otra sustancia.
+5. Funde los aceites sólidos, mézclalos con los líquidos y déjalos a unos 40 °C.
+6. Vierte la lejía sobre los aceites y mezcla con batidora de mano, a pulsos, hasta que una gota deje huella en la superficie.
+7. Vacía en el molde, tapa y espera de 24 a 48 h.
+8. Desmolda, corta y cura de 4 a 6 semanas en un lugar seco y ventilado.
+9. Antes de usarlo, mide el pH de una solución al 1 %.
+
+### Cómo saber si salió bien
+
+| Control | Meta | Cómo se mide |
+|---|---|---|
+| pH | de 9 a 10.5 | solución al 1 % |
+| Álcali libre | sin color con fenolftaleína en el centro | corta una barra y pon una gota; maneja el indicador con guantes |
+| Pérdida de peso | hasta que se estabilice | pesa la misma barra cada semana |
+| Espuma | altura a 0 y 5 min | probeta agitada, solución al 1 % |
+
+### Si algo falla
+
+| Qué ves | Por qué | Qué hacer |
+|---|---|---|
+| Polvo blanco en la superficie | ceniza de carbonato | cubre el molde y cura con menos aire |
+| Se separa en el molde | faltó mezclar o temperatura baja | vuelve a fundir y mezcla |
+| Pica o quema | álcali sin reaccionar | no lo uses; revisa la pesada y el SAP |
+| Queda blando | mucho aceite líquido o sobreengrase | cura más tiempo o sube el coco |
+
+### Qué puedes cambiar
+
+- Cambia palma por manteca de cerdo: SAP de 192 a 203, recalcula.
+- Girasol alto oleico: aguanta más.
+
+**Fuentes.** SAP: Codex CXS 210-1999 y CXS 33 (ed. 2015); ricino, JECFA.
+
+## Otros productos de esta sección
+
+[Jabón líquido](jabon-liquido.qmd), [Barra sin jabón](barra-sin-jabon.qmd), [Gel de ducha](gel-de-ducha.qmd), [Limpiador facial](limpiador-facial.qmd), [Agua micelar](agua-micelar.qmd), [Aceite desmaquillante](aceite-desmaquillante.qmd), [Bomba de baño](bomba-de-bano.qmd), [Desodorante](desodorante.qmd).

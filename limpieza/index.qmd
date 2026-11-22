@@ -8,50 +8,15 @@ page-layout: full
 <figure class="cabeza" style="--color:#4d5a2c"><div class="marco"><img src="../fotos/jabonera.jpg" alt="Pilas de jabón de Alepo curándose"></div><h1>Limpieza</h1></figure>
 ```
 
-## Jabón
+Aquí aprendes por qué limpia un tensioactivo, cómo se calcula un jabón y cómo se espesa un gel.
 
-Un aceite y una base forman jabón y glicerina. El índice de saponificación (SAP) dice cuánta base pide cada aceite:
+## Las palabras que vas a usar
 
-$$m_{NaOH} = \sum \frac{m_i\,SAP_i}{1000}\cdot\frac{40.00}{56.11}\,(1 - s)$$
+{{< include ../_inc/terminos-limpieza.md >}}
 
-donde $s$ es el sobreengrase. Calcula el tuyo en [jabón](../calculadoras/jabon.qmd).
+## Lección 1. Cómo se quita la grasa
 
-:::: {.modelo data-escena="jabon"}
-
-::: {.acto}
-Una grasa es glicerina con tres cadenas.
-:::
-
-::: {.acto}
-Llega la lejía: una base por cadena.
-:::
-
-::: {.acto}
-Quedan tres jabones y una glicerina.
-:::
-
-::: {.acto}
-El jabón mete la cola en la grasa y deja la cabeza en el agua. Así la arrastra.
-:::
-
-::::
-
-Dureza, limpieza y cremosidad, como las dan las calculadoras populares, son sumas de ácidos grasos. Son convenciones. El SAP y el índice de yodo sí se miden con método normalizado.
-
-El pH de una solución de jabón figura entre 9.5 y 11.0 según la página del mismo texto. Un syndet queda cerca de 7, o de 5.5 según su tensioactivo.
-
-## Gel de ducha y champú
-
-El tensioactivo comercial viene diluido. Para saber cuánto pesar usa [materia activa](../calculadoras/activa.qmd).
-
-| Tipo | Papel | Ejemplo |
-|---|---|---|
-| Aniónico | limpia y hace espuma | Sodium Laureth Sulfate |
-| Anfótero | suaviza y sostiene la espuma | Cocamidopropyl Betaine |
-| No iónico | suaviza y solubiliza | Decyl Glucoside |
-| Catiónico | acondiciona | Cetrimonium Chloride |
-
-## De sueltos a micelas
+El agua sola no moja la grasa. Un tensioactivo tiene una cabeza que ama el agua y una cola que ama la grasa, y se coloca entre las dos. Limpia de cuatro maneras: enrolla la grasa hasta desprenderla, la parte en gotas, la ablanda y la esconde dentro de micelas.
 
 :::: {.modelo data-escena="micelas"}
 
@@ -64,25 +29,103 @@ Pasada la concentración micelar crítica, las que sobran se juntan: colas adent
 :::
 
 ::: {.acto}
-Con sal, la CMC baja. La misma cantidad arma más micelas: con NaCl 0.10 M, la CMC del dodecilsulfato de sodio pasa de unos 8.2 a 1.49 mM.
+Con sal, la CMC baja. Con NaCl 0.10 M, la del dodecilsulfato de sodio pasa de unos 8.2 a 1.49 mM.
 :::
 
 ::: {.acto}
-Mueve la cantidad y la CMC.
-
-[Abrir el laboratorio](../laboratorio/sal-y-micelas.qmd): cuánta sal hace falta.
-
-[Abrir el laboratorio](../laboratorio/activo-de-un-champu.qmd): cuánto tensioactivo pesar.
+Mueve la cantidad y la CMC. [Laboratorio: sal y micelas](../laboratorio/sal-y-micelas.qmd).
 :::
 
 ::::
 
-## Por qué la sal espesa y luego adelgaza
+## Lección 2. Cuatro familias
 
-La sal reduce la repulsión entre cabezas, las micelas crecen y se enredan. Pasado un máximo se ramifican y la viscosidad cae. Traza tu curva con varias concentraciones de NaCl antes de fijar una.
+| Familia | Carga | Papel | Ejemplo |
+|---|---|---|---|
+| Aniónica | negativa | limpia y hace espuma | Sodium Laureth Sulfate |
+| Anfótera | cambia con el pH | suaviza y sostiene la espuma | Cocamidopropyl Betaine |
+| No iónica | ninguna | suave | Coco-Glucoside |
+| Catiónica | positiva | acondiciona | Cetrimonium Chloride |
 
-La concentración micelar crítica del dodecilsulfato de sodio a 25 °C es de 8.06 a 8.4 mM. Con NaCl 0.10 M baja a 1.49 mM.
+Un limpiador suele llevar un aniónico, hasta 10 % de activo, y un anfótero, de 1 a 5 %. Juntos forman micelas mixtas con menos carga: irritan menos y espesan más.
 
-## Referencias
+**La espuma engaña.** La cantidad de espuma no dice cuánto limpia.
 
-Codex CXS 210-1999 (ed. 2015). Baki 2023, ISBN 978-1-119-70977-0, pp. 191-203. Mukerjee y Mysels 1971, DOI [10.6028/NBS.NSRDS.36](https://doi.org/10.6028/NBS.NSRDS.36).
+**Por qué irrita.** El tensioactivo hincha las proteínas de la piel y se lleva lípidos. Los limpiadores con pH mayor que 8 la hinchan más.
+
+## Lección 3. Materia activa
+
+El tensioactivo se vende diluido. Para saber cuánto pesar:
+
+$$g = \frac{lote \times \%\,activo\ que\ quieres}{\%\,activo\ del\ ingrediente}$$
+
+**Ejemplo resuelto.** Quieres 500 g de gel con 8 % de SLES y tienes líquido al 27 %. Pesas 500 × 8/27 = 148.1 g. El agua que trae ese líquido cuenta como parte del agua de la fórmula.
+
+Usa la [calculadora](../calculadoras/activa.qmd) o el [laboratorio de activo](../laboratorio/activo-de-un-champu.qmd).
+
+**Cuidado.** En glucósidos, «sólidos» y «activo» no son lo mismo: el residuo seco incluye sal.
+
+## Lección 4. Espesar con sal
+
+La sal tapa la repulsión entre cabezas. Las micelas crecen, se enredan y el líquido espesa. Pasado un máximo se ramifican y la viscosidad cae. Más sal ya no la recupera.
+
+En una mezcla con 10 % total de betaína y SLES, 2 a 8, el máximo estuvo cerca de 0.6 % de NaCl. El tuyo será otro: traza tu curva en pasos de 0.2 %.
+
+Los glucósidos no espesan con sal. Se usa una goma o un polímero.
+
+## Lección 5. Jabón
+
+Grasa y base dan jabón y glicerina. El SAP dice cuánta base pide cada aceite:
+
+$$m_{NaOH} = \sum \frac{m_i\,SAP_i}{1000}\cdot\frac{40.00}{56.11}\,(1 - s)$$
+
+donde $s$ es el sobreengrase.
+
+:::: {.modelo data-escena="jabon"}
+
+::: {.acto}
+Una grasa es glicerina con tres cadenas.
+:::
+
+::: {.acto}
+Llega la lejía, que en jabonería es la solución de sosa: una base por cadena. El cloro de lavar es otra sustancia. **La sosa quema piel y ojos:** guantes, lentes y manga larga.
+:::
+
+::: {.acto}
+Quedan tres jabones y una glicerina.
+:::
+
+::: {.acto}
+El jabón mete la cola en la grasa y deja la cabeza en el agua. Así la arrastra.
+:::
+
+::::
+
+**Ejemplo resuelto.** 500 g de oliva con SAP 190 y 5 % de sobreengrase: 500 × 190/1000 × 40.00/56.11 × 0.95 = 64.3 g de NaOH.
+
+| Regla de seguridad | Por qué |
+|---|---|
+| La sosa se agrega al agua | al revés hierve y salpica |
+| Ventilación | suelta vapor irritante |
+| Balanza de 0.1 g | un error deja álcali libre |
+| Vinagre lejos | neutralizar sobre la piel da calor; se enjuaga con agua |
+
+Dureza, limpieza y cremosidad, como las dan las calculadoras populares, son sumas de ácidos grasos. Son convenciones. El SAP y el índice de yodo sí se miden.
+
+El pH de un jabón va de 8.5 a 11.0 según la fuente. Un syndet queda de 5.5 a 7.0.
+
+## Qué puedes hacer
+
+```{=html}
+<div class="tarjas" data-productos="limpieza"></div>
+```
+
+## Comprueba lo que aprendiste
+
+```{=html}
+<div data-preguntas="limpieza"></div>
+```
+
+## Fuentes
+
+Codex CXS 210-1999 (ed. 2015). Baki 2023, ISBN 978-1-119-70977-0, pp. 184-236. Mukerjee y Mysels 1971, DOI [10.6028/NBS.NSRDS.36](https://doi.org/10.6028/NBS.NSRDS.36). Thompson et al. 2023 y Mijaljica et al. 2022, citados en la nota 02 de la investigación.

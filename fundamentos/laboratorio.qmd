@@ -1,0 +1,63 @@
+---
+title: "En el laboratorio"
+toc: false
+page-layout: full
+---
+
+Lo que necesitas saber para que dos lotes salgan iguales y nadie se lastime.
+
+## Equipo mínimo
+
+| Equipo | Para qué | Mientras no lo tengas |
+|---|---|---|
+| Balanza de 0.01 g | conservantes y activos | lotes de 200 g con balanza de 0.1 g |
+| Medidor de pH | todo lo que lleve agua | tiras con paso de 0.5 |
+| Termómetro de sonda | fases calientes | ninguno lo reemplaza |
+| Batidora de mano o homogeneizador | emulsiones | agitación fuerte, gotas más grandes |
+| Vasos de vidrio y baño de agua | calentar parejo | olla con agua |
+| Guantes, lentes, bata y mascarilla | todo | nada los reemplaza |
+
+## Pesar
+
+1. Pon el vaso, espera a que se estabilice y lleva a cero.
+2. Agrega despacio. Lo que cae de más no se saca con la cuchara sucia: se anota.
+3. Escribe la masa real en la hoja, aunque sea distinta de la pedida.
+4. Pesa los líquidos en masa. Un mililitro de aceite pesa menos de un gramo.
+
+**Cuánto error hay.** Con balanza de ± 0.1 g, pesar 0.8 g lleva un error de 12 %. Pesar 8 g, de 1 %.
+
+## Limpiar y desinfectar
+
+1. Lava con detergente y enjuaga.
+2. Enjuaga con agua destilada.
+3. Rocía alcohol al 70 % y deja secar al aire.
+4. No toques el borde interior de los envases.
+
+## Medir pH
+
+1. Calibra con dos soluciones, por ejemplo pH 4 y 7, a la temperatura del laboratorio.
+2. Enjuaga la sonda y sécala sin frotar.
+3. En cremas, mide directo o diluye 1 a 10 en agua destilada. Anota cuál usaste: los números cambian.
+4. Para bajar el pH, ácido cítrico o láctico al 10 %. Para subirlo, sosa al 10 %. Gota a gota.
+
+## Seguridad
+
+| Riesgo | Qué haces |
+|---|---|
+| Sosa y potasa | guantes, lentes, manga larga; agrégalas al agua; si salpica, agua 15 min y atención médica |
+| Alcohol | sin llamas, con ventilación, lejos de enchufes |
+| Polvos finos | mascarilla; mezcla en recipiente cerrado |
+| Ceras calientes | no las dejes solas; usa baño de agua, no fuego directo |
+| Aceites esenciales puros | guantes; no van a la piel sin diluir |
+
+## Cambiar una cosa a la vez
+
+Haz un lote de control y otro con un solo cambio. Si cambias dos cosas y mejora, no sabes cuál fue. Prepara cada lote dos veces: si los duplicados no se parecen, el error está en tus manos.
+
+## Rotular
+
+Nombre, número de lote, fecha, quién lo hizo y la frase «sin ensayar». Guarda una muestra sin abrir de cada lote.
+
+## Fuentes
+
+Baki 2023, ISBN 978-1-119-70977-0, pp. 142-157. ISO 22716:2007 para buenas prácticas, conocida por resúmenes. Los procedimientos de pesada y limpieza son práctica de laboratorio docente.

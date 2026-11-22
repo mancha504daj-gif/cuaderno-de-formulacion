@@ -1,0 +1,65 @@
+---
+title: "Aceite corporal"
+toc: false
+page-layout: full
+---
+
+```{=html}
+<figure class="cabeza" style="--color:#b3245c" data-alto="baja"><div class="marco"><img src="../fotos/piel.jpg" alt="Frasco de crema abierto con su tapa azul"></div><h1>Aceite corporal</h1></figure>
+```
+
+[Cuidado de la piel](../piel/index.qmd). Mezcla de aceites, sin agua ni conservante. Forma: anhidro líquido.
+
+Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+
+## Aceite corporal ligero
+
+```{=html}
+<div data-receta="aceite-corporal-ligero"><p>Cargando.</p></div>
+```
+
+::: {.avisos}
+- Sin agua no necesita conservante, pero no debe entrarle agua.
+- Contiene aceite de frutos secos.
+:::
+
+### Por qué funciona
+
+Mezclar aceites que se extienden rápido, medio y lento da una sensación que dura. En un estudio, los aceites vegetales extendieron peor que los sintéticos y aumentaron más la hidratación.
+
+### Paso a paso
+
+1. Pesa los aceites en un vaso seco.
+2. Mezcla 5 min sin calentar.
+3. Agrega el tocoferol y mezcla.
+4. Filtra si ves partículas y envasa en vidrio oscuro.
+
+### Cómo saber si salió bien
+
+| Control | Meta | Cómo se mide |
+|---|---|---|
+| Aspecto | liso, sin granos ni gotas de aceite | a 24 h y a 7 días |
+| Dureza | registra la penetración | aguja o peso conocido |
+| Punto de fusión | registra el intervalo | capilar o baño con termómetro |
+| Calor | sin gotas en la superficie | 40 °C, 7 días |
+| Olor | sin rancio | a 1 y a 3 meses |
+
+### Si algo falla
+
+| Qué ves | Por qué | Qué hacer |
+|---|---|---|
+| Granos | enfrió despacio o la manteca cristalizó mal | funde otra vez y enfría más rápido |
+| Suda aceite | poca cera o demasiado aceite líquido | sube la cera de 1 en 1 % |
+| Se parte | demasiada cera dura | baja la cera y sube el aceite |
+| Huele rancio | oxidación | usa aceite fresco, tocoferol y envase lleno |
+
+### Qué puedes cambiar
+
+- Más CCT: más ligero.
+- Cambia almendras por jojoba si hay alergia.
+
+**Fuentes.** Aceites corporales: Ogorzalek et al. 2024, DOI 10.3390/app14072783. Proporciones propuestas en este proyecto.
+
+## Otros productos de esta sección
+
+[Loción corporal](locion-corporal.qmd), [Crema corporal](crema-corporal.qmd), [Crema facial](crema-facial.qmd), [Crema de manos](crema-de-manos.qmd), [Gel hidratante](gel-hidratante.qmd), [Sérum](serum.qmd), [Bálsamo labial](balsamo-labial.qmd), [Ungüento](unguento.qmd), [Manteca batida](manteca-batida.qmd), [Exfoliante](exfoliante.qmd), [Mascarilla de arcilla](mascarilla.qmd).

@@ -1,0 +1,65 @@
+---
+title: "Muestra mineral"
+toc: false
+page-layout: full
+---
+
+```{=html}
+<figure class="cabeza" style="--color:#8a5200" data-alto="baja"><div class="marco"><img src="../fotos/solar.jpg" alt="Una persona aplica protector a un niño"></div><h1>Muestra mineral</h1></figure>
+```
+
+[Protección solar](../solar/index.qmd). Para medir absorbancia en el laboratorio. No para la piel. Forma: emulsión W/O.
+
+Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+
+## Muestra mineral para medir
+
+```{=html}
+<div data-receta="muestra-mineral-para-medir"><p>Cargando.</p></div>
+```
+
+::: {.avisos}
+- Esta muestra se mide en el laboratorio. No la uses como protector: nadie ha medido su FPS y una película casera puede fallar.
+- Usa mascarilla: el polvo fino irrita los pulmones.
+:::
+
+### Por qué funciona
+
+El óxido de zinc protege si forma una película continua. Sirve para medir la absorbancia y calcular Mansur, y para ver cuánto cambia con la molienda. La película casera suele quedar dispareja, y ahí se quema la piel.
+
+### Paso a paso
+
+1. Muele el óxido de zinc con el aceite y el emulsionante hasta que no veas granos.
+2. Disuelve el sulfato y la glicerina en el agua.
+3. Agrega el agua al aceite en hilo fino, con agitación fuerte. Tarda 10 min.
+4. Homogeneiza 5 min y agrega la fase D.
+5. Guarda la muestra rotulada «para medir».
+
+### Cómo saber si salió bien
+
+| Control | Meta | Cómo se mide |
+|---|---|---|
+| Tipo de emulsión | W/O | gota en agua: no debe dispersarse; casi no conduce |
+| Aspecto | homogéneo | capa fina sobre vidrio |
+| Centrífuga | sin separación | 3000 rpm, 30 min |
+| Ciclos | sin separación | de tres a seis ciclos |
+| Microbiología | sin crecimiento | placas a t0 y a 28 días |
+
+### Si algo falla
+
+| Qué ves | Por qué | Qué hacer |
+|---|---|---|
+| Suelta agua | faltó cizalla o electrolito | agrega el agua más despacio y revisa la sal |
+| Se dispersa en agua | salió O/W | agrega el agua sobre el aceite y más lento |
+| Granos de polvo | pigmento sin mojar | muélelo antes con parte del aceite |
+
+### Qué puedes cambiar
+
+- Mide con zinc al 5, 10 y 15 %.
+- Compara molido y sin moler.
+
+**Fuentes.** Recetas caseras con FPS menor que 6: Couteau et al. 2021, DOI 10.1111/jocd.13783. Mansur et al. 1986, An. Bras. Dermatol. 61:121-124 (sin DOI). Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
+
+## Otros productos de esta sección
+
+[Gel para después del sol](gel-despues-del-sol.qmd), [Loción para después del sol](locion-despues-del-sol.qmd).

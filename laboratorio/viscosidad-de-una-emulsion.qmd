@@ -1,0 +1,9 @@
+---
+title: "Viscosidad de una emulsión"
+toc: false
+---
+
+```{=html}
+<div data-lab="viscosidad-de-una-emulsion"><p>Cargando.</p></div>
+<p><a href="../editor.html?lab=viscosidad-de-una-emulsion">Abrir en el editor</a></p>
+```

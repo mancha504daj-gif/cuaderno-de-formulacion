@@ -1,0 +1,91 @@
+{
+ "slug": "acorde-de-practica",
+ "titulo": "Acorde de práctica: cítrico, floral y madera",
+ "producto": "acorde",
+ "tipo": "alcohol",
+ "nivel": 1,
+ "tiempo": 30,
+ "lote": 10,
+ "pH": null,
+ "estado": "sin ensayar",
+ "porque": "Naranja sale primero, lavanda sostiene y cedro con vainillina quedan. Es un ejercicio para oír cómo cambia una mezcla.",
+ "fases": [
+  {
+   "nombre": "A",
+   "ingredientes": [
+    {
+     "id": "naranja",
+     "pct": 40
+    },
+    {
+     "id": "lavanda",
+     "pct": 35
+    },
+    {
+     "id": "cedro",
+     "pct": 17
+    },
+    {
+     "id": "vainillina",
+     "pct": 8
+    }
+   ]
+  }
+ ],
+ "pasos": [
+  "Pesa la vainillina en el frasco.",
+  "Agrega los aceites uno por uno, del más pesado al más ligero.",
+  "Agita hasta que la vainillina se disuelva. Si no lo hace, entibia el frasco cerrado en agua a 35 °C.",
+  "Huele en tira de papel a 0, 15 min, 1 h y 4 h y anota."
+ ],
+ "cambia": [
+  "Mueve naranja y cedro de 5 en 5 % y anota qué cambia."
+ ],
+ "controles": [
+  [
+   "Transparencia",
+   "límpido",
+   "a contraluz, a 20 y a 4 °C"
+  ],
+  [
+   "Color",
+   "sin cambio",
+   "una muestra a la luz y otra a oscuras"
+  ],
+  [
+   "Olor",
+   "anota a 0, 15 min, 1 h y 4 h",
+   "en tira de papel"
+  ],
+  [
+   "Densidad",
+   "registra",
+   "picnómetro"
+  ]
+ ],
+ "fallas": [
+  [
+   "Turbio",
+   "mucha agua para esa fragancia",
+   "sube el alcohol o filtra en frío"
+  ],
+  [
+   "Huele a alcohol",
+   "falta maceración",
+   "espera otra semana"
+  ],
+  [
+   "Cambia de color",
+   "vainillina o luz",
+   "frasco oscuro"
+  ]
+ ],
+ "avisos": [
+  "Puro no va en la piel.",
+  "Aporta limoneno, linalool y otros alérgenos que se declaran."
+ ],
+ "fuentes": [
+  "Volatilidad: presiones de vapor de PubChem, CID 22311, 6549 y 1183.",
+  "Alérgenos: Reglamento (UE) 2023/1545."
+ ]
+}

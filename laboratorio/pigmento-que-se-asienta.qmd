@@ -1,0 +1,9 @@
+---
+title: "Pigmento que se asienta"
+toc: false
+---
+
+```{=html}
+<div data-lab="pigmento-que-se-asienta"><p>Cargando.</p></div>
+<p><a href="../editor.html?lab=pigmento-que-se-asienta">Abrir en el editor</a></p>
+```

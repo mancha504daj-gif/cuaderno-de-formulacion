@@ -1,0 +1,70 @@
+---
+title: "Jabón líquido"
+toc: false
+page-layout: full
+---
+
+```{=html}
+<figure class="cabeza" style="--color:#4d5a2c" data-alto="baja"><div class="marco"><img src="../fotos/jabonera.jpg" alt="Pilas de jabón de Alepo curándose"></div><h1>Jabón líquido</h1></figure>
+```
+
+[Limpieza](../limpieza/index.qmd). Grasa y potasa, diluido. Forma: jabón potásico.
+
+Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+
+## Jabón líquido de oliva y coco
+
+```{=html}
+<div data-receta="jabon-liquido-de-oliva"><p>Cargando.</p></div>
+```
+
+::: {.avisos}
+- La potasa quema piel y ojos. Si te cae, enjuaga con agua 15 min y busca atención médica.
+- Diluido lleva agua a pH alto: aun así analiza microbios.
+:::
+
+### Por qué funciona
+
+La potasa da jabón blando que se disuelve en agua. Con KOH al 90 % hay que pesar más para poner la misma base.
+
+### Paso a paso
+
+1. Ponte guantes, lentes y manga larga. Trabaja con ventilación y sin niños ni mascotas cerca.
+2. Pesa el agua en un recipiente resistente al calor y la potasa aparte.
+3. Agrega la potasa al agua, poco a poco, y agita. Nunca al revés. Se calienta y suelta vapor: no lo respires.
+4. Deja que la lejía baje a unos 40 °C. Aquí lejía significa la solución de potasa; el cloro de lavar es otra sustancia.
+5. Funde los aceites sólidos, mézclalos con los líquidos y déjalos a unos 40 °C.
+6. Vierte la lejía sobre los aceites y mezcla con batidora de mano, a pulsos, hasta que una gota deje huella en la superficie.
+7. Calienta la pasta en baño de agua, tapada, unas 3 h. Mezcla cada 30 min hasta que quede translúcida.
+8. Disuelve 1 g en 10 mL de agua caliente: si queda transparente, terminó.
+9. Agrega el agua de dilución caliente y deja que se disuelva toda la noche.
+10. Mide el pH y deja reposar una semana.
+
+### Cómo saber si salió bien
+
+| Control | Meta | Cómo se mide |
+|---|---|---|
+| pH | de 9 a 10.5 | solución al 1 % |
+| Álcali libre | sin color con fenolftaleína en el centro | corta una barra y pon una gota; maneja el indicador con guantes |
+| Pérdida de peso | hasta que se estabilice | pesa la misma barra cada semana |
+| Espuma | altura a 0 y 5 min | probeta agitada, solución al 1 % |
+
+### Si algo falla
+
+| Qué ves | Por qué | Qué hacer |
+|---|---|---|
+| Polvo blanco en la superficie | ceniza de carbonato | cubre el molde y cura con menos aire |
+| Se separa en el molde | faltó mezclar o temperatura baja | vuelve a fundir y mezcla |
+| Pica o quema | álcali sin reaccionar | no lo uses; revisa la pesada y el SAP |
+| Queda blando | mucho aceite líquido o sobreengrase | cura más tiempo o sube el coco |
+
+### Qué puedes cambiar
+
+- Más coco: más espuma.
+- Más agua: más fluido. Este jabón no espesa con sal como un champú.
+
+**Fuentes.** SAP: Codex CXS 210-1999 y CXS 33 (ed. 2015); ricino, JECFA.
+
+## Otros productos de esta sección
+
+[Jabón en barra](jabon-en-barra.qmd), [Barra sin jabón](barra-sin-jabon.qmd), [Gel de ducha](gel-de-ducha.qmd), [Limpiador facial](limpiador-facial.qmd), [Agua micelar](agua-micelar.qmd), [Aceite desmaquillante](aceite-desmaquillante.qmd), [Bomba de baño](bomba-de-bano.qmd), [Desodorante](desodorante.qmd).

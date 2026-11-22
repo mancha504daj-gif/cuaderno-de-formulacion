@@ -1,0 +1,9 @@
+---
+title: "Activo de un champú"
+toc: false
+---
+
+```{=html}
+<div data-lab="activo-de-un-champu"><p>Cargando.</p></div>
+<p><a href="../editor.html?lab=activo-de-un-champu">Abrir en el editor</a></p>
+```

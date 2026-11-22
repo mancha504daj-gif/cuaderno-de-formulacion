@@ -1,0 +1,64 @@
+---
+title: "Aceite desmaquillante"
+toc: false
+page-layout: full
+---
+
+```{=html}
+<figure class="cabeza" style="--color:#4d5a2c" data-alto="baja"><div class="marco"><img src="../fotos/jabonera.jpg" alt="Pilas de jabón de Alepo curándose"></div><h1>Aceite desmaquillante</h1></figure>
+```
+
+[Limpieza](../limpieza/index.qmd). Aceite que se vuelve leche al mojarlo. Forma: anhidro emulsionable.
+
+Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+
+## Aceite desmaquillante enjuagable
+
+```{=html}
+<div data-receta="aceite-desmaquillante-enjuagable"><p>Cargando.</p></div>
+```
+
+::: {.avisos}
+- Evita los ojos.
+:::
+
+### Por qué funciona
+
+El aceite disuelve el maquillaje y el emulsionante lo vuelve enjuagable: al tocar el agua forma una leche.
+
+### Paso a paso
+
+1. Pesa los aceites y el Tween 85 en un vaso seco.
+2. Mezcla hasta que quede transparente.
+3. Agrega el tocoferol.
+4. Envasa con bomba. Se aplica en seco y se enjuaga.
+
+### Cómo saber si salió bien
+
+| Control | Meta | Cómo se mide |
+|---|---|---|
+| Aspecto | liso, sin granos ni gotas de aceite | a 24 h y a 7 días |
+| Dureza | registra la penetración | aguja o peso conocido |
+| Punto de fusión | registra el intervalo | capilar o baño con termómetro |
+| Calor | sin gotas en la superficie | 40 °C, 7 días |
+| Olor | sin rancio | a 1 y a 3 meses |
+
+### Si algo falla
+
+| Qué ves | Por qué | Qué hacer |
+|---|---|---|
+| Granos | enfrió despacio o la manteca cristalizó mal | funde otra vez y enfría más rápido |
+| Suda aceite | poca cera o demasiado aceite líquido | sube la cera de 1 en 1 % |
+| Se parte | demasiada cera dura | baja la cera y sube el aceite |
+| Huele rancio | oxidación | usa aceite fresco, tocoferol y envase lleno |
+
+### Qué puedes cambiar
+
+- Menos Tween: se enjuaga peor.
+- Cambia girasol por jojoba.
+
+**Fuentes.** HLB: Griffin 1949 y 1954, J. Soc. Cosmet. Chem. 1:311 y 5:249 (sin DOI). Proporciones propuestas en este proyecto.
+
+## Otros productos de esta sección
+
+[Jabón en barra](jabon-en-barra.qmd), [Jabón líquido](jabon-liquido.qmd), [Barra sin jabón](barra-sin-jabon.qmd), [Gel de ducha](gel-de-ducha.qmd), [Limpiador facial](limpiador-facial.qmd), [Agua micelar](agua-micelar.qmd), [Bomba de baño](bomba-de-bano.qmd), [Desodorante](desodorante.qmd).

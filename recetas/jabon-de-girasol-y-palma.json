@@ -1,0 +1,160 @@
+{
+ "slug": "jabon-de-girasol-y-palma",
+ "titulo": "Jabón de palma, girasol y coco",
+ "producto": "jabon-en-barra",
+ "tipo": "jabon",
+ "nivel": 2,
+ "tiempo": 60,
+ "lote": 733.4,
+ "pH": "9 a 10.5",
+ "estado": "sin ensayar",
+ "porque": "La palma da dureza, el coco espuma y el girasol suavidad. El girasol se enrancia antes: pocas barras por lote.",
+ "fases": [
+  {
+   "nombre": "A, aceites",
+   "ingredientes": [
+    {
+     "id": "palma",
+     "pct": 27.2694
+    },
+    {
+     "id": "girasol",
+     "pct": 20.4521
+    },
+    {
+     "id": "coco",
+     "pct": 20.4521
+    }
+   ]
+  },
+  {
+   "nombre": "B, lejía",
+   "ingredientes": [
+    {
+     "id": "agua",
+     "pct": 22.2785
+    },
+    {
+     "id": "naoh",
+     "pct": 9.5479
+    }
+   ]
+  }
+ ],
+ "jabon": {
+  "aceites": [
+   [
+    "palma",
+    200,
+    190
+   ],
+   [
+    "girasol",
+    150,
+    188
+   ],
+   [
+    "coco",
+    150,
+    248
+   ]
+  ],
+  "base": "NaOH",
+  "sobreengrase": 5,
+  "pureza": 100,
+  "lejia": 30
+ },
+ "pasos": [
+  "Ponte guantes, lentes y manga larga. Trabaja con ventilación y sin niños ni mascotas cerca.",
+  "Pesa el agua en un recipiente resistente al calor y la sosa aparte.",
+  "Agrega la sosa al agua, poco a poco, y agita. Nunca al revés. Se calienta y suelta vapor: no lo respires.",
+  "Deja que la lejía baje a unos 40 °C. Aquí lejía significa la solución de sosa; el cloro de lavar es otra sustancia.",
+  "Funde los aceites sólidos, mézclalos con los líquidos y déjalos a unos 40 °C.",
+  "Vierte la lejía sobre los aceites y mezcla con batidora de mano, a pulsos, hasta que una gota deje huella en la superficie.",
+  "Vacía en el molde, tapa y espera de 24 a 48 h.",
+  "Desmolda, corta y cura de 4 a 6 semanas en un lugar seco y ventilado.",
+  "Antes de usarlo, mide el pH de una solución al 1 %."
+ ],
+ "cambia": [
+  "Cambia palma por manteca de cerdo: SAP de 192 a 203, recalcula.",
+  "Girasol alto oleico: aguanta más."
+ ],
+ "controles": [
+  [
+   "pH",
+   "de 9 a 10.5",
+   "solución al 1 %"
+  ],
+  [
+   "Álcali libre",
+   "sin color con fenolftaleína en el centro",
+   "corta una barra y pon una gota; maneja el indicador con guantes"
+  ],
+  [
+   "Pérdida de peso",
+   "hasta que se estabilice",
+   "pesa la misma barra cada semana"
+  ],
+  [
+   "Espuma",
+   "altura a 0 y 5 min",
+   "probeta agitada, solución al 1 %"
+  ]
+ ],
+ "fallas": [
+  [
+   "Polvo blanco en la superficie",
+   "ceniza de carbonato",
+   "cubre el molde y cura con menos aire"
+  ],
+  [
+   "Se separa en el molde",
+   "faltó mezclar o temperatura baja",
+   "vuelve a fundir y mezcla"
+  ],
+  [
+   "Pica o quema",
+   "álcali sin reaccionar",
+   "no lo uses; revisa la pesada y el SAP"
+  ],
+  [
+   "Queda blando",
+   "mucho aceite líquido o sobreengrase",
+   "cura más tiempo o sube el coco"
+  ]
+ ],
+ "avisos": [
+  "La sosa quema piel y ojos. Si te cae, enjuaga con agua 15 min y busca atención médica."
+ ],
+ "fuentes": [
+  "SAP: Codex CXS 210-1999 y CXS 33 (ed. 2015); ricino, JECFA."
+ ],
+ "cuenta": {
+  "jabon": {
+   "aceites": [
+    [
+     "palma",
+     200,
+     190
+    ],
+    [
+     "girasol",
+     150,
+     188
+    ],
+    [
+     "coco",
+     150,
+     248
+    ]
+   ],
+   "base": "NaOH",
+   "sobreengrase": 5,
+   "pureza": 100,
+   "lejia": 30,
+   "gramos": 70,
+   "agua": 163.4,
+   "masa": 500
+  }
+ }
+}

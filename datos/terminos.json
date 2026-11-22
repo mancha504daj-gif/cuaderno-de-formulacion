@@ -1,0 +1,779 @@
+[
+ {
+  "id": "formula",
+  "palabra": "Fórmula",
+  "def": "Lista de ingredientes con su porcentaje en masa. Suma 100.",
+  "ej": "Una loción: 75 % agua, 16 % aceites, 4 % emulsionante y el resto.",
+  "secciones": [
+   "base"
+  ]
+ },
+ {
+  "id": "inci",
+  "palabra": "INCI",
+  "def": "Nombre internacional de un ingrediente cosmético. Es el que va en la etiqueta.",
+  "ej": "Aqua es el agua; Sodium Chloride, la sal.",
+  "secciones": [
+   "base"
+  ]
+ },
+ {
+  "id": "fase",
+  "palabra": "Fase",
+  "def": "Grupo de ingredientes que se mezclan juntos antes de unirlos a los demás.",
+  "ej": "Fase A: agua y glicerina. Fase B: aceites.",
+  "secciones": [
+   "base"
+  ]
+ },
+ {
+  "id": "csp",
+  "palabra": "C.s.p.",
+  "def": "Cantidad suficiente para: lo que falta para llegar a 100.",
+  "ej": "Agua c.s.p. 100.",
+  "secciones": [
+   "base"
+  ]
+ },
+ {
+  "id": "lote",
+  "palabra": "Lote",
+  "def": "La cantidad que preparas de una vez.",
+  "ej": "Un lote de prueba de 100 g.",
+  "secciones": [
+   "base"
+  ]
+ },
+ {
+  "id": "funcion",
+  "palabra": "Función",
+  "def": "Lo que hace un ingrediente dentro de la fórmula. Puede tener más de una.",
+  "ej": "El alcohol cetílico espesa y emulsiona.",
+  "secciones": [
+   "base"
+  ]
+ },
+ {
+  "id": "hidrofilo",
+  "palabra": "Hidrófilo",
+  "def": "Que prefiere el agua.",
+  "ej": "La glicerina.",
+  "secciones": [
+   "base",
+   "emulsiones"
+  ]
+ },
+ {
+  "id": "lipofilo",
+  "palabra": "Lipófilo",
+  "def": "Que prefiere el aceite.",
+  "ej": "La cera de abejas.",
+  "secciones": [
+   "base",
+   "emulsiones"
+  ]
+ },
+ {
+  "id": "ph",
+  "palabra": "pH",
+  "def": "Medida de acidez. De 0 a 7 es ácido, 7 es neutro y hasta 14 es alcalino.",
+  "ej": "La piel ronda de 4 a 6.",
+  "secciones": [
+   "base",
+   "limpieza",
+   "cabello"
+  ]
+ },
+ {
+  "id": "anhidro",
+  "palabra": "Anhidro",
+  "def": "Sin agua.",
+  "ej": "Un bálsamo labial.",
+  "secciones": [
+   "base",
+   "piel",
+   "maquillaje"
+  ]
+ },
+ {
+  "id": "viscosidad",
+  "palabra": "Viscosidad",
+  "def": "Resistencia a fluir. Se mide en pascal segundo.",
+  "ej": "La miel tiene más que el agua.",
+  "secciones": [
+   "base",
+   "emulsiones"
+  ]
+ },
+ {
+  "id": "conservante",
+  "palabra": "Conservante",
+  "def": "Ingrediente que frena bacterias y hongos.",
+  "ej": "Fenoxietanol.",
+  "secciones": [
+   "base"
+  ]
+ },
+ {
+  "id": "antioxidante",
+  "palabra": "Antioxidante",
+  "def": "Frena que los aceites se enrancien. No mata microbios.",
+  "ej": "Tocoferol.",
+  "secciones": [
+   "base"
+  ]
+ },
+ {
+  "id": "estabilidad",
+  "palabra": "Estabilidad",
+  "def": "Que el producto no cambie con el tiempo, el calor o el frío.",
+  "ej": "Ciclos de −10 a 40 °C.",
+  "secciones": [
+   "base"
+  ]
+ },
+ {
+  "id": "balsamo",
+  "palabra": "Bálsamo",
+  "def": "En este sitio, un producto sin agua, sólido o semisólido.",
+  "ej": "Bálsamo labial.",
+  "secciones": [
+   "piel"
+  ]
+ },
+ {
+  "id": "emulsion",
+  "palabra": "Emulsión",
+  "def": "Gotas de un líquido repartidas dentro de otro con el que no se mezcla.",
+  "ej": "La leche: grasa en agua.",
+  "secciones": [
+   "emulsiones",
+   "piel"
+  ]
+ },
+ {
+  "id": "ow",
+  "palabra": "O/W",
+  "def": "Aceite en agua: las gotas son de aceite. Se enjuaga y se siente ligera.",
+  "ej": "Casi todas las lociones.",
+  "secciones": [
+   "emulsiones",
+   "piel"
+  ]
+ },
+ {
+  "id": "wo",
+  "palabra": "W/O",
+  "def": "Agua en aceite: las gotas son de agua. Resiste el agua y se siente más grasa.",
+  "ej": "Muchas bases de maquillaje.",
+  "secciones": [
+   "emulsiones",
+   "piel",
+   "maquillaje"
+  ]
+ },
+ {
+  "id": "emulsionante",
+  "palabra": "Emulsionante",
+  "def": "Molécula con una parte que ama el agua y otra que ama el aceite. Se coloca entre los dos.",
+  "ej": "Tween 80.",
+  "secciones": [
+   "emulsiones",
+   "piel"
+  ]
+ },
+ {
+  "id": "hlb",
+  "palabra": "HLB",
+  "def": "Balance hidrófilo lipófilo. Escala de 0 a 20 para emulsionantes no iónicos: bajo ama el aceite, alto ama el agua.",
+  "ej": "Span 80 tiene 4.3 y Tween 80 tiene 15.0.",
+  "secciones": [
+   "emulsiones",
+   "piel"
+  ]
+ },
+ {
+  "id": "hlbreq",
+  "palabra": "HLB requerido",
+  "def": "El HLB que necesita un aceite para formar una emulsión estable.",
+  "ej": "Almendras, de 6 a 7.",
+  "secciones": [
+   "emulsiones"
+  ]
+ },
+ {
+  "id": "cremado",
+  "palabra": "Cremado",
+  "def": "Las gotas suben porque pesan menos que el agua. Vuelve al agitar.",
+  "ej": "La nata de la leche.",
+  "secciones": [
+   "emulsiones"
+  ]
+ },
+ {
+  "id": "coalescencia",
+  "palabra": "Coalescencia",
+  "def": "Dos gotas se funden en una. No tiene vuelta.",
+  "ej": "Aceite flotando sobre una crema vieja.",
+  "secciones": [
+   "emulsiones"
+  ]
+ },
+ {
+  "id": "floculacion",
+  "palabra": "Floculación",
+  "def": "Las gotas se agrupan sin fundirse. Vuelve al agitar.",
+  "ej": "Grumos blandos.",
+  "secciones": [
+   "emulsiones"
+  ]
+ },
+ {
+  "id": "ostwald",
+  "palabra": "Maduración de Ostwald",
+  "def": "Las gotas pequeñas se disuelven y alimentan a las grandes.",
+  "ej": "Emulsiones con aceites algo solubles.",
+  "secciones": [
+   "emulsiones"
+  ]
+ },
+ {
+  "id": "cizalla",
+  "palabra": "Cizalla",
+  "def": "Esfuerzo que hace resbalar una capa sobre otra.",
+  "ej": "Frotar crema en la piel.",
+  "secciones": [
+   "emulsiones"
+  ]
+ },
+ {
+  "id": "pseudoplastico",
+  "palabra": "Pseudoplástico",
+  "def": "Se adelgaza al frotarlo y recupera cuerpo en reposo.",
+  "ej": "La goma xantana.",
+  "secciones": [
+   "emulsiones",
+   "piel"
+  ]
+ },
+ {
+  "id": "fluencia",
+  "palabra": "Esfuerzo de fluencia",
+  "def": "El empujón mínimo para que empiece a fluir.",
+  "ej": "La pasta de dientes.",
+  "secciones": [
+   "emulsiones"
+  ]
+ },
+ {
+  "id": "corneo",
+  "palabra": "Estrato córneo",
+  "def": "La capa externa de la piel: células planas con lípidos entre ellas.",
+  "ej": "Como ladrillos con mortero.",
+  "secciones": [
+   "piel"
+  ]
+ },
+ {
+  "id": "corneocito",
+  "palabra": "Corneocito",
+  "def": "Célula plana y muerta de la capa externa.",
+  "ej": "",
+  "secciones": [
+   "piel"
+  ]
+ },
+ {
+  "id": "tewl",
+  "palabra": "Pérdida de agua transepidérmica",
+  "def": "Agua que sale de la piel por evaporación. Se mide en g/m² h.",
+  "ej": "Sube con aire seco.",
+  "secciones": [
+   "piel"
+  ]
+ },
+ {
+  "id": "nmf",
+  "palabra": "Factor natural de hidratación",
+  "def": "Moléculas que retienen agua dentro del corneocito. Cerca de la mitad son aminoácidos.",
+  "ej": "Lactato, urea.",
+  "secciones": [
+   "piel"
+  ]
+ },
+ {
+  "id": "humectante",
+  "palabra": "Humectante",
+  "def": "Atrae agua.",
+  "ej": "Glicerina.",
+  "secciones": [
+   "piel"
+  ]
+ },
+ {
+  "id": "emoliente",
+  "palabra": "Emoliente",
+  "def": "Rellena y suaviza.",
+  "ej": "Triglicérido caprílico/cáprico.",
+  "secciones": [
+   "piel"
+  ]
+ },
+ {
+  "id": "oclusivo",
+  "palabra": "Oclusivo",
+  "def": "Forma una película que frena la salida de agua.",
+  "ej": "Vaselina.",
+  "secciones": [
+   "piel"
+  ]
+ },
+ {
+  "id": "activo",
+  "palabra": "Activo",
+  "def": "Ingrediente que se pone por un efecto concreto.",
+  "ej": "Niacinamida.",
+  "secciones": [
+   "piel"
+  ]
+ },
+ {
+  "id": "serum",
+  "palabra": "Sérum",
+  "def": "Producto fluido con activos en dosis más alta.",
+  "ej": "",
+  "secciones": [
+   "piel"
+  ]
+ },
+ {
+  "id": "tensioactivo",
+  "palabra": "Tensioactivo",
+  "def": "Molécula con cabeza que ama el agua y cola que ama la grasa. Limpia, hace espuma o emulsiona.",
+  "ej": "Sodium Laureth Sulfate.",
+  "secciones": [
+   "limpieza",
+   "cabello"
+  ]
+ },
+ {
+  "id": "anionico",
+  "palabra": "Aniónico",
+  "def": "Tensioactivo con carga negativa: limpia y hace espuma.",
+  "ej": "SLES.",
+  "secciones": [
+   "limpieza",
+   "cabello"
+  ]
+ },
+ {
+  "id": "cationico",
+  "palabra": "Catiónico",
+  "def": "Tensioactivo con carga positiva: se pega al cabello y lo suaviza.",
+  "ej": "Cloruro de cetrimonio.",
+  "secciones": [
+   "cabello",
+   "limpieza"
+  ]
+ },
+ {
+  "id": "anfotero",
+  "palabra": "Anfótero",
+  "def": "Cambia de carga con el pH. Suaviza la mezcla.",
+  "ej": "Cocamidopropil betaína.",
+  "secciones": [
+   "limpieza",
+   "cabello"
+  ]
+ },
+ {
+  "id": "noionico",
+  "palabra": "No iónico",
+  "def": "Sin carga. Suave.",
+  "ej": "Coco glucósido.",
+  "secciones": [
+   "limpieza",
+   "cabello"
+  ]
+ },
+ {
+  "id": "micela",
+  "palabra": "Micela",
+  "def": "Grupo de tensioactivos con las colas hacia adentro. Ahí se esconde la grasa.",
+  "ej": "",
+  "secciones": [
+   "limpieza"
+  ]
+ },
+ {
+  "id": "cmc",
+  "palabra": "CMC",
+  "def": "Concentración micelar crítica: desde ahí se forman micelas.",
+  "ej": "Dodecilsulfato de sodio, cerca de 8.2 mM.",
+  "secciones": [
+   "limpieza"
+  ]
+ },
+ {
+  "id": "materiaactiva",
+  "palabra": "Materia activa",
+  "def": "La parte del ingrediente que es tensioactivo. El resto es agua.",
+  "ej": "SLES líquido: 27 %.",
+  "secciones": [
+   "limpieza",
+   "cabello"
+  ]
+ },
+ {
+  "id": "curvasal",
+  "palabra": "Curva de sal",
+  "def": "Cómo cambia la viscosidad al agregar sal: sube hasta un máximo y luego baja.",
+  "ej": "",
+  "secciones": [
+   "limpieza",
+   "cabello"
+  ]
+ },
+ {
+  "id": "jabon",
+  "palabra": "Jabón",
+  "def": "Sal de un ácido graso. Se hace con grasa y una base.",
+  "ej": "",
+  "secciones": [
+   "limpieza"
+  ]
+ },
+ {
+  "id": "saponificacion",
+  "palabra": "Saponificación",
+  "def": "Reacción de una grasa con una base. Da jabón y glicerina.",
+  "ej": "",
+  "secciones": [
+   "limpieza"
+  ]
+ },
+ {
+  "id": "sap",
+  "palabra": "SAP",
+  "def": "Miligramos de KOH que saponifican un gramo de grasa.",
+  "ej": "Coco: de 248 a 265.",
+  "secciones": [
+   "limpieza"
+  ]
+ },
+ {
+  "id": "sobreengrase",
+  "palabra": "Sobreengrase",
+  "def": "Parte del aceite que dejas sin reaccionar a propósito.",
+  "ej": "5 %.",
+  "secciones": [
+   "limpieza"
+  ]
+ },
+ {
+  "id": "lejia",
+  "palabra": "Lejía",
+  "def": "En jabonería, la solución de sosa o potasa en agua. El cloro de lavar es otra cosa.",
+  "ej": "",
+  "secciones": [
+   "limpieza"
+  ]
+ },
+ {
+  "id": "curado",
+  "palabra": "Curado",
+  "def": "Semanas en que el jabón pierde agua y termina de reaccionar.",
+  "ej": "",
+  "secciones": [
+   "limpieza"
+  ]
+ },
+ {
+  "id": "syndet",
+  "palabra": "Syndet",
+  "def": "Barra o líquido limpiador sin jabón, hecho con tensioactivos sintéticos.",
+  "ej": "",
+  "secciones": [
+   "limpieza"
+  ]
+ },
+ {
+  "id": "uvb",
+  "palabra": "UVB",
+  "def": "Radiación de 290 a 320 nm. Quema.",
+  "ej": "",
+  "secciones": [
+   "solar"
+  ]
+ },
+ {
+  "id": "uva",
+  "palabra": "UVA",
+  "def": "Radiación de 320 a 400 nm. Penetra más y envejece.",
+  "ej": "",
+  "secciones": [
+   "solar"
+  ]
+ },
+ {
+  "id": "fps",
+  "palabra": "FPS",
+  "def": "Cuántas veces más dosis hace falta para quemar la piel con protector.",
+  "ej": "FPS 30 deja pasar cerca de 3 %.",
+  "secciones": [
+   "solar"
+  ]
+ },
+ {
+  "id": "filtro",
+  "palabra": "Filtro UV",
+  "def": "Ingrediente que absorbe o dispersa radiación ultravioleta.",
+  "ej": "Óxido de zinc.",
+  "secciones": [
+   "solar"
+  ]
+ },
+ {
+  "id": "organico",
+  "palabra": "Filtro orgánico",
+  "def": "Absorbe la radiación y suelta la energía como calor.",
+  "ej": "Avobenzona.",
+  "secciones": [
+   "solar"
+  ]
+ },
+ {
+  "id": "inorganico",
+  "palabra": "Filtro inorgánico",
+  "def": "Partícula que absorbe y dispersa.",
+  "ej": "Dióxido de titanio.",
+  "secciones": [
+   "solar"
+  ]
+ },
+ {
+  "id": "absorbancia",
+  "palabra": "Absorbancia",
+  "def": "Logaritmo de cuánta luz detiene una muestra. A = −log T.",
+  "ej": "",
+  "secciones": [
+   "solar"
+  ]
+ },
+ {
+  "id": "criticalw",
+  "palabra": "Longitud de onda crítica",
+  "def": "Donde se junta el 90 % de la protección desde 290 nm. La UE pide al menos 370 nm.",
+  "ej": "",
+  "secciones": [
+   "solar"
+  ]
+ },
+ {
+  "id": "pigmento",
+  "palabra": "Pigmento",
+  "def": "Partícula de color que no se disuelve.",
+  "ej": "Óxido de hierro.",
+  "secciones": [
+   "maquillaje"
+  ]
+ },
+ {
+  "id": "lacaq",
+  "palabra": "Laca",
+  "def": "Colorante fijado sobre un sólido para que no se disuelva.",
+  "ej": "CI 15850.",
+  "secciones": [
+   "maquillaje"
+  ]
+ },
+ {
+  "id": "carga",
+  "palabra": "Carga",
+  "def": "Polvo que da cuerpo, desliza o absorbe.",
+  "ej": "Mica, sílice.",
+  "secciones": [
+   "maquillaje"
+  ]
+ },
+ {
+  "id": "aglutinante",
+  "palabra": "Aglutinante",
+  "def": "Une el polvo al comprimirlo.",
+  "ej": "Estearato de zinc con aceite.",
+  "secciones": [
+   "maquillaje"
+  ]
+ },
+ {
+  "id": "nacarado",
+  "palabra": "Nacarado",
+  "def": "Lámina que refleja la luz. Se rompe si la mueles.",
+  "ej": "",
+  "secciones": [
+   "maquillaje"
+  ]
+ },
+ {
+  "id": "dispersion",
+  "palabra": "Dispersión",
+  "def": "Repartir partículas y mantenerlas separadas: humectar, desaglomerar, estabilizar.",
+  "ej": "",
+  "secciones": [
+   "maquillaje"
+  ]
+ },
+ {
+  "id": "cesion",
+  "palabra": "Cesión",
+  "def": "Cuánto color suelta un polvo o una barra.",
+  "ej": "",
+  "secciones": [
+   "maquillaje"
+  ]
+ },
+ {
+  "id": "bleeding",
+  "palabra": "Sangrado",
+  "def": "El aceite del labial corre por las arrugas.",
+  "ej": "",
+  "secciones": [
+   "maquillaje"
+  ]
+ },
+ {
+  "id": "queratina",
+  "palabra": "Queratina",
+  "def": "Proteína del cabello y la piel.",
+  "ej": "",
+  "secciones": [
+   "cabello"
+  ]
+ },
+ {
+  "id": "cuticula",
+  "palabra": "Cutícula",
+  "def": "Escamas que cubren la fibra del cabello.",
+  "ej": "",
+  "secciones": [
+   "cabello"
+  ]
+ },
+ {
+  "id": "isoelectrico",
+  "palabra": "Punto isoeléctrico",
+  "def": "pH donde una superficie no tiene carga neta.",
+  "ej": "Cabello, cerca de 3.67.",
+  "secciones": [
+   "cabello"
+  ]
+ },
+ {
+  "id": "acondicionar",
+  "palabra": "Acondicionar",
+  "def": "Bajar fricción y estática del cabello.",
+  "ej": "",
+  "secciones": [
+   "cabello"
+  ]
+ },
+ {
+  "id": "coacervado",
+  "palabra": "Coacervado",
+  "def": "Complejo que precipita al diluir y se deposita en la fibra.",
+  "ej": "",
+  "secciones": [
+   "cabello"
+  ]
+ },
+ {
+  "id": "salida",
+  "palabra": "Notas de salida",
+  "def": "Lo que hueles primero y se va antes.",
+  "ej": "Cítricos.",
+  "secciones": [
+   "fragancias"
+  ]
+ },
+ {
+  "id": "corazon",
+  "palabra": "Notas de corazón",
+  "def": "Lo que queda cuando se van las de salida.",
+  "ej": "Florales.",
+  "secciones": [
+   "fragancias"
+  ]
+ },
+ {
+  "id": "fondo",
+  "palabra": "Notas de fondo",
+  "def": "Lo que dura más.",
+  "ej": "Maderas, vainilla.",
+  "secciones": [
+   "fragancias"
+  ]
+ },
+ {
+  "id": "acorde",
+  "palabra": "Acorde",
+  "def": "Varios aromas que suenan como uno.",
+  "ej": "",
+  "secciones": [
+   "fragancias"
+  ]
+ },
+ {
+  "id": "fijador",
+  "palabra": "Fijador",
+  "def": "Ingrediente poco volátil que frena a los demás.",
+  "ej": "",
+  "secciones": [
+   "fragancias"
+  ]
+ },
+ {
+  "id": "presionvapor",
+  "palabra": "Presión de vapor",
+  "def": "Cuánto tiende a evaporarse una sustancia.",
+  "ej": "Limoneno 1.55 mmHg; vainillina 0.000118.",
+  "secciones": [
+   "fragancias"
+  ]
+ },
+ {
+  "id": "alergeno",
+  "palabra": "Alérgeno",
+  "def": "Sustancia que puede sensibilizar y se declara.",
+  "ej": "Linalool.",
+  "secciones": [
+   "fragancias"
+  ]
+ },
+ {
+  "id": "fototoxico",
+  "palabra": "Fototóxico",
+  "def": "Reacciona con el sol y quema la piel.",
+  "ej": "Bergamota exprimida.",
+  "secciones": [
+   "fragancias"
+  ]
+ },
+ {
+  "id": "ifra",
+  "palabra": "IFRA",
+  "def": "Asociación que fija límites de uso para fragancias.",
+  "ej": "",
+  "secciones": [
+   "fragancias"
+  ]
+ },
+ {
+  "id": "maceracion",
+  "palabra": "Maceración",
+  "def": "Semanas de reposo para que el perfume se integre.",
+  "ej": "",
+  "secciones": [
+   "fragancias"
+  ]
+ }
+]
