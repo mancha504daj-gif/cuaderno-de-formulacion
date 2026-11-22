@@ -8,9 +8,9 @@ page-layout: full
 <figure class="cabeza" style="--color:#b3245c" data-alto="baja"><div class="marco"><img src="../fotos/piel.jpg" alt="Frasco de crema abierto con su tapa azul"></div><h1>Aceite corporal</h1></figure>
 ```
 
-[Cuidado de la piel](../piel/index.qmd). Mezcla de aceites, sin agua ni conservante. Forma: anhidro líquido.
+[Cuidado de la piel](../piel/index.qmd). Mezcla de emolientes sin agua libre. Forma: anhidro líquido.
 
-Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+Las recetas son propuestas de este proyecto y **están sin ensayar**. Se presentan como hipótesis de trabajo para contrastar en el laboratorio.
 
 ## Aceite corporal ligero
 
@@ -19,46 +19,46 @@ Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. 
 ```
 
 ::: {.avisos}
-- Sin agua no necesita conservante, pero no debe entrarle agua.
+- Sistema anhidro, sin conservante. Evitar el ingreso de agua.
 - Contiene aceite de frutos secos.
 :::
 
-### Por qué funciona
+### Fundamento
 
-Mezclar aceites que se extienden rápido, medio y lento da una sensación que dura. En un estudio, los aceites vegetales extendieron peor que los sintéticos y aumentaron más la hidratación.
+La mezcla combina emolientes de extensibilidad alta, media y baja para modular la sensación en el tiempo. En un ensayo los aceites vegetales se extendieron menos que los sintéticos y aumentaron más la hidratación.
 
-### Paso a paso
+### Procedimiento
 
-1. Pesa los aceites en un vaso seco.
-2. Mezcla 5 min sin calentar.
-3. Agrega el tocoferol y mezcla.
-4. Filtra si ves partículas y envasa en vidrio oscuro.
+1. Pesar los aceites en un vaso seco.
+2. Mezclar 5 min sin calentar.
+3. Agregar el tocoferol y mezclar.
+4. Filtrar si hay partículas y envasar en vidrio oscuro.
 
-### Cómo saber si salió bien
+### Control de calidad
 
-| Control | Meta | Cómo se mide |
+| Determinación | Especificación | Método |
 |---|---|---|
 | Aspecto | liso, sin granos ni gotas de aceite | a 24 h y a 7 días |
-| Dureza | registra la penetración | aguja o peso conocido |
-| Punto de fusión | registra el intervalo | capilar o baño con termómetro |
+| Dureza | registrar la penetración | aguja o peso conocido |
+| Punto de fusión | registrar el intervalo | capilar o baño con termómetro |
 | Calor | sin gotas en la superficie | 40 °C, 7 días |
 | Olor | sin rancio | a 1 y a 3 meses |
 
-### Si algo falla
+### Diagnóstico de fallas
 
-| Qué ves | Por qué | Qué hacer |
+| Observación | Causa probable | Acción correctiva |
 |---|---|---|
-| Granos | enfrió despacio o la manteca cristalizó mal | funde otra vez y enfría más rápido |
-| Suda aceite | poca cera o demasiado aceite líquido | sube la cera de 1 en 1 % |
-| Se parte | demasiada cera dura | baja la cera y sube el aceite |
-| Huele rancio | oxidación | usa aceite fresco, tocoferol y envase lleno |
+| Granos | enfrió despacio o la manteca cristalizó mal | fundir otra vez y enfriar más rápido |
+| Exudación de aceite | poca cera o demasiado aceite líquido | aumentar la cera de 1 en 1 % |
+| Fractura | demasiada cera dura | reducir la cera y aumentar el aceite |
+| Olor rancio | oxidación | usar aceite fresco, tocoferol y envase lleno |
 
-### Qué puedes cambiar
+### Variables de estudio
 
 - Más CCT: más ligero.
-- Cambia almendras por jojoba si hay alergia.
+- Sustituir almendras por jojoba si hay alergia.
 
-**Fuentes.** Aceites corporales: Ogorzalek et al. 2024, DOI 10.3390/app14072783. Proporciones propuestas en este proyecto.
+**Referencias.** Aceites corporales: Ogorzalek et al. 2024, DOI 10.3390/app14072783. Proporciones propuestas en este proyecto.
 
 ## Otros productos de esta sección
 

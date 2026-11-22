@@ -8,90 +8,112 @@ page-layout: full
 <figure class="cabeza" style="--color:#00616f"><div class="marco"><img src="../fotos/champu.jpg" alt="Champú sólido con espuma"></div><h1>Cabello</h1></figure>
 ```
 
-Aquí aprendes cómo es la fibra, por qué un champú limpia y por qué un acondicionador se queda.
+La fibra capilar es un material sin actividad biológica cuya superficie cambia de carga con el pH. Esta sección usa esa propiedad para explicar el depósito de acondicionadores y el diseño de champús.
 
-## Las palabras que vas a usar
+## Objetivos de aprendizaje
+
+1. Describir la cutícula y las consecuencias de su daño.
+2. Relacionar punto isoeléctrico, pH y adsorción de catiónicos.
+3. Explicar la coacervación en un champú y la red laminar en un acondicionador.
+4. Verificar el cumplimiento de límites expresados como activo.
+
+## Vocabulario
 
 {{< include ../_inc/terminos-cabello.md >}}
 
-## Lección 1. La fibra
+## Lección 1. Estructura de la fibra
 
-El cabello es queratina cubierta de escamas, la cutícula. No está vivo: lo que se daña no se repara, se cubre. El roce, el calor y los tintes levantan o arrancan escamas, y una superficie dispareja se enreda y pierde brillo.
+El cabello es queratina organizada en corteza y cubierta por escamas superpuestas, la cutícula. La parte visible no se regenera. El roce, el calor y los tratamientos oxidantes levantan o desprenden escamas; aumentan la fricción, la electricidad estática y la dispersión de luz. Un acondicionador recubre y lubrica esa superficie [@gavazzoni2015].
 
-## Lección 2. La carga
+## Lección 2. Carga superficial
 
 :::: {.modelo data-escena="cabello"}
 
 ::: {.acto}
-Por encima de pH 3.67 la fibra queda negativa. Los catiónicos buscan esas cargas y dejan sus colas hacia afuera.
+Con pH mayor que 3.67 la fibra tiene carga neta negativa. Los catiónicos se adsorben y orientan sus colas hacia afuera.
 :::
 
 ::: {.acto}
-Cerca del punto isoeléctrico casi no hay carga, y se sueltan.
+Cerca del punto isoeléctrico la carga neta se anula y la adsorción disminuye.
 :::
 
 ::: {.acto}
-A más pH, más sitios negativos. Mueve tú el pH.
+Al subir el pH aumentan los sitios negativos. Varíe el pH y observe.
 :::
 
 ::::
 
-El cabello decolorado tiene más sitios negativos y une más acondicionador. El valor 3.67 viene de un grupo de autores; otros podrían dar algo menos.
+El valor 3.67 procede de un grupo de autores [@gavazzoni2015]. El cabello decolorado tiene un punto isoeléctrico menor, más sitios negativos y mayor adsorción de acondicionador.
 
-En 123 champús comerciales el pH iba de 3.5 a 9.0. Solo 38 % tenía 5.5 o menos.
+En 123 champús comerciales el pH varió de 3.5 a 9.0 y solo 38 % tenía 5.5 o menos [@gavazzoni2014]. Un pH alto aumenta la carga negativa y con ella la repulsión entre fibras y la fricción.
 
-## Lección 3. Un champú
+## Lección 3. Champú
 
-| Parte | Activo |
-|---|---|
-| Aniónico | 8 a 10 % |
-| Anfótero | 1 a 5 % |
-| Polímero catiónico | 0.1 a 0.3 % |
-| Sal | según la curva |
-| Conservante y ácido | según pH |
-
-El polímero catiónico se junta con las micelas. Al enjuagar, el complejo se rompe, precipita y se deposita en la fibra: es un coacervado. Así un champú deja algo de acondicionador.
-
-No hay datos publicados de que un champú sin sulfato dañe menos el cabello.
-
-**Ejemplo resuelto.** 250 g de champú con 9 % de SLES, del líquido al 27 %: 250 × 9/27 = 83.3 g.
-
-## Lección 4. Un acondicionador
-
-Un catiónico y un alcohol graso de cadena larga forman láminas. El alcohol graso es la columna y el catiónico lo pega a la fibra.
-
-| Función | Ejemplo | % |
+| Componente | Activo (%) | Función |
 |---|---|---|
-| alcohol graso | Cetyl o Stearyl Alcohol | 2.5 a 6.0 |
-| amidoamina | Stearamidopropyl Dimethylamine | 1.0 a 1.5 |
-| cuaternario | Distearyldimonium Chloride | 0.75 a 1.0 |
-| ajuste de pH | Citric Acid | 0.2 |
+| Aniónico | 8 a 10 | detergencia |
+| Anfótero | 1 a 5 | suavidad, viscosidad |
+| Polímero catiónico | 0.1 a 0.3 | depósito al enjuagar |
+| NaCl | según curva | viscosidad |
+| Conservante y ácido | según pH | protección y ajuste |
 
-La amidoamina no tiene carga hasta que la neutralizas con ácido. Por eso el pH baja a 4 o 4.5.
+Los intervalos de tensioactivo siguen a Thompson y colaboradores [@thompson2023]; el del polímero es una propuesta.
 
-**Error frecuente.** Espesar con goma xantana. Es aniónica y precipita con el catiónico.
+**Coacervación.** El polímero catiónico se asocia con las micelas aniónicas en un complejo soluble. Al enjuagar, la dilución lo saca de la zona soluble, se separa una fase rica en polímero y se deposita en la fibra.
 
-## Lección 5. Límites europeos
+**Sulfatos.** No hay datos publicados sobre daño capilar o poder limpiador de los champús sin sulfato que permitan afirmar una ventaja [@gavazzoni2015].
+
+**Ejemplo resuelto.** 250 g de champú con 9 % de SLES a partir de un líquido al 27 %: 250 × 9/27 = 83.3 g.
+
+## Lección 4. Acondicionador
+
+Un catiónico de cadena larga y un alcohol graso forman una red de gel laminar. El alcohol graso construye la bicapa y lubrica; el catiónico le da carga y la fija a la fibra.
+
+| Función | Ejemplo | Contenido (%) |
+|---|---|---|
+| Alcohol graso | Cetyl o Stearyl Alcohol | 2.5 a 6.0 |
+| Amidoamina | Stearamidopropyl Dimethylamine | 1.0 a 1.5 |
+| Cuaternario | Distearyldimonium Chloride | 0.75 a 1.0 |
+| Ácido | Citric Acid | 0.2 |
+
+Los valores son del manual de Barel, Paye y Maibach [@barel2009, pp. 690-691].
+
+**Neutralización.** La amidoamina es una base sin carga. El ácido la protona y la convierte en catiónico, y por eso el producto queda a pH 4 a 4.5. La cantidad de ácido se fija con una titulación de la base, agregando ácido cítrico al 10 % y registrando el pH.
+
+**Incompatibilidad.** La goma xantana es aniónica y precipita con el catiónico. Se espesa con alcohol graso o con hidroxietilcelulosa.
+
+**Evaluación.** La fuerza de peinado en húmedo, medida con dinamómetro sobre mechones de la misma procedencia, compara tratamientos. Se asignan al azar y se trabaja con seis mechones por tratamiento como mínimo.
+
+## Lección 5. Límites reglamentarios
 
 | Ingrediente | Con enjuague | Sin enjuague |
 |---|---|---|
-| Cetrimonium Chloride | 2.5 % | 1.0 % en cabello, 0.5 % en cara |
+| Cetrimonium Chloride | 2.5 % | 1.0 % en cabello; 0.5 % en cara |
 | Behentrimonium Chloride | 5.0 % | 3.0 % |
 
-Se cuentan como activo. Un cetrimonio al 25 % puesto al 2.8 % aporta 0.7 %.
+Son porcentajes de activo [@cosing]. El límite del cetrimonio incluye la suma con Steartrimonium Chloride.
 
-## Qué puedes hacer
+**Ejemplo resuelto.** Cetrimonio comercial al 25 %, usado al 2.8 % en una crema sin enjuague: 0.25 × 2.8 = 0.70 % de activo, por debajo de 1.0 %.
+
+## Alcance de la evidencia
+
+El punto isoeléctrico y la distribución de pH vienen de un mismo grupo. Los porcentajes de mascarilla, crema para peinar y gel fijador son propuestas sin ensayo.
+
+## Productos de esta sección
 
 ```{=html}
 <div class="tarjas" data-productos="cabello"></div>
 ```
 
-## Comprueba lo que aprendiste
+## Autoevaluación
 
 ```{=html}
 <div data-preguntas="cabello"></div>
 ```
 
-## Fuentes
+## Referencias
 
-Gavazzoni Dias 2015, DOI [10.4103/0974-7753.153450](https://doi.org/10.4103/0974-7753.153450). Benson et al. 2019, DOI [10.1201/9780429190674](https://doi.org/10.1201/9780429190674), p. 157. Barel, Paye y Maibach 2009, DOI [10.1201/b15273](https://doi.org/10.1201/b15273), pp. 690-691. CosIng, Anexo III, entradas 286 y 287, exportación del 13-11-2026. Thompson et al. 2023, citado en la nota 02.
+Sobre la sustantividad de los catiónicos, véase también Benson y colaboradores [-@benson2019, p. 157].
+
+::: {#refs}
+:::

@@ -8,9 +8,9 @@ page-layout: full
 <figure class="cabeza" style="--color:#4d5a2c" data-alto="baja"><div class="marco"><img src="../fotos/jabonera.jpg" alt="Pilas de jabón de Alepo curándose"></div><h1>Jabón en barra</h1></figure>
 ```
 
-[Limpieza](../limpieza/index.qmd). Grasa y sosa. La receta más antigua. Forma: jabón sódico.
+[Limpieza](../limpieza/index.qmd). Carboxilatos de sodio obtenidos por saponificación de triglicéridos. Forma: jabón sódico.
 
-Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+Las recetas son propuestas de este proyecto y **están sin ensayar**. Se presentan como hipótesis de trabajo para contrastar en el laboratorio.
 
 ## Jabón de oliva y coco
 
@@ -19,50 +19,50 @@ Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. 
 ```
 
 ::: {.avisos}
-- La sosa quema piel y ojos. Si te cae, enjuaga con agua 15 min y busca atención médica.
-- Pesa con balanza de 0.1 g. Un error de 5 g cambia el jabón.
+- El NaOH es corrosivo. Ante contacto, agua 15 min y atención médica.
+- Pesar con resolución de 0.1 g. Un error de 5 g deja álcali libre.
 :::
 
-### Por qué funciona
+### Fundamento
 
-La sosa rompe las grasas en jabón y glicerina. Se calcula con el SAP más bajo de la norma y 5 % de sobreengrase: queda aceite de más y ninguna sosa libre, si pesaste bien.
+La base hidroliza los triglicéridos a jabón y glicerina. El cálculo toma el SAP menor de la norma y 5 % de sobreengrase, de modo que queda grasa en exceso y no álcali libre.
 
-### Paso a paso
+### Procedimiento
 
-1. Ponte guantes, lentes y manga larga. Trabaja con ventilación y sin niños ni mascotas cerca.
-2. Pesa el agua en un recipiente resistente al calor y la sosa aparte.
-3. Agrega la sosa al agua, poco a poco, y agita. Nunca al revés. Se calienta y suelta vapor: no lo respires.
-4. Deja que la lejía baje a unos 40 °C. Aquí lejía significa la solución de sosa; el cloro de lavar es otra sustancia.
-5. Funde los aceites sólidos, mézclalos con los líquidos y déjalos a unos 40 °C.
-6. Vierte la lejía sobre los aceites y mezcla con batidora de mano, a pulsos, hasta que una gota deje huella en la superficie.
-7. Vacía en el molde, tapa y espera de 24 a 48 h.
-8. Desmolda, corta y cura de 4 a 6 semanas en un lugar seco y ventilado.
-9. Antes de usarlo, mide el pH de una solución al 1 %.
+1. Usar guantes, lentes y manga larga. Trabajar con ventilación y sin niños ni mascotas cerca.
+2. Pesar el agua en un recipiente resistente al calor y la sosa aparte.
+3. Agregar la sosa al agua, poco a poco, y agitar. El orden inverso proyecta líquido. Se calienta y suelta vapor: evitar inhalarlo.
+4. Dejar que la lejía baje a unos 40 °C. Aquí lejía significa la solución de sosa; el cloro de lavar es otra sustancia.
+5. Fundir los aceites sólidos, mezclarlos con los líquidos y dejarlos a unos 40 °C.
+6. Verter la lejía sobre los aceites y mezclar con batidora de mano, a pulsos, hasta que una gota deje huella en la superficie.
+7. Vaciar en el molde, tapar y esperar de 24 a 48 h.
+8. Desmoldar, cortar y curar de 4 a 6 semanas en un lugar seco y ventilado.
+9. Antes de usarlo, medir el pH de una solución al 1 %.
 
-### Cómo saber si salió bien
+### Control de calidad
 
-| Control | Meta | Cómo se mide |
+| Determinación | Especificación | Método |
 |---|---|---|
 | pH | de 9 a 10.5 | solución al 1 % |
-| Álcali libre | sin color con fenolftaleína en el centro | corta una barra y pon una gota; maneja el indicador con guantes |
-| Pérdida de peso | hasta que se estabilice | pesa la misma barra cada semana |
+| Álcali libre | sin color con fenolftaleína en el centro | cortar una barra y aplicar una gota; manejar el indicador con guantes |
+| Pérdida de peso | hasta que se estabilice | pesar la misma barra cada semana |
 | Espuma | altura a 0 y 5 min | probeta agitada, solución al 1 % |
 
-### Si algo falla
+### Diagnóstico de fallas
 
-| Qué ves | Por qué | Qué hacer |
+| Observación | Causa probable | Acción correctiva |
 |---|---|---|
-| Polvo blanco en la superficie | ceniza de carbonato | cubre el molde y cura con menos aire |
-| Se separa en el molde | faltó mezclar o temperatura baja | vuelve a fundir y mezcla |
-| Pica o quema | álcali sin reaccionar | no lo uses; revisa la pesada y el SAP |
-| Queda blando | mucho aceite líquido o sobreengrase | cura más tiempo o sube el coco |
+| Polvo blanco en la superficie | ceniza de carbonato | cubrir el molde y curar con menos aire |
+| Se separa en el molde | faltó mezclar o temperatura baja | volver a fundir y mezclar |
+| Irritación | álcali sin reaccionar | no usarlo; revisar la pesada y el SAP |
+| Queda blando | mucho aceite líquido o sobreengrase | curar más tiempo o aumentar el coco |
 
-### Qué puedes cambiar
+### Variables de estudio
 
 - Más coco, más espuma y más seco.
-- Cualquier cambio de aceite cambia la sosa: vuelve a calcular.
+- Cualquier cambio de aceite cambia la sosa: volver a calcular.
 
-**Fuentes.** SAP: Codex CXS 210-1999 y CXS 33 (ed. 2015); ricino, JECFA. Curado: 4 a 6 semanas según guías artesanales; saponificación de 18 a 24 h, Molecules 2018.
+**Referencias.** SAP: Codex CXS 210-1999 y CXS 33 (ed. 2015); ricino, JECFA. Curado: 4 a 6 semanas según guías artesanales; saponificación de 18 a 24 h, Molecules 2018.
 
 ## Jabón de palma, girasol y coco
 
@@ -71,49 +71,49 @@ La sosa rompe las grasas en jabón y glicerina. Se calcula con el SAP más bajo 
 ```
 
 ::: {.avisos}
-- La sosa quema piel y ojos. Si te cae, enjuaga con agua 15 min y busca atención médica.
+- El NaOH es corrosivo. Ante contacto, agua 15 min y atención médica.
 :::
 
-### Por qué funciona
+### Fundamento
 
-La palma da dureza, el coco espuma y el girasol suavidad. El girasol se enrancia antes: pocas barras por lote.
+Los ácidos palmítico y esteárico dan dureza, el láurico espuma y el linoleico suavidad. La insaturación del girasol acelera la oxidación, de modo que conviene un lote pequeño.
 
-### Paso a paso
+### Procedimiento
 
-1. Ponte guantes, lentes y manga larga. Trabaja con ventilación y sin niños ni mascotas cerca.
-2. Pesa el agua en un recipiente resistente al calor y la sosa aparte.
-3. Agrega la sosa al agua, poco a poco, y agita. Nunca al revés. Se calienta y suelta vapor: no lo respires.
-4. Deja que la lejía baje a unos 40 °C. Aquí lejía significa la solución de sosa; el cloro de lavar es otra sustancia.
-5. Funde los aceites sólidos, mézclalos con los líquidos y déjalos a unos 40 °C.
-6. Vierte la lejía sobre los aceites y mezcla con batidora de mano, a pulsos, hasta que una gota deje huella en la superficie.
-7. Vacía en el molde, tapa y espera de 24 a 48 h.
-8. Desmolda, corta y cura de 4 a 6 semanas en un lugar seco y ventilado.
-9. Antes de usarlo, mide el pH de una solución al 1 %.
+1. Usar guantes, lentes y manga larga. Trabajar con ventilación y sin niños ni mascotas cerca.
+2. Pesar el agua en un recipiente resistente al calor y la sosa aparte.
+3. Agregar la sosa al agua, poco a poco, y agitar. El orden inverso proyecta líquido. Se calienta y suelta vapor: evitar inhalarlo.
+4. Dejar que la lejía baje a unos 40 °C. Aquí lejía significa la solución de sosa; el cloro de lavar es otra sustancia.
+5. Fundir los aceites sólidos, mezclarlos con los líquidos y dejarlos a unos 40 °C.
+6. Verter la lejía sobre los aceites y mezclar con batidora de mano, a pulsos, hasta que una gota deje huella en la superficie.
+7. Vaciar en el molde, tapar y esperar de 24 a 48 h.
+8. Desmoldar, cortar y curar de 4 a 6 semanas en un lugar seco y ventilado.
+9. Antes de usarlo, medir el pH de una solución al 1 %.
 
-### Cómo saber si salió bien
+### Control de calidad
 
-| Control | Meta | Cómo se mide |
+| Determinación | Especificación | Método |
 |---|---|---|
 | pH | de 9 a 10.5 | solución al 1 % |
-| Álcali libre | sin color con fenolftaleína en el centro | corta una barra y pon una gota; maneja el indicador con guantes |
-| Pérdida de peso | hasta que se estabilice | pesa la misma barra cada semana |
+| Álcali libre | sin color con fenolftaleína en el centro | cortar una barra y aplicar una gota; manejar el indicador con guantes |
+| Pérdida de peso | hasta que se estabilice | pesar la misma barra cada semana |
 | Espuma | altura a 0 y 5 min | probeta agitada, solución al 1 % |
 
-### Si algo falla
+### Diagnóstico de fallas
 
-| Qué ves | Por qué | Qué hacer |
+| Observación | Causa probable | Acción correctiva |
 |---|---|---|
-| Polvo blanco en la superficie | ceniza de carbonato | cubre el molde y cura con menos aire |
-| Se separa en el molde | faltó mezclar o temperatura baja | vuelve a fundir y mezcla |
-| Pica o quema | álcali sin reaccionar | no lo uses; revisa la pesada y el SAP |
-| Queda blando | mucho aceite líquido o sobreengrase | cura más tiempo o sube el coco |
+| Polvo blanco en la superficie | ceniza de carbonato | cubrir el molde y curar con menos aire |
+| Se separa en el molde | faltó mezclar o temperatura baja | volver a fundir y mezclar |
+| Irritación | álcali sin reaccionar | no usarlo; revisar la pesada y el SAP |
+| Queda blando | mucho aceite líquido o sobreengrase | curar más tiempo o aumentar el coco |
 
-### Qué puedes cambiar
+### Variables de estudio
 
-- Cambia palma por manteca de cerdo: SAP de 192 a 203, recalcula.
-- Girasol alto oleico: aguanta más.
+- Sustituir palma por manteca de cerdo: SAP de 192 a 203, recalcular.
+- Girasol alto oleico: mayor resistencia a la oxidación.
 
-**Fuentes.** SAP: Codex CXS 210-1999 y CXS 33 (ed. 2015); ricino, JECFA.
+**Referencias.** SAP: Codex CXS 210-1999 y CXS 33 (ed. 2015); ricino, JECFA.
 
 ## Otros productos de esta sección
 

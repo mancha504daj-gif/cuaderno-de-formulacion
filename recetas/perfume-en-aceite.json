@@ -8,7 +8,7 @@
  "lote": 100,
  "pH": null,
  "estado": "sin ensayar",
- "porque": "Sin alcohol la salida se nota menos y la mezcla dura más sobre la piel.",
+ "porque": "El vehículo no volátil reduce la presión de vapor parcial: la salida se atenúa y aumenta la persistencia.",
  "fases": [
   {
    "nombre": "A",
@@ -34,9 +34,9 @@
   }
  ],
  "pasos": [
-  "Pesa el CCT y agrega la fragancia.",
-  "Agita hasta que quede transparente.",
-  "Agrega el tocoferol y envasa en roll-on."
+  "Pesar el CCT y agregar la fragancia.",
+  "Agitar hasta que quede transparente.",
+  "Agregar el tocoferol y envasar en roll-on."
  ],
  "cambia": [
   "De 8 a 20 % según el certificado de la fragancia."
@@ -49,12 +49,12 @@
   ],
   [
    "Dureza",
-   "registra la penetración",
+   "registrar la penetración",
    "aguja o peso conocido"
   ],
   [
    "Punto de fusión",
-   "registra el intervalo",
+   "registrar el intervalo",
    "capilar o baño con termómetro"
   ],
   [
@@ -72,26 +72,26 @@
   [
    "Granos",
    "enfrió despacio o la manteca cristalizó mal",
-   "funde otra vez y enfría más rápido"
+   "fundir otra vez y enfriar más rápido"
   ],
   [
-   "Suda aceite",
+   "Exudación de aceite",
    "poca cera o demasiado aceite líquido",
-   "sube la cera de 1 en 1 %"
+   "aumentar la cera de 1 en 1 %"
   ],
   [
-   "Se parte",
+   "Fractura",
    "demasiada cera dura",
-   "baja la cera y sube el aceite"
+   "reducir la cera y aumentar el aceite"
   ],
   [
-   "Huele rancio",
+   "Olor rancio",
    "oxidación",
-   "usa aceite fresco, tocoferol y envase lleno"
+   "usar aceite fresco, tocoferol y envase lleno"
   ]
  ],
  "avisos": [
-  "Comprueba el certificado IFRA de la fragancia."
+  "Verificar el certificado IFRA de la fragancia."
  ],
  "fuentes": [
   "Proporciones propuestas en este proyecto.",

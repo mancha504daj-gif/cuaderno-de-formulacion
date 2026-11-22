@@ -8,9 +8,9 @@ page-layout: full
 <figure class="cabeza" style="--color:#5c1f3a" data-alto="baja"><div class="marco"><img src="../fotos/maquillaje.jpg" alt="Labiales de varios tonos"></div><h1>Base fluida</h1></figure>
 ```
 
-[Maquillaje](../maquillaje/index.qmd). Pigmento en la fase externa. Forma: emulsión W/O.
+[Maquillaje](../maquillaje/index.qmd). Pigmento disperso en la fase continua oleosa. Forma: emulsión W/O.
 
-Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+Las recetas son propuestas de este proyecto y **están sin ensayar**. Se presentan como hipótesis de trabajo para contrastar en el laboratorio.
 
 ## Base fluida
 
@@ -19,26 +19,26 @@ Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. 
 ```
 
 ::: {.avisos}
-- Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.
-- No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad.
-- Usa mascarilla: el polvo fino irrita los pulmones.
+- Contiene agua. Sin ensayo del conservante puede contaminarse sin cambios visibles.
+- No se aplica en la piel sin control microbiológico y evaluación de seguridad.
+- Usar mascarilla: el polvo fino irrita las vías respiratorias.
 :::
 
-### Por qué funciona
+### Fundamento
 
-W/O porque resiste el sudor. El tono sale de mezclar rojo, amarillo y negro con blanco, y se ajusta a ojo sobre la piel: los modelos ópticos fallan con óxidos aglomerados.
+La fase continua oleosa resiste el sudor y mantiene el pigmento disperso. El tono se obtiene con óxidos rojo, amarillo y negro sobre dióxido de titanio, y se ajusta por comparación visual, porque los óxidos se aglomeran y los modelos ópticos pierden validez.
 
-### Paso a paso
+### Procedimiento
 
-1. Muele los pigmentos con 12 g del CCT.
-2. Funde la fase A a 75 °C e incorpora la pasta.
-3. Disuelve la sal y la glicerina en el agua a 75 °C.
-4. Agrega el agua al aceite en hilo fino, con agitación fuerte.
-5. Enfría agitando y agrega la fase D por debajo de 40 °C.
+1. Moler los pigmentos con 12 g del CCT.
+2. Fundir la fase A a 75 °C e incorporar la pasta.
+3. Disolver la sal y la glicerina en el agua a 75 °C.
+4. Agregar el agua al aceite en hilo fino, con agitación fuerte.
+5. Enfriar agitando y agregar la fase D por debajo de 40 °C.
 
-### Cómo saber si salió bien
+### Control de calidad
 
-| Control | Meta | Cómo se mide |
+| Determinación | Especificación | Método |
 |---|---|---|
 | Tipo de emulsión | W/O | gota en agua: no debe dispersarse; casi no conduce |
 | Aspecto | homogéneo | capa fina sobre vidrio |
@@ -46,20 +46,20 @@ W/O porque resiste el sudor. El tono sale de mezclar rojo, amarillo y negro con 
 | Ciclos | sin separación | de tres a seis ciclos |
 | Microbiología | sin crecimiento | placas a t0 y a 28 días |
 
-### Si algo falla
+### Diagnóstico de fallas
 
-| Qué ves | Por qué | Qué hacer |
+| Observación | Causa probable | Acción correctiva |
 |---|---|---|
-| Suelta agua | faltó cizalla o electrolito | agrega el agua más despacio y revisa la sal |
-| Se dispersa en agua | salió O/W | agrega el agua sobre el aceite y más lento |
-| Granos de polvo | pigmento sin mojar | muélelo antes con parte del aceite |
+| Suelta agua | faltó cizalla o electrolito | agregar el agua más despacio y revisar la sal |
+| Se dispersa en agua | salió O/W | agregar el agua sobre el aceite y más lento |
+| Granos de polvo | pigmento sin mojar | molerlo antes con parte del aceite |
 
-### Qué puedes cambiar
+### Variables de estudio
 
 - Tono claro: amarillo 1.2, rojo 0.3, negro 0.1 y el resto blanco.
-- Más oscuro: baja el blanco antes de subir el negro.
+- Más oscuro: reducir el blanco antes de subir el negro.
 
-**Fuentes.** Grupos y rangos: corrector W/O de proveedor analizado en la nota 05; proporciones propias. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
+**Referencias.** Grupos y rangos: corrector W/O de proveedor analizado en la nota 05; proporciones propias. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
 
 ## Otros productos de esta sección
 

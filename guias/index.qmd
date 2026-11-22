@@ -1,0 +1,46 @@
+---
+title: Guías de laboratorio
+toc: false
+page-layout: full
+---
+
+Ocho guías para evaluar la calidad microbiológica de un cosmético, desde la preparación del medio hasta el dictamen del lote. Siguen el capítulo 23 del *Bacteriological Analytical Manual* [@bam23] y los límites que recoge el comité científico europeo [@sccs2023]. Los pasos que este proyecto propuso por su cuenta llevan la marca **propuesta docente**.
+
+| Código | Guía | Trabajo | Incubación | Bioseguridad |
+|---|---|---|---|---|
+| GM-01 | [Medios de cultivo y sus controles](gm-01-medios.qmd) | 3 h | 5 días | nivel 1 |
+| GM-02 | [Verificación del neutralizante](gm-02-neutralizante.qmd) | 2 h | 5 días | nivel 1 |
+| GM-03 | [Recuento de aerobios mesófilos](gm-03-aerobios.qmd) | 2 h | 48 h | nivel 2 |
+| GM-04 | [Recuento de hongos y levaduras](gm-04-hongos.qmd) | 1 h | 5 a 7 días | nivel 2 |
+| GM-05 | [Enriquecimiento y microorganismos especificados](gm-05-especificados.qmd) | 1 h por día | 7 días | nivel 2 |
+| GM-06 | [Aire, superficies y agua](gm-06-ambiente.qmd) | 2 h | 48 h a 5 días | nivel 2 |
+| GM-07 | [Eficacia del conservante con levadura](gm-07-conservante.qmd) | 2 h por día de muestreo | 14 días | nivel 1 |
+| GM-08 | [Muestreo, incertidumbre y dictamen](gm-08-dictamen.qmd) | 2 h | | |
+
+## Orden de trabajo
+
+1. GM-01 y GM-02 van primero: un medio sin controles o un neutralizante sin verificar invalida los recuentos que siguen.
+2. GM-03 y GM-04 se siembran el mismo día, desde las mismas diluciones.
+3. GM-05 usa los tubos que sobran de GM-03.
+4. GM-08 reúne los resultados y decide.
+
+## Condiciones mínimas
+
+El comité científico europeo pide que un microbiólogo ejecute o supervise los controles microbiológicos y el ensayo de conservación, y que los valide [@sccs2023, p. 149]. Una muestra contaminada contiene organismos desconocidos, y el cultivo los multiplica. Por eso las guías con producto de origen desconocido piden nivel de bioseguridad 2.
+
+| Requisito | Motivo |
+|---|---|
+| Laboratorio con autoclave verificado | los residuos salen estériles |
+| Cabina o mechero, bata, guantes y lentes | protege la muestra y al analista |
+| Nada de cocinas ni viviendas | no hay forma de contener un cultivo |
+| Placas crecidas cerradas con cinta | las esporas se dispersan al abrir |
+| Responsable de microbiología presente | identifica y decide ante colonias sospechosas |
+
+## Qué dejan fuera
+
+Las normas ISO 21149, 16212, 18415, 22717, 22718, 21150, 18416, 11930 y 17516 son de pago y este proyecto no las consultó. Un informe con validez legal sigue la norma que exija la autoridad.
+
+## Referencias
+
+::: {#refs}
+:::

@@ -8,9 +8,9 @@ page-layout: full
 <figure class="cabeza" style="--color:#8a5200" data-alto="baja"><div class="marco"><img src="../fotos/solar.jpg" alt="Una persona aplica protector a un niño"></div><h1>Muestra mineral</h1></figure>
 ```
 
-[Protección solar](../solar/index.qmd). Para medir absorbancia en el laboratorio. No para la piel. Forma: emulsión W/O.
+[Protección solar](../solar/index.qmd). Muestra para medir absorbancia y dispersión. No se aplica en la piel. Forma: emulsión W/O.
 
-Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+Las recetas son propuestas de este proyecto y **están sin ensayar**. Se presentan como hipótesis de trabajo para contrastar en el laboratorio.
 
 ## Muestra mineral para medir
 
@@ -19,25 +19,25 @@ Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. 
 ```
 
 ::: {.avisos}
-- Esta muestra se mide en el laboratorio. No la uses como protector: nadie ha medido su FPS y una película casera puede fallar.
-- Usa mascarilla: el polvo fino irrita los pulmones.
+- Muestra para medición. No se usa como protector: su FPS no se ha medido y la película puede fallar.
+- Usar mascarilla: el polvo fino irrita las vías respiratorias.
 :::
 
-### Por qué funciona
+### Fundamento
 
-El óxido de zinc protege si forma una película continua. Sirve para medir la absorbancia y calcular Mansur, y para ver cuánto cambia con la molienda. La película casera suele quedar dispareja, y ahí se quema la piel.
+El óxido de zinc atenúa la radiación si forma una película continua. La muestra permite medir absorbancia, aplicar la ecuación de Mansur y comparar el efecto de la dispersión. Una película casera presenta zonas delgadas sin protección.
 
-### Paso a paso
+### Procedimiento
 
-1. Muele el óxido de zinc con el aceite y el emulsionante hasta que no veas granos.
-2. Disuelve el sulfato y la glicerina en el agua.
-3. Agrega el agua al aceite en hilo fino, con agitación fuerte. Tarda 10 min.
-4. Homogeneiza 5 min y agrega la fase D.
-5. Guarda la muestra rotulada «para medir».
+1. Moler el óxido de zinc con el aceite y el emulsionante hasta que no se observen granos.
+2. Disolver el sulfato y la glicerina en el agua.
+3. Agregar el agua al aceite en hilo fino, con agitación fuerte. Tarda 10 min.
+4. Homogeneizar 5 min y agregar la fase D.
+5. Guardar la muestra rotulada «para medir».
 
-### Cómo saber si salió bien
+### Control de calidad
 
-| Control | Meta | Cómo se mide |
+| Determinación | Especificación | Método |
 |---|---|---|
 | Tipo de emulsión | W/O | gota en agua: no debe dispersarse; casi no conduce |
 | Aspecto | homogéneo | capa fina sobre vidrio |
@@ -45,20 +45,20 @@ El óxido de zinc protege si forma una película continua. Sirve para medir la a
 | Ciclos | sin separación | de tres a seis ciclos |
 | Microbiología | sin crecimiento | placas a t0 y a 28 días |
 
-### Si algo falla
+### Diagnóstico de fallas
 
-| Qué ves | Por qué | Qué hacer |
+| Observación | Causa probable | Acción correctiva |
 |---|---|---|
-| Suelta agua | faltó cizalla o electrolito | agrega el agua más despacio y revisa la sal |
-| Se dispersa en agua | salió O/W | agrega el agua sobre el aceite y más lento |
-| Granos de polvo | pigmento sin mojar | muélelo antes con parte del aceite |
+| Suelta agua | faltó cizalla o electrolito | agregar el agua más despacio y revisar la sal |
+| Se dispersa en agua | salió O/W | agregar el agua sobre el aceite y más lento |
+| Granos de polvo | pigmento sin mojar | molerlo antes con parte del aceite |
 
-### Qué puedes cambiar
+### Variables de estudio
 
-- Mide con zinc al 5, 10 y 15 %.
-- Compara molido y sin moler.
+- Medir con zinc al 5, 10 y 15 %.
+- Comparar molido y sin moler.
 
-**Fuentes.** Recetas caseras con FPS menor que 6: Couteau et al. 2021, DOI 10.1111/jocd.13783. Mansur et al. 1986, An. Bras. Dermatol. 61:121-124 (sin DOI). Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
+**Referencias.** Recetas caseras con FPS menor que 6: Couteau et al. 2021, DOI 10.1111/jocd.13783. Mansur et al. 1986, An. Bras. Dermatol. 61:121-124 (sin DOI). Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
 
 ## Otros productos de esta sección
 

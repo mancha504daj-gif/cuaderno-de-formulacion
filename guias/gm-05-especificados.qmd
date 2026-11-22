@@ -1,0 +1,125 @@
+---
+title: "GM-05. Enriquecimiento y microorganismos especificados"
+toc: false
+page-layout: full
+---
+
+| | |
+|---|------------|
+| **Resultado** | presencia o ausencia presuntiva en 1 g |
+| **Método base** | BAM, capítulo 23, secciones H-1 e I [@bam23] |
+| **Duración** | 1 h por día durante 7 a 10 días |
+| **Bioseguridad** | nivel 2 y microbiólogo responsable |
+
+```{=html}
+<p class="ordenes"><button type="button" data-imprimir>Imprimir la guía</button></p>
+```
+
+## Objetivos
+
+1. Detectar contaminantes que el recuento directo no alcanza a ver.
+2. Aplicar pruebas presuntivas para orientar la identificación.
+3. Reconocer dónde termina el trabajo docente y empieza el del laboratorio de referencia.
+
+## Fundamento
+
+Una célula dañada por el conservante puede no formar colonia en dos días y recuperarse en caldo. El enriquecimiento da tiempo y nutrientes, y detecta una sola célula en la porción analizada. A cambio pierde la cuenta: el resultado es presencia o ausencia.
+
+Cuatro microorganismos deben estar ausentes en 1 g o 1 mL: *Escherichia coli*, *Pseudomonas aeruginosa*, *Staphylococcus aureus* y *Candida albicans* [@sccs2023, tabla A.9]. *P. aeruginosa* recibe atención especial porque sobrevive en cosméticos para ojos, causa infecciones oculares y resiste muchos agentes antibacterianos [@bam23].
+
+## Alcance docente
+
+| Etapa | Quién |
+|---|---|
+| Enriquecer y observar turbidez | práctica docente supervisada |
+| Subcultivo, Gram, catalasa y oxidasa | personal de nivel 2 |
+| Coagulasa, kits e identificación de especie | laboratorio de referencia |
+
+Un grupo docente detiene la práctica en la turbidez y entrega los tubos cerrados.
+
+## Equipo y materiales
+
+Tubos con las diluciones 10⁻¹ a 10⁻³ de GM-03. MLA, agar MacConkey, agar cetrimida, agar manitol salado, agar Baird-Parker, agar Sabouraud dextrosa, agar triple azúcar hierro (TSI). Peróxido de hidrógeno al 3 %, tiras de oxidasa, asas de platino. Incubadoras a 30 ± 2 °C y 35 ± 2 °C. Cepas de control de colección.
+
+## Procedimiento
+
+### A. Enriquecimiento
+
+1. Preparar un tubo 10⁻¹ adicional con 1 g completo de muestra (**propuesta docente**) e incubarlo con los sobrantes a 30 ± 2 °C.
+2. Observar cada día durante 7 días. Comparar con un tubo de MLB sin muestra y con uno de muestra recién preparada: las cremas dan turbidez propia.
+3. Subcultivar todos los tubos en MLA y en MacConkey, e incubar 48 h a 30 ± 2 °C. El subcultivo se hace aunque el tubo se vea claro, porque la turbidez del producto oculta el crecimiento.
+
+### B. Aislamiento
+
+1. Estriar cada tipo de colonia en MLA y MacConkey hasta obtener cultivo puro.
+2. Hacer tinción de Gram según el reactivo R32 del BAM.
+3. Seguir la tabla que corresponde.
+
+### C. Cocos grampositivos
+
+| Prueba | Cómo | Lectura |
+|---|---|---|
+| Catalasa | una gota de H₂O₂ al 3 % sobre la colonia con asa de platino | burbujas: positiva |
+| Manitol salado | sembrar e incubar a 35 ± 2 °C | fermenta: amarillo |
+| Coagulasa | 0.2 mL de cultivo en BHI y 0.5 mL de plasma de conejo con EDTA; 35 ± 2 °C, 6 h | coágulo: positiva |
+
+Un coco con catalasa positiva y coagulasa positiva se informa como *S. aureus* [@bam23]. El alambre de nicromo da falsos positivos en la catalasa.
+
+### D. Bacilos gramnegativos
+
+1. Sembrar TSI, MacConkey, cetrimida y MLA. Incubar 18 a 24 h a 35 ± 2 °C.
+2. Leer TSI:
+
+| Superficie y fondo | Orientación |
+|---|---|
+| ácido y ácido, o alcalino y ácido | Enterobacteriaceae, incluida *E. coli* |
+| alcalino y alcalino, o sin cambio | no fermentador; sospechar *Pseudomonas* |
+
+3. En los no fermentadores, hacer oxidasa: extender con asa de platino y leer a los 10 s. Púrpura intenso es positiva; después de 10 s no se lee.
+4. Acetamida, crecimiento a 42 °C y gelatina separan *P. aeruginosa* de *P. fluorescens* y *P. putida* [@bam23].
+
+### E. Levaduras
+
+Las colonias cremosas en Sabouraud pasan a un kit de asimilación. *C. albicans* se confirma en el laboratorio de referencia.
+
+### F. Controles
+
+Cada prueba lleva una cepa positiva y una negativa de colección. Sin ellas el resultado no se informa.
+
+## Registro
+
+| Tubo | Día 1 | Día 2 | Día 3 | Día 4 | Día 5 | Día 6 | Día 7 | MLA | MacConkey |
+|---|---|---|---|---|---|---|---|---|---|
+| 10⁻¹ | | | | | | | | | |
+| 10⁻² | | | | | | | | | |
+| 10⁻³ | | | | | | | | | |
+| MLB sin muestra | | | | | | | | | |
+| Muestra sin incubar | | | | | | | | | |
+
+| Aislado | Gram | Catalasa | Oxidasa | TSI | Cetrimida | Manitol salado | Presunción |
+|---|---|---|---|---|---|---|---|
+| | | | | | | | |
+| | | | | | | | |
+
+## Criterio de aceptación
+
+Presencia confirmada de cualquiera de los cuatro en 1 g: el lote no se aprueba. Presencia presuntiva: el lote queda retenido hasta la confirmación. Otros organismos se evalúan según el uso del producto y la vía de exposición, porque un microorganismo inocuo en piel sana puede dañar un ojo o una herida [@bam23].
+
+## Cálculo
+
+La probabilidad de detectar una contaminación baja depende de la masa analizada. Con $\lambda$ UFC por gramo y $m$ gramos:
+
+$$P = 1 - e^{-\lambda m}$$
+
+**Ejemplo.** El tubo 10⁻¹ de GM-03 lleva 1 g en 10 mL. Las siembras de GM-03 y GM-04 retiran 5.4 mL y quedan 0.46 g. Con 1 UFC/g, P = 1 − e^(−0.46) = 37 %. El tubo adicional de 1 g sube a 63 %. «Ausencia en 1 g» describe la porción analizada; el lote entero puede contener más.
+
+## Preguntas de análisis
+
+1. ¿Cuántos gramos hay que analizar para detectar 1 UFC/g con 95 % de probabilidad?
+2. El tubo 10⁻² se enturbió y el 10⁻¹ no. Proponga una explicación.
+3. ¿Por qué se subcultivan los tubos claros?
+
+## Referencias
+
+::: {#refs}
+:::

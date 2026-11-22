@@ -278,8 +278,8 @@ function petri() {
   const L = lienzo("Placa con colonias: su número depende de la carga, la dilución y el volumen sembrado", (g, dt, t, fs, G) => {
     const n = 10 ** s.lg * 10 ** -s.dil * s.vol, ver = Math.min(N, Math.round(n));
     G.gota(240, 268, 196, "#c8843f", { clara: 0.62, brillo: 0.6, est: 1 + Math.sin(t * 0.5) * 0.004 });
-    for (const x of p) { x.a = va(x.a, x.i < ver ? 1 : 0, dt, 1.2 + x.k * 2); if (x.a < 0.03) continue; const r = (n > 250 ? 6.2 : 7.4) * x.a * (0.75 + x.k * 0.5); G.gota(x.x + Math.sin(t * 0.4 + x.f) * 0.5, x.y, r, CO[Math.floor(x.k * 3)], { clara: 0.02, peso: 2.6, est: 1 + Math.sin(t + x.f) * 0.03 }); }
-    texto(g, n > 250 ? "incontable: diluye más" : n < 25 ? "muy pocas: siembra más" : "placa contable", 240, 34, fs(28), { serif: true });
+    for (const x of p) { x.a = va(x.a, x.i < ver ? 1 : 0, dt, 1.2 + x.k * 2); if (x.a < 0.03) continue; const r = (n > 300 ? 6.2 : 7.4) * x.a * (0.75 + x.k * 0.5); G.gota(x.x + Math.sin(t * 0.4 + x.f) * 0.5, x.y, r, CO[Math.floor(x.k * 3)], { clara: 0.02, peso: 2.6, est: 1 + Math.sin(t + x.f) * 0.03 }); }
+    texto(g, n > 300 ? "incontable: diluye más" : n < 15 ? "muy pocas: siembra más" : "placa contable", 240, 34, fs(28), { serif: true });
     texto(g, `${n >= 10 ? Math.round(n).toLocaleString("en-US").replaceAll(",", " ") : n.toFixed(1)} colonias esperadas`, 240, 494, fs(19), { peso: 600 });
   }, 480, 520, () => s.color || "#7a3350");
   return { L, s };

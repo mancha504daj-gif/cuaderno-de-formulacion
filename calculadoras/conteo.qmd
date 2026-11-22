@@ -2,7 +2,7 @@
 title: Conteo en placa
 ---
 
-De colonias a unidades formadoras de colonia por gramo. Solo cuentan las placas dentro del rango:
+Concentración en unidades formadoras de colonia por gramo. Entran en el cálculo las placas dentro del intervalo, de 15 a 300 colonias para aerobios y de 10 a 150 para hongos:
 
 $$N = \frac{\sum C}{\sum (V \times 10^{-n})}$$
 
@@ -12,6 +12,6 @@ $$N = \frac{\sum C}{\sum (V \times 10^{-n})}$$
 
 **Comprobación.** Dos placas de 0.1 mL de la dilución 10⁻¹ con 132 y 148 colonias: 280/(2 × 0.1 × 0.1) = 14 000 UFC/g.
 
-El resultado se redondea a dos cifras. Cómo hacer el ensayo: [microbiología](../fundamentos/microbiologia.qmd).
+El resultado se redondea a dos cifras significativas, al par cuando la tercera es 5. Procedimiento: [GM-03](../guias/gm-03-aerobios.qmd) y [GM-04](../guias/gm-04-hongos.qmd).
 
-**Referencias.** FDA, *Bacteriological Analytical Manual*, capítulo 23, *Methods for Cosmetics*, julio de 2024, y capítulo 3, *Aerobic Plate Count* (sin DOI).
+**Referencias.** FDA, *Bacteriological Analytical Manual*, capítulo 23, *Methods for Cosmetics*, julio de 2024, y capítulo 3, *Aerobic Plate Count*, enero de 2026 (sin DOI). SCCS/1647/22, tabla A.9 (sin DOI).

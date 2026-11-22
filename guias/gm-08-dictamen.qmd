@@ -1,0 +1,107 @@
+---
+title: "GM-08. Muestreo, incertidumbre y dictamen"
+toc: false
+page-layout: full
+---
+
+| | |
+|---|------------|
+| **Resultado** | lote aprobado, retenido o rechazado, con su informe |
+| **Método base** | SCCS/1647/22, apéndice 9 [@sccs2023]; incertidumbre de Poisson [@bam3] |
+| **Duración** | 2 h |
+
+```{=html}
+<p class="ordenes"><button type="button" data-imprimir>Imprimir la guía</button></p>
+```
+
+## Objetivos
+
+1. Elegir qué unidades del lote se analizan.
+2. Expresar un recuento con su incertidumbre.
+3. Emitir un dictamen que otra persona pueda repetir con los mismos datos.
+
+## Fundamento
+
+El comité científico europeo pide análisis microbiológico de rutina en cada lote que sale al mercado, con los parámetros, criterios, métodos y resultados archivados. Exceptúa casos justificados, como los productos con más de 20 % de alcohol [@sccs2023, p. 148].
+
+| Categoría | Productos | Aerobios totales | *E. coli*, *P. aeruginosa*, *S. aureus*, *C. albicans* |
+|---|---|---|---|
+| 1 | menores de 3 años, ojos, mucosas | ≤ 100 UFC/g o mL | ausencia en 1 g o 1 mL |
+| 2 | los demás | ≤ 1000 UFC/g o mL | ausencia en 1 g o 1 mL |
+
+«Aerobios totales» suma bacterias, levaduras y mohos. Por la variabilidad del recuento, un resultado se considera fuera de límite cuando pasa de 200 o de 2000 UFC/g, según la categoría [@sccs2023, tabla A.9].
+
+## Procedimiento
+
+### A. Plan de muestreo (propuesta docente)
+
+1. Definir el lote: una sola preparación, un solo día, un solo envase.
+2. Tomar tres unidades: del principio, de la mitad y del final del llenado.
+3. Analizar por separado la primera vez. Si los tres resultados son compatibles, los lotes siguientes admiten una muestra compuesta.
+4. Conservar dos unidades cerradas como contramuestra hasta el final de la vida útil.
+5. Analizar a día 0, 28 y 90 de la estabilidad, y una unidad en uso simulado.
+
+### B. Combinar los recuentos
+
+$$TAMM = N_{aerobios} + N_{levaduras} + N_{mohos}$$
+
+Las levaduras crecen también en MLA. Sumar los dos recuentos puede contarlas dos veces y deja el resultado del lado seguro.
+
+### C. Incertidumbre
+
+El intervalo de 95 % para $C$ colonias en una masa $m$ sale de `poisson.test(C, T = m)`. Para orientarse:
+
+| Colonias contadas | Intervalo relativo de 95 % |
+|---|---|
+| 15 | −44 % a +65 % |
+| 30 | −33 % a +43 % |
+| 100 | −19 % a +22 % |
+| 280 | −11 % a +12 % |
+
+El intervalo cubre el azar de la siembra. No incluye errores de pipeta, de balanza ni de muestreo, que lo ensanchan.
+
+### D. Regla de decisión
+
+| Situación | Dictamen |
+|---|---|
+| Blancos con crecimiento, o GM-02 sin cumplir | ensayo nulo; repetir |
+| TAMM ≤ límite y sin especificados | aprobado |
+| TAMM entre el límite y el doble | retenido; repetir con las contramuestras e investigar |
+| TAMM mayor que el doble | rechazado |
+| Especificado presuntivo | retenido hasta confirmar |
+| Especificado confirmado | rechazado |
+
+La fila de «retenido» es una **propuesta docente**: la tabla A.9 solo fija el valor a partir del cual el resultado está fuera.
+
+## Ejemplo resuelto
+
+Crema facial, categoría 2. En MLA, 0.1 mL de 10⁻¹ dio 6 y 9 colonias, y la serie de 1 mL dio 71 y 64. En agar malta no creció nada en 1 mL.
+
+1. Placas en rango: la serie de 1 mL. N = (71 + 64)/(2 × 1 × 10⁻¹) = 135/0.2 = 675, que se informa como 680 UFC/g. Intervalo de 95 %: de 566 a 799.
+2. Hongos: menos de 10 UFC/g.
+3. TAMM: 680 UFC/g, bajo 1000.
+4. Enriquecimiento claro en 7 días y subcultivos negativos.
+5. Dictamen: aprobado. Comentario técnico: 680 está cerca del límite; se investiga el agua y se repite a 28 días.
+
+## Informe
+
+| Apartado | Contenido |
+|---|---|
+| Identificación | producto, lote, fecha, responsable, envase, categoría |
+| Método | capítulo y edición del BAM, medios con su lote, temperatura y tiempo |
+| Verificación | resultado de GM-02 para esta fórmula, con fecha |
+| Resultados | placas crudas, UFC/g con dos cifras, intervalo, blancos |
+| Desvíos | lo que se hizo distinto y su efecto |
+| Dictamen | aprobado, retenido o rechazado, con la regla usada |
+| Firmas | analista y microbiólogo responsable |
+
+## Preguntas de análisis
+
+1. Un lote dio 1200 UFC/g con intervalo de 1050 a 1360. ¿Lo aprueba? Defienda la decisión.
+2. ¿Por qué tres unidades del mismo envase no reemplazan a tres envases?
+3. Redacte el informe del ejemplo y señale qué dato falta para repetirlo.
+
+## Referencias
+
+::: {#refs}
+:::

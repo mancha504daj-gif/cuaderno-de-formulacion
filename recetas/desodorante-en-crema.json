@@ -8,7 +8,7 @@
  "lote": 100,
  "pH": null,
  "estado": "sin ensayar",
- "porque": "El bicarbonato neutraliza ácidos que huelen y el almidón absorbe humedad. No cierra los poros: no es antitranspirante.",
+ "porque": "El bicarbonato neutraliza ácidos grasos volátiles y el almidón adsorbe humedad. Carece de acción antitranspirante.",
  "fases": [
   {
    "nombre": "A",
@@ -51,11 +51,11 @@
   }
  ],
  "pasos": [
-  "Funde la fase A a 70 °C.",
-  "Retira del calor e incorpora la fase B tamizada.",
-  "Agrega el tocoferol a 45 °C.",
-  "Agita mientras espesa para que el polvo no se asiente.",
-  "Envasa en tarro o barra."
+  "Fundir la fase A a 70 °C.",
+  "Retirar del calor e incorporar la fase B tamizada.",
+  "Agregar el tocoferol a 45 °C.",
+  "Agitar mientras espesa para que el polvo no se asiente.",
+  "Envasar en tarro o barra."
  ],
  "cambia": [
   "Bicarbonato a 4 % si irrita.",
@@ -69,12 +69,12 @@
   ],
   [
    "Dureza",
-   "registra la penetración",
+   "registrar la penetración",
    "aguja o peso conocido"
   ],
   [
    "Punto de fusión",
-   "registra el intervalo",
+   "registrar el intervalo",
    "capilar o baño con termómetro"
   ],
   [
@@ -92,26 +92,26 @@
   [
    "Granos",
    "enfrió despacio o la manteca cristalizó mal",
-   "funde otra vez y enfría más rápido"
+   "fundir otra vez y enfriar más rápido"
   ],
   [
-   "Suda aceite",
+   "Exudación de aceite",
    "poca cera o demasiado aceite líquido",
-   "sube la cera de 1 en 1 %"
+   "aumentar la cera de 1 en 1 %"
   ],
   [
-   "Se parte",
+   "Fractura",
    "demasiada cera dura",
-   "baja la cera y sube el aceite"
+   "reducir la cera y aumentar el aceite"
   ],
   [
-   "Huele rancio",
+   "Olor rancio",
    "oxidación",
-   "usa aceite fresco, tocoferol y envase lleno"
+   "usar aceite fresco, tocoferol y envase lleno"
   ]
  ],
  "avisos": [
-  "El bicarbonato es alcalino y puede irritar: suspende si arde."
+  "El bicarbonato es alcalino y puede irritar: suspender ante ardor."
  ],
  "fuentes": [
   "Proporciones propuestas en este proyecto."

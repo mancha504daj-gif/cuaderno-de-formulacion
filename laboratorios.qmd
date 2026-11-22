@@ -1,10 +1,10 @@
 ---
-title: Laboratorios
+title: Laboratorios virtuales
 toc: false
 page-layout: full
 ---
 
-Cada laboratorio se armó con bloques. Al final muestra sus ecuaciones con los valores que tengas puestos; la deducción está en [De dónde salen las fórmulas](modelos.qmd). Puedes cambiarlo o hacer otro en el [editor](editor.qmd).
+Modelos interactivos construidos con bloques. Cada uno muestra sus ecuaciones con los valores en uso, sus supuestos y su fuente; la deducción está en [De dónde salen las fórmulas](modelos.qmd). El [editor](editor.qmd) permite modificarlos o crear otros. Los procedimientos experimentales están en las [guías de laboratorio](guias/index.qmd).
 
 ```{=html}
 <div data-mis-laboratorios></div>

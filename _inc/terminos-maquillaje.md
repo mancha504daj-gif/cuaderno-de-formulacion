@@ -3,70 +3,70 @@
 :::: {.termino-caja}
 **Anhidro**
 
-Sin agua. *Un bálsamo labial.*
+Sin agua en la fórmula. *Un bálsamo labial.*
 
 ::::
 
 :::: {.termino-caja}
 **W/O**
 
-Agua en aceite: las gotas son de agua. Resiste el agua y se siente más grasa. *Muchas bases de maquillaje.*
+Emulsión con gotas de agua en una fase continua oleosa. *Muchas bases de maquillaje.*
 
 ::::
 
 :::: {.termino-caja}
 **Pigmento**
 
-Partícula de color que no se disuelve. *Óxido de hierro.*
+Colorante insoluble en el medio. *Óxido de hierro.*
 
 ::::
 
 :::: {.termino-caja}
 **Laca**
 
-Colorante fijado sobre un sólido para que no se disuelva. *CI 15850.*
+Pigmento obtenido al fijar un colorante soluble en un sustrato insoluble. *CI 15850.*
 
 ::::
 
 :::: {.termino-caja}
 **Carga**
 
-Polvo que da cuerpo, desliza o absorbe. *Mica, sílice.*
+Polvo que aporta cuerpo, deslizamiento o absorción. *Mica, sílice.*
 
 ::::
 
 :::: {.termino-caja}
 **Aglutinante**
 
-Une el polvo al comprimirlo. *Estearato de zinc con aceite.*
+Componente que une las partículas de un polvo durante la compresión. *Estearato de zinc con aceite.*
 
 ::::
 
 :::: {.termino-caja}
 **Nacarado**
 
-Lámina que refleja la luz. Se rompe si la mueles.
+Pigmento laminar que produce brillo por reflexión e interferencia.
 
 ::::
 
 :::: {.termino-caja}
 **Dispersión**
 
-Repartir partículas y mantenerlas separadas: humectar, desaglomerar, estabilizar.
+Sistema de partículas separadas en un medio. Su preparación incluye humectación, desaglomeración y estabilización.
 
 ::::
 
 :::: {.termino-caja}
 **Cesión**
 
-Cuánto color suelta un polvo o una barra.
+Masa de producto que se transfiere al aplicador o a la piel.
 
 ::::
 
 :::: {.termino-caja}
 **Sangrado**
 
-El aceite del labial corre por las arrugas.
+Migración de la fase oleosa de un labial por las líneas del contorno.
 
 ::::
 

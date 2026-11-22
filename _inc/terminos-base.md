@@ -3,98 +3,98 @@
 :::: {.termino-caja}
 **Fórmula**
 
-Lista de ingredientes con su porcentaje en masa. Suma 100. *Una loción: 75 % agua, 16 % aceites, 4 % emulsionante y el resto.*
+Lista de ingredientes con su porcentaje en masa, cuya suma es 100. *Una loción: 75 % agua, 16 % aceites, 4 % emulsionante y el resto.*
 
 ::::
 
 :::: {.termino-caja}
 **INCI**
 
-Nombre internacional de un ingrediente cosmético. Es el que va en la etiqueta. *Aqua es el agua; Sodium Chloride, la sal.*
+Nomenclatura internacional de ingredientes cosméticos. Es la que figura en la etiqueta. *Aqua es el agua; Sodium Chloride, la sal.*
 
 ::::
 
 :::: {.termino-caja}
 **Fase**
 
-Grupo de ingredientes que se mezclan juntos antes de unirlos a los demás. *Fase A: agua y glicerina. Fase B: aceites.*
+Conjunto de ingredientes que se combinan antes de incorporarlos a los demás. *Fase A: agua y glicerina. Fase B: aceites.*
 
 ::::
 
 :::: {.termino-caja}
 **C.s.p.**
 
-Cantidad suficiente para: lo que falta para llegar a 100. *Agua c.s.p. 100.*
+Cantidad suficiente para completar 100 %. *Agua, c.s.p. 100.*
 
 ::::
 
 :::: {.termino-caja}
 **Lote**
 
-La cantidad que preparas de una vez. *Un lote de prueba de 100 g.*
+Cantidad definida de producto elaborada en una sola operación. *Un lote de prueba de 100 g.*
 
 ::::
 
 :::: {.termino-caja}
 **Función**
 
-Lo que hace un ingrediente dentro de la fórmula. Puede tener más de una. *El alcohol cetílico espesa y emulsiona.*
+Papel técnico de un ingrediente en la fórmula. Puede cumplir más de uno. *El alcohol cetílico espesa y emulsiona.*
 
 ::::
 
 :::: {.termino-caja}
 **Hidrófilo**
 
-Que prefiere el agua. *La glicerina.*
+Con afinidad por el agua. *La glicerina.*
 
 ::::
 
 :::: {.termino-caja}
 **Lipófilo**
 
-Que prefiere el aceite. *La cera de abejas.*
+Con afinidad por el aceite. *La cera de abejas.*
 
 ::::
 
 :::: {.termino-caja}
 **pH**
 
-Medida de acidez. De 0 a 7 es ácido, 7 es neutro y hasta 14 es alcalino. *La piel ronda de 4 a 6.*
+Logaritmo negativo de la actividad del ion hidrógeno. A 25 °C, 7 es neutro; por debajo es ácido y por encima, alcalino. *La piel ronda de 4 a 6.*
 
 ::::
 
 :::: {.termino-caja}
 **Anhidro**
 
-Sin agua. *Un bálsamo labial.*
+Sin agua en la fórmula. *Un bálsamo labial.*
 
 ::::
 
 :::: {.termino-caja}
 **Viscosidad**
 
-Resistencia a fluir. Se mide en pascal segundo. *La miel tiene más que el agua.*
+Cociente entre el esfuerzo de corte y la velocidad de corte. Se expresa en Pa s. *La miel, del orden de 10 Pa s; el agua, 0.001.*
 
 ::::
 
 :::: {.termino-caja}
 **Conservante**
 
-Ingrediente que frena bacterias y hongos. *Fenoxietanol.*
+Sustancia que inhibe el crecimiento de bacterias, levaduras y mohos en el producto. *Fenoxietanol.*
 
 ::::
 
 :::: {.termino-caja}
 **Antioxidante**
 
-Frena que los aceites se enrancien. No mata microbios. *Tocoferol.*
+Sustancia que retarda la oxidación de los lípidos. No tiene función antimicrobiana. *Tocoferol.*
 
 ::::
 
 :::: {.termino-caja}
 **Estabilidad**
 
-Que el producto no cambie con el tiempo, el calor o el frío. *Ciclos de −10 a 40 °C.*
+Capacidad de mantener las propiedades dentro de especificación durante la vida útil. *Ciclos de −10 a 40 °C.*
 
 ::::
 

@@ -8,7 +8,7 @@
  "lote": 100,
  "pH": null,
  "estado": "sin ensayar",
- "porque": "Con 12 % entra en la convención de agua de perfume, 10 a 15 %. Cuanta más fragancia, menos agua tolera.",
+ "porque": "Una concentración de 12 % se sitúa en la convención de agua de perfume, de 10 a 15 %. Al aumentar la fragancia baja la cantidad de agua que admite la solución sin enturbiarse.",
  "fases": [
   {
    "nombre": "A",
@@ -39,15 +39,15 @@
   }
  ],
  "pasos": [
-  "Trabaja lejos de llamas y chispas.",
-  "Pesa la fragancia en un frasco de vidrio seco.",
-  "Agrega el alcohol y agita hasta que quede transparente.",
-  "Agrega el agua despacio. Si se enturbia, te pasaste de agua para esa fragancia.",
-  "Cierra y deja macerar de 2 a 4 semanas, fresco y oscuro.",
-  "Enfría 24 h a 4 °C, filtra en frío y envasa."
+  "Trabajar lejos de llamas y chispas.",
+  "Pesar la fragancia en un frasco de vidrio seco.",
+  "Agregar el alcohol y agitar hasta que quede transparente.",
+  "Agregar el agua despacio. Si se enturbia, la proporción de agua excede la solubilidad.",
+  "Cerrar y dejar macerar de 2 a 4 semanas, fresco y oscuro.",
+  "Enfriar 24 h a 4 °C, filtrar en frío y envasar."
  ],
  "cambia": [
-  "Compara 8, 12 y 16 %."
+  "Comparar 8, 12 y 16 %."
  ],
  "controles": [
   [
@@ -62,12 +62,12 @@
   ],
   [
    "Olor",
-   "anota a 0, 15 min, 1 h y 4 h",
+   "registrar a 0, 15 min, 1 h y 4 h",
    "en tira de papel"
   ],
   [
    "Densidad",
-   "registra",
+   "registrar",
    "picnómetro"
   ]
  ],
@@ -75,12 +75,12 @@
   [
    "Turbio",
    "mucha agua para esa fragancia",
-   "sube el alcohol o filtra en frío"
+   "aumentar el alcohol o filtrar en frío"
   ],
   [
-   "Huele a alcohol",
+   "Predomina el olor a etanol",
    "falta maceración",
-   "espera otra semana"
+   "esperar otra semana"
   ],
   [
    "Cambia de color",
@@ -90,7 +90,7 @@
  ],
  "avisos": [
   "El alcohol es inflamable.",
-  "Comprueba el certificado IFRA de la fragancia."
+  "Verificar el certificado IFRA de la fragancia."
  ],
  "fuentes": [
   "Concentraciones: Dermatocosmética, EDUCC, ISBN 978-987-626-467-9, cap. 20.",

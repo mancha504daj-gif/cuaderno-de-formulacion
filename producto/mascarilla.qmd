@@ -8,9 +8,9 @@ page-layout: full
 <figure class="cabeza" style="--color:#b3245c" data-alto="baja"><div class="marco"><img src="../fotos/piel.jpg" alt="Frasco de crema abierto con su tapa azul"></div><h1>Mascarilla de arcilla</h1></figure>
 ```
 
-[Cuidado de la piel](../piel/index.qmd). Arcilla que absorbe grasa. Forma: suspensión.
+[Cuidado de la piel](../piel/index.qmd). Suspensión de arcilla que adsorbe sebo. Forma: suspensión.
 
-Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+Las recetas son propuestas de este proyecto y **están sin ensayar**. Se presentan como hipótesis de trabajo para contrastar en el laboratorio.
 
 ## Mascarilla de arcilla
 
@@ -19,47 +19,47 @@ Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. 
 ```
 
 ::: {.avisos}
-- Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.
-- No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad.
-- Las arcillas traen microbios: pide grado cosmético y analiza.
+- Contiene agua. Sin ensayo del conservante puede contaminarse sin cambios visibles.
+- No se aplica en la piel sin control microbiológico y evaluación de seguridad.
+- Las arcillas aportan carga microbiana: exigir grado cosmético y analizar.
 :::
 
-### Por qué funciona
+### Fundamento
 
-La arcilla absorbe grasa y, al secar, tira de la piel. La glicerina la hace menos tirante.
+La arcilla adsorbe sebo y, al perder agua, se contrae. La glicerina retarda el secado.
 
-### Paso a paso
+### Procedimiento
 
-1. Mezcla la goma con la glicerina y agrega el agua.
-2. Espolvorea la bentonita y deja que se hinche 30 min.
-3. Agrega el caolín poco a poco.
-4. Incorpora la fase C y mide el pH.
-5. Envasa en tubo o tarro.
+1. Mezclar la goma con la glicerina y agregar el agua.
+2. Espolvorear la bentonita y dejar que se hinche 30 min.
+3. Agregar el caolín poco a poco.
+4. Incorporar la fase C y medir el pH.
+5. Envasar en tubo o tarro.
 
-### Cómo saber si salió bien
+### Control de calidad
 
-| Control | Meta | Cómo se mide |
+| Determinación | Especificación | Método |
 |---|---|---|
 | pH | el de la receta ± 0.3 | medidor o tiras |
 | Aspecto | transparente o uniforme, sin grumos | a contraluz |
-| Viscosidad | registra husillo, rpm y temperatura | viscosímetro o tiempo de caída |
+| Viscosidad | registrar husillo, rpm y temperatura | viscosímetro o tiempo de caída |
 | Ciclos | sin cambio | de tres a seis ciclos |
 | Microbiología | sin crecimiento | placas a t0 y a 28 días |
 
-### Si algo falla
+### Diagnóstico de fallas
 
-| Qué ves | Por qué | Qué hacer |
+| Observación | Causa probable | Acción correctiva |
 |---|---|---|
-| Grumos | el polímero se mojó de golpe | prehumecta con glicerina |
-| Muchas burbujas | agitación rápida | agita lento y deja reposar |
-| Se aguó | sal, pH o microbios | mide pH; si huele raro, descártalo |
+| Grumos | el polímero se mojó de golpe | prehumectar con glicerina |
+| Muchas burbujas | agitación rápida | agitar lento y dejar reposar |
+| Pérdida de viscosidad | sal, pH o microbios | medir pH; ante olor anómalo, descartarlo |
 
-### Qué puedes cambiar
+### Variables de estudio
 
-- Cambia 5 % de caolín por óxidos de hierro para darle color.
+- Sustituir 5 % de caolín por óxidos de hierro para darle color.
 - Más glicerina, menos tirantez.
 
-**Fuentes.** Proporciones propuestas en este proyecto. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
+**Referencias.** Proporciones propuestas en este proyecto. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
 
 ## Otros productos de esta sección
 

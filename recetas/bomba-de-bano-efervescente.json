@@ -8,7 +8,7 @@
  "lote": 100,
  "pH": null,
  "estado": "sin ensayar",
- "porque": "El ácido y el bicarbonato reaccionan solo con agua y sueltan dióxido de carbono. Con la humedad del aire empiezan antes: por eso se rocía alcohol y no agua.",
+ "porque": "El ácido cítrico y el bicarbonato reaccionan en presencia de agua y liberan dióxido de carbono. La humedad ambiental inicia la reacción, así que se aglutina con alcohol.",
  "fases": [
   {
    "nombre": "A",
@@ -42,35 +42,35 @@
   }
  ],
  "pasos": [
-  "Tamiza los polvos.",
-  "Mezcla el aceite con la fragancia y agrégalo gota a gota.",
-  "Rocía alcohol hasta que la mezcla se compacte en la mano.",
-  "Moldea con fuerza y deja secar 24 h en un lugar sin humedad.",
-  "Envuelve en plástico."
+  "Tamizar los polvos.",
+  "Mezclar el aceite con la fragancia y agregarlo gota a gota.",
+  "Rociar alcohol hasta que la mezcla se compacte en la mano.",
+  "Moldear con fuerza y dejar secar 24 h en un lugar sin humedad.",
+  "Envolver en plástico."
  ],
  "cambia": [
-  "La proporción que reacciona completa es 1.31 de bicarbonato por 1 de cítrico; esta deja bicarbonato de sobra.",
-  "Agrega 2 % de óxido de hierro para darle color."
+  "La proporción que reacciona completa es 1.31 de bicarbonato por 1 de cítrico; esta deja bicarbonato en exceso.",
+  "Agregar 2 % de óxido de hierro para darle color."
  ],
  "controles": [
   [
    "Color",
    "igual en las dos caras",
-   "frota sobre papel blanco"
+   "frotar sobre papel blanco"
   ],
   [
    "Caída",
-   "aguanta tres caídas de 20 cm",
+   "resiste tres caídas de 20 cm",
    "sobre madera"
   ],
   [
    "Cesión",
-   "deja color en una pasada",
+   "transfiere color en una pasada",
    "esponja seca"
   ],
   [
    "Humedad",
-   "registra el valor",
+   "registrar el valor",
    "pérdida de peso a 105 °C"
   ]
  ],
@@ -78,21 +78,21 @@
   [
    "Se rompe",
    "poca presión o poco aglutinante",
-   "sube uno de los dos, no ambos"
+   "aumentar uno de los dos, no ambos"
   ],
   [
-   "No suelta color",
+   "Cesión insuficiente",
    "demasiada presión o aglutinante",
-   "baja la presión"
+   "reducir la presión"
   ],
   [
    "Manchas de color",
    "pigmento sin moler",
-   "muele más con la carga"
+   "moler más con la carga"
   ]
  ],
  "avisos": [
-  "El cítrico irrita los ojos."
+  "El ácido cítrico irrita los ojos."
  ],
  "fuentes": [
   "Proporciones propuestas en este proyecto."

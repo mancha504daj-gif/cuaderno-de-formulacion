@@ -1,0 +1,125 @@
+---
+title: "GM-01. Medios de cultivo y sus controles"
+toc: false
+page-layout: full
+---
+
+| | |
+|---|------------|
+| **Resultado** | lote de medio liberado o rechazado |
+| **Método base** | BAM, medios M78, M79, M93 y M127 [@bammedios] |
+| **Duración** | 3 h de trabajo y hasta 5 días de incubación |
+| **Bioseguridad** | nivel 1 |
+
+```{=html}
+<p class="ordenes"><button type="button" data-imprimir>Imprimir la guía</button></p>
+```
+
+## Objetivos
+
+1. Preparar y esterilizar los cuatro medios del recuento microbiológico de cosméticos.
+2. Comprobar la esterilidad y la fertilidad de cada lote antes de usarlo.
+3. Registrar el lote de forma que otro analista pueda rastrearlo.
+
+## Fundamento
+
+Un recuento en placa supone que cada célula viable da origen a una colonia visible. Dos condiciones sostienen esa suposición: el medio alimenta al microorganismo y el conservante del producto ya no actúa. Los medios letheen modificados cumplen las dos. Llevan peptonas y extracto de levadura como fuente de nitrógeno y vitaminas, y una base letheen con bisulfito de sodio que inactiva en parte los sistemas conservantes de uso común [@bam23; @bammedios].
+
+Los medios para hongos trabajan a pH 5.5 a 5.6 y con clortetraciclina. La acidez y el antibiótico frenan a las bacterias, que de otro modo cubrirían la placa antes de que aparezcan los mohos.
+
+## Composición por litro de agua destilada
+
+| Medio | Componentes (g) | pH final | Uso |
+|---|---|---|---|
+| Caldo letheen modificado, M79 | caldo letheen 25.7; peptona de caseína 5; peptona de carne 10; extracto de levadura 2; bisulfito de sodio 0.1 | 7.2 ± 0.2 | diluir y enriquecer |
+| Agar letheen modificado, M78 | agar letheen 32; peptona de caseína 5; peptona de carne 10; extracto de levadura 2; NaCl 5; bisulfito de sodio 0.1; agar 5 | 7.2 ± 0.2 | aerobios |
+| Agar extracto de malta, M93 | extracto de malta 30; agar 20 | 5.5 ± 0.2 | hongos y levaduras |
+| Agar papa dextrosa, M127 | infusión de papa 200; dextrosa 20; agar 20 | 5.6 ± 0.2 | hongos y levaduras |
+
+M78 y M79 nombran las peptonas por su marca, Trypticase y Thiotone. Un medio deshidratado comercial equivalente se prepara según su etiqueta.
+
+## Equipo y materiales
+
+| Equipo | Material |
+|---|---|
+| Balanza de 0.01 g | matraces con tapa de rosca |
+| Agitador con calentamiento | placas de Petri de 15 × 100 mm, estériles |
+| Medidor de pH calibrado | tubos con tapa de rosca de 20 × 150 mm |
+| Autoclave con registro de temperatura | pipetas estériles de 1, 5 y 10 mL |
+| Baño de agua a 47 a 50 °C | filtro de jeringa de 0.22 µm |
+| Incubadora a 30 ± 2 °C | levadura de pan, *Saccharomyces cerevisiae* |
+
+## Procedimiento
+
+### A. Caldo letheen modificado
+
+1. Disolver los componentes en 1 L de agua destilada con agitación.
+2. Medir el pH a temperatura ambiente y ajustarlo.
+3. Repartir 9 mL por tubo. Preparar cinco tubos por muestra y dos de reserva.
+4. Esterilizar 15 min a 121 °C.
+5. Enfriar, rotular con medio, lote y fecha, y pesar dos tubos. Un tubo que perdió más de 2 % de su masa se descarta (**propuesta docente**), porque su volumen ya no da una dilución decimal.
+
+### B. Agar letheen modificado
+
+1. Disolver con calor y agitación hasta fundir el agar.
+2. Esterilizar 15 min a 121 °C.
+3. Verter 20 mL por placa junto al mechero o en cabina.
+4. Dejar solidificar sobre una superficie nivelada, sin apilar.
+5. Secar 48 h a 30 °C antes de usar: la placa absorbe más rápido el inóculo [@bam23].
+
+### C. Agar para hongos
+
+1. Preparar M93 o M127 y esterilizar 15 min a 121 °C. El extracto de malta se degrada con calor prolongado: no repetir el ciclo.
+2. Enfriar en baño a 47 a 50 °C.
+3. Agregar 4 mL por litro de solución de clortetraciclina al 1 % (1 g en 100 mL), esterilizada por filtración. La concentración final es 40 ppm.
+
+$$c = \frac{4\ \mathrm{mL} \times 10\ \mathrm{mg/mL}}{1\ \mathrm{L}} = 40\ \mathrm{mg/L}$$
+
+4. Verter 20 a 25 mL por placa. El agar papa dextrosa admite una sola refusión.
+
+### D. Controles del lote
+
+| Control | Cómo | Criterio |
+|---|---|---|
+| Esterilidad | dos placas y dos tubos sin sembrar, con el resto de la incubación | sin crecimiento ni turbidez |
+| pH | medir en una porción solidificada o en caldo a 25 °C | dentro de ± 0.2 |
+| Fertilidad | sembrar 0.1 mL de una suspensión de levadura con 10 a 100 UFC | crecimiento en 5 días |
+| Selectividad del agar con antibiótico | placa de M93 sin antibiótico junto a la placa con antibiótico, misma muestra de aire | menos bacterias en la segunda |
+
+El control de fertilidad con levadura es una **propuesta docente**. Un laboratorio acreditado usa cepas de colección y el criterio de la norma que sigue.
+
+## Registro del lote
+
+| Dato | Caldo M79 | Agar M78 | Agar M93 | Agar M127 |
+|---|---|---|---|---|
+| Lote y fecha | | | | |
+| Marca y lote del deshidratado | | | | |
+| pH medido | | | | |
+| Ciclo: temperatura y tiempo | | | | |
+| Masa antes y después (g) | | | | |
+| Esterilidad a 48 h y 5 días | | | | |
+| Fertilidad (UFC) | | | | |
+| Liberado por | | | | |
+
+## Cálculo
+
+La pérdida de volumen en el autoclave se estima por masa:
+
+$$pérdida = \frac{m_{antes} - m_{después}}{m_{medio}} \times 100$$
+
+**Ejemplo.** Un tubo con 9.05 g de caldo pierde 0.14 g: 0.14/9.05 × 100 = 1.5 %. Se acepta.
+
+## Disposición final
+
+Las placas de fertilidad y las de esterilidad que crecieron pasan por el ciclo de residuos del laboratorio. Los 15 min de esta guía corresponden a medio limpio en volúmenes pequeños; una carga de residuos necesita el ciclo que el laboratorio validó.
+
+## Preguntas de análisis
+
+1. ¿Qué error produce en el recuento un tubo con 8.5 mL en lugar de 9 mL?
+2. ¿Por qué el antibiótico se agrega después del autoclave y no antes?
+3. Una placa de esterilidad creció y las demás no. ¿Se rechaza el lote? Justifique.
+
+## Referencias
+
+::: {#refs}
+:::

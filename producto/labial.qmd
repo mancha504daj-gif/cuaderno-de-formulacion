@@ -8,9 +8,9 @@ page-layout: full
 <figure class="cabeza" style="--color:#5c1f3a" data-alto="baja"><div class="marco"><img src="../fotos/maquillaje.jpg" alt="Labiales de varios tonos"></div><h1>Labial</h1></figure>
 ```
 
-[Maquillaje](../maquillaje/index.qmd). Ceras, aceite de ricino y color. Forma: anhidro moldeado.
+[Maquillaje](../maquillaje/index.qmd). Pigmento disperso en aceite y fijado en una red de ceras. Forma: anhidro moldeado.
 
-Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+Las recetas son propuestas de este proyecto y **están sin ensayar**. Se presentan como hipótesis de trabajo para contrastar en el laboratorio.
 
 ## Labial rojo en barra
 
@@ -19,48 +19,48 @@ Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. 
 ```
 
 ::: {.avisos}
-- Se traga algo al usarlo: solo colorantes permitidos en labios.
+- Parte del producto se ingiere: solo colorantes permitidos en labios.
 :::
 
-### Por qué funciona
+### Fundamento
 
-Las ceras dan estructura, el ricino moja el pigmento y la lanolina evita que el aceite sude. Todo cae dentro de los rangos publicados para cada grupo.
+Las ceras forman la red, el ricino humecta el pigmento y la lanolina reduce la exudación. Cada grupo se mantiene en los intervalos publicados.
 
-### Paso a paso
+### Procedimiento
 
-1. Muele la laca y los óxidos con 18 g del ricino hasta que la pasta se vea pareja en vidrio.
-2. Funde la fase A a 88 °C.
-3. Agrega el resto del ricino y el CCT, calientes.
-4. Incorpora la pasta de pigmento y mezcla 10 min sin meter aire.
-5. Agrega la mica y el tocoferol.
-6. Cuela a unos 80 °C en molde tibio, con chorro continuo.
-7. Enfría y desmolda. Pasa una llama rápida para dar brillo.
+1. Moler la laca y los óxidos con 18 g del ricino hasta que la pasta se vea pareja en vidrio.
+2. Fundir la fase A a 88 °C.
+3. Agregar el resto del ricino y el CCT, calientes.
+4. Incorporar la pasta de pigmento y mezclar 10 min sin incorporar aire.
+5. Agregar la mica y el tocoferol.
+6. Colar a unos 80 °C en molde tibio, con chorro continuo.
+7. Enfriar y desmoldar. Pasar una llama rápida para dar brillo.
 
-### Cómo saber si salió bien
+### Control de calidad
 
-| Control | Meta | Cómo se mide |
+| Determinación | Especificación | Método |
 |---|---|---|
 | Aspecto | liso, sin granos ni gotas de aceite | a 24 h y a 7 días |
-| Dureza | registra la penetración | aguja o peso conocido |
-| Punto de fusión | registra el intervalo | capilar o baño con termómetro |
+| Dureza | registrar la penetración | aguja o peso conocido |
+| Punto de fusión | registrar el intervalo | capilar o baño con termómetro |
 | Calor | sin gotas en la superficie | 40 °C, 7 días |
 | Olor | sin rancio | a 1 y a 3 meses |
 
-### Si algo falla
+### Diagnóstico de fallas
 
-| Qué ves | Por qué | Qué hacer |
+| Observación | Causa probable | Acción correctiva |
 |---|---|---|
-| Granos | enfrió despacio o la manteca cristalizó mal | funde otra vez y enfría más rápido |
-| Suda aceite | poca cera o demasiado aceite líquido | sube la cera de 1 en 1 % |
-| Se parte | demasiada cera dura | baja la cera y sube el aceite |
-| Huele rancio | oxidación | usa aceite fresco, tocoferol y envase lleno |
+| Granos | enfrió despacio o la manteca cristalizó mal | fundir otra vez y enfriar más rápido |
+| Exudación de aceite | poca cera o demasiado aceite líquido | aumentar la cera de 1 en 1 % |
+| Fractura | demasiada cera dura | reducir la cera y aumentar el aceite |
+| Olor rancio | oxidación | usar aceite fresco, tocoferol y envase lleno |
 
-### Qué puedes cambiar
+### Variables de estudio
 
-- Más ceras duras: aguanta el calor.
-- Cambia la proporción de laca y óxidos para el tono.
+- Más ceras duras: mayor resistencia al calor.
+- Variar la proporción de laca y óxidos para el tono.
 
-**Fuentes.** Rangos de labial: Rigano y Montoli 2021, DOI 10.3390/cosmetics8040105; Mawazi et al. 2022.
+**Referencias.** Rangos de labial: Rigano y Montoli 2021, DOI 10.3390/cosmetics8040105; Mawazi et al. 2022.
 
 ## Otros productos de esta sección
 

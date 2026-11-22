@@ -8,7 +8,7 @@
  "lote": 100,
  "pH": null,
  "estado": "sin ensayar",
- "porque": "W/O porque resiste el sudor. El tono sale de mezclar rojo, amarillo y negro con blanco, y se ajusta a ojo sobre la piel: los modelos ópticos fallan con óxidos aglomerados.",
+ "porque": "La fase continua oleosa resiste el sudor y mantiene el pigmento disperso. El tono se obtiene con óxidos rojo, amarillo y negro sobre dióxido de titanio, y se ajusta por comparación visual, porque los óxidos se aglomeran y los modelos ópticos pierden validez.",
  "fases": [
   {
    "nombre": "A",
@@ -80,15 +80,15 @@
   }
  ],
  "pasos": [
-  "Muele los pigmentos con 12 g del CCT.",
-  "Funde la fase A a 75 °C e incorpora la pasta.",
-  "Disuelve la sal y la glicerina en el agua a 75 °C.",
-  "Agrega el agua al aceite en hilo fino, con agitación fuerte.",
-  "Enfría agitando y agrega la fase D por debajo de 40 °C."
+  "Moler los pigmentos con 12 g del CCT.",
+  "Fundir la fase A a 75 °C e incorporar la pasta.",
+  "Disolver la sal y la glicerina en el agua a 75 °C.",
+  "Agregar el agua al aceite en hilo fino, con agitación fuerte.",
+  "Enfriar agitando y agregar la fase D por debajo de 40 °C."
  ],
  "cambia": [
   "Tono claro: amarillo 1.2, rojo 0.3, negro 0.1 y el resto blanco.",
-  "Más oscuro: baja el blanco antes de subir el negro."
+  "Más oscuro: reducir el blanco antes de subir el negro."
  ],
  "controles": [
   [
@@ -121,23 +121,23 @@
   [
    "Suelta agua",
    "faltó cizalla o electrolito",
-   "agrega el agua más despacio y revisa la sal"
+   "agregar el agua más despacio y revisar la sal"
   ],
   [
    "Se dispersa en agua",
    "salió O/W",
-   "agrega el agua sobre el aceite y más lento"
+   "agregar el agua sobre el aceite y más lento"
   ],
   [
    "Granos de polvo",
    "pigmento sin mojar",
-   "muélelo antes con parte del aceite"
+   "molerlo antes con parte del aceite"
   ]
  ],
  "avisos": [
-  "Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.",
-  "No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad.",
-  "Usa mascarilla: el polvo fino irrita los pulmones."
+  "Contiene agua. Sin ensayo del conservante puede contaminarse sin cambios visibles.",
+  "No se aplica en la piel sin control microbiológico y evaluación de seguridad.",
+  "Usar mascarilla: el polvo fino irrita las vías respiratorias."
  ],
  "fuentes": [
   "Grupos y rangos: corrector W/O de proveedor analizado en la nota 05; proporciones propias.",

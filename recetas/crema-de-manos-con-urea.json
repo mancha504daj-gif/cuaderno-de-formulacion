@@ -8,7 +8,7 @@
  "lote": 100,
  "pH": "6",
  "estado": "sin ensayar",
- "porque": "La urea retiene agua. Con calor o con el tiempo libera amoníaco y sube el pH: por eso entra en frío y vigilas el pH durante semanas.",
+ "porque": "La urea es humectante y libera amoníaco por hidrólisis, lo que eleva el pH. Se incorpora en frío y se sigue el pH durante semanas.",
  "fases": [
   {
    "nombre": "A",
@@ -67,18 +67,18 @@
   }
  ],
  "pasos": [
-  "Pesa la fase A. Si lleva goma, mézclala primero con la glicerina; después agrega el agua y agita hasta que no queden grumos.",
-  "Pesa la fase B en otro vaso.",
-  "Calienta A y B en baño de agua hasta 72 °C y mantenlas 10 min. Repón con agua caliente lo que se evaporó de A.",
-  "Vierte B sobre A con el agitador encendido y homogeneiza 3 min.",
-  "Baja la velocidad y sigue agitando hasta 40 °C.",
-  "Disuelve la urea en 10 g del agua que apartaste, sin calentar, y agrégala con la fase C por debajo de 40 °C.",
-  "Mide el pH y ajústalo gota a gota con ácido cítrico o sosa, los dos al 10 %.",
-  "Pesa el lote final, completa con agua hasta el total y envasa. Rotula lote y fecha."
+  "Pesar la fase A. Si lleva goma, mezclarla primero con la glicerina; después agregar el agua y agitar hasta que no queden grumos.",
+  "Pesar la fase B en otro vaso.",
+  "Calentar A y B en baño de agua hasta 72 °C y mantenerlas 10 min. Reponer con agua caliente lo que se evaporó de A.",
+  "Verter B sobre A con el agitador encendido y homogeneizar 3 min.",
+  "Reducir la velocidad y seguir agitando hasta 40 °C.",
+  "Disolver la urea en 10 g del agua reservada, sin calentar, y agregarla con la fase C por debajo de 40 °C.",
+  "Medir el pH y ajustarlo gota a gota con ácido cítrico o sosa, los dos al 10 %.",
+  "Pesar el lote final, completar con agua hasta el total y envasar. Rotular lote y fecha."
  ],
  "cambia": [
-  "Agrega un par ácido láctico y lactato de sodio para amortiguar.",
-  "Sin dimeticona: cámbiala por CCT."
+  "Agregar un par ácido láctico y lactato de sodio para amortiguar.",
+  "Sin dimeticona: sustituirla por CCT."
  ],
  "controles": [
   [
@@ -89,12 +89,12 @@
   [
    "Tipo de emulsión",
    "O/W",
-   "gota en agua: debe dispersarse. Confirma con conductividad o colorante hidrosoluble al microscopio"
+   "gota en agua: debe dispersarse. Confirmar con conductividad o colorante hidrosoluble al microscopio"
   ],
   [
    "Aspecto",
    "homogéneo, sin granos",
-   "extiende una capa fina sobre vidrio"
+   "extender una capa fina sobre vidrio"
   ],
   [
    "Centrífuga",
@@ -109,39 +109,39 @@
   [
    "Microbiología",
    "sin crecimiento",
-   "placas a t0 y a 28 días; ensayo de eficacia del conservante antes de usarla"
+   "placas a t0 y a 28 días; ensayo de eficacia del conservante antes de su uso"
   ]
  ],
  "fallas": [
   [
    "Se separa una capa de aceite y vuelve al agitar",
    "cremado: gotas grandes o medio poco viscoso",
-   "homogeneiza más tiempo o sube un poco la goma"
+   "homogeneizar más tiempo o aumentar un poco la goma"
   ],
   [
    "Se separa y no vuelve",
    "coalescencia: falta emulsionante o el par no es el adecuado",
-   "prueba otro HLB antes de subir la dosis"
+   "probar otro HLB antes de subir la dosis"
   ],
   [
    "Queda granosa",
    "las ceras cristalizaron o las fases estaban a distinta temperatura",
-   "iguala temperaturas y enfría agitando"
+   "igualar temperaturas y enfriar agitando"
   ],
   [
    "No se dispersa en agua",
    "salió W/O",
-   "sube la parte hidrófila del emulsionante"
+   "aumentar la parte hidrófila del emulsionante"
   ],
   [
-   "Huele mal o sale moho",
+   "Olor o moho",
    "conservante débil o pH alto",
-   "descártala, revisa pH y conservante"
+   "descartarla, revisar pH y conservante"
   ]
  ],
  "avisos": [
-  "Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.",
-  "No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad."
+  "Contiene agua. Sin ensayo del conservante puede contaminarse sin cambios visibles.",
+  "No se aplica en la piel sin control microbiológico y evaluación de seguridad."
  ],
  "fuentes": [
   "Hidratantes: Purnamawati et al. 2017, DOI 10.3121/cmr.2017.1363.",

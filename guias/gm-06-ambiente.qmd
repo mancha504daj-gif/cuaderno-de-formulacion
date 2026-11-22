@@ -1,0 +1,104 @@
+---
+title: "GM-06. Aire, superficies y agua"
+toc: false
+page-layout: full
+---
+
+| | |
+|---|------------|
+| **Resultado** | carga del ambiente donde se fabrica el lote |
+| **Método base** | aire: BAM, capítulo 3 [@bam3]; superficies y agua: propuesta docente |
+| **Duración** | 2 h de trabajo y 48 h a 5 días de incubación |
+| **Bioseguridad** | nivel 2 |
+
+```{=html}
+<p class="ordenes"><button type="button" data-imprimir>Imprimir la guía</button></p>
+```
+
+## Objetivos
+
+1. Localizar la fuente de una contaminación con muestreo dirigido.
+2. Construir una línea base del laboratorio con varias fechas.
+3. Verificar si la limpieza redujo la carga de una superficie.
+
+## Fundamento
+
+Los contaminantes entran durante la fabricación y el llenado, y después durante el uso [@sccs2023, p. 148]. Las buenas prácticas exigen control microbiológico de materias primas, granel, producto terminado, envase, personal, equipo y salas [@sccs2023, p. 150]. Un recuento alto en el producto indica que algo entró; el muestreo del ambiente dice por dónde.
+
+## Equipo y materiales
+
+MLA y agar malta con antibiótico, hisopos estériles, tubos con 10 mL de MLB, plantilla estéril de 5 × 5 cm, frascos estériles de 250 mL, tiosulfato de sodio, pipetas y asas de extensión estériles, etanol al 70 %, incubadora a 30 ± 2 °C.
+
+## Procedimiento
+
+### A. Aire por sedimentación
+
+1. Elegir los puntos: mesa de pesada, zona de llenado, junto al mechero, junto a la puerta.
+2. Abrir una placa de MLA y una de agar malta en cada punto durante 15 min, en condiciones normales de trabajo.
+3. Cerrar e incubar: MLA 48 h invertida; agar malta 5 días sin invertir.
+4. Comparar con el criterio del capítulo 3: la zona de siembra no debe superar 15 colonias por placa en 15 min [@bam3].
+
+La sedimentación recoge partículas que caen y no da UFC por metro cúbico. Sirve para comparar puntos y fechas.
+
+### B. Superficies con hisopo
+
+1. Humedecer el hisopo en MLB y escurrir contra el tubo.
+2. Frotar los 25 cm² de la plantilla en tres direcciones, girando el hisopo.
+3. Romper la punta dentro de un tubo con 10 mL de MLB y agitar 30 s.
+4. Sembrar 1 mL repartido en dos placas de MLA, y 0.1 mL por duplicado.
+5. Repetir el muestreo en un área contigua después de limpiar y desinfectar.
+
+$$S = \frac{C}{V} \times \frac{10\ \mathrm{mL}}{25\ \mathrm{cm^2}}$$
+
+**Ejemplo.** 1 mL dio 34 colonias: 34 × 10/25 = 14 UFC/cm². Tras limpiar, 1 mL dio 2: 0.8 UFC/cm². Reducción: log(34/2) = 1.2.
+
+### C. Agua
+
+1. Dejar correr 2 min y recoger 100 mL. Al agua clorada se le agrega tiosulfato de sodio estéril para inactivar el cloro.
+2. Sembrar 1 mL repartido en dos placas de MLA, por duplicado, y 0.1 mL por duplicado.
+3. Incubar 48 h a 30 ± 2 °C y contar.
+4. Analizar por separado el agua del tanque, la de la salida y la del recipiente donde se guarda.
+
+Bajo 1 UFC/mL el método directo no detecta. Un laboratorio de aguas filtra 100 mL por membrana.
+
+### D. Controles
+
+| Control | Criterio |
+|---|---|
+| Placa cerrada junto a las expuestas | sin crecimiento |
+| Hisopo sin usar, mismo procedimiento | sin crecimiento |
+| MLB sin muestra | sin crecimiento |
+
+## Registro
+
+| Fecha | Punto | Tipo | MLA | Hongos | UFC por unidad | Antes o después de limpiar |
+|---|---|---|---|---|---|---|
+| | | aire | | | | |
+| | | superficie | | | | |
+| | | agua | | | | |
+
+## Interpretación
+
+Ninguna norma consultada fija un límite de superficie para un laboratorio docente. El criterio es propio: reunir diez muestreos, calcular la media y la desviación, e investigar todo punto que pase de la media más tres desviaciones. Para conteos bajos conviene una carta c, con límite superior:
+
+$$LSC = \bar{c} + 3\sqrt{\bar{c}}$$
+
+**Ejemplo.** La media de la mesa es 4 colonias: LSC = 4 + 3 × 2 = 10. Un conteo de 13 se investiga.
+
+| Hallazgo | Primera sospecha | Acción |
+|---|---|---|
+| Aire alto junto a la puerta | corriente | cerrar, mover la zona de llenado |
+| Hongos en aire y en producto | polvo, humedad | limpiar en húmedo, revisar filtraciones |
+| Agua alta en el recipiente y baja en la salida | recipiente | desinfectar y secar; no guardar agua |
+| Superficie que no baja al limpiar | biopelícula o desinfectante vencido | fricción mecánica, preparar de nuevo |
+
+## Preguntas de análisis
+
+1. ¿Por qué el hisopo con neutralizante es indispensable después de desinfectar?
+2. Calcule el LSC para una media de 9 colonias y explique por qué no conviene una carta con límites normales en conteos de 1 o 2.
+3. Diseñe un plan de muestreo para descubrir si el origen es el agua o las manos.
+
+## Referencias
+
+::: {#refs}
+:::

@@ -8,46 +8,57 @@ page-layout: full
 <figure class="cabeza" style="--color:#15171f"><div class="marco"><img src="../fotos/frasco.jpg" alt="Frasco de perfume de vidrio"></div><h1>Fragancias</h1></figure>
 ```
 
-Aquí aprendes a ordenar aromas por cuánto duran, a diluirlos y a cuidar la piel de quien los usa.
+Un perfume es una mezcla de sustancias volátiles cuya composición en fase vapor cambia con el tiempo. Esta sección relaciona volatilidad con percepción, presenta el cálculo de diluciones y resume los límites de seguridad.
 
-## Las palabras que vas a usar
+## Objetivos de aprendizaje
+
+1. Explicar el orden de las notas a partir de la presión de vapor.
+2. Construir un acorde con registro cuantitativo y control de variables.
+3. Calcular la concentración de un componente en el producto final.
+4. Aplicar la regla de suma para furocumarinas y los umbrales de etiquetado.
+
+## Vocabulario
 
 {{< include ../_inc/terminos-fragancias.md >}}
 
-## Lección 1. Por qué cambia un perfume
+## Lección 1. Volatilidad
 
-Cada sustancia se evapora a su paso. Las de mayor presión de vapor se van primero.
+La velocidad de evaporación de un componente en una mezcla ideal es proporcional a su fracción molar y a su presión de vapor (ley de Raoult):
+
+$$p_i = x_i\, p_i^{*}$$
+
+Los componentes con mayor $p_i^{*}$ dominan el vapor al principio y se agotan antes. De ahí la clasificación en notas de salida, corazón y fondo.
 
 :::: {.modelo data-escena="notas"}
 
 ::: {.acto}
-Tres sustancias recién puestas: limoneno, linalool y vainillina.
+Tres sustancias recién aplicadas: limoneno, linalool y vainillina.
 :::
 
 ::: {.acto}
-A las tres vidas medias del limoneno queda 12.5 % de él y cerca de 81 % del linalool.
+A tres vidas medias del limoneno queda 12.5 % de él y cerca de 81 % del linalool.
 :::
 
 ::: {.acto}
-A las 25, del limoneno no queda casi nada y del linalool cerca de 17 %. La vainillina sigue entera. [Laboratorio: notas de un perfume](../laboratorio/notas-de-perfume.qmd).
+A veinticinco, el limoneno se agotó, del linalool queda cerca de 17 % y la vainillina casi no cambia. [Laboratorio virtual: notas de un perfume](../laboratorio/notas-de-perfume.qmd).
 :::
 
 ::::
 
-El modelo toma cada sustancia por separado y no da horas. En una mezcla real también cuentan la piel, el alcohol y los fijadores.
+El modelo toma cada sustancia por separado, con cinética de primer orden y constante proporcional a la presión de vapor [@pubchem]. No da horas. En una mezcla real intervienen la piel, el disolvente y las interacciones entre componentes.
 
-## Lección 2. Construir un acorde
+## Lección 2. Construcción de un acorde
 
-1. Elige un fondo, un corazón y una salida.
-2. Pesa gotas en gramos: las gotas cambian de tamaño.
-3. Huele en tira de papel a 0, 15 min, 1 h y 4 h. Anota.
-4. Cambia una cosa a la vez.
+1. Elegir un material de salida, uno de corazón y uno de fondo.
+2. Pesar en gramos. El volumen de una gota cambia con la viscosidad y con el gotero.
+3. Evaluar en tira de papel a 0, 15 min, 1 h y 4 h, con códigos que oculten la identidad de la mezcla.
+4. Cambiar una proporción por vez y conservar un testigo.
 
-**Ejemplo resuelto.** Un acorde de 10 g con 40 % de naranja lleva 4 g. Si lo diluyes al 12 % en un perfume, la naranja queda en 0.40 × 12 = 4.8 % del producto.
+**Evaluación sensorial.** Con tres o más evaluadores, el orden de presentación se asigna al azar. Una prueba triangular decide si dos versiones se distinguen: con 18 evaluadores hacen falta 10 aciertos para una significancia de 5 %.
 
-## Lección 3. Concentraciones
+**Ejemplo resuelto.** Un acorde de 10 g con 40 % de naranja lleva 4.00 g. Diluido al 12 % en un perfume, la naranja queda en 0.40 × 12 = 4.8 %.
 
-Son convenciones del oficio; la ley no las define y las fuentes no coinciden.
+## Lección 3. Concentración y solubilidad
 
 | Producto | Fragancia (%) | Alcohol (°) |
 |---|---|---|
@@ -57,13 +68,15 @@ Son convenciones del oficio; la ley no las define y las fuentes no coinciden.
 | Perfume | 15 a 20 | 96 |
 | Extracto | más de 20 | 96 |
 
-Si agregas demasiada agua, la fragancia deja de disolverse y se enturbia.
+Son convenciones del oficio [@dermato]; la ley no las define y las fuentes difieren. Al agregar agua, los componentes hidrófobos superan su solubilidad y la mezcla se enturbia. El punto de turbidez se determina titulando la solución alcohólica con agua a temperatura fija.
 
-## Lección 4. Lo que puede hacer daño
+## Lección 4. Seguridad
 
-**Cítricos y sol.** Los límites de IFRA para aceites **exprimidos o prensados en frío**, en productos sin enjuague:
+### Fototoxicidad
 
-| Aceite | % |
+Las furocumarinas de los aceites cítricos **exprimidos o prensados en frío** reaccionan con la radiación UVA. Límites de IFRA para productos sin enjuague [@ifra51]:
+
+| Aceite | Límite (%) |
 |---|---|
 | Bergamota exprimida | 0.40 |
 | Lima exprimida | 0.70 |
@@ -71,34 +84,51 @@ Si agregas demasiada agua, la fragancia deja de disolverse y se enturbia.
 | Limón prensado en frío | 2.0 |
 | Toronja exprimida | 4.0 |
 
-Los destilados casi no traen furocumarinas y no siguen estos números. Si combinas varios exprimidos, suma la parte que cada uno usa de su límite: el total no pasa de 100 %.
+Los destilados casi no contienen furocumarinas y no siguen estos valores. Si se combinan varios exprimidos:
 
-**Ejemplo resuelto.** 0.20 % de bergamota usa 0.20/0.40 = 50 % del límite. 1.0 % de limón usa 1.0/2.0 = 50 %. Juntos llegan a 100 %.
+$$\sum_i \frac{c_i}{L_i} \times 100 \le 100$$
 
-**Oxidación.** El limoneno y el linalool oxidados sensibilizan. En 2900 pacientes, el limoneno oxidado dio 5.2 % de reacciones y el linalool oxidado, 6.9 %. Guarda los aceites llenos, fríos y a oscuras.
+**Ejemplo resuelto.** 0.20 % de bergamota consume 0.20/0.40 = 50 %. 1.0 % de limón consume 1.0/2.0 = 50 %. La suma llega a 100 %.
 
-**Alérgenos.** El Reglamento (UE) 2023/1545 deja 81 entradas para rotular por encima de 0.001 % sin enjuague o 0.01 % con enjuague. Rige desde el 31-07-2026 para lo que se coloca por primera vez en el mercado.
+### Sensibilización
+
+El aire oxida limoneno y linalool a hidroperóxidos sensibilizantes. En 2900 pacientes del Reino Unido, 5.2 % reaccionó al limoneno oxidado y 6.9 % al linalool oxidado [@audrain2014]. Los materiales se guardan en envase lleno, frío y oscuro, con fecha de apertura.
+
+### Etiquetado
+
+El Reglamento (UE) 2023/1545 exige declarar los alérgenos listados por encima de 0.001 % sin enjuague o 0.01 % con enjuague, y rige desde el 31-07-2026 para productos nuevos en el mercado [@reg1545]. El conteo directo del anexo da 81 entradas; el considerando habla de 80.
+
+La concentración de un alérgeno en el producto suma los aportes de cada material:
+
+$$c_a = \sum_j w_j\, f_{a,j}$$
+
+con $w_j$ el porcentaje del material $j$ y $f_{a,j}$ la fracción del alérgeno en él.
 
 ```{=html}
 <figure class="lado"><img src="../fotos/perfume.jpg" alt="Frascos de perfume de piel" loading="lazy"></figure>
 ```
 
-## Lección 5. Certificado IFRA
+## Lección 5. Certificado de conformidad
 
-El proveedor de una fragancia entrega un certificado con el máximo por tipo de producto. La misma mezcla puede permitir 1 % en un champú y menos en una crema. Sin ese papel no conoces tu límite.
+El proveedor emite un certificado IFRA para cada mezcla, con el máximo por categoría de producto y el número de enmienda. La categoría depende del producto final: una misma fragancia puede admitir 1 % en un champú y menos en una crema facial. El certificado no sustituye la evaluación de seguridad.
 
-## Qué puedes hacer
+## Alcance de la evidencia
+
+La 52.ª enmienda de IFRA está anunciada para 2027 y puede cambiar los límites de furocumarinas. Los acordes y perfumes de esta sección son ejercicios.
+
+## Productos de esta sección
 
 ```{=html}
 <div class="tarjas" data-productos="fragancias"></div>
 ```
 
-## Comprueba lo que aprendiste
+## Autoevaluación
 
 ```{=html}
 <div data-preguntas="fragancias"></div>
 ```
 
-## Fuentes
+## Referencias
 
-*Dermatocosmética*, EDUCC, ISBN 978-987-626-467-9, cap. 20. IFRA, 51.ª enmienda, estándares 086 a 093. Reglamento (UE) 2023/1545. Presiones de vapor: PubChem, CID 22311, 6549 y 1183. La cifra de 2900 pacientes está en la nota 06 de la investigación.
+::: {#refs}
+:::

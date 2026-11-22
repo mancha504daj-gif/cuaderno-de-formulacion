@@ -3,700 +3,700 @@
 :::: {.termino-caja data-ficha="t"}
 **Absorbancia**
 
-Logaritmo de cuánta luz detiene una muestra. A = −log T.
+Logaritmo negativo de la transmitancia: A = −log T.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Acondicionar**
 
-Bajar fricción y estática del cabello.
+Reducir la fricción y la carga electrostática de la fibra.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Acorde**
 
-Varios aromas que suenan como uno.
+Mezcla de materiales percibida como un olor unitario.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Activo**
 
-Ingrediente que se pone por un efecto concreto. *Niacinamida.*
+Ingrediente incorporado por un efecto específico. *Niacinamida.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Aerobio**
 
-Que crece con aire.
+Que crece en presencia de oxígeno.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Agar**
 
-Gel de algas que sostiene el medio en la placa.
+Polisacárido de algas que gelifica el medio.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Aglutinante**
 
-Une el polvo al comprimirlo. *Estearato de zinc con aceite.*
+Componente que une las partículas de un polvo durante la compresión. *Estearato de zinc con aceite.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Alérgeno**
 
-Sustancia que puede sensibilizar y se declara. *Linalool.*
+Sustancia capaz de inducir sensibilización. Las listadas se declaran en la etiqueta. *Linalool.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Anfótero**
 
-Cambia de carga con el pH. Suaviza la mezcla. *Cocamidopropil betaína.*
+Tensioactivo cuya carga depende del pH. Se usa como cotensioactivo. *Cocamidopropil betaína.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Anhidro**
 
-Sin agua. *Un bálsamo labial.*
+Sin agua en la fórmula. *Un bálsamo labial.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Aniónico**
 
-Tensioactivo con carga negativa: limpia y hace espuma. *SLES.*
+Tensioactivo con cabeza de carga negativa. Aporta detergencia y espuma. *SLES.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Antioxidante**
 
-Frena que los aceites se enrancien. No mata microbios. *Tocoferol.*
+Sustancia que retarda la oxidación de los lípidos. No tiene función antimicrobiana. *Tocoferol.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Aséptico**
 
-Hecho sin dejar entrar microbios de fuera. *Abrir un tubo junto al mechero.*
+Realizado sin introducir microorganismos ajenos a la muestra. *Abrir un tubo junto al mechero.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Autoclave**
 
-Olla a presión que esteriliza con vapor a 121 °C.
+Equipo que esteriliza con vapor saturado a presión; el ciclo usual para medios es de 15 min a 121 °C.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Bálsamo**
 
-En este sitio, un producto sin agua, sólido o semisólido. *Bálsamo labial.*
+En este sitio, forma anhidra sólida o semisólida. *Bálsamo labial.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Blanco**
 
-Prueba sin muestra. Si crece, algo se contaminó.
+Control sin muestra. Su crecimiento invalida la corrida.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **C.s.p.**
 
-Cantidad suficiente para: lo que falta para llegar a 100. *Agua c.s.p. 100.*
+Cantidad suficiente para completar 100 %. *Agua, c.s.p. 100.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Carga**
 
-Polvo que da cuerpo, desliza o absorbe. *Mica, sílice.*
+Polvo que aporta cuerpo, deslizamiento o absorción. *Mica, sílice.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Catiónico**
 
-Tensioactivo con carga positiva: se pega al cabello y lo suaviza. *Cloruro de cetrimonio.*
+Tensioactivo con cabeza de carga positiva. Se adsorbe en superficies negativas como el cabello. *Cloruro de cetrimonio.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Cesión**
 
-Cuánto color suelta un polvo o una barra.
+Masa de producto que se transfiere al aplicador o a la piel.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Cizalla**
 
-Esfuerzo que hace resbalar una capa sobre otra. *Frotar crema en la piel.*
+Deformación en la que capas adyacentes de un fluido se deslizan entre sí. *Extender una crema sobre la piel.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **CMC**
 
-Concentración micelar crítica: desde ahí se forman micelas. *Dodecilsulfato de sodio, cerca de 8.2 mM.*
+Concentración micelar crítica: valor a partir del cual se forman micelas. *Dodecilsulfato de sodio, cerca de 8.2 mM.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Coacervado**
 
-Complejo que precipita al diluir y se deposita en la fibra.
+Fase rica en polímero que se separa al diluir una mezcla de polímero y tensioactivo de carga opuesta.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Coalescencia**
 
-Dos gotas se funden en una. No tiene vuelta. *Aceite flotando sobre una crema vieja.*
+Fusión de dos gotas tras la ruptura de la película entre ellas. Es irreversible. *Aceite libre sobre una crema envejecida.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Colonia**
 
-Montón de microbios que nació de uno o de unos pocos.
+Población visible originada en una unidad formadora de colonia.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Conservante**
 
-Ingrediente que frena bacterias y hongos. *Fenoxietanol.*
+Sustancia que inhibe el crecimiento de bacterias, levaduras y mohos en el producto. *Fenoxietanol.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Corneocito**
 
-Célula plana y muerta de la capa externa.
+Célula sin núcleo, llena de queratina, del estrato córneo.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Cremado**
 
-Las gotas suben porque pesan menos que el agua. Vuelve al agitar. *La nata de la leche.*
+Ascenso de las gotas por diferencia de densidad. Es reversible por agitación. *Nata de la leche.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Curado**
 
-Semanas en que el jabón pierde agua y termina de reaccionar.
+Período en que un jabón pierde agua y completa la reacción.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Curva de sal**
 
-Cómo cambia la viscosidad al agregar sal: sube hasta un máximo y luego baja.
+Viscosidad en función de la concentración de electrolito. Presenta un máximo.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Cutícula**
 
-Escamas que cubren la fibra del cabello.
+Capa de escamas superpuestas que cubre la fibra capilar.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Dilución decimal**
 
-Una parte de muestra en diez partes totales. 10⁻² es repetirlo dos veces. *1 mL en 9 mL.*
+Transferencia de una parte de muestra a diez partes totales. 10⁻² son dos pasos sucesivos. *1 mL en 9 mL.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Dispersión**
 
-Repartir partículas y mantenerlas separadas: humectar, desaglomerar, estabilizar.
+Sistema de partículas separadas en un medio. Su preparación incluye humectación, desaglomeración y estabilización.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Emoliente**
 
-Rellena y suaviza. *Triglicérido caprílico/cáprico.*
+Lípido o éster que rellena los espacios entre escamas y reduce la fricción. *Triglicérido caprílico/cáprico.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Emulsión**
 
-Gotas de un líquido repartidas dentro de otro con el que no se mezcla. *La leche: grasa en agua.*
+Dispersión de un líquido en otro con el que es inmiscible, estabilizada por un emulsionante. *La leche: grasa en agua.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Emulsionante**
 
-Molécula con una parte que ama el agua y otra que ama el aceite. Se coloca entre los dos. *Tween 80.*
+Molécula anfifílica que se adsorbe en la interfase y retarda la coalescencia. *Tween 80.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Enriquecimiento**
 
-Dejar crecer en caldo para detectar lo poco.
+Cultivo en caldo que permite detectar una carga baja.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Esfuerzo de fluencia**
 
-El empujón mínimo para que empiece a fluir. *La pasta de dientes.*
+Esfuerzo mínimo que inicia el flujo. *Pasta dental.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Estabilidad**
 
-Que el producto no cambie con el tiempo, el calor o el frío. *Ciclos de −10 a 40 °C.*
+Capacidad de mantener las propiedades dentro de especificación durante la vida útil. *Ciclos de −10 a 40 °C.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Estéril**
 
-Sin nada vivo. *Un tubo salido del autoclave.*
+Libre de microorganismos viables. *Un tubo salido del autoclave.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Estrato córneo**
 
-La capa externa de la piel: células planas con lípidos entre ellas. *Como ladrillos con mortero.*
+Capa externa de la epidermis, formada por corneocitos y láminas de lípidos. *Modelo de ladrillos y mortero.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Factor natural de hidratación**
 
-Moléculas que retienen agua dentro del corneocito. Cerca de la mitad son aminoácidos. *Lactato, urea.*
+Mezcla de moléculas higroscópicas del corneocito. Cerca de la mitad son aminoácidos. *Lactato, urea.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Fase**
 
-Grupo de ingredientes que se mezclan juntos antes de unirlos a los demás. *Fase A: agua y glicerina. Fase B: aceites.*
+Conjunto de ingredientes que se combinan antes de incorporarlos a los demás. *Fase A: agua y glicerina. Fase B: aceites.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Fijador**
 
-Ingrediente poco volátil que frena a los demás.
+Material de baja volatilidad que reduce la presión de vapor de los demás.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Filtro inorgánico**
 
-Partícula que absorbe y dispersa. *Dióxido de titanio.*
+Filtro particulado que absorbe y dispersa la radiación. *Dióxido de titanio.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Filtro orgánico**
 
-Absorbe la radiación y suelta la energía como calor. *Avobenzona.*
+Filtro molecular que absorbe un fotón y disipa la energía como calor. *Avobenzona.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Filtro UV**
 
-Ingrediente que absorbe o dispersa radiación ultravioleta. *Óxido de zinc.*
+Sustancia que absorbe o dispersa radiación ultravioleta. *Óxido de zinc.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Floculación**
 
-Las gotas se agrupan sin fundirse. Vuelve al agitar. *Grumos blandos.*
+Agregación de gotas que conservan su identidad. Es reversible por agitación. *Grumos blandos.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Fórmula**
 
-Lista de ingredientes con su porcentaje en masa. Suma 100. *Una loción: 75 % agua, 16 % aceites, 4 % emulsionante y el resto.*
+Lista de ingredientes con su porcentaje en masa, cuya suma es 100. *Una loción: 75 % agua, 16 % aceites, 4 % emulsionante y el resto.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Fototóxico**
 
-Reacciona con el sol y quema la piel. *Bergamota exprimida.*
+Que causa daño cutáneo al combinarse con radiación ultravioleta. *Bergamota exprimida.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **FPS**
 
-Cuántas veces más dosis hace falta para quemar la piel con protector. *FPS 30 deja pasar cerca de 3 %.*
+Cociente entre la dosis mínima de eritema con protector y sin él. *FPS 30 deja pasar cerca de 3 %.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Función**
 
-Lo que hace un ingrediente dentro de la fórmula. Puede tener más de una. *El alcohol cetílico espesa y emulsiona.*
+Papel técnico de un ingrediente en la fórmula. Puede cumplir más de uno. *El alcohol cetílico espesa y emulsiona.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Hidrófilo**
 
-Que prefiere el agua. *La glicerina.*
+Con afinidad por el agua. *La glicerina.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **HLB**
 
-Balance hidrófilo lipófilo. Escala de 0 a 20 para emulsionantes no iónicos: bajo ama el aceite, alto ama el agua. *Span 80 tiene 4.3 y Tween 80 tiene 15.0.*
+Balance hidrófilo lipófilo: escala empírica de 0 a 20 para emulsionantes no iónicos. *Span 80 tiene 4.3 y Tween 80 tiene 15.0.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **HLB requerido**
 
-El HLB que necesita un aceite para formar una emulsión estable. *Almendras, de 6 a 7.*
+HLB de la mezcla de emulsionantes que da la emulsión más estable con un aceite. *Almendras, de 6 a 7.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Humectante**
 
-Atrae agua. *Glicerina.*
+Sustancia higroscópica que retiene agua en el estrato córneo. *Glicerina.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **IFRA**
 
-Asociación que fija límites de uso para fragancias.
+Asociación internacional que publica estándares de uso para materiales de fragancia.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **INCI**
 
-Nombre internacional de un ingrediente cosmético. Es el que va en la etiqueta. *Aqua es el agua; Sodium Chloride, la sal.*
+Nomenclatura internacional de ingredientes cosméticos. Es la que figura en la etiqueta. *Aqua es el agua; Sodium Chloride, la sal.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Incubar**
 
-Mantener a temperatura fija mientras crece. *30 °C, 48 h.*
+Mantener un cultivo a temperatura y tiempo definidos. *30 °C, 48 h.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Inóculo**
 
-Microbios que agregas a propósito.
+Suspensión de microorganismos que se agrega de forma deliberada.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Jabón**
 
-Sal de un ácido graso. Se hace con grasa y una base.
+Sal de un ácido graso.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Laca**
 
-Colorante fijado sobre un sólido para que no se disuelva. *CI 15850.*
+Pigmento obtenido al fijar un colorante soluble en un sustrato insoluble. *CI 15850.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Lejía**
 
-En jabonería, la solución de sosa o potasa en agua. El cloro de lavar es otra cosa.
+En jabonería, solución de hidróxido de sodio o de potasio. El hipoclorito doméstico es otra sustancia.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Lipófilo**
 
-Que prefiere el aceite. *La cera de abejas.*
+Con afinidad por el aceite. *La cera de abejas.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Longitud de onda crítica**
 
-Donde se junta el 90 % de la protección desde 290 nm. La UE pide al menos 370 nm.
+Longitud de onda bajo la cual se acumula 90 % de la absorbancia entre 290 y 400 nm.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Lote**
 
-La cantidad que preparas de una vez. *Un lote de prueba de 100 g.*
+Cantidad definida de producto elaborada en una sola operación. *Un lote de prueba de 100 g.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Maceración**
 
-Semanas de reposo para que el perfume se integre.
+Reposo de una solución alcohólica hasta que su olor se estabiliza.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Maduración de Ostwald**
 
-Las gotas pequeñas se disuelven y alimentan a las grandes. *Emulsiones con aceites algo solubles.*
+Crecimiento de las gotas grandes a costa de las pequeñas por difusión de la fase dispersa. *Emulsiones con aceites algo solubles.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Materia activa**
 
-La parte del ingrediente que es tensioactivo. El resto es agua. *SLES líquido: 27 %.*
+Fracción en masa del ingrediente comercial que corresponde al tensioactivo. *SLES líquido: 27 %.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Medio de cultivo**
 
-Alimento para microbios, líquido o en gel. *Agar malta.*
+Preparación que aporta nutrientes para el crecimiento de microorganismos. *Agar malta.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Micela**
 
-Grupo de tensioactivos con las colas hacia adentro. Ahí se esconde la grasa.
+Agregado de tensioactivos con las colas hacia el interior, en medio acuoso.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Nacarado**
 
-Lámina que refleja la luz. Se rompe si la mueles.
+Pigmento laminar que produce brillo por reflexión e interferencia.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Neutralizante**
 
-Apaga al conservante para que crezca lo que hay. *Caldo letheen.*
+Sustancia que inactiva al conservante durante el recuento. *Caldo letheen.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **No iónico**
 
-Sin carga. Suave. *Coco glucósido.*
+Tensioactivo sin carga en la cabeza. *Coco glucósido.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Notas de corazón**
 
-Lo que queda cuando se van las de salida. *Florales.*
+Componentes de volatilidad intermedia. *Florales.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Notas de fondo**
 
-Lo que dura más. *Maderas, vainilla.*
+Componentes menos volátiles, de mayor persistencia. *Maderas, vainilla.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Notas de salida**
 
-Lo que hueles primero y se va antes. *Cítricos.*
+Componentes más volátiles de una fragancia, percibidos primero. *Cítricos.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **O/W**
 
-Aceite en agua: las gotas son de aceite. Se enjuaga y se siente ligera. *Casi todas las lociones.*
+Emulsión con gotas de aceite en una fase continua acuosa. *Casi todas las lociones.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Oclusivo**
 
-Forma una película que frena la salida de agua. *Vaselina.*
+Sustancia hidrófoba que forma una película y reduce la evaporación. *Vaselina.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Patógeno**
 
-Que puede enfermar. *Pseudomonas aeruginosa.*
+Capaz de causar enfermedad. *Pseudomonas aeruginosa.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Pérdida de agua transepidérmica**
 
-Agua que sale de la piel por evaporación. Se mide en g/m² h. *Sube con aire seco.*
+Flujo de agua que difunde a través de la piel y se evapora. Se expresa en g/(m² h). *Sube con aire seco.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **pH**
 
-Medida de acidez. De 0 a 7 es ácido, 7 es neutro y hasta 14 es alcalino. *La piel ronda de 4 a 6.*
+Logaritmo negativo de la actividad del ion hidrógeno. A 25 °C, 7 es neutro; por debajo es ácido y por encima, alcalino. *La piel ronda de 4 a 6.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Pigmento**
 
-Partícula de color que no se disuelve. *Óxido de hierro.*
+Colorante insoluble en el medio. *Óxido de hierro.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Presión de vapor**
 
-Cuánto tiende a evaporarse una sustancia. *Limoneno 1.55 mmHg; vainillina 0.000118.*
+Presión del vapor en equilibrio con su líquido o sólido a una temperatura dada. *Limoneno 1.55 mmHg; vainillina 0.000118.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Pseudoplástico**
 
-Se adelgaza al frotarlo y recupera cuerpo en reposo. *La goma xantana.*
+Fluido cuya viscosidad disminuye al aumentar la velocidad de corte. *Solución de goma xantana.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Punto isoeléctrico**
 
-pH donde una superficie no tiene carga neta. *Cabello, cerca de 3.67.*
+pH en que una superficie o molécula tiene carga neta nula. *Cabello, cerca de 3.67.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Queratina**
 
-Proteína del cabello y la piel.
+Proteína estructural del cabello y del estrato córneo.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Reducción logarítmica**
 
-Cuántas veces baja por diez. 3 log es de un millón a mil.
+Diferencia de logaritmos decimales entre el recuento inicial y el final. 3 log equivalen a dividir entre mil.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Sangrado**
 
-El aceite del labial corre por las arrugas.
+Migración de la fase oleosa de un labial por las líneas del contorno.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **SAP**
 
-Miligramos de KOH que saponifican un gramo de grasa. *Coco: de 248 a 265.*
+Índice de saponificación: miligramos de KOH que consume un gramo de grasa. *Coco: de 248 a 265.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Saponificación**
 
-Reacción de una grasa con una base. Da jabón y glicerina.
+Hidrólisis alcalina de un éster. Con un triglicérido da jabón y glicerina.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Sérum**
 
-Producto fluido con activos en dosis más alta.
+Forma fluida con mayor proporción de activos.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Sobreengrase**
 
-Parte del aceite que dejas sin reaccionar a propósito. *5 %.*
+Fracción de la grasa que se deja sin saponificar. *5 %.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Syndet**
 
-Barra o líquido limpiador sin jabón, hecho con tensioactivos sintéticos.
+Limpiador con tensioactivos sintéticos y sin jabón.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Tensioactivo**
 
-Molécula con cabeza que ama el agua y cola que ama la grasa. Limpia, hace espuma o emulsiona. *Sodium Laureth Sulfate.*
+Molécula con cabeza hidrófila y cola hidrófoba que reduce la tensión interfacial. *Sodium Laureth Sulfate.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **UFC**
 
-Unidad formadora de colonia: lo que dio origen a una colonia visible. *14 000 UFC/g.*
+Unidad formadora de colonia: célula o agregado que da origen a una colonia visible. *14 000 UFC/g.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **UVA**
 
-Radiación de 320 a 400 nm. Penetra más y envejece.
+Radiación de 320 a 400 nm, de mayor penetración en la piel.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **UVB**
 
-Radiación de 290 a 320 nm. Quema.
+Radiación de 290 a 320 nm, responsable principal del eritema.
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **Viscosidad**
 
-Resistencia a fluir. Se mide en pascal segundo. *La miel tiene más que el agua.*
+Cociente entre el esfuerzo de corte y la velocidad de corte. Se expresa en Pa s. *La miel, del orden de 10 Pa s; el agua, 0.001.*
 
 ::::
 
 :::: {.termino-caja data-ficha="t"}
 **W/O**
 
-Agua en aceite: las gotas son de agua. Resiste el agua y se siente más grasa. *Muchas bases de maquillaje.*
+Emulsión con gotas de agua en una fase continua oleosa. *Muchas bases de maquillaje.*
 
 ::::
 

@@ -2,7 +2,7 @@
 title: HLB
 ---
 
-HLB significa balance hidrófilo lipófilo. Va de 0 a 20: un emulsionante con 4 ama el aceite y uno con 15 ama el agua. Cada aceite pide un valor.
+El balance hidrófilo lipófilo, HLB, ordena los emulsionantes no iónicos de 0 a 20. Los valores bajos corresponden a moléculas lipófilas y los altos, a hidrófilas. Cada aceite tiene un valor requerido.
 
 El HLB requerido de la fase oleosa es el promedio de sus aceites, ponderado por masa. La fracción del emulsionante A sale de despejar la mezcla:
 

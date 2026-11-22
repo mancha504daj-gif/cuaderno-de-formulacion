@@ -8,9 +8,9 @@ page-layout: full
 <figure class="cabeza" style="--color:#b3245c" data-alto="baja"><div class="marco"><img src="../fotos/piel.jpg" alt="Frasco de crema abierto con su tapa azul"></div><h1>Bálsamo labial</h1></figure>
 ```
 
-[Cuidado de la piel](../piel/index.qmd). Cera que atrapa aceite. Forma: anhidro sólido.
+[Cuidado de la piel](../piel/index.qmd). Red cristalina de ceras que retiene aceite. Forma: anhidro sólido.
 
-Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+Las recetas son propuestas de este proyecto y **están sin ensayar**. Se presentan como hipótesis de trabajo para contrastar en el laboratorio.
 
 ## Bálsamo labial clásico
 
@@ -19,47 +19,47 @@ Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. 
 ```
 
 ::: {.avisos}
-- Sin agua no necesita conservante.
+- Sistema anhidro, sin conservante.
 - Contiene aceite de frutos secos.
 :::
 
-### Por qué funciona
+### Fundamento
 
-La cera forma una red que atrapa el aceite. Más cera, más firme; más aceite, más deslizamiento. El ricino aporta brillo.
+La cera cristaliza en una red que retiene el aceite por capilaridad. La relación cera a aceite fija la dureza; el ricino, polar y viscoso, aporta brillo y adherencia.
 
-### Paso a paso
+### Procedimiento
 
-1. Pesa todo menos la fase C y fúndelo en baño de agua a 75 °C.
-2. Mezcla hasta que no veas restos sólidos.
-3. Retira del calor y espera a que baje unos 10 °C.
-4. Agrega la fase C y mezcla.
-5. Vierte en el envase caliente y deja enfriar sin moverlo. Rotula lote y fecha.
+1. Pesar todo menos la fase C y fundirlo en baño de agua a 75 °C.
+2. Mezclar hasta que no se observen restos sólidos.
+3. Retirar del calor y esperar a que baje unos 10 °C.
+4. Agregar la fase C y mezclar.
+5. Verter en el envase caliente y dejar enfriar sin moverlo. Rotular lote y fecha.
 
-### Cómo saber si salió bien
+### Control de calidad
 
-| Control | Meta | Cómo se mide |
+| Determinación | Especificación | Método |
 |---|---|---|
 | Aspecto | liso, sin granos ni gotas de aceite | a 24 h y a 7 días |
-| Dureza | registra la penetración | aguja o peso conocido |
-| Punto de fusión | registra el intervalo | capilar o baño con termómetro |
+| Dureza | registrar la penetración | aguja o peso conocido |
+| Punto de fusión | registrar el intervalo | capilar o baño con termómetro |
 | Calor | sin gotas en la superficie | 40 °C, 7 días |
 | Olor | sin rancio | a 1 y a 3 meses |
 
-### Si algo falla
+### Diagnóstico de fallas
 
-| Qué ves | Por qué | Qué hacer |
+| Observación | Causa probable | Acción correctiva |
 |---|---|---|
-| Granos | enfrió despacio o la manteca cristalizó mal | funde otra vez y enfría más rápido |
-| Suda aceite | poca cera o demasiado aceite líquido | sube la cera de 1 en 1 % |
-| Se parte | demasiada cera dura | baja la cera y sube el aceite |
-| Huele rancio | oxidación | usa aceite fresco, tocoferol y envase lleno |
+| Granos | enfrió despacio o la manteca cristalizó mal | fundir otra vez y enfriar más rápido |
+| Exudación de aceite | poca cera o demasiado aceite líquido | aumentar la cera de 1 en 1 % |
+| Fractura | demasiada cera dura | reducir la cera y aumentar el aceite |
+| Olor rancio | oxidación | usar aceite fresco, tocoferol y envase lleno |
 
-### Qué puedes cambiar
+### Variables de estudio
 
 - Cera a 18 % para un tarro, a 25 % para una barra en clima cálido.
-- Cambia almendras por girasol si hay alergia.
+- Sustituir almendras por girasol si hay alergia.
 
-**Fuentes.** Método y proceso: Baki 2023, ISBN 978-1-119-70977-0, pp. 72 y 250-259. Proporciones propuestas en este proyecto.
+**Referencias.** Método y proceso: Baki 2023, ISBN 978-1-119-70977-0, pp. 72 y 250-259. Proporciones propuestas en este proyecto.
 
 ## Otros productos de esta sección
 

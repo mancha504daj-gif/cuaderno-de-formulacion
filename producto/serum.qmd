@@ -8,9 +8,9 @@ page-layout: full
 <figure class="cabeza" style="--color:#b3245c" data-alto="baja"><div class="marco"><img src="../fotos/piel.jpg" alt="Frasco de crema abierto con su tapa azul"></div><h1>Sérum</h1></figure>
 ```
 
-[Cuidado de la piel](../piel/index.qmd). Agua con activos en dosis más alta. Forma: gel fluido.
+[Cuidado de la piel](../piel/index.qmd). Solución espesada con mayor proporción de activos. Forma: gel fluido.
 
-Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+Las recetas son propuestas de este proyecto y **están sin ensayar**. Se presentan como hipótesis de trabajo para contrastar en el laboratorio.
 
 ## Sérum de niacinamida
 
@@ -19,47 +19,47 @@ Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. 
 ```
 
 ::: {.avisos}
-- Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.
-- No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad.
+- Contiene agua. Sin ensayo del conservante puede contaminarse sin cambios visibles.
+- No se aplica en la piel sin control microbiológico y evaluación de seguridad.
 :::
 
-### Por qué funciona
+### Fundamento
 
-Un sérum es agua con activos y poco espesante. La goma xantana se adelgaza al frotar y recupera cuerpo en reposo.
+Solución de activo con baja proporción de polímero. La goma xantana es pseudoplástica: fluye al aplicar y recupera viscosidad en reposo.
 
-### Paso a paso
+### Procedimiento
 
-1. Dispersa la goma xantana en la glicerina hasta tener una pasta sin grumos.
-2. Agrega el agua poco a poco, con agitación media, y espera de 30 a 60 min a que se hidrate.
-3. Incorpora los activos de la fase B, uno por uno.
-4. Agrega la fase C y mezcla despacio para no meter aire.
-5. Mide el pH y ajústalo.
-6. Deja reposar 24 h, revisa burbujas y grumos, y envasa.
+1. Dispersar la goma xantana en la glicerina hasta tener una pasta sin grumos.
+2. Agregar el agua poco a poco, con agitación media, y esperar de 30 a 60 min a que se hidrate.
+3. Incorporar los activos de la fase B, uno por uno.
+4. Agregar la fase C y mezclar despacio para no incorporar aire.
+5. Medir el pH y ajustarlo.
+6. Dejar reposar 24 h, revisar burbujas y grumos, y envasar.
 
-### Cómo saber si salió bien
+### Control de calidad
 
-| Control | Meta | Cómo se mide |
+| Determinación | Especificación | Método |
 |---|---|---|
 | pH | el de la receta ± 0.3 | medidor o tiras |
 | Aspecto | transparente o uniforme, sin grumos | a contraluz |
-| Viscosidad | registra husillo, rpm y temperatura | viscosímetro o tiempo de caída |
+| Viscosidad | registrar husillo, rpm y temperatura | viscosímetro o tiempo de caída |
 | Ciclos | sin cambio | de tres a seis ciclos |
 | Microbiología | sin crecimiento | placas a t0 y a 28 días |
 
-### Si algo falla
+### Diagnóstico de fallas
 
-| Qué ves | Por qué | Qué hacer |
+| Observación | Causa probable | Acción correctiva |
 |---|---|---|
-| Grumos | el polímero se mojó de golpe | prehumecta con glicerina |
-| Muchas burbujas | agitación rápida | agita lento y deja reposar |
-| Se aguó | sal, pH o microbios | mide pH; si huele raro, descártalo |
+| Grumos | el polímero se mojó de golpe | prehumectar con glicerina |
+| Muchas burbujas | agitación rápida | agitar lento y dejar reposar |
+| Pérdida de viscosidad | sal, pH o microbios | medir pH; ante olor anómalo, descartarlo |
 
-### Qué puedes cambiar
+### Variables de estudio
 
-- Baja la xantana a 0.2 % para gotero.
-- Cambia la niacinamida por 5 % de urea y vigila el pH.
+- Reducir la xantana a 0.2 % para gotero.
+- Sustituir la niacinamida por 5 % de urea y vigilar el pH.
 
-**Fuentes.** Método y proceso: Baki 2023, ISBN 978-1-119-70977-0, pp. 72 y 250-259. Niacinamida e hialuronato: nota 03 de la investigación. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
+**Referencias.** Método y proceso: Baki 2023, ISBN 978-1-119-70977-0, pp. 72 y 250-259. Niacinamida e hialuronato: nota 03 de la investigación. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
 
 ## Otros productos de esta sección
 

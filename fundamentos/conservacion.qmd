@@ -4,48 +4,63 @@ toc: false
 page-layout: full
 ---
 
-Si un producto lleva agua, algo quiere vivir en él. Aquí aprendes a frenarlo y a no confiarte.
+Un producto con agua libre sostiene crecimiento microbiano. Esta página estudia los factores que lo limitan, el efecto del pH sobre los ácidos orgánicos y las causas por las que un conservante pierde actividad.
 
-## Lección 1. Por qué se contamina
+## Objetivos de aprendizaje
 
-Los microbios entran con las materias primas, con el envase y, sobre todo, con los dedos. Crecen mejor entre pH 5 y 8. Por debajo de 4 o por encima de 10 casi no proliferan.
+1. Evaluar el riesgo microbiológico de una fórmula por pH, actividad de agua y tipo de emulsión.
+2. Calcular la fracción sin disociar de un ácido y compararla con su límite.
+3. Seleccionar un sistema conservante y prever sus incompatibilidades.
+4. Reconocer la evidencia experimental que exige un producto.
 
-También cuenta el agua disponible. La mayoría de las bacterias no crece por debajo de una actividad de agua de 0.9, y la mayoría de los mohos por debajo de 0.8. Un producto sin agua no necesita conservante mientras no le entre.
+## Lección 1. Factores de crecimiento
 
-| Producto | Riesgo |
-|---|---|
-| Bálsamo anhidro | bajo |
-| Perfume con mucho alcohol | bajo |
-| Jabón, pH 9.5 a 10.5 | se protege en parte |
-| Emulsión W/O | menor que O/W |
-| Loción O/W, gel, champú | alto |
-| Máscara de pestañas | alto, y junto al ojo |
+Los microorganismos entran con las materias primas, durante el llenado y sobre todo durante el uso, por contacto con la piel y el ambiente [@sccs2023, p. 148]. Crecen mejor entre pH 5 y 8, y casi no proliferan por debajo de 4 ni por encima de 10 [@halla2018].
 
-## Lección 2. Los ácidos y el pH
+La actividad de agua, $a_w$, es el cociente entre la presión de vapor del producto y la del agua pura a la misma temperatura:
 
-Benzoato y sorbato entran a la célula sin carga. El pH decide cuánto queda así.
+$$a_w = \frac{p}{p^{*}}$$
+
+La mayoría de las bacterias no crece por debajo de 0.90 ni la mayoría de los mohos por debajo de 0.80 [@baki2023, p. 47]. Sales, polioles e hidrocoloides la bajan [@halla2018].
+
+| Producto | Riesgo | Razón |
+|---|---|---|
+| Bálsamo anhidro | bajo | sin agua libre |
+| Perfume alcohólico | bajo | etanol |
+| Jabón, pH 9.5 a 10.5 | moderado | pH |
+| Emulsión W/O | moderado | agua en gotas separadas |
+| Loción O/W, gel, champú | alto | agua continua, pH 4 a 8 |
+| Máscara de pestañas | alto | reinoculación diaria y contacto ocular |
+
+Un producto con más de 20 % de alcohol es el ejemplo que da el comité europeo de control final no necesario [@sccs2023, p. 148].
+
+## Lección 2. Ácidos orgánicos y pH
+
+Los ácidos benzoico y sórbico atraviesan la membrana en su forma sin disociar y se disocian en el citoplasma, que se acidifica [@halla2018]. La fracción activa se obtiene de Henderson y Hasselbalch:
+
+$$f = \frac{[HA]}{[HA] + [A^-]} = \frac{1}{1 + 10^{\,pH - pK_a}}$$
 
 :::: {.modelo data-escena="acido"}
 
 ::: {.acto}
-Cada bola amarilla es una molécula entera, la que conserva. A pH bajo casi todas están enteras.
+Cada esfera amarilla es una molécula sin disociar. A pH bajo casi todas lo están.
 :::
 
 ::: {.acto}
-Al pH del pKa, la mitad.
+Con pH igual al pKa, la mitad.
 :::
 
 ::: {.acto}
-Una unidad arriba, cerca de 9 %.
+Una unidad por encima, 1/11, cerca de 9 %.
 :::
 
 ::: {.acto}
-Mueve tú el pH. [Laboratorio: conservante y pH](../laboratorio/conservante-y-ph.qmd).
+Varíe el pH. [Laboratorio virtual: conservante y pH](../laboratorio/conservante-y-ph.qmd).
 :::
 
 ::::
 
-| pH | Sórbico activo | Benzoico activo |
+| pH | Sórbico, pKa 4.76 | Benzoico, pKa 4.20 |
 |---|---|---|
 | 4.0 | 85 % | 61 % |
 | 4.5 | 65 % | 33 % |
@@ -53,47 +68,61 @@ Mueve tú el pH. [Laboratorio: conservante y pH](../laboratorio/conservante-y-ph
 | 5.5 | 15 % | 4.8 % |
 | 6.0 | 5.4 % | 1.6 % |
 
-**Ejemplo resuelto.** 0.4 % de sorbato de potasio son 0.4 × 112.13/150.22 = 0.299 % de ácido sórbico. A pH 4.8 queda sin disociar 47.7 %, o sea 0.142 %.
+Los pKa son de PubChem a 25 °C [@pubchem]. Glicoles, etanol y fuerza iónica desplazan el pKa aparente, así que la tabla es una estimación.
 
-## Lección 3. Elegir
+**Ejemplo resuelto.** 0.40 % de sorbato de potasio equivale a 0.40 × 112.13/150.22 = 0.299 % de ácido sórbico. A pH 4.8, $f$ = 0.477 y el ácido sin disociar es 0.142 %. A pH 5.8 baja a 0.025 %.
 
-| Conservante | pH | Límite europeo | Cuidado |
+## Lección 3. Selección
+
+| Conservante | pH de uso | Límite europeo | Observación |
 |---|---|---|---|
-| Fenoxietanol | depende poco | 1.0 % | más débil frente a mohos; refuérzalo |
-| Benzoato de sodio | hasta 5 | 0.5 % como ácido, sin enjuague | mide el pH siempre |
-| Sorbato de potasio | hasta 5.5 | 0.6 % como ácido | sobre todo hongos y levaduras |
+| Fenoxietanol | amplio | 1.0 % | menos activo contra mohos |
+| Benzoato de sodio | hasta 5 | 0.5 % como ácido, sin enjuague; 2.5 % con enjuague | exige medir pH |
+| Sorbato de potasio | hasta 5.5 | 0.6 % como ácido | hongos y levaduras |
 | Alcohol bencílico | no ionizable | 1.0 % | se declara como alérgeno |
-| Metilisotiazolinona | | 0.0015 %, solo con enjuague | prohibida sin enjuague |
+| Metilisotiazolinona | amplio | 0.0015 %, solo con enjuague | sensibilizante |
 
-La etilhexilglicerina debilita la membrana y refuerza al fenoxietanol. En un estudio, 0.675 % de fenoxietanol con 0.075 % de etilhexilglicerina mató rápido bacterias.
+Los límites proceden del Anexo V del reglamento consolidado [@reg1223]. Los pH de uso de los ácidos se derivan del pKa.
 
-Un quelante, como el EDTA o el fitato, quita el hierro que los microbios necesitan.
+**Sinergia.** La etilhexilglicerina daña la membrana. En concentraciones subletales por separado, 0.675 % de fenoxietanol con 0.075 % de etilhexilglicerina mató bacterias con rapidez [@langsrud2016].
 
-## Lección 4. Lo que le quita fuerza
+**Quelantes.** EDTA y fitato retiran hierro y aumentan la permeabilidad de la envoltura, con más efecto en gramnegativas [@halla2018].
 
-- **El aceite.** Los conservantes lipófilos se van a las gotas y el agua queda sin proteger.
-- **Los polvos.** El talco quita más de 90 % de la actividad del metilparabeno.
-- **Los no iónicos.** Pueden encerrar al conservante en micelas.
-- **El pH que sube.** La urea y algunos activos lo mueven con el tiempo.
+**Barreras combinadas.** pH, actividad de agua, quelante, envase y conservante suman obstáculos. Un envase con bomba reduce la inoculación durante el uso.
 
-## Lección 5. Comprobar
+## Lección 4. Pérdida de actividad
 
-El ensayo de eficacia contamina el producto a propósito y cuenta qué sobrevive. ISO 11930 usa cinco cepas y 28 días. Según un resumen de laboratorio, el criterio A pide que las bacterias bajen 3 log a los 7 días y no vuelvan a subir, y que *Candida* baje 1 log.
+| Causa | Mecanismo | Evidencia o medida |
+|---|---|---|
+| Fase oleosa | reparto del conservante lipófilo hacia las gotas | coeficiente de reparto |
+| Sólidos | adsorción; el talco retira más de 90 % de la actividad del metilparabeno [@halla2018] | comparar con y sin sólido |
+| No iónicos | solubilización en micelas | subir dosis, cambiar sistema |
+| Deriva de pH | hidrólisis de urea u otros activos | pH semanal |
+| Envase | adsorción en plástico | ensayo en envase final |
 
-Bajar 3 log es pasar de un millón a mil. [Laboratorio: ensayo del conservante](../laboratorio/ensayo-del-conservante.qmd).
+La concentración en agua de un soluto que se reparte con coeficiente $K = C_o/C_w$ es:
 
-ISO 17516 fija un máximo de 1000 UFC/g, o 100 en ojos, mucosas y menores de tres años, sin cuatro patógenos en 1 g.
+$$C_w = \frac{C_t}{1 + \phi\,(K - 1)}$$
 
-El paso a paso está en [microbiología](microbiologia.qmd).
+con $\phi$ la fracción volumétrica de aceite. **Ejemplo:** con K = 6 y φ = 0.20, la fase acuosa queda con 1/(1 + 0.20 × 5) = 50 % de la concentración nominal.
 
-**Antes de ponerlo en la piel.** Un producto que no se separa puede estar contaminado. Sin recuento y sin ensayo del conservante, se queda en el laboratorio.
+## Lección 5. Evidencia experimental
 
-## Comprueba lo que aprendiste
+El ensayo de desafío es obligatorio en la Unión Europea para los productos que pueden deteriorarse o infectar al consumidor; el responsable elige el método [@sccs2023, p. 149]. ISO 11930 usa cinco cepas durante 28 días. Un resumen de laboratorio de su criterio A pide 3 log a los 7 días para bacterias y 1 log para *Candida*, sin aumento posterior [@microchem].
+
+$$RL = \log_{10}\frac{N_0}{N_t}$$
+
+[Laboratorio virtual: ensayo del conservante](../laboratorio/ensayo-del-conservante.qmd). Práctica con levadura: [GM-07](../guias/gm-07-conservante.qmd).
+
+**Criterio de este sitio.** Ningún producto con agua se aplica en la piel sin recuento microbiológico y ensayo del conservante. La ausencia de separación u olor no es evidencia de conservación.
+
+## Autoevaluación
 
 ```{=html}
 <div data-preguntas="conservacion"></div>
 ```
 
-## Fuentes
+## Referencias
 
-Halla et al. 2018, DOI [10.3390/molecules23071571](https://doi.org/10.3390/molecules23071571). Langsrud et al. 2016, PLoS ONE 11, citado en la nota 03. Reglamento (CE) 1223/2009, Anexo V, texto consolidado al 18-05-2026. pKa: PubChem, CID 243 y 643460. Criterio A: resumen de Microchem Laboratory; no se consultó el texto de la norma. Actividad de agua: Baki 2023, ISBN 978-1-119-70977-0, p. 47.
+::: {#refs}
+:::

@@ -3,119 +3,119 @@
 :::: {.termino-caja}
 **pH**
 
-Medida de acidez. De 0 a 7 es ácido, 7 es neutro y hasta 14 es alcalino. *La piel ronda de 4 a 6.*
+Logaritmo negativo de la actividad del ion hidrógeno. A 25 °C, 7 es neutro; por debajo es ácido y por encima, alcalino. *La piel ronda de 4 a 6.*
 
 ::::
 
 :::: {.termino-caja}
 **Tensioactivo**
 
-Molécula con cabeza que ama el agua y cola que ama la grasa. Limpia, hace espuma o emulsiona. *Sodium Laureth Sulfate.*
+Molécula con cabeza hidrófila y cola hidrófoba que reduce la tensión interfacial. *Sodium Laureth Sulfate.*
 
 ::::
 
 :::: {.termino-caja}
 **Aniónico**
 
-Tensioactivo con carga negativa: limpia y hace espuma. *SLES.*
+Tensioactivo con cabeza de carga negativa. Aporta detergencia y espuma. *SLES.*
 
 ::::
 
 :::: {.termino-caja}
 **Catiónico**
 
-Tensioactivo con carga positiva: se pega al cabello y lo suaviza. *Cloruro de cetrimonio.*
+Tensioactivo con cabeza de carga positiva. Se adsorbe en superficies negativas como el cabello. *Cloruro de cetrimonio.*
 
 ::::
 
 :::: {.termino-caja}
 **Anfótero**
 
-Cambia de carga con el pH. Suaviza la mezcla. *Cocamidopropil betaína.*
+Tensioactivo cuya carga depende del pH. Se usa como cotensioactivo. *Cocamidopropil betaína.*
 
 ::::
 
 :::: {.termino-caja}
 **No iónico**
 
-Sin carga. Suave. *Coco glucósido.*
+Tensioactivo sin carga en la cabeza. *Coco glucósido.*
 
 ::::
 
 :::: {.termino-caja}
 **Micela**
 
-Grupo de tensioactivos con las colas hacia adentro. Ahí se esconde la grasa.
+Agregado de tensioactivos con las colas hacia el interior, en medio acuoso.
 
 ::::
 
 :::: {.termino-caja}
 **CMC**
 
-Concentración micelar crítica: desde ahí se forman micelas. *Dodecilsulfato de sodio, cerca de 8.2 mM.*
+Concentración micelar crítica: valor a partir del cual se forman micelas. *Dodecilsulfato de sodio, cerca de 8.2 mM.*
 
 ::::
 
 :::: {.termino-caja}
 **Materia activa**
 
-La parte del ingrediente que es tensioactivo. El resto es agua. *SLES líquido: 27 %.*
+Fracción en masa del ingrediente comercial que corresponde al tensioactivo. *SLES líquido: 27 %.*
 
 ::::
 
 :::: {.termino-caja}
 **Curva de sal**
 
-Cómo cambia la viscosidad al agregar sal: sube hasta un máximo y luego baja.
+Viscosidad en función de la concentración de electrolito. Presenta un máximo.
 
 ::::
 
 :::: {.termino-caja}
 **Jabón**
 
-Sal de un ácido graso. Se hace con grasa y una base.
+Sal de un ácido graso.
 
 ::::
 
 :::: {.termino-caja}
 **Saponificación**
 
-Reacción de una grasa con una base. Da jabón y glicerina.
+Hidrólisis alcalina de un éster. Con un triglicérido da jabón y glicerina.
 
 ::::
 
 :::: {.termino-caja}
 **SAP**
 
-Miligramos de KOH que saponifican un gramo de grasa. *Coco: de 248 a 265.*
+Índice de saponificación: miligramos de KOH que consume un gramo de grasa. *Coco: de 248 a 265.*
 
 ::::
 
 :::: {.termino-caja}
 **Sobreengrase**
 
-Parte del aceite que dejas sin reaccionar a propósito. *5 %.*
+Fracción de la grasa que se deja sin saponificar. *5 %.*
 
 ::::
 
 :::: {.termino-caja}
 **Lejía**
 
-En jabonería, la solución de sosa o potasa en agua. El cloro de lavar es otra cosa.
+En jabonería, solución de hidróxido de sodio o de potasio. El hipoclorito doméstico es otra sustancia.
 
 ::::
 
 :::: {.termino-caja}
 **Curado**
 
-Semanas en que el jabón pierde agua y termina de reaccionar.
+Período en que un jabón pierde agua y completa la reacción.
 
 ::::
 
 :::: {.termino-caja}
 **Syndet**
 
-Barra o líquido limpiador sin jabón, hecho con tensioactivos sintéticos.
+Limpiador con tensioactivos sintéticos y sin jabón.
 
 ::::
 

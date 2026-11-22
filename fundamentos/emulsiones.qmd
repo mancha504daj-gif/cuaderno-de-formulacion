@@ -8,131 +8,159 @@ page-layout: full
 <figure class="cabeza" style="--color:#3f2463"><div class="marco"><img src="../fotos/burbuja.jpg" alt="Película de jabón con islas de colores"></div><h1>Emulsiones</h1></figure>
 ```
 
-Una emulsión reparte gotas de un líquido dentro de otro con el que no se mezcla. Cremas, lociones, bases y máscaras son emulsiones.
+Una emulsión es una dispersión de un líquido en otro con el que es inmiscible. Tiene área interfacial y energía en exceso, así que tiende a separarse. El formulador elige emulsionante, proceso y viscosidad para que tarde más que la vida útil del producto.
 
-## Las palabras que vas a usar
+## Objetivos de aprendizaje
+
+1. Predecir el tipo de emulsión y comprobarlo con dos métodos.
+2. Calcular el HLB requerido y la proporción de un par de emulsionantes.
+3. Distinguir los mecanismos de inestabilidad y su reversibilidad.
+4. Aplicar los modelos de Stokes y de Krieger y Dougherty dentro de sus límites.
+
+## Vocabulario
 
 {{< include ../_inc/terminos-emulsiones.md >}}
 
-## Lección 1. Quién decide el tipo
+## Lección 1. Tipo de emulsión
 
-Si el aceite queda en gotas, es O/W. Si el agua queda en gotas, es W/O. Decide el emulsionante: la fase donde es más soluble tiende a quedar por fuera (regla de Bancroft). Una fórmula con 75 % de agua puede salir W/O si elegiste un emulsionante lipófilo.
+En una O/W la fase dispersa es el aceite; en una W/O, el agua. La regla de Bancroft establece que la fase continua es aquella donde el emulsionante es más soluble. El volumen de las fases pesa menos: una fórmula con 75 % de agua puede resultar W/O con un emulsionante lipófilo.
 
-| | O/W | W/O |
+| Propiedad | O/W | W/O |
 |---|---|---|
-| Se enjuaga | sí | cuesta |
+| Dilución | admite agua | admite aceite |
+| Conductividad | apreciable | casi nula |
 | Sensación | ligera | más grasa |
-| Conduce electricidad | sí | casi nada |
 | Ejemplo | loción | base de maquillaje |
 
-## Lección 2. HLB
+## Lección 2. Balance hidrófilo lipófilo
 
-Griffin ordenó los emulsionantes no iónicos de 0 a 20. Un número bajo significa que aman el aceite; uno alto, que aman el agua.
+Griffin definió la escala por comparación experimental de mezclas [@griffin1949] y después la calculó para no iónicos [@griffin1954]. Para ésteres de polioles y para etoxilados:
 
-| HLB | Sirve para |
+$$HLB = 20\left(1 - \frac{S}{A}\right) \qquad HLB = \frac{E}{5}$$
+
+con $S$ el índice de saponificación del éster, $A$ el índice de acidez del ácido graso y $E$ el porcentaje en masa de óxido de etileno. Las expresiones no valen para iónicos ni para moléculas con óxido de propileno.
+
+| HLB | Aplicación |
 |---|---|
-| 1 a 3 | romper espuma |
-| 4 a 6 | emulsión W/O |
-| 7 a 9 | mojar superficies |
-| 8 a 18 | emulsión O/W |
-| 13 a 15 | limpiar |
-| 10 a 18 | solubilizar |
+| 1 a 3 | antiespumante |
+| 4 a 6 | emulsionante W/O |
+| 7 a 9 | humectante de superficies |
+| 8 a 18 | emulsionante O/W |
+| 13 a 15 | detergente |
+| 10 a 18 | solubilizante |
 
-Cada aceite pide un HLB. Para una mezcla se promedia por masa. Las tablas no coinciden: la vaselina figura con 10.5 y con 7. Por eso la [calculadora](../calculadoras/hlb.qmd) trabaja con intervalos.
+El HLB requerido de una fase oleosa y la fracción de un par salen de balances lineales:
 
-**Ejemplo resuelto.** 12 partes de almendras (6 a 7) y 4 de karité (8): de (12 × 6 + 4 × 8)/16 = 6.5 a (12 × 7 + 4 × 8)/16 = 7.25.
+$$HLB_{req} = \frac{\sum w_i\, HLB_i}{\sum w_i} \qquad x_A = \frac{HLB_{req} - HLB_B}{HLB_A - HLB_B}$$
 
-Para ésteres de polioles Griffin usó $HLB = 20(1 - S/A)$, con $S$ el índice de saponificación del éster y $A$ el índice de acidez del ácido graso. Para etoxilados, $HLB = E/5$, con $E$ el porcentaje de óxido de etileno.
+**Ejemplo resuelto.** 12 partes de almendras (6 a 7) y 4 de karité (8): de (12 × 6 + 4 × 8)/16 = 6.5 a (12 × 7 + 4 × 8)/16 = 7.25. Con Span 80 (4.3) y Tween 80 (15.0), para 6.875: x = (6.875 − 15.0)/(4.3 − 15.0) = 0.759 de Span 80.
 
-El HLB orienta los primeros ensayos y no predice estabilidad. [Laboratorio: balanza de emulsionantes](../laboratorio/balanza-de-emulsionantes.qmd).
+**Límites.** Griffin estimó una precisión de ±1. Salager señala ±2 en la práctica y que la escala ignora temperatura, electrolitos y tipo de aceite; propone la desviación hidrófilo lipófila normalizada, HLDN [@salager2020]. Las tablas difieren: la vaselina figura con 10.5 en Griffin y con 7 a 8 en compilaciones posteriores. El HLB de aceites vegetales cambia con origen y proceso [@smejkal2024]. Alam y colaboradores hallaron inestables las fórmulas cuyo par se alejaba de 10.5 a 12 [@alam2020].
 
-## Lección 3. Por qué se separan
+La [calculadora](../calculadoras/hlb.qmd) trabaja con intervalos. [Laboratorio virtual: balanza de emulsionantes](../laboratorio/balanza-de-emulsionantes.qmd).
+
+## Lección 3. Mecanismos de inestabilidad
 
 :::: {.modelo data-escena="fallas"}
 
 ::: {.acto}
-Una emulsión estable: gotas repartidas, que se cruzan sin unirse.
+Emulsión estable: gotas dispersas que se cruzan sin unirse.
 :::
 
 ::: {.acto}
-**Cremado.** Suben por ser más ligeras, y las grandes primero. Al agitar vuelven.
+**Cremado.** Las gotas ascienden por diferencia de densidad, las mayores primero. Reversible por agitación.
 :::
 
 ::: {.acto}
-**Floculación.** Se agrupan sin fundirse. También vuelven al agitar.
+**Floculación.** Se agregan sin fundirse. Reversible por agitación.
 :::
 
 ::: {.acto}
-**Coalescencia.** Se funden. Ya no hay vuelta.
+**Coalescencia.** La película se rompe y dos gotas forman una. Irreversible.
 :::
 
 ::: {.acto}
-**Maduración de Ostwald.** Las pequeñas se disuelven y alimentan a las grandes, sin tocarse.
+**Maduración de Ostwald.** El aceite difunde de las gotas pequeñas a las grandes por diferencia de presión capilar.
 :::
 
 ::: {.acto}
-**Inversión.** El aceite pasa a ser el medio y el agua queda en gotas.
+**Inversión.** La fase dispersa pasa a continua.
 :::
 
 ::::
 
-| Falla | Qué ocurre | ¿Vuelve al agitar? |
-|---|---|---|
-| Cremado o sedimentación | Las gotas suben o bajan por densidad | Sí |
-| Floculación | Las gotas se agrupan sin fundirse | Sí |
-| Coalescencia | Las gotas se funden | No |
-| Maduración de Ostwald | Las grandes crecen a costa de las pequeñas | No |
-| Inversión de fases | O/W pasa a W/O o al revés | No |
+| Mecanismo | Fuerza impulsora | Reversible | Medida |
+|---|---|---|---|
+| Cremado o sedimentación | gravedad | sí | altura de crema con el tiempo |
+| Floculación | atracción entre gotas | sí | microscopía, reología |
+| Coalescencia | ruptura de película | no | distribución de tamaño |
+| Maduración de Ostwald | presión de Laplace | no | radio al cubo contra tiempo |
+| Inversión | cambio de afinidad | no | conductividad |
 
-La [calculadora de Stokes](../calculadoras/stokes.qmd) estima la primera fila. Las demás piden ensayo.
+La velocidad de cremado de una gota aislada sigue a Stokes:
 
-## Lección 4. Por qué más gotas espesan
+$$v = \frac{2\,r^2\,(\rho_c - \rho_d)\,g}{9\,\eta_c}$$
+
+Es válida para gotas rígidas, diluidas y en medio newtoniano. Una crema con esfuerzo de fluencia puede no cremar aunque la ecuación dé una velocidad. [Calculadora de Stokes](../calculadoras/stokes.qmd).
+
+## Lección 4. Viscosidad y fracción dispersa
 
 :::: {.modelo data-escena="cizalla"}
 
 ::: {.acto}
-Con 20 % de gotas, cada una encuentra por dónde pasar.
+Con 20 % de gotas, cada una encuentra espacio para pasar.
 :::
 
 ::: {.acto}
-Con 45 % se estorban, y el mismo esfuerzo mueve menos.
+Con 45 % se estorban y el mismo esfuerzo produce menos flujo.
 :::
 
 ::: {.acto}
-Cerca del empaque máximo casi no fluye. Krieger y Dougherty lo escribieron así, con $\phi$ la fracción de gotas:
+Cerca del empaque máximo la viscosidad diverge [@krieger1959]:
 
-$$\frac{\eta}{\eta_0} = \left(1 - \frac{\phi}{\phi_m}\right)^{-2.5\,\phi_m}$$
+$$\frac{\eta}{\eta_0} = \left(1 - \frac{\phi}{\phi_m}\right)^{-[\eta]\,\phi_m}, \qquad [\eta] = 2.5$$
 
-[Laboratorio: viscosidad de una emulsión](../laboratorio/viscosidad-de-una-emulsion.qmd).
+[Laboratorio virtual: viscosidad de una emulsión](../laboratorio/viscosidad-de-una-emulsion.qmd).
 :::
 
 ::::
 
-Es un modelo de esferas rígidas; una gota líquida se deforma y estorba menos.
+El modelo describe esferas rígidas. Una gota líquida se deforma y ofrece menos resistencia.
 
-## Lección 5. Hacerla
+## Lección 5. Proceso
 
-1. Calienta las dos fases por separado, unos grados sobre la cera que funde más alto, a la misma temperatura.
-2. Agrega la fase interna sobre la externa con agitación intensa.
-3. Agita hasta enfriar. Si dejas de agitar, las ceras cristalizan en granos.
-4. Agrega lo sensible al calor por debajo de 40 °C.
+1. Calentar ambas fases por separado a la misma temperatura, unos 5 °C sobre el punto de fusión más alto.
+2. Incorporar la fase interna sobre la externa con cizalla intensa.
+3. Homogeneizar de 2 a 5 min y registrar velocidad y tiempo.
+4. Enfriar con agitación suave. Sin agitación, las ceras cristalizan en granos grandes.
+5. Agregar la fase C por debajo de 40 °C.
+6. Reponer el agua evaporada por diferencia de masa.
 
-En frío se ahorra energía, pero no sirve con ceras.
+El proceso en frío ahorra energía y no sirve con ceras.
 
-## Lección 6. Saber qué tipo obtuviste
+## Lección 6. Verificación del tipo
 
-1. Agrega un colorante hidrosoluble y mira al microscopio. Fondo coloreado: O/W. Gotas coloreadas: W/O.
-2. Diluye una muestra. La emulsión acepta su fase externa y se rompe con la interna.
-3. Mide la conductividad. Una O/W conduce; una W/O casi no.
+| Ensayo | O/W | W/O |
+|---|---|---|
+| Colorante hidrosoluble al microscopio | fondo coloreado | gotas coloreadas |
+| Dilución con agua | se dispersa | forma grumos |
+| Conductividad | del orden de la fase acuosa | casi cero |
 
-Haz dos de las tres: una sola puede engañar.
+Dos ensayos concordantes bastan. Se registra además el tamaño de gota: promedio de 200 gotas medidas en micrografía con escala.
 
-## Comprueba lo que aprendiste
+## Alcance de la evidencia
+
+El HLB sirve para elegir los primeros ensayos. La estabilidad se determina con el plan de [estabilidad](estabilidad.qmd).
+
+## Autoevaluación
 
 ```{=html}
 <div data-preguntas="emulsiones"></div>
 ```
 
-## Fuentes
+## Referencias
 
-Griffin 1949, *J. Soc. Cosmet. Chem.* 1:311 (sin DOI). Griffin 1954, 5:249 (sin DOI). Salager et al. 2020, DOI [10.3390/cosmetics7030057](https://doi.org/10.3390/cosmetics7030057). Krieger y Dougherty 1959, DOI [10.1122/1.548848](https://doi.org/10.1122/1.548848). Baki 2023, ISBN 978-1-119-70977-0, pp. 52-53, 69-72, 213-215 y 260.
+La clasificación y los ensayos de tipo siguen a Baki [-@baki2023, pp. 52-53, 69-72, 213-215 y 260].
+
+::: {#refs}
+:::

@@ -15,7 +15,7 @@ page-layout: full
 ::: {.acto}
 Una gota de aceite dentro del agua es más ligera que el agua que desplaza. Mírala desde la propia gota: es el líquido el que pasa a su alrededor.
 
-Mueve el radio, o tira del borde de la gota con el ratón.
+Varíe el radio o arrastre el borde de la gota.
 :::
 
 ::: {.acto}
@@ -35,7 +35,7 @@ $$v = \frac{2 r^2 (\rho_{medio} - \rho_{gota})\, g}{9 \eta}$$
 :::
 
 ::: {.acto}
-El radio entra al cuadrado. La gota de radio $2r$ recorre cuatro espacios mientras la de radio $r$ recorre uno. Por eso homogeneizar ayuda tanto.
+El radio entra al cuadrado. La gota de radio $2r$ recorre cuatro espacios mientras la de radio $r$ recorre uno. De ahí el efecto de la homogeneización.
 
 El recorrido es $x = v\,t$. El programa pasa micrómetros a metros y días a segundos, con $g = 9.80665\ \mathrm{m/s^2}$.
 
@@ -57,15 +57,15 @@ $$HA \rightleftharpoons H^+ + A^-$$
 :::
 
 ::: {.acto}
-Al subir el pH, más moléculas lo sueltan. La constante de acidez fija el reparto:
+Al subir el pH, más moléculas lo ceden. La constante de acidez fija el reparto:
 
 $$K_a = \frac{[H^+][A^-]}{[HA]}$$
 
-Cuando el pH iguala al $pK_a$, aquí 4.76, la mitad está entera. Fíjate en que no paran: unas sueltan el protón y otras lo recuperan.
+Cuando el pH iguala al $pK_a$, aquí 4.76, la mitad está sin disociar. El equilibrio es dinámico: las moléculas ceden y recuperan el protón sin detenerse.
 :::
 
 ::: {.acto}
-Al tomar logaritmos queda $pH - pK_a = \log_{10}([A^-]/[HA])$. La fracción entera es $[HA]$ entre el total:
+Al tomar logaritmos queda $pH - pK_a = \log_{10}([A^-]/[HA])$. La fracción sin disociar es $[HA]$ entre el total:
 
 $$f = \frac{[HA]}{[HA] + [A^-]} = \frac{1}{1 + 10^{\,pH - pK_a}}$$
 
@@ -73,7 +73,7 @@ Una unidad por encima del $pK_a$ queda 1/11, cerca de 9 %. Ahí salta el aviso d
 :::
 
 ::: {.acto}
-Ahora mueve tú el pH.
+Varíe el pH.
 
 **Cuándo falla.** Con ácidos de varios protones, sales concentradas o aceite que se lleva parte del ácido.
 
@@ -84,14 +84,14 @@ Ahora mueve tú el pH.
 
 :::: {.modelo data-escena="jabon" data-pieza="jabon" data-nombre="Saponificación" style="--c:#4d5a2c"}
 
-## ¿Cuánta lejía pide un aceite?
+## ¿Cuánta base requiere un aceite?
 
 ::: {.acto}
 Una grasa es glicerina con tres cadenas de ácido graso.
 :::
 
 ::: {.acto}
-Cada cadena necesita una base. La sosa quema: guantes y lentes. El SAP dice cuántos miligramos de KOH saponifican un gramo de aceite. Un mol de NaOH reemplaza a un mol de KOH, así que se pasa de uno a otro con sus masas molares, 40.00 y 56.11.
+Cada éster consume un equivalente de base. La sosa es corrosiva: guantes y lentes. El SAP dice cuántos miligramos de KOH saponifican un gramo de aceite. Un mol de NaOH reemplaza a un mol de KOH, así que se pasa de uno a otro con sus masas molares, 40.00 y 56.11.
 :::
 
 ::: {.acto}
@@ -134,18 +134,18 @@ Para HLB 10 salen 46.7 % de Span 80 y 53.3 % de Tween 80. El HLB que pide la fas
 
 :::: {.modelo data-escena="activa" data-pieza="activa" data-nombre="Materia activa" style="--c:#5c1f3a"}
 
-## ¿Cuánta materia prima pesas?
+## ¿Qué masa de materia prima se pesa?
 
 ::: {.acto}
 Un tensioactivo comercial ya viene con agua. Los puntos blancos son la parte activa.
 :::
 
 ::: {.acto}
-Agregas agua hasta completar el lote. El vaso sube y los puntos son los mismos.
+Al agregar agua hasta completar el lote cambia el volumen y no el número de puntos.
 :::
 
 ::: {.acto}
-Es un balance de masa: el activo que pesas es el que queda.
+El balance de masa iguala el activo pesado con el activo final.
 
 $$m_{prima} = \frac{m_{lote}\; c_{final}}{c_{comercial}}$$
 
@@ -154,9 +154,9 @@ $$m_{prima} = \frac{m_{lote}\; c_{final}}{c_{comercial}}$$
 
 ::::
 
-## Los laboratorios que armes tú
+## Laboratorios construidos por el usuario
 
-La ficha dibuja el circuito de tus bloques y escribe sus ecuaciones. La curva evalúa tu ecuación en 101 puntos entre el mínimo y el máximo del control. En la probeta, el recorrido sale de Stokes y se detiene en 100 mm; el tamaño, el color, la posición inicial y el grosor de la capa son dibujo. Agrega con **supuesto del modelo** lo que tu ecuación da por cierto y con **fuente** de dónde salió.
+La ficha dibuja el circuito de tus bloques y escribe sus ecuaciones. La curva evalúa tu ecuación en 101 puntos entre el mínimo y el máximo del control. En la probeta, el recorrido sale de Stokes y se detiene en 100 mm; el tamaño, el color, la posición inicial y el grosor de la capa son dibujo. El bloque **supuesto del modelo** declara lo que la ecuación da por cierto y el bloque **fuente**, su origen.
 
 ## Comprobaciones y referencias
 

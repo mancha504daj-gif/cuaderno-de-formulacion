@@ -8,7 +8,7 @@
  "lote": 100,
  "pH": "5.5 a 6.5",
  "estado": "sin ensayar",
- "porque": "El isetionato limpia a un pH cercano al de la piel, cosa que el jabón no puede. El ácido esteárico y el alcohol cetílico dan dureza.",
+ "porque": "El isetionato de cocoílo limpia a pH cercano al de la piel, inaccesible para un jabón. El ácido esteárico y el alcohol cetílico actúan como plastificantes y dan dureza.",
  "fases": [
   {
    "nombre": "A",
@@ -59,15 +59,15 @@
   }
  ],
  "pasos": [
-  "Ponte mascarilla: el isetionato en polvo irrita.",
-  "Calienta el isetionato con la betaína, el agua y la glicerina a 75 °C hasta tener una pasta.",
-  "Funde la fase B y agrégala.",
-  "Amasa, baja a 45 °C y agrega la fase C.",
-  "Moldea con presión y deja secar 48 h."
+  "Usar mascarilla: el isetionato en polvo irrita.",
+  "Calentar el isetionato con la betaína, el agua y la glicerina a 75 °C hasta tener una pasta.",
+  "Fundir la fase B y agregarla.",
+  "Amasar, enfriar a 45 °C y agregar la fase C.",
+  "Moldear con presión y dejar secar 48 h."
  ],
  "cambia": [
   "Más betaína: más blanda y más espuma.",
-  "Agrega 2 % de karité."
+  "Agregar 2 % de karité."
  ],
  "controles": [
   [
@@ -77,12 +77,12 @@
   ],
   [
    "Dureza",
-   "registra la penetración",
+   "registrar la penetración",
    "aguja o peso conocido"
   ],
   [
    "Punto de fusión",
-   "registra el intervalo",
+   "registrar el intervalo",
    "capilar o baño con termómetro"
   ],
   [
@@ -100,27 +100,27 @@
   [
    "Granos",
    "enfrió despacio o la manteca cristalizó mal",
-   "funde otra vez y enfría más rápido"
+   "fundir otra vez y enfriar más rápido"
   ],
   [
-   "Suda aceite",
+   "Exudación de aceite",
    "poca cera o demasiado aceite líquido",
-   "sube la cera de 1 en 1 %"
+   "aumentar la cera de 1 en 1 %"
   ],
   [
-   "Se parte",
+   "Fractura",
    "demasiada cera dura",
-   "baja la cera y sube el aceite"
+   "reducir la cera y aumentar el aceite"
   ],
   [
-   "Huele rancio",
+   "Olor rancio",
    "oxidación",
-   "usa aceite fresco, tocoferol y envase lleno"
+   "usar aceite fresco, tocoferol y envase lleno"
   ]
  ],
  "avisos": [
-  "Usa mascarilla: el polvo fino irrita los pulmones.",
-  "No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad."
+  "Usar mascarilla: el polvo fino irrita las vías respiratorias.",
+  "No se aplica en la piel sin control microbiológico y evaluación de seguridad."
  ],
  "fuentes": [
   "Tensioactivos: Thompson et al. 2023 y catálogos de proveedor citados en la calculadora de materia activa.",

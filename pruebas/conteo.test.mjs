@@ -6,8 +6,12 @@ const pl = (colonias, dilucion, volumen = 0.1) => ({ colonias, dilucion, volumen
 
 test("placas contables: promedio ponderado", () => { const r = ufc([pl(132, 1), pl(148, 1), pl(14, 2), pl(11, 2)]); assert.ok(Math.abs(r.valor - 14000) < 1e-6); assert.equal(r.nota, "contable"); });
 test("dos diluciones contables", () => { const r = ufc([pl(232, 1), pl(244, 1), pl(33, 2), pl(28, 2)]); assert.ok(Math.abs(r.valor - 537 / 0.022) < 1e-6); });
+test("ejemplo 2.1a del BAM, capítulo 3 (2026): 14 000", () => { const r = ufc([pl(144, 2, 1), pl(118, 2, 1), pl(26, 3, 1), pl(20, 3, 1)]); assert.ok(Math.abs(r.valor - 14000) < 1e-6); });
+test("ejemplo 2.1b del BAM: 3900", () => { assert.ok(Math.abs(ufc([pl(27, 2, 1), pl(51, 2, 1)]).valor - 3900) < 1e-6); });
+test("ejemplo 2.1c del BAM: 13 000", () => { assert.ok(Math.abs(ufc([pl(120, 2, 1), pl(23, 3, 1)]).valor - 13000) < 1e-6); });
+test("redondeo al par cuando la tercera cifra es 5", () => { assert.equal(ufc([pl(145, 2, 1)]).texto, "14 000"); assert.equal(ufc([pl(155, 2, 1)]).texto, "16 000"); });
 test("sin colonias en 1 mL de la dilución 10⁻¹ es menos de 10", () => { assert.equal(ufc([pl(0, 1, 0.5), pl(0, 1, 0.5)]).texto, "menos de 10"); });
-test("incontable en todas", () => { assert.match(ufc([pl(400, 1), pl(300, 3)]).texto, /^más de/); });
+test("incontable en todas", () => { assert.match(ufc([pl(400, 1), pl(310, 3)]).texto, /^más de/); });
 test("pocas colonias se marca como estimado", () => { const r = ufc([pl(6, 1), pl(8, 1)]); assert.ok(Math.abs(r.valor - 700) < 1e-6); assert.match(r.nota, /estimado/); });
 test("reducción de un millón a mil son 3 log", () => { assert.ok(Math.abs(reduccionLog(1e6, 1e3) - 3) < 1e-12); });
 

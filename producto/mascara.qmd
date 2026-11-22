@@ -8,9 +8,9 @@ page-layout: full
 <figure class="cabeza" style="--color:#5c1f3a" data-alto="baja"><div class="marco"><img src="../fotos/maquillaje.jpg" alt="Labiales de varios tonos"></div><h1>Máscara de pestañas</h1></figure>
 ```
 
-[Maquillaje](../maquillaje/index.qmd). Jabón formado en la mezcla, cera y óxido negro. Forma: emulsión con cera.
+[Maquillaje](../maquillaje/index.qmd). Emulsión con jabón formado in situ, cera y óxido negro. Forma: emulsión con cera.
 
-Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+Las recetas son propuestas de este proyecto y **están sin ensayar**. Se presentan como hipótesis de trabajo para contrastar en el laboratorio.
 
 ## Máscara de pestañas
 
@@ -19,51 +19,51 @@ Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. 
 ```
 
 ::: {.avisos}
-- Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.
-- Zona de los ojos: exige control microbiológico y colorantes permitidos.
-- No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad.
+- Contiene agua. Sin ensayo del conservante puede contaminarse sin cambios visibles.
+- Zona ocular: exige recuento con límite de 100 UFC/g y colorantes permitidos.
+- No se aplica en la piel sin control microbiológico y evaluación de seguridad.
 :::
 
-### Por qué funciona
+### Fundamento
 
-El jabón que emulsiona se forma dentro de la mezcla. La cera engrosa la pestaña y el polímero fija el color.
+El jabón emulsionante se forma in situ. La cera aumenta el grosor aparente de la pestaña y el polímero fija el pigmento.
 
-### Paso a paso
+### Procedimiento
 
-1. Hidrata la hidroxietilcelulosa en el agua y agrega el copolímero y la trietanolamina.
-2. Dispersa el óxido negro en esa fase y muele.
-3. Funde la fase B a 88 °C y lleva A a la misma temperatura.
-4. Vierte B sobre A con agitación fuerte: el esteárico y la trietanolamina forman el emulsionante en ese momento.
-5. Enfría agitando hasta 40 °C y agrega la fase C.
-6. Envasa en tubo limpio con cepillo nuevo.
+1. Hidratar la hidroxietilcelulosa en el agua y agregar el copolímero y la trietanolamina.
+2. Dispersar el óxido negro en esa fase y moler.
+3. Fundir la fase B a 88 °C y llevar A a la misma temperatura.
+4. Verter B sobre A con agitación fuerte: el esteárico y la trietanolamina forman el emulsionante en ese momento.
+5. Enfriar agitando hasta 40 °C y agregar la fase C.
+6. Envasar en tubo limpio con cepillo nuevo.
 
-### Cómo saber si salió bien
+### Control de calidad
 
-| Control | Meta | Cómo se mide |
+| Determinación | Especificación | Método |
 |---|---|---|
 | pH | el de la receta ± 0.3 | medidor calibrado o tiras |
-| Tipo de emulsión | O/W | gota en agua: debe dispersarse. Confirma con conductividad o colorante hidrosoluble al microscopio |
-| Aspecto | homogéneo, sin granos | extiende una capa fina sobre vidrio |
+| Tipo de emulsión | O/W | gota en agua: debe dispersarse. Confirmar con conductividad o colorante hidrosoluble al microscopio |
+| Aspecto | homogéneo, sin granos | extender una capa fina sobre vidrio |
 | Centrífuga | sin separación | 3000 rpm, 30 min |
 | Ciclos | sin separación ni cambio de olor | de tres a seis ciclos entre −10 y 40 °C, 24 h por etapa |
-| Microbiología | sin crecimiento | placas a t0 y a 28 días; ensayo de eficacia del conservante antes de usarla |
+| Microbiología | sin crecimiento | placas a t0 y a 28 días; ensayo de eficacia del conservante antes de su uso |
 
-### Si algo falla
+### Diagnóstico de fallas
 
-| Qué ves | Por qué | Qué hacer |
+| Observación | Causa probable | Acción correctiva |
 |---|---|---|
-| Se separa una capa de aceite y vuelve al agitar | cremado: gotas grandes o medio poco viscoso | homogeneiza más tiempo o sube un poco la goma |
-| Se separa y no vuelve | coalescencia: falta emulsionante o el par no es el adecuado | prueba otro HLB antes de subir la dosis |
-| Queda granosa | las ceras cristalizaron o las fases estaban a distinta temperatura | iguala temperaturas y enfría agitando |
-| No se dispersa en agua | salió W/O | sube la parte hidrófila del emulsionante |
-| Huele mal o sale moho | conservante débil o pH alto | descártala, revisa pH y conservante |
+| Se separa una capa de aceite y vuelve al agitar | cremado: gotas grandes o medio poco viscoso | homogeneizar más tiempo o aumentar un poco la goma |
+| Se separa y no vuelve | coalescencia: falta emulsionante o el par no es el adecuado | probar otro HLB antes de subir la dosis |
+| Queda granosa | las ceras cristalizaron o las fases estaban a distinta temperatura | igualar temperaturas y enfriar agitando |
+| No se dispersa en agua | salió W/O | aumentar la parte hidrófila del emulsionante |
+| Olor o moho | conservante débil o pH alto | descartarla, revisar pH y conservante |
 
-### Qué puedes cambiar
+### Variables de estudio
 
 - Carnauba a 2 % si queda dura.
 - Óxido a 7 % para un tono suave.
 
-**Fuentes.** Grupos y rangos: fórmula de proveedor analizada en la nota 05; proporciones propias. Higiene: Giacomel et al. 2013, DOI 10.1111/ics.12053. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
+**Referencias.** Grupos y rangos: fórmula de proveedor analizada en la nota 05; proporciones propias. Higiene: Giacomel et al. 2013, DOI 10.1111/ics.12053. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
 
 ## Otros productos de esta sección
 

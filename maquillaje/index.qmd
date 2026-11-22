@@ -8,96 +8,126 @@ page-layout: full
 <figure class="cabeza" style="--color:#5c1f3a"><div class="marco"><img src="../fotos/maquillaje.jpg" alt="Labiales de varios tonos"></div><h1>Maquillaje</h1></figure>
 ```
 
-Aquí aprendes a mojar y moler un pigmento, a levantar una barra con ceras y a comprimir un polvo.
+El maquillaje es una dispersión de partículas en un vehículo que las fija sobre la piel. Esta sección trata la clasificación de los colorantes, la dispersión, la red cristalina de las ceras y la compactación de polvos.
 
-## Las palabras que vas a usar
+## Objetivos de aprendizaje
+
+1. Clasificar colorantes por solubilidad y restricción de uso.
+2. Describir las tres etapas de la dispersión de un pigmento.
+3. Relacionar la composición de un labial con sus defectos.
+4. Diseñar un experimento de compactación con dos factores.
+
+## Vocabulario
 
 {{< include ../_inc/terminos-maquillaje.md >}}
 
-## Lección 1. El color
+## Lección 1. Colorantes
 
-| Tipo | Cómo es | Ejemplo |
-|---|---|---|
-| Pigmento inorgánico | opaco y estable | óxidos de hierro, dióxido de titanio |
-| Laca | color vivo, fijado en un sólido | CI 15850 |
-| Nacarado | lámina que refleja | mica con dióxido de titanio |
-| Colorante soluble | tiñe la piel | eosina |
+| Tipo | Estructura | Comportamiento | Ejemplo |
+|---|---|---|---|
+| Pigmento inorgánico | óxido cristalino | opaco, estable a luz y calor | óxidos de hierro, dióxido de titanio |
+| Laca | colorante fijado sobre un sustrato | color saturado, insoluble | CI 15850 |
+| Nacarado | lámina recubierta | refleja e interfiere | mica con dióxido de titanio |
+| Colorante soluble | molécula en solución | tiñe la piel | eosina |
 
-Con rojo, amarillo, negro y blanco se arma casi cualquier tono de piel. El ajuste se hace a ojo: los modelos ópticos suponen capas parejas y los óxidos se aglomeran.
+Los tonos de piel se obtienen con óxidos rojo, amarillo y negro sobre blanco. El color de una mezcla de pigmentos no se suma: se suma el cociente de absorción a dispersión, $K/S$, de la teoría de Kubelka y Munk. Los óxidos se aglomeran y la piel aporta su propio color, de modo que el ajuste final se hace por comparación visual.
 
-**Dónde se permite.** Cada colorante tiene su lista. En los ojos solo entran los autorizados para esa zona.
+**Restricciones.** Cada colorante figura en una lista con sus zonas permitidas. En el contorno de los ojos solo entran los autorizados para esa zona.
 
-## Lección 2. Moler
+## Lección 2. Dispersión
 
 :::: {.modelo data-escena="pigmento"}
 
 ::: {.acto}
-El pigmento llega en grumos. Un grumo da una mota, no un color.
+El pigmento seco llega en aglomerados. Cada uno produce una mota visible.
 :::
 
 ::: {.acto}
-Se muele en aceite de ricino, que moja los granos y los separa.
+**Humectación y desaglomeración.** El aceite de ricino moja la superficie y la molienda rompe los aglomerados.
 :::
 
 ::: {.acto}
-Con los granos repartidos, el mismo peso cubre y colorea más.
+**Estabilización.** Con las partículas separadas, la misma masa presenta más área y cubre más.
 :::
 
 ::: {.acto}
-Los nacarados entran al final y sin moler: son láminas, y rotas pierden el brillo. [Laboratorio: por qué un pigmento se va al fondo](../laboratorio/pigmento-que-se-asienta.qmd).
+Los nacarados entran al final y sin molienda: son láminas y al romperse pierden reflexión. [Laboratorio virtual: por qué un pigmento se va al fondo](../laboratorio/pigmento-que-se-asienta.qmd).
 :::
 
 ::::
 
-Dispersar es tres pasos: humectar, desaglomerar y estabilizar. Una pasta de trabajo lleva cerca de 40 % de óxidos, o 25 % de laca, en aceite.
+Una pasta de trabajo lleva cerca de 40 % de óxidos o 25 % de laca en aceite. El avance se mide con un calibre Hegman o al microscopio, cada 15 min, hasta que el tamaño del grano mayor deje de bajar.
 
-**Ejemplo resuelto.** Un labial de 100 g lleva 10 g de laca. Para una pasta al 25 % necesitas 10/0.25 = 40 g de pasta, o sea 30 g de ricino. Esos 30 g salen del ricino de la fórmula.
+**Ejemplo resuelto.** Un labial de 100 g lleva 10 g de laca. La pasta al 25 % pesa 10/0.25 = 40 g y contiene 30 g de ricino, que se descuentan del ricino de la fórmula.
 
-## Lección 3. Un labial
+La velocidad de sedimentación de una partícula aislada sigue la ley de Stokes:
 
-| Grupo | % | Para qué |
+$$v = \frac{2\,r^2\,(\rho_p - \rho_m)\,g}{9\,\eta}$$
+
+Un óxido de hierro, varias veces más denso que el aceite, sedimenta aun con radio pequeño. Se contrarresta con viscosidad en reposo.
+
+## Lección 3. Labial
+
+| Grupo | Contenido (%) | Función |
 |---|---|---|
-| ceras | 10 a 25 | estructura |
-| mantecas | 10 a 15 | controlan los cristales |
-| aceites | 30 a 50 | mojan el pigmento y dan brillo |
-| cargas | 8 a 12 | textura |
-| pigmentos | 5 a 20 | color |
+| Ceras | 10 a 25 | red cristalina |
+| Mantecas | 10 a 15 | controlan el tamaño de cristal |
+| Aceites | 30 a 50 | mojan el pigmento, dan brillo |
+| Texturizantes y cargas | 8 a 12 | tacto y cobertura |
+| Pigmentos y nacarados | 5 a 20 | color |
 
-La mezcla de varias ceras resiste mejor que una sola. Un labial bueno funde de 59 a 64 °C.
+Los intervalos son de Rigano y Montoli [@rigano2021], y Mawazi y colaboradores revisan los procesos [@mawazi2022]. Las ceras son poco polares y mojan mal los pigmentos, así que el aceite de ricino hace ese trabajo. Una mezcla de ceras resiste mejor que una sola. Los labiales formulados funden de 59 a 64 °C [@mawazi2022].
 
-| Defecto | Causa |
-|---|---|
-| Suda gotas | aceite que la cera no sostiene |
-| Se rompe | poca cera o cristales grandes |
-| Corre por las arrugas | aceite muy fluido |
-| Deja rayas | pigmento sin moler |
+| Defecto | Causa probable | Corrección |
+|---|---|---|
+| Exudación de gotas | aceite que la red no retiene | más cera microcristalina, menos aceite poco polar |
+| Fractura | poca cera o cristales grandes | enfriar más rápido, cambiar la mezcla de ceras |
+| Migración a las arrugas | aceite muy fluido | formador de película, más estructura |
+| Estrías | pigmento mal disperso | prolongar la molienda |
 
-## Lección 4. Un polvo compacto
+**Control.** Punto de fusión, fuerza de ruptura y aspecto tras ciclos de 4 a 40 °C.
 
-El aglutinante y la presión unen los granos. En un ensayo con talco al 3, 6 y 9 % de aglutinante y 1000 y 2000 psi, más presión dio pastillas más duras y más aglutinante bajó la cesión de color. Cambia una cosa a la vez.
+## Lección 4. Polvo compacto
 
-Estas recetas usan mica y caolín en lugar de talco: el talco exige certificar que no trae asbesto.
+El aglutinante y la presión unen las partículas. Un ensayo con talco varió aglutinante (3, 6 y 9 %) y presión (1000 y 2000 psi). Con más presión la pastilla salió más dura y con más aglutinante cedió menos color [@ct2022].
 
-## Lección 5. Los ojos
+**Diseño experimental.** Dos factores a dos niveles con tres réplicas dan doce pastillas. Se miden dureza y masa cedida tras diez pasadas de esponja. El análisis de varianza con interacción dice si el efecto de la presión depende del aglutinante:
 
-Una máscara es agua, cera y pigmento, y el cepillo vuelve al envase cada día. Según el resumen de un estudio con 40 máscaras usadas, 79 % tenía *Staphylococcus aureus* y 13 % *Pseudomonas aeruginosa*. No se leyó el texto completo. Un producto de ojos pide más control que una loción.
+```r
+m <- aov(dureza ~ presion * aglutinante, data = d)
+summary(m)
+TukeyHSD(m)
+```
+
+Las recetas usan mica y caolín. El talco exige certificar la ausencia de asbesto.
+
+## Lección 5. Productos para los ojos
+
+La máscara combina agua, cera y pigmento, y el cepillo vuelve al envase después de cada uso. Giacomel y colaboradores analizaron 40 máscaras usadas: según su resumen, 79 % tenía *Staphylococcus aureus* y 13 %, *Pseudomonas aeruginosa* [@giacomel2013]. El texto completo no se consultó. El límite microbiológico para esta zona es diez veces menor que el general; véase [GM-08](../guias/gm-08-dictamen.qmd).
 
 ```{=html}
 <figure class="lado"><img src="../fotos/sombras.jpg" alt="Paleta de sombras y brochas" loading="lazy"></figure>
 ```
 
-## Qué puedes hacer
+## Alcance de la evidencia
+
+Los intervalos del labial tienen respaldo publicado. Los datos de compactación proceden de un artículo técnico sin DOI localizado. Las recetas de polvo, rubor y sombra son propuestas.
+
+## Productos de esta sección
 
 ```{=html}
 <div class="tarjas" data-productos="maquillaje"></div>
 ```
 
-## Comprueba lo que aprendiste
+## Autoevaluación
 
 ```{=html}
 <div data-preguntas="maquillaje"></div>
 ```
 
-## Fuentes
+## Referencias
 
-Rigano y Montoli 2021, DOI [10.3390/cosmetics8040105](https://doi.org/10.3390/cosmetics8040105). Mawazi et al. 2022, citado en la nota 05 de la investigación. Giacomel et al. 2013, DOI [10.1111/ics.12053](https://doi.org/10.1111/ics.12053) (resumen, PubMed). Baki 2023, ISBN 978-1-119-70977-0, p. 73. *Cosmetics & Toiletries* 137(3), 2022 (sin DOI localizado).
+El tratamiento de la dispersión sigue a Baki [-@baki2023, p. 73].
+
+::: {#refs}
+:::

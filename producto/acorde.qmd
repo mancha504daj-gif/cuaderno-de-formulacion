@@ -8,9 +8,9 @@ page-layout: full
 <figure class="cabeza" style="--color:#15171f" data-alto="baja"><div class="marco"><img src="../fotos/frasco.jpg" alt="Frasco de perfume de vidrio"></div><h1>Acorde</h1></figure>
 ```
 
-[Fragancias](../fragancias/index.qmd). El ejercicio para empezar a oler. Forma: mezcla de aromas.
+[Fragancias](../fragancias/index.qmd). Ejercicio de composición con tres materiales. Forma: mezcla de aromas.
 
-Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+Las recetas son propuestas de este proyecto y **están sin ensayar**. Se presentan como hipótesis de trabajo para contrastar en el laboratorio.
 
 ## Acorde de práctica: cítrico, floral y madera
 
@@ -19,43 +19,43 @@ Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. 
 ```
 
 ::: {.avisos}
-- Puro no va en la piel.
+- No se aplica sin diluir.
 - Aporta limoneno, linalool y otros alérgenos que se declaran.
 :::
 
-### Por qué funciona
+### Fundamento
 
-Naranja sale primero, lavanda sostiene y cedro con vainillina quedan. Es un ejercicio para oír cómo cambia una mezcla.
+La presión de vapor ordena la evaporación: naranja, lavanda, y por último cedro con vainillina. El ejercicio permite relacionar proporción y percepción.
 
-### Paso a paso
+### Procedimiento
 
-1. Pesa la vainillina en el frasco.
-2. Agrega los aceites uno por uno, del más pesado al más ligero.
-3. Agita hasta que la vainillina se disuelva. Si no lo hace, entibia el frasco cerrado en agua a 35 °C.
-4. Huele en tira de papel a 0, 15 min, 1 h y 4 h y anota.
+1. Pesar la vainillina en el frasco.
+2. Agregar los aceites uno por uno, del más pesado al más ligero.
+3. Agitar hasta que la vainillina se disuelva. Si no lo hace, entibiar el frasco cerrado en agua a 35 °C.
+4. Oler en tira de papel a 0, 15 min, 1 h y 4 h y registrar.
 
-### Cómo saber si salió bien
+### Control de calidad
 
-| Control | Meta | Cómo se mide |
+| Determinación | Especificación | Método |
 |---|---|---|
 | Transparencia | límpido | a contraluz, a 20 y a 4 °C |
 | Color | sin cambio | una muestra a la luz y otra a oscuras |
-| Olor | anota a 0, 15 min, 1 h y 4 h | en tira de papel |
-| Densidad | registra | picnómetro |
+| Olor | registrar a 0, 15 min, 1 h y 4 h | en tira de papel |
+| Densidad | registrar | picnómetro |
 
-### Si algo falla
+### Diagnóstico de fallas
 
-| Qué ves | Por qué | Qué hacer |
+| Observación | Causa probable | Acción correctiva |
 |---|---|---|
-| Turbio | mucha agua para esa fragancia | sube el alcohol o filtra en frío |
-| Huele a alcohol | falta maceración | espera otra semana |
+| Turbio | mucha agua para esa fragancia | aumentar el alcohol o filtrar en frío |
+| Predomina el olor a etanol | falta maceración | esperar otra semana |
 | Cambia de color | vainillina o luz | frasco oscuro |
 
-### Qué puedes cambiar
+### Variables de estudio
 
-- Mueve naranja y cedro de 5 en 5 % y anota qué cambia.
+- Variar naranja y cedro de 5 en 5 % y registrar qué cambia.
 
-**Fuentes.** Volatilidad: presiones de vapor de PubChem, CID 22311, 6549 y 1183. Alérgenos: Reglamento (UE) 2023/1545.
+**Referencias.** Volatilidad: presiones de vapor de PubChem, CID 22311, 6549 y 1183. Alérgenos: Reglamento (UE) 2023/1545.
 
 ## Otros productos de esta sección
 

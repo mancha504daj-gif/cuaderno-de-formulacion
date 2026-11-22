@@ -8,7 +8,7 @@
  "lote": 10,
  "pH": null,
  "estado": "sin ensayar",
- "porque": "Naranja sale primero, lavanda sostiene y cedro con vainillina quedan. Es un ejercicio para oír cómo cambia una mezcla.",
+ "porque": "La presión de vapor ordena la evaporación: naranja, lavanda, y por último cedro con vainillina. El ejercicio permite relacionar proporción y percepción.",
  "fases": [
   {
    "nombre": "A",
@@ -33,13 +33,13 @@
   }
  ],
  "pasos": [
-  "Pesa la vainillina en el frasco.",
-  "Agrega los aceites uno por uno, del más pesado al más ligero.",
-  "Agita hasta que la vainillina se disuelva. Si no lo hace, entibia el frasco cerrado en agua a 35 °C.",
-  "Huele en tira de papel a 0, 15 min, 1 h y 4 h y anota."
+  "Pesar la vainillina en el frasco.",
+  "Agregar los aceites uno por uno, del más pesado al más ligero.",
+  "Agitar hasta que la vainillina se disuelva. Si no lo hace, entibiar el frasco cerrado en agua a 35 °C.",
+  "Oler en tira de papel a 0, 15 min, 1 h y 4 h y registrar."
  ],
  "cambia": [
-  "Mueve naranja y cedro de 5 en 5 % y anota qué cambia."
+  "Variar naranja y cedro de 5 en 5 % y registrar qué cambia."
  ],
  "controles": [
   [
@@ -54,12 +54,12 @@
   ],
   [
    "Olor",
-   "anota a 0, 15 min, 1 h y 4 h",
+   "registrar a 0, 15 min, 1 h y 4 h",
    "en tira de papel"
   ],
   [
    "Densidad",
-   "registra",
+   "registrar",
    "picnómetro"
   ]
  ],
@@ -67,12 +67,12 @@
   [
    "Turbio",
    "mucha agua para esa fragancia",
-   "sube el alcohol o filtra en frío"
+   "aumentar el alcohol o filtrar en frío"
   ],
   [
-   "Huele a alcohol",
+   "Predomina el olor a etanol",
    "falta maceración",
-   "espera otra semana"
+   "esperar otra semana"
   ],
   [
    "Cambia de color",
@@ -81,7 +81,7 @@
   ]
  ],
  "avisos": [
-  "Puro no va en la piel.",
+  "No se aplica sin diluir.",
   "Aporta limoneno, linalool y otros alérgenos que se declaran."
  ],
  "fuentes": [

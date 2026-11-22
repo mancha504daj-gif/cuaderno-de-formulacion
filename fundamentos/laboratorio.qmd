@@ -4,60 +4,89 @@ toc: false
 page-layout: full
 ---
 
-Lo que necesitas saber para que dos lotes salgan iguales y nadie se lastime.
+La reproducibilidad de un lote depende de la pesada, la temperatura, el pH y el registro. Esta página fija los procedimientos comunes a todas las recetas.
 
-## Equipo mínimo
+## Objetivos de aprendizaje
 
-| Equipo | Para qué | Mientras no lo tengas |
+1. Elegir el equipo según la incertidumbre que exige la fórmula.
+2. Medir masa y pH con su incertidumbre.
+3. Aplicar controles de higiene y seguridad.
+4. Diseñar una comparación con testigo y réplicas.
+
+## Equipo
+
+| Equipo | Uso | Alternativa y su costo |
 |---|---|---|
-| Balanza de 0.01 g | conservantes y activos | lotes de 200 g con balanza de 0.1 g |
-| Medidor de pH | todo lo que lleve agua | tiras con paso de 0.5 |
-| Termómetro de sonda | fases calientes | ninguno lo reemplaza |
-| Batidora de mano o homogeneizador | emulsiones | agitación fuerte, gotas más grandes |
-| Vasos de vidrio y baño de agua | calentar parejo | olla con agua |
-| Guantes, lentes, bata y mascarilla | todo | nada los reemplaza |
+| Balanza de 0.01 g | conservantes, activos | balanza de 0.1 g con lotes de 200 g |
+| Medidor de pH, dos puntos | toda fase acuosa | tiras con paso de 0.5: insuficiente para ácidos orgánicos |
+| Termómetro de sonda | fases calientes | ninguna |
+| Homogeneizador o batidora de mano | emulsiones | agitación manual: gotas mayores |
+| Vidrio y baño de agua | calentamiento uniforme | olla con agua |
+| Viscosímetro | curvas de sal, geles | copa de flujo, comparativa |
+| Guantes, lentes, bata, mascarilla | protección | ninguna |
 
-## Pesar
+## Pesada
 
-1. Pon el vaso, espera a que se estabilice y lleva a cero.
-2. Agrega despacio. Lo que cae de más no se saca con la cuchara sucia: se anota.
-3. Escribe la masa real en la hoja, aunque sea distinta de la pedida.
-4. Pesa los líquidos en masa. Un mililitro de aceite pesa menos de un gramo.
+1. Nivelar la balanza, colocar el recipiente, esperar lectura estable y tarar.
+2. Agregar despacio. El exceso se registra y no se devuelve al frasco.
+3. Anotar la masa obtenida con todas sus cifras.
+4. Pesar los líquidos. La densidad de los aceites, cerca de 0.92 g/mL, hace que el volumen engañe.
 
-**Cuánto error hay.** Con balanza de ± 0.1 g, pesar 0.8 g lleva un error de 12 %. Pesar 8 g, de 1 %.
+La incertidumbre relativa es $\delta/m$. Con δ = 0.1 g, 0.8 g lleva 12.5 % y 8 g, 1.3 %. Para una mezcla, las incertidumbres independientes se combinan en cuadratura:
 
-## Limpiar y desinfectar
+$$u_M = \sqrt{\sum_i u_i^2}$$
 
-1. Lava con detergente y enjuaga.
-2. Enjuaga con agua destilada.
-3. Rocía alcohol al 70 % y deja secar al aire.
-4. No toques el borde interior de los envases.
+## Temperatura
 
-## Medir pH
+Ambas fases se llevan a la misma temperatura, unos 5 °C sobre el punto de fusión de la cera más alta. Se registra la temperatura de emulsificación y la de adición de la fase C.
 
-1. Calibra con dos soluciones, por ejemplo pH 4 y 7, a la temperatura del laboratorio.
-2. Enjuaga la sonda y sécala sin frotar.
-3. En cremas, mide directo o diluye 1 a 10 en agua destilada. Anota cuál usaste: los números cambian.
-4. Para bajar el pH, ácido cítrico o láctico al 10 %. Para subirlo, sosa al 10 %. Gota a gota.
+## pH
+
+1. Calibrar con dos soluciones que encierren el valor esperado, a la temperatura de trabajo.
+2. Aceptar la calibración con pendiente de 95 a 105 % del valor teórico, 59.2 mV por unidad a 25 °C.
+3. Enjuagar el electrodo y secarlo sin frotar.
+4. En cremas, medir directo o en dilución 1 a 10 con agua destilada, e indicar cuál.
+5. Ajustar con ácido cítrico o láctico al 10 %, o con NaOH al 10 %, gota a gota y con lectura estable.
+
+## Higiene
+
+1. Lavar con detergente y enjuagar.
+2. Enjuagar con agua destilada.
+3. Aplicar etanol al 70 % y dejar secar al aire.
+4. Evitar el contacto con el borde interior de los envases.
+
+La eficacia de la limpieza se comprueba con [GM-06](../guias/gm-06-ambiente.qmd).
 
 ## Seguridad
 
-| Riesgo | Qué haces |
+| Peligro | Medida |
 |---|---|
-| Sosa y potasa | guantes, lentes, manga larga; agrégalas al agua; si salpica, agua 15 min y atención médica |
-| Alcohol | sin llamas, con ventilación, lejos de enchufes |
+| Hidróxidos de sodio y potasio | guantes, lentes, manga larga; agregar la base al agua; ante salpicadura, agua 15 min y atención médica |
+| Etanol | sin llama, con ventilación, lejos de contactos eléctricos |
 | Polvos finos | mascarilla; mezcla en recipiente cerrado |
-| Ceras calientes | no las dejes solas; usa baño de agua, no fuego directo |
-| Aceites esenciales puros | guantes; no van a la piel sin diluir |
+| Ceras fundidas | baño de agua; vigilancia continua |
+| Aceites esenciales puros | guantes; dilución antes de cualquier contacto |
 
-## Cambiar una cosa a la vez
+La ficha de datos de seguridad del proveedor manda sobre esta tabla.
 
-Haz un lote de control y otro con un solo cambio. Si cambias dos cosas y mejora, no sabes cuál fue. Prepara cada lote dos veces: si los duplicados no se parecen, el error está en tus manos.
+## Diseño de comparaciones
 
-## Rotular
+- **Testigo.** Toda modificación se compara con un lote sin ella, preparado el mismo día.
+- **Réplica.** Tres lotes independientes por condición como mínimo. Tres muestras de un mismo lote miden la técnica, no la fórmula.
+- **Orden.** Se asigna al azar para que el cansancio o la temperatura del día no se confundan con el efecto.
+- **Un factor por vez** al explorar; un diseño factorial cuando se busca interacción.
 
-Nombre, número de lote, fecha, quién lo hizo y la frase «sin ensayar». Guarda una muestra sin abrir de cada lote.
+```r
+t.test(viscosidad ~ formula, data = d)
+```
 
-## Fuentes
+## Registro y trazabilidad
 
-Baki 2023, ISBN 978-1-119-70977-0, pp. 142-157. ISO 22716:2007 para buenas prácticas, conocida por resúmenes. Los procedimientos de pesada y limpieza son práctica de laboratorio docente.
+Cada envase lleva nombre, número de lote, fecha, responsable y la frase «sin ensayar». Se conserva una contramuestra cerrada. La [hoja de laboratorio](../cuaderno.qmd) reúne masas, lecturas y desvíos.
+
+## Referencias
+
+Los procedimientos siguen a Baki [-@baki2023, pp. 142-157] y la práctica de laboratorio docente. ISO 22716:2007, sobre buenas prácticas de fabricación, se conoce por resúmenes.
+
+::: {#refs}
+:::

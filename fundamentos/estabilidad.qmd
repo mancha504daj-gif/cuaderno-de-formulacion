@@ -4,63 +4,94 @@ toc: false
 page-layout: full
 ---
 
-Una fórmula buena el primer día puede fallar a los dos meses. Aquí aprendes a buscar esa falla antes.
+La estabilidad es la capacidad de conservar propiedades dentro de especificación durante la vida útil y en el envase final. Esta página propone un plan de 90 días y discute qué se puede extrapolar.
 
-## Lección 1. Cinco estabilidades
+## Objetivos de aprendizaje
 
-| Cuál | Qué puede pasar | Cómo se ve |
+1. Diferenciar los cinco tipos de estabilidad y su variable de respuesta.
+2. Diseñar un plan con condiciones, tiempos y criterios fijados de antemano.
+3. Aplicar cinética de primer orden y Arrhenius dentro de sus límites.
+4. Relacionar síntomas con causas mediante ensayos discriminantes.
+
+## Lección 1. Tipos de estabilidad
+
+| Tipo | Cambio | Respuesta medible |
 |---|---|---|
-| Física | se separa, espesa o se adelgaza | a la vista, viscosidad |
-| Química | se oxida o se degrada | olor, color, pH, análisis |
-| Microbiológica | crecen microbios | recuento |
-| De desempeño | deja de hacer lo suyo | espuma, cesión, sensación |
-| Toxicológica | aparece algo dañino | evaluación de seguridad |
+| Física | separación, cristalización, cambio de viscosidad | altura de fase, η, tamaño de gota |
+| Química | oxidación, hidrólisis | pH, color, valoración del activo |
+| Microbiológica | crecimiento | UFC/g |
+| Funcional | pérdida de desempeño | espuma, cesión, absorbancia |
+| Toxicológica | formación de compuestos nocivos | evaluación de seguridad |
 
-## Lección 2. Un plan de 90 días
+## Lección 2. Plan de 90 días
 
-| Día | 4 °C | Ambiente | 40 °C | Qué anotas |
+Cosmetics Europe indica que no existe un protocolo único y pide cubrir integridad física, estabilidad química, estabilidad microbiológica y compatibilidad con el envase [@cosmeticseurope2004]. La guía de ANVISA propone lecturas a 0, 1, 7, 15, 30, 60 y 90 días [@anvisa2005].
+
+| Día | 4 °C | Ambiente | 40 °C | Determinaciones |
 |---|---|---|---|---|
-| 0 | | x | | pH, aspecto, olor, viscosidad, masa |
+| 0 | | x | | todas |
 | 1 | x | x | x | aspecto |
 | 7 | x | x | x | pH, aspecto, olor |
 | 15 | x | x | x | pH, aspecto, olor |
-| 30 | x | x | x | todo |
-| 60 | x | x | x | todo |
-| 90 | x | x | x | todo y recuento |
+| 30 | x | x | x | todas |
+| 60 | x | x | x | todas |
+| 90 | x | x | x | todas, con recuento |
 
-Usa el envase final y vidrio como control. Prueba de pie, acostado y de cabeza. Pesa cada envase: si pierde masa, pierde agua.
+- **Envase.** El final y vidrio como testigo; vertical, horizontal e invertido.
+- **Réplicas.** Tres envases por condición y tiempo.
+- **Especificación.** Se escribe antes de empezar. Ejemplo: pH inicial ± 0.5; viscosidad inicial ± 20 %; pérdida de masa menor que 2 %; sin separación visible; recuento bajo el límite.
+- **Muestreo destructivo.** Cada envase se abre una sola vez.
 
-Anota en la [hoja de laboratorio](../cuaderno.qmd) de la receta.
+El registro se lleva en la [hoja de laboratorio](../cuaderno.qmd).
 
-## Lección 3. Pruebas que apuran
+## Lección 3. Ensayos acelerados
 
-- **Centrífuga:** 3000 rpm, 30 min. Si se separa ahí, reformula.
-- **Ciclos:** de −10 °C a 25 o 40 °C, 24 h por etapa, de tres a seis. Otra fuente propone cinco ciclos de 12 h entre −10 y 40 °C. Anota cuál usaste.
-- **Luz:** una muestra en la ventana y otra envuelta en aluminio.
+| Ensayo | Condición | Lectura |
+|---|---|---|
+| Centrífuga | 3000 rpm, 30 min | separación: reformular [@anvisa2005] |
+| Ciclos | −5 y 45 o 50 °C, 24 h por etapa, seis ciclos [@anvisa2005] | cristales, coalescencia, envase |
+| Luz | ventana y testigo en aluminio | color, olor |
 
-## Lección 4. Extrapolar con cuidado
+La fuerza centrífuga relativa depende del radio del rotor:
 
-La ecuación de Arrhenius relaciona temperatura y velocidad:
+$$FCR = 1.118 \times 10^{-5}\, R\, n^2$$
+
+con $R$ en cm y $n$ en rpm. Con R = 10 cm, 3000 rpm equivalen a 1006 g. Informar rpm sin radio impide repetir el ensayo.
+
+## Lección 4. Cinética y extrapolación
+
+Una reacción de primer orden sigue $C = C_0\,e^{-kt}$, y el tiempo en que queda 90 % es $t_{90} = 0.1054/k$. La constante cambia con la temperatura según Arrhenius:
 
 $$\ln\frac{k_2}{k_1} = \frac{E_a}{R}\left(\frac{1}{T_1} - \frac{1}{T_2}\right)$$
 
-Sirve para una sola reacción de primer orden y sin cambio de fase. No predice que una emulsión se separe ni que crezca un hongo. [Laboratorio: vida útil](../laboratorio/vida-util.qmd).
+**Ejemplo resuelto.** Pérdida de 10 % en un mes a 40 °C: k = −ln 0.90 = 0.1054 por mes. Con Ea = 80 kJ/mol, la constante a 25 °C es 0.213 veces, 0.0225 por mes. A 12 meses queda exp(−0.0225 × 12) = 76 %, y $t_{90}$ es 4.7 meses.
 
-En doce cosméticos con retinoides, la pérdida a seis meses fue de 0 a 80 % a 25 °C y de 40 a 100 % a 40 °C. Los autores piden medir en tiempo real.
+La energía de activación se obtiene con tres temperaturas o más:
 
-**Ejemplo resuelto.** Pierdes 10 % en un mes a 40 °C: k = −ln(0.90) = 0.105 por mes. Con Ea = 80 kJ/mol, a 25 °C la constante es 0.213 veces, o sea 0.0225 por mes. A los 12 meses queda exp(−0.0225 × 12) = 76 %.
+```r
+m  <- lm(log(k) ~ I(1 / T), data = d)
+Ea <- -coef(m)[2] * 8.314
+confint(m)
+```
 
-## Lección 5. Diagnosticar
+**Límites.** La ecuación describe una reacción sin cambio de fase. No predice separación, cristalización ni crecimiento microbiano. En doce cosméticos con retinoides la pérdida a seis meses fue de 0 a 80 % a 25 °C y de 40 a 100 % a 40 °C, y la luz degradó más que la temperatura; los autores recomiendan ensayos en tiempo real [@temova2021]. Cosmetics Europe reconoce que hay poca investigación publicada que respalde la predicción acelerada [@cosmeticseurope2004].
 
-| Qué ves | Primera sospecha | Primera prueba |
+[Laboratorio virtual: vida útil](../laboratorio/vida-util.qmd).
+
+## Lección 5. Diagnóstico
+
+| Síntoma | Hipótesis | Ensayo discriminante |
 |---|---|---|
-| Capa arriba que vuelve al agitar | cremado | homogeneizar más |
-| Capa de aceite que no vuelve | coalescencia | otro HLB |
-| Granos | cristales de cera o manteca | enfriar más rápido |
-| pH que baja | oxidación o hidrólisis | otro aceite, antioxidante |
-| pH que sube | urea o álcali del envase | amortiguar |
-| Manchas o gas | microbios | descartar y revisar conservante |
+| Capa superior que vuelve al agitar | cremado | tamaño de gota, más homogeneización |
+| Capa de aceite que no vuelve | coalescencia | otro HLB, más emulsionante |
+| Granos | cristalización de ceras | microscopio polarizado, enfriado más rápido |
+| pH en descenso | oxidación o hidrólisis | índice de peróxidos, antioxidante |
+| pH en ascenso | urea o álcali del envase | fórmula sin urea, testigo en vidrio |
+| Manchas, gas u olor | crecimiento microbiano | [GM-03](../guias/gm-03-aerobios.qmd) y [GM-04](../guias/gm-04-hongos.qmd) |
 
-## Fuentes
+## Referencias
 
-Baki 2023, ISBN 978-1-119-70977-0, pp. 147-149 y 212-216. Benson et al. 2019, DOI [10.1201/9780429190674](https://doi.org/10.1201/9780429190674), p. 296. Cosmetics Europe y CTFA 2004 (sin DOI). ANVISA 2004, guía de estabilidad (sin DOI). Temova Rakuša et al. 2021, DOI [10.1111/jocd.13852](https://doi.org/10.1111/jocd.13852).
+Los plazos y criterios complementan a Baki [-@baki2023, pp. 147-149 y 212-216] y a Benson y colaboradores [-@benson2019, p. 296].
+
+::: {#refs}
+:::

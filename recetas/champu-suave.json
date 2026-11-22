@@ -8,7 +8,7 @@
  "lote": 100,
  "pH": "5",
  "estado": "sin ensayar",
- "porque": "El glucósido no espesa con sal: por eso lleva goma. No hay datos publicados de que un champú sin sulfato dañe menos el cabello.",
+ "porque": "El alquil glucósido carece de carga y no responde al electrolito, de modo que se espesa con goma. No hay datos publicados que demuestren menor daño capilar de un champú sin sulfatos.",
  "fases": [
   {
    "nombre": "A",
@@ -59,16 +59,16 @@
   }
  ],
  "pasos": [
-  "Pesa el agua y disuelve lo que pide la fase A.",
-  "Agrega los tensioactivos por la pared del vaso, con agitación lenta para no hacer espuma.",
-  "Agrega la fase C.",
-  "Mide el pH y ajústalo. Los glucósidos llegan a pH 11 o 12: bájalo antes de juzgar la viscosidad.",
-  "Si lleva sal, disuélvela en un poco de agua y agrégala en pasos de 0.2 %. Detente cuando espese lo que buscas.",
-  "Deja reposar 24 h y envasa."
+  "Pesar el agua y disolver lo que pide la fase A.",
+  "Agregar los tensioactivos por la pared del vaso, con agitación lenta para no hacer espuma.",
+  "Agregar la fase C.",
+  "Medir el pH y ajustarlo. Los glucósidos llegan a pH 11 o 12: bajarlo antes de juzgar la viscosidad.",
+  "Si lleva sal, disolverla en un poco de agua y agregarla en pasos de 0.2 %. Detenerse al alcanzar la viscosidad buscada.",
+  "Dejar reposar 24 h y envasar."
  ],
  "cambia": [
   "Goma a 1 % si queda líquido.",
-  "Agrega 0.5 % de pantenol."
+  "Agregar 0.5 % de pantenol."
  ],
  "controles": [
   [
@@ -78,7 +78,7 @@
   ],
   [
    "Viscosidad",
-   "registra husillo, rpm y temperatura",
+   "registrar husillo, rpm y temperatura",
    "viscosímetro o copa"
   ],
   [
@@ -101,23 +101,23 @@
   [
    "No espesa",
    "poca sal o pH alto",
-   "ajusta el pH y sigue la curva de sal"
+   "ajustar el pH y seguir la curva de sal"
   ],
   [
-   "Se adelgazó al poner sal",
-   "te pasaste del máximo",
-   "diluye con más tensioactivo: con sal no se recupera"
+   "Perdió viscosidad al agregar sal",
+   "se superó el máximo de la curva",
+   "diluir con más tensioactivo: con sal no se recupera"
   ],
   [
    "Se enturbia en frío",
    "fragancia o fase que no se disuelve",
-   "baja la fragancia o usa un solubilizante"
+   "reducir la fragancia o usar un solubilizante"
   ]
  ],
  "avisos": [
-  "Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.",
-  "No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad.",
-  "El pH decide si el conservante funciona."
+  "Contiene agua. Sin ensayo del conservante puede contaminarse sin cambios visibles.",
+  "No se aplica en la piel sin control microbiológico y evaluación de seguridad.",
+  "El pH determina la actividad del conservante."
  ],
  "fuentes": [
   "Tensioactivos: Thompson et al. 2023 y catálogos de proveedor citados en la calculadora de materia activa.",

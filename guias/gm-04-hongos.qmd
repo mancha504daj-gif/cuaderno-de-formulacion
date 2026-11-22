@@ -1,0 +1,92 @@
+---
+title: "GM-04. Recuento de hongos y levaduras"
+toc: false
+page-layout: full
+---
+
+| | |
+|---|------------|
+| **Resultado** | UFC de levaduras y de mohos por gramo o mililitro |
+| **Método base** | BAM, capítulo 23, sección H-2 [@bam23]; capítulo 18 [@bam18] |
+| **Duración** | 1 h de trabajo y 5 a 7 días de incubación |
+| **Bioseguridad** | nivel 2 para muestras de origen desconocido |
+
+```{=html}
+<p class="ordenes"><button type="button" data-imprimir>Imprimir la guía</button></p>
+```
+
+## Objetivos
+
+1. Cuantificar por separado levaduras y mohos.
+2. Manejar las placas sin provocar colonias secundarias.
+3. Sumar el resultado al recuento de aerobios para el dictamen.
+
+## Fundamento
+
+La mayoría de los mohos crece con una actividad de agua de 0.85 o menos, y hongos y levaduras toleran de pH 2 a más de 9 [@bam18]. Un producto ácido o con poca agua libre, que frena a las bacterias, puede sostener hongos. El recuento usa un medio ácido con 40 ppm de clortetraciclina, que inhibe a las bacterias sin detener a los hongos.
+
+Un moho produce miles de esporas. Al mover la placa caen sobre el agar y forman colonias que no estaban en la muestra. Por eso las placas no se tocan hasta el final de la incubación.
+
+## Equipo y materiales
+
+Los de [GM-03](gm-03-aerobios.qmd), con doce placas de agar extracto de malta (M93) o agar papa dextrosa (M127), ambos con 40 ppm de clortetraciclina. Lupa de 10 a 30 aumentos.
+
+## Procedimiento
+
+1. Usar las diluciones 10⁻¹, 10⁻² y 10⁻³ preparadas en GM-03.
+2. Sembrar 0.1 mL de cada una, por duplicado, y extender con asa nueva por dilución.
+3. Sembrar además 1 mL de 10⁻¹ repartido en dos o tres placas, con duplicado.
+4. Esperar a que el agar absorba.
+5. Incubar a 30 ± 2 °C, **sin invertir** y en pilas de tres como máximo.
+6. Contar a los 5 días. Si nada creció, incubar 48 h más. No retirar las placas para contar antes [@bam23].
+7. Registrar por separado levaduras y mohos con ayuda de la lupa y sin abrir la placa.
+
+El capítulo 18, escrito para alimentos, incuba a 25 °C en la oscuridad; el 23, para cosméticos, a 30 ± 2 °C. Esta guía usa la temperatura del 23.
+
+### Distinguir levadura de moho
+
+| Rasgo | Levadura | Moho |
+|---|---|---|
+| Borde | liso, definido | filamentoso, difuso |
+| Superficie | cremosa, mate o brillante | algodonosa, aterciopelada o polvosa |
+| Color | crema, blanco, rosado | verde, negro, gris, blanco |
+| Tamaño a 5 días | pequeño | mayor, en expansión |
+
+La tabla orienta. La identificación de género la hace un laboratorio de micología.
+
+## Registro
+
+| Dilución | Volumen (mL) | Levaduras 1 | Levaduras 2 | Mohos 1 | Mohos 2 |
+|---|---|---|---|---|---|
+| 10⁻¹ | 1.0, sumado | | | | |
+| 10⁻¹ | 0.1 | | | | |
+| 10⁻² | 0.1 | | | | |
+| 10⁻³ | 0.1 | | | | |
+| Blancos | | | | | |
+
+## Cálculos
+
+El intervalo de conteo es de 10 a 150 colonias. Con mohos grandes el analista baja el límite superior [@bam18].
+
+**Ejemplo.** En 10⁻¹ con 0.1 mL crecieron 22 y 18 colonias de moho: 40/(2 × 0.1 × 10⁻¹) = 2000 UFC/g. Con 95 % de confianza, de 1430 a 2720 (`poisson.test(40, T = 0.02)`). Un producto facial con ese recuento supera el límite de 1000 UFC/g aun sin contar bacterias.
+
+Sin colonias en 1 mL de 10⁻¹ se informa «menos de 10 UFC/g».
+
+## Opción: enriquecimiento
+
+Diluir la muestra en caldo Sabouraud dextrosa e incubar como en GM-05. Si crece, estriar en agar Sabouraud dextrosa, M93 o M127, los dos últimos con antibiótico [@bam23].
+
+## Disposición final
+
+Sellar las placas con cinta antes de moverlas. Esterilizar cerradas, en el ciclo de residuos del laboratorio.
+
+## Preguntas de análisis
+
+1. ¿Qué error introduce invertir una placa con moho esporulado?
+2. La placa con antibiótico y la placa sin él dieron 20 y 90 colonias. Interprete.
+3. ¿Por qué un producto a pH 4 exige este recuento aunque el de aerobios salga bajo?
+
+## Referencias
+
+::: {#refs}
+:::

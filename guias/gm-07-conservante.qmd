@@ -1,0 +1,130 @@
+---
+title: "GM-07. Eficacia del conservante con levadura"
+toc: false
+page-layout: full
+---
+
+| | |
+|---|------------|
+| **Resultado** | curva de supervivencia y reducción logarítmica |
+| **Método base** | propuesta docente, con la lógica del ensayo de desafío descrito por SCCS [@sccs2023] y por Halla y colaboradores [@halla2018] |
+| **Duración** | 2 h por muestreo, cinco muestreos en 14 días |
+| **Bioseguridad** | nivel 1, con *Saccharomyces cerevisiae* |
+
+```{=html}
+<p class="ordenes"><button type="button" data-imprimir>Imprimir la guía</button></p>
+```
+
+## Objetivos
+
+1. Comparar la supervivencia de una levadura en la misma fórmula, con y sin conservante.
+2. Calcular la reducción logarítmica y el tiempo de reducción decimal.
+3. Explicar por qué este resultado no sustituye al ensayo con cepas patógenas.
+
+## Fundamento
+
+Un ensayo de desafío contamina el producto a propósito y mide cuánto baja la carga con el tiempo. Es obligatorio en la Unión Europea para todo cosmético que pueda deteriorarse o infectar al consumidor en condiciones normales de uso. El comité científico menciona *P. aeruginosa*, *S. aureus*, *C. albicans* y *Aspergillus brasiliensis* como organismos de ensayo, y pide descartar la actividad del conservante durante el recuento [@sccs2023, p. 149].
+
+La reducción logarítmica compara el inóculo con los sobrevivientes [@halla2018]:
+
+$$RL_t = \log_{10} N_0 - \log_{10} N_t$$
+
+Si la muerte sigue una cinética de primer orden, $\log_{10} N$ baja en línea recta y el tiempo de reducción decimal $D$ es el que tarda en caer diez veces:
+
+$$\log_{10} N_t = \log_{10} N_0 - \frac{t}{D}$$
+
+## Diseño
+
+| Factor | Nivel |
+|---|---|
+| Fórmula | con conservante; idéntica sin conservante |
+| Réplicas | tres frascos independientes por fórmula |
+| Tiempos | 0, 1, 3, 7 y 14 días |
+| Testigo | un frasco de cada fórmula sin inocular |
+
+La fórmula sin conservante confirma que la levadura vive en el producto. Si también muere ahí, el descenso no se debe al conservante, sino al pH, al alcohol o a la poca agua libre.
+
+## Equipo y materiales
+
+Producto fresco, 20 g por frasco, en ocho frascos estériles con tapa. Levadura seca de panadería. Solución salina estéril al 0.85 %. MLB, Tween 80, perlas y agar extracto de malta sin antibiótico. Requisito previo: neutralizante verificado para ambas fórmulas en [GM-02](gm-02-neutralizante.qmd) y recuento inicial menor que 10 UFC/g en [GM-04](gm-04-hongos.qmd).
+
+## Procedimiento
+
+### A. Inóculo
+
+1. Dispersar 1.0 g de levadura en 10 mL de solución salina. Esperar 10 min y agitar.
+2. Sembrar diluciones 10⁻⁵, 10⁻⁶ y 10⁻⁷ para conocer su concentración real.
+3. Usar dentro de la hora siguiente.
+
+### B. Inoculación
+
+1. Agregar 0.20 mL de suspensión a 20.0 g de producto. El volumen es 1 % de la masa y casi no diluye el conservante.
+2. Mezclar 2 min con espátula estéril, desde el fondo.
+3. Guardar cerrado, en oscuridad, a 22 a 25 °C.
+
+### C. Muestreo
+
+1. Tiempo 0: tomar 1 g dentro de los 15 min siguientes a la mezcla.
+2. En cada tiempo: 1 g con 1 mL de Tween 80 y perlas, vórtex, 8 mL de MLB. Diluir hasta 10⁻⁶ al inicio; menos en los tiempos largos.
+3. Sembrar 0.1 mL de tres diluciones consecutivas, por duplicado. Cuando se esperan pocos sobrevivientes, agregar 1 mL de 10⁻¹ repartido en tres placas.
+4. Incubar a 30 ± 2 °C sin invertir. Contar a las 48 h y confirmar a los 5 días.
+
+## Registro
+
+| Día | Fórmula | Frasco | Dilución | Placa 1 | Placa 2 | UFC/g | log UFC/g |
+|---|---|---|---|---|---|---|---|
+| 0 | con | 1 | | | | | |
+| 0 | sin | 1 | | | | | |
+| 1 | con | 1 | | | | | |
+| 3 | con | 1 | | | | | |
+| 7 | con | 1 | | | | | |
+| 14 | con | 1 | | | | | |
+
+## Cálculos
+
+**Ejemplo, con datos inventados.** Los recuentos a 0, 1, 3 y 7 días fueron 1.2 × 10⁶, 3.1 × 10⁵, 2.4 × 10⁴ y 90 UFC/g.
+
+$$RL_7 = \log_{10}\frac{1.2 \times 10^6}{90} = 4.1$$
+
+```r
+dia <- c(0, 1, 3, 7)
+N   <- c(1.2e6, 3.1e5, 2.4e4, 90)
+m   <- lm(log10(N) ~ dia)
+coef(m)
+-1 / coef(m)["dia"]
+summary(m)$r.squared
+```
+
+La recta sale con pendiente −0.589 por día, D = 1.7 días y R² = 0.9996. Un valor «menor que 10» no entra en la regresión: se informa como reducción mayor que la calculada con 10.
+
+Con tres frascos por tiempo, la media y la desviación se calculan sobre los logaritmos, no sobre las UFC.
+
+## Interpretación
+
+| Observación | Lectura |
+|---|---|
+| Cae con conservante y se mantiene sin él | el sistema actúa contra levaduras |
+| Cae en las dos | la fórmula mata por otra vía; buscar cuál |
+| Cae y después sube | conservante agotado o población resistente |
+| Se mantiene en las dos | sistema insuficiente: revisar pH, dosis y reparto al aceite |
+
+A modo de comparación, un resumen de laboratorio del criterio A de ISO 11930 pide para *C. albicans* una reducción de 1 log a los 7 días sin aumento posterior, y para las bacterias, 3 log a los 7 días [@microchem].
+
+## Límites de la práctica
+
+*S. cerevisiae* no es patógena ni forma parte de las cepas de referencia. Un buen resultado aquí no dice nada sobre bacterias gramnegativas, las más resistentes a muchos conservantes. La fórmula que vaya a la piel necesita el ensayo completo en un laboratorio de microbiología.
+
+## Disposición final
+
+Todo el producto inoculado, aun el que dio cero, pasa por el ciclo de residuos del autoclave. Ningún frasco inoculado sale del laboratorio ni se prueba en la piel.
+
+## Preguntas de análisis
+
+1. ¿Qué pasaría con la curva si el neutralizante no funcionara?
+2. Estime el tiempo para bajar 3 log con D = 1.7 días y discuta si la extrapolación es válida.
+3. ¿Por qué se comparan medias de logaritmos?
+
+## Referencias
+
+::: {#refs}
+:::

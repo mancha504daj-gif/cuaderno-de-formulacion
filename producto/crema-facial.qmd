@@ -8,9 +8,9 @@ page-layout: full
 <figure class="cabeza" style="--color:#b3245c" data-alto="baja"><div class="marco"><img src="../fotos/piel.jpg" alt="Frasco de crema abierto con su tapa azul"></div><h1>Crema facial</h1></figure>
 ```
 
-[Cuidado de la piel](../piel/index.qmd). Emoliente ligero con activos. Sin fragancia. Forma: emulsión O/W.
+[Cuidado de la piel](../piel/index.qmd). Emolientes ligeros con activos y sin fragancia. Forma: emulsión O/W.
 
-Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+Las recetas son propuestas de este proyecto y **están sin ensayar**. Se presentan como hipótesis de trabajo para contrastar en el laboratorio.
 
 ## Crema facial con niacinamida
 
@@ -19,52 +19,52 @@ Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. 
 ```
 
 ::: {.avisos}
-- Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.
-- No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad.
+- Contiene agua. Sin ensayo del conservante puede contaminarse sin cambios visibles.
+- No se aplica en la piel sin control microbiológico y evaluación de seguridad.
 :::
 
-### Por qué funciona
+### Fundamento
 
-La niacinamida se disuelve en agua y aguanta poco los ácidos: entre pH 5 y 7 evitas que se convierta en ácido nicotínico, que enrojece. El escualano aporta suavidad y no se enrancia.
+La niacinamida es hidrosoluble y se hidroliza a ácido nicotínico, que causa enrojecimiento; la práctica del sector trabaja entre pH 5 y 7, intervalo sin fuente primaria verificada aquí. El escualano es saturado y resiste la oxidación.
 
-### Paso a paso
+### Procedimiento
 
-1. Pesa la fase A. Si lleva goma, mézclala primero con la glicerina; después agrega el agua y agita hasta que no queden grumos.
-2. Pesa la fase B en otro vaso.
-3. Calienta A y B en baño de agua hasta 72 °C y mantenlas 10 min. Repón con agua caliente lo que se evaporó de A.
-4. Vierte B sobre A con el agitador encendido y homogeneiza 3 min.
-5. Baja la velocidad y sigue agitando hasta 40 °C.
-6. Disuelve la niacinamida y el pantenol en 10 g del agua que apartaste y agrégalos con el resto de la fase C por debajo de 40 °C.
-7. Mide el pH y ajústalo gota a gota con ácido cítrico o sosa, los dos al 10 %.
-8. Pesa el lote final, completa con agua hasta el total y envasa. Rotula lote y fecha.
+1. Pesar la fase A. Si lleva goma, mezclarla primero con la glicerina; después agregar el agua y agitar hasta que no queden grumos.
+2. Pesar la fase B en otro vaso.
+3. Calentar A y B en baño de agua hasta 72 °C y mantenerlas 10 min. Reponer con agua caliente lo que se evaporó de A.
+4. Verter B sobre A con el agitador encendido y homogeneizar 3 min.
+5. Reducir la velocidad y seguir agitando hasta 40 °C.
+6. Disolver la niacinamida y el pantenol en 10 g del agua reservada y agregarlos con el resto de la fase C por debajo de 40 °C.
+7. Medir el pH y ajustarlo gota a gota con ácido cítrico o sosa, los dos al 10 %.
+8. Pesar el lote final, completar con agua hasta el total y envasar. Rotular lote y fecha.
 
-### Cómo saber si salió bien
+### Control de calidad
 
-| Control | Meta | Cómo se mide |
+| Determinación | Especificación | Método |
 |---|---|---|
 | pH | el de la receta ± 0.3 | medidor calibrado o tiras |
-| Tipo de emulsión | O/W | gota en agua: debe dispersarse. Confirma con conductividad o colorante hidrosoluble al microscopio |
-| Aspecto | homogéneo, sin granos | extiende una capa fina sobre vidrio |
+| Tipo de emulsión | O/W | gota en agua: debe dispersarse. Confirmar con conductividad o colorante hidrosoluble al microscopio |
+| Aspecto | homogéneo, sin granos | extender una capa fina sobre vidrio |
 | Centrífuga | sin separación | 3000 rpm, 30 min |
 | Ciclos | sin separación ni cambio de olor | de tres a seis ciclos entre −10 y 40 °C, 24 h por etapa |
-| Microbiología | sin crecimiento | placas a t0 y a 28 días; ensayo de eficacia del conservante antes de usarla |
+| Microbiología | sin crecimiento | placas a t0 y a 28 días; ensayo de eficacia del conservante antes de su uso |
 
-### Si algo falla
+### Diagnóstico de fallas
 
-| Qué ves | Por qué | Qué hacer |
+| Observación | Causa probable | Acción correctiva |
 |---|---|---|
-| Se separa una capa de aceite y vuelve al agitar | cremado: gotas grandes o medio poco viscoso | homogeneiza más tiempo o sube un poco la goma |
-| Se separa y no vuelve | coalescencia: falta emulsionante o el par no es el adecuado | prueba otro HLB antes de subir la dosis |
-| Queda granosa | las ceras cristalizaron o las fases estaban a distinta temperatura | iguala temperaturas y enfría agitando |
-| No se dispersa en agua | salió W/O | sube la parte hidrófila del emulsionante |
-| Huele mal o sale moho | conservante débil o pH alto | descártala, revisa pH y conservante |
+| Se separa una capa de aceite y vuelve al agitar | cremado: gotas grandes o medio poco viscoso | homogeneizar más tiempo o aumentar un poco la goma |
+| Se separa y no vuelve | coalescencia: falta emulsionante o el par no es el adecuado | probar otro HLB antes de subir la dosis |
+| Queda granosa | las ceras cristalizaron o las fases estaban a distinta temperatura | igualar temperaturas y enfriar agitando |
+| No se dispersa en agua | salió W/O | aumentar la parte hidrófila del emulsionante |
+| Olor o moho | conservante débil o pH alto | descartarla, revisar pH y conservante |
 
-### Qué puedes cambiar
+### Variables de estudio
 
-- Baja la niacinamida a 2 % para piel sensible.
+- Reducir la niacinamida a 2 % para piel sensible.
 - Sin fragancia: es una crema para la cara.
 
-**Fuentes.** Método y proceso: Baki 2023, ISBN 978-1-119-70977-0, pp. 72 y 250-259. Niacinamida al 5 %, ensayo clínico: nota 03 de la investigación. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
+**Referencias.** Método y proceso: Baki 2023, ISBN 978-1-119-70977-0, pp. 72 y 250-259. Niacinamida al 5 %, ensayo clínico: nota 03 de la investigación. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
 
 ## Otros productos de esta sección
 

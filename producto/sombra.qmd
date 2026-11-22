@@ -8,9 +8,9 @@ page-layout: full
 <figure class="cabeza" style="--color:#5c1f3a" data-alto="baja"><div class="marco"><img src="../fotos/maquillaje.jpg" alt="Labiales de varios tonos"></div><h1>Sombra de ojos</h1></figure>
 ```
 
-[Maquillaje](../maquillaje/index.qmd). Nacarados enteros. Forma: polvo nacarado.
+[Maquillaje](../maquillaje/index.qmd). Polvo con nacarados incorporados sin molienda. Forma: polvo nacarado.
 
-Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+Las recetas son propuestas de este proyecto y **están sin ensayar**. Se presentan como hipótesis de trabajo para contrastar en el laboratorio.
 
 ## Sombra nacarada
 
@@ -19,47 +19,47 @@ Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. 
 ```
 
 ::: {.avisos}
-- Usa mascarilla: el polvo fino irrita los pulmones.
-- Zona de los ojos: exige control microbiológico y colorantes permitidos.
+- Usar mascarilla: el polvo fino irrita las vías respiratorias.
+- Zona ocular: exige recuento con límite de 100 UFC/g y colorantes permitidos.
 :::
 
-### Por qué funciona
+### Fundamento
 
-El nacarado va al final: es una lámina y la molienda la rompe. Los óxidos de hierro se permiten en la zona de los ojos.
+El nacarado es laminar y se incorpora al final, porque la molienda lo fractura. Los óxidos de hierro están permitidos en el contorno de los ojos.
 
-### Paso a paso
+### Procedimiento
 
-1. Ponte mascarilla: vas a manejar polvo fino.
-2. Muele los pigmentos con una parte de la carga hasta que el color no cambie al frotarlo.
-3. Agrega el resto de los polvos y mezcla.
-4. Incorpora el aglutinante gota a gota mientras mezclas.
-5. Pasa por un tamiz fino dos veces.
-6. Agrega los nacarados al final, sin moler.
-7. Llena la bandeja y comprime. Empieza con poca presión y sube hasta que no se rompa al caer desde 20 cm.
+1. Usar mascarilla: se maneja polvo fino.
+2. Moler los pigmentos con una parte de la carga hasta que el color no cambie al frotarlo.
+3. Agregar el resto de los polvos y mezclar.
+4. Incorporar el aglutinante gota a gota con mezclado continuo.
+5. Pasar por un tamiz fino dos veces.
+6. Agregar los nacarados al final, sin moler.
+7. Llenar la bandeja y comprimir. Comenzar con poca presión y aumentar hasta que no se rompa al caer desde 20 cm.
 
-### Cómo saber si salió bien
+### Control de calidad
 
-| Control | Meta | Cómo se mide |
+| Determinación | Especificación | Método |
 |---|---|---|
-| Color | igual en las dos caras | frota sobre papel blanco |
-| Caída | aguanta tres caídas de 20 cm | sobre madera |
-| Cesión | deja color en una pasada | esponja seca |
-| Humedad | registra el valor | pérdida de peso a 105 °C |
+| Color | igual en las dos caras | frotar sobre papel blanco |
+| Caída | resiste tres caídas de 20 cm | sobre madera |
+| Cesión | transfiere color en una pasada | esponja seca |
+| Humedad | registrar el valor | pérdida de peso a 105 °C |
 
-### Si algo falla
+### Diagnóstico de fallas
 
-| Qué ves | Por qué | Qué hacer |
+| Observación | Causa probable | Acción correctiva |
 |---|---|---|
-| Se rompe | poca presión o poco aglutinante | sube uno de los dos, no ambos |
-| No suelta color | demasiada presión o aglutinante | baja la presión |
-| Manchas de color | pigmento sin moler | muele más con la carga |
+| Se rompe | poca presión o poco aglutinante | aumentar uno de los dos, no ambos |
+| Cesión insuficiente | demasiada presión o aglutinante | reducir la presión |
+| Manchas de color | pigmento sin moler | moler más con la carga |
 
-### Qué puedes cambiar
+### Variables de estudio
 
 - Menos nacarado: mate.
 - Más dimeticona: se pega mejor al párpado.
 
-**Fuentes.** Colorantes: 21 CFR 73 y Anexo IV; revisa el texto vigente. Proporciones propuestas en este proyecto.
+**Referencias.** Colorantes: 21 CFR 73 y Anexo IV; revisa el texto vigente. Proporciones propuestas en este proyecto.
 
 ## Otros productos de esta sección
 

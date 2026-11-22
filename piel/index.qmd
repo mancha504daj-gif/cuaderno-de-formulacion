@@ -8,107 +8,136 @@ page-layout: full
 <figure class="cabeza" style="--color:#b3245c"><div class="marco"><img src="../fotos/piel.jpg" alt="Frasco de crema abierto con su tapa azul"></div><h1>Cuidado de la piel</h1></figure>
 ```
 
-Aquí aprendes cómo está hecha la piel, qué hace cada tipo de ingrediente y cómo se arma una crema. Al final eliges un producto y lo llevas al laboratorio.
+Un producto hidratante modifica el contenido de agua y la organización de los lípidos del estrato córneo. Esta sección describe esa estructura, clasifica los ingredientes por su mecanismo y desarrolla el diseño de una emulsión O/W.
 
-## Las palabras que vas a usar
+## Objetivos de aprendizaje
+
+1. Describir la composición del estrato córneo y el papel de sus lípidos.
+2. Distinguir los mecanismos humectante, emoliente y oclusivo, y sus límites.
+3. Elegir una fase oleosa a partir de extensibilidad y viscosidad.
+4. Plantear una loción O/W y calcular sus masas.
+
+## Vocabulario
 
 {{< include ../_inc/terminos-piel.md >}}
 
-## Lección 1. La piel que vas a tratar
+## Lección 1. Estrato córneo y balance de agua
 
-Un cosmético trabaja en el estrato córneo, la capa más externa. Son células planas y muertas, los corneocitos, pegadas con lípidos. Piensa en ladrillos y mortero.
+El estrato córneo es la capa externa de la epidermis. Está formado por corneocitos, células sin núcleo llenas de queratina, separados por láminas de lípidos. El modelo clásico lo compara con un muro: los corneocitos son los ladrillos y los lípidos, el mortero.
 
-El mortero lleva, en peso, cerca de 50 % de ceramidas, 25 % de colesterol y 15 % de ácidos grasos libres. Dentro de los ladrillos hay moléculas que retienen agua: el factor natural de hidratación. Cerca de la mitad son aminoácidos; el resto incluye lactato, urea y sales.
+Las láminas contienen, en masa, cerca de 50 % de ceramidas, 25 % de colesterol y 15 % de ácidos grasos libres, con muy poco fosfolípido [@feingold2014]. Tres factores gobiernan la hidratación: el empaque de esos lípidos, la longitud del camino que recorre el agua entre los corneocitos y el factor natural de hidratación [@rawlings2004]. Este último reúne moléculas solubles que retienen agua dentro del corneocito. Alrededor de la mitad son aminoácidos; el resto incluye lactato, urea y sales [@purnamawati2017].
 
-La piel se ve seca cuando el agua del estrato córneo baja de 10 %. El agua sale todo el tiempo por evaporación y se repone desde abajo.
+Los signos de piel seca aparecen cuando el agua del estrato córneo baja de 10 % [@purnamawati2017]. El agua difunde desde la dermis y se evapora en la superficie. Ese flujo se llama pérdida de agua transepidérmica y se expresa en g/(m² h).
 
 :::: {.modelo data-escena="piel"}
 
 ::: {.acto}
-El agua sube por los huecos entre células y se evapora. Con la piel seca, las células se encogen y sus bordes se levantan.
+El agua difunde por los espacios entre corneocitos y se evapora. En la piel seca las células se contraen y sus bordes se levantan.
 :::
 
 ::: {.acto}
-**Humectante.** La glicerina o la urea atraen agua y la retienen. Con aire seco, solas, pueden favorecer la pérdida.
+**Humectante.** La glicerina y la urea retienen agua por puentes de hidrógeno. En aire seco, sin una película que la detenga, parte de esa agua se evapora.
 :::
 
 ::: {.acto}
-**Emoliente.** Los ésteres y aceites rellenan los huecos y bajan los bordes.
+**Emoliente.** Ésteres y aceites ocupan los huecos entre escamas y alisan la superficie.
 :::
 
 ::: {.acto}
-**Humectante con oclusivo.** La vaselina, la dimeticona o las ceras dejan una película. El agua llega arriba y se queda.
+**Humectante con oclusivo.** La vaselina, la dimeticona o las ceras forman una película hidrófoba que reduce la evaporación.
 :::
 
 ::: {.acto}
-Mueve tú la película. [Laboratorio: agua que pierde la piel](../laboratorio/agua-que-pierde-la-piel.qmd).
+Varíe la película y observe el flujo. [Laboratorio virtual: agua que pierde la piel](../laboratorio/agua-que-pierde-la-piel.qmd).
 :::
 
 ::::
 
-## Lección 2. Cuatro clases de ingrediente
+## Lección 2. Mecanismos de hidratación
 
-| Clase | Qué hace | Ejemplos | Cuándo falla |
+| Clase | Mecanismo | Ejemplos | Limitación |
 |---|---|---|---|
-| Humectante | Atrae agua | glicerina, urea, ácido hialurónico | con aire seco y sin película |
-| Emoliente | Rellena y suaviza | triglicérido caprílico/cáprico, escualano | si queda muy graso o muy poco |
-| Oclusivo | Frena la salida de agua | vaselina, ceras, dimeticona | se siente pesado |
-| Otros | Aporta lípidos o película | ceramidas, colesterol, proteínas | un lípido solo retrasa la reparación |
+| Humectante | retiene agua por higroscopia | glicerina, urea, ácido hialurónico, sorbitol | necesita una película en ambiente seco |
+| Emoliente | rellena y lubrica entre escamas | triglicérido caprílico/cáprico, escualano | el exceso deja residuo graso |
+| Oclusivo | reduce la evaporación con una película | vaselina, ceras, dimeticona | sensación pesada |
+| Lípido fisiológico | repone componentes de las láminas | ceramidas, colesterol, ácidos grasos | un lípido solo retrasa la reparación |
 
-Un humectante toma agua del aire cuando la humedad pasa de 80 %. En un cuarto seco la toma de la piel. Por eso se combina con una película.
+La glicerina combinada con un oclusivo supera a cada uno por separado. Cerca de la mitad del producto aplicado permanece en la piel a las 8 h, y de ahí la recomendación de una a tres aplicaciones diarias [@purnamawati2017].
 
-De un hidratante aplicado queda cerca de la mitad a las 8 horas. De ahí la indicación de repetir de una a tres veces al día.
+**Reparación de la barrera.** Man y colaboradores aplicaron mezclas de lípidos a piel con la barrera dañada. Uno o dos de los tres lípidos retrasaron la recuperación. La mezcla equimolar de ceramida, colesterol y ácido graso la permitió, y triplicar cualquiera de ellos la aceleró [@man1996]. Un producto con ceramidas como único lípido no tiene respaldo en ese estudio.
 
-**Un dato que sorprende.** Aplicar un solo lípido de la barrera, por ejemplo ceramida, retrasa la reparación de una piel dañada. Los tres juntos la permiten.
+**Discrepancia entre fuentes.** Purnamawati y colaboradores presentan 3:1:1 como proporción fisiológica; Man y colaboradores, como la optimizada. La diferencia importa al leer una etiqueta que anuncia «proporción natural».
 
-## Lección 3. Elegir aceites
+## Lección 3. Selección de la fase oleosa
 
-Los aceites no se sienten igual. Dos números ayudan:
+La extensibilidad mide el área que cubre una masa de emoliente en 10 min. La viscosidad explica la mayor parte de esa variable; la tensión superficial y la densidad aportan el resto.
 
-- **Extensibilidad:** cuánta superficie cubre una gota en diez minutos. Dicaprylyl Carbonate llega a 1600 mm²; el triglicérido caprílico/cáprico, a 550.
-- **Viscosidad:** los aceites vegetales rondan de 73 a 112 mPa s; los ésteres ligeros, cerca de 20.
-
-Mezcla uno rápido, uno medio y uno lento. Es costumbre del oficio, sin una ley que la respalde.
-
-En un ensayo con aceites corporales, los vegetales se extendieron peor y aumentaron más la hidratación. El linoleico, abundante en girasol, se asocia a mejor reparación; el aceite de oliva puede desordenar los lípidos de la piel.
-
-## Lección 4. Armar una loción O/W
-
-Una loción son cinco decisiones:
-
-1. **Cuánto aceite.** De 10 a 20 % para el cuerpo. Menos para la cara.
-2. **Qué emulsionante.** Suma 3 a 5 %. La lección de [emulsiones](../fundamentos/emulsiones.qmd) explica cómo elegirlo.
-3. **Qué humectante.** Glicerina de 3 a 6 %.
-4. **Qué espesa.** Goma xantana de 0.1 a 0.3 % o alcohol cetílico de 1 a 4 %.
-5. **Qué conserva.** La lección de [conservación](../fundamentos/conservacion.qmd) dice a qué pH.
-
-Los porcentajes son rangos de partida de este proyecto, por contrastar en el laboratorio.
-
-**Ejemplo resuelto.** Quieres 200 g de loción con 12 % de aceite de almendras. Pesas 200 × 12/100 = 24 g. Si el lote baja a 50 g, pesas 6 g. Todo se escala igual.
-
-**Error frecuente.** Agregar el conservante con la mezcla a 70 °C. Algunos se evaporan o se degradan. Espera a 40 °C.
-
-## Lección 5. Elegir según la piel
-
-| Piel | Empieza por | Evita al principio |
+| Emoliente | Extensibilidad (mm² en 10 min) | Viscosidad (mPa s) |
 |---|---|---|
-| Normal | humectante con emoliente | nada en especial |
-| Grasa | gel o loción ligera | mantecas |
-| Seca | crema con humectante y oclusivo | geles sin aceite |
-| Sensible | fórmula corta y sin fragancia | aceites esenciales |
+| Dicaprylyl Carbonate | 1600 | 18 a 21 |
+| Dibutyl Adipate | 1000 | 18 a 21 |
+| Octyldodecanol | 600 | 114 |
+| Caprylic/Capric Triglyceride | 550 | |
+| Aceites vegetales | | 73 a 112 |
 
-## Qué puedes hacer
+Los datos son de Ogorzałek y colaboradores [@ogorzalek2024]. El 550 del triglicérido coincide con la ficha de su fabricante, lo que sugiere que el artículo tomó valores de proveedor.
+
+La industria combina emolientes de extensión rápida, media y lenta para que la sensación cambie con el tiempo. Las fuentes consultadas no cuantifican ese efecto; conviene tratarlo como criterio de diseño.
+
+En el mismo estudio los aceites corporales con base vegetal se extendieron peor y aumentaron más la hidratación que los sintéticos [@ogorzalek2024]. Una proporción alta de linoleico frente a oleico se asocia con mejor reparación de la barrera. El aceite de oliva, con proporción baja, puede desordenar los lípidos del estrato córneo [@purnamawati2017].
+
+## Lección 4. Diseño de una loción O/W
+
+| Decisión | Intervalo de partida | Justificación |
+|---|---|---|
+| Fase oleosa | 10 a 20 % cuerpo; menos en cara | residuo y sensación |
+| Emulsionante | 3 a 5 % | cubrir la interfase; véase [emulsiones](../fundamentos/emulsiones.qmd) |
+| Humectante | glicerina 3 a 6 % | retención de agua sin pegajosidad |
+| Estructurante | goma xantana 0.1 a 0.3 % o alcohol cetílico 1 a 4 % | viscosidad de la fase continua |
+| Conservante | según pH | véase [conservación](../fundamentos/conservacion.qmd) |
+
+Los intervalos son propuestas de este proyecto, por contrastar en el laboratorio.
+
+La masa de cada componente sale de su fracción:
+
+$$m_i = \frac{w_i\, M}{100}$$
+
+con $w_i$ el porcentaje en masa y $M$ la masa del lote.
+
+**Ejemplo resuelto.** Un lote de 200 g con 12 % de aceite de almendras lleva 200 × 12/100 = 24.0 g. A 50 g, 6.00 g. Con una balanza de ± 0.1 g el error relativo pasa de 0.4 a 1.7 %.
+
+**Orden de adición.** El conservante y los activos entran por debajo de 40 °C. A 70 °C algunos se evaporan o se degradan.
+
+## Lección 5. Criterios según el estado de la piel
+
+| Estado | Forma de partida | Restricción inicial |
+|---|---|---|
+| Normal | loción con humectante y emoliente | ninguna |
+| Grasa | gel o loción ligera | mantecas |
+| Seca | crema con humectante y oclusivo | geles sin fase oleosa |
+| Sensible | fórmula corta, sin fragancia | aceites esenciales |
+
+La clasificación es descriptiva. Las fuentes abiertas consultadas no dan umbrales de sebo ni de pérdida de agua para separar los tipos.
+
+## Alcance de la evidencia
+
+Las cifras de composición y de reparación provienen de estudios revisados por pares. Los intervalos de formulación son propuestas sin ensayo propio. La reducción de 98 % en la pérdida de agua que suele atribuirse a la vaselina no figura en el resumen del trabajo original al que se le asigna, y por eso no se usa aquí.
+
+## Productos de esta sección
 
 ```{=html}
 <div class="tarjas" data-productos="piel"></div>
 ```
 
-## Comprueba lo que aprendiste
+## Autoevaluación
 
 ```{=html}
 <div data-preguntas="piel"></div>
 ```
 
-## Fuentes
+## Referencias
 
-Purnamawati et al. 2017, DOI [10.3121/cmr.2017.1363](https://doi.org/10.3121/cmr.2017.1363). Ogorzalek et al. 2024, DOI [10.3390/app14072783](https://doi.org/10.3390/app14072783). Baki 2023, ISBN 978-1-119-70977-0, pp. 72 y 250-259. Benson et al. 2019, DOI [10.1201/9780429190674](https://doi.org/10.1201/9780429190674), p. 296. Los lípidos de la barrera: Man et al. 1996, citado en la nota 05 de la investigación.
+Los criterios de proceso siguen a Baki [-@baki2023, pp. 72 y 250-259].
+
+::: {#refs}
+:::

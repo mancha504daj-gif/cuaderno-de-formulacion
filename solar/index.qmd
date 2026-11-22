@@ -8,96 +8,126 @@ page-layout: full
 <figure class="cabeza" style="--color:#8a5200"><div class="marco"><img src="../fotos/solar.jpg" alt="Una persona aplica protector a un niño"></div><h1>Protección solar</h1></figure>
 ```
 
-Aquí aprendes qué hace un filtro, qué significa un FPS y por qué un protector casero es mala idea. Los productos de esta sección son para después del sol, y una muestra para medir en el laboratorio.
+El factor de protección solar cuantifica la atenuación de la radiación que produce eritema. Esta sección define esa magnitud, presenta su estimación espectrofotométrica y discute por qué una película casera no garantiza protección. Los productos son para después del sol, más una muestra destinada al espectrofotómetro.
 
-## Las palabras que vas a usar
+## Objetivos de aprendizaje
+
+1. Distinguir las bandas UVA y UVB y los mecanismos de los filtros.
+2. Definir FPS y relacionarlo con la fracción transmitida.
+3. Calcular un FPS estimado con la ecuación de Mansur y enunciar sus límites.
+4. Evaluar la evidencia sobre protectores caseros.
+
+## Vocabulario
 
 {{< include ../_inc/terminos-solar.md >}}
 
-## Lección 1. La radiación
+## Lección 1. Radiación y filtros
 
-| Banda | Longitud de onda | Qué hace |
+| Banda | Longitud de onda (nm) | Efecto dominante |
 |---|---|---|
-| UVB | 290 a 320 nm | quema |
-| UVA | 320 a 400 nm | penetra más y envejece |
+| UVB | 290 a 320 | eritema |
+| UVA | 320 a 400 | penetración mayor, envejecimiento |
 
-Un filtro orgánico absorbe la radiación y la suelta como calor. Uno inorgánico, como el óxido de zinc o el dióxido de titanio, absorbe y dispersa.
+Un filtro orgánico absorbe un fotón y disipa la energía como calor. Un filtro inorgánico, como el óxido de zinc o el dióxido de titanio, absorbe y dispersa. La eficacia depende de la concentración, del estado de dispersión y del espesor de la película.
 
-## Lección 2. Qué es un FPS
+## Lección 2. Definición del FPS
 
-El FPS compara la dosis que enrojece la piel con protector y sin él. Se mide con 2 mg/cm². FPS 15 detiene 93 % de la UVB que quema y FPS 30, 97 %.
+El FPS es el cociente de dosis mínimas de eritema:
 
-La etiqueta europea agrupa así:
+$$FPS = \frac{DME_{con}}{DME_{sin}}$$
 
-| Protección | FPS |
+medido con 2 mg/cm² de producto. La fracción de radiación eritemática transmitida es su inverso:
+
+$$T = \frac{1}{FPS}$$
+
+FPS 15 atenúa 93.3 % y FPS 30, 96.7 %. Duplicar el FPS baja la transmisión a la mitad, aunque la atenuación cambie pocos puntos.
+
+| Protección | FPS en etiqueta |
 |---|---|
 | Baja | 6 y 10 |
 | Media | 15, 20 y 25 |
 | Alta | 30 y 50 |
 | Muy alta | 50+ |
 
-La Unión Europea pide además que la protección UVA sea al menos un tercio del FPS y una longitud de onda crítica de 370 nm.
+La Comisión Europea recomienda además una protección UVA de al menos un tercio del FPS y una longitud de onda crítica de 370 nm o más [@rec647].
 
-## Lección 3. La cantidad manda
+## Lección 3. Cantidad aplicada
 
 :::: {.modelo data-escena="solar"}
 
 ::: {.acto}
-Con FPS 30 y 2 mg/cm², cruza cerca de 3 % de la radiación que quema.
+Con FPS 30 y 2 mg/cm² se transmite 3.3 % de la radiación eritemática.
 :::
 
 ::: {.acto}
-Con la mitad de la cantidad, el modelo dice que el FPS cae a su raíz cuadrada. De 30 quedarían 5.5. **El estudio midió esto con un protector FPS 4, en 20 personas.** Para FPS 30 es una extrapolación.
+Con la mitad de la cantidad, el modelo exponencial predice la raíz cuadrada del FPS: de 30 a 5.5. **El estudio midió un protector FPS 4 en 20 personas** [@faurschou2007]. Para FPS 30 el valor es una extrapolación.
 :::
 
 ::: {.acto}
-Con la cuarta parte, a su raíz cuarta: 2.3. El estudio cita esa cantidad como la que suele ponerse la gente. [Laboratorio: FPS y cantidad](../laboratorio/fps-y-cantidad.qmd).
+Con un cuarto de la cantidad, la raíz cuarta: 2.3. Los autores citan esa cantidad como la habitual del usuario. [Laboratorio virtual: FPS y cantidad](../laboratorio/fps-y-cantidad.qmd).
 :::
 
 ::::
 
-## Lección 4. Estimar en el laboratorio
+El modelo toma la forma
 
-El método de Mansur calcula un FPS a partir de la absorbancia entre 290 y 320 nm:
+$$FPS(q) = FPS_{2}^{\,q/2}$$
 
-$$FPS = 10 \sum_{290}^{320} EE(\lambda)\, I(\lambda)\, A(\lambda)$$
+con $q$ en mg/cm². Se deduce de suponer una película uniforme que obedece la ley de Beer.
+
+## Lección 4. Estimación espectrofotométrica
+
+Mansur propuso una suma ponderada de absorbancias entre 290 y 320 nm [@mansur1986], con los valores normalizados de $EE \times I$ que calculó Sayre [@sayre1979]:
+
+$$FPS = FC \sum_{290}^{320} EE(\lambda)\, I(\lambda)\, A(\lambda), \qquad FC = 10$$
 
 | λ (nm) | 290 | 295 | 300 | 305 | 310 | 315 | 320 |
 |---|---|---|---|---|---|---|---|
 | EE × I | 0.0150 | 0.0817 | 0.2874 | 0.3278 | 0.1864 | 0.0839 | 0.0180 |
 
-**Ejemplo resuelto.** Si la absorbancia fuera 1 en toda la banda, FPS = 10 × (0.0150 + 0.0817 + 0.2874 + 0.3278 + 0.1864 + 0.0839 + 0.0180) = 10.0.
+Los pesos suman 1.0002, de modo que una absorbancia constante $A$ da FPS cercano a $10A$.
 
-Mide una solución diluida, no una película sobre la piel. Dutra midió diez protectores comerciales: tres coincidieron con su etiqueta y uno rotulado FPS 30 dio 19. Sirve para aprender y comparar. Un FPS declarado exige el ensayo normalizado, ISO 24444.
+**Ejemplo resuelto.** Las absorbancias medidas fueron 0.80, 0.85, 0.90, 0.88, 0.82, 0.70 y 0.55. La suma ponderada es 0.0120 + 0.0694 + 0.2587 + 0.2885 + 0.1528 + 0.0587 + 0.0099 = 0.8500, y el FPS estimado, 8.5.
 
-## Lección 5. Por qué no se usa un protector casero
+**Límites.** El método mide una solución diluida en etanol. No representa una película sobre la piel, no incluye UVA y no ve el efecto de un filtro disperso que sedimenta. Dutra y colaboradores lo aplicaron a diez protectores comerciales: tres coincidieron con su etiqueta y uno rotulado FPS 30 dio 19 [@dutra2004]. Un FPS declarado exige el ensayo normalizado ISO 24444.
 
-La protección depende de una película continua, y falla donde queda más delgada. En un estudio de 15 recetas de internet, 12 dieron menos de FPS 6 y las otras tres no tenían filtro. Una receta con óxido de zinc y aceites tampoco evitó el daño celular.
+## Lección 5. Protectores caseros
 
-Por eso la [muestra mineral](../producto/muestra-mineral.qmd) de esta sección se mide y no se usa en la piel.
+La protección exige una película continua de espesor uniforme, y falla donde es más delgada. Couteau y colaboradores prepararon 15 recetas publicadas en internet. Tres no contenían filtro y las otras doce dieron un FPS menor que 6 [@couteau2021]. Ince y colaboradores estudiaron una receta con óxido de zinc y aceites, y no evitó el daño celular por radiación [@ince2025].
 
-## Lección 6. Límites europeos que cambiaron
+La [muestra mineral](../producto/muestra-mineral.qmd) de esta sección se prepara para medir absorbancia y comparar dispersión. No se aplica en la piel.
 
-| Filtro | Límite |
+## Lección 6. Límites reglamentarios
+
+| Filtro | Límite en la Unión Europea |
 |---|---|
 | Homosalato | 7.34 %, solo en productos faciales |
-| Benzofenona-3 | 6 % cara, 2.2 % cuerpo, 0.5 % como estabilizante |
+| Benzofenona-3 | 6 % en cara, 2.2 % en cuerpo, 0.5 % como estabilizante |
 | Octocrileno | 10 %, o 9 % en aerosol con propelente |
 | 4-MBC | prohibido |
 | Óxido de zinc y dióxido de titanio | 25 % cada uno |
 
-## Qué puedes hacer
+Los valores salen del Anexo VI [@cosing]. El reglamento cambia con frecuencia: conviene leer el texto vigente antes de formular.
+
+## Alcance de la evidencia
+
+El modelo de cantidad se ajustó con un solo producto de FPS bajo. La estimación de Mansur tiene valor docente y comparativo.
+
+## Productos de esta sección
 
 ```{=html}
 <div class="tarjas" data-productos="solar"></div>
 ```
 
-## Comprueba lo que aprendiste
+## Autoevaluación
 
 ```{=html}
 <div data-preguntas="solar"></div>
 ```
 
-## Fuentes
+## Referencias
 
-Recomendación 2006/647/CE. Faurschou y Wulf 2007, *Br. J. Dermatol.* 156:716-719, DOI [10.1111/j.1365-2133.2006.07684.x](https://doi.org/10.1111/j.1365-2133.2006.07684.x) (PubMed). Couteau et al. 2021, DOI [10.1111/jocd.13783](https://doi.org/10.1111/jocd.13783). Ince et al. 2025, DOI [10.1007/s43630-025-00742-7](https://doi.org/10.1007/s43630-025-00742-7). Sayre et al. 1979, DOI [10.1111/j.1751-1097.1979.tb07090.x](https://doi.org/10.1111/j.1751-1097.1979.tb07090.x). Dutra et al. 2004, DOI [10.1590/S1516-93322004000300014](https://doi.org/10.1590/S1516-93322004000300014). Mansur et al. 1986, *An. Bras. Dermatol.* 61:121-124 (sin DOI). CosIng, Anexo VI, exportación del 13-11-2026.
+No se consultaron los textos originales de Mansur ni de Sayre; sus datos llegan por Dutra y colaboradores.
+
+::: {#refs}
+:::

@@ -2,20 +2,34 @@
 title: "Alcance y límites"
 ---
 
-Este sitio enseña a formular y a diseñar ensayos. Sus cálculos son estimaciones.
+Este sitio es material docente sobre formulación cosmética y diseño de ensayos. Sus cálculos son estimaciones y sus recetas, hipótesis de trabajo.
 
-- **Las recetas son propuestas sin ensayar.** Cada una lo dice. Nadie ha comprobado su estabilidad, su conservación ni su seguridad. Se llevan al laboratorio, se prueban y se corrigen aquí.
-- Nada va a la piel sin control microbiológico y evaluación de seguridad.
-- El HLB orienta la elección de emulsionantes. La estabilidad se prueba.
+## Grado de evidencia
+
+| Contenido | Respaldo |
+|---|---|
+| Lecciones | artículos revisados por pares, normas y libros, citados en el texto |
+| Límites reglamentarios | reglamento europeo consolidado y CosIng, con fecha |
+| Guías microbiológicas | BAM de la FDA y notas del comité científico europeo; lo demás lleva la marca «propuesta docente» |
+| Modelos y calculadoras | ecuaciones deducidas y verificadas con casos resueltos |
+| Recetas | proporciones propuestas, **sin ensayar** |
+| Función de cada ingrediente | conocimiento general del oficio, sin una cita por línea |
+
+## Limitaciones
+
+- Nadie ha comprobado la estabilidad, la conservación ni la seguridad de las recetas. Se llevan al laboratorio, se ensayan y se corrigen aquí.
+- Ningún producto se aplica en la piel sin control microbiológico y evaluación de seguridad.
+- El HLB orienta la elección de emulsionantes; no predice estabilidad.
 - Stokes describe gotas aisladas en un medio newtoniano.
-- La fracción sin disociar no reemplaza el ensayo de eficacia del conservante.
-- Los límites citados son de la Unión Europea, que el reglamento centroamericano adopta. Comprueba el texto vigente.
+- La fracción sin disociar no reemplaza el ensayo del conservante.
+- Las normas ISO citadas son de pago y no se consultaron.
+- Los límites son de la Unión Europea, que el reglamento centroamericano adopta. Conviene leer el texto vigente.
 - Vender en Honduras exige trámites: [Del cuaderno al registro](honduras.qmd).
 
 ## Estado de los datos
 
-Las tablas de HLB requerido reúnen valores que no coinciden y algunos de fuentes informales; la calculadora lo avisa. Faltan densidades de jojoba, karité, cacao y almendra. Lo que hace cada ingrediente es conocimiento general del oficio, sin una cita por línea.
+Las tablas de HLB requerido reúnen valores que no coinciden, algunos de fuentes informales, y la calculadora lo indica. Faltan densidades de jojoba, karité, cacao y almendra.
 
-## Quién hizo qué
+## Autoría
 
 Lopez_Julio_34 definió el proyecto, eligió el diseño y las secciones, y decide qué se publica. Un asistente de IA (Claude) escribió el código y los textos y reunió las fuentes. La verificación en el laboratorio está pendiente.

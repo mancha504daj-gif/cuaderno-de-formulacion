@@ -3,70 +3,70 @@
 :::: {.termino-caja}
 **Notas de salida**
 
-Lo que hueles primero y se va antes. *Cítricos.*
+Componentes más volátiles de una fragancia, percibidos primero. *Cítricos.*
 
 ::::
 
 :::: {.termino-caja}
 **Notas de corazón**
 
-Lo que queda cuando se van las de salida. *Florales.*
+Componentes de volatilidad intermedia. *Florales.*
 
 ::::
 
 :::: {.termino-caja}
 **Notas de fondo**
 
-Lo que dura más. *Maderas, vainilla.*
+Componentes menos volátiles, de mayor persistencia. *Maderas, vainilla.*
 
 ::::
 
 :::: {.termino-caja}
 **Acorde**
 
-Varios aromas que suenan como uno.
+Mezcla de materiales percibida como un olor unitario.
 
 ::::
 
 :::: {.termino-caja}
 **Fijador**
 
-Ingrediente poco volátil que frena a los demás.
+Material de baja volatilidad que reduce la presión de vapor de los demás.
 
 ::::
 
 :::: {.termino-caja}
 **Presión de vapor**
 
-Cuánto tiende a evaporarse una sustancia. *Limoneno 1.55 mmHg; vainillina 0.000118.*
+Presión del vapor en equilibrio con su líquido o sólido a una temperatura dada. *Limoneno 1.55 mmHg; vainillina 0.000118.*
 
 ::::
 
 :::: {.termino-caja}
 **Alérgeno**
 
-Sustancia que puede sensibilizar y se declara. *Linalool.*
+Sustancia capaz de inducir sensibilización. Las listadas se declaran en la etiqueta. *Linalool.*
 
 ::::
 
 :::: {.termino-caja}
 **Fototóxico**
 
-Reacciona con el sol y quema la piel. *Bergamota exprimida.*
+Que causa daño cutáneo al combinarse con radiación ultravioleta. *Bergamota exprimida.*
 
 ::::
 
 :::: {.termino-caja}
 **IFRA**
 
-Asociación que fija límites de uso para fragancias.
+Asociación internacional que publica estándares de uso para materiales de fragancia.
 
 ::::
 
 :::: {.termino-caja}
 **Maceración**
 
-Semanas de reposo para que el perfume se integre.
+Reposo de una solución alcohólica hasta que su olor se estabiliza.
 
 ::::
 

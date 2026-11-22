@@ -8,9 +8,9 @@ page-layout: full
 <figure class="cabeza" style="--color:#15171f" data-alto="baja"><div class="marco"><img src="../fotos/frasco.jpg" alt="Frasco de perfume de vidrio"></div><h1>Bruma corporal</h1></figure>
 ```
 
-[Fragancias](../fragancias/index.qmd). Fragancia escondida en micelas. Forma: solución con micelas.
+[Fragancias](../fragancias/index.qmd). Fragancia solubilizada en micelas, sin alcohol. Forma: solución con micelas.
 
-Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+Las recetas son propuestas de este proyecto y **están sin ensayar**. Se presentan como hipótesis de trabajo para contrastar en el laboratorio.
 
 ## Bruma corporal
 
@@ -19,45 +19,45 @@ Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. 
 ```
 
 ::: {.avisos}
-- Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.
-- No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad.
-- Comprueba el certificado IFRA de la fragancia.
+- Contiene agua. Sin ensayo del conservante puede contaminarse sin cambios visibles.
+- No se aplica en la piel sin control microbiológico y evaluación de seguridad.
+- Verificar el certificado IFRA de la fragancia.
 :::
 
-### Por qué funciona
+### Fundamento
 
-Sin alcohol, la fragancia no se disuelve en agua. El Tween la esconde en micelas: suele pedir de 3 a 5 partes por cada parte de fragancia.
+El polisorbato solubiliza la fragancia en micelas. La relación habitual de 3 a 5 partes por parte de fragancia se determina por titulación hasta transparencia.
 
-### Paso a paso
+### Procedimiento
 
-1. Mezcla la fragancia con el Tween 20.
-2. Agrega el agua poco a poco, agitando: debe quedar transparente.
-3. Agrega la glicerina y la fase C.
-4. Mide el pH y envasa con atomizador.
+1. Mezclar la fragancia con el Tween 20.
+2. Agregar el agua poco a poco, agitando: debe quedar transparente.
+3. Agregar la glicerina y la fase C.
+4. Medir el pH y envasar con atomizador.
 
-### Cómo saber si salió bien
+### Control de calidad
 
-| Control | Meta | Cómo se mide |
+| Determinación | Especificación | Método |
 |---|---|---|
 | pH | el de la receta ± 0.3 | medidor |
-| Viscosidad | registra husillo, rpm y temperatura | viscosímetro o copa |
+| Viscosidad | registrar husillo, rpm y temperatura | viscosímetro o copa |
 | Espuma | altura a 0, 1 y 5 min | probeta agitada, solución al 1 % |
 | Aspecto | sin turbidez nueva | 4 °C, ambiente y 40 °C |
 | Microbiología | sin crecimiento | placas a t0 y a 28 días |
 
-### Si algo falla
+### Diagnóstico de fallas
 
-| Qué ves | Por qué | Qué hacer |
+| Observación | Causa probable | Acción correctiva |
 |---|---|---|
-| No espesa | poca sal o pH alto | ajusta el pH y sigue la curva de sal |
-| Se adelgazó al poner sal | te pasaste del máximo | diluye con más tensioactivo: con sal no se recupera |
-| Se enturbia en frío | fragancia o fase que no se disuelve | baja la fragancia o usa un solubilizante |
+| No espesa | poca sal o pH alto | ajustar el pH y seguir la curva de sal |
+| Perdió viscosidad al agregar sal | se superó el máximo de la curva | diluir con más tensioactivo: con sal no se recupera |
+| Se enturbia en frío | fragancia o fase que no se disuelve | reducir la fragancia o usar un solubilizante |
 
-### Qué puedes cambiar
+### Variables de estudio
 
-- Si queda turbia, sube el Tween de 1 en 1 %.
+- Si queda turbia, aumentar el Tween de 1 en 1 %.
 
-**Fuentes.** Proporciones propuestas en este proyecto. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
+**Referencias.** Proporciones propuestas en este proyecto. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
 
 ## Otros productos de esta sección
 

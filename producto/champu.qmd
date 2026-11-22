@@ -8,9 +8,9 @@ page-layout: full
 <figure class="cabeza" style="--color:#00616f" data-alto="baja"><div class="marco"><img src="../fotos/champu.jpg" alt="Champú sólido con espuma"></div><h1>Champú</h1></figure>
 ```
 
-[Cabello](../cabello/index.qmd). Limpia y deja algo de acondicionador. Forma: solución espesada.
+[Cabello](../cabello/index.qmd). Sistema aniónico y anfótero con depósito por coacervación. Forma: solución espesada.
 
-Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+Las recetas son propuestas de este proyecto y **están sin ensayar**. Se presentan como hipótesis de trabajo para contrastar en el laboratorio.
 
 ## Champú clásico
 
@@ -19,47 +19,47 @@ Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. 
 ```
 
 ::: {.avisos}
-- Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.
-- No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad.
+- Contiene agua. Sin ensayo del conservante puede contaminarse sin cambios visibles.
+- No se aplica en la piel sin control microbiológico y evaluación de seguridad.
 :::
 
-### Por qué funciona
+### Fundamento
 
-Lleva 9 % de SLES y 3 % de betaína activos. Al enjuagar, el poliquaternio se junta con el tensioactivo, precipita y se deposita en el cabello.
+La fórmula contiene 9 % de SLES y 3 % de betaína como activo. Al enjuagar, la dilución separa un coacervado de poliquaternio y tensioactivo que se deposita en la fibra.
 
-### Paso a paso
+### Procedimiento
 
-1. Pesa el agua y disuelve lo que pide la fase A.
-2. Agrega los tensioactivos por la pared del vaso, con agitación lenta para no hacer espuma.
-3. Agrega la fase C.
-4. Mide el pH y ajústalo. Los glucósidos llegan a pH 11 o 12: bájalo antes de juzgar la viscosidad.
-5. Si lleva sal, disuélvela en un poco de agua y agrégala en pasos de 0.2 %. Detente cuando espese lo que buscas.
-6. Deja reposar 24 h y envasa.
+1. Pesar el agua y disolver lo que pide la fase A.
+2. Agregar los tensioactivos por la pared del vaso, con agitación lenta para no hacer espuma.
+3. Agregar la fase C.
+4. Medir el pH y ajustarlo. Los glucósidos llegan a pH 11 o 12: bajarlo antes de juzgar la viscosidad.
+5. Si lleva sal, disolverla en un poco de agua y agregarla en pasos de 0.2 %. Detenerse al alcanzar la viscosidad buscada.
+6. Dejar reposar 24 h y envasar.
 
-### Cómo saber si salió bien
+### Control de calidad
 
-| Control | Meta | Cómo se mide |
+| Determinación | Especificación | Método |
 |---|---|---|
 | pH | el de la receta ± 0.3 | medidor |
-| Viscosidad | registra husillo, rpm y temperatura | viscosímetro o copa |
+| Viscosidad | registrar husillo, rpm y temperatura | viscosímetro o copa |
 | Espuma | altura a 0, 1 y 5 min | probeta agitada, solución al 1 % |
 | Aspecto | sin turbidez nueva | 4 °C, ambiente y 40 °C |
 | Microbiología | sin crecimiento | placas a t0 y a 28 días |
 
-### Si algo falla
+### Diagnóstico de fallas
 
-| Qué ves | Por qué | Qué hacer |
+| Observación | Causa probable | Acción correctiva |
 |---|---|---|
-| No espesa | poca sal o pH alto | ajusta el pH y sigue la curva de sal |
-| Se adelgazó al poner sal | te pasaste del máximo | diluye con más tensioactivo: con sal no se recupera |
-| Se enturbia en frío | fragancia o fase que no se disuelve | baja la fragancia o usa un solubilizante |
+| No espesa | poca sal o pH alto | ajustar el pH y seguir la curva de sal |
+| Perdió viscosidad al agregar sal | se superó el máximo de la curva | diluir con más tensioactivo: con sal no se recupera |
+| Se enturbia en frío | fragancia o fase que no se disuelve | reducir la fragancia o usar un solubilizante |
 
-### Qué puedes cambiar
+### Variables de estudio
 
 - Curva de sal de 0.4 a 1.4 %.
 - Sin poliquaternio para cabello fino.
 
-**Fuentes.** Tensioactivos: Thompson et al. 2023 y catálogos de proveedor citados en la calculadora de materia activa. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
+**Referencias.** Tensioactivos: Thompson et al. 2023 y catálogos de proveedor citados en la calculadora de materia activa. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
 
 ## Champú suave sin sulfatos
 
@@ -68,48 +68,48 @@ Lleva 9 % de SLES y 3 % de betaína activos. Al enjuagar, el poliquaternio se ju
 ```
 
 ::: {.avisos}
-- Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.
-- No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad.
-- El pH decide si el conservante funciona.
+- Contiene agua. Sin ensayo del conservante puede contaminarse sin cambios visibles.
+- No se aplica en la piel sin control microbiológico y evaluación de seguridad.
+- El pH determina la actividad del conservante.
 :::
 
-### Por qué funciona
+### Fundamento
 
-El glucósido no espesa con sal: por eso lleva goma. No hay datos publicados de que un champú sin sulfato dañe menos el cabello.
+El alquil glucósido carece de carga y no responde al electrolito, de modo que se espesa con goma. No hay datos publicados que demuestren menor daño capilar de un champú sin sulfatos.
 
-### Paso a paso
+### Procedimiento
 
-1. Pesa el agua y disuelve lo que pide la fase A.
-2. Agrega los tensioactivos por la pared del vaso, con agitación lenta para no hacer espuma.
-3. Agrega la fase C.
-4. Mide el pH y ajústalo. Los glucósidos llegan a pH 11 o 12: bájalo antes de juzgar la viscosidad.
-5. Si lleva sal, disuélvela en un poco de agua y agrégala en pasos de 0.2 %. Detente cuando espese lo que buscas.
-6. Deja reposar 24 h y envasa.
+1. Pesar el agua y disolver lo que pide la fase A.
+2. Agregar los tensioactivos por la pared del vaso, con agitación lenta para no hacer espuma.
+3. Agregar la fase C.
+4. Medir el pH y ajustarlo. Los glucósidos llegan a pH 11 o 12: bajarlo antes de juzgar la viscosidad.
+5. Si lleva sal, disolverla en un poco de agua y agregarla en pasos de 0.2 %. Detenerse al alcanzar la viscosidad buscada.
+6. Dejar reposar 24 h y envasar.
 
-### Cómo saber si salió bien
+### Control de calidad
 
-| Control | Meta | Cómo se mide |
+| Determinación | Especificación | Método |
 |---|---|---|
 | pH | el de la receta ± 0.3 | medidor |
-| Viscosidad | registra husillo, rpm y temperatura | viscosímetro o copa |
+| Viscosidad | registrar husillo, rpm y temperatura | viscosímetro o copa |
 | Espuma | altura a 0, 1 y 5 min | probeta agitada, solución al 1 % |
 | Aspecto | sin turbidez nueva | 4 °C, ambiente y 40 °C |
 | Microbiología | sin crecimiento | placas a t0 y a 28 días |
 
-### Si algo falla
+### Diagnóstico de fallas
 
-| Qué ves | Por qué | Qué hacer |
+| Observación | Causa probable | Acción correctiva |
 |---|---|---|
-| No espesa | poca sal o pH alto | ajusta el pH y sigue la curva de sal |
-| Se adelgazó al poner sal | te pasaste del máximo | diluye con más tensioactivo: con sal no se recupera |
-| Se enturbia en frío | fragancia o fase que no se disuelve | baja la fragancia o usa un solubilizante |
+| No espesa | poca sal o pH alto | ajustar el pH y seguir la curva de sal |
+| Perdió viscosidad al agregar sal | se superó el máximo de la curva | diluir con más tensioactivo: con sal no se recupera |
+| Se enturbia en frío | fragancia o fase que no se disuelve | reducir la fragancia o usar un solubilizante |
 
-### Qué puedes cambiar
+### Variables de estudio
 
 - Goma a 1 % si queda líquido.
-- Agrega 0.5 % de pantenol.
+- Agregar 0.5 % de pantenol.
 
-**Fuentes.** Tensioactivos: Thompson et al. 2023 y catálogos de proveedor citados en la calculadora de materia activa. pKa: PubChem, CID 243 y 643460. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
+**Referencias.** Tensioactivos: Thompson et al. 2023 y catálogos de proveedor citados en la calculadora de materia activa. pKa: PubChem, CID 243 y 643460. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
 
 ## Otros productos de esta sección
 

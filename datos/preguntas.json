@@ -1,17 +1,17 @@
 {
  "piel": [
   {
-   "p": "Tu piel está seca y el aire también. ¿Qué eliges?",
+   "p": "Piel seca en ambiente de baja humedad. ¿Qué formulación conviene?",
    "o": [
     "Solo glicerina",
     "Glicerina con una película oclusiva",
     "Solo agua"
    ],
    "c": 1,
-   "e": "Con aire seco la glicerina sola puede sacar agua de la piel. La película la retiene."
+   "e": "En aire seco, sin película, el agua retenida por la glicerina se evapora."
   },
   {
-   "p": "Una crema se dispersa en agua como leche. ¿Qué tipo es?",
+   "p": "Una crema se dispersa en agua y forma un líquido lechoso. ¿Qué tipo de emulsión es?",
    "o": [
     "O/W",
     "W/O"
@@ -31,25 +31,25 @@
  ],
  "limpieza": [
   {
-   "p": "Agregaste sal al gel y se adelgazó. ¿Qué pasó?",
+   "p": "Un gel perdió viscosidad al agregar NaCl. ¿Cuál es la causa?",
    "o": [
-    "Pasaste el máximo de la curva",
+    "Se superó el máximo de la curva",
     "Faltó sal"
    ],
    "c": 0,
-   "e": "Pasado el máximo, más sal no lo recupera."
+   "e": "Pasado el máximo la red micelar se ramifica y fluye; más sal no la recupera."
   },
   {
-   "p": "¿Qué haces primero con la sosa?",
+   "p": "¿Cuál es el orden seguro al preparar la lejía?",
    "o": [
-    "Agregarla al agua",
+    "Agregar la sosa al agua",
     "Agregar agua a la sosa"
    ],
    "c": 0,
-   "e": "Al revés hierve y salpica."
+   "e": "El orden inverso libera calor en poco volumen y proyecta líquido."
   },
   {
-   "p": "Tienes SLES al 27 % y quieres 8 % activo en 100 g. ¿Cuánto pesas?",
+   "p": "Con SLES al 27 %, ¿qué masa da 8 % de activo en 100 g?",
    "o": [
     "8 g",
     "29.6 g",
@@ -61,7 +61,7 @@
  ],
  "solar": [
   {
-   "p": "FPS 30 y la mitad de la cantidad. ¿Cuánto queda según el modelo?",
+   "p": "FPS 30 aplicado a 1 mg/cm². ¿Qué FPS predice el modelo exponencial?",
    "o": [
     "15",
     "5.5",
@@ -74,7 +74,7 @@
    "p": "¿Por qué no se usa un protector casero?",
    "o": [
     "Es caro",
-    "Nadie midió su FPS y la película puede fallar",
+    "Su FPS no se ha medido y la película puede fallar",
     "No huele bien"
    ],
    "c": 1,
@@ -92,13 +92,13 @@
    "e": "Es una lámina: si se rompe pierde brillo."
   },
   {
-   "p": "El polvo no suelta color. ¿Qué haces?",
+   "p": "Un polvo compacto presenta cesión insuficiente. ¿Qué se ajusta?",
    "o": [
-    "Bajas presión o aglutinante",
-    "Subes los dos"
+    "Reducir presión o aglutinante",
+    "Aumentar ambos"
    ],
    "c": 0,
-   "e": "Demasiada unión frena la cesión."
+   "e": "Una unión excesiva entre partículas reduce la cesión."
   }
  ],
  "cabello": [
@@ -109,10 +109,10 @@
     "Para oler mejor"
    ],
    "c": 0,
-   "e": "Con ácido se vuelve catiónica y se pega a la fibra."
+   "e": "Protonada es catiónica y se adsorbe en la fibra."
   },
   {
-   "p": "¿Puedes espesar un acondicionador con goma xantana?",
+   "p": "¿Es compatible la goma xantana con un acondicionador catiónico?",
    "o": [
     "Sí",
     "No: precipita con el catiónico"
@@ -123,7 +123,7 @@
  ],
  "fragancias": [
   {
-   "p": "¿Qué nota dura más?",
+   "p": "¿Qué sustancia persiste más?",
    "o": [
     "Limoneno",
     "Vainillina"
@@ -132,27 +132,27 @@
    "e": "Su presión de vapor es unas 13 000 veces menor."
   },
   {
-   "p": "El perfume se enturbió al poner agua. ¿Qué haces?",
+   "p": "Una solución alcohólica se enturbió al agregar agua. ¿Qué se corrige?",
    "o": [
     "Subir el alcohol o bajar el agua",
     "Agregar más agua"
    ],
    "c": 0,
-   "e": "La fragancia no se disuelve en tanta agua."
+   "e": "La proporción de agua excede la solubilidad de la fragancia."
   }
  ],
  "emulsiones": [
   {
-   "p": "¿Quién decide si sale O/W o W/O?",
+   "p": "Según Bancroft, ¿qué determina el tipo de emulsión?",
    "o": [
-    "La fase que hay más",
+    "La fase de mayor volumen",
     "El emulsionante"
    ],
    "c": 1,
-   "e": "La fase donde el emulsionante es más soluble tiende a quedar por fuera."
+   "e": "La fase continua es aquella donde el emulsionante es más soluble."
   },
   {
-   "p": "Reduces el radio a la mitad. ¿La velocidad de cremado?",
+   "p": "Si el radio de gota se reduce a la mitad, ¿cómo cambia la velocidad de Stokes?",
    "o": [
     "Baja a la mitad",
     "Baja cuatro veces"
@@ -163,7 +163,7 @@
  ],
  "conservacion": [
   {
-   "p": "Benzoato a pH 6. ¿Cuánto queda activo?",
+   "p": "Benzoato a pH 6. ¿Qué fracción queda sin disociar?",
    "o": [
     "Casi todo",
     "Cerca de 1.6 %"
@@ -172,27 +172,27 @@
    "e": "Con pKa 4.20: 1/(1 + 10^1.8) = 1.6 %."
   },
   {
-   "p": "¿Un producto sin separarse está libre de microbios?",
+   "p": "Un producto sin separación visible, ¿está dentro de límites microbiológicos?",
    "o": [
     "Sí",
     "No se sabe sin analizar"
    ],
    "c": 1,
-   "e": "Pueden crecer sin que los veas."
+   "e": "El crecimiento puede ocurrir sin cambios visibles."
   }
  ],
  "microbiologia": [
   {
-   "p": "Sembraste sin neutralizante y no creció nada. ¿El producto está limpio?",
+   "p": "Un recuento sin neutralizante dio cero. ¿Está limpio el producto?",
    "o": [
     "Sí",
     "No se sabe"
    ],
    "c": 1,
-   "e": "El conservante pudo impedir que creciera en la placa."
+   "e": "El conservante residual pudo inhibir el crecimiento en la placa."
   },
   {
-   "p": "Placas de 0.1 mL de la 10⁻² con 60 y 64 colonias. ¿Cuánto hay?",
+   "p": "Dos placas de 0.1 mL de 10⁻² dieron 60 y 64 colonias. ¿Cuál es la concentración?",
    "o": [
     "620 UFC/g",
     "62 000 UFC/g",
@@ -208,16 +208,16 @@
     "No, en ojos el máximo es 100"
    ],
    "c": 1,
-   "e": "La zona de los ojos tiene el límite bajo."
+   "e": "Categoría 1: 100 UFC/g. Además supera 200, valor fuera de límite según la tabla A.9."
   },
   {
-   "p": "Crecieron colonias en el blanco. ¿Qué haces?",
+   "p": "El blanco presentó crecimiento. ¿Qué procede?",
    "o": [
     "Restarlas",
     "Repetir el ensayo"
    ],
    "c": 1,
-   "e": "No sabes de dónde vino el resto."
+   "e": "El origen de las demás colonias queda indeterminado."
   }
  ]
 }

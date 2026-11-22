@@ -4,196 +4,141 @@ toc: false
 page-layout: full
 ---
 
-Aquí aprendes a saber si un cosmético está contaminado y si su conservante aguanta. El conteo lo puedes hacer en un laboratorio docente con supervisión. El ensayo del conservante usa patógenos y lo hace un laboratorio de microbiología.
+El control microbiológico responde dos preguntas: si el producto está dentro de límites y si su sistema conservante resiste el uso. Esta página da el fundamento; los procedimientos están en las [guías de laboratorio](../guias/index.qmd).
 
-## Las palabras que vas a usar
+## Objetivos de aprendizaje
+
+1. Diferenciar el recuento del ensayo de desafío.
+2. Justificar la neutralización y la dilución seriada.
+3. Calcular una concentración con su incertidumbre.
+4. Interpretar un informe frente a los límites aceptados.
+
+## Vocabulario
 
 {{< include ../_inc/terminos-microbiologia.md >}}
 
-## Antes de empezar: seguridad
+## Lección 1. Dos preguntas, dos ensayos
 
-| Regla | Por qué |
+| Pregunta | Ensayo | Momento | Guía |
+|---|---|---|---|
+| ¿Está dentro de límites? | recuento y búsqueda de especificados | cada lote | [GM-03](../guias/gm-03-aerobios.qmd), [GM-04](../guias/gm-04-hongos.qmd), [GM-05](../guias/gm-05-especificados.qmd) |
+| ¿Resiste la contaminación del uso? | ensayo de desafío | una vez por fórmula y tras cada cambio | [GM-07](../guias/gm-07-conservante.qmd), práctica |
+
+Un recuento bajo no demuestra que el conservante funcione. Un conservante eficaz no corrige una fabricación sucia.
+
+## Lección 2. Bioseguridad
+
+El cultivo multiplica organismos desconocidos. El comité científico europeo pide que un microbiólogo ejecute o supervise los ensayos y los valide [@sccs2023, p. 149]. El capítulo 23 del BAM señala cuatro microorganismos de especial preocupación: *Staphylococcus aureus*, *Pseudomonas aeruginosa*, *Escherichia coli* y *Candida albicans* [@bam23].
+
+| Medida | Razón |
 |---|---|
-| Trabaja con supervisión de alguien de microbiología | vas a multiplicar lo que haya en la muestra |
-| Nunca en la cocina ni en casa | no puedes contener ni esterilizar |
-| Bata, guantes y lentes; pelo recogido; sin comer ni usar teléfono | evita llevarte microbios |
-| No abras placas crecidas | puede haber hongos o patógenos |
-| Esteriliza todo antes de botarlo | autoclave a 121 °C; consulta el tiempo con tu laboratorio |
-| Si se derrama, cubre con desinfectante y espera | el tiempo lo marca la etiqueta |
+| Trabajo en laboratorio con supervisión | identificación y respuesta ante hallazgos |
+| Nunca en cocina ni vivienda | sin contención ni esterilización |
+| Bata, guantes, lentes; sin alimentos ni teléfono | evita transferencia |
+| Placas cerradas con cinta | dispersión de esporas |
+| Esterilización de todos los residuos | ciclo validado por el laboratorio |
 
-La guía del FDA trata como preocupantes a *Staphylococcus aureus*, *Pseudomonas aeruginosa*, *Escherichia coli* y *Candida albicans*. Si sospechas de una colonia, no la identifiques tú: cierra la placa y llévala al laboratorio.
+## Lección 3. Neutralización
 
-## Lección 1. Dos preguntas distintas
+La porción que llega a la placa contiene conservante. Si conserva actividad, el recuento sale bajo. El caldo letheen modificado inactiva en parte los sistemas de uso común y el polisorbato 80 dispersa la grasa [@bam23]. La eficacia del neutralizante se verifica para cada fórmula con los cuatro tubos de [GM-02](../guias/gm-02-neutralizante.qmd).
 
-| Pregunta | Ensayo | Cuándo |
-|---|---|---|
-| ¿Está limpio ahora? | conteo en placa y búsqueda de patógenos | cada lote, a día 0 y al final de la estabilidad |
-| ¿Aguantará los dedos? | eficacia del conservante | una vez por fórmula y cada vez que la cambies |
+## Lección 4. Dilución y siembra
 
-Un conteo bajo no dice que el conservante funcione. Un conservante fuerte no limpia un lote sucio.
-
-## Lección 2. El neutralizante
-
-Si llevas producto a la placa, también llevas conservante, y ahí impide que crezca lo que hay. Saldría un cero falso. El caldo letheen modificado lleva sustancias que apagan al conservante, y el Tween 80 además dispersa la grasa.
-
-**Comprueba que funciona.** Prepara tres tubos con la misma cantidad conocida de un microbio inocuo, por ejemplo levadura de pan:
-
-| Tubo | Lleva | Qué te dice |
-|---|---|---|
-| A | diluyente y levadura | cuánto hay de verdad |
-| B | neutralizante y levadura | si el neutralizante es tóxico |
-| C | neutralizante, producto y levadura | si el conservante sigue actuando |
-
-Si B y C recuperan casi lo mismo que A, sirve. Si C recupera mucho menos, diluye más o cambia de neutralizante. El criterio numérico lo fija el método que sigas.
-
-## Lección 3. Qué necesitas
-
-| Para | Material |
-|---|---|
-| Muestra | balanza de 0.01 g, espátulas y tubos estériles con tapa |
-| Dispersar | Tween 80 estéril, perlas de vidrio de 5 mm estériles, agitador vórtex |
-| Diluir | caldo letheen modificado, 9 mL por tubo |
-| Aerobios | agar letheen modificado |
-| Hongos y levaduras | agar malta o agar papa dextrosa con 40 ppm de clortetraciclina |
-| Sembrar | pipetas estériles de 1 mL, asas de Drigalsky estériles |
-| Incubar | incubadora a 30 ± 2 °C |
-| Desinfectar | etanol al 70 % |
-
-Prepara los medios según su etiqueta. Guarda una placa y un tubo sin sembrar de cada lote de medio: son tus blancos.
-
-## Lección 4. Preparar la muestra
-
-Guarda la muestra a temperatura ambiente; no la enfríes ni la congeles. Limpia el envase por fuera con desinfectante y sécalo con gasa estéril antes de abrir. Todo lo que sigue va junto a un mechero o en cabina.
-
-| Producto | Primera dilución, 10⁻¹ |
-|---|---|
-| Líquido (champú, tónico) | 1 mL en 9 mL de caldo |
-| Crema, loción o producto con aceite | 1 g con 1 mL de Tween 80 y de cinco a siete perlas; vórtex; después 8 mL de caldo |
-| Sin agua (bálsamo, labial) | como crema o como polvo, según su textura |
-| Polvo o sólido | 1 g con 1 mL de Tween 80, dispersa con espátula; después 8 mL de caldo |
-
-## Lección 5. Diluir y sembrar
-
-1. Rotula tubos 10⁻¹, 10⁻² y 10⁻³, y las placas por debajo, con dilución, medio y fecha.
-2. Agita la 10⁻¹ y pasa 1 mL a un tubo con 9 mL de caldo: es la 10⁻².
-3. Con **otra** pipeta, pasa 1 mL de la 10⁻² a 9 mL: es la 10⁻³.
-4. Siembra 0.1 mL de cada dilución, por duplicado, y extiende con un asa nueva por dilución.
-5. Además, reparte 1 mL de la 10⁻¹ en dos placas (0.5 y 0.5 mL) o tres (0.3, 0.3 y 0.4). Haz un duplicado.
-6. Repite en el medio para hongos.
-7. Deja que el agar absorba. Para que sea rápido, seca antes las placas 48 h a 30 °C.
+Una dilución decimal lleva una parte de muestra a diez partes totales. La serie busca una placa con colonias suficientes para reducir el azar y pocas para contarlas.
 
 :::: {.modelo data-escena="petri"}
 
 ::: {.acto}
-Con cien mil por gramo y la primera dilución, 0.1 mL trae unas mil colonias. Nadie puede contarlas.
+Con 10⁵ UFC/g y la dilución 10⁻¹, 0.1 mL trae unas mil colonias: incontable.
 :::
 
 ::: {.acto}
-Una dilución más: cerca de cien. Esta placa se cuenta.
+En 10⁻² se esperan cien: contable.
 :::
 
 ::: {.acto}
-Otra más: unas diez. Muy pocas para confiar.
+En 10⁻³, diez: bajo el intervalo de 15 a 300.
 :::
 
 ::: {.acto}
-Mueve la carga y la dilución. [Laboratorio: contar en placa](../laboratorio/contar-en-placa.qmd).
+Varíe carga y dilución. [Laboratorio virtual: contar en placa](../laboratorio/contar-en-placa.qmd).
 :::
 
 ::::
 
-## Lección 6. Incubar
+## Lección 5. Incubación
 
-| Conteo | Temperatura | Tiempo | Posición |
-|---|---|---|---|
-| Aerobios | 30 ± 2 °C | 48 h | invertida |
-| Hongos y levaduras | 30 ± 2 °C | 5 días, y 48 h más si no creció nada | sin invertir, hasta tres apiladas |
+| Recuento | Medio | Temperatura | Tiempo | Posición |
+|---|---|---|---|---|
+| Aerobios | agar letheen modificado | 30 ± 2 °C | 48 h | invertida |
+| Hongos y levaduras | agar malta o papa dextrosa con 40 ppm de clortetraciclina | 30 ± 2 °C | 5 días; 48 h más si nada creció | sin invertir |
+| Enriquecimiento | caldo letheen modificado | 30 ± 2 °C | 7 días | tubo |
 
-No muevas las placas de hongos antes de tiempo: las esporas caen y siembran colonias nuevas.
+Valores del capítulo 23 del BAM [@bam23].
 
-**Enriquecimiento.** Incuba también los tubos que sobraron, a 30 °C, hasta 7 días. Si se enturbian, siémbralos en agar letheen y MacConkey. Un producto puede dar cero en placa y crecer en el tubo.
+## Lección 6. Cálculo e incertidumbre
 
-## Lección 7. Contar y calcular
+El estimador de máxima verosimilitud para placas contadas es la suma de colonias entre la masa total observada [@bam3]:
 
-Cuenta placas con 25 a 250 colonias para aerobios y de 10 a 150 para hongos y levaduras.
+$$N = \frac{\sum C_i}{\sum V_i \times 10^{-n_i}}$$
 
-$$N = \frac{\sum C}{\sum (V \times 10^{-n})}$$
+El intervalo de conteo es de 15 a 300 colonias para aerobios desde la edición de 2025 del capítulo 3, en lugar de 25 a 250 [@bam3], y de 10 a 150 para hongos [@bam23].
 
-**Ejemplo resuelto.** En la 10⁻¹ salieron 132 y 148 colonias con 0.1 mL; en la 10⁻², 14 y 11. Solo las dos primeras están en rango. La masa vista es 2 × 0.1 × 10⁻¹ = 0.02 g. N = 280/0.02 = 14 000 UFC/g.
+**Ejemplo resuelto.** En 10⁻¹ con 0.1 mL se contaron 132 y 148 colonias; en 10⁻², 14 y 11, fuera de intervalo. N = 280/0.02 = 14 000 UFC/g, con intervalo de 95 % de 12 400 a 15 700.
 
-| Qué pasó | Qué reportas |
+| Situación | Informe |
 |---|---|
-| Ninguna colonia en 1 mL de la 10⁻¹ | menos de 10 UFC/g |
-| Todas con menos de 25 | el valor, marcado como estimado |
-| Todas con más de 250 | «más de», y repites con más dilución |
-| Crecieron los blancos | el ensayo no vale |
+| Sin colonias en 1 mL de 10⁻¹ | menos de 10 UFC/g |
+| Todas las placas fuera de intervalo | valor estimado, con asterisco |
+| Placas incontables | mayor que; usar `MPN::apc` en R |
+| Crecimiento en blancos | ensayo nulo |
 
-Usa la [calculadora](../calculadoras/conteo.qmd), o anota tus placas en la hoja de laboratorio de la receta: hace la cuenta sola.
+[Calculadora de conteo](../calculadoras/conteo.qmd).
 
-## Lección 8. Interpretar
+## Lección 7. Límites
 
-ISO 17516, que el FDA cita como norma aceptada, pone el máximo así, sumando aerobios, hongos y levaduras:
-
-| Producto | Máximo |
-|---|---|
-| Ojos, mucosas y menores de 3 años | 100 UFC/g |
-| Los demás | 1000 UFC/g |
-
-Además, ausencia de los cuatro patógenos en 1 g. El conteo no los descarta: hace falta su ensayo.
-
-**Dos placas nunca dan igual.** Si esperas 100 colonias, es normal ver de 80 a 120 solo por azar. Por eso se redondea a dos cifras.
-
-**Cuándo muestrear.** Día 0, 28 y 90 de la estabilidad, y al final de la vida en uso. Toma también el agua y las arcillas: son las que más traen.
-
-## Lección 9. Buscar patógenos
-
-Se enriquece la muestra en caldo, se siembra en un medio selectivo y se confirma la colonia sospechosa.
-
-| Microbio | Norma | Medio típico |
+| Categoría | Aerobios totales | Especificados |
 |---|---|---|
-| *Pseudomonas aeruginosa* | ISO 22717 | agar cetrimida |
-| *Staphylococcus aureus* | ISO 22718 | agar Baird-Parker |
-| *Escherichia coli* | ISO 21150 | agar MacConkey |
-| *Candida albicans* | ISO 18416 | agar Sabouraud |
+| 1: menores de 3 años, ojos, mucosas | ≤ 100 UFC/g o mL | ausencia en 1 g o 1 mL |
+| 2: los demás | ≤ 1000 UFC/g o mL | ausencia en 1 g o 1 mL |
 
-Estas normas son de pago y aquí solo se listan. La confirmación exige cepas de control, así que va a un laboratorio con nivel de bioseguridad 2.
+La tabla A.9 del comité europeo recoge ISO 17516 y precisa que el total suma bacterias, levaduras y mohos. Por la variabilidad del método considera fuera de límite un resultado mayor que 200 o 2000 [@sccs2023]. La regla de decisión completa está en [GM-08](../guias/gm-08-dictamen.qmd).
 
-## Lección 10. El ensayo del conservante
+## Lección 8. Ensayo de desafío
 
-Se contamina el producto a propósito y se cuenta qué queda a los 7, 14 y 28 días. ISO 11930 usa cinco cepas, todas con capacidad de enfermar. **Encárgalo.** Lo que sí puedes hacer es entender el informe.
+Se inocula el producto y se mide la supervivencia. El comité europeo menciona *P. aeruginosa*, *S. aureus*, *C. albicans* y *A. brasiliensis*, y advierte que importa más la capacidad del microorganismo para contaminar el producto concreto que su posición taxonómica [@sccs2023, p. 149].
 
-$$reducción = \log_{10}\frac{N_0}{N_t}$$
+$$RL = \log_{10}\frac{N_0}{N_t}$$
 
-**Ejemplo resuelto.** Entra un millón y a los 7 días quedan 800. Reducción = log(1 000 000/800) = 3.1.
+**Ejemplo resuelto.** De 10⁶ a 800 UFC/g en 7 días: RL = 3.1.
 
-| Microbio | Criterio A, según un resumen de laboratorio |
+| Microorganismo | Criterio A, según un resumen de laboratorio [@microchem] |
 |---|---|
-| Bacterias | 3 log a los 7 días; sin aumento después |
-| *Candida albicans* | 1 log a los 7 días; sin aumento después |
-| *Aspergillus brasiliensis* | sin aumento a 7 y 14 días; 1 log a los 28 |
+| Bacterias | 3 log a 7 días; sin aumento después |
+| *Candida albicans* | 1 log a 7 días; sin aumento después |
+| *Aspergillus brasiliensis* | sin aumento a 7 y 14 días; 1 log a 28 |
 
-[Laboratorio: ensayo del conservante](../laboratorio/ensayo-del-conservante.qmd).
+[Laboratorio virtual: ensayo del conservante](../laboratorio/ensayo-del-conservante.qmd).
 
-**Una práctica docente.** Con levadura de pan, sin patógenos, puedes ver la curva: reparte el producto con y sin conservante, agrega la misma levadura a los dos, y cuenta en agar malta a 0, 1, 3 y 7 días con neutralizante. Enseña el método. No prueba que el producto sea seguro.
+## Lección 9. Investigación de una desviación
 
-## Lección 11. Encontrar de dónde vino
-
-| Dónde crece | Primera sospecha | Qué haces |
+| Hallazgo | Hipótesis | Comprobación |
 |---|---|---|
-| Solo en el lote con agua del grifo | el agua | usa destilada recién abierta y cuenta el agua |
-| En todos los lotes del día | equipo o manos | revisa limpieza; hisopo en superficies |
-| Después de abrir el envase | uso | cambia tarro por bomba |
-| A los 28 días y no al inicio | conservante débil | revisa pH, dosis y sistema |
-| En los blancos | técnica | repite todo |
+| Solo el lote con agua de red | agua | [GM-06](../guias/gm-06-ambiente.qmd), agua en tres puntos |
+| Todos los lotes del día | equipo o personal | hisopos antes y después de limpiar |
+| Tras abrir el envase | uso | uso simulado, envase con bomba |
+| A 28 días y no al inicio | conservación insuficiente | pH, dosis, reparto; ensayo de desafío |
+| Blancos con crecimiento | técnica | repetir con medio nuevo |
 
-Una placa abierta 30 min en la mesa te dice qué cae del aire.
-
-## Comprueba lo que aprendiste
+## Autoevaluación
 
 ```{=html}
 <div data-preguntas="microbiologia"></div>
 ```
 
-## Fuentes
+## Referencias
 
-FDA, *Bacteriological Analytical Manual*, capítulo 23, *Methods for Cosmetics*, julio de 2024 (secciones A a H, J y K): preparación, siembra, incubación y límites. Capítulo 3, *Aerobic Plate Count*, para el rango de 25 a 250 y el cálculo (sin DOI). ISO 17516, 21149, 16212, 22717, 22718, 21150, 18416 y 11930: de pago, no consultadas. Criterio A: resumen de Microchem Laboratory. Conservación: Halla et al. 2018, DOI [10.3390/molecules23071571](https://doi.org/10.3390/molecules23071571). La práctica con levadura y la comprobación en tres tubos son propuestas de este proyecto a partir de esas fuentes.
+Las normas ISO 17516, 21149, 16212, 18415, 22717, 22718, 21150, 18416 y 11930 son de pago y no se consultaron.
+
+::: {#refs}
+:::

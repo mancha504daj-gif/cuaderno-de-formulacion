@@ -1,0 +1,135 @@
+---
+title: "GM-03. Recuento de aerobios mesófilos"
+toc: false
+page-layout: full
+---
+
+| | |
+|---|------------|
+| **Resultado** | UFC de aerobios por gramo o mililitro |
+| **Método base** | BAM, capítulo 23, secciones F a H-1 [@bam23]; cálculo, capítulo 3 [@bam3] |
+| **Duración** | 2 h de trabajo y 48 h de incubación |
+| **Bioseguridad** | nivel 2 para muestras de origen desconocido |
+
+```{=html}
+<p class="ordenes"><button type="button" data-imprimir>Imprimir la guía</button></p>
+```
+
+## Objetivos
+
+1. Preparar la primera dilución según la forma cosmética.
+2. Sembrar por extensión en superficie y contar.
+3. Calcular la concentración con su intervalo de confianza y compararla con el límite.
+
+## Fundamento
+
+La siembra en superficie reparte un volumen conocido de una dilución conocida. Cada unidad formadora de colonia, sea una célula, una pareja o un grumo, da una colonia. La concentración es el total de colonias dividido entre la masa de muestra que llegó a las placas. Cada placa pesa en proporción a la masa que recibió [@bam3]:
+
+$$N = \frac{\sum C_i}{\sum V_i \times 10^{-n_i}}$$
+
+donde $C_i$ son las colonias de la placa $i$, $V_i$ el volumen sembrado en mL y $n_i$ el exponente de la dilución. El denominador queda en gramos porque la dilución 10⁻¹ lleva 1 g en 10 mL.
+
+El intervalo de conteo aceptado es de 15 a 300 colonias por placa. La edición de marzo de 2025 del capítulo 3 sustituyó el anterior, de 25 a 250 [@bam3]. Por debajo, el azar domina; por encima, las colonias se estorban y se confunden.
+
+## Equipo y materiales
+
+| Equipo | Material |
+|---|---|
+| Balanza de 0.01 g | MLB, cinco tubos de 9 mL por muestra |
+| Agitador vórtex | agar letheen modificado (MLA), doce placas secas por muestra |
+| Incubadora a 30 ± 2 °C | Tween 80 estéril |
+| Cabina o mechero | perlas de vidrio de 5 mm, estériles |
+| Contador de colonias | pipetas estériles de 1 mL, asas de extensión estériles |
+| Autoclave | etanol al 70 % con HCl al 1 % (v/v), gasa estéril |
+
+Las placas alcanzan así: seis de 0.1 mL (tres diluciones por duplicado) y hasta seis de la serie de 1 mL (dos juegos de tres).
+
+## Procedimiento
+
+### A. Muestra
+
+1. Guardar la muestra a temperatura ambiente. No incubar, refrigerar ni congelar.
+2. Inspeccionar el envase y anotar golpes, fugas o gas.
+3. Desinfectar el exterior y secar con gasa estéril antes de abrir.
+4. Homogeneizar el contenido y tomar una porción representativa. Con menos de 1 g, analizar todo.
+
+### B. Primera dilución, 10⁻¹
+
+| Forma | Preparación |
+|---|---|
+| Líquido | 1 mL en 9 mL de MLB |
+| Sólido o polvo | 1 g con 1 mL de Tween 80; dispersar con espátula; agregar 8 mL de MLB |
+| Crema o base oleosa | 1 g con 1 mL de Tween 80 y de cinco a siete perlas; vórtex; agregar 8 mL de MLB |
+| Anhidro | como sólido o como crema, según su textura |
+
+### C. Diluciones y siembra
+
+1. Pasar 1.0 mL de 10⁻¹ a 9 mL de MLB con pipeta nueva: 10⁻². Repetir: 10⁻³.
+2. Sembrar 0.1 mL de 10⁻¹, 10⁻² y 10⁻³ en MLA, por duplicado.
+3. Sembrar 1 mL de 10⁻¹ repartido en dos placas (0.5 y 0.5 mL) o en tres (0.3, 0.3 y 0.4 mL). Repetir como duplicado.
+4. Extender con un asa estéril nueva por dilución.
+5. Dejar que el agar absorba, invertir e incubar 48 h a 30 ± 2 °C.
+6. Guardar los tubos sobrantes para [GM-05](gm-05-especificados.qmd).
+
+### D. Controles de la corrida
+
+| Control | Criterio |
+|---|---|
+| Placa de MLA sin sembrar | sin crecimiento |
+| 0.1 mL de MLB con Tween 80, sin muestra | sin crecimiento |
+| Placa abierta 15 min junto al mechero | 15 colonias o menos [@bam3] |
+
+El capítulo 3 fija el último criterio para el análisis de alimentos. Si un control falla, la corrida se repite; el crecimiento del blanco no se resta.
+
+## Registro
+
+| Dilución | Volumen (mL) | Placa 1 | Placa 2 | Aspecto de las colonias |
+|---|---|---|---|---|
+| 10⁻¹ | 1.0, sumado | | | |
+| 10⁻¹ | 0.1 | | | |
+| 10⁻² | 0.1 | | | |
+| 10⁻³ | 0.1 | | | |
+| Blancos | | | | |
+
+## Cálculos
+
+**Ejemplo 1. Placas en rango.** En 10⁻¹ con 0.1 mL crecieron 132 y 148 colonias; en 10⁻², 14 y 11. Las dos últimas quedan bajo 15. Masa observada: 2 × 0.1 × 10⁻¹ = 0.02 g. N = 280/0.02 = 14 000 UFC/g.
+
+El intervalo de 95 % sale de la distribución de Poisson:
+
+```r
+poisson.test(280, T = 0.02)
+```
+
+Resultado: 14 000 UFC/g, de 12 400 a 15 700.
+
+**Ejemplo 2. Sin colonias.** La serie de 1 mL de 10⁻¹ no creció. Se informa «menos de 10 UFC/g» [@bam23]. Con el duplicado se observaron 0.2 g, y el límite superior de 95 % es 18 UFC/g (`poisson.test(0, T = 0.2)`).
+
+**Redondeo.** Dos cifras significativas. Cuando la tercera es 5, la segunda se lleva al número par: 14 500 pasa a 14 000 y 15 500 a 16 000 [@bam3].
+
+| Caso | Informe |
+|---|---|
+| Todas las placas fuera de 15 a 300 | valor estimado, con asterisco |
+| Placas incontables | paquete MPN de R, función `apc`, que usa verosimilitud máxima [@bam3] |
+| Colonias extendidas en más de 50 % de la placa | «extendidas»; no se cuenta |
+
+La [calculadora de conteo](../calculadoras/conteo.qmd) aplica estas reglas.
+
+## Criterio de aceptación
+
+El límite de ISO 17516 suma bacterias, levaduras y mohos: 100 UFC/g en productos para ojos, mucosas y menores de tres años; 1000 UFC/g en los demás [@sccs2023, tabla A.9]. El dictamen se hace con [GM-04](gm-04-hongos.qmd) y [GM-08](gm-08-dictamen.qmd).
+
+## Disposición final
+
+Placas, tubos y pipetas van al ciclo de residuos del autoclave. Los derrames se cubren con desinfectante por el tiempo que indica su etiqueta.
+
+## Preguntas de análisis
+
+1. Calcule el intervalo de 95 % para 20 colonias y para 200 en la misma masa. Compare sus anchos relativos.
+2. ¿Por qué se siembra 1 mL de 10⁻¹ además de 0.1 mL?
+3. Los duplicados dieron 40 y 110 colonias. Pruebe si el azar explica la diferencia.
+
+## Referencias
+
+::: {#refs}
+:::

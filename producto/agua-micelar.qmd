@@ -8,9 +8,9 @@ page-layout: full
 <figure class="cabeza" style="--color:#4d5a2c" data-alto="baja"><div class="marco"><img src="../fotos/jabonera.jpg" alt="Pilas de jabón de Alepo curándose"></div><h1>Agua micelar</h1></figure>
 ```
 
-[Limpieza](../limpieza/index.qmd). Pocas micelas que recogen grasa. Forma: solución diluida.
+[Limpieza](../limpieza/index.qmd). Solución diluida de no iónico sobre su CMC. Forma: solución diluida.
 
-Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+Las recetas son propuestas de este proyecto y **están sin ensayar**. Se presentan como hipótesis de trabajo para contrastar en el laboratorio.
 
 ## Agua micelar sencilla
 
@@ -19,48 +19,48 @@ Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. 
 ```
 
 ::: {.avisos}
-- Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.
-- No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad.
-- No la uses en los ojos sin evaluación.
+- Contiene agua. Sin ensayo del conservante puede contaminarse sin cambios visibles.
+- No se aplica en la piel sin control microbiológico y evaluación de seguridad.
+- No se usa en los ojos sin evaluación de seguridad.
 :::
 
-### Por qué funciona
+### Fundamento
 
-Pocas micelas de un no iónico suave recogen grasa y maquillaje. Después conviene enjuagar.
+Un no iónico por encima de su CMC solubiliza grasa y pigmento. El residuo de tensioactivo justifica el enjuague posterior.
 
-### Paso a paso
+### Procedimiento
 
-1. Pesa el agua y disuelve lo que pide la fase A.
-2. Agrega los tensioactivos por la pared del vaso, con agitación lenta para no hacer espuma.
-3. Agrega la fase C.
-4. Mide el pH y ajústalo. Los glucósidos llegan a pH 11 o 12: bájalo antes de juzgar la viscosidad.
-5. Si lleva sal, disuélvela en un poco de agua y agrégala en pasos de 0.2 %. Detente cuando espese lo que buscas.
-6. Deja reposar 24 h y envasa.
+1. Pesar el agua y disolver lo que pide la fase A.
+2. Agregar los tensioactivos por la pared del vaso, con agitación lenta para no hacer espuma.
+3. Agregar la fase C.
+4. Medir el pH y ajustarlo. Los glucósidos llegan a pH 11 o 12: bajarlo antes de juzgar la viscosidad.
+5. Si lleva sal, disolverla en un poco de agua y agregarla en pasos de 0.2 %. Detenerse al alcanzar la viscosidad buscada.
+6. Dejar reposar 24 h y envasar.
 
-### Cómo saber si salió bien
+### Control de calidad
 
-| Control | Meta | Cómo se mide |
+| Determinación | Especificación | Método |
 |---|---|---|
 | pH | el de la receta ± 0.3 | medidor |
-| Viscosidad | registra husillo, rpm y temperatura | viscosímetro o copa |
+| Viscosidad | registrar husillo, rpm y temperatura | viscosímetro o copa |
 | Espuma | altura a 0, 1 y 5 min | probeta agitada, solución al 1 % |
 | Aspecto | sin turbidez nueva | 4 °C, ambiente y 40 °C |
 | Microbiología | sin crecimiento | placas a t0 y a 28 días |
 
-### Si algo falla
+### Diagnóstico de fallas
 
-| Qué ves | Por qué | Qué hacer |
+| Observación | Causa probable | Acción correctiva |
 |---|---|---|
-| No espesa | poca sal o pH alto | ajusta el pH y sigue la curva de sal |
-| Se adelgazó al poner sal | te pasaste del máximo | diluye con más tensioactivo: con sal no se recupera |
-| Se enturbia en frío | fragancia o fase que no se disuelve | baja la fragancia o usa un solubilizante |
+| No espesa | poca sal o pH alto | ajustar el pH y seguir la curva de sal |
+| Perdió viscosidad al agregar sal | se superó el máximo de la curva | diluir con más tensioactivo: con sal no se recupera |
+| Se enturbia en frío | fragancia o fase que no se disuelve | reducir la fragancia o usar un solubilizante |
 
-### Qué puedes cambiar
+### Variables de estudio
 
-- Sube el Tween 20 a 2.5 % si el maquillaje es resistente.
-- Cambia Tween 20 por decil glucósido y ajusta el pH.
+- Aumentar el Tween 20 a 2.5 % si el maquillaje es resistente.
+- Sustituir Tween 20 por decil glucósido y ajustar el pH.
 
-**Fuentes.** No se halló una fuente abierta con el porcentaje típico de activo en agua micelar. Proporciones propuestas en este proyecto. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
+**Referencias.** No se halló una fuente abierta con el porcentaje típico de activo en agua micelar. Proporciones propuestas en este proyecto. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
 
 ## Otros productos de esta sección
 

@@ -8,7 +8,7 @@
  "lote": 100,
  "pH": null,
  "estado": "sin ensayar",
- "porque": "El óxido de zinc protege si forma una película continua. Sirve para medir la absorbancia y calcular Mansur, y para ver cuánto cambia con la molienda. La película casera suele quedar dispareja, y ahí se quema la piel.",
+ "porque": "El óxido de zinc atenúa la radiación si forma una película continua. La muestra permite medir absorbancia, aplicar la ecuación de Mansur y comparar el efecto de la dispersión. Una película casera presenta zonas delgadas sin protección.",
  "fases": [
   {
    "nombre": "A",
@@ -68,15 +68,15 @@
   }
  ],
  "pasos": [
-  "Muele el óxido de zinc con el aceite y el emulsionante hasta que no veas granos.",
-  "Disuelve el sulfato y la glicerina en el agua.",
-  "Agrega el agua al aceite en hilo fino, con agitación fuerte. Tarda 10 min.",
-  "Homogeneiza 5 min y agrega la fase D.",
-  "Guarda la muestra rotulada «para medir»."
+  "Moler el óxido de zinc con el aceite y el emulsionante hasta que no se observen granos.",
+  "Disolver el sulfato y la glicerina en el agua.",
+  "Agregar el agua al aceite en hilo fino, con agitación fuerte. Tarda 10 min.",
+  "Homogeneizar 5 min y agregar la fase D.",
+  "Guardar la muestra rotulada «para medir»."
  ],
  "cambia": [
-  "Mide con zinc al 5, 10 y 15 %.",
-  "Compara molido y sin moler."
+  "Medir con zinc al 5, 10 y 15 %.",
+  "Comparar molido y sin moler."
  ],
  "controles": [
   [
@@ -109,22 +109,22 @@
   [
    "Suelta agua",
    "faltó cizalla o electrolito",
-   "agrega el agua más despacio y revisa la sal"
+   "agregar el agua más despacio y revisar la sal"
   ],
   [
    "Se dispersa en agua",
    "salió O/W",
-   "agrega el agua sobre el aceite y más lento"
+   "agregar el agua sobre el aceite y más lento"
   ],
   [
    "Granos de polvo",
    "pigmento sin mojar",
-   "muélelo antes con parte del aceite"
+   "molerlo antes con parte del aceite"
   ]
  ],
  "avisos": [
-  "Esta muestra se mide en el laboratorio. No la uses como protector: nadie ha medido su FPS y una película casera puede fallar.",
-  "Usa mascarilla: el polvo fino irrita los pulmones."
+  "Muestra para medición. No se usa como protector: su FPS no se ha medido y la película puede fallar.",
+  "Usar mascarilla: el polvo fino irrita las vías respiratorias."
  ],
  "fuentes": [
   "Recetas caseras con FPS menor que 6: Couteau et al. 2021, DOI 10.1111/jocd.13783.",

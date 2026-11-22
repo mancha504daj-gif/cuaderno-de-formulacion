@@ -2,7 +2,7 @@
 title: Conservante y pH
 ---
 
-Un ácido orgánico conserva en su forma sin disociar:
+La fracción activa de un ácido orgánico es la que permanece sin disociar:
 
 $$f = \frac{1}{1 + 10^{\,pH - pK_a}}$$
 

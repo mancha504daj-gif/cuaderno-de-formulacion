@@ -3,7 +3,7 @@ project:
   output-dir: _site
   pre-render: herramientas/paginas.ts
   resources: ["js/*.mjs", "datos/*.json", "laboratorios/*.json", "aspecto/*.json", "fotos/*", "recetas/*.json"]
-  render: ["*.qmd", "fundamentos/*.qmd", "piel/*.qmd", "limpieza/*.qmd", "solar/*.qmd", "maquillaje/*.qmd", "cabello/*.qmd", "fragancias/*.qmd", "calculadoras/*.qmd", "laboratorio/*.qmd", "producto/*.qmd"]
+  render: ["*.qmd", "fundamentos/*.qmd", "piel/*.qmd", "limpieza/*.qmd", "solar/*.qmd", "maquillaje/*.qmd", "cabello/*.qmd", "fragancias/*.qmd", "calculadoras/*.qmd", "laboratorio/*.qmd", "producto/*.qmd", "guias/*.qmd"]
 website:
   title: "Cuaderno de formulación"
   site-url: "https://mancha504daj-gif.github.io/cuaderno-de-formulacion/"
@@ -33,7 +33,8 @@ website:
       - { text: Glosario, href: glosario.qmd }
       - { text: Ingredientes, href: ingredientes.qmd }
       - text: "---"
-      - { text: Laboratorios, href: laboratorios.qmd }
+      - { text: Guías de laboratorio, href: guias/index.qmd }
+      - { text: Laboratorios virtuales, href: laboratorios.qmd }
       - { text: Calculadoras, href: calculadoras/index.qmd }
       - { text: Mis recetas, href: mis-recetas.qmd }
       - { text: Mis ensayos, href: cuaderno.qmd }
@@ -44,6 +45,8 @@ website:
       - { text: Alcance, href: alcance.qmd }
       - { text: Créditos de las fotos, href: creditos.qmd }
 lang: es
+bibliography: referencias.bib
+link-citations: true
 format:
   html:
     theme: [default, css/estilo.scss]

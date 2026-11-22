@@ -8,9 +8,9 @@ page-layout: full
 <figure class="cabeza" style="--color:#b3245c" data-alto="baja"><div class="marco"><img src="../fotos/piel.jpg" alt="Frasco de crema abierto con su tapa azul"></div><h1>Manteca batida</h1></figure>
 ```
 
-[Cuidado de la piel](../piel/index.qmd). Manteca con aire: ligera y rica. Forma: anhidro aireado.
+[Cuidado de la piel](../piel/index.qmd). Manteca aireada con cristales finos. Forma: anhidro aireado.
 
-Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+Las recetas son propuestas de este proyecto y **están sin ensayar**. Se presentan como hipótesis de trabajo para contrastar en el laboratorio.
 
 ## Manteca batida de karité
 
@@ -22,43 +22,43 @@ Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. 
 - Contiene aceite de frutos secos.
 :::
 
-### Por qué funciona
+### Fundamento
 
-Batir mete aire y muchos cristales pequeños: queda ligera. Si se funde en el bolso vuelve a ser densa y quizá arenosa.
+El batido incorpora aire y favorece cristales pequeños. Si se funde y recristaliza despacio, los cristales crecen y la textura se vuelve granulosa.
 
-### Paso a paso
+### Procedimiento
 
-1. Funde el karité a 70 °C y mézclalo con los aceites.
-2. Enfría en el refrigerador hasta que los bordes se opaquen.
-3. Bate 5 min, enfría otra vez y repite hasta que quede espumosa.
-4. Agrega el tocoferol y bate 1 min.
-5. Envasa sin aplastar.
+1. Fundir el karité a 70 °C y mezclarlo con los aceites.
+2. Enfriar en el refrigerador hasta que los bordes se opaquen.
+3. Batir 5 min, enfriar otra vez y repetir hasta que quede espumosa.
+4. Agregar el tocoferol y batir 1 min.
+5. Envasar sin aplastar.
 
-### Cómo saber si salió bien
+### Control de calidad
 
-| Control | Meta | Cómo se mide |
+| Determinación | Especificación | Método |
 |---|---|---|
 | Aspecto | liso, sin granos ni gotas de aceite | a 24 h y a 7 días |
-| Dureza | registra la penetración | aguja o peso conocido |
-| Punto de fusión | registra el intervalo | capilar o baño con termómetro |
+| Dureza | registrar la penetración | aguja o peso conocido |
+| Punto de fusión | registrar el intervalo | capilar o baño con termómetro |
 | Calor | sin gotas en la superficie | 40 °C, 7 días |
 | Olor | sin rancio | a 1 y a 3 meses |
 
-### Si algo falla
+### Diagnóstico de fallas
 
-| Qué ves | Por qué | Qué hacer |
+| Observación | Causa probable | Acción correctiva |
 |---|---|---|
-| Granos | enfrió despacio o la manteca cristalizó mal | funde otra vez y enfría más rápido |
-| Suda aceite | poca cera o demasiado aceite líquido | sube la cera de 1 en 1 % |
-| Se parte | demasiada cera dura | baja la cera y sube el aceite |
-| Huele rancio | oxidación | usa aceite fresco, tocoferol y envase lleno |
+| Granos | enfrió despacio o la manteca cristalizó mal | fundir otra vez y enfriar más rápido |
+| Exudación de aceite | poca cera o demasiado aceite líquido | aumentar la cera de 1 en 1 % |
+| Fractura | demasiada cera dura | reducir la cera y aumentar el aceite |
+| Olor rancio | oxidación | usar aceite fresco, tocoferol y envase lleno |
 
-### Qué puedes cambiar
+### Variables de estudio
 
-- Agrega 3 % de almidón para quitar grasa.
-- Cambia 10 % de karité por cacao en clima cálido.
+- Agregar 3 % de almidón para quitar grasa.
+- Sustituir 10 % de karité por cacao en clima cálido.
 
-**Fuentes.** Método y proceso: Baki 2023, ISBN 978-1-119-70977-0, pp. 72 y 250-259. Proporciones propuestas en este proyecto.
+**Referencias.** Método y proceso: Baki 2023, ISBN 978-1-119-70977-0, pp. 72 y 250-259. Proporciones propuestas en este proyecto.
 
 ## Otros productos de esta sección
 

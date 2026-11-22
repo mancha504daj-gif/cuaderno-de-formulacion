@@ -6,9 +6,9 @@ Sitio en español sobre formulación cosmética, con cálculos a la vista y fuen
 
 - **Seis secciones:** piel, limpieza, protección solar, maquillaje, cabello y fragancias, más una de emulsiones.
 - **44 productos con 47 recetas**, cada una con su razón, pasos, controles, fallas y hoja de laboratorio. Son propuestas sin ensayar.
-- **Lecciones, glosario y preguntas** por sección, y fundamentos de laboratorio, conservación y estabilidad.
+- **Lecciones con citas y referencias, glosario y autoevaluación** por sección, y fundamentos de laboratorio, conservación y estabilidad.
 - **Seis calculadoras:** HLB, Stokes, conservante y pH, jabón, materia activa y conteo en placa.
-- **Microbiología** con once lecciones sobre el conteo en placa, la búsqueda de patógenos y el ensayo del conservante.
+- **Microbiología** con nueve lecciones y **ocho guías de laboratorio** (GM-01 a GM-08): medios, neutralizante, recuentos, especificados, ambiente, conservante y dictamen.
 - **Trece laboratorios** armados con bloques. Cada uno muestra sus ecuaciones, sus supuestos y su fuente.
 - **Escenas animadas** que se mueven con la ecuación que explican (WebGL 2, sin bibliotecas).
 - **Editor de bloques** para cambiar la apariencia de una página o armar un laboratorio sin programar.
@@ -32,6 +32,8 @@ En RStudio también sirve **Render Website**.
 | Un laboratorio o la apariencia de una página | el editor del sitio; guarda el archivo descargado en `laboratorios` o en `aspecto` |
 | Una receta | «Modificar esta receta» en el sitio; guarda el archivo descargado en `recetas` |
 | Un término, un producto o un ingrediente | `datos/terminos.json`, `datos/productos.json`, `datos/ingredientes.json` |
+| Una guía de laboratorio | `guias` |
+| Una referencia | `referencias.bib` |
 | Un dato | los `.json` de `datos` |
 | Una ecuación de las calculadoras | `js/motor.mjs` |
 | Una escena | `js/escenas.mjs` y `js/escenas2.mjs` |

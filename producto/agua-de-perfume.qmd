@@ -8,9 +8,9 @@ page-layout: full
 <figure class="cabeza" style="--color:#15171f" data-alto="baja"><div class="marco"><img src="../fotos/frasco.jpg" alt="Frasco de perfume de vidrio"></div><h1>Agua de perfume</h1></figure>
 ```
 
-[Fragancias](../fragancias/index.qmd). De 10 a 15 % de fragancia. Forma: solución alcohólica.
+[Fragancias](../fragancias/index.qmd). Solución hidroalcohólica con 10 a 15 % de fragancia. Forma: solución alcohólica.
 
-Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+Las recetas son propuestas de este proyecto y **están sin ensayar**. Se presentan como hipótesis de trabajo para contrastar en el laboratorio.
 
 ## Agua de perfume
 
@@ -20,44 +20,44 @@ Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. 
 
 ::: {.avisos}
 - El alcohol es inflamable.
-- Comprueba el certificado IFRA de la fragancia.
+- Verificar el certificado IFRA de la fragancia.
 :::
 
-### Por qué funciona
+### Fundamento
 
-Con 12 % entra en la convención de agua de perfume, 10 a 15 %. Cuanta más fragancia, menos agua tolera.
+Una concentración de 12 % se sitúa en la convención de agua de perfume, de 10 a 15 %. Al aumentar la fragancia baja la cantidad de agua que admite la solución sin enturbiarse.
 
-### Paso a paso
+### Procedimiento
 
-1. Trabaja lejos de llamas y chispas.
-2. Pesa la fragancia en un frasco de vidrio seco.
-3. Agrega el alcohol y agita hasta que quede transparente.
-4. Agrega el agua despacio. Si se enturbia, te pasaste de agua para esa fragancia.
-5. Cierra y deja macerar de 2 a 4 semanas, fresco y oscuro.
-6. Enfría 24 h a 4 °C, filtra en frío y envasa.
+1. Trabajar lejos de llamas y chispas.
+2. Pesar la fragancia en un frasco de vidrio seco.
+3. Agregar el alcohol y agitar hasta que quede transparente.
+4. Agregar el agua despacio. Si se enturbia, la proporción de agua excede la solubilidad.
+5. Cerrar y dejar macerar de 2 a 4 semanas, fresco y oscuro.
+6. Enfriar 24 h a 4 °C, filtrar en frío y envasar.
 
-### Cómo saber si salió bien
+### Control de calidad
 
-| Control | Meta | Cómo se mide |
+| Determinación | Especificación | Método |
 |---|---|---|
 | Transparencia | límpido | a contraluz, a 20 y a 4 °C |
 | Color | sin cambio | una muestra a la luz y otra a oscuras |
-| Olor | anota a 0, 15 min, 1 h y 4 h | en tira de papel |
-| Densidad | registra | picnómetro |
+| Olor | registrar a 0, 15 min, 1 h y 4 h | en tira de papel |
+| Densidad | registrar | picnómetro |
 
-### Si algo falla
+### Diagnóstico de fallas
 
-| Qué ves | Por qué | Qué hacer |
+| Observación | Causa probable | Acción correctiva |
 |---|---|---|
-| Turbio | mucha agua para esa fragancia | sube el alcohol o filtra en frío |
-| Huele a alcohol | falta maceración | espera otra semana |
+| Turbio | mucha agua para esa fragancia | aumentar el alcohol o filtrar en frío |
+| Predomina el olor a etanol | falta maceración | esperar otra semana |
 | Cambia de color | vainillina o luz | frasco oscuro |
 
-### Qué puedes cambiar
+### Variables de estudio
 
-- Compara 8, 12 y 16 %.
+- Comparar 8, 12 y 16 %.
 
-**Fuentes.** Concentraciones: Dermatocosmética, EDUCC, ISBN 978-987-626-467-9, cap. 20. IFRA, 51.ª enmienda.
+**Referencias.** Concentraciones: Dermatocosmética, EDUCC, ISBN 978-987-626-467-9, cap. 20. IFRA, 51.ª enmienda.
 
 ## Otros productos de esta sección
 

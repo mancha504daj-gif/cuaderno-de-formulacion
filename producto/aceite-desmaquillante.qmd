@@ -8,9 +8,9 @@ page-layout: full
 <figure class="cabeza" style="--color:#4d5a2c" data-alto="baja"><div class="marco"><img src="../fotos/jabonera.jpg" alt="Pilas de jabón de Alepo curándose"></div><h1>Aceite desmaquillante</h1></figure>
 ```
 
-[Limpieza](../limpieza/index.qmd). Aceite que se vuelve leche al mojarlo. Forma: anhidro emulsionable.
+[Limpieza](../limpieza/index.qmd). Aceite con emulsionante que forma una O/W al diluirse. Forma: anhidro emulsionable.
 
-Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+Las recetas son propuestas de este proyecto y **están sin ensayar**. Se presentan como hipótesis de trabajo para contrastar en el laboratorio.
 
 ## Aceite desmaquillante enjuagable
 
@@ -19,45 +19,45 @@ Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. 
 ```
 
 ::: {.avisos}
-- Evita los ojos.
+- Evitar el contacto con los ojos.
 :::
 
-### Por qué funciona
+### Fundamento
 
-El aceite disuelve el maquillaje y el emulsionante lo vuelve enjuagable: al tocar el agua forma una leche.
+La fase oleosa disuelve el maquillaje por afinidad de polaridad. Al contacto con agua, el emulsionante genera una O/W que se retira por enjuague.
 
-### Paso a paso
+### Procedimiento
 
-1. Pesa los aceites y el Tween 85 en un vaso seco.
-2. Mezcla hasta que quede transparente.
-3. Agrega el tocoferol.
-4. Envasa con bomba. Se aplica en seco y se enjuaga.
+1. Pesar los aceites y el Tween 85 en un vaso seco.
+2. Mezclar hasta que quede transparente.
+3. Agregar el tocoferol.
+4. Envasar con bomba. Se aplica en seco y se enjuaga.
 
-### Cómo saber si salió bien
+### Control de calidad
 
-| Control | Meta | Cómo se mide |
+| Determinación | Especificación | Método |
 |---|---|---|
 | Aspecto | liso, sin granos ni gotas de aceite | a 24 h y a 7 días |
-| Dureza | registra la penetración | aguja o peso conocido |
-| Punto de fusión | registra el intervalo | capilar o baño con termómetro |
+| Dureza | registrar la penetración | aguja o peso conocido |
+| Punto de fusión | registrar el intervalo | capilar o baño con termómetro |
 | Calor | sin gotas en la superficie | 40 °C, 7 días |
 | Olor | sin rancio | a 1 y a 3 meses |
 
-### Si algo falla
+### Diagnóstico de fallas
 
-| Qué ves | Por qué | Qué hacer |
+| Observación | Causa probable | Acción correctiva |
 |---|---|---|
-| Granos | enfrió despacio o la manteca cristalizó mal | funde otra vez y enfría más rápido |
-| Suda aceite | poca cera o demasiado aceite líquido | sube la cera de 1 en 1 % |
-| Se parte | demasiada cera dura | baja la cera y sube el aceite |
-| Huele rancio | oxidación | usa aceite fresco, tocoferol y envase lleno |
+| Granos | enfrió despacio o la manteca cristalizó mal | fundir otra vez y enfriar más rápido |
+| Exudación de aceite | poca cera o demasiado aceite líquido | aumentar la cera de 1 en 1 % |
+| Fractura | demasiada cera dura | reducir la cera y aumentar el aceite |
+| Olor rancio | oxidación | usar aceite fresco, tocoferol y envase lleno |
 
-### Qué puedes cambiar
+### Variables de estudio
 
 - Menos Tween: se enjuaga peor.
-- Cambia girasol por jojoba.
+- Sustituir girasol por jojoba.
 
-**Fuentes.** HLB: Griffin 1949 y 1954, J. Soc. Cosmet. Chem. 1:311 y 5:249 (sin DOI). Proporciones propuestas en este proyecto.
+**Referencias.** HLB: Griffin 1949 y 1954, J. Soc. Cosmet. Chem. 1:311 y 5:249 (sin DOI). Proporciones propuestas en este proyecto.
 
 ## Otros productos de esta sección
 

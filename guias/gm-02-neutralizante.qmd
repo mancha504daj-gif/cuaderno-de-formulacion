@@ -1,0 +1,134 @@
+---
+title: "GM-02. Verificación del neutralizante"
+toc: false
+page-layout: full
+---
+
+| | |
+|---|------------|
+| **Resultado** | recuperación del microorganismo en presencia del producto |
+| **Método base** | propuesta docente a partir de BAM, capítulo 23 [@bam23] |
+| **Duración** | 2 h de trabajo y hasta 5 días de incubación |
+| **Bioseguridad** | nivel 1, con *Saccharomyces cerevisiae* |
+
+```{=html}
+<p class="ordenes"><button type="button" data-imprimir>Imprimir la guía</button></p>
+```
+
+## Objetivos
+
+1. Distinguir la toxicidad del neutralizante de la actividad residual del conservante.
+2. Comparar dos recuentos con una prueba estadística para datos de Poisson.
+3. Decidir si el método de recuento sirve para una fórmula concreta.
+
+## Fundamento
+
+El producto que llega a la placa lleva conservante. Si conserva su actividad, impide que crezcan las células viables y el recuento baja aunque la muestra esté contaminada. El comité científico europeo pide descartar esa actividad con dilución, filtración, neutralizantes u otro medio [@sccs2023, p. 149].
+
+Tres tubos con el mismo inóculo separan los efectos:
+
+| Tubo | Contiene | Mide |
+|---|---|---|
+| A | diluyente e inóculo | inóculo real |
+| B | neutralizante e inóculo | toxicidad del neutralizante, al comparar con A |
+| C | neutralizante, producto e inóculo | actividad residual del conservante, al comparar con B |
+| D | neutralizante y producto, sin inóculo | contaminación propia de la muestra |
+
+El número de colonias de una placa sigue una distribución de Poisson, con varianza igual a su media [@bam3]. Dos recuentos con media 100 difieren por azar en unas 14 colonias de desviación estándar, $\sqrt{100 + 100}$. Una diferencia menor que eso no prueba nada.
+
+## Equipo y materiales
+
+Medios liberados según [GM-01](gm-01-medios.qmd): caldo letheen modificado (MLB) y agar extracto de malta sin antibiótico. Además: solución salina estéril al 0.85 %, Tween 80 estéril, siete perlas de vidrio de 5 mm por tubo, agitador vórtex, micropipeta de 100 a 1000 µL con puntas estériles, asas de extensión estériles, incubadora a 30 ± 2 °C, levadura seca de panadería.
+
+## Procedimiento
+
+### A. Suspensión de levadura
+
+1. Pesar 0.10 g de levadura seca y dispersarla en 10 mL de solución salina estéril. Esperar 10 min y agitar 30 s.
+2. Preparar diluciones decimales hasta 10⁻⁴ en solución salina: 1 mL en 9 mL, con pipeta nueva en cada paso.
+3. Conservar las diluciones 10⁻², 10⁻³ y 10⁻⁴. La concentración de la levadura comercial varía; una de las tres dará placas contables.
+
+### B. Tubos de ensayo
+
+Repetir A, B y C con cada una de las tres diluciones. D se prepara una vez.
+
+| Tubo | Salina | MLB | Producto | Tween 80 |
+|---|---|---|---|---|
+| A | 9.9 mL | | | |
+| B | | 8.9 mL | | 1 mL |
+| C | | 7.9 mL | 1.00 g | 1 mL |
+| D | | 8.0 mL | 1.00 g | 1 mL |
+
+1. En C y D, pesar el producto sobre el Tween 80 y las perlas, agitar en vórtex hasta dispersar y agregar el caldo.
+2. Agregar 0.1 mL de la dilución de levadura a A, B y C. D queda sin inóculo.
+3. Agitar y esperar 20 min a temperatura ambiente. Ese tiempo iguala o supera al que pasa entre la primera dilución y la siembra de rutina.
+
+### C. Siembra e incubación
+
+1. Sembrar 0.1 mL de cada tubo en dos placas de agar malta y extender con asa nueva por tubo.
+2. Esperar a que el agar absorba.
+3. Incubar a 30 ± 2 °C, sin invertir y en pilas de tres como máximo.
+4. Contar a las 48 h y confirmar a los 5 días. Elegir la dilución cuya serie A da de 10 a 150 colonias por placa [@bam18].
+
+## Registro
+
+| Dilución de levadura | Tubo | Placa 1 | Placa 2 | Total |
+|---|---|---|---|---|
+| 10⁻² | A | | | |
+| 10⁻² | B | | | |
+| 10⁻² | C | | | |
+| 10⁻³ | A | | | |
+| 10⁻³ | B | | | |
+| 10⁻³ | C | | | |
+| 10⁻⁴ | A | | | |
+| 10⁻⁴ | B | | | |
+| 10⁻⁴ | C | | | |
+| sin levadura | D | | | |
+
+## Cálculos
+
+La recuperación es el cociente de los totales, con el mismo número de placas:
+
+$$R_{B/A} = \frac{C_B}{C_A} \qquad R_{C/B} = \frac{C_C - C_D}{C_B}$$
+
+La prueba compara dos conteos de Poisson con igual exposición:
+
+$$z = \frac{C_1 - C_2}{\sqrt{C_1 + C_2}}$$
+
+Con $|z| > 1.96$ la diferencia es significativa al 5 %.
+
+**Ejemplo.** Dos placas de B suman 200 colonias y dos de C suman 124; D no creció. R = 124/200 = 0.62 y z = (200 − 124)/√324 = 4.2. El conservante sigue activo. En R:
+
+```r
+poisson.test(c(200, 124), c(2, 2))
+```
+
+La función devuelve una razón de 1.61 con intervalo de confianza de 1.28 a 2.03 y p = 2.9 × 10⁻⁵ [@rcore].
+
+## Criterio de aceptación
+
+| Comparación | Resultado | Conclusión |
+|---|---|---|
+| B con A | sin diferencia significativa | el neutralizante no es tóxico |
+| B con A | B menor, significativa | cambiar o diluir el neutralizante |
+| C con B | sin diferencia significativa | el método sirve para esta fórmula |
+| C con B | C menor, significativa | partir de 10⁻², más neutralizante o filtración por membrana |
+
+El criterio numérico de recuperación lo fija la norma que adopte el laboratorio. Aquí se usa una prueba estadística como **propuesta docente**.
+
+## Fuentes de error
+
+- **Grumos de levadura.** Una célula que brota cuenta como una colonia. Agitar 30 s antes de cada transferencia.
+- **Producto sin dispersar.** Una gota de crema entera retiene conservante y lo libera sobre la placa.
+- **Un solo microorganismo.** La levadura no representa a *Pseudomonas aeruginosa*. Un método completo repite el ensayo con bacterias en un laboratorio de nivel 2.
+
+## Preguntas de análisis
+
+1. B recupera 60 % de A. ¿Qué componente del caldo sospecharía y cómo lo comprobaría?
+2. ¿Cuántas placas de 100 colonias hacen falta para detectar una recuperación de 80 % con |z| > 1.96?
+3. ¿Por qué el tubo D es indispensable aunque el producto parezca limpio?
+
+## Referencias
+
+::: {#refs}
+:::

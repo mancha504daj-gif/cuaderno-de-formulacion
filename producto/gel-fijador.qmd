@@ -8,9 +8,9 @@ page-layout: full
 <figure class="cabeza" style="--color:#00616f" data-alto="baja"><div class="marco"><img src="../fotos/champu.jpg" alt="Champú sólido con espuma"></div><h1>Gel fijador</h1></figure>
 ```
 
-[Cabello](../cabello/index.qmd). Polímero que une fibras. Forma: gel con película.
+[Cabello](../cabello/index.qmd). Polímero formador de película que une fibras. Forma: gel con película.
 
-Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+Las recetas son propuestas de este proyecto y **están sin ensayar**. Se presentan como hipótesis de trabajo para contrastar en el laboratorio.
 
 ## Gel fijador
 
@@ -19,47 +19,47 @@ Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. 
 ```
 
 ::: {.avisos}
-- Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.
-- No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad.
+- Contiene agua. Sin ensayo del conservante puede contaminarse sin cambios visibles.
+- No se aplica en la piel sin control microbiológico y evaluación de seguridad.
 :::
 
-### Por qué funciona
+### Fundamento
 
-El copolímero deja una película entre fibras. La glicerina evita que se descame.
+El copolímero forma una película que une fibras vecinas. La glicerina lo plastifica y evita el descamado.
 
-### Paso a paso
+### Procedimiento
 
-1. Dispersa la hidroxietilcelulosa en la glicerina hasta tener una pasta sin grumos.
-2. Agrega el agua poco a poco, con agitación media, y espera de 30 a 60 min a que se hidrate.
-3. Incorpora los activos de la fase B, uno por uno.
-4. Agrega la fase C y mezcla despacio para no meter aire.
-5. Mide el pH y ajústalo.
-6. Deja reposar 24 h, revisa burbujas y grumos, y envasa.
+1. Dispersar la hidroxietilcelulosa en la glicerina hasta tener una pasta sin grumos.
+2. Agregar el agua poco a poco, con agitación media, y esperar de 30 a 60 min a que se hidrate.
+3. Incorporar los activos de la fase B, uno por uno.
+4. Agregar la fase C y mezclar despacio para no incorporar aire.
+5. Medir el pH y ajustarlo.
+6. Dejar reposar 24 h, revisar burbujas y grumos, y envasar.
 
-### Cómo saber si salió bien
+### Control de calidad
 
-| Control | Meta | Cómo se mide |
+| Determinación | Especificación | Método |
 |---|---|---|
 | pH | el de la receta ± 0.3 | medidor o tiras |
 | Aspecto | transparente o uniforme, sin grumos | a contraluz |
-| Viscosidad | registra husillo, rpm y temperatura | viscosímetro o tiempo de caída |
+| Viscosidad | registrar husillo, rpm y temperatura | viscosímetro o tiempo de caída |
 | Ciclos | sin cambio | de tres a seis ciclos |
 | Microbiología | sin crecimiento | placas a t0 y a 28 días |
 
-### Si algo falla
+### Diagnóstico de fallas
 
-| Qué ves | Por qué | Qué hacer |
+| Observación | Causa probable | Acción correctiva |
 |---|---|---|
-| Grumos | el polímero se mojó de golpe | prehumecta con glicerina |
-| Muchas burbujas | agitación rápida | agita lento y deja reposar |
-| Se aguó | sal, pH o microbios | mide pH; si huele raro, descártalo |
+| Grumos | el polímero se mojó de golpe | prehumectar con glicerina |
+| Muchas burbujas | agitación rápida | agitar lento y dejar reposar |
+| Pérdida de viscosidad | sal, pH o microbios | medir pH; ante olor anómalo, descartarlo |
 
-### Qué puedes cambiar
+### Variables de estudio
 
 - Copolímero de 2 a 6 %: más fijación.
 - Glicerina a 2 % si queda quebradizo.
 
-**Fuentes.** Proporciones propuestas en este proyecto. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
+**Referencias.** Proporciones propuestas en este proyecto. Límites: Reglamento (CE) 1223/2009, anexos según CosIng, exportación del 13-11-2026.
 
 ## Otros productos de esta sección
 

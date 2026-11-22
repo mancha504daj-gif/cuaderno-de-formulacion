@@ -291,3 +291,13 @@ main button.pausa:hover { color: #fff; }
 .pausa { font-size: 0 !important; }
 main button.termino { hyphens: none; overflow-wrap: normal; text-wrap: wrap; text-align: inherit; }
 @media (max-width: 575px) { .mesa-receta { padding-left: 0.4rem; padding-right: 0.4rem; } .mesa-receta .tabla { padding: 0.5rem 0.2rem 0.8rem; } .mesa-receta .tabla td, .mesa-receta .tabla th { padding-left: 0.25rem; padding-right: 0.25rem; font-size: 0.86rem; } }
+#refs { font-size: 0.94rem; } #refs .csl-entry { margin: 0 0 0.7rem; padding-left: 1.4rem; text-indent: -1.4rem; overflow-wrap: anywhere; }
+main section > h2 + ol { max-width: 52rem; }
+main pre.sourceCode { border-radius: 24px 30px 22px 32px / 28px 22px 30px 24px; padding: 0.9rem 1.2rem; background: rgba(255, 255, 255, 0.7); max-width: 52rem; }
+@media print { [data-imprimir], .modelo .lienzo { display: none !important; } main section { break-inside: auto; } main table { break-inside: avoid; } }
+main table a, main table strong { overflow-wrap: normal; word-break: normal; }
+@media (max-width: 575px) { main table td:not(:empty) { min-width: 3.2rem; } main table td:has(a) { min-width: 9rem; } main table th { white-space: nowrap; hyphens: none; } }
+main table a, main table td, main table th { word-break: normal !important; overflow-wrap: normal !important; hyphens: manual !important; }
+@media (max-width: 575px) { main table td:has(a) { min-width: 9.5rem !important; } }
+#quarto-header .quarto-secondary-nav .breadcrumb-item a, #quarto-header .quarto-secondary-nav .breadcrumb-item, #quarto-header .quarto-secondary-nav a { color: var(--barra-tinta) !important; }
+@media print { main button.termino { display: inline !important; border: 0 !important; color: inherit !important; } main h2, main h3 { break-after: avoid; } main h2::after { display: none !important; } main h2 { margin-top: 1.2rem; } }

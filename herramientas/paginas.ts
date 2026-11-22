@@ -39,27 +39,27 @@ for (const p of prods) {
 ${li(r.avisos)}
 :::
 
-### Por qué funciona
+### Fundamento
 
 ${r.porque}
 
-### Paso a paso
+### Procedimiento
 
 ${num(r.pasos)}
 
-### Cómo saber si salió bien
+### Control de calidad
 
-${tab(["Control", "Meta", "Cómo se mide"], r.controles)}
+${tab(["Determinación", "Especificación", "Método"], r.controles)}
 
-### Si algo falla
+### Diagnóstico de fallas
 
-${tab(["Qué ves", "Por qué", "Qué hacer"], r.fallas)}
+${tab(["Observación", "Causa probable", "Acción correctiva"], r.fallas)}
 
-### Qué puedes cambiar
+### Variables de estudio
 
 ${li(r.cambia)}
 
-**Fuentes.** ${r.fuentes.join(" ")}
+**Referencias.** ${r.fuentes.join(" ")}
 `).join("\n");
   const otros = prods.filter((o) => o.seccion === p.seccion && o.slug !== p.slug).map((o) => `[${o.nombre}](${o.slug}.qmd)`).join(", ");
   await escribe("producto/" + p.slug + ".qmd", `---
@@ -74,7 +74,7 @@ ${p.slug === "locion-corporal" ? "aliases: [/ejemplos/locion-de-almendras.html]\
 
 [${sn}](../${p.seccion}/index.qmd). ${p.que} Forma: ${p.forma}.
 
-Estas recetas son propuestas de este proyecto y nadie las ha ensayado todavía. Sirven para llevarlas al laboratorio, probarlas y corregirlas.
+Las recetas son propuestas de este proyecto y **están sin ensayar**. Se presentan como hipótesis de trabajo para contrastar en el laboratorio.
 
 ${cuerpo}
 ## Otros productos de esta sección

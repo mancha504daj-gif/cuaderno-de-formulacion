@@ -8,7 +8,7 @@
  "lote": 100,
  "pH": "7 a 8",
  "estado": "sin ensayar",
- "porque": "El jabón que emulsiona se forma dentro de la mezcla. La cera engrosa la pestaña y el polímero fija el color.",
+ "porque": "El jabón emulsionante se forma in situ. La cera aumenta el grosor aparente de la pestaña y el polímero fija el pigmento.",
  "fases": [
   {
    "nombre": "A",
@@ -76,12 +76,12 @@
   }
  ],
  "pasos": [
-  "Hidrata la hidroxietilcelulosa en el agua y agrega el copolímero y la trietanolamina.",
-  "Dispersa el óxido negro en esa fase y muele.",
-  "Funde la fase B a 88 °C y lleva A a la misma temperatura.",
-  "Vierte B sobre A con agitación fuerte: el esteárico y la trietanolamina forman el emulsionante en ese momento.",
-  "Enfría agitando hasta 40 °C y agrega la fase C.",
-  "Envasa en tubo limpio con cepillo nuevo."
+  "Hidratar la hidroxietilcelulosa en el agua y agregar el copolímero y la trietanolamina.",
+  "Dispersar el óxido negro en esa fase y moler.",
+  "Fundir la fase B a 88 °C y llevar A a la misma temperatura.",
+  "Verter B sobre A con agitación fuerte: el esteárico y la trietanolamina forman el emulsionante en ese momento.",
+  "Enfriar agitando hasta 40 °C y agregar la fase C.",
+  "Envasar en tubo limpio con cepillo nuevo."
  ],
  "cambia": [
   "Carnauba a 2 % si queda dura.",
@@ -96,12 +96,12 @@
   [
    "Tipo de emulsión",
    "O/W",
-   "gota en agua: debe dispersarse. Confirma con conductividad o colorante hidrosoluble al microscopio"
+   "gota en agua: debe dispersarse. Confirmar con conductividad o colorante hidrosoluble al microscopio"
   ],
   [
    "Aspecto",
    "homogéneo, sin granos",
-   "extiende una capa fina sobre vidrio"
+   "extender una capa fina sobre vidrio"
   ],
   [
    "Centrífuga",
@@ -116,40 +116,40 @@
   [
    "Microbiología",
    "sin crecimiento",
-   "placas a t0 y a 28 días; ensayo de eficacia del conservante antes de usarla"
+   "placas a t0 y a 28 días; ensayo de eficacia del conservante antes de su uso"
   ]
  ],
  "fallas": [
   [
    "Se separa una capa de aceite y vuelve al agitar",
    "cremado: gotas grandes o medio poco viscoso",
-   "homogeneiza más tiempo o sube un poco la goma"
+   "homogeneizar más tiempo o aumentar un poco la goma"
   ],
   [
    "Se separa y no vuelve",
    "coalescencia: falta emulsionante o el par no es el adecuado",
-   "prueba otro HLB antes de subir la dosis"
+   "probar otro HLB antes de subir la dosis"
   ],
   [
    "Queda granosa",
    "las ceras cristalizaron o las fases estaban a distinta temperatura",
-   "iguala temperaturas y enfría agitando"
+   "igualar temperaturas y enfriar agitando"
   ],
   [
    "No se dispersa en agua",
    "salió W/O",
-   "sube la parte hidrófila del emulsionante"
+   "aumentar la parte hidrófila del emulsionante"
   ],
   [
-   "Huele mal o sale moho",
+   "Olor o moho",
    "conservante débil o pH alto",
-   "descártala, revisa pH y conservante"
+   "descartarla, revisar pH y conservante"
   ]
  ],
  "avisos": [
-  "Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.",
-  "Zona de los ojos: exige control microbiológico y colorantes permitidos.",
-  "No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad."
+  "Contiene agua. Sin ensayo del conservante puede contaminarse sin cambios visibles.",
+  "Zona ocular: exige recuento con límite de 100 UFC/g y colorantes permitidos.",
+  "No se aplica en la piel sin control microbiológico y evaluación de seguridad."
  ],
  "fuentes": [
   "Grupos y rangos: fórmula de proveedor analizada en la nota 05; proporciones propias.",
