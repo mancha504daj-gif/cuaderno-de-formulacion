@@ -8,7 +8,7 @@
  "lote": 100,
  "pH": null,
  "estado": "sin ensayar",
- "porque": "Las ceras dan estructura, el ricino moja el pigmento y la lanolina evita que el aceite sude. Todo cae dentro de los rangos publicados para cada grupo.",
+ "porque": "Las ceras forman la red, el ricino humecta el pigmento y la lanolina reduce la exudación. Cada grupo se mantiene en los intervalos publicados.",
  "fases": [
   {
    "nombre": "A",
@@ -76,17 +76,17 @@
   }
  ],
  "pasos": [
-  "Muele la laca y los óxidos con 18 g del ricino hasta que la pasta se vea pareja en vidrio.",
-  "Funde la fase A a 88 °C.",
-  "Agrega el resto del ricino y el CCT, calientes.",
-  "Incorpora la pasta de pigmento y mezcla 10 min sin meter aire.",
-  "Agrega la mica y el tocoferol.",
-  "Cuela a unos 80 °C en molde tibio, con chorro continuo.",
-  "Enfría y desmolda. Pasa una llama rápida para dar brillo."
+  "Moler la laca y los óxidos con 18 g del ricino hasta que la pasta se vea pareja en vidrio.",
+  "Fundir la fase A a 88 °C.",
+  "Agregar el resto del ricino y el CCT, calientes.",
+  "Incorporar la pasta de pigmento y mezclar 10 min sin incorporar aire.",
+  "Agregar la mica y el tocoferol.",
+  "Colar a unos 80 °C en molde tibio, con chorro continuo.",
+  "Enfriar y desmoldar. Pasar una llama rápida para dar brillo."
  ],
  "cambia": [
-  "Más ceras duras: aguanta el calor.",
-  "Cambia la proporción de laca y óxidos para el tono."
+  "Más ceras duras: mayor resistencia al calor.",
+  "Variar la proporción de laca y óxidos para el tono."
  ],
  "controles": [
   [
@@ -96,12 +96,12 @@
   ],
   [
    "Dureza",
-   "registra la penetración",
+   "registrar la penetración",
    "aguja o peso conocido"
   ],
   [
    "Punto de fusión",
-   "registra el intervalo",
+   "registrar el intervalo",
    "capilar o baño con termómetro"
   ],
   [
@@ -119,26 +119,26 @@
   [
    "Granos",
    "enfrió despacio o la manteca cristalizó mal",
-   "funde otra vez y enfría más rápido"
+   "fundir otra vez y enfriar más rápido"
   ],
   [
-   "Suda aceite",
+   "Exudación de aceite",
    "poca cera o demasiado aceite líquido",
-   "sube la cera de 1 en 1 %"
+   "aumentar la cera de 1 en 1 %"
   ],
   [
-   "Se parte",
+   "Fractura",
    "demasiada cera dura",
-   "baja la cera y sube el aceite"
+   "reducir la cera y aumentar el aceite"
   ],
   [
-   "Huele rancio",
+   "Olor rancio",
    "oxidación",
-   "usa aceite fresco, tocoferol y envase lleno"
+   "usar aceite fresco, tocoferol y envase lleno"
   ]
  ],
  "avisos": [
-  "Se traga algo al usarlo: solo colorantes permitidos en labios."
+  "Parte del producto se ingiere: solo colorantes permitidos en labios."
  ],
  "fuentes": [
   "Rangos de labial: Rigano y Montoli 2021, DOI 10.3390/cosmetics8040105; Mawazi et al. 2022."

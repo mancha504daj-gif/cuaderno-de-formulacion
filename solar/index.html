@@ -26,7 +26,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -45,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2cd0ff2c833b4e72470276043b4d4341.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-20f2d6b2ee51eb11c7f32a308fb87d98.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -240,8 +259,14 @@ window.Quarto = {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../guias/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guías de laboratorio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../laboratorios.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Laboratorios</span></a>
+ <span class="menu-text">Laboratorios virtuales</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -322,78 +347,90 @@ window.Quarto = {
 
 
 <figure class="cabeza figure" style="--color:#8a5200"><div class="marco"><img src="../fotos/solar.jpg" alt="Una persona aplica protector a un niño" class="figure-img"></div><h1>Protección solar</h1></figure>
-<p>Aquí aprendes qué hace un filtro, qué significa un FPS y por qué un protector casero es mala idea. Los productos de esta sección son para después del sol, y una muestra para medir en el laboratorio.</p>
-<section id="las-palabras-que-vas-a-usar" class="level2">
-<h2 class="anchored" data-anchor-id="las-palabras-que-vas-a-usar">Las palabras que vas a usar</h2>
+<p>El factor de protección solar cuantifica la atenuación de la radiación que produce eritema. Esta sección define esa magnitud, presenta su estimación espectrofotométrica y discute por qué una película casera no garantiza protección. Los productos son para después del sol, más una muestra destinada al espectrofotómetro.</p>
+<section id="objetivos-de-aprendizaje" class="level2">
+<h2 class="anchored" data-anchor-id="objetivos-de-aprendizaje">Objetivos de aprendizaje</h2>
+<ol type="1">
+<li>Distinguir las bandas UVA y UVB y los mecanismos de los filtros.</li>
+<li>Definir FPS y relacionarlo con la fracción transmitida.</li>
+<li>Calcular un FPS estimado con la ecuación de Mansur y enunciar sus límites.</li>
+<li>Evaluar la evidencia sobre protectores caseros.</li>
+</ol>
+</section>
+<section id="vocabulario" class="level2">
+<h2 class="anchored" data-anchor-id="vocabulario">Vocabulario</h2>
 <div class="fichas sin-glosa">
 <div class="termino-caja">
 <p><strong>UVB</strong></p>
-<p>Radiación de 290 a 320 nm. Quema.</p>
+<p>Radiación de 290 a 320 nm, responsable principal del eritema.</p>
 </div>
 <div class="termino-caja">
 <p><strong>UVA</strong></p>
-<p>Radiación de 320 a 400 nm. Penetra más y envejece.</p>
+<p>Radiación de 320 a 400 nm, de mayor penetración en la piel.</p>
 </div>
 <div class="termino-caja">
 <p><strong>FPS</strong></p>
-<p>Cuántas veces más dosis hace falta para quemar la piel con protector. <em>FPS 30 deja pasar cerca de 3 %.</em></p>
+<p>Cociente entre la dosis mínima de eritema con protector y sin él. <em>FPS 30 deja pasar cerca de 3 %.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Filtro UV</strong></p>
-<p>Ingrediente que absorbe o dispersa radiación ultravioleta. <em>Óxido de zinc.</em></p>
+<p>Sustancia que absorbe o dispersa radiación ultravioleta. <em>Óxido de zinc.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Filtro orgánico</strong></p>
-<p>Absorbe la radiación y suelta la energía como calor. <em>Avobenzona.</em></p>
+<p>Filtro molecular que absorbe un fotón y disipa la energía como calor. <em>Avobenzona.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Filtro inorgánico</strong></p>
-<p>Partícula que absorbe y dispersa. <em>Dióxido de titanio.</em></p>
+<p>Filtro particulado que absorbe y dispersa la radiación. <em>Dióxido de titanio.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Absorbancia</strong></p>
-<p>Logaritmo de cuánta luz detiene una muestra. A = −log T.</p>
+<p>Logaritmo negativo de la transmitancia: A = −log T.</p>
 </div>
 <div class="termino-caja">
 <p><strong>Longitud de onda crítica</strong></p>
-<p>Donde se junta el 90 % de la protección desde 290 nm. La UE pide al menos 370 nm.</p>
+<p>Longitud de onda bajo la cual se acumula 90 % de la absorbancia entre 290 y 400 nm.</p>
 </div>
 </div>
 </section>
-<section id="lección-1.-la-radiación" class="level2">
-<h2 class="anchored" data-anchor-id="lección-1.-la-radiación">Lección 1. La radiación</h2>
+<section id="lección-1.-radiación-y-filtros" class="level2">
+<h2 class="anchored" data-anchor-id="lección-1.-radiación-y-filtros">Lección 1. Radiación y filtros</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Banda</th>
-<th>Longitud de onda</th>
-<th>Qué hace</th>
+<th>Longitud de onda (nm)</th>
+<th>Efecto dominante</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>UVB</td>
-<td>290 a 320 nm</td>
-<td>quema</td>
+<td>290 a 320</td>
+<td>eritema</td>
 </tr>
 <tr class="even">
 <td>UVA</td>
-<td>320 a 400 nm</td>
-<td>penetra más y envejece</td>
+<td>320 a 400</td>
+<td>penetración mayor, envejecimiento</td>
 </tr>
 </tbody>
 </table>
-<p>Un filtro orgánico absorbe la radiación y la suelta como calor. Uno inorgánico, como el óxido de zinc o el dióxido de titanio, absorbe y dispersa.</p>
+<p>Un filtro orgánico absorbe un fotón y disipa la energía como calor. Un filtro inorgánico, como el óxido de zinc o el dióxido de titanio, absorbe y dispersa. La eficacia depende de la concentración, del estado de dispersión y del espesor de la película.</p>
 </section>
-<section id="lección-2.-qué-es-un-fps" class="level2">
-<h2 class="anchored" data-anchor-id="lección-2.-qué-es-un-fps">Lección 2. Qué es un FPS</h2>
-<p>El FPS compara la dosis que enrojece la piel con protector y sin él. Se mide con 2 mg/cm². FPS 15 detiene 93 % de la UVB que quema y FPS 30, 97 %.</p>
-<p>La etiqueta europea agrupa así:</p>
+<section id="lección-2.-definición-del-fps" class="level2">
+<h2 class="anchored" data-anchor-id="lección-2.-definición-del-fps">Lección 2. Definición del FPS</h2>
+<p>El FPS es el cociente de dosis mínimas de eritema:</p>
+<p><span class="math display">\[FPS = \frac{DME_{con}}{DME_{sin}}\]</span></p>
+<p>medido con 2 mg/cm² de producto. La fracción de radiación eritemática transmitida es su inverso:</p>
+<p><span class="math display">\[T = \frac{1}{FPS}\]</span></p>
+<p>FPS 15 atenúa 93.3 % y FPS 30, 96.7 %. Duplicar el FPS baja la transmisión a la mitad, aunque la atenuación cambie pocos puntos.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Protección</th>
-<th>FPS</th>
+<th>FPS en etiqueta</th>
 </tr>
 </thead>
 <tbody>
@@ -415,26 +452,29 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-<p>La Unión Europea pide además que la protección UVA sea al menos un tercio del FPS y una longitud de onda crítica de 370 nm.</p>
+<p>La Comisión Europea recomienda además una protección UVA de al menos un tercio del FPS y una longitud de onda crítica de 370 nm o más <span class="citation" data-cites="rec647">(<a href="#ref-rec647" role="doc-biblioref">Comisión Europea 2006</a>)</span>.</p>
 </section>
-<section id="lección-3.-la-cantidad-manda" class="level2">
-<h2 class="anchored" data-anchor-id="lección-3.-la-cantidad-manda">Lección 3. La cantidad manda</h2>
+<section id="lección-3.-cantidad-aplicada" class="level2">
+<h2 class="anchored" data-anchor-id="lección-3.-cantidad-aplicada">Lección 3. Cantidad aplicada</h2>
 <div class="modelo" data-escena="solar">
 <div class="acto">
-<p>Con FPS 30 y 2 mg/cm², cruza cerca de 3 % de la radiación que quema.</p>
+<p>Con FPS 30 y 2 mg/cm² se transmite 3.3 % de la radiación eritemática.</p>
 </div>
 <div class="acto">
-<p>Con la mitad de la cantidad, el modelo dice que el FPS cae a su raíz cuadrada. De 30 quedarían 5.5. <strong>El estudio midió esto con un protector FPS 4, en 20 personas.</strong> Para FPS 30 es una extrapolación.</p>
+<p>Con la mitad de la cantidad, el modelo exponencial predice la raíz cuadrada del FPS: de 30 a 5.5. <strong>El estudio midió un protector FPS 4 en 20 personas</strong> <span class="citation" data-cites="faurschou2007">(<a href="#ref-faurschou2007" role="doc-biblioref">Faurschou y Wulf 2007</a>)</span>. Para FPS 30 el valor es una extrapolación.</p>
 </div>
 <div class="acto">
-<p>Con la cuarta parte, a su raíz cuarta: 2.3. El estudio cita esa cantidad como la que suele ponerse la gente. <a href="../laboratorio/fps-y-cantidad.html">Laboratorio: FPS y cantidad</a>.</p>
+<p>Con un cuarto de la cantidad, la raíz cuarta: 2.3. Los autores citan esa cantidad como la habitual del usuario. <a href="../laboratorio/fps-y-cantidad.html">Laboratorio virtual: FPS y cantidad</a>.</p>
 </div>
 </div>
+<p>El modelo toma la forma</p>
+<p><span class="math display">\[FPS(q) = FPS_{2}^{\,q/2}\]</span></p>
+<p>con <span class="math inline">\(q\)</span> en mg/cm². Se deduce de suponer una película uniforme que obedece la ley de Beer.</p>
 </section>
-<section id="lección-4.-estimar-en-el-laboratorio" class="level2">
-<h2 class="anchored" data-anchor-id="lección-4.-estimar-en-el-laboratorio">Lección 4. Estimar en el laboratorio</h2>
-<p>El método de Mansur calcula un FPS a partir de la absorbancia entre 290 y 320 nm:</p>
-<p><span class="math display">\[FPS = 10 \sum_{290}^{320} EE(\lambda)\, I(\lambda)\, A(\lambda)\]</span></p>
+<section id="lección-4.-estimación-espectrofotométrica" class="level2">
+<h2 class="anchored" data-anchor-id="lección-4.-estimación-espectrofotométrica">Lección 4. Estimación espectrofotométrica</h2>
+<p>Mansur propuso una suma ponderada de absorbancias entre 290 y 320 nm <span class="citation" data-cites="mansur1986">(<a href="#ref-mansur1986" role="doc-biblioref">Mansur et&nbsp;al. 1986</a>)</span>, con los valores normalizados de <span class="math inline">\(EE \times I\)</span> que calculó Sayre <span class="citation" data-cites="sayre1979">(<a href="#ref-sayre1979" role="doc-biblioref">Sayre et&nbsp;al. 1979</a>)</span>:</p>
+<p><span class="math display">\[FPS = FC \sum_{290}^{320} EE(\lambda)\, I(\lambda)\, A(\lambda), \qquad FC = 10\]</span></p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 12%">
@@ -471,21 +511,26 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-<p><strong>Ejemplo resuelto.</strong> Si la absorbancia fuera 1 en toda la banda, FPS = 10 × (0.0150 + 0.0817 + 0.2874 + 0.3278 + 0.1864 + 0.0839 + 0.0180) = 10.0.</p>
-<p>Mide una solución diluida, no una película sobre la piel. Dutra midió diez protectores comerciales: tres coincidieron con su etiqueta y uno rotulado FPS 30 dio 19. Sirve para aprender y comparar. Un FPS declarado exige el ensayo normalizado, ISO 24444.</p>
+<p>Los pesos suman 1.0002, de modo que una absorbancia constante <span class="math inline">\(A\)</span> da FPS cercano a <span class="math inline">\(10A\)</span>.</p>
+<p><strong>Ejemplo resuelto.</strong> Las absorbancias medidas fueron 0.80, 0.85, 0.90, 0.88, 0.82, 0.70 y 0.55. La suma ponderada es 0.0120 + 0.0694 + 0.2587 + 0.2885 + 0.1528 + 0.0587 + 0.0099 = 0.8500, y el FPS estimado, 8.5.</p>
+<p><strong>Límites.</strong> El método mide una solución diluida en etanol. No representa una película sobre la piel, no incluye UVA y no ve el efecto de un filtro disperso que sedimenta. Dutra y colaboradores lo aplicaron a diez protectores comerciales: tres coincidieron con su etiqueta y uno rotulado FPS 30 dio 19 <span class="citation" data-cites="dutra2004">(<a href="#ref-dutra2004" role="doc-biblioref">Dutra et&nbsp;al. 2004</a>)</span>. Un FPS declarado exige el ensayo normalizado ISO 24444.</p>
 </section>
-<section id="lección-5.-por-qué-no-se-usa-un-protector-casero" class="level2">
-<h2 class="anchored" data-anchor-id="lección-5.-por-qué-no-se-usa-un-protector-casero">Lección 5. Por qué no se usa un protector casero</h2>
-<p>La protección depende de una película continua, y falla donde queda más delgada. En un estudio de 15 recetas de internet, 12 dieron menos de FPS 6 y las otras tres no tenían filtro. Una receta con óxido de zinc y aceites tampoco evitó el daño celular.</p>
-<p>Por eso la <a href="../producto/muestra-mineral.html">muestra mineral</a> de esta sección se mide y no se usa en la piel.</p>
+<section id="lección-5.-protectores-caseros" class="level2">
+<h2 class="anchored" data-anchor-id="lección-5.-protectores-caseros">Lección 5. Protectores caseros</h2>
+<p>La protección exige una película continua de espesor uniforme, y falla donde es más delgada. Couteau y colaboradores prepararon 15 recetas publicadas en internet. Tres no contenían filtro y las otras doce dieron un FPS menor que 6 <span class="citation" data-cites="couteau2021">(<a href="#ref-couteau2021" role="doc-biblioref">Couteau et&nbsp;al. 2021</a>)</span>. Ince y colaboradores estudiaron una receta con óxido de zinc y aceites, y no evitó el daño celular por radiación <span class="citation" data-cites="ince2025">(<a href="#ref-ince2025" role="doc-biblioref">Ince et&nbsp;al. 2025</a>)</span>.</p>
+<p>La <a href="../producto/muestra-mineral.html">muestra mineral</a> de esta sección se prepara para medir absorbancia y comparar dispersión. No se aplica en la piel.</p>
 </section>
-<section id="lección-6.-límites-europeos-que-cambiaron" class="level2">
-<h2 class="anchored" data-anchor-id="lección-6.-límites-europeos-que-cambiaron">Lección 6. Límites europeos que cambiaron</h2>
+<section id="lección-6.-límites-reglamentarios" class="level2">
+<h2 class="anchored" data-anchor-id="lección-6.-límites-reglamentarios">Lección 6. Límites reglamentarios</h2>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Filtro</th>
-<th>Límite</th>
+<th>Límite en la Unión Europea</th>
 </tr>
 </thead>
 <tbody>
@@ -495,7 +540,7 @@ window.Quarto = {
 </tr>
 <tr class="even">
 <td>Benzofenona-3</td>
-<td>6 % cara, 2.2 % cuerpo, 0.5 % como estabilizante</td>
+<td>6 % en cara, 2.2 % en cuerpo, 0.5 % como estabilizante</td>
 </tr>
 <tr class="odd">
 <td>Octocrileno</td>
@@ -511,18 +556,49 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
+<p>Los valores salen del Anexo VI <span class="citation" data-cites="cosing">(<a href="#ref-cosing" role="doc-biblioref">CosIng 2026</a>)</span>. El reglamento cambia con frecuencia: conviene leer el texto vigente antes de formular.</p>
 </section>
-<section id="qué-puedes-hacer" class="level2">
-<h2 class="anchored" data-anchor-id="qué-puedes-hacer">Qué puedes hacer</h2>
+<section id="alcance-de-la-evidencia" class="level2">
+<h2 class="anchored" data-anchor-id="alcance-de-la-evidencia">Alcance de la evidencia</h2>
+<p>El modelo de cantidad se ajustó con un solo producto de FPS bajo. La estimación de Mansur tiene valor docente y comparativo.</p>
+</section>
+<section id="productos-de-esta-sección" class="level2">
+<h2 class="anchored" data-anchor-id="productos-de-esta-sección">Productos de esta sección</h2>
 <div class="tarjas" data-productos="solar"></div>
 </section>
-<section id="comprueba-lo-que-aprendiste" class="level2">
-<h2 class="anchored" data-anchor-id="comprueba-lo-que-aprendiste">Comprueba lo que aprendiste</h2>
+<section id="autoevaluación" class="level2">
+<h2 class="anchored" data-anchor-id="autoevaluación">Autoevaluación</h2>
 <div data-preguntas="solar"></div>
 </section>
-<section id="fuentes" class="level2">
-<h2 class="anchored" data-anchor-id="fuentes">Fuentes</h2>
-<p>Recomendación 2006/647/CE. Faurschou y Wulf 2007, <em>Br. J. Dermatol.</em> 156:716-719, DOI <a href="https://doi.org/10.1111/j.1365-2133.2006.07684.x">10.1111/j.1365-2133.2006.07684.x</a> (PubMed). Couteau et al.&nbsp;2021, DOI <a href="https://doi.org/10.1111/jocd.13783">10.1111/jocd.13783</a>. Ince et al.&nbsp;2025, DOI <a href="https://doi.org/10.1007/s43630-025-00742-7">10.1007/s43630-025-00742-7</a>. Sayre et al.&nbsp;1979, DOI <a href="https://doi.org/10.1111/j.1751-1097.1979.tb07090.x">10.1111/j.1751-1097.1979.tb07090.x</a>. Dutra et al.&nbsp;2004, DOI <a href="https://doi.org/10.1590/S1516-93322004000300014">10.1590/S1516-93322004000300014</a>. Mansur et al.&nbsp;1986, <em>An. Bras. Dermatol.</em> 61:121-124 (sin DOI). CosIng, Anexo VI, exportación del 13-11-2026.</p>
+<section id="referencias" class="level2">
+<h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
+<p>No se consultaron los textos originales de Mansur ni de Sayre; sus datos llegan por Dutra y colaboradores.</p>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-rec647" class="csl-entry" role="listitem">
+Comisión Europea. 2006. <em>Recomendación 2006/647/<span>CE</span> relativa a la eficacia de los productos de protección solar</em>.
+</div>
+<div id="ref-cosing" class="csl-entry" role="listitem">
+CosIng. 2026. <em><span>CosIng</span>. Anexos <span>III</span> y <span>VI</span> del Reglamento (<span>CE</span>) 1223/2009</em>.
+</div>
+<div id="ref-couteau2021" class="csl-entry" role="listitem">
+Couteau, Céline, Coraline Dupont, Eva Paparis, y Laurence J. M. Coiffard. 2021. <span>«Demonstration of the dangerous nature of homemade sunscreen recipes»</span>. <em>Journal of Cosmetic Dermatology</em> 20 (6): 1788-94. <a href="https://doi.org/10.1111/jocd.13783">https://doi.org/10.1111/jocd.13783</a>.
+</div>
+<div id="ref-dutra2004" class="csl-entry" role="listitem">
+Dutra, Elizângela Abreu, Daniella Almança Gonçalves da Costa Oliveira, Erika Rosa Maria Kedor-Hackmann, y Maria Inês Rocha Miritello Santoro. 2004. <span>«Determination of sun protection factor (<span>SPF</span>) of sunscreens by ultraviolet spectrophotometry»</span>. <em>Revista Brasileira de Ciências Farmacêuticas</em> 40 (3): 381-85. <a href="https://doi.org/10.1590/S1516-93322004000300014">https://doi.org/10.1590/S1516-93322004000300014</a>.
+</div>
+<div id="ref-faurschou2007" class="csl-entry" role="listitem">
+Faurschou, A., y H. C. Wulf. 2007. <span>«The relation between sun protection factor and amount of suncreen applied in vivo»</span>. <em>British Journal of Dermatology</em> 156 (4): 716-19. <a href="https://doi.org/10.1111/j.1365-2133.2006.07684.x">https://doi.org/10.1111/j.1365-2133.2006.07684.x</a>.
+</div>
+<div id="ref-ince2025" class="csl-entry" role="listitem">
+Ince, Furkan Akif, Julianne Clare Nayar, Alicia Lauren Wong, et&nbsp;al. 2025. <span>«Uncovering the efficacy of a natural homemade sunscreen in protection from ultraviolet radiation»</span>. <em>Photochemical and Photobiological Sciences</em> 24 (6): 1017-29. <a href="https://doi.org/10.1007/s43630-025-00742-7">https://doi.org/10.1007/s43630-025-00742-7</a>.
+</div>
+<div id="ref-mansur1986" class="csl-entry" role="listitem">
+Mansur, J. S., M. N. R. Breder, M. C. A. Mansur, y R. D. Azulay. 1986. <span>«Determinação do fator de proteção solar por espectrofotometria»</span>. <em>Anais Brasileiros de Dermatologia</em> 61: 121-24.
+</div>
+<div id="ref-sayre1979" class="csl-entry" role="listitem">
+Sayre, Robert M., Patricia Poh Agin, Gordon J. LeVee, y Edward Marlowe. 1979. <span>«A comparison of in vivo and in vitro testing of sunscreening formulas»</span>. <em>Photochemistry and Photobiology</em> 29 (3): 559-66. <a href="https://doi.org/10.1111/j.1751-1097.1979.tb07090.x">https://doi.org/10.1111/j.1751-1097.1979.tb07090.x</a>.
+</div>
+</div>
 
 
 </section>

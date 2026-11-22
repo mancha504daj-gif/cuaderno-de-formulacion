@@ -108,6 +108,8 @@ if (portada) {
   const capas = [...portada.querySelectorAll(".fondo img")];
   for (const a of portada.querySelectorAll("ol a")) for (const ev of ["pointerenter", "focus"]) a.addEventListener(ev, () => { for (const i of capas) i.classList.toggle("ve", i.dataset.de === a.dataset.de); });
 }
+for (const r of document.querySelectorAll("#refs .csl-entry")) if (!r.querySelector("a[href*=\"doi.org\"]")) r.append(" Sin DOI.");
+for (const b of document.querySelectorAll("[data-imprimir]")) b.addEventListener("click", () => print());
 if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
   const o = new IntersectionObserver((es) => { for (const e of es) if (e.isIntersecting) { e.target.classList.add("visto"); o.unobserve(e.target); } }, { threshold: 0.12 });
   for (const e of document.querySelectorAll("figure.lado, .entrada figure, .entrada > div, main h2")) { if (e.tagName !== "H2") e.classList.add("descubre"); o.observe(e); }

@@ -8,7 +8,7 @@
  "lote": 100,
  "pH": null,
  "estado": "sin ensayar",
- "porque": "La dimeticona lubrica la cutícula y da brillo; los aceites suavizan las puntas.",
+ "porque": "La dimeticona reduce la fricción entre escamas y aumenta el brillo por reflexión regular. Los ésteres y aceites lubrican las puntas, donde la cutícula está más deteriorada.",
  "fases": [
   {
    "nombre": "A",
@@ -38,12 +38,12 @@
   }
  ],
  "pasos": [
-  "Pesa todo en un vaso seco.",
-  "Mezcla sin calentar hasta que quede transparente. Si se enturbia, la dimeticona es muy viscosa para ese aceite.",
-  "Envasa con gotero."
+  "Pesar todo en un vaso seco.",
+  "Mezclar sin calentar hasta que quede transparente. Si se enturbia, la dimeticona es muy viscosa para ese aceite.",
+  "Envasar con gotero."
  ],
  "cambia": [
-  "Sin silicona: cambia por escualano."
+  "Sin silicona: sustituir por escualano."
  ],
  "controles": [
   [
@@ -53,12 +53,12 @@
   ],
   [
    "Dureza",
-   "registra la penetración",
+   "registrar la penetración",
    "aguja o peso conocido"
   ],
   [
    "Punto de fusión",
-   "registra el intervalo",
+   "registrar el intervalo",
    "capilar o baño con termómetro"
   ],
   [
@@ -76,26 +76,26 @@
   [
    "Granos",
    "enfrió despacio o la manteca cristalizó mal",
-   "funde otra vez y enfría más rápido"
+   "fundir otra vez y enfriar más rápido"
   ],
   [
-   "Suda aceite",
+   "Exudación de aceite",
    "poca cera o demasiado aceite líquido",
-   "sube la cera de 1 en 1 %"
+   "aumentar la cera de 1 en 1 %"
   ],
   [
-   "Se parte",
+   "Fractura",
    "demasiada cera dura",
-   "baja la cera y sube el aceite"
+   "reducir la cera y aumentar el aceite"
   ],
   [
-   "Huele rancio",
+   "Olor rancio",
    "oxidación",
-   "usa aceite fresco, tocoferol y envase lleno"
+   "usar aceite fresco, tocoferol y envase lleno"
   ]
  ],
  "avisos": [
-  "Inflamable con calor directo de plancha muy caliente: deja secar."
+  "Dejar secar antes de aplicar calor."
  ],
  "fuentes": [
   "Proporciones propuestas en este proyecto."

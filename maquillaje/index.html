@@ -26,7 +26,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -45,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2cd0ff2c833b4e72470276043b4d4341.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-20f2d6b2ee51eb11c7f32a308fb87d98.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -73,6 +127,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -211,8 +294,14 @@ ul.task-list li input[type="checkbox"] {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../guias/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guías de laboratorio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../laboratorios.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Laboratorios</span></a>
+ <span class="menu-text">Laboratorios virtuales</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -293,54 +382,169 @@ ul.task-list li input[type="checkbox"] {
 
 
 <figure class="cabeza figure" style="--color:#5c1f3a"><div class="marco"><img src="../fotos/maquillaje.jpg" alt="Labiales de varios tonos" class="figure-img"></div><h1>Maquillaje</h1></figure>
-<p>Aquí aprendes a mojar y moler un pigmento, a levantar una barra con ceras y a comprimir un polvo.</p>
-<section id="las-palabras-que-vas-a-usar" class="level2">
-<h2 class="anchored" data-anchor-id="las-palabras-que-vas-a-usar">Las palabras que vas a usar</h2>
+<p>El maquillaje es una dispersión de partículas en un vehículo que las fija sobre la piel. Esta sección trata la clasificación de los colorantes, la dispersión, la red cristalina de las ceras y la compactación de polvos.</p>
+<section id="objetivos-de-aprendizaje" class="level2">
+<h2 class="anchored" data-anchor-id="objetivos-de-aprendizaje">Objetivos de aprendizaje</h2>
+<ol type="1">
+<li>Clasificar colorantes por solubilidad y restricción de uso.</li>
+<li>Describir las tres etapas de la dispersión de un pigmento.</li>
+<li>Relacionar la composición de un labial con sus defectos.</li>
+<li>Diseñar un experimento de compactación con dos factores.</li>
+</ol>
+</section>
+<section id="vocabulario" class="level2">
+<h2 class="anchored" data-anchor-id="vocabulario">Vocabulario</h2>
 <div class="fichas sin-glosa">
 <div class="termino-caja">
 <p><strong>Anhidro</strong></p>
-<p>Sin agua. <em>Un bálsamo labial.</em></p>
+<p>Sin agua en la fórmula. <em>Un bálsamo labial.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>W/O</strong></p>
-<p>Agua en aceite: las gotas son de agua. Resiste el agua y se siente más grasa. <em>Muchas bases de maquillaje.</em></p>
+<p>Emulsión con gotas de agua en una fase continua oleosa. <em>Muchas bases de maquillaje.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Pigmento</strong></p>
-<p>Partícula de color que no se disuelve. <em>Óxido de hierro.</em></p>
+<p>Colorante insoluble en el medio. <em>Óxido de hierro.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Laca</strong></p>
-<p>Colorante fijado sobre un sólido para que no se disuelva. <em>CI 15850.</em></p>
+<p>Pigmento obtenido al fijar un colorante soluble en un sustrato insoluble. <em>CI 15850.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Carga</strong></p>
-<p>Polvo que da cuerpo, desliza o absorbe. <em>Mica, sílice.</em></p>
+<p>Polvo que aporta cuerpo, deslizamiento o absorción. <em>Mica, sílice.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Aglutinante</strong></p>
-<p>Une el polvo al comprimirlo. <em>Estearato de zinc con aceite.</em></p>
+<p>Componente que une las partículas de un polvo durante la compresión. <em>Estearato de zinc con aceite.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Nacarado</strong></p>
-<p>Lámina que refleja la luz. Se rompe si la mueles.</p>
+<p>Pigmento laminar que produce brillo por reflexión e interferencia.</p>
 </div>
 <div class="termino-caja">
 <p><strong>Dispersión</strong></p>
-<p>Repartir partículas y mantenerlas separadas: humectar, desaglomerar, estabilizar.</p>
+<p>Sistema de partículas separadas en un medio. Su preparación incluye humectación, desaglomeración y estabilización.</p>
 </div>
 <div class="termino-caja">
 <p><strong>Cesión</strong></p>
-<p>Cuánto color suelta un polvo o una barra.</p>
+<p>Masa de producto que se transfiere al aplicador o a la piel.</p>
 </div>
 <div class="termino-caja">
 <p><strong>Sangrado</strong></p>
-<p>El aceite del labial corre por las arrugas.</p>
+<p>Migración de la fase oleosa de un labial por las líneas del contorno.</p>
 </div>
 </div>
 </section>
-<section id="lección-1.-el-color" class="level2">
-<h2 class="anchored" data-anchor-id="lección-1.-el-color">Lección 1. El color</h2>
+<section id="lección-1.-colorantes" class="level2">
+<h2 class="anchored" data-anchor-id="lección-1.-colorantes">Lección 1. Colorantes</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tipo</th>
+<th>Estructura</th>
+<th>Comportamiento</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pigmento inorgánico</td>
+<td>óxido cristalino</td>
+<td>opaco, estable a luz y calor</td>
+<td>óxidos de hierro, dióxido de titanio</td>
+</tr>
+<tr class="even">
+<td>Laca</td>
+<td>colorante fijado sobre un sustrato</td>
+<td>color saturado, insoluble</td>
+<td>CI 15850</td>
+</tr>
+<tr class="odd">
+<td>Nacarado</td>
+<td>lámina recubierta</td>
+<td>refleja e interfiere</td>
+<td>mica con dióxido de titanio</td>
+</tr>
+<tr class="even">
+<td>Colorante soluble</td>
+<td>molécula en solución</td>
+<td>tiñe la piel</td>
+<td>eosina</td>
+</tr>
+</tbody>
+</table>
+<p>Los tonos de piel se obtienen con óxidos rojo, amarillo y negro sobre blanco. El color de una mezcla de pigmentos no se suma: se suma el cociente de absorción a dispersión, <span class="math inline">\(K/S\)</span>, de la teoría de Kubelka y Munk. Los óxidos se aglomeran y la piel aporta su propio color, de modo que el ajuste final se hace por comparación visual.</p>
+<p><strong>Restricciones.</strong> Cada colorante figura en una lista con sus zonas permitidas. En el contorno de los ojos solo entran los autorizados para esa zona.</p>
+</section>
+<section id="lección-2.-dispersión" class="level2">
+<h2 class="anchored" data-anchor-id="lección-2.-dispersión">Lección 2. Dispersión</h2>
+<div class="modelo" data-escena="pigmento">
+<div class="acto">
+<p>El pigmento seco llega en aglomerados. Cada uno produce una mota visible.</p>
+</div>
+<div class="acto">
+<p><strong>Humectación y desaglomeración.</strong> El aceite de ricino moja la superficie y la molienda rompe los aglomerados.</p>
+</div>
+<div class="acto">
+<p><strong>Estabilización.</strong> Con las partículas separadas, la misma masa presenta más área y cubre más.</p>
+</div>
+<div class="acto">
+<p>Los nacarados entran al final y sin molienda: son láminas y al romperse pierden reflexión. <a href="../laboratorio/pigmento-que-se-asienta.html">Laboratorio virtual: por qué un pigmento se va al fondo</a>.</p>
+</div>
+</div>
+<p>Una pasta de trabajo lleva cerca de 40 % de óxidos o 25 % de laca en aceite. El avance se mide con un calibre Hegman o al microscopio, cada 15 min, hasta que el tamaño del grano mayor deje de bajar.</p>
+<p><strong>Ejemplo resuelto.</strong> Un labial de 100 g lleva 10 g de laca. La pasta al 25 % pesa 10/0.25 = 40 g y contiene 30 g de ricino, que se descuentan del ricino de la fórmula.</p>
+<p>La velocidad de sedimentación de una partícula aislada sigue la ley de Stokes:</p>
+<p><span class="math display">\[v = \frac{2\,r^2\,(\rho_p - \rho_m)\,g}{9\,\eta}\]</span></p>
+<p>Un óxido de hierro, varias veces más denso que el aceite, sedimenta aun con radio pequeño. Se contrarresta con viscosidad en reposo.</p>
+</section>
+<section id="lección-3.-labial" class="level2">
+<h2 class="anchored" data-anchor-id="lección-3.-labial">Lección 3. Labial</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Grupo</th>
+<th>Contenido (%)</th>
+<th>Función</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ceras</td>
+<td>10 a 25</td>
+<td>red cristalina</td>
+</tr>
+<tr class="even">
+<td>Mantecas</td>
+<td>10 a 15</td>
+<td>controlan el tamaño de cristal</td>
+</tr>
+<tr class="odd">
+<td>Aceites</td>
+<td>30 a 50</td>
+<td>mojan el pigmento, dan brillo</td>
+</tr>
+<tr class="even">
+<td>Texturizantes y cargas</td>
+<td>8 a 12</td>
+<td>tacto y cobertura</td>
+</tr>
+<tr class="odd">
+<td>Pigmentos y nacarados</td>
+<td>5 a 20</td>
+<td>color</td>
+</tr>
+</tbody>
+</table>
+<p>Los intervalos son de Rigano y Montoli <span class="citation" data-cites="rigano2021">(<a href="#ref-rigano2021" role="doc-biblioref">Rigano y Montoli 2021</a>)</span>, y Mawazi y colaboradores revisan los procesos <span class="citation" data-cites="mawazi2022">(<a href="#ref-mawazi2022" role="doc-biblioref">Mawazi et&nbsp;al. 2022</a>)</span>. Las ceras son poco polares y mojan mal los pigmentos, así que el aceite de ricino hace ese trabajo. Una mezcla de ceras resiste mejor que una sola. Los labiales formulados funden de 59 a 64 °C <span class="citation" data-cites="mawazi2022">(<a href="#ref-mawazi2022" role="doc-biblioref">Mawazi et&nbsp;al. 2022</a>)</span>.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -349,143 +553,82 @@ ul.task-list li input[type="checkbox"] {
 </colgroup>
 <thead>
 <tr class="header">
-<th>Tipo</th>
-<th>Cómo es</th>
-<th>Ejemplo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pigmento inorgánico</td>
-<td>opaco y estable</td>
-<td>óxidos de hierro, dióxido de titanio</td>
-</tr>
-<tr class="even">
-<td>Laca</td>
-<td>color vivo, fijado en un sólido</td>
-<td>CI 15850</td>
-</tr>
-<tr class="odd">
-<td>Nacarado</td>
-<td>lámina que refleja</td>
-<td>mica con dióxido de titanio</td>
-</tr>
-<tr class="even">
-<td>Colorante soluble</td>
-<td>tiñe la piel</td>
-<td>eosina</td>
-</tr>
-</tbody>
-</table>
-<p>Con rojo, amarillo, negro y blanco se arma casi cualquier tono de piel. El ajuste se hace a ojo: los modelos ópticos suponen capas parejas y los óxidos se aglomeran.</p>
-<p><strong>Dónde se permite.</strong> Cada colorante tiene su lista. En los ojos solo entran los autorizados para esa zona.</p>
-</section>
-<section id="lección-2.-moler" class="level2">
-<h2 class="anchored" data-anchor-id="lección-2.-moler">Lección 2. Moler</h2>
-<div class="modelo" data-escena="pigmento">
-<div class="acto">
-<p>El pigmento llega en grumos. Un grumo da una mota, no un color.</p>
-</div>
-<div class="acto">
-<p>Se muele en aceite de ricino, que moja los granos y los separa.</p>
-</div>
-<div class="acto">
-<p>Con los granos repartidos, el mismo peso cubre y colorea más.</p>
-</div>
-<div class="acto">
-<p>Los nacarados entran al final y sin moler: son láminas, y rotas pierden el brillo. <a href="../laboratorio/pigmento-que-se-asienta.html">Laboratorio: por qué un pigmento se va al fondo</a>.</p>
-</div>
-</div>
-<p>Dispersar es tres pasos: humectar, desaglomerar y estabilizar. Una pasta de trabajo lleva cerca de 40 % de óxidos, o 25 % de laca, en aceite.</p>
-<p><strong>Ejemplo resuelto.</strong> Un labial de 100 g lleva 10 g de laca. Para una pasta al 25 % necesitas 10/0.25 = 40 g de pasta, o sea 30 g de ricino. Esos 30 g salen del ricino de la fórmula.</p>
-</section>
-<section id="lección-3.-un-labial" class="level2">
-<h2 class="anchored" data-anchor-id="lección-3.-un-labial">Lección 3. Un labial</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Grupo</th>
-<th>%</th>
-<th>Para qué</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>ceras</td>
-<td>10 a 25</td>
-<td>estructura</td>
-</tr>
-<tr class="even">
-<td>mantecas</td>
-<td>10 a 15</td>
-<td>controlan los cristales</td>
-</tr>
-<tr class="odd">
-<td>aceites</td>
-<td>30 a 50</td>
-<td>mojan el pigmento y dan brillo</td>
-</tr>
-<tr class="even">
-<td>cargas</td>
-<td>8 a 12</td>
-<td>textura</td>
-</tr>
-<tr class="odd">
-<td>pigmentos</td>
-<td>5 a 20</td>
-<td>color</td>
-</tr>
-</tbody>
-</table>
-<p>La mezcla de varias ceras resiste mejor que una sola. Un labial bueno funde de 59 a 64 °C.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
 <th>Defecto</th>
-<th>Causa</th>
+<th>Causa probable</th>
+<th>Corrección</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Suda gotas</td>
-<td>aceite que la cera no sostiene</td>
+<td>Exudación de gotas</td>
+<td>aceite que la red no retiene</td>
+<td>más cera microcristalina, menos aceite poco polar</td>
 </tr>
 <tr class="even">
-<td>Se rompe</td>
+<td>Fractura</td>
 <td>poca cera o cristales grandes</td>
+<td>enfriar más rápido, cambiar la mezcla de ceras</td>
 </tr>
 <tr class="odd">
-<td>Corre por las arrugas</td>
+<td>Migración a las arrugas</td>
 <td>aceite muy fluido</td>
+<td>formador de película, más estructura</td>
 </tr>
 <tr class="even">
-<td>Deja rayas</td>
-<td>pigmento sin moler</td>
+<td>Estrías</td>
+<td>pigmento mal disperso</td>
+<td>prolongar la molienda</td>
 </tr>
 </tbody>
 </table>
+<p><strong>Control.</strong> Punto de fusión, fuerza de ruptura y aspecto tras ciclos de 4 a 40 °C.</p>
 </section>
-<section id="lección-4.-un-polvo-compacto" class="level2">
-<h2 class="anchored" data-anchor-id="lección-4.-un-polvo-compacto">Lección 4. Un polvo compacto</h2>
-<p>El aglutinante y la presión unen los granos. En un ensayo con talco al 3, 6 y 9 % de aglutinante y 1000 y 2000 psi, más presión dio pastillas más duras y más aglutinante bajó la cesión de color. Cambia una cosa a la vez.</p>
-<p>Estas recetas usan mica y caolín en lugar de talco: el talco exige certificar que no trae asbesto.</p>
+<section id="lección-4.-polvo-compacto" class="level2">
+<h2 class="anchored" data-anchor-id="lección-4.-polvo-compacto">Lección 4. Polvo compacto</h2>
+<p>El aglutinante y la presión unen las partículas. Un ensayo con talco varió aglutinante (3, 6 y 9 %) y presión (1000 y 2000 psi). Con más presión la pastilla salió más dura y con más aglutinante cedió menos color <span class="citation" data-cites="ct2022">(<a href="#ref-ct2022" role="doc-biblioref">Cosmetics and Toiletries 2022</a>)</span>.</p>
+<p><strong>Diseño experimental.</strong> Dos factores a dos niveles con tres réplicas dan doce pastillas. Se miden dureza y masa cedida tras diez pasadas de esponja. El análisis de varianza con interacción dice si el efecto de la presión depende del aglutinante:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>m <span class="ot">&lt;-</span> <span class="fu">aov</span>(dureza <span class="sc">~</span> presion <span class="sc">*</span> aglutinante, <span class="at">data =</span> d)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(m)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">TukeyHSD</span>(m)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Las recetas usan mica y caolín. El talco exige certificar la ausencia de asbesto.</p>
 </section>
-<section id="lección-5.-los-ojos" class="level2">
-<h2 class="anchored" data-anchor-id="lección-5.-los-ojos">Lección 5. Los ojos</h2>
-<p>Una máscara es agua, cera y pigmento, y el cepillo vuelve al envase cada día. Según el resumen de un estudio con 40 máscaras usadas, 79 % tenía <em>Staphylococcus aureus</em> y 13 % <em>Pseudomonas aeruginosa</em>. No se leyó el texto completo. Un producto de ojos pide más control que una loción.</p>
+<section id="lección-5.-productos-para-los-ojos" class="level2">
+<h2 class="anchored" data-anchor-id="lección-5.-productos-para-los-ojos">Lección 5. Productos para los ojos</h2>
+<p>La máscara combina agua, cera y pigmento, y el cepillo vuelve al envase después de cada uso. Giacomel y colaboradores analizaron 40 máscaras usadas: según su resumen, 79 % tenía <em>Staphylococcus aureus</em> y 13 %, <em>Pseudomonas aeruginosa</em> <span class="citation" data-cites="giacomel2013">(<a href="#ref-giacomel2013" role="doc-biblioref">Giacomel et&nbsp;al. 2013</a>)</span>. El texto completo no se consultó. El límite microbiológico para esta zona es diez veces menor que el general; véase <a href="../guias/gm-08-dictamen.html">GM-08</a>.</p>
 <figure class="lado figure"><img src="../fotos/sombras.jpg" alt="Paleta de sombras y brochas" loading="lazy" class="figure-img"></figure>
 </section>
-<section id="qué-puedes-hacer" class="level2">
-<h2 class="anchored" data-anchor-id="qué-puedes-hacer">Qué puedes hacer</h2>
+<section id="alcance-de-la-evidencia" class="level2">
+<h2 class="anchored" data-anchor-id="alcance-de-la-evidencia">Alcance de la evidencia</h2>
+<p>Los intervalos del labial tienen respaldo publicado. Los datos de compactación proceden de un artículo técnico sin DOI localizado. Las recetas de polvo, rubor y sombra son propuestas.</p>
+</section>
+<section id="productos-de-esta-sección" class="level2">
+<h2 class="anchored" data-anchor-id="productos-de-esta-sección">Productos de esta sección</h2>
 <div class="tarjas" data-productos="maquillaje"></div>
 </section>
-<section id="comprueba-lo-que-aprendiste" class="level2">
-<h2 class="anchored" data-anchor-id="comprueba-lo-que-aprendiste">Comprueba lo que aprendiste</h2>
+<section id="autoevaluación" class="level2">
+<h2 class="anchored" data-anchor-id="autoevaluación">Autoevaluación</h2>
 <div data-preguntas="maquillaje"></div>
 </section>
-<section id="fuentes" class="level2">
-<h2 class="anchored" data-anchor-id="fuentes">Fuentes</h2>
-<p>Rigano y Montoli 2021, DOI <a href="https://doi.org/10.3390/cosmetics8040105">10.3390/cosmetics8040105</a>. Mawazi et al.&nbsp;2022, citado en la nota 05 de la investigación. Giacomel et al.&nbsp;2013, DOI <a href="https://doi.org/10.1111/ics.12053">10.1111/ics.12053</a> (resumen, PubMed). Baki 2023, ISBN 978-1-119-70977-0, p.&nbsp;73. <em>Cosmetics &amp; Toiletries</em> 137(3), 2022 (sin DOI localizado).</p>
+<section id="referencias" class="level2">
+<h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
+<p>El tratamiento de la dispersión sigue a Baki <span class="citation" data-cites="baki2023">(<a href="#ref-baki2023" role="doc-biblioref">2023, 73</a>)</span>.</p>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-baki2023" class="csl-entry" role="listitem">
+Baki, Gabriella. 2023. <em>Introduction to Cosmetic Formulation and Technology</em>. 2.ª ed. Wiley. ISBN 978-1-119-70977-0.
+</div>
+<div id="ref-ct2022" class="csl-entry" role="listitem">
+Cosmetics and Toiletries. 2022. <em>Ensayo de compresión de polvos con talco</em>.
+</div>
+<div id="ref-giacomel2013" class="csl-entry" role="listitem">
+Giacomel, C. B., G. Dartora, H. S. Dienfethaeler, y S. E. Haas. 2013. <span>«Investigation on the use of expired make-up and microbiological contamination of mascaras»</span>. <em>International Journal of Cosmetic Science</em> 35 (4): 375-80. <a href="https://doi.org/10.1111/ics.12053">https://doi.org/10.1111/ics.12053</a>.
+</div>
+<div id="ref-mawazi2022" class="csl-entry" role="listitem">
+Mawazi, Saeid Mezail, Nurul Aqilah Binti Azreen Redzal, Noordin Othman, y Sultan Othman Alolayan. 2022. <span>«Lipsticks History, Formulations, and Production: A Narrative Review»</span>. <em>Cosmetics</em> 9 (1): 25. <a href="https://doi.org/10.3390/cosmetics9010025">https://doi.org/10.3390/cosmetics9010025</a>.
+</div>
+<div id="ref-rigano2021" class="csl-entry" role="listitem">
+Rigano, Luigi, y Marta Montoli. 2021. <span>«Strategy for the Development of a New Lipstick Formula»</span>. <em>Cosmetics</em> 8 (4): 105. <a href="https://doi.org/10.3390/cosmetics8040105">https://doi.org/10.3390/cosmetics8040105</a>.
+</div>
+</div>
 
 
 </section>

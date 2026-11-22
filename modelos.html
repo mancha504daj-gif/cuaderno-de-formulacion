@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-2cd0ff2c833b4e72470276043b4d4341.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-20f2d6b2ee51eb11c7f32a308fb87d98.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -240,8 +240,14 @@ window.Quarto = {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./guias/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guías de laboratorio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./laboratorios.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Laboratorios</span></a>
+ <span class="menu-text">Laboratorios virtuales</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -326,7 +332,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="por-qué-crema-una-emulsión">¿Por qué crema una emulsión?</h2>
 <div class="acto">
 <p>Una gota de aceite dentro del agua es más ligera que el agua que desplaza. Mírala desde la propia gota: es el líquido el que pasa a su alrededor.</p>
-<p>Mueve el radio, o tira del borde de la gota con el ratón.</p>
+<p>Varíe el radio o arrastre el borde de la gota.</p>
 </div>
 <div class="acto">
 <p>Si hay diferencia de densidades, el agua empuja la gota hacia arriba. El empuje neto crece con el volumen, es decir, con <span class="math inline">\(r^3\)</span>:</p>
@@ -339,7 +345,7 @@ window.Quarto = {
 <p><span class="math display">\[v = \frac{2 r^2 (\rho_{medio} - \rho_{gota})\, g}{9 \eta}\]</span></p>
 </div>
 <div class="acto">
-<p>El radio entra al cuadrado. La gota de radio <span class="math inline">\(2r\)</span> recorre cuatro espacios mientras la de radio <span class="math inline">\(r\)</span> recorre uno. Por eso homogeneizar ayuda tanto.</p>
+<p>El radio entra al cuadrado. La gota de radio <span class="math inline">\(2r\)</span> recorre cuatro espacios mientras la de radio <span class="math inline">\(r\)</span> recorre uno. De ahí el efecto de la homogeneización.</p>
 <p>El recorrido es <span class="math inline">\(x = v\,t\)</span>. El programa pasa micrómetros a metros y días a segundos, con <span class="math inline">\(g = 9.80665\ \mathrm{m/s^2}\)</span>.</p>
 <p><strong>Cuándo falla.</strong> Con gotas concentradas, medios con esfuerzo de fluencia o gotas que se funden. Una crema espesada puede no cremar aunque la ecuación dé un número.</p>
 <p><a href="./laboratorio/cremado.html">Abrir el laboratorio</a> o <a href="./calculadoras/stokes.html">la calculadora</a>.</p>
@@ -352,28 +358,28 @@ window.Quarto = {
 <p><span class="math display">\[HA \rightleftharpoons H^+ + A^-\]</span></p>
 </div>
 <div class="acto">
-<p>Al subir el pH, más moléculas lo sueltan. La constante de acidez fija el reparto:</p>
+<p>Al subir el pH, más moléculas lo ceden. La constante de acidez fija el reparto:</p>
 <p><span class="math display">\[K_a = \frac{[H^+][A^-]}{[HA]}\]</span></p>
-<p>Cuando el pH iguala al <span class="math inline">\(pK_a\)</span>, aquí 4.76, la mitad está entera. Fíjate en que no paran: unas sueltan el protón y otras lo recuperan.</p>
+<p>Cuando el pH iguala al <span class="math inline">\(pK_a\)</span>, aquí 4.76, la mitad está sin disociar. El equilibrio es dinámico: las moléculas ceden y recuperan el protón sin detenerse.</p>
 </div>
 <div class="acto">
-<p>Al tomar logaritmos queda <span class="math inline">\(pH - pK_a = \log_{10}([A^-]/[HA])\)</span>. La fracción entera es <span class="math inline">\([HA]\)</span> entre el total:</p>
+<p>Al tomar logaritmos queda <span class="math inline">\(pH - pK_a = \log_{10}([A^-]/[HA])\)</span>. La fracción sin disociar es <span class="math inline">\([HA]\)</span> entre el total:</p>
 <p><span class="math display">\[f = \frac{[HA]}{[HA] + [A^-]} = \frac{1}{1 + 10^{\,pH - pK_a}}\]</span></p>
 <p>Una unidad por encima del <span class="math inline">\(pK_a\)</span> queda 1/11, cerca de 9 %. Ahí salta el aviso del laboratorio.</p>
 </div>
 <div class="acto">
-<p>Ahora mueve tú el pH.</p>
+<p>Varíe el pH.</p>
 <p><strong>Cuándo falla.</strong> Con ácidos de varios protones, sales concentradas o aceite que se lleva parte del ácido.</p>
 <p><a href="./laboratorio/conservante-y-ph.html">Abrir el laboratorio</a> o <a href="./calculadoras/conservante.html">la calculadora</a>.</p>
 </div>
 </section>
-<section id="cuánta-lejía-pide-un-aceite" class="level2 modelo" data-escena="jabon" data-pieza="jabon" data-nombre="Saponificación" style="--c:#4d5a2c">
-<h2 class="anchored" data-anchor-id="cuánta-lejía-pide-un-aceite">¿Cuánta lejía pide un aceite?</h2>
+<section id="cuánta-base-requiere-un-aceite" class="level2 modelo" data-escena="jabon" data-pieza="jabon" data-nombre="Saponificación" style="--c:#4d5a2c">
+<h2 class="anchored" data-anchor-id="cuánta-base-requiere-un-aceite">¿Cuánta base requiere un aceite?</h2>
 <div class="acto">
 <p>Una grasa es glicerina con tres cadenas de ácido graso.</p>
 </div>
 <div class="acto">
-<p>Cada cadena necesita una base. La sosa quema: guantes y lentes. El SAP dice cuántos miligramos de KOH saponifican un gramo de aceite. Un mol de NaOH reemplaza a un mol de KOH, así que se pasa de uno a otro con sus masas molares, 40.00 y 56.11.</p>
+<p>Cada éster consume un equivalente de base. La sosa es corrosiva: guantes y lentes. El SAP dice cuántos miligramos de KOH saponifican un gramo de aceite. Un mol de NaOH reemplaza a un mol de KOH, así que se pasa de uno a otro con sus masas molares, 40.00 y 56.11.</p>
 </div>
 <div class="acto">
 <p>Salen tres jabones y una glicerina. Para una mezcla de aceites se suma lo que pide cada uno:</p>
@@ -398,23 +404,23 @@ window.Quarto = {
 <p><a href="./calculadoras/hlb.html">Abrir la calculadora</a>.</p>
 </div>
 </section>
-<section id="cuánta-materia-prima-pesas" class="level2 modelo" data-escena="activa" data-pieza="activa" data-nombre="Materia activa" style="--c:#5c1f3a">
-<h2 class="anchored" data-anchor-id="cuánta-materia-prima-pesas">¿Cuánta materia prima pesas?</h2>
+<section id="qué-masa-de-materia-prima-se-pesa" class="level2 modelo" data-escena="activa" data-pieza="activa" data-nombre="Materia activa" style="--c:#5c1f3a">
+<h2 class="anchored" data-anchor-id="qué-masa-de-materia-prima-se-pesa">¿Qué masa de materia prima se pesa?</h2>
 <div class="acto">
 <p>Un tensioactivo comercial ya viene con agua. Los puntos blancos son la parte activa.</p>
 </div>
 <div class="acto">
-<p>Agregas agua hasta completar el lote. El vaso sube y los puntos son los mismos.</p>
+<p>Al agregar agua hasta completar el lote cambia el volumen y no el número de puntos.</p>
 </div>
 <div class="acto">
-<p>Es un balance de masa: el activo que pesas es el que queda.</p>
+<p>El balance de masa iguala el activo pesado con el activo final.</p>
 <p><span class="math display">\[m_{prima} = \frac{m_{lote}\; c_{final}}{c_{comercial}}\]</span></p>
 <p><a href="./calculadoras/activa.html">Abrir la calculadora</a>.</p>
 </div>
 </section>
-<section id="los-laboratorios-que-armes-tú" class="level2">
-<h2 class="anchored" data-anchor-id="los-laboratorios-que-armes-tú">Los laboratorios que armes tú</h2>
-<p>La ficha dibuja el circuito de tus bloques y escribe sus ecuaciones. La curva evalúa tu ecuación en 101 puntos entre el mínimo y el máximo del control. En la probeta, el recorrido sale de Stokes y se detiene en 100 mm; el tamaño, el color, la posición inicial y el grosor de la capa son dibujo. Agrega con <strong>supuesto del modelo</strong> lo que tu ecuación da por cierto y con <strong>fuente</strong> de dónde salió.</p>
+<section id="laboratorios-construidos-por-el-usuario" class="level2">
+<h2 class="anchored" data-anchor-id="laboratorios-construidos-por-el-usuario">Laboratorios construidos por el usuario</h2>
+<p>La ficha dibuja el circuito de tus bloques y escribe sus ecuaciones. La curva evalúa tu ecuación en 101 puntos entre el mínimo y el máximo del control. En la probeta, el recorrido sale de Stokes y se detiene en 100 mm; el tamaño, el color, la posición inicial y el grosor de la capa son dibujo. El bloque <strong>supuesto del modelo</strong> declara lo que la ecuación da por cierto y el bloque <strong>fuente</strong>, su origen.</p>
 </section>
 <section id="comprobaciones-y-referencias" class="level2">
 <h2 class="anchored" data-anchor-id="comprobaciones-y-referencias">Comprobaciones y referencias</h2>

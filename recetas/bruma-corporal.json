@@ -8,7 +8,7 @@
  "lote": 100,
  "pH": "5.5",
  "estado": "sin ensayar",
- "porque": "Sin alcohol, la fragancia no se disuelve en agua. El Tween la esconde en micelas: suele pedir de 3 a 5 partes por cada parte de fragancia.",
+ "porque": "El polisorbato solubiliza la fragancia en micelas. La relación habitual de 3 a 5 partes por parte de fragancia se determina por titulación hasta transparencia.",
  "fases": [
   {
    "nombre": "A",
@@ -51,13 +51,13 @@
   }
  ],
  "pasos": [
-  "Mezcla la fragancia con el Tween 20.",
-  "Agrega el agua poco a poco, agitando: debe quedar transparente.",
-  "Agrega la glicerina y la fase C.",
-  "Mide el pH y envasa con atomizador."
+  "Mezclar la fragancia con el Tween 20.",
+  "Agregar el agua poco a poco, agitando: debe quedar transparente.",
+  "Agregar la glicerina y la fase C.",
+  "Medir el pH y envasar con atomizador."
  ],
  "cambia": [
-  "Si queda turbia, sube el Tween de 1 en 1 %."
+  "Si queda turbia, aumentar el Tween de 1 en 1 %."
  ],
  "controles": [
   [
@@ -67,7 +67,7 @@
   ],
   [
    "Viscosidad",
-   "registra husillo, rpm y temperatura",
+   "registrar husillo, rpm y temperatura",
    "viscosímetro o copa"
   ],
   [
@@ -90,23 +90,23 @@
   [
    "No espesa",
    "poca sal o pH alto",
-   "ajusta el pH y sigue la curva de sal"
+   "ajustar el pH y seguir la curva de sal"
   ],
   [
-   "Se adelgazó al poner sal",
-   "te pasaste del máximo",
-   "diluye con más tensioactivo: con sal no se recupera"
+   "Perdió viscosidad al agregar sal",
+   "se superó el máximo de la curva",
+   "diluir con más tensioactivo: con sal no se recupera"
   ],
   [
    "Se enturbia en frío",
    "fragancia o fase que no se disuelve",
-   "baja la fragancia o usa un solubilizante"
+   "reducir la fragancia o usar un solubilizante"
   ]
  ],
  "avisos": [
-  "Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.",
-  "No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad.",
-  "Comprueba el certificado IFRA de la fragancia."
+  "Contiene agua. Sin ensayo del conservante puede contaminarse sin cambios visibles.",
+  "No se aplica en la piel sin control microbiológico y evaluación de seguridad.",
+  "Verificar el certificado IFRA de la fragancia."
  ],
  "fuentes": [
   "Proporciones propuestas en este proyecto.",

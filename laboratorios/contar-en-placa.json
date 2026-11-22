@@ -9,7 +9,7 @@
     {
      "type": "paso",
      "fields": {
-      "TEXTO": "Elige una carga y busca la dilución que da una placa contable: de 25 a 250 colonias."
+      "TEXTO": "Elige una carga y busca la dilución que da una placa contable: de 15 a 300 colonias."
      },
      "next": {
       "block": {
@@ -297,7 +297,7 @@
                      "type": "si",
                      "fields": {
                       "OP": ">",
-                      "TEXTO": "Más de 250: no se puede contar. Diluye más."
+                      "TEXTO": "Más de 300: no se puede contar. Diluye más."
                      },
                      "inputs": {
                       "A": {
@@ -312,7 +312,7 @@
                        "block": {
                         "type": "numero",
                         "fields": {
-                         "V": 250
+                         "V": 300
                         }
                        }
                       }
@@ -322,7 +322,7 @@
                        "type": "si",
                        "fields": {
                         "OP": "<",
-                        "TEXTO": "Menos de 25: el azar pesa demasiado. Siembra más o diluye menos."
+                        "TEXTO": "Menos de 15: el azar pesa demasiado. Siembra más o diluye menos."
                        },
                        "inputs": {
                         "A": {
@@ -337,7 +337,7 @@
                          "block": {
                           "type": "numero",
                           "fields": {
-                           "V": 25
+                           "V": 15
                           }
                          }
                         }
@@ -373,7 +373,7 @@
                                 "block": {
                                  "type": "fuente",
                                  "fields": {
-                                  "TEXTO": "FDA, Bacteriological Analytical Manual, capítulo 23 (julio de 2024) y capítulo 3 (sin DOI)."
+                                  "TEXTO": "FDA, Bacteriological Analytical Manual, capítulo 23 (julio de 2024) y capítulo 3, enero de 2026 (sin DOI)."
                                  }
                                 }
                                }
@@ -413,7 +413,7 @@
   "partes": [
    {
     "t": "paso",
-    "texto": "Elige una carga y busca la dilución que da una placa contable: de 25 a 250 colonias."
+    "texto": "Elige una carga y busca la dilución que da una placa contable: de 15 a 300 colonias."
    },
    {
     "t": "entrada",
@@ -574,9 +574,9 @@
     },
     "b": {
      "t": "num",
-     "v": 250
+     "v": 300
     },
-    "texto": "Más de 250: no se puede contar. Diluye más."
+    "texto": "Más de 300: no se puede contar. Diluye más."
    },
    {
     "t": "si",
@@ -587,9 +587,9 @@
     },
     "b": {
      "t": "num",
-     "v": 25
+     "v": 15
     },
-    "texto": "Menos de 25: el azar pesa demasiado. Siembra más o diluye menos."
+    "texto": "Menos de 15: el azar pesa demasiado. Siembra más o diluye menos."
    },
    {
     "t": "pregunta",
@@ -612,7 +612,7 @@
    },
    {
     "t": "fuente",
-    "texto": "FDA, Bacteriological Analytical Manual, capítulo 23 (julio de 2024) y capítulo 3 (sin DOI)."
+    "texto": "FDA, Bacteriological Analytical Manual, capítulo 23 (julio de 2024) y capítulo 3, enero de 2026 (sin DOI)."
    }
   ]
  }

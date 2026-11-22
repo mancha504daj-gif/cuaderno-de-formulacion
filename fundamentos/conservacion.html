@@ -26,7 +26,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -45,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2cd0ff2c833b4e72470276043b4d4341.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-20f2d6b2ee51eb11c7f32a308fb87d98.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -73,6 +92,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -211,8 +259,14 @@ ul.task-list li input[type="checkbox"] {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../guias/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guías de laboratorio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../laboratorios.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Laboratorios</span></a>
+ <span class="menu-text">Laboratorios virtuales</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -292,69 +346,89 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Si un producto lleva agua, algo quiere vivir en él. Aquí aprendes a frenarlo y a no confiarte.</p>
-<section id="lección-1.-por-qué-se-contamina" class="level2">
-<h2 class="anchored" data-anchor-id="lección-1.-por-qué-se-contamina">Lección 1. Por qué se contamina</h2>
-<p>Los microbios entran con las materias primas, con el envase y, sobre todo, con los dedos. Crecen mejor entre pH 5 y 8. Por debajo de 4 o por encima de 10 casi no proliferan.</p>
-<p>También cuenta el agua disponible. La mayoría de las bacterias no crece por debajo de una actividad de agua de 0.9, y la mayoría de los mohos por debajo de 0.8. Un producto sin agua no necesita conservante mientras no le entre.</p>
+<p>Un producto con agua libre sostiene crecimiento microbiano. Esta página estudia los factores que lo limitan, el efecto del pH sobre los ácidos orgánicos y las causas por las que un conservante pierde actividad.</p>
+<section id="objetivos-de-aprendizaje" class="level2">
+<h2 class="anchored" data-anchor-id="objetivos-de-aprendizaje">Objetivos de aprendizaje</h2>
+<ol type="1">
+<li>Evaluar el riesgo microbiológico de una fórmula por pH, actividad de agua y tipo de emulsión.</li>
+<li>Calcular la fracción sin disociar de un ácido y compararla con su límite.</li>
+<li>Seleccionar un sistema conservante y prever sus incompatibilidades.</li>
+<li>Reconocer la evidencia experimental que exige un producto.</li>
+</ol>
+</section>
+<section id="lección-1.-factores-de-crecimiento" class="level2">
+<h2 class="anchored" data-anchor-id="lección-1.-factores-de-crecimiento">Lección 1. Factores de crecimiento</h2>
+<p>Los microorganismos entran con las materias primas, durante el llenado y sobre todo durante el uso, por contacto con la piel y el ambiente <span class="citation" data-cites="sccs2023">(<a href="#ref-sccs2023" role="doc-biblioref">SCCS 2023, 148</a>)</span>. Crecen mejor entre pH 5 y 8, y casi no proliferan por debajo de 4 ni por encima de 10 <span class="citation" data-cites="halla2018">(<a href="#ref-halla2018" role="doc-biblioref">Halla et&nbsp;al. 2018</a>)</span>.</p>
+<p>La actividad de agua, <span class="math inline">\(a_w\)</span>, es el cociente entre la presión de vapor del producto y la del agua pura a la misma temperatura:</p>
+<p><span class="math display">\[a_w = \frac{p}{p^{*}}\]</span></p>
+<p>La mayoría de las bacterias no crece por debajo de 0.90 ni la mayoría de los mohos por debajo de 0.80 <span class="citation" data-cites="baki2023">(<a href="#ref-baki2023" role="doc-biblioref">Baki 2023, 47</a>)</span>. Sales, polioles e hidrocoloides la bajan <span class="citation" data-cites="halla2018">(<a href="#ref-halla2018" role="doc-biblioref">Halla et&nbsp;al. 2018</a>)</span>.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Producto</th>
 <th>Riesgo</th>
+<th>Razón</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Bálsamo anhidro</td>
 <td>bajo</td>
+<td>sin agua libre</td>
 </tr>
 <tr class="even">
-<td>Perfume con mucho alcohol</td>
+<td>Perfume alcohólico</td>
 <td>bajo</td>
+<td>etanol</td>
 </tr>
 <tr class="odd">
 <td>Jabón, pH 9.5 a 10.5</td>
-<td>se protege en parte</td>
+<td>moderado</td>
+<td>pH</td>
 </tr>
 <tr class="even">
 <td>Emulsión W/O</td>
-<td>menor que O/W</td>
+<td>moderado</td>
+<td>agua en gotas separadas</td>
 </tr>
 <tr class="odd">
 <td>Loción O/W, gel, champú</td>
 <td>alto</td>
+<td>agua continua, pH 4 a 8</td>
 </tr>
 <tr class="even">
 <td>Máscara de pestañas</td>
-<td>alto, y junto al ojo</td>
+<td>alto</td>
+<td>reinoculación diaria y contacto ocular</td>
 </tr>
 </tbody>
 </table>
+<p>Un producto con más de 20 % de alcohol es el ejemplo que da el comité europeo de control final no necesario <span class="citation" data-cites="sccs2023">(<a href="#ref-sccs2023" role="doc-biblioref">SCCS 2023, 148</a>)</span>.</p>
 </section>
-<section id="lección-2.-los-ácidos-y-el-ph" class="level2">
-<h2 class="anchored" data-anchor-id="lección-2.-los-ácidos-y-el-ph">Lección 2. Los ácidos y el pH</h2>
-<p>Benzoato y sorbato entran a la célula sin carga. El pH decide cuánto queda así.</p>
+<section id="lección-2.-ácidos-orgánicos-y-ph" class="level2">
+<h2 class="anchored" data-anchor-id="lección-2.-ácidos-orgánicos-y-ph">Lección 2. Ácidos orgánicos y pH</h2>
+<p>Los ácidos benzoico y sórbico atraviesan la membrana en su forma sin disociar y se disocian en el citoplasma, que se acidifica <span class="citation" data-cites="halla2018">(<a href="#ref-halla2018" role="doc-biblioref">Halla et&nbsp;al. 2018</a>)</span>. La fracción activa se obtiene de Henderson y Hasselbalch:</p>
+<p><span class="math display">\[f = \frac{[HA]}{[HA] + [A^-]} = \frac{1}{1 + 10^{\,pH - pK_a}}\]</span></p>
 <div class="modelo" data-escena="acido">
 <div class="acto">
-<p>Cada bola amarilla es una molécula entera, la que conserva. A pH bajo casi todas están enteras.</p>
+<p>Cada esfera amarilla es una molécula sin disociar. A pH bajo casi todas lo están.</p>
 </div>
 <div class="acto">
-<p>Al pH del pKa, la mitad.</p>
+<p>Con pH igual al pKa, la mitad.</p>
 </div>
 <div class="acto">
-<p>Una unidad arriba, cerca de 9 %.</p>
+<p>Una unidad por encima, 1/11, cerca de 9 %.</p>
 </div>
 <div class="acto">
-<p>Mueve tú el pH. <a href="../laboratorio/conservante-y-ph.html">Laboratorio: conservante y pH</a>.</p>
+<p>Varíe el pH. <a href="../laboratorio/conservante-y-ph.html">Laboratorio virtual: conservante y pH</a>.</p>
 </div>
 </div>
 <table class="caption-top table">
 <thead>
 <tr class="header">
 <th>pH</th>
-<th>Sórbico activo</th>
-<th>Benzoico activo</th>
+<th>Sórbico, pKa 4.76</th>
+<th>Benzoico, pKa 4.20</th>
 </tr>
 </thead>
 <tbody>
@@ -385,10 +459,11 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<p><strong>Ejemplo resuelto.</strong> 0.4 % de sorbato de potasio son 0.4 × 112.13/150.22 = 0.299 % de ácido sórbico. A pH 4.8 queda sin disociar 47.7 %, o sea 0.142 %.</p>
+<p>Los pKa son de PubChem a 25 °C <span class="citation" data-cites="pubchem">(<a href="#ref-pubchem" role="doc-biblioref">PubChem 2026</a>)</span>. Glicoles, etanol y fuerza iónica desplazan el pKa aparente, así que la tabla es una estimación.</p>
+<p><strong>Ejemplo resuelto.</strong> 0.40 % de sorbato de potasio equivale a 0.40 × 112.13/150.22 = 0.299 % de ácido sórbico. A pH 4.8, <span class="math inline">\(f\)</span> = 0.477 y el ácido sin disociar es 0.142 %. A pH 5.8 baja a 0.025 %.</p>
 </section>
-<section id="lección-3.-elegir" class="level2">
-<h2 class="anchored" data-anchor-id="lección-3.-elegir">Lección 3. Elegir</h2>
+<section id="lección-3.-selección" class="level2">
+<h2 class="anchored" data-anchor-id="lección-3.-selección">Lección 3. Selección</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 25%">
@@ -399,29 +474,29 @@ ul.task-list li input[type="checkbox"] {
 <thead>
 <tr class="header">
 <th>Conservante</th>
-<th>pH</th>
+<th>pH de uso</th>
 <th>Límite europeo</th>
-<th>Cuidado</th>
+<th>Observación</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Fenoxietanol</td>
-<td>depende poco</td>
+<td>amplio</td>
 <td>1.0 %</td>
-<td>más débil frente a mohos; refuérzalo</td>
+<td>menos activo contra mohos</td>
 </tr>
 <tr class="even">
 <td>Benzoato de sodio</td>
 <td>hasta 5</td>
-<td>0.5 % como ácido, sin enjuague</td>
-<td>mide el pH siempre</td>
+<td>0.5 % como ácido, sin enjuague; 2.5 % con enjuague</td>
+<td>exige medir pH</td>
 </tr>
 <tr class="odd">
 <td>Sorbato de potasio</td>
 <td>hasta 5.5</td>
 <td>0.6 % como ácido</td>
-<td>sobre todo hongos y levaduras</td>
+<td>hongos y levaduras</td>
 </tr>
 <tr class="even">
 <td>Alcohol bencílico</td>
@@ -431,39 +506,100 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="odd">
 <td>Metilisotiazolinona</td>
-<td></td>
+<td>amplio</td>
 <td>0.0015 %, solo con enjuague</td>
-<td>prohibida sin enjuague</td>
+<td>sensibilizante</td>
 </tr>
 </tbody>
 </table>
-<p>La etilhexilglicerina debilita la membrana y refuerza al fenoxietanol. En un estudio, 0.675 % de fenoxietanol con 0.075 % de etilhexilglicerina mató rápido bacterias.</p>
-<p>Un quelante, como el EDTA o el fitato, quita el hierro que los microbios necesitan.</p>
+<p>Los límites proceden del Anexo V del reglamento consolidado <span class="citation" data-cites="reg1223">(<a href="#ref-reg1223" role="doc-biblioref">Unión Europea 2009</a>)</span>. Los pH de uso de los ácidos se derivan del pKa.</p>
+<p><strong>Sinergia.</strong> La etilhexilglicerina daña la membrana. En concentraciones subletales por separado, 0.675 % de fenoxietanol con 0.075 % de etilhexilglicerina mató bacterias con rapidez <span class="citation" data-cites="langsrud2016">(<a href="#ref-langsrud2016" role="doc-biblioref">Langsrud et&nbsp;al. 2016</a>)</span>.</p>
+<p><strong>Quelantes.</strong> EDTA y fitato retiran hierro y aumentan la permeabilidad de la envoltura, con más efecto en gramnegativas <span class="citation" data-cites="halla2018">(<a href="#ref-halla2018" role="doc-biblioref">Halla et&nbsp;al. 2018</a>)</span>.</p>
+<p><strong>Barreras combinadas.</strong> pH, actividad de agua, quelante, envase y conservante suman obstáculos. Un envase con bomba reduce la inoculación durante el uso.</p>
 </section>
-<section id="lección-4.-lo-que-le-quita-fuerza" class="level2">
-<h2 class="anchored" data-anchor-id="lección-4.-lo-que-le-quita-fuerza">Lección 4. Lo que le quita fuerza</h2>
-<ul>
-<li><strong>El aceite.</strong> Los conservantes lipófilos se van a las gotas y el agua queda sin proteger.</li>
-<li><strong>Los polvos.</strong> El talco quita más de 90 % de la actividad del metilparabeno.</li>
-<li><strong>Los no iónicos.</strong> Pueden encerrar al conservante en micelas.</li>
-<li><strong>El pH que sube.</strong> La urea y algunos activos lo mueven con el tiempo.</li>
-</ul>
+<section id="lección-4.-pérdida-de-actividad" class="level2">
+<h2 class="anchored" data-anchor-id="lección-4.-pérdida-de-actividad">Lección 4. Pérdida de actividad</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Causa</th>
+<th>Mecanismo</th>
+<th>Evidencia o medida</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fase oleosa</td>
+<td>reparto del conservante lipófilo hacia las gotas</td>
+<td>coeficiente de reparto</td>
+</tr>
+<tr class="even">
+<td>Sólidos</td>
+<td>adsorción; el talco retira más de 90 % de la actividad del metilparabeno <span class="citation" data-cites="halla2018">(<a href="#ref-halla2018" role="doc-biblioref">Halla et&nbsp;al. 2018</a>)</span></td>
+<td>comparar con y sin sólido</td>
+</tr>
+<tr class="odd">
+<td>No iónicos</td>
+<td>solubilización en micelas</td>
+<td>subir dosis, cambiar sistema</td>
+</tr>
+<tr class="even">
+<td>Deriva de pH</td>
+<td>hidrólisis de urea u otros activos</td>
+<td>pH semanal</td>
+</tr>
+<tr class="odd">
+<td>Envase</td>
+<td>adsorción en plástico</td>
+<td>ensayo en envase final</td>
+</tr>
+</tbody>
+</table>
+<p>La concentración en agua de un soluto que se reparte con coeficiente <span class="math inline">\(K = C_o/C_w\)</span> es:</p>
+<p><span class="math display">\[C_w = \frac{C_t}{1 + \phi\,(K - 1)}\]</span></p>
+<p>con <span class="math inline">\(\phi\)</span> la fracción volumétrica de aceite. <strong>Ejemplo:</strong> con K = 6 y φ = 0.20, la fase acuosa queda con 1/(1 + 0.20 × 5) = 50 % de la concentración nominal.</p>
 </section>
-<section id="lección-5.-comprobar" class="level2">
-<h2 class="anchored" data-anchor-id="lección-5.-comprobar">Lección 5. Comprobar</h2>
-<p>El ensayo de eficacia contamina el producto a propósito y cuenta qué sobrevive. ISO 11930 usa cinco cepas y 28 días. Según un resumen de laboratorio, el criterio A pide que las bacterias bajen 3 log a los 7 días y no vuelvan a subir, y que <em>Candida</em> baje 1 log.</p>
-<p>Bajar 3 log es pasar de un millón a mil. <a href="../laboratorio/ensayo-del-conservante.html">Laboratorio: ensayo del conservante</a>.</p>
-<p>ISO 17516 fija un máximo de 1000 UFC/g, o 100 en ojos, mucosas y menores de tres años, sin cuatro patógenos en 1 g.</p>
-<p>El paso a paso está en <a href="../fundamentos/microbiologia.html">microbiología</a>.</p>
-<p><strong>Antes de ponerlo en la piel.</strong> Un producto que no se separa puede estar contaminado. Sin recuento y sin ensayo del conservante, se queda en el laboratorio.</p>
+<section id="lección-5.-evidencia-experimental" class="level2">
+<h2 class="anchored" data-anchor-id="lección-5.-evidencia-experimental">Lección 5. Evidencia experimental</h2>
+<p>El ensayo de desafío es obligatorio en la Unión Europea para los productos que pueden deteriorarse o infectar al consumidor; el responsable elige el método <span class="citation" data-cites="sccs2023">(<a href="#ref-sccs2023" role="doc-biblioref">SCCS 2023, 149</a>)</span>. ISO 11930 usa cinco cepas durante 28 días. Un resumen de laboratorio de su criterio A pide 3 log a los 7 días para bacterias y 1 log para <em>Candida</em>, sin aumento posterior <span class="citation" data-cites="microchem">(<a href="#ref-microchem" role="doc-biblioref">Microchem Laboratory 2026</a>)</span>.</p>
+<p><span class="math display">\[RL = \log_{10}\frac{N_0}{N_t}\]</span></p>
+<p><a href="../laboratorio/ensayo-del-conservante.html">Laboratorio virtual: ensayo del conservante</a>. Práctica con levadura: <a href="../guias/gm-07-conservante.html">GM-07</a>.</p>
+<p><strong>Criterio de este sitio.</strong> Ningún producto con agua se aplica en la piel sin recuento microbiológico y ensayo del conservante. La ausencia de separación u olor no es evidencia de conservación.</p>
 </section>
-<section id="comprueba-lo-que-aprendiste" class="level2">
-<h2 class="anchored" data-anchor-id="comprueba-lo-que-aprendiste">Comprueba lo que aprendiste</h2>
+<section id="autoevaluación" class="level2">
+<h2 class="anchored" data-anchor-id="autoevaluación">Autoevaluación</h2>
 <div data-preguntas="conservacion"></div>
 </section>
-<section id="fuentes" class="level2">
-<h2 class="anchored" data-anchor-id="fuentes">Fuentes</h2>
-<p>Halla et al.&nbsp;2018, DOI <a href="https://doi.org/10.3390/molecules23071571">10.3390/molecules23071571</a>. Langsrud et al.&nbsp;2016, PLoS ONE 11, citado en la nota 03. Reglamento (CE) 1223/2009, Anexo V, texto consolidado al 18-05-2026. pKa: PubChem, CID 243 y 643460. Criterio A: resumen de Microchem Laboratory; no se consultó el texto de la norma. Actividad de agua: Baki 2023, ISBN 978-1-119-70977-0, p.&nbsp;47.</p>
+<section id="referencias" class="level2">
+<h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-baki2023" class="csl-entry" role="listitem">
+Baki, Gabriella. 2023. <em>Introduction to Cosmetic Formulation and Technology</em>. 2.ª ed. Wiley. ISBN 978-1-119-70977-0.
+</div>
+<div id="ref-halla2018" class="csl-entry" role="listitem">
+Halla, Noureddine, Isabel P. Fernandes, Sandrina A. Heleno, et&nbsp;al. 2018. <span>«Cosmetics Preservation: A Review on Present Strategies»</span>. <em>Molecules</em> 23 (7): 1571. <a href="https://doi.org/10.3390/molecules23071571">https://doi.org/10.3390/molecules23071571</a>.
+</div>
+<div id="ref-langsrud2016" class="csl-entry" role="listitem">
+Langsrud, Solveig, Katrin Steinhauer, Sonja Lüthje, Klaus Weber, Peter Goroncy-Bermes, y Askild L. Holck. 2016. <span>«Ethylhexylglycerin Impairs Membrane Integrity and Enhances the Lethal Effect of Phenoxyethanol»</span>. <em>PLOS ONE</em> 11 (10): e0165228. <a href="https://doi.org/10.1371/journal.pone.0165228">https://doi.org/10.1371/journal.pone.0165228</a>.
+</div>
+<div id="ref-microchem" class="csl-entry" role="listitem">
+Microchem Laboratory. 2026. <em>Criterios de aceptación de <span>ISO</span> 11930, resumen de laboratorio</em>.
+</div>
+<div id="ref-pubchem" class="csl-entry" role="listitem">
+PubChem. 2026. <em><span>PubChem</span> Compound Summary</em>.
+</div>
+<div id="ref-sccs2023" class="csl-entry" role="listitem">
+SCCS. 2023. <em>The <span>SCCS</span> Notes of Guidance for the Testing of Cosmetic Ingredients and their Safety Evaluation, 12th revision</em>. SCCS/1647/22. Scientific Committee on Consumer Safety, European Commission.
+</div>
+<div id="ref-reg1223" class="csl-entry" role="listitem">
+Unión Europea. 2009. <em>Reglamento (<span>CE</span>) n.º 1223/2009 sobre los productos cosméticos</em>.
+</div>
+</div>
 
 
 </section>

@@ -8,7 +8,7 @@
  "lote": 100,
  "pH": null,
  "estado": "sin ensayar",
- "porque": "El aceite disuelve el maquillaje y el emulsionante lo vuelve enjuagable: al tocar el agua forma una leche.",
+ "porque": "La fase oleosa disuelve el maquillaje por afinidad de polaridad. Al contacto con agua, el emulsionante genera una O/W que se retira por enjuague.",
  "fases": [
   {
    "nombre": "A",
@@ -38,14 +38,14 @@
   }
  ],
  "pasos": [
-  "Pesa los aceites y el Tween 85 en un vaso seco.",
-  "Mezcla hasta que quede transparente.",
-  "Agrega el tocoferol.",
-  "Envasa con bomba. Se aplica en seco y se enjuaga."
+  "Pesar los aceites y el Tween 85 en un vaso seco.",
+  "Mezclar hasta que quede transparente.",
+  "Agregar el tocoferol.",
+  "Envasar con bomba. Se aplica en seco y se enjuaga."
  ],
  "cambia": [
   "Menos Tween: se enjuaga peor.",
-  "Cambia girasol por jojoba."
+  "Sustituir girasol por jojoba."
  ],
  "controles": [
   [
@@ -55,12 +55,12 @@
   ],
   [
    "Dureza",
-   "registra la penetración",
+   "registrar la penetración",
    "aguja o peso conocido"
   ],
   [
    "Punto de fusión",
-   "registra el intervalo",
+   "registrar el intervalo",
    "capilar o baño con termómetro"
   ],
   [
@@ -78,26 +78,26 @@
   [
    "Granos",
    "enfrió despacio o la manteca cristalizó mal",
-   "funde otra vez y enfría más rápido"
+   "fundir otra vez y enfriar más rápido"
   ],
   [
-   "Suda aceite",
+   "Exudación de aceite",
    "poca cera o demasiado aceite líquido",
-   "sube la cera de 1 en 1 %"
+   "aumentar la cera de 1 en 1 %"
   ],
   [
-   "Se parte",
+   "Fractura",
    "demasiada cera dura",
-   "baja la cera y sube el aceite"
+   "reducir la cera y aumentar el aceite"
   ],
   [
-   "Huele rancio",
+   "Olor rancio",
    "oxidación",
-   "usa aceite fresco, tocoferol y envase lleno"
+   "usar aceite fresco, tocoferol y envase lleno"
   ]
  ],
  "avisos": [
-  "Evita los ojos."
+  "Evitar el contacto con los ojos."
  ],
  "fuentes": [
   "HLB: Griffin 1949 y 1954, J. Soc. Cosmet. Chem. 1:311 y 5:249 (sin DOI).",

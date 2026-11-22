@@ -8,7 +8,7 @@
  "lote": 100,
  "pH": "5.5 a 6.5",
  "estado": "sin ensayar",
- "porque": "Casi no lleva agua: pesa menos y dura más. El alcohol cetílico y la manteca bajan la sensación seca.",
+ "porque": "La baja proporción de agua reduce masa y volumen. El alcohol cetílico y la manteca disminuyen el arrastre de lípidos.",
  "fases": [
   {
    "nombre": "A",
@@ -63,11 +63,11 @@
   }
  ],
  "pasos": [
-  "Ponte mascarilla.",
-  "Haz una pasta con el isetionato, la betaína, el agua y la glicerina a 75 °C.",
-  "Funde la fase B y mézclala.",
-  "A 45 °C agrega la fase C.",
-  "Prensa en molde y seca 48 h."
+  "Usar mascarilla.",
+  "Preparar una pasta con el isetionato, la betaína, el agua y la glicerina a 75 °C.",
+  "Fundir la fase B y mezclarla.",
+  "A 45 °C agregar la fase C.",
+  "Prensar en molde y secar 48 h."
  ],
  "cambia": [
   "Más betaína: más espuma.",
@@ -81,12 +81,12 @@
   ],
   [
    "Dureza",
-   "registra la penetración",
+   "registrar la penetración",
    "aguja o peso conocido"
   ],
   [
    "Punto de fusión",
-   "registra el intervalo",
+   "registrar el intervalo",
    "capilar o baño con termómetro"
   ],
   [
@@ -104,27 +104,27 @@
   [
    "Granos",
    "enfrió despacio o la manteca cristalizó mal",
-   "funde otra vez y enfría más rápido"
+   "fundir otra vez y enfriar más rápido"
   ],
   [
-   "Suda aceite",
+   "Exudación de aceite",
    "poca cera o demasiado aceite líquido",
-   "sube la cera de 1 en 1 %"
+   "aumentar la cera de 1 en 1 %"
   ],
   [
-   "Se parte",
+   "Fractura",
    "demasiada cera dura",
-   "baja la cera y sube el aceite"
+   "reducir la cera y aumentar el aceite"
   ],
   [
-   "Huele rancio",
+   "Olor rancio",
    "oxidación",
-   "usa aceite fresco, tocoferol y envase lleno"
+   "usar aceite fresco, tocoferol y envase lleno"
   ]
  ],
  "avisos": [
-  "Usa mascarilla: el polvo fino irrita los pulmones.",
-  "No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad."
+  "Usar mascarilla: el polvo fino irrita las vías respiratorias.",
+  "No se aplica en la piel sin control microbiológico y evaluación de seguridad."
  ],
  "fuentes": [
   "Tensioactivos: Thompson et al. 2023 y catálogos de proveedor citados en la calculadora de materia activa.",

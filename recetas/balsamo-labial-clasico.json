@@ -8,7 +8,7 @@
  "lote": 100,
  "pH": null,
  "estado": "sin ensayar",
- "porque": "La cera forma una red que atrapa el aceite. Más cera, más firme; más aceite, más deslizamiento. El ricino aporta brillo.",
+ "porque": "La cera cristaliza en una red que retiene el aceite por capilaridad. La relación cera a aceite fija la dureza; el ricino, polar y viscoso, aporta brillo y adherencia.",
  "fases": [
   {
    "nombre": "A",
@@ -46,15 +46,15 @@
   }
  ],
  "pasos": [
-  "Pesa todo menos la fase C y fúndelo en baño de agua a 75 °C.",
-  "Mezcla hasta que no veas restos sólidos.",
-  "Retira del calor y espera a que baje unos 10 °C.",
-  "Agrega la fase C y mezcla.",
-  "Vierte en el envase caliente y deja enfriar sin moverlo. Rotula lote y fecha."
+  "Pesar todo menos la fase C y fundirlo en baño de agua a 75 °C.",
+  "Mezclar hasta que no se observen restos sólidos.",
+  "Retirar del calor y esperar a que baje unos 10 °C.",
+  "Agregar la fase C y mezclar.",
+  "Verter en el envase caliente y dejar enfriar sin moverlo. Rotular lote y fecha."
  ],
  "cambia": [
   "Cera a 18 % para un tarro, a 25 % para una barra en clima cálido.",
-  "Cambia almendras por girasol si hay alergia."
+  "Sustituir almendras por girasol si hay alergia."
  ],
  "controles": [
   [
@@ -64,12 +64,12 @@
   ],
   [
    "Dureza",
-   "registra la penetración",
+   "registrar la penetración",
    "aguja o peso conocido"
   ],
   [
    "Punto de fusión",
-   "registra el intervalo",
+   "registrar el intervalo",
    "capilar o baño con termómetro"
   ],
   [
@@ -87,26 +87,26 @@
   [
    "Granos",
    "enfrió despacio o la manteca cristalizó mal",
-   "funde otra vez y enfría más rápido"
+   "fundir otra vez y enfriar más rápido"
   ],
   [
-   "Suda aceite",
+   "Exudación de aceite",
    "poca cera o demasiado aceite líquido",
-   "sube la cera de 1 en 1 %"
+   "aumentar la cera de 1 en 1 %"
   ],
   [
-   "Se parte",
+   "Fractura",
    "demasiada cera dura",
-   "baja la cera y sube el aceite"
+   "reducir la cera y aumentar el aceite"
   ],
   [
-   "Huele rancio",
+   "Olor rancio",
    "oxidación",
-   "usa aceite fresco, tocoferol y envase lleno"
+   "usar aceite fresco, tocoferol y envase lleno"
   ]
  ],
  "avisos": [
-  "Sin agua no necesita conservante.",
+  "Sistema anhidro, sin conservante.",
   "Contiene aceite de frutos secos."
  ],
  "fuentes": [

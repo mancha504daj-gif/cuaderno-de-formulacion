@@ -8,7 +8,7 @@
  "lote": 830.7,
  "pH": "9 a 10.5",
  "estado": "sin ensayar",
- "porque": "La potasa da jabón blando que se disuelve en agua. Con KOH al 90 % hay que pesar más para poner la misma base.",
+ "porque": "El carboxilato de potasio es más soluble que el de sodio. Con KOH de 90 % de pureza la masa se divide entre 0.90.",
  "fases": [
   {
    "nombre": "A, aceites",
@@ -66,16 +66,16 @@
   "dilucion": 450
  },
  "pasos": [
-  "Ponte guantes, lentes y manga larga. Trabaja con ventilación y sin niños ni mascotas cerca.",
-  "Pesa el agua en un recipiente resistente al calor y la potasa aparte.",
-  "Agrega la potasa al agua, poco a poco, y agita. Nunca al revés. Se calienta y suelta vapor: no lo respires.",
-  "Deja que la lejía baje a unos 40 °C. Aquí lejía significa la solución de potasa; el cloro de lavar es otra sustancia.",
-  "Funde los aceites sólidos, mézclalos con los líquidos y déjalos a unos 40 °C.",
-  "Vierte la lejía sobre los aceites y mezcla con batidora de mano, a pulsos, hasta que una gota deje huella en la superficie.",
-  "Calienta la pasta en baño de agua, tapada, unas 3 h. Mezcla cada 30 min hasta que quede translúcida.",
-  "Disuelve 1 g en 10 mL de agua caliente: si queda transparente, terminó.",
-  "Agrega el agua de dilución caliente y deja que se disuelva toda la noche.",
-  "Mide el pH y deja reposar una semana."
+  "Usar guantes, lentes y manga larga. Trabajar con ventilación y sin niños ni mascotas cerca.",
+  "Pesar el agua en un recipiente resistente al calor y la potasa aparte.",
+  "Agregar la potasa al agua, poco a poco, y agitar. El orden inverso proyecta líquido. Se calienta y suelta vapor: evitar inhalarlo.",
+  "Dejar que la lejía baje a unos 40 °C. Aquí lejía significa la solución de potasa; el cloro de lavar es otra sustancia.",
+  "Fundir los aceites sólidos, mezclarlos con los líquidos y dejarlos a unos 40 °C.",
+  "Verter la lejía sobre los aceites y mezclar con batidora de mano, a pulsos, hasta que una gota deje huella en la superficie.",
+  "Calentar la pasta en baño de agua, tapada, unas 3 h. Mezclar cada 30 min hasta que quede translúcida.",
+  "Disolver 1 g en 10 mL de agua caliente: si queda transparente, la reacción terminó.",
+  "Agregar el agua de dilución caliente y dejar que se disuelva toda la noche.",
+  "Medir el pH y dejar reposar una semana."
  ],
  "cambia": [
   "Más coco: más espuma.",
@@ -90,12 +90,12 @@
   [
    "Álcali libre",
    "sin color con fenolftaleína en el centro",
-   "corta una barra y pon una gota; maneja el indicador con guantes"
+   "cortar una barra y aplicar una gota; manejar el indicador con guantes"
   ],
   [
    "Pérdida de peso",
    "hasta que se estabilice",
-   "pesa la misma barra cada semana"
+   "pesar la misma barra cada semana"
   ],
   [
    "Espuma",
@@ -107,27 +107,27 @@
   [
    "Polvo blanco en la superficie",
    "ceniza de carbonato",
-   "cubre el molde y cura con menos aire"
+   "cubrir el molde y curar con menos aire"
   ],
   [
    "Se separa en el molde",
    "faltó mezclar o temperatura baja",
-   "vuelve a fundir y mezcla"
+   "volver a fundir y mezclar"
   ],
   [
-   "Pica o quema",
+   "Irritación",
    "álcali sin reaccionar",
-   "no lo uses; revisa la pesada y el SAP"
+   "no usarlo; revisar la pesada y el SAP"
   ],
   [
    "Queda blando",
    "mucho aceite líquido o sobreengrase",
-   "cura más tiempo o sube el coco"
+   "curar más tiempo o aumentar el coco"
   ]
  ],
  "avisos": [
-  "La potasa quema piel y ojos. Si te cae, enjuaga con agua 15 min y busca atención médica.",
-  "Diluido lleva agua a pH alto: aun así analiza microbios."
+  "El KOH es corrosivo. Ante contacto, agua 15 min y atención médica.",
+  "Diluido contiene agua a pH alto: requiere recuento microbiológico."
  ],
  "fuentes": [
   "SAP: Codex CXS 210-1999 y CXS 33 (ed. 2015); ricino, JECFA."

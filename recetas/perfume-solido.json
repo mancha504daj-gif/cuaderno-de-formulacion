@@ -8,7 +8,7 @@
  "lote": 100,
  "pH": null,
  "estado": "sin ensayar",
- "porque": "La cera frena la evaporación. La fragancia entra por debajo de 60 °C para no perder las notas de salida.",
+ "porque": "La red de cera retarda la difusión de los volátiles. La fragancia se incorpora por debajo de 60 °C para limitar la pérdida de la salida.",
  "fases": [
   {
    "nombre": "A",
@@ -42,11 +42,11 @@
   }
  ],
  "pasos": [
-  "Pesa todo menos la fase C y fúndelo en baño de agua a 75 °C.",
-  "Mezcla hasta que no veas restos sólidos.",
-  "Retira del calor y espera a que baje unos 10 °C.",
-  "Agrega la fase C y mezcla.",
-  "Vierte en el envase caliente y deja enfriar sin moverlo. Rotula lote y fecha."
+  "Pesar todo menos la fase C y fundirlo en baño de agua a 75 °C.",
+  "Mezclar hasta que no se observen restos sólidos.",
+  "Retirar del calor y esperar a que baje unos 10 °C.",
+  "Agregar la fase C y mezclar.",
+  "Verter en el envase caliente y dejar enfriar sin moverlo. Rotular lote y fecha."
  ],
  "cambia": [
   "Cera a 24 % si queda dura."
@@ -59,12 +59,12 @@
   ],
   [
    "Dureza",
-   "registra la penetración",
+   "registrar la penetración",
    "aguja o peso conocido"
   ],
   [
    "Punto de fusión",
-   "registra el intervalo",
+   "registrar el intervalo",
    "capilar o baño con termómetro"
   ],
   [
@@ -82,26 +82,26 @@
   [
    "Granos",
    "enfrió despacio o la manteca cristalizó mal",
-   "funde otra vez y enfría más rápido"
+   "fundir otra vez y enfriar más rápido"
   ],
   [
-   "Suda aceite",
+   "Exudación de aceite",
    "poca cera o demasiado aceite líquido",
-   "sube la cera de 1 en 1 %"
+   "aumentar la cera de 1 en 1 %"
   ],
   [
-   "Se parte",
+   "Fractura",
    "demasiada cera dura",
-   "baja la cera y sube el aceite"
+   "reducir la cera y aumentar el aceite"
   ],
   [
-   "Huele rancio",
+   "Olor rancio",
    "oxidación",
-   "usa aceite fresco, tocoferol y envase lleno"
+   "usar aceite fresco, tocoferol y envase lleno"
   ]
  ],
  "avisos": [
-  "Comprueba el certificado IFRA de la fragancia."
+  "Verificar el certificado IFRA de la fragancia."
  ],
  "fuentes": [
   "Proporciones propuestas en este proyecto.",

@@ -26,7 +26,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -45,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2cd0ff2c833b4e72470276043b4d4341.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-20f2d6b2ee51eb11c7f32a308fb87d98.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -240,8 +259,14 @@ window.Quarto = {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../guias/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guías de laboratorio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../laboratorios.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Laboratorios</span></a>
+ <span class="menu-text">Laboratorios virtuales</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -321,74 +346,83 @@ window.Quarto = {
 </header>
 
 
-<p>Si nunca hiciste un cosmético, empieza aquí. Esta página te da las palabras, la forma de leer una fórmula y un camino de nueve pasos.</p>
-<section id="las-palabras-que-vas-a-usar" class="level2">
-<h2 class="anchored" data-anchor-id="las-palabras-que-vas-a-usar">Las palabras que vas a usar</h2>
+<p>Esta página introduce el vocabulario, la lectura de una fórmula y el itinerario de estudio para quien empieza en formulación cosmética.</p>
+<section id="objetivos-de-aprendizaje" class="level2">
+<h2 class="anchored" data-anchor-id="objetivos-de-aprendizaje">Objetivos de aprendizaje</h2>
+<ol type="1">
+<li>Definir producto cosmético y separarlo de medicamento.</li>
+<li>Interpretar una fórmula por fases, función y porcentaje en masa.</li>
+<li>Escalar un lote y estimar el error de pesada.</li>
+<li>Organizar el estudio con un itinerario de nueve etapas.</li>
+</ol>
+</section>
+<section id="vocabulario" class="level2">
+<h2 class="anchored" data-anchor-id="vocabulario">Vocabulario</h2>
 <div class="fichas sin-glosa">
 <div class="termino-caja">
 <p><strong>Fórmula</strong></p>
-<p>Lista de ingredientes con su porcentaje en masa. Suma 100. <em>Una loción: 75 % agua, 16 % aceites, 4 % emulsionante y el resto.</em></p>
+<p>Lista de ingredientes con su porcentaje en masa, cuya suma es 100. <em>Una loción: 75 % agua, 16 % aceites, 4 % emulsionante y el resto.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>INCI</strong></p>
-<p>Nombre internacional de un ingrediente cosmético. Es el que va en la etiqueta. <em>Aqua es el agua; Sodium Chloride, la sal.</em></p>
+<p>Nomenclatura internacional de ingredientes cosméticos. Es la que figura en la etiqueta. <em>Aqua es el agua; Sodium Chloride, la sal.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Fase</strong></p>
-<p>Grupo de ingredientes que se mezclan juntos antes de unirlos a los demás. <em>Fase A: agua y glicerina. Fase B: aceites.</em></p>
+<p>Conjunto de ingredientes que se combinan antes de incorporarlos a los demás. <em>Fase A: agua y glicerina. Fase B: aceites.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>C.s.p.</strong></p>
-<p>Cantidad suficiente para: lo que falta para llegar a 100. <em>Agua c.s.p. 100.</em></p>
+<p>Cantidad suficiente para completar 100 %. <em>Agua, c.s.p. 100.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Lote</strong></p>
-<p>La cantidad que preparas de una vez. <em>Un lote de prueba de 100 g.</em></p>
+<p>Cantidad definida de producto elaborada en una sola operación. <em>Un lote de prueba de 100 g.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Función</strong></p>
-<p>Lo que hace un ingrediente dentro de la fórmula. Puede tener más de una. <em>El alcohol cetílico espesa y emulsiona.</em></p>
+<p>Papel técnico de un ingrediente en la fórmula. Puede cumplir más de uno. <em>El alcohol cetílico espesa y emulsiona.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Hidrófilo</strong></p>
-<p>Que prefiere el agua. <em>La glicerina.</em></p>
+<p>Con afinidad por el agua. <em>La glicerina.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Lipófilo</strong></p>
-<p>Que prefiere el aceite. <em>La cera de abejas.</em></p>
+<p>Con afinidad por el aceite. <em>La cera de abejas.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>pH</strong></p>
-<p>Medida de acidez. De 0 a 7 es ácido, 7 es neutro y hasta 14 es alcalino. <em>La piel ronda de 4 a 6.</em></p>
+<p>Logaritmo negativo de la actividad del ion hidrógeno. A 25 °C, 7 es neutro; por debajo es ácido y por encima, alcalino. <em>La piel ronda de 4 a 6.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Anhidro</strong></p>
-<p>Sin agua. <em>Un bálsamo labial.</em></p>
+<p>Sin agua en la fórmula. <em>Un bálsamo labial.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Viscosidad</strong></p>
-<p>Resistencia a fluir. Se mide en pascal segundo. <em>La miel tiene más que el agua.</em></p>
+<p>Cociente entre el esfuerzo de corte y la velocidad de corte. Se expresa en Pa s. <em>La miel, del orden de 10 Pa s; el agua, 0.001.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Conservante</strong></p>
-<p>Ingrediente que frena bacterias y hongos. <em>Fenoxietanol.</em></p>
+<p>Sustancia que inhibe el crecimiento de bacterias, levaduras y mohos en el producto. <em>Fenoxietanol.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Antioxidante</strong></p>
-<p>Frena que los aceites se enrancien. No mata microbios. <em>Tocoferol.</em></p>
+<p>Sustancia que retarda la oxidación de los lípidos. No tiene función antimicrobiana. <em>Tocoferol.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Estabilidad</strong></p>
-<p>Que el producto no cambie con el tiempo, el calor o el frío. <em>Ciclos de −10 a 40 °C.</em></p>
+<p>Capacidad de mantener las propiedades dentro de especificación durante la vida útil. <em>Ciclos de −10 a 40 °C.</em></p>
 </div>
 </div>
 </section>
 <section id="qué-es-un-cosmético" class="level2">
 <h2 class="anchored" data-anchor-id="qué-es-un-cosmético">Qué es un cosmético</h2>
-<p>Un producto que se aplica sobre la piel, el cabello, las uñas, los labios o los dientes para limpiar, perfumar, proteger, mantener o cambiar el aspecto. Si promete curar, deja de ser cosmético y se regula como medicamento.</p>
+<p>El reglamento europeo lo define como una sustancia o mezcla destinada a ponerse en contacto con las partes superficiales del cuerpo, los dientes o las mucosas bucales, con el fin de limpiarlos, perfumarlos, modificar su aspecto, protegerlos, mantenerlos en buen estado o corregir olores <span class="citation" data-cites="reg1223">(<a href="#ref-reg1223" role="doc-biblioref">Unión Europea 2009</a>)</span>. Un producto que se presenta con propiedades para tratar o prevenir enfermedades se regula como medicamento, aunque tenga la misma composición.</p>
 </section>
-<section id="leer-una-fórmula" class="level2">
-<h2 class="anchored" data-anchor-id="leer-una-fórmula">Leer una fórmula</h2>
+<section id="lectura-de-una-fórmula" class="level2">
+<h2 class="anchored" data-anchor-id="lectura-de-una-fórmula">Lectura de una fórmula</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -450,7 +484,7 @@ window.Quarto = {
 <tr class="odd">
 <td>C</td>
 <td>etilhexilglicerina</td>
-<td>conservante</td>
+<td>potenciador</td>
 <td>0.1</td>
 </tr>
 <tr class="even">
@@ -461,42 +495,50 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-<p>Es la <a href="../producto/locion-corporal.html">loción ligera</a>. Léela así:</p>
+<p>Corresponde a la <a href="../producto/locion-corporal.html">loción ligera</a>.</p>
 <ul>
-<li><strong>Las fases dicen qué se mezcla junto.</strong> A es lo que va en agua, B lo que va en aceite, C lo delicado.</li>
-<li><strong>Los porcentajes son en masa y suman 100.</strong> Si te falta, se completa con agua.</li>
-<li><strong>La función dice por qué está.</strong> Si no puedes decir para qué sirve un ingrediente, quítalo.</li>
+<li><strong>Fase.</strong> Agrupa lo que se mezcla junto: A, hidrosoluble; B, liposoluble; C, sensible al calor.</li>
+<li><strong>Porcentaje.</strong> Es fracción en masa por cien y la suma es 100. El agua suele cerrar el balance.</li>
+<li><strong>Función.</strong> Justifica la presencia del ingrediente. Uno sin función definida se elimina.</li>
 </ul>
 </section>
-<section id="escalar-un-lote" class="level2">
-<h2 class="anchored" data-anchor-id="escalar-un-lote">Escalar un lote</h2>
-<p><span class="math display">\[masa = \frac{porcentaje \times lote}{100}\]</span></p>
-<p>Para 50 g de esa loción, el emulsionante pesa 4.0 × 50/100 = 2.0 g. Con 10 g, 0.4 g: ahí una balanza de 0.1 g se equivoca hasta 25 %. Haz lotes de 100 g para empezar.</p>
+<section id="escalado-y-error-de-pesada" class="level2">
+<h2 class="anchored" data-anchor-id="escalado-y-error-de-pesada">Escalado y error de pesada</h2>
+<p><span class="math display">\[m_i = \frac{w_i\, M}{100} \qquad \varepsilon_i = \frac{\delta}{m_i} \times 100\]</span></p>
+<p>con <span class="math inline">\(\delta\)</span> la resolución de la balanza. En 50 g de esa loción el conservante pesa 0.8 × 50/100 = 0.40 g; con una balanza de 0.1 g el error llega a 25 %. En 100 g y con balanza de 0.01 g baja a 1.3 %. Un lote de 100 g es un buen punto de partida.</p>
 </section>
-<section id="tu-camino" class="level2">
-<h2 class="anchored" data-anchor-id="tu-camino">Tu camino</h2>
+<section id="itinerario-de-estudio" class="level2">
+<h2 class="anchored" data-anchor-id="itinerario-de-estudio">Itinerario de estudio</h2>
 <ol class="camino" data-avance="">
-<li data-paso="palabras">Lee esta página y las palabras de arriba.</li>
-<li data-paso="laboratorio"><a href="laboratorio.html">Aprende a pesar, medir y cuidarte.</a></li>
-<li data-paso="balsamo"><a href="../producto/balsamo-labial.html">Haz un bálsamo labial.</a> Sin agua: no necesita conservante.</li>
-<li data-paso="gel"><a href="../producto/gel-hidratante.html">Haz un gel.</a> Aprendes a hidratar un espesante y a medir pH.</li>
-<li data-paso="conservacion"><a href="conservacion.html">Estudia conservación</a> antes de usar nada con agua.</li>
-<li data-paso="microbiologia"><a href="microbiologia.html">Aprende a contar microbios</a> antes de poner algo en la piel.</li>
-<li data-paso="emulsiones"><a href="emulsiones.html">Estudia emulsiones.</a></li>
-<li data-paso="locion"><a href="../producto/locion-corporal.html">Haz la loción ligera</a> y comprueba su tipo.</li>
-<li data-paso="estabilidad"><a href="estabilidad.html">Ponla a prueba</a> durante 90 días y anota en tu hoja.</li>
+<li data-paso="palabras">Estudiar esta página y su vocabulario.</li>
+<li data-paso="laboratorio"><a href="laboratorio.html">Técnica de laboratorio:</a> pesada, pH y seguridad.</li>
+<li data-paso="balsamo"><a href="../producto/balsamo-labial.html">Bálsamo labial.</a> Sistema anhidro, sin conservante.</li>
+<li data-paso="gel"><a href="../producto/gel-hidratante.html">Gel hidratante.</a> Hidratación de un polímero y ajuste de pH.</li>
+<li data-paso="conservacion"><a href="conservacion.html">Conservación,</a> requisito previo de todo producto con agua.</li>
+<li data-paso="microbiologia"><a href="microbiologia.html">Microbiología</a> y <a href="../guias/index.html">guías de laboratorio.</a></li>
+<li data-paso="emulsiones"><a href="emulsiones.html">Emulsiones.</a></li>
+<li data-paso="locion"><a href="../producto/locion-corporal.html">Loción ligera,</a> con verificación del tipo de emulsión.</li>
+<li data-paso="estabilidad"><a href="estabilidad.html">Estabilidad:</a> plan de 90 días con registro.</li>
 </ol>
 </section>
-<section id="cómo-estudiar-una-sección" class="level2">
-<h2 class="anchored" data-anchor-id="cómo-estudiar-una-sección">Cómo estudiar una sección</h2>
+<section id="método-de-estudio" class="level2">
+<h2 class="anchored" data-anchor-id="método-de-estudio">Método de estudio</h2>
 <ol type="1">
-<li>Lee sus palabras.</li>
-<li>Haz las lecciones y mueve los controles de las escenas.</li>
-<li>Contesta las preguntas.</li>
-<li>Elige un producto y lee «Por qué funciona» antes de los pasos.</li>
-<li>Abre la hoja de laboratorio, prepáralo y anota.</li>
-<li>Cambia una sola cosa y repite.</li>
+<li>Leer los objetivos y el vocabulario de la sección.</li>
+<li>Estudiar cada lección y manipular sus modelos.</li>
+<li>Resolver la autoevaluación sin consultar el texto.</li>
+<li>Elegir un producto, leer su fundamento y prever el resultado de cada control.</li>
+<li>Preparar el lote con la hoja de laboratorio.</li>
+<li>Modificar una sola variable, repetir y comparar.</li>
 </ol>
+</section>
+<section id="referencias" class="level2">
+<h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-reg1223" class="csl-entry" role="listitem">
+Unión Europea. 2009. <em>Reglamento (<span>CE</span>) n.º 1223/2009 sobre los productos cosméticos</em>.
+</div>
+</div>
 
 
 </section>

@@ -26,7 +26,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -45,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2cd0ff2c833b4e72470276043b4d4341.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-20f2d6b2ee51eb11c7f32a308fb87d98.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -240,8 +294,14 @@ window.Quarto = {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../guias/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guías de laboratorio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../laboratorios.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Laboratorios</span></a>
+ <span class="menu-text">Laboratorios virtuales</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -321,48 +381,63 @@ window.Quarto = {
 </header>
 
 
-<p>Una fórmula buena el primer día puede fallar a los dos meses. Aquí aprendes a buscar esa falla antes.</p>
-<section id="lección-1.-cinco-estabilidades" class="level2">
-<h2 class="anchored" data-anchor-id="lección-1.-cinco-estabilidades">Lección 1. Cinco estabilidades</h2>
+<p>La estabilidad es la capacidad de conservar propiedades dentro de especificación durante la vida útil y en el envase final. Esta página propone un plan de 90 días y discute qué se puede extrapolar.</p>
+<section id="objetivos-de-aprendizaje" class="level2">
+<h2 class="anchored" data-anchor-id="objetivos-de-aprendizaje">Objetivos de aprendizaje</h2>
+<ol type="1">
+<li>Diferenciar los cinco tipos de estabilidad y su variable de respuesta.</li>
+<li>Diseñar un plan con condiciones, tiempos y criterios fijados de antemano.</li>
+<li>Aplicar cinética de primer orden y Arrhenius dentro de sus límites.</li>
+<li>Relacionar síntomas con causas mediante ensayos discriminantes.</li>
+</ol>
+</section>
+<section id="lección-1.-tipos-de-estabilidad" class="level2">
+<h2 class="anchored" data-anchor-id="lección-1.-tipos-de-estabilidad">Lección 1. Tipos de estabilidad</h2>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Cuál</th>
-<th>Qué puede pasar</th>
-<th>Cómo se ve</th>
+<th>Tipo</th>
+<th>Cambio</th>
+<th>Respuesta medible</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Física</td>
-<td>se separa, espesa o se adelgaza</td>
-<td>a la vista, viscosidad</td>
+<td>separación, cristalización, cambio de viscosidad</td>
+<td>altura de fase, η, tamaño de gota</td>
 </tr>
 <tr class="even">
 <td>Química</td>
-<td>se oxida o se degrada</td>
-<td>olor, color, pH, análisis</td>
+<td>oxidación, hidrólisis</td>
+<td>pH, color, valoración del activo</td>
 </tr>
 <tr class="odd">
 <td>Microbiológica</td>
-<td>crecen microbios</td>
-<td>recuento</td>
+<td>crecimiento</td>
+<td>UFC/g</td>
 </tr>
 <tr class="even">
-<td>De desempeño</td>
-<td>deja de hacer lo suyo</td>
-<td>espuma, cesión, sensación</td>
+<td>Funcional</td>
+<td>pérdida de desempeño</td>
+<td>espuma, cesión, absorbancia</td>
 </tr>
 <tr class="odd">
 <td>Toxicológica</td>
-<td>aparece algo dañino</td>
+<td>formación de compuestos nocivos</td>
 <td>evaluación de seguridad</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="lección-2.-un-plan-de-90-días" class="level2">
-<h2 class="anchored" data-anchor-id="lección-2.-un-plan-de-90-días">Lección 2. Un plan de 90 días</h2>
+<section id="lección-2.-plan-de-90-días" class="level2">
+<h2 class="anchored" data-anchor-id="lección-2.-plan-de-90-días">Lección 2. Plan de 90 días</h2>
+<p>Cosmetics Europe indica que no existe un protocolo único y pide cubrir integridad física, estabilidad química, estabilidad microbiológica y compatibilidad con el envase <span class="citation" data-cites="cosmeticseurope2004">(<a href="#ref-cosmeticseurope2004" role="doc-biblioref">Cosmetics Europe y CTFA 2004</a>)</span>. La guía de ANVISA propone lecturas a 0, 1, 7, 15, 30, 60 y 90 días <span class="citation" data-cites="anvisa2005">(<a href="#ref-anvisa2005" role="doc-biblioref">ANVISA 2005</a>)</span>.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -370,7 +445,7 @@ window.Quarto = {
 <th>4 °C</th>
 <th>Ambiente</th>
 <th>40 °C</th>
-<th>Qué anotas</th>
+<th>Determinaciones</th>
 </tr>
 </thead>
 <tbody>
@@ -379,7 +454,7 @@ window.Quarto = {
 <td></td>
 <td>x</td>
 <td></td>
-<td>pH, aspecto, olor, viscosidad, masa</td>
+<td>todas</td>
 </tr>
 <tr class="even">
 <td>1</td>
@@ -407,90 +482,145 @@ window.Quarto = {
 <td>x</td>
 <td>x</td>
 <td>x</td>
-<td>todo</td>
+<td>todas</td>
 </tr>
 <tr class="even">
 <td>60</td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
-<td>todo</td>
+<td>todas</td>
 </tr>
 <tr class="odd">
 <td>90</td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
-<td>todo y recuento</td>
+<td>todas, con recuento</td>
 </tr>
 </tbody>
 </table>
-<p>Usa el envase final y vidrio como control. Prueba de pie, acostado y de cabeza. Pesa cada envase: si pierde masa, pierde agua.</p>
-<p>Anota en la <a href="../cuaderno.html">hoja de laboratorio</a> de la receta.</p>
-</section>
-<section id="lección-3.-pruebas-que-apuran" class="level2">
-<h2 class="anchored" data-anchor-id="lección-3.-pruebas-que-apuran">Lección 3. Pruebas que apuran</h2>
 <ul>
-<li><strong>Centrífuga:</strong> 3000 rpm, 30 min. Si se separa ahí, reformula.</li>
-<li><strong>Ciclos:</strong> de −10 °C a 25 o 40 °C, 24 h por etapa, de tres a seis. Otra fuente propone cinco ciclos de 12 h entre −10 y 40 °C. Anota cuál usaste.</li>
-<li><strong>Luz:</strong> una muestra en la ventana y otra envuelta en aluminio.</li>
+<li><strong>Envase.</strong> El final y vidrio como testigo; vertical, horizontal e invertido.</li>
+<li><strong>Réplicas.</strong> Tres envases por condición y tiempo.</li>
+<li><strong>Especificación.</strong> Se escribe antes de empezar. Ejemplo: pH inicial ± 0.5; viscosidad inicial ± 20 %; pérdida de masa menor que 2 %; sin separación visible; recuento bajo el límite.</li>
+<li><strong>Muestreo destructivo.</strong> Cada envase se abre una sola vez.</li>
 </ul>
+<p>El registro se lleva en la <a href="../cuaderno.html">hoja de laboratorio</a>.</p>
 </section>
-<section id="lección-4.-extrapolar-con-cuidado" class="level2">
-<h2 class="anchored" data-anchor-id="lección-4.-extrapolar-con-cuidado">Lección 4. Extrapolar con cuidado</h2>
-<p>La ecuación de Arrhenius relaciona temperatura y velocidad:</p>
-<p><span class="math display">\[\ln\frac{k_2}{k_1} = \frac{E_a}{R}\left(\frac{1}{T_1} - \frac{1}{T_2}\right)\]</span></p>
-<p>Sirve para una sola reacción de primer orden y sin cambio de fase. No predice que una emulsión se separe ni que crezca un hongo. <a href="../laboratorio/vida-util.html">Laboratorio: vida útil</a>.</p>
-<p>En doce cosméticos con retinoides, la pérdida a seis meses fue de 0 a 80 % a 25 °C y de 40 a 100 % a 40 °C. Los autores piden medir en tiempo real.</p>
-<p><strong>Ejemplo resuelto.</strong> Pierdes 10 % en un mes a 40 °C: k = −ln(0.90) = 0.105 por mes. Con Ea = 80 kJ/mol, a 25 °C la constante es 0.213 veces, o sea 0.0225 por mes. A los 12 meses queda exp(−0.0225 × 12) = 76 %.</p>
-</section>
-<section id="lección-5.-diagnosticar" class="level2">
-<h2 class="anchored" data-anchor-id="lección-5.-diagnosticar">Lección 5. Diagnosticar</h2>
+<section id="lección-3.-ensayos-acelerados" class="level2">
+<h2 class="anchored" data-anchor-id="lección-3.-ensayos-acelerados">Lección 3. Ensayos acelerados</h2>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Qué ves</th>
-<th>Primera sospecha</th>
-<th>Primera prueba</th>
+<th>Ensayo</th>
+<th>Condición</th>
+<th>Lectura</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Capa arriba que vuelve al agitar</td>
+<td>Centrífuga</td>
+<td>3000 rpm, 30 min</td>
+<td>separación: reformular <span class="citation" data-cites="anvisa2005">(<a href="#ref-anvisa2005" role="doc-biblioref">ANVISA 2005</a>)</span></td>
+</tr>
+<tr class="even">
+<td>Ciclos</td>
+<td>−5 y 45 o 50 °C, 24 h por etapa, seis ciclos <span class="citation" data-cites="anvisa2005">(<a href="#ref-anvisa2005" role="doc-biblioref">ANVISA 2005</a>)</span></td>
+<td>cristales, coalescencia, envase</td>
+</tr>
+<tr class="odd">
+<td>Luz</td>
+<td>ventana y testigo en aluminio</td>
+<td>color, olor</td>
+</tr>
+</tbody>
+</table>
+<p>La fuerza centrífuga relativa depende del radio del rotor:</p>
+<p><span class="math display">\[FCR = 1.118 \times 10^{-5}\, R\, n^2\]</span></p>
+<p>con <span class="math inline">\(R\)</span> en cm y <span class="math inline">\(n\)</span> en rpm. Con R = 10 cm, 3000 rpm equivalen a 1006 g. Informar rpm sin radio impide repetir el ensayo.</p>
+</section>
+<section id="lección-4.-cinética-y-extrapolación" class="level2">
+<h2 class="anchored" data-anchor-id="lección-4.-cinética-y-extrapolación">Lección 4. Cinética y extrapolación</h2>
+<p>Una reacción de primer orden sigue <span class="math inline">\(C = C_0\,e^{-kt}\)</span>, y el tiempo en que queda 90 % es <span class="math inline">\(t_{90} = 0.1054/k\)</span>. La constante cambia con la temperatura según Arrhenius:</p>
+<p><span class="math display">\[\ln\frac{k_2}{k_1} = \frac{E_a}{R}\left(\frac{1}{T_1} - \frac{1}{T_2}\right)\]</span></p>
+<p><strong>Ejemplo resuelto.</strong> Pérdida de 10 % en un mes a 40 °C: k = −ln 0.90 = 0.1054 por mes. Con Ea = 80 kJ/mol, la constante a 25 °C es 0.213 veces, 0.0225 por mes. A 12 meses queda exp(−0.0225 × 12) = 76 %, y <span class="math inline">\(t_{90}\)</span> es 4.7 meses.</p>
+<p>La energía de activación se obtiene con tres temperaturas o más:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>m  <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="fu">log</span>(k) <span class="sc">~</span> <span class="fu">I</span>(<span class="dv">1</span> <span class="sc">/</span> T), <span class="at">data =</span> d)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>Ea <span class="ot">&lt;-</span> <span class="sc">-</span><span class="fu">coef</span>(m)[<span class="dv">2</span>] <span class="sc">*</span> <span class="fl">8.314</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">confint</span>(m)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Límites.</strong> La ecuación describe una reacción sin cambio de fase. No predice separación, cristalización ni crecimiento microbiano. En doce cosméticos con retinoides la pérdida a seis meses fue de 0 a 80 % a 25 °C y de 40 a 100 % a 40 °C, y la luz degradó más que la temperatura; los autores recomiendan ensayos en tiempo real <span class="citation" data-cites="temova2021">(<a href="#ref-temova2021" role="doc-biblioref">Temova Rakuša et&nbsp;al. 2021</a>)</span>. Cosmetics Europe reconoce que hay poca investigación publicada que respalde la predicción acelerada <span class="citation" data-cites="cosmeticseurope2004">(<a href="#ref-cosmeticseurope2004" role="doc-biblioref">Cosmetics Europe y CTFA 2004</a>)</span>.</p>
+<p><a href="../laboratorio/vida-util.html">Laboratorio virtual: vida útil</a>.</p>
+</section>
+<section id="lección-5.-diagnóstico" class="level2">
+<h2 class="anchored" data-anchor-id="lección-5.-diagnóstico">Lección 5. Diagnóstico</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Síntoma</th>
+<th>Hipótesis</th>
+<th>Ensayo discriminante</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Capa superior que vuelve al agitar</td>
 <td>cremado</td>
-<td>homogeneizar más</td>
+<td>tamaño de gota, más homogeneización</td>
 </tr>
 <tr class="even">
 <td>Capa de aceite que no vuelve</td>
 <td>coalescencia</td>
-<td>otro HLB</td>
+<td>otro HLB, más emulsionante</td>
 </tr>
 <tr class="odd">
 <td>Granos</td>
-<td>cristales de cera o manteca</td>
-<td>enfriar más rápido</td>
+<td>cristalización de ceras</td>
+<td>microscopio polarizado, enfriado más rápido</td>
 </tr>
 <tr class="even">
-<td>pH que baja</td>
+<td>pH en descenso</td>
 <td>oxidación o hidrólisis</td>
-<td>otro aceite, antioxidante</td>
+<td>índice de peróxidos, antioxidante</td>
 </tr>
 <tr class="odd">
-<td>pH que sube</td>
+<td>pH en ascenso</td>
 <td>urea o álcali del envase</td>
-<td>amortiguar</td>
+<td>fórmula sin urea, testigo en vidrio</td>
 </tr>
 <tr class="even">
-<td>Manchas o gas</td>
-<td>microbios</td>
-<td>descartar y revisar conservante</td>
+<td>Manchas, gas u olor</td>
+<td>crecimiento microbiano</td>
+<td><a href="../guias/gm-03-aerobios.html">GM-03</a> y <a href="../guias/gm-04-hongos.html">GM-04</a></td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="fuentes" class="level2">
-<h2 class="anchored" data-anchor-id="fuentes">Fuentes</h2>
-<p>Baki 2023, ISBN 978-1-119-70977-0, pp.&nbsp;147-149 y 212-216. Benson et al.&nbsp;2019, DOI <a href="https://doi.org/10.1201/9780429190674">10.1201/9780429190674</a>, p.&nbsp;296. Cosmetics Europe y CTFA 2004 (sin DOI). ANVISA 2004, guía de estabilidad (sin DOI). Temova Rakuša et al.&nbsp;2021, DOI <a href="https://doi.org/10.1111/jocd.13852">10.1111/jocd.13852</a>.</p>
+<section id="referencias" class="level2">
+<h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
+<p>Los plazos y criterios complementan a Baki <span class="citation" data-cites="baki2023">(<a href="#ref-baki2023" role="doc-biblioref">2023, 147-49</a> y 212-216)</span> y a Benson y colaboradores <span class="citation" data-cites="benson2019">(<a href="#ref-benson2019" role="doc-biblioref">2019, 296</a>)</span>.</p>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-anvisa2005" class="csl-entry" role="listitem">
+ANVISA. 2005. <em>Guía de estabilidad de productos cosméticos</em>. Agência Nacional de Vigilância Sanitária.
+</div>
+<div id="ref-baki2023" class="csl-entry" role="listitem">
+Baki, Gabriella. 2023. <em>Introduction to Cosmetic Formulation and Technology</em>. 2.ª ed. Wiley. ISBN 978-1-119-70977-0.
+</div>
+<div id="ref-benson2019" class="csl-entry" role="listitem">
+Benson, Heather A. E., Michael S. Roberts, Vânia Rodrigues Leite-Silva, y Kenneth A. Walters, eds. 2019. <em>Cosmetic Formulation: Principles and Practice</em>. CRC Press. <a href="https://doi.org/10.1201/9780429190674">https://doi.org/10.1201/9780429190674</a>.
+</div>
+<div id="ref-cosmeticseurope2004" class="csl-entry" role="listitem">
+Cosmetics Europe, y CTFA. 2004. <em>Guidelines on Stability Testing of Cosmetic Products</em>. <span>COLIPA y CTFA</span>.
+</div>
+<div id="ref-temova2021" class="csl-entry" role="listitem">
+Temova Rakuša, Žane, Petja Škufca, Albin Kristl, y Robert Roškar. 2021. <span>«Retinoid stability and degradation kinetics in commercial cosmetic products»</span>. <em>Journal of Cosmetic Dermatology</em> 20 (7): 2350-58. <a href="https://doi.org/10.1111/jocd.13852">https://doi.org/10.1111/jocd.13852</a>.
+</div>
+</div>
 
 
 </section>

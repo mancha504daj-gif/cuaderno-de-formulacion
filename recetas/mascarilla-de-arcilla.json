@@ -8,7 +8,7 @@
  "lote": 100,
  "pH": "5.5 a 6.5",
  "estado": "sin ensayar",
- "porque": "La arcilla absorbe grasa y, al secar, tira de la piel. La glicerina la hace menos tirante.",
+ "porque": "La arcilla adsorbe sebo y, al perder agua, se contrae. La glicerina retarda el secado.",
  "fases": [
   {
    "nombre": "A",
@@ -55,14 +55,14 @@
   }
  ],
  "pasos": [
-  "Mezcla la goma con la glicerina y agrega el agua.",
-  "Espolvorea la bentonita y deja que se hinche 30 min.",
-  "Agrega el caolín poco a poco.",
-  "Incorpora la fase C y mide el pH.",
-  "Envasa en tubo o tarro."
+  "Mezclar la goma con la glicerina y agregar el agua.",
+  "Espolvorear la bentonita y dejar que se hinche 30 min.",
+  "Agregar el caolín poco a poco.",
+  "Incorporar la fase C y medir el pH.",
+  "Envasar en tubo o tarro."
  ],
  "cambia": [
-  "Cambia 5 % de caolín por óxidos de hierro para darle color.",
+  "Sustituir 5 % de caolín por óxidos de hierro para darle color.",
   "Más glicerina, menos tirantez."
  ],
  "controles": [
@@ -78,7 +78,7 @@
   ],
   [
    "Viscosidad",
-   "registra husillo, rpm y temperatura",
+   "registrar husillo, rpm y temperatura",
    "viscosímetro o tiempo de caída"
   ],
   [
@@ -96,23 +96,23 @@
   [
    "Grumos",
    "el polímero se mojó de golpe",
-   "prehumecta con glicerina"
+   "prehumectar con glicerina"
   ],
   [
    "Muchas burbujas",
    "agitación rápida",
-   "agita lento y deja reposar"
+   "agitar lento y dejar reposar"
   ],
   [
-   "Se aguó",
+   "Pérdida de viscosidad",
    "sal, pH o microbios",
-   "mide pH; si huele raro, descártalo"
+   "medir pH; ante olor anómalo, descartarlo"
   ]
  ],
  "avisos": [
-  "Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.",
-  "No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad.",
-  "Las arcillas traen microbios: pide grado cosmético y analiza."
+  "Contiene agua. Sin ensayo del conservante puede contaminarse sin cambios visibles.",
+  "No se aplica en la piel sin control microbiológico y evaluación de seguridad.",
+  "Las arcillas aportan carga microbiana: exigir grado cosmético y analizar."
  ],
  "fuentes": [
   "Proporciones propuestas en este proyecto.",

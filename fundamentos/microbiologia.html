@@ -26,7 +26,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -45,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2cd0ff2c833b4e72470276043b4d4341.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-20f2d6b2ee51eb11c7f32a308fb87d98.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -240,8 +259,14 @@ window.Quarto = {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../guias/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guías de laboratorio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../laboratorios.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Laboratorios</span></a>
+ <span class="menu-text">Laboratorios virtuales</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -321,187 +346,116 @@ window.Quarto = {
 </header>
 
 
-<p>Aquí aprendes a saber si un cosmético está contaminado y si su conservante aguanta. El conteo lo puedes hacer en un laboratorio docente con supervisión. El ensayo del conservante usa patógenos y lo hace un laboratorio de microbiología.</p>
-<section id="las-palabras-que-vas-a-usar" class="level2">
-<h2 class="anchored" data-anchor-id="las-palabras-que-vas-a-usar">Las palabras que vas a usar</h2>
+<p>El control microbiológico responde dos preguntas: si el producto está dentro de límites y si su sistema conservante resiste el uso. Esta página da el fundamento; los procedimientos están en las <a href="../guias/index.html">guías de laboratorio</a>.</p>
+<section id="objetivos-de-aprendizaje" class="level2">
+<h2 class="anchored" data-anchor-id="objetivos-de-aprendizaje">Objetivos de aprendizaje</h2>
+<ol type="1">
+<li>Diferenciar el recuento del ensayo de desafío.</li>
+<li>Justificar la neutralización y la dilución seriada.</li>
+<li>Calcular una concentración con su incertidumbre.</li>
+<li>Interpretar un informe frente a los límites aceptados.</li>
+</ol>
+</section>
+<section id="vocabulario" class="level2">
+<h2 class="anchored" data-anchor-id="vocabulario">Vocabulario</h2>
 <div class="fichas sin-glosa">
 <div class="termino-caja">
 <p><strong>UFC</strong></p>
-<p>Unidad formadora de colonia: lo que dio origen a una colonia visible. <em>14 000 UFC/g.</em></p>
+<p>Unidad formadora de colonia: célula o agregado que da origen a una colonia visible. <em>14 000 UFC/g.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Colonia</strong></p>
-<p>Montón de microbios que nació de uno o de unos pocos.</p>
+<p>Población visible originada en una unidad formadora de colonia.</p>
 </div>
 <div class="termino-caja">
 <p><strong>Medio de cultivo</strong></p>
-<p>Alimento para microbios, líquido o en gel. <em>Agar malta.</em></p>
+<p>Preparación que aporta nutrientes para el crecimiento de microorganismos. <em>Agar malta.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Agar</strong></p>
-<p>Gel de algas que sostiene el medio en la placa.</p>
+<p>Polisacárido de algas que gelifica el medio.</p>
 </div>
 <div class="termino-caja">
 <p><strong>Aséptico</strong></p>
-<p>Hecho sin dejar entrar microbios de fuera. <em>Abrir un tubo junto al mechero.</em></p>
+<p>Realizado sin introducir microorganismos ajenos a la muestra. <em>Abrir un tubo junto al mechero.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Estéril</strong></p>
-<p>Sin nada vivo. <em>Un tubo salido del autoclave.</em></p>
+<p>Libre de microorganismos viables. <em>Un tubo salido del autoclave.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Autoclave</strong></p>
-<p>Olla a presión que esteriliza con vapor a 121 °C.</p>
+<p>Equipo que esteriliza con vapor saturado a presión; el ciclo usual para medios es de 15 min a 121 °C.</p>
 </div>
 <div class="termino-caja">
 <p><strong>Dilución decimal</strong></p>
-<p>Una parte de muestra en diez partes totales. 10⁻² es repetirlo dos veces. <em>1 mL en 9 mL.</em></p>
+<p>Transferencia de una parte de muestra a diez partes totales. 10⁻² son dos pasos sucesivos. <em>1 mL en 9 mL.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Neutralizante</strong></p>
-<p>Apaga al conservante para que crezca lo que hay. <em>Caldo letheen.</em></p>
+<p>Sustancia que inactiva al conservante durante el recuento. <em>Caldo letheen.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Incubar</strong></p>
-<p>Mantener a temperatura fija mientras crece. <em>30 °C, 48 h.</em></p>
+<p>Mantener un cultivo a temperatura y tiempo definidos. <em>30 °C, 48 h.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Blanco</strong></p>
-<p>Prueba sin muestra. Si crece, algo se contaminó.</p>
+<p>Control sin muestra. Su crecimiento invalida la corrida.</p>
 </div>
 <div class="termino-caja">
 <p><strong>Inóculo</strong></p>
-<p>Microbios que agregas a propósito.</p>
+<p>Suspensión de microorganismos que se agrega de forma deliberada.</p>
 </div>
 <div class="termino-caja">
 <p><strong>Enriquecimiento</strong></p>
-<p>Dejar crecer en caldo para detectar lo poco.</p>
+<p>Cultivo en caldo que permite detectar una carga baja.</p>
 </div>
 <div class="termino-caja">
 <p><strong>Aerobio</strong></p>
-<p>Que crece con aire.</p>
+<p>Que crece en presencia de oxígeno.</p>
 </div>
 <div class="termino-caja">
 <p><strong>Patógeno</strong></p>
-<p>Que puede enfermar. <em>Pseudomonas aeruginosa.</em></p>
+<p>Capaz de causar enfermedad. <em>Pseudomonas aeruginosa.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Reducción logarítmica</strong></p>
-<p>Cuántas veces baja por diez. 3 log es de un millón a mil.</p>
+<p>Diferencia de logaritmos decimales entre el recuento inicial y el final. 3 log equivalen a dividir entre mil.</p>
 </div>
 </div>
 </section>
-<section id="antes-de-empezar-seguridad" class="level2">
-<h2 class="anchored" data-anchor-id="antes-de-empezar-seguridad">Antes de empezar: seguridad</h2>
+<section id="lección-1.-dos-preguntas-dos-ensayos" class="level2">
+<h2 class="anchored" data-anchor-id="lección-1.-dos-preguntas-dos-ensayos">Lección 1. Dos preguntas, dos ensayos</h2>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Regla</th>
-<th>Por qué</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Trabaja con supervisión de alguien de microbiología</td>
-<td>vas a multiplicar lo que haya en la muestra</td>
-</tr>
-<tr class="even">
-<td>Nunca en la cocina ni en casa</td>
-<td>no puedes contener ni esterilizar</td>
-</tr>
-<tr class="odd">
-<td>Bata, guantes y lentes; pelo recogido; sin comer ni usar teléfono</td>
-<td>evita llevarte microbios</td>
-</tr>
-<tr class="even">
-<td>No abras placas crecidas</td>
-<td>puede haber hongos o patógenos</td>
-</tr>
-<tr class="odd">
-<td>Esteriliza todo antes de botarlo</td>
-<td>autoclave a 121 °C; consulta el tiempo con tu laboratorio</td>
-</tr>
-<tr class="even">
-<td>Si se derrama, cubre con desinfectante y espera</td>
-<td>el tiempo lo marca la etiqueta</td>
-</tr>
-</tbody>
-</table>
-<p>La guía del FDA trata como preocupantes a <em>Staphylococcus aureus</em>, <em>Pseudomonas aeruginosa</em>, <em>Escherichia coli</em> y <em>Candida albicans</em>. Si sospechas de una colonia, no la identifiques tú: cierra la placa y llévala al laboratorio.</p>
-</section>
-<section id="lección-1.-dos-preguntas-distintas" class="level2">
-<h2 class="anchored" data-anchor-id="lección-1.-dos-preguntas-distintas">Lección 1. Dos preguntas distintas</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
 <thead>
 <tr class="header">
 <th>Pregunta</th>
 <th>Ensayo</th>
-<th>Cuándo</th>
+<th>Momento</th>
+<th>Guía</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>¿Está limpio ahora?</td>
-<td>conteo en placa y búsqueda de patógenos</td>
-<td>cada lote, a día 0 y al final de la estabilidad</td>
+<td>¿Está dentro de límites?</td>
+<td>recuento y búsqueda de especificados</td>
+<td>cada lote</td>
+<td><a href="../guias/gm-03-aerobios.html">GM-03</a>, <a href="../guias/gm-04-hongos.html">GM-04</a>, <a href="../guias/gm-05-especificados.html">GM-05</a></td>
 </tr>
 <tr class="even">
-<td>¿Aguantará los dedos?</td>
-<td>eficacia del conservante</td>
-<td>una vez por fórmula y cada vez que la cambies</td>
+<td>¿Resiste la contaminación del uso?</td>
+<td>ensayo de desafío</td>
+<td>una vez por fórmula y tras cada cambio</td>
+<td><a href="../guias/gm-07-conservante.html">GM-07</a>, práctica</td>
 </tr>
 </tbody>
 </table>
-<p>Un conteo bajo no dice que el conservante funcione. Un conservante fuerte no limpia un lote sucio.</p>
+<p>Un recuento bajo no demuestra que el conservante funcione. Un conservante eficaz no corrige una fabricación sucia.</p>
 </section>
-<section id="lección-2.-el-neutralizante" class="level2">
-<h2 class="anchored" data-anchor-id="lección-2.-el-neutralizante">Lección 2. El neutralizante</h2>
-<p>Si llevas producto a la placa, también llevas conservante, y ahí impide que crezca lo que hay. Saldría un cero falso. El caldo letheen modificado lleva sustancias que apagan al conservante, y el Tween 80 además dispersa la grasa.</p>
-<p><strong>Comprueba que funciona.</strong> Prepara tres tubos con la misma cantidad conocida de un microbio inocuo, por ejemplo levadura de pan:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Tubo</th>
-<th>Lleva</th>
-<th>Qué te dice</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>A</td>
-<td>diluyente y levadura</td>
-<td>cuánto hay de verdad</td>
-</tr>
-<tr class="even">
-<td>B</td>
-<td>neutralizante y levadura</td>
-<td>si el neutralizante es tóxico</td>
-</tr>
-<tr class="odd">
-<td>C</td>
-<td>neutralizante, producto y levadura</td>
-<td>si el conservante sigue actuando</td>
-</tr>
-</tbody>
-</table>
-<p>Si B y C recuperan casi lo mismo que A, sirve. Si C recupera mucho menos, diluye más o cambia de neutralizante. El criterio numérico lo fija el método que sigas.</p>
-</section>
-<section id="lección-3.-qué-necesitas" class="level2">
-<h2 class="anchored" data-anchor-id="lección-3.-qué-necesitas">Lección 3. Qué necesitas</h2>
+<section id="lección-2.-bioseguridad" class="level2">
+<h2 class="anchored" data-anchor-id="lección-2.-bioseguridad">Lección 2. Bioseguridad</h2>
+<p>El cultivo multiplica organismos desconocidos. El comité científico europeo pide que un microbiólogo ejecute o supervise los ensayos y los valide <span class="citation" data-cites="sccs2023">(<a href="#ref-sccs2023" role="doc-biblioref">SCCS 2023, 149</a>)</span>. El capítulo 23 del BAM señala cuatro microorganismos de especial preocupación: <em>Staphylococcus aureus</em>, <em>Pseudomonas aeruginosa</em>, <em>Escherichia coli</em> y <em>Candida albicans</em> <span class="citation" data-cites="bam23">(<a href="#ref-bam23" role="doc-biblioref">Huang et&nbsp;al. 2024</a>)</span>.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -509,119 +463,70 @@ window.Quarto = {
 </colgroup>
 <thead>
 <tr class="header">
-<th>Para</th>
-<th>Material</th>
+<th>Medida</th>
+<th>Razón</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Muestra</td>
-<td>balanza de 0.01 g, espátulas y tubos estériles con tapa</td>
+<td>Trabajo en laboratorio con supervisión</td>
+<td>identificación y respuesta ante hallazgos</td>
 </tr>
 <tr class="even">
-<td>Dispersar</td>
-<td>Tween 80 estéril, perlas de vidrio de 5 mm estériles, agitador vórtex</td>
+<td>Nunca en cocina ni vivienda</td>
+<td>sin contención ni esterilización</td>
 </tr>
 <tr class="odd">
-<td>Diluir</td>
-<td>caldo letheen modificado, 9 mL por tubo</td>
+<td>Bata, guantes, lentes; sin alimentos ni teléfono</td>
+<td>evita transferencia</td>
 </tr>
 <tr class="even">
-<td>Aerobios</td>
-<td>agar letheen modificado</td>
+<td>Placas cerradas con cinta</td>
+<td>dispersión de esporas</td>
 </tr>
 <tr class="odd">
-<td>Hongos y levaduras</td>
-<td>agar malta o agar papa dextrosa con 40 ppm de clortetraciclina</td>
-</tr>
-<tr class="even">
-<td>Sembrar</td>
-<td>pipetas estériles de 1 mL, asas de Drigalsky estériles</td>
-</tr>
-<tr class="odd">
-<td>Incubar</td>
-<td>incubadora a 30 ± 2 °C</td>
-</tr>
-<tr class="even">
-<td>Desinfectar</td>
-<td>etanol al 70 %</td>
-</tr>
-</tbody>
-</table>
-<p>Prepara los medios según su etiqueta. Guarda una placa y un tubo sin sembrar de cada lote de medio: son tus blancos.</p>
-</section>
-<section id="lección-4.-preparar-la-muestra" class="level2">
-<h2 class="anchored" data-anchor-id="lección-4.-preparar-la-muestra">Lección 4. Preparar la muestra</h2>
-<p>Guarda la muestra a temperatura ambiente; no la enfríes ni la congeles. Limpia el envase por fuera con desinfectante y sécalo con gasa estéril antes de abrir. Todo lo que sigue va junto a un mechero o en cabina.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Producto</th>
-<th>Primera dilución, 10⁻¹</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Líquido (champú, tónico)</td>
-<td>1 mL en 9 mL de caldo</td>
-</tr>
-<tr class="even">
-<td>Crema, loción o producto con aceite</td>
-<td>1 g con 1 mL de Tween 80 y de cinco a siete perlas; vórtex; después 8 mL de caldo</td>
-</tr>
-<tr class="odd">
-<td>Sin agua (bálsamo, labial)</td>
-<td>como crema o como polvo, según su textura</td>
-</tr>
-<tr class="even">
-<td>Polvo o sólido</td>
-<td>1 g con 1 mL de Tween 80, dispersa con espátula; después 8 mL de caldo</td>
+<td>Esterilización de todos los residuos</td>
+<td>ciclo validado por el laboratorio</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="lección-5.-diluir-y-sembrar" class="level2">
-<h2 class="anchored" data-anchor-id="lección-5.-diluir-y-sembrar">Lección 5. Diluir y sembrar</h2>
-<ol type="1">
-<li>Rotula tubos 10⁻¹, 10⁻² y 10⁻³, y las placas por debajo, con dilución, medio y fecha.</li>
-<li>Agita la 10⁻¹ y pasa 1 mL a un tubo con 9 mL de caldo: es la 10⁻².</li>
-<li>Con <strong>otra</strong> pipeta, pasa 1 mL de la 10⁻² a 9 mL: es la 10⁻³.</li>
-<li>Siembra 0.1 mL de cada dilución, por duplicado, y extiende con un asa nueva por dilución.</li>
-<li>Además, reparte 1 mL de la 10⁻¹ en dos placas (0.5 y 0.5 mL) o tres (0.3, 0.3 y 0.4). Haz un duplicado.</li>
-<li>Repite en el medio para hongos.</li>
-<li>Deja que el agar absorba. Para que sea rápido, seca antes las placas 48 h a 30 °C.</li>
-</ol>
+<section id="lección-3.-neutralización" class="level2">
+<h2 class="anchored" data-anchor-id="lección-3.-neutralización">Lección 3. Neutralización</h2>
+<p>La porción que llega a la placa contiene conservante. Si conserva actividad, el recuento sale bajo. El caldo letheen modificado inactiva en parte los sistemas de uso común y el polisorbato 80 dispersa la grasa <span class="citation" data-cites="bam23">(<a href="#ref-bam23" role="doc-biblioref">Huang et&nbsp;al. 2024</a>)</span>. La eficacia del neutralizante se verifica para cada fórmula con los cuatro tubos de <a href="../guias/gm-02-neutralizante.html">GM-02</a>.</p>
+</section>
+<section id="lección-4.-dilución-y-siembra" class="level2">
+<h2 class="anchored" data-anchor-id="lección-4.-dilución-y-siembra">Lección 4. Dilución y siembra</h2>
+<p>Una dilución decimal lleva una parte de muestra a diez partes totales. La serie busca una placa con colonias suficientes para reducir el azar y pocas para contarlas.</p>
 <div class="modelo" data-escena="petri">
 <div class="acto">
-<p>Con cien mil por gramo y la primera dilución, 0.1 mL trae unas mil colonias. Nadie puede contarlas.</p>
+<p>Con 10⁵ UFC/g y la dilución 10⁻¹, 0.1 mL trae unas mil colonias: incontable.</p>
 </div>
 <div class="acto">
-<p>Una dilución más: cerca de cien. Esta placa se cuenta.</p>
+<p>En 10⁻² se esperan cien: contable.</p>
 </div>
 <div class="acto">
-<p>Otra más: unas diez. Muy pocas para confiar.</p>
+<p>En 10⁻³, diez: bajo el intervalo de 15 a 300.</p>
 </div>
 <div class="acto">
-<p>Mueve la carga y la dilución. <a href="../laboratorio/contar-en-placa.html">Laboratorio: contar en placa</a>.</p>
+<p>Varíe carga y dilución. <a href="../laboratorio/contar-en-placa.html">Laboratorio virtual: contar en placa</a>.</p>
 </div>
 </div>
 </section>
-<section id="lección-6.-incubar" class="level2">
-<h2 class="anchored" data-anchor-id="lección-6.-incubar">Lección 6. Incubar</h2>
+<section id="lección-5.-incubación" class="level2">
+<h2 class="anchored" data-anchor-id="lección-5.-incubación">Lección 5. Incubación</h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Conteo</th>
+<th>Recuento</th>
+<th>Medio</th>
 <th>Temperatura</th>
 <th>Tiempo</th>
 <th>Posición</th>
@@ -630,120 +535,98 @@ window.Quarto = {
 <tbody>
 <tr class="odd">
 <td>Aerobios</td>
+<td>agar letheen modificado</td>
 <td>30 ± 2 °C</td>
 <td>48 h</td>
 <td>invertida</td>
 </tr>
 <tr class="even">
 <td>Hongos y levaduras</td>
+<td>agar malta o papa dextrosa con 40 ppm de clortetraciclina</td>
 <td>30 ± 2 °C</td>
-<td>5 días, y 48 h más si no creció nada</td>
-<td>sin invertir, hasta tres apiladas</td>
+<td>5 días; 48 h más si nada creció</td>
+<td>sin invertir</td>
+</tr>
+<tr class="odd">
+<td>Enriquecimiento</td>
+<td>caldo letheen modificado</td>
+<td>30 ± 2 °C</td>
+<td>7 días</td>
+<td>tubo</td>
 </tr>
 </tbody>
 </table>
-<p>No muevas las placas de hongos antes de tiempo: las esporas caen y siembran colonias nuevas.</p>
-<p><strong>Enriquecimiento.</strong> Incuba también los tubos que sobraron, a 30 °C, hasta 7 días. Si se enturbian, siémbralos en agar letheen y MacConkey. Un producto puede dar cero en placa y crecer en el tubo.</p>
+<p>Valores del capítulo 23 del BAM <span class="citation" data-cites="bam23">(<a href="#ref-bam23" role="doc-biblioref">Huang et&nbsp;al. 2024</a>)</span>.</p>
 </section>
-<section id="lección-7.-contar-y-calcular" class="level2">
-<h2 class="anchored" data-anchor-id="lección-7.-contar-y-calcular">Lección 7. Contar y calcular</h2>
-<p>Cuenta placas con 25 a 250 colonias para aerobios y de 10 a 150 para hongos y levaduras.</p>
-<p><span class="math display">\[N = \frac{\sum C}{\sum (V \times 10^{-n})}\]</span></p>
-<p><strong>Ejemplo resuelto.</strong> En la 10⁻¹ salieron 132 y 148 colonias con 0.1 mL; en la 10⁻², 14 y 11. Solo las dos primeras están en rango. La masa vista es 2 × 0.1 × 10⁻¹ = 0.02 g. N = 280/0.02 = 14 000 UFC/g.</p>
+<section id="lección-6.-cálculo-e-incertidumbre" class="level2">
+<h2 class="anchored" data-anchor-id="lección-6.-cálculo-e-incertidumbre">Lección 6. Cálculo e incertidumbre</h2>
+<p>El estimador de máxima verosimilitud para placas contadas es la suma de colonias entre la masa total observada <span class="citation" data-cites="bam3">(<a href="#ref-bam3" role="doc-biblioref">Zhang et&nbsp;al. 2026</a>)</span>:</p>
+<p><span class="math display">\[N = \frac{\sum C_i}{\sum V_i \times 10^{-n_i}}\]</span></p>
+<p>El intervalo de conteo es de 15 a 300 colonias para aerobios desde la edición de 2025 del capítulo 3, en lugar de 25 a 250 <span class="citation" data-cites="bam3">(<a href="#ref-bam3" role="doc-biblioref">Zhang et&nbsp;al. 2026</a>)</span>, y de 10 a 150 para hongos <span class="citation" data-cites="bam23">(<a href="#ref-bam23" role="doc-biblioref">Huang et&nbsp;al. 2024</a>)</span>.</p>
+<p><strong>Ejemplo resuelto.</strong> En 10⁻¹ con 0.1 mL se contaron 132 y 148 colonias; en 10⁻², 14 y 11, fuera de intervalo. N = 280/0.02 = 14 000 UFC/g, con intervalo de 95 % de 12 400 a 15 700.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Qué pasó</th>
-<th>Qué reportas</th>
+<th>Situación</th>
+<th>Informe</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Ninguna colonia en 1 mL de la 10⁻¹</td>
+<td>Sin colonias en 1 mL de 10⁻¹</td>
 <td>menos de 10 UFC/g</td>
 </tr>
 <tr class="even">
-<td>Todas con menos de 25</td>
-<td>el valor, marcado como estimado</td>
+<td>Todas las placas fuera de intervalo</td>
+<td>valor estimado, con asterisco</td>
 </tr>
 <tr class="odd">
-<td>Todas con más de 250</td>
-<td>«más de», y repites con más dilución</td>
+<td>Placas incontables</td>
+<td>mayor que; usar <code>MPN::apc</code> en R</td>
 </tr>
 <tr class="even">
-<td>Crecieron los blancos</td>
-<td>el ensayo no vale</td>
+<td>Crecimiento en blancos</td>
+<td>ensayo nulo</td>
 </tr>
 </tbody>
 </table>
-<p>Usa la <a href="../calculadoras/conteo.html">calculadora</a>, o anota tus placas en la hoja de laboratorio de la receta: hace la cuenta sola.</p>
+<p><a href="../calculadoras/conteo.html">Calculadora de conteo</a>.</p>
 </section>
-<section id="lección-8.-interpretar" class="level2">
-<h2 class="anchored" data-anchor-id="lección-8.-interpretar">Lección 8. Interpretar</h2>
-<p>ISO 17516, que el FDA cita como norma aceptada, pone el máximo así, sumando aerobios, hongos y levaduras:</p>
+<section id="lección-7.-límites" class="level2">
+<h2 class="anchored" data-anchor-id="lección-7.-límites">Lección 7. Límites</h2>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Producto</th>
-<th>Máximo</th>
+<th>Categoría</th>
+<th>Aerobios totales</th>
+<th>Especificados</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Ojos, mucosas y menores de 3 años</td>
-<td>100 UFC/g</td>
+<td>1: menores de 3 años, ojos, mucosas</td>
+<td>≤ 100 UFC/g o mL</td>
+<td>ausencia en 1 g o 1 mL</td>
 </tr>
 <tr class="even">
-<td>Los demás</td>
-<td>1000 UFC/g</td>
+<td>2: los demás</td>
+<td>≤ 1000 UFC/g o mL</td>
+<td>ausencia en 1 g o 1 mL</td>
 </tr>
 </tbody>
 </table>
-<p>Además, ausencia de los cuatro patógenos en 1 g. El conteo no los descarta: hace falta su ensayo.</p>
-<p><strong>Dos placas nunca dan igual.</strong> Si esperas 100 colonias, es normal ver de 80 a 120 solo por azar. Por eso se redondea a dos cifras.</p>
-<p><strong>Cuándo muestrear.</strong> Día 0, 28 y 90 de la estabilidad, y al final de la vida en uso. Toma también el agua y las arcillas: son las que más traen.</p>
+<p>La tabla A.9 del comité europeo recoge ISO 17516 y precisa que el total suma bacterias, levaduras y mohos. Por la variabilidad del método considera fuera de límite un resultado mayor que 200 o 2000 <span class="citation" data-cites="sccs2023">(<a href="#ref-sccs2023" role="doc-biblioref">SCCS 2023</a>)</span>. La regla de decisión completa está en <a href="../guias/gm-08-dictamen.html">GM-08</a>.</p>
 </section>
-<section id="lección-9.-buscar-patógenos" class="level2">
-<h2 class="anchored" data-anchor-id="lección-9.-buscar-patógenos">Lección 9. Buscar patógenos</h2>
-<p>Se enriquece la muestra en caldo, se siembra en un medio selectivo y se confirma la colonia sospechosa.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Microbio</th>
-<th>Norma</th>
-<th>Medio típico</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>Pseudomonas aeruginosa</em></td>
-<td>ISO 22717</td>
-<td>agar cetrimida</td>
-</tr>
-<tr class="even">
-<td><em>Staphylococcus aureus</em></td>
-<td>ISO 22718</td>
-<td>agar Baird-Parker</td>
-</tr>
-<tr class="odd">
-<td><em>Escherichia coli</em></td>
-<td>ISO 21150</td>
-<td>agar MacConkey</td>
-</tr>
-<tr class="even">
-<td><em>Candida albicans</em></td>
-<td>ISO 18416</td>
-<td>agar Sabouraud</td>
-</tr>
-</tbody>
-</table>
-<p>Estas normas son de pago y aquí solo se listan. La confirmación exige cepas de control, así que va a un laboratorio con nivel de bioseguridad 2.</p>
-</section>
-<section id="lección-10.-el-ensayo-del-conservante" class="level2">
-<h2 class="anchored" data-anchor-id="lección-10.-el-ensayo-del-conservante">Lección 10. El ensayo del conservante</h2>
-<p>Se contamina el producto a propósito y se cuenta qué queda a los 7, 14 y 28 días. ISO 11930 usa cinco cepas, todas con capacidad de enfermar. <strong>Encárgalo.</strong> Lo que sí puedes hacer es entender el informe.</p>
-<p><span class="math display">\[reducción = \log_{10}\frac{N_0}{N_t}\]</span></p>
-<p><strong>Ejemplo resuelto.</strong> Entra un millón y a los 7 días quedan 800. Reducción = log(1 000 000/800) = 3.1.</p>
+<section id="lección-8.-ensayo-de-desafío" class="level2">
+<h2 class="anchored" data-anchor-id="lección-8.-ensayo-de-desafío">Lección 8. Ensayo de desafío</h2>
+<p>Se inocula el producto y se mide la supervivencia. El comité europeo menciona <em>P. aeruginosa</em>, <em>S. aureus</em>, <em>C. albicans</em> y <em>A. brasiliensis</em>, y advierte que importa más la capacidad del microorganismo para contaminar el producto concreto que su posición taxonómica <span class="citation" data-cites="sccs2023">(<a href="#ref-sccs2023" role="doc-biblioref">SCCS 2023, 149</a>)</span>.</p>
+<p><span class="math display">\[RL = \log_{10}\frac{N_0}{N_t}\]</span></p>
+<p><strong>Ejemplo resuelto.</strong> De 10⁶ a 800 UFC/g en 7 días: RL = 3.1.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -751,80 +634,87 @@ window.Quarto = {
 </colgroup>
 <thead>
 <tr class="header">
-<th>Microbio</th>
-<th>Criterio A, según un resumen de laboratorio</th>
+<th>Microorganismo</th>
+<th>Criterio A, según un resumen de laboratorio <span class="citation" data-cites="microchem">(<a href="#ref-microchem" role="doc-biblioref">Microchem Laboratory 2026</a>)</span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Bacterias</td>
-<td>3 log a los 7 días; sin aumento después</td>
+<td>3 log a 7 días; sin aumento después</td>
 </tr>
 <tr class="even">
 <td><em>Candida albicans</em></td>
-<td>1 log a los 7 días; sin aumento después</td>
+<td>1 log a 7 días; sin aumento después</td>
 </tr>
 <tr class="odd">
 <td><em>Aspergillus brasiliensis</em></td>
-<td>sin aumento a 7 y 14 días; 1 log a los 28</td>
+<td>sin aumento a 7 y 14 días; 1 log a 28</td>
 </tr>
 </tbody>
 </table>
-<p><a href="../laboratorio/ensayo-del-conservante.html">Laboratorio: ensayo del conservante</a>.</p>
-<p><strong>Una práctica docente.</strong> Con levadura de pan, sin patógenos, puedes ver la curva: reparte el producto con y sin conservante, agrega la misma levadura a los dos, y cuenta en agar malta a 0, 1, 3 y 7 días con neutralizante. Enseña el método. No prueba que el producto sea seguro.</p>
+<p><a href="../laboratorio/ensayo-del-conservante.html">Laboratorio virtual: ensayo del conservante</a>.</p>
 </section>
-<section id="lección-11.-encontrar-de-dónde-vino" class="level2">
-<h2 class="anchored" data-anchor-id="lección-11.-encontrar-de-dónde-vino">Lección 11. Encontrar de dónde vino</h2>
+<section id="lección-9.-investigación-de-una-desviación" class="level2">
+<h2 class="anchored" data-anchor-id="lección-9.-investigación-de-una-desviación">Lección 9. Investigación de una desviación</h2>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>Dónde crece</th>
-<th>Primera sospecha</th>
-<th>Qué haces</th>
+<th>Hallazgo</th>
+<th>Hipótesis</th>
+<th>Comprobación</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Solo en el lote con agua del grifo</td>
-<td>el agua</td>
-<td>usa destilada recién abierta y cuenta el agua</td>
+<td>Solo el lote con agua de red</td>
+<td>agua</td>
+<td><a href="../guias/gm-06-ambiente.html">GM-06</a>, agua en tres puntos</td>
 </tr>
 <tr class="even">
-<td>En todos los lotes del día</td>
-<td>equipo o manos</td>
-<td>revisa limpieza; hisopo en superficies</td>
+<td>Todos los lotes del día</td>
+<td>equipo o personal</td>
+<td>hisopos antes y después de limpiar</td>
 </tr>
 <tr class="odd">
-<td>Después de abrir el envase</td>
+<td>Tras abrir el envase</td>
 <td>uso</td>
-<td>cambia tarro por bomba</td>
+<td>uso simulado, envase con bomba</td>
 </tr>
 <tr class="even">
-<td>A los 28 días y no al inicio</td>
-<td>conservante débil</td>
-<td>revisa pH, dosis y sistema</td>
+<td>A 28 días y no al inicio</td>
+<td>conservación insuficiente</td>
+<td>pH, dosis, reparto; ensayo de desafío</td>
 </tr>
 <tr class="odd">
-<td>En los blancos</td>
+<td>Blancos con crecimiento</td>
 <td>técnica</td>
-<td>repite todo</td>
+<td>repetir con medio nuevo</td>
 </tr>
 </tbody>
 </table>
-<p>Una placa abierta 30 min en la mesa te dice qué cae del aire.</p>
 </section>
-<section id="comprueba-lo-que-aprendiste" class="level2">
-<h2 class="anchored" data-anchor-id="comprueba-lo-que-aprendiste">Comprueba lo que aprendiste</h2>
+<section id="autoevaluación" class="level2">
+<h2 class="anchored" data-anchor-id="autoevaluación">Autoevaluación</h2>
 <div data-preguntas="microbiologia"></div>
 </section>
-<section id="fuentes" class="level2">
-<h2 class="anchored" data-anchor-id="fuentes">Fuentes</h2>
-<p>FDA, <em>Bacteriological Analytical Manual</em>, capítulo 23, <em>Methods for Cosmetics</em>, julio de 2024 (secciones A a H, J y K): preparación, siembra, incubación y límites. Capítulo 3, <em>Aerobic Plate Count</em>, para el rango de 25 a 250 y el cálculo (sin DOI). ISO 17516, 21149, 16212, 22717, 22718, 21150, 18416 y 11930: de pago, no consultadas. Criterio A: resumen de Microchem Laboratory. Conservación: Halla et al.&nbsp;2018, DOI <a href="https://doi.org/10.3390/molecules23071571">10.3390/molecules23071571</a>. La práctica con levadura y la comprobación en tres tubos son propuestas de este proyecto a partir de esas fuentes.</p>
+<section id="referencias" class="level2">
+<h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
+<p>Las normas ISO 17516, 21149, 16212, 18415, 22717, 22718, 21150, 18416 y 11930 son de pago y no se consultaron.</p>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-bam23" class="csl-entry" role="listitem">
+Huang, Jo, Anthony D. Hitchins, Tony T. Tran, y James E. McCarron. 2024. <em>Bacteriological Analytical Manual. Chapter 23: Methods for Cosmetics</em>. <span>U.S. Food and Drug Administration</span>.
+</div>
+<div id="ref-microchem" class="csl-entry" role="listitem">
+Microchem Laboratory. 2026. <em>Criterios de aceptación de <span>ISO</span> 11930, resumen de laboratorio</em>.
+</div>
+<div id="ref-sccs2023" class="csl-entry" role="listitem">
+SCCS. 2023. <em>The <span>SCCS</span> Notes of Guidance for the Testing of Cosmetic Ingredients and their Safety Evaluation, 12th revision</em>. SCCS/1647/22. Scientific Committee on Consumer Safety, European Commission.
+</div>
+<div id="ref-bam3" class="csl-entry" role="listitem">
+Zhang, Guodong, Martine Ferguson, y Robert J. Blodgett. 2026. <em>Bacteriological Analytical Manual. Chapter 3: Aerobic Plate Count</em>. <span>U.S. Food and Drug Administration</span>. <a href="https://www.fda.gov/food/laboratory-methods-food/bam-chapter-3-aerobic-plate-count">https://www.fda.gov/food/laboratory-methods-food/bam-chapter-3-aerobic-plate-count</a>.
+</div>
+</div>
 
 
 </section>

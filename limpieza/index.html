@@ -26,7 +26,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -45,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2cd0ff2c833b4e72470276043b4d4341.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-20f2d6b2ee51eb11c7f32a308fb87d98.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -240,8 +259,14 @@ window.Quarto = {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../guias/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guías de laboratorio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../laboratorios.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Laboratorios</span></a>
+ <span class="menu-text">Laboratorios virtuales</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -322,100 +347,141 @@ window.Quarto = {
 
 
 <figure class="cabeza figure" style="--color:#4d5a2c"><div class="marco"><img src="../fotos/jabonera.jpg" alt="Pilas de jabón de Alepo curándose" class="figure-img"></div><h1>Limpieza</h1></figure>
-<p>Aquí aprendes por qué limpia un tensioactivo, cómo se calcula un jabón y cómo se espesa un gel.</p>
-<section id="las-palabras-que-vas-a-usar" class="level2">
-<h2 class="anchored" data-anchor-id="las-palabras-que-vas-a-usar">Las palabras que vas a usar</h2>
+<p>Un limpiador retira suciedad grasa con tensioactivos. Esta sección relaciona la estructura de esas moléculas con su capacidad de limpiar, de irritar y de espesar, y desarrolla el cálculo de un jabón.</p>
+<section id="objetivos-de-aprendizaje" class="level2">
+<h2 class="anchored" data-anchor-id="objetivos-de-aprendizaje">Objetivos de aprendizaje</h2>
+<ol type="1">
+<li>Explicar los mecanismos de remoción de grasa por debajo y por encima de la concentración micelar crítica.</li>
+<li>Relacionar el parámetro de empaquetamiento con la forma de la micela y la viscosidad.</li>
+<li>Calcular la materia prima necesaria a partir de su materia activa.</li>
+<li>Calcular la base de un jabón con sobreengrase y reconocer sus riesgos.</li>
+</ol>
+</section>
+<section id="vocabulario" class="level2">
+<h2 class="anchored" data-anchor-id="vocabulario">Vocabulario</h2>
 <div class="fichas sin-glosa">
 <div class="termino-caja">
 <p><strong>pH</strong></p>
-<p>Medida de acidez. De 0 a 7 es ácido, 7 es neutro y hasta 14 es alcalino. <em>La piel ronda de 4 a 6.</em></p>
+<p>Logaritmo negativo de la actividad del ion hidrógeno. A 25 °C, 7 es neutro; por debajo es ácido y por encima, alcalino. <em>La piel ronda de 4 a 6.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Tensioactivo</strong></p>
-<p>Molécula con cabeza que ama el agua y cola que ama la grasa. Limpia, hace espuma o emulsiona. <em>Sodium Laureth Sulfate.</em></p>
+<p>Molécula con cabeza hidrófila y cola hidrófoba que reduce la tensión interfacial. <em>Sodium Laureth Sulfate.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Aniónico</strong></p>
-<p>Tensioactivo con carga negativa: limpia y hace espuma. <em>SLES.</em></p>
+<p>Tensioactivo con cabeza de carga negativa. Aporta detergencia y espuma. <em>SLES.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Catiónico</strong></p>
-<p>Tensioactivo con carga positiva: se pega al cabello y lo suaviza. <em>Cloruro de cetrimonio.</em></p>
+<p>Tensioactivo con cabeza de carga positiva. Se adsorbe en superficies negativas como el cabello. <em>Cloruro de cetrimonio.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Anfótero</strong></p>
-<p>Cambia de carga con el pH. Suaviza la mezcla. <em>Cocamidopropil betaína.</em></p>
+<p>Tensioactivo cuya carga depende del pH. Se usa como cotensioactivo. <em>Cocamidopropil betaína.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>No iónico</strong></p>
-<p>Sin carga. Suave. <em>Coco glucósido.</em></p>
+<p>Tensioactivo sin carga en la cabeza. <em>Coco glucósido.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Micela</strong></p>
-<p>Grupo de tensioactivos con las colas hacia adentro. Ahí se esconde la grasa.</p>
+<p>Agregado de tensioactivos con las colas hacia el interior, en medio acuoso.</p>
 </div>
 <div class="termino-caja">
 <p><strong>CMC</strong></p>
-<p>Concentración micelar crítica: desde ahí se forman micelas. <em>Dodecilsulfato de sodio, cerca de 8.2 mM.</em></p>
+<p>Concentración micelar crítica: valor a partir del cual se forman micelas. <em>Dodecilsulfato de sodio, cerca de 8.2 mM.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Materia activa</strong></p>
-<p>La parte del ingrediente que es tensioactivo. El resto es agua. <em>SLES líquido: 27 %.</em></p>
+<p>Fracción en masa del ingrediente comercial que corresponde al tensioactivo. <em>SLES líquido: 27 %.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Curva de sal</strong></p>
-<p>Cómo cambia la viscosidad al agregar sal: sube hasta un máximo y luego baja.</p>
+<p>Viscosidad en función de la concentración de electrolito. Presenta un máximo.</p>
 </div>
 <div class="termino-caja">
 <p><strong>Jabón</strong></p>
-<p>Sal de un ácido graso. Se hace con grasa y una base.</p>
+<p>Sal de un ácido graso.</p>
 </div>
 <div class="termino-caja">
 <p><strong>Saponificación</strong></p>
-<p>Reacción de una grasa con una base. Da jabón y glicerina.</p>
+<p>Hidrólisis alcalina de un éster. Con un triglicérido da jabón y glicerina.</p>
 </div>
 <div class="termino-caja">
 <p><strong>SAP</strong></p>
-<p>Miligramos de KOH que saponifican un gramo de grasa. <em>Coco: de 248 a 265.</em></p>
+<p>Índice de saponificación: miligramos de KOH que consume un gramo de grasa. <em>Coco: de 248 a 265.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Sobreengrase</strong></p>
-<p>Parte del aceite que dejas sin reaccionar a propósito. <em>5 %.</em></p>
+<p>Fracción de la grasa que se deja sin saponificar. <em>5 %.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Lejía</strong></p>
-<p>En jabonería, la solución de sosa o potasa en agua. El cloro de lavar es otra cosa.</p>
+<p>En jabonería, solución de hidróxido de sodio o de potasio. El hipoclorito doméstico es otra sustancia.</p>
 </div>
 <div class="termino-caja">
 <p><strong>Curado</strong></p>
-<p>Semanas en que el jabón pierde agua y termina de reaccionar.</p>
+<p>Período en que un jabón pierde agua y completa la reacción.</p>
 </div>
 <div class="termino-caja">
 <p><strong>Syndet</strong></p>
-<p>Barra o líquido limpiador sin jabón, hecho con tensioactivos sintéticos.</p>
+<p>Limpiador con tensioactivos sintéticos y sin jabón.</p>
 </div>
 </div>
 </section>
-<section id="lección-1.-cómo-se-quita-la-grasa" class="level2">
-<h2 class="anchored" data-anchor-id="lección-1.-cómo-se-quita-la-grasa">Lección 1. Cómo se quita la grasa</h2>
-<p>El agua sola no moja la grasa. Un tensioactivo tiene una cabeza que ama el agua y una cola que ama la grasa, y se coloca entre las dos. Limpia de cuatro maneras: enrolla la grasa hasta desprenderla, la parte en gotas, la ablanda y la esconde dentro de micelas.</p>
+<section id="lección-1.-mecanismos-de-limpieza" class="level2">
+<h2 class="anchored" data-anchor-id="lección-1.-mecanismos-de-limpieza">Lección 1. Mecanismos de limpieza</h2>
+<p>Un tensioactivo tiene una cabeza hidrófila y una cola hidrófoba. Se concentra en las interfases y baja la tensión interfacial entre agua y grasa. La remoción ocurre por cuatro vías: enrollamiento de la gota por aumento del ángulo de contacto, emulsificación, penetración con ablandamiento y solubilización en micelas. Por debajo de la concentración micelar crítica predominan las dos primeras; por encima, la solubilización <span class="citation" data-cites="thompson2023">(<a href="#ref-thompson2023" role="doc-biblioref">Thompson et&nbsp;al. 2023</a>)</span>.</p>
 <div class="modelo" data-escena="micelas">
 <div class="acto">
-<p>Con poco tensioactivo, cada molécula anda suelta.</p>
+<p>A baja concentración las moléculas están dispersas y ocupan la interfase.</p>
 </div>
 <div class="acto">
-<p>Pasada la concentración micelar crítica, las que sobran se juntan: colas adentro, cabezas afuera.</p>
+<p>Sobre la concentración micelar crítica, CMC, las moléculas en exceso forman agregados con las colas hacia adentro.</p>
 </div>
 <div class="acto">
-<p>Con sal, la CMC baja. Con NaCl 0.10 M, la del dodecilsulfato de sodio pasa de unos 8.2 a 1.49 mM.</p>
+<p>Un electrolito apantalla la repulsión entre cabezas y baja la CMC. Con NaCl 0.10 M, la del dodecilsulfato de sodio pasa de unos 8.2 a 1.49 mM <span class="citation" data-cites="mukerjee1971">(<a href="#ref-mukerjee1971" role="doc-biblioref">Mukerjee y Mysels 1971</a>)</span>.</p>
 </div>
 <div class="acto">
-<p>Mueve la cantidad y la CMC. <a href="../laboratorio/sal-y-micelas.html">Laboratorio: sal y micelas</a>.</p>
+<p>Varíe concentración y CMC. <a href="../laboratorio/sal-y-micelas.html">Laboratorio virtual: sal y micelas</a>.</p>
 </div>
 </div>
+<section id="forma-de-la-micela" class="level3">
+<h3 class="anchored" data-anchor-id="forma-de-la-micela">Forma de la micela</h3>
+<p>El parámetro de empaquetamiento compara el volumen de la cola con el espacio que deja la cabeza:</p>
+<p><span class="math display">\[p = \frac{v}{a_0\, l}\]</span></p>
+<p>donde <span class="math inline">\(v\)</span> es el volumen de la cola, <span class="math inline">\(l\)</span> su longitud y <span class="math inline">\(a_0\)</span> el área de la cabeza en la interfase <span class="citation" data-cites="thompson2023">(<a href="#ref-thompson2023" role="doc-biblioref">Thompson et&nbsp;al. 2023</a>)</span>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><span class="math inline">\(p\)</span></th>
+<th>Agregado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>menor que 1/3</td>
+<td>micela esférica</td>
+</tr>
+<tr class="even">
+<td>1/3 a 1/2</td>
+<td>micela cilíndrica, vermiforme</td>
+</tr>
+<tr class="odd">
+<td>1/2 a 1</td>
+<td>vesícula</td>
+</tr>
+<tr class="even">
+<td>cerca de 1</td>
+<td>lámina</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="lección-2.-cuatro-familias" class="level2">
-<h2 class="anchored" data-anchor-id="lección-2.-cuatro-familias">Lección 2. Cuatro familias</h2>
+</section>
+<section id="lección-2.-clasificación-y-tolerancia" class="level2">
+<h2 class="anchored" data-anchor-id="lección-2.-clasificación-y-tolerancia">Lección 2. Clasificación y tolerancia</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 25%">
@@ -427,7 +493,7 @@ window.Quarto = {
 <tr class="header">
 <th>Familia</th>
 <th>Carga</th>
-<th>Papel</th>
+<th>Función principal</th>
 <th>Ejemplo</th>
 </tr>
 </thead>
@@ -435,67 +501,70 @@ window.Quarto = {
 <tr class="odd">
 <td>Aniónica</td>
 <td>negativa</td>
-<td>limpia y hace espuma</td>
+<td>detergencia y espuma</td>
 <td>Sodium Laureth Sulfate</td>
 </tr>
 <tr class="even">
 <td>Anfótera</td>
-<td>cambia con el pH</td>
-<td>suaviza y sostiene la espuma</td>
+<td>depende del pH</td>
+<td>cotensioactivo, reduce irritación</td>
 <td>Cocamidopropyl Betaine</td>
 </tr>
 <tr class="odd">
 <td>No iónica</td>
 <td>ninguna</td>
-<td>suave</td>
+<td>cotensioactivo suave, solubilizante</td>
 <td>Coco-Glucoside</td>
 </tr>
 <tr class="even">
 <td>Catiónica</td>
 <td>positiva</td>
-<td>acondiciona</td>
+<td>acondicionamiento</td>
 <td>Cetrimonium Chloride</td>
 </tr>
 </tbody>
 </table>
-<p>Un limpiador suele llevar un aniónico, hasta 10 % de activo, y un anfótero, de 1 a 5 %. Juntos forman micelas mixtas con menos carga: irritan menos y espesan más.</p>
-<p><strong>La espuma engaña.</strong> La cantidad de espuma no dice cuánto limpia.</p>
-<p><strong>Por qué irrita.</strong> El tensioactivo hincha las proteínas de la piel y se lleva lípidos. Los limpiadores con pH mayor que 8 la hinchan más.</p>
+<p>Un limpiador típico lleva un aniónico, hasta 10 % de activo, y un cotensioactivo, de 1 a 5 %. La betaína forma micelas mixtas con el aniónico, baja su densidad de carga, reduce la irritación y favorece micelas vermiformes <span class="citation" data-cites="thompson2023">(<a href="#ref-thompson2023" role="doc-biblioref">Thompson et&nbsp;al. 2023</a>)</span>.</p>
+<p><strong>Irritación.</strong> El tensioactivo forma complejos con las proteínas del estrato córneo, las hincha y extrae lípidos <span class="citation" data-cites="thompson2023">(<a href="#ref-thompson2023" role="doc-biblioref">Thompson et&nbsp;al. 2023</a>)</span>. Los limpiadores con pH mayor que 8 producen más hinchazón, y el jabón extrae más colesterol y proteína soluble que una barra de isetionato <span class="citation" data-cites="mijaljica2022">(<a href="#ref-mijaljica2022" role="doc-biblioref">Mijaljica et&nbsp;al. 2022</a>)</span>.</p>
+<p><strong>Espuma y limpieza.</strong> La altura de espuma no mide detergencia. Se registra como atributo sensorial.</p>
 </section>
-<section id="lección-3.-materia-activa" class="level2">
-<h2 class="anchored" data-anchor-id="lección-3.-materia-activa">Lección 3. Materia activa</h2>
-<p>El tensioactivo se vende diluido. Para saber cuánto pesar:</p>
-<p><span class="math display">\[g = \frac{lote \times \%\,activo\ que\ quieres}{\%\,activo\ del\ ingrediente}\]</span></p>
-<p><strong>Ejemplo resuelto.</strong> Quieres 500 g de gel con 8 % de SLES y tienes líquido al 27 %. Pesas 500 × 8/27 = 148.1 g. El agua que trae ese líquido cuenta como parte del agua de la fórmula.</p>
-<p>Usa la <a href="../calculadoras/activa.html">calculadora</a> o el <a href="../laboratorio/activo-de-un-champu.html">laboratorio de activo</a>.</p>
-<p><strong>Cuidado.</strong> En glucósidos, «sólidos» y «activo» no son lo mismo: el residuo seco incluye sal.</p>
+<section id="lección-3.-balance-de-materia-activa" class="level2">
+<h2 class="anchored" data-anchor-id="lección-3.-balance-de-materia-activa">Lección 3. Balance de materia activa</h2>
+<p>Las materias primas comerciales llegan diluidas. Un balance de masa sobre el tensioactivo da la cantidad que se pesa:</p>
+<p><span class="math display">\[m_{mp} = \frac{M\, w_{obj}}{w_{com}}\]</span></p>
+<p>con <span class="math inline">\(M\)</span> la masa del lote, <span class="math inline">\(w_{obj}\)</span> el porcentaje activo deseado y <span class="math inline">\(w_{com}\)</span> el del certificado del lote.</p>
+<p><strong>Ejemplo resuelto.</strong> 500 g de gel con 8 % de SLES a partir de un líquido al 27 %: 500 × 8/27 = 148.1 g. El agua de esa materia prima, 108.1 g, se descuenta del agua de la fórmula.</p>
+<p><strong>Materia activa y sólidos.</strong> En glucósidos y anfoacetatos el residuo seco incluye sal y fracción no tensioactiva. El certificado dice cuál de las dos cifras informa.</p>
+<p>Herramientas: <a href="../calculadoras/activa.html">calculadora</a> y <a href="../laboratorio/activo-de-un-champu.html">laboratorio virtual</a>.</p>
 </section>
-<section id="lección-4.-espesar-con-sal" class="level2">
-<h2 class="anchored" data-anchor-id="lección-4.-espesar-con-sal">Lección 4. Espesar con sal</h2>
-<p>La sal tapa la repulsión entre cabezas. Las micelas crecen, se enredan y el líquido espesa. Pasado un máximo se ramifican y la viscosidad cae. Más sal ya no la recupera.</p>
-<p>En una mezcla con 10 % total de betaína y SLES, 2 a 8, el máximo estuvo cerca de 0.6 % de NaCl. El tuyo será otro: traza tu curva en pasos de 0.2 %.</p>
-<p>Los glucósidos no espesan con sal. Se usa una goma o un polímero.</p>
+<section id="lección-4.-reología-la-curva-de-sal" class="level2">
+<h2 class="anchored" data-anchor-id="lección-4.-reología-la-curva-de-sal">Lección 4. Reología: la curva de sal</h2>
+<p>El catión del electrolito apantalla las cabezas cargadas. Baja <span class="math inline">\(a_0\)</span>, sube <span class="math inline">\(p\)</span> y las micelas pasan de esferas a cilindros que se entrelazan: la viscosidad aumenta. Con más sal las micelas se ramifican y la red fluye; la viscosidad cae y a concentración alta se separan fases <span class="citation" data-cites="thompson2023 slavova2024">(<a href="#ref-thompson2023" role="doc-biblioref">Thompson et&nbsp;al. 2023</a>; <a href="#ref-slavova2024" role="doc-biblioref">Slavova et&nbsp;al. 2024</a>)</span>.</p>
+<p>Una mezcla de betaína y SLES 2 a 8, con 10 % total a 25 °C, tuvo su máximo cerca de 0.6 % de NaCl <span class="citation" data-cites="thompson2023">(<a href="#ref-thompson2023" role="doc-biblioref">Thompson et&nbsp;al. 2023</a>)</span>. El eje de viscosidad de esa figura parece tener un error de unidades, así que aquí solo se usa la posición del máximo.</p>
+<p><strong>Procedimiento.</strong> Preparar 500 g de base, dividir en diez porciones y agregar NaCl en pasos de 0.2 %. Medir a la misma temperatura y velocidad después de 24 h. Elegir una concentración menor que la del máximo: pasado el pico, agregar sal empeora.</p>
+<p>Los glucósidos no responden a la sal porque su cabeza carece de carga. Se espesan con un polímero.</p>
 </section>
-<section id="lección-5.-jabón" class="level2">
-<h2 class="anchored" data-anchor-id="lección-5.-jabón">Lección 5. Jabón</h2>
-<p>Grasa y base dan jabón y glicerina. El SAP dice cuánta base pide cada aceite:</p>
-<p><span class="math display">\[m_{NaOH} = \sum \frac{m_i\,SAP_i}{1000}\cdot\frac{40.00}{56.11}\,(1 - s)\]</span></p>
-<p>donde <span class="math inline">\(s\)</span> es el sobreengrase.</p>
+<section id="lección-5.-saponificación" class="level2">
+<h2 class="anchored" data-anchor-id="lección-5.-saponificación">Lección 5. Saponificación</h2>
+<p>Un triglicérido reacciona con tres equivalentes de base y da tres jabones y glicerina. El índice de saponificación, SAP, son los miligramos de KOH que consume un gramo de grasa. La base para una mezcla es:</p>
+<p><span class="math display">\[m_{NaOH} = \frac{40.00}{56.11}\,(1 - s)\sum_i \frac{m_i\,SAP_i}{1000}\]</span></p>
+<p>donde <span class="math inline">\(s\)</span> es el sobreengrase, la fracción de grasa que se deja sin reaccionar. El cociente convierte moles de KOH en NaOH.</p>
 <div class="modelo" data-escena="jabon">
 <div class="acto">
-<p>Una grasa es glicerina con tres cadenas.</p>
+<p>Un triglicérido: glicerina esterificada con tres ácidos grasos.</p>
 </div>
 <div class="acto">
-<p>Llega la lejía, que en jabonería es la solución de sosa: una base por cadena. El cloro de lavar es otra sustancia. <strong>La sosa quema piel y ojos:</strong> guantes, lentes y manga larga.</p>
+<p>La lejía de jabonería es la solución de hidróxido de sodio. Cada éster consume un equivalente. <strong>Es corrosiva:</strong> guantes, lentes y manga larga. El cloro de lavar es otra sustancia.</p>
 </div>
 <div class="acto">
-<p>Quedan tres jabones y una glicerina.</p>
+<p>Productos: tres carboxilatos de sodio y una glicerina.</p>
 </div>
 <div class="acto">
-<p>El jabón mete la cola en la grasa y deja la cabeza en el agua. Así la arrastra.</p>
+<p>La cola del jabón entra en la grasa y la cabeza queda en el agua.</p>
 </div>
 </div>
-<p><strong>Ejemplo resuelto.</strong> 500 g de oliva con SAP 190 y 5 % de sobreengrase: 500 × 190/1000 × 40.00/56.11 × 0.95 = 64.3 g de NaOH.</p>
+<p><strong>Ejemplo resuelto.</strong> 500 g de aceite de oliva, SAP 190 y 5 % de sobreengrase: 500 × 190/1000 × 40.00/56.11 × 0.95 = 64.3 g de NaOH.</p>
+<p>El Codex publica el SAP como intervalo <span class="citation" data-cites="codex210">(<a href="#ref-codex210" role="doc-biblioref">Codex Alimentarius 2015</a>)</span>. El cálculo usa el valor menor, que deja aceite en exceso y evita álcali libre.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -503,43 +572,70 @@ window.Quarto = {
 </colgroup>
 <thead>
 <tr class="header">
-<th>Regla de seguridad</th>
-<th>Por qué</th>
+<th>Medida de seguridad</th>
+<th>Motivo</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>La sosa se agrega al agua</td>
-<td>al revés hierve y salpica</td>
+<td>Agregar la sosa al agua</td>
+<td>la disolución libera calor; al revés proyecta líquido</td>
 </tr>
 <tr class="even">
 <td>Ventilación</td>
-<td>suelta vapor irritante</td>
+<td>el aerosol irrita</td>
 </tr>
 <tr class="odd">
 <td>Balanza de 0.1 g</td>
-<td>un error deja álcali libre</td>
+<td>un error de pesada deja álcali libre</td>
 </tr>
 <tr class="even">
-<td>Vinagre lejos</td>
-<td>neutralizar sobre la piel da calor; se enjuaga con agua</td>
+<td>Enjuague con agua 15 min ante contacto</td>
+<td>neutralizar con vinagre sobre la piel libera calor</td>
 </tr>
 </tbody>
 </table>
-<p>Dureza, limpieza y cremosidad, como las dan las calculadoras populares, son sumas de ácidos grasos. Son convenciones. El SAP y el índice de yodo sí se miden.</p>
-<p>El pH de un jabón va de 8.5 a 11.0 según la fuente. Un syndet queda de 5.5 a 7.0.</p>
+<p><strong>Indicadores.</strong> Dureza, limpieza y cremosidad, como las dan las calculadoras populares, son sumas de ácidos grasos sin método normalizado. El SAP y el índice de yodo se miden.</p>
+<p><strong>pH.</strong> Un jabón queda de 8.5 a 11.0 y un syndet, de 5.5 a 7.0; la piel, de 4.0 a 6.0 <span class="citation" data-cites="mijaljica2022">(<a href="#ref-mijaljica2022" role="doc-biblioref">Mijaljica et&nbsp;al. 2022</a>)</span>.</p>
 </section>
-<section id="qué-puedes-hacer" class="level2">
-<h2 class="anchored" data-anchor-id="qué-puedes-hacer">Qué puedes hacer</h2>
+<section id="alcance-de-la-evidencia" class="level2">
+<h2 class="anchored" data-anchor-id="alcance-de-la-evidencia">Alcance de la evidencia</h2>
+<p>Los mecanismos proceden de una revisión <span class="citation" data-cites="thompson2023">(<a href="#ref-thompson2023" role="doc-biblioref">Thompson et&nbsp;al. 2023</a>)</span> y de trabajos de micelas. Los porcentajes de gel de ducha, limpiador facial y agua micelar no tienen fuente abierta localizada; las recetas de esos productos son propuestas.</p>
+</section>
+<section id="productos-de-esta-sección" class="level2">
+<h2 class="anchored" data-anchor-id="productos-de-esta-sección">Productos de esta sección</h2>
 <div class="tarjas" data-productos="limpieza"></div>
 </section>
-<section id="comprueba-lo-que-aprendiste" class="level2">
-<h2 class="anchored" data-anchor-id="comprueba-lo-que-aprendiste">Comprueba lo que aprendiste</h2>
+<section id="autoevaluación" class="level2">
+<h2 class="anchored" data-anchor-id="autoevaluación">Autoevaluación</h2>
 <div data-preguntas="limpieza"></div>
 </section>
-<section id="fuentes" class="level2">
-<h2 class="anchored" data-anchor-id="fuentes">Fuentes</h2>
-<p>Codex CXS 210-1999 (ed.&nbsp;2015). Baki 2023, ISBN 978-1-119-70977-0, pp.&nbsp;184-236. Mukerjee y Mysels 1971, DOI <a href="https://doi.org/10.6028/NBS.NSRDS.36">10.6028/NBS.NSRDS.36</a>. Thompson et al.&nbsp;2023 y Mijaljica et al.&nbsp;2022, citados en la nota 02 de la investigación.</p>
+<section id="referencias" class="level2">
+<h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
+<p>El efecto del electrolito sobre la CMC se estudió en Corrin y Harkins <span class="citation" data-cites="corrin1947">(<a href="#ref-corrin1947" role="doc-biblioref">1947</a>)</span>. Los procesos siguen a Baki <span class="citation" data-cites="baki2023">(<a href="#ref-baki2023" role="doc-biblioref">2023, 184-236</a>)</span>.</p>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-baki2023" class="csl-entry" role="listitem">
+Baki, Gabriella. 2023. <em>Introduction to Cosmetic Formulation and Technology</em>. 2.ª ed. Wiley. ISBN 978-1-119-70977-0.
+</div>
+<div id="ref-codex210" class="csl-entry" role="listitem">
+Codex Alimentarius. 2015. <em>Norma para aceites vegetales especificados, <span>CXS</span> 210-1999</em>. <span>FAO y OMS</span>.
+</div>
+<div id="ref-corrin1947" class="csl-entry" role="listitem">
+Corrin, M. L., y William D. Harkins. 1947. <span>«The Effect of Salts on the Critical Concentration for the Formation of Micelles in Colloidal Electrolytes»</span>. <em>Journal of the American Chemical Society</em> 69 (3): 683-88. <a href="https://doi.org/10.1021/ja01195a065">https://doi.org/10.1021/ja01195a065</a>.
+</div>
+<div id="ref-mijaljica2022" class="csl-entry" role="listitem">
+Mijaljica, Dalibor, Fabrizio Spada, y Ian P. Harrison. 2022. <span>«Skin Cleansing without or with Compromise: Soaps and Syndets»</span>. <em>Molecules</em> 27 (6): 2010. <a href="https://doi.org/10.3390/molecules27062010">https://doi.org/10.3390/molecules27062010</a>.
+</div>
+<div id="ref-mukerjee1971" class="csl-entry" role="listitem">
+Mukerjee, Pasupati, y Karol J. Mysels. 1971. <em>Critical micelle concentrations of aqueous surfactant systems</em>. NSRDS-NBS 36. National Bureau of Standards. <a href="https://doi.org/10.6028/NBS.NSRDS.36">https://doi.org/10.6028/NBS.NSRDS.36</a>.
+</div>
+<div id="ref-slavova2024" class="csl-entry" role="listitem">
+Slavova, Tatiana G., Gergana M. Radulova, y Krassimir D. Danov. 2024. <span>«Saturated Micellar Networks: Phase Separation and Nanoemulsification Capacity»</span>. <em>Colloids and Interfaces</em> 8 (1): 11. <a href="https://doi.org/10.3390/colloids8010011">https://doi.org/10.3390/colloids8010011</a>.
+</div>
+<div id="ref-thompson2023" class="csl-entry" role="listitem">
+Thompson, Courtney J., Nick Ainger, Pierre Starck, Oleksandr O. Mykhaylyk, y Anthony J. Ryan. 2023. <span>«Shampoo Science: A Review of the Physiochemical Processes behind the Function of a Shampoo»</span>. <em>Macromolecular Chemistry and Physics</em> 224 (3): 2200420. <a href="https://doi.org/10.1002/macp.202200420">https://doi.org/10.1002/macp.202200420</a>.
+</div>
+</div>
 
 
 </section>

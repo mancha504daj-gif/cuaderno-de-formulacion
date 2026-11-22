@@ -26,7 +26,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -45,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2cd0ff2c833b4e72470276043b4d4341.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-20f2d6b2ee51eb11c7f32a308fb87d98.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -73,6 +92,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -211,8 +259,14 @@ ul.task-list li input[type="checkbox"] {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../guias/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guías de laboratorio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../laboratorios.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Laboratorios</span></a>
+ <span class="menu-text">Laboratorios virtuales</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -293,105 +347,114 @@ ul.task-list li input[type="checkbox"] {
 
 
 <figure class="cabeza figure" style="--color:#b3245c"><div class="marco"><img src="../fotos/piel.jpg" alt="Frasco de crema abierto con su tapa azul" class="figure-img"></div><h1>Cuidado de la piel</h1></figure>
-<p>Aquí aprendes cómo está hecha la piel, qué hace cada tipo de ingrediente y cómo se arma una crema. Al final eliges un producto y lo llevas al laboratorio.</p>
-<section id="las-palabras-que-vas-a-usar" class="level2">
-<h2 class="anchored" data-anchor-id="las-palabras-que-vas-a-usar">Las palabras que vas a usar</h2>
+<p>Un producto hidratante modifica el contenido de agua y la organización de los lípidos del estrato córneo. Esta sección describe esa estructura, clasifica los ingredientes por su mecanismo y desarrolla el diseño de una emulsión O/W.</p>
+<section id="objetivos-de-aprendizaje" class="level2">
+<h2 class="anchored" data-anchor-id="objetivos-de-aprendizaje">Objetivos de aprendizaje</h2>
+<ol type="1">
+<li>Describir la composición del estrato córneo y el papel de sus lípidos.</li>
+<li>Distinguir los mecanismos humectante, emoliente y oclusivo, y sus límites.</li>
+<li>Elegir una fase oleosa a partir de extensibilidad y viscosidad.</li>
+<li>Plantear una loción O/W y calcular sus masas.</li>
+</ol>
+</section>
+<section id="vocabulario" class="level2">
+<h2 class="anchored" data-anchor-id="vocabulario">Vocabulario</h2>
 <div class="fichas sin-glosa">
 <div class="termino-caja">
 <p><strong>Anhidro</strong></p>
-<p>Sin agua. <em>Un bálsamo labial.</em></p>
+<p>Sin agua en la fórmula. <em>Un bálsamo labial.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Bálsamo</strong></p>
-<p>En este sitio, un producto sin agua, sólido o semisólido. <em>Bálsamo labial.</em></p>
+<p>En este sitio, forma anhidra sólida o semisólida. <em>Bálsamo labial.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Emulsión</strong></p>
-<p>Gotas de un líquido repartidas dentro de otro con el que no se mezcla. <em>La leche: grasa en agua.</em></p>
+<p>Dispersión de un líquido en otro con el que es inmiscible, estabilizada por un emulsionante. <em>La leche: grasa en agua.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>O/W</strong></p>
-<p>Aceite en agua: las gotas son de aceite. Se enjuaga y se siente ligera. <em>Casi todas las lociones.</em></p>
+<p>Emulsión con gotas de aceite en una fase continua acuosa. <em>Casi todas las lociones.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>W/O</strong></p>
-<p>Agua en aceite: las gotas son de agua. Resiste el agua y se siente más grasa. <em>Muchas bases de maquillaje.</em></p>
+<p>Emulsión con gotas de agua en una fase continua oleosa. <em>Muchas bases de maquillaje.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Emulsionante</strong></p>
-<p>Molécula con una parte que ama el agua y otra que ama el aceite. Se coloca entre los dos. <em>Tween 80.</em></p>
+<p>Molécula anfifílica que se adsorbe en la interfase y retarda la coalescencia. <em>Tween 80.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>HLB</strong></p>
-<p>Balance hidrófilo lipófilo. Escala de 0 a 20 para emulsionantes no iónicos: bajo ama el aceite, alto ama el agua. <em>Span 80 tiene 4.3 y Tween 80 tiene 15.0.</em></p>
+<p>Balance hidrófilo lipófilo: escala empírica de 0 a 20 para emulsionantes no iónicos. <em>Span 80 tiene 4.3 y Tween 80 tiene 15.0.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Pseudoplástico</strong></p>
-<p>Se adelgaza al frotarlo y recupera cuerpo en reposo. <em>La goma xantana.</em></p>
+<p>Fluido cuya viscosidad disminuye al aumentar la velocidad de corte. <em>Solución de goma xantana.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Estrato córneo</strong></p>
-<p>La capa externa de la piel: células planas con lípidos entre ellas. <em>Como ladrillos con mortero.</em></p>
+<p>Capa externa de la epidermis, formada por corneocitos y láminas de lípidos. <em>Modelo de ladrillos y mortero.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Corneocito</strong></p>
-<p>Célula plana y muerta de la capa externa.</p>
+<p>Célula sin núcleo, llena de queratina, del estrato córneo.</p>
 </div>
 <div class="termino-caja">
 <p><strong>Pérdida de agua transepidérmica</strong></p>
-<p>Agua que sale de la piel por evaporación. Se mide en g/m² h. <em>Sube con aire seco.</em></p>
+<p>Flujo de agua que difunde a través de la piel y se evapora. Se expresa en g/(m² h). <em>Sube con aire seco.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Factor natural de hidratación</strong></p>
-<p>Moléculas que retienen agua dentro del corneocito. Cerca de la mitad son aminoácidos. <em>Lactato, urea.</em></p>
+<p>Mezcla de moléculas higroscópicas del corneocito. Cerca de la mitad son aminoácidos. <em>Lactato, urea.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Humectante</strong></p>
-<p>Atrae agua. <em>Glicerina.</em></p>
+<p>Sustancia higroscópica que retiene agua en el estrato córneo. <em>Glicerina.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Emoliente</strong></p>
-<p>Rellena y suaviza. <em>Triglicérido caprílico/cáprico.</em></p>
+<p>Lípido o éster que rellena los espacios entre escamas y reduce la fricción. <em>Triglicérido caprílico/cáprico.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Oclusivo</strong></p>
-<p>Forma una película que frena la salida de agua. <em>Vaselina.</em></p>
+<p>Sustancia hidrófoba que forma una película y reduce la evaporación. <em>Vaselina.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Activo</strong></p>
-<p>Ingrediente que se pone por un efecto concreto. <em>Niacinamida.</em></p>
+<p>Ingrediente incorporado por un efecto específico. <em>Niacinamida.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Sérum</strong></p>
-<p>Producto fluido con activos en dosis más alta.</p>
+<p>Forma fluida con mayor proporción de activos.</p>
 </div>
 </div>
 </section>
-<section id="lección-1.-la-piel-que-vas-a-tratar" class="level2">
-<h2 class="anchored" data-anchor-id="lección-1.-la-piel-que-vas-a-tratar">Lección 1. La piel que vas a tratar</h2>
-<p>Un cosmético trabaja en el estrato córneo, la capa más externa. Son células planas y muertas, los corneocitos, pegadas con lípidos. Piensa en ladrillos y mortero.</p>
-<p>El mortero lleva, en peso, cerca de 50 % de ceramidas, 25 % de colesterol y 15 % de ácidos grasos libres. Dentro de los ladrillos hay moléculas que retienen agua: el factor natural de hidratación. Cerca de la mitad son aminoácidos; el resto incluye lactato, urea y sales.</p>
-<p>La piel se ve seca cuando el agua del estrato córneo baja de 10 %. El agua sale todo el tiempo por evaporación y se repone desde abajo.</p>
+<section id="lección-1.-estrato-córneo-y-balance-de-agua" class="level2">
+<h2 class="anchored" data-anchor-id="lección-1.-estrato-córneo-y-balance-de-agua">Lección 1. Estrato córneo y balance de agua</h2>
+<p>El estrato córneo es la capa externa de la epidermis. Está formado por corneocitos, células sin núcleo llenas de queratina, separados por láminas de lípidos. El modelo clásico lo compara con un muro: los corneocitos son los ladrillos y los lípidos, el mortero.</p>
+<p>Las láminas contienen, en masa, cerca de 50 % de ceramidas, 25 % de colesterol y 15 % de ácidos grasos libres, con muy poco fosfolípido <span class="citation" data-cites="feingold2014">(<a href="#ref-feingold2014" role="doc-biblioref">Feingold y Elias 2014</a>)</span>. Tres factores gobiernan la hidratación: el empaque de esos lípidos, la longitud del camino que recorre el agua entre los corneocitos y el factor natural de hidratación <span class="citation" data-cites="rawlings2004">(<a href="#ref-rawlings2004" role="doc-biblioref">Rawlings y Harding 2004</a>)</span>. Este último reúne moléculas solubles que retienen agua dentro del corneocito. Alrededor de la mitad son aminoácidos; el resto incluye lactato, urea y sales <span class="citation" data-cites="purnamawati2017">(<a href="#ref-purnamawati2017" role="doc-biblioref">Purnamawati et&nbsp;al. 2017</a>)</span>.</p>
+<p>Los signos de piel seca aparecen cuando el agua del estrato córneo baja de 10 % <span class="citation" data-cites="purnamawati2017">(<a href="#ref-purnamawati2017" role="doc-biblioref">Purnamawati et&nbsp;al. 2017</a>)</span>. El agua difunde desde la dermis y se evapora en la superficie. Ese flujo se llama pérdida de agua transepidérmica y se expresa en g/(m² h).</p>
 <div class="modelo" data-escena="piel">
 <div class="acto">
-<p>El agua sube por los huecos entre células y se evapora. Con la piel seca, las células se encogen y sus bordes se levantan.</p>
+<p>El agua difunde por los espacios entre corneocitos y se evapora. En la piel seca las células se contraen y sus bordes se levantan.</p>
 </div>
 <div class="acto">
-<p><strong>Humectante.</strong> La glicerina o la urea atraen agua y la retienen. Con aire seco, solas, pueden favorecer la pérdida.</p>
+<p><strong>Humectante.</strong> La glicerina y la urea retienen agua por puentes de hidrógeno. En aire seco, sin una película que la detenga, parte de esa agua se evapora.</p>
 </div>
 <div class="acto">
-<p><strong>Emoliente.</strong> Los ésteres y aceites rellenan los huecos y bajan los bordes.</p>
+<p><strong>Emoliente.</strong> Ésteres y aceites ocupan los huecos entre escamas y alisan la superficie.</p>
 </div>
 <div class="acto">
-<p><strong>Humectante con oclusivo.</strong> La vaselina, la dimeticona o las ceras dejan una película. El agua llega arriba y se queda.</p>
+<p><strong>Humectante con oclusivo.</strong> La vaselina, la dimeticona o las ceras forman una película hidrófoba que reduce la evaporación.</p>
 </div>
 <div class="acto">
-<p>Mueve tú la película. <a href="../laboratorio/agua-que-pierde-la-piel.html">Laboratorio: agua que pierde la piel</a>.</p>
+<p>Varíe la película y observe el flujo. <a href="../laboratorio/agua-que-pierde-la-piel.html">Laboratorio virtual: agua que pierde la piel</a>.</p>
 </div>
 </div>
 </section>
-<section id="lección-2.-cuatro-clases-de-ingrediente" class="level2">
-<h2 class="anchored" data-anchor-id="lección-2.-cuatro-clases-de-ingrediente">Lección 2. Cuatro clases de ingrediente</h2>
+<section id="lección-2.-mecanismos-de-hidratación" class="level2">
+<h2 class="anchored" data-anchor-id="lección-2.-mecanismos-de-hidratación">Lección 2. Mecanismos de hidratación</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 25%">
@@ -402,81 +465,145 @@ ul.task-list li input[type="checkbox"] {
 <thead>
 <tr class="header">
 <th>Clase</th>
-<th>Qué hace</th>
+<th>Mecanismo</th>
 <th>Ejemplos</th>
-<th>Cuándo falla</th>
+<th>Limitación</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Humectante</td>
-<td>Atrae agua</td>
-<td>glicerina, urea, ácido hialurónico</td>
-<td>con aire seco y sin película</td>
+<td>retiene agua por higroscopia</td>
+<td>glicerina, urea, ácido hialurónico, sorbitol</td>
+<td>necesita una película en ambiente seco</td>
 </tr>
 <tr class="even">
 <td>Emoliente</td>
-<td>Rellena y suaviza</td>
+<td>rellena y lubrica entre escamas</td>
 <td>triglicérido caprílico/cáprico, escualano</td>
-<td>si queda muy graso o muy poco</td>
+<td>el exceso deja residuo graso</td>
 </tr>
 <tr class="odd">
 <td>Oclusivo</td>
-<td>Frena la salida de agua</td>
+<td>reduce la evaporación con una película</td>
 <td>vaselina, ceras, dimeticona</td>
-<td>se siente pesado</td>
+<td>sensación pesada</td>
 </tr>
 <tr class="even">
-<td>Otros</td>
-<td>Aporta lípidos o película</td>
-<td>ceramidas, colesterol, proteínas</td>
+<td>Lípido fisiológico</td>
+<td>repone componentes de las láminas</td>
+<td>ceramidas, colesterol, ácidos grasos</td>
 <td>un lípido solo retrasa la reparación</td>
 </tr>
 </tbody>
 </table>
-<p>Un humectante toma agua del aire cuando la humedad pasa de 80 %. En un cuarto seco la toma de la piel. Por eso se combina con una película.</p>
-<p>De un hidratante aplicado queda cerca de la mitad a las 8 horas. De ahí la indicación de repetir de una a tres veces al día.</p>
-<p><strong>Un dato que sorprende.</strong> Aplicar un solo lípido de la barrera, por ejemplo ceramida, retrasa la reparación de una piel dañada. Los tres juntos la permiten.</p>
+<p>La glicerina combinada con un oclusivo supera a cada uno por separado. Cerca de la mitad del producto aplicado permanece en la piel a las 8 h, y de ahí la recomendación de una a tres aplicaciones diarias <span class="citation" data-cites="purnamawati2017">(<a href="#ref-purnamawati2017" role="doc-biblioref">Purnamawati et&nbsp;al. 2017</a>)</span>.</p>
+<p><strong>Reparación de la barrera.</strong> Man y colaboradores aplicaron mezclas de lípidos a piel con la barrera dañada. Uno o dos de los tres lípidos retrasaron la recuperación. La mezcla equimolar de ceramida, colesterol y ácido graso la permitió, y triplicar cualquiera de ellos la aceleró <span class="citation" data-cites="man1996">(<a href="#ref-man1996" role="doc-biblioref">Man et&nbsp;al. 1996</a>)</span>. Un producto con ceramidas como único lípido no tiene respaldo en ese estudio.</p>
+<p><strong>Discrepancia entre fuentes.</strong> Purnamawati y colaboradores presentan 3:1:1 como proporción fisiológica; Man y colaboradores, como la optimizada. La diferencia importa al leer una etiqueta que anuncia «proporción natural».</p>
 </section>
-<section id="lección-3.-elegir-aceites" class="level2">
-<h2 class="anchored" data-anchor-id="lección-3.-elegir-aceites">Lección 3. Elegir aceites</h2>
-<p>Los aceites no se sienten igual. Dos números ayudan:</p>
-<ul>
-<li><strong>Extensibilidad:</strong> cuánta superficie cubre una gota en diez minutos. Dicaprylyl Carbonate llega a 1600 mm²; el triglicérido caprílico/cáprico, a 550.</li>
-<li><strong>Viscosidad:</strong> los aceites vegetales rondan de 73 a 112 mPa s; los ésteres ligeros, cerca de 20.</li>
-</ul>
-<p>Mezcla uno rápido, uno medio y uno lento. Es costumbre del oficio, sin una ley que la respalde.</p>
-<p>En un ensayo con aceites corporales, los vegetales se extendieron peor y aumentaron más la hidratación. El linoleico, abundante en girasol, se asocia a mejor reparación; el aceite de oliva puede desordenar los lípidos de la piel.</p>
-</section>
-<section id="lección-4.-armar-una-loción-ow" class="level2">
-<h2 class="anchored" data-anchor-id="lección-4.-armar-una-loción-ow">Lección 4. Armar una loción O/W</h2>
-<p>Una loción son cinco decisiones:</p>
-<ol type="1">
-<li><strong>Cuánto aceite.</strong> De 10 a 20 % para el cuerpo. Menos para la cara.</li>
-<li><strong>Qué emulsionante.</strong> Suma 3 a 5 %. La lección de <a href="../fundamentos/emulsiones.html">emulsiones</a> explica cómo elegirlo.</li>
-<li><strong>Qué humectante.</strong> Glicerina de 3 a 6 %.</li>
-<li><strong>Qué espesa.</strong> Goma xantana de 0.1 a 0.3 % o alcohol cetílico de 1 a 4 %.</li>
-<li><strong>Qué conserva.</strong> La lección de <a href="../fundamentos/conservacion.html">conservación</a> dice a qué pH.</li>
-</ol>
-<p>Los porcentajes son rangos de partida de este proyecto, por contrastar en el laboratorio.</p>
-<p><strong>Ejemplo resuelto.</strong> Quieres 200 g de loción con 12 % de aceite de almendras. Pesas 200 × 12/100 = 24 g. Si el lote baja a 50 g, pesas 6 g. Todo se escala igual.</p>
-<p><strong>Error frecuente.</strong> Agregar el conservante con la mezcla a 70 °C. Algunos se evaporan o se degradan. Espera a 40 °C.</p>
-</section>
-<section id="lección-5.-elegir-según-la-piel" class="level2">
-<h2 class="anchored" data-anchor-id="lección-5.-elegir-según-la-piel">Lección 5. Elegir según la piel</h2>
+<section id="lección-3.-selección-de-la-fase-oleosa" class="level2">
+<h2 class="anchored" data-anchor-id="lección-3.-selección-de-la-fase-oleosa">Lección 3. Selección de la fase oleosa</h2>
+<p>La extensibilidad mide el área que cubre una masa de emoliente en 10 min. La viscosidad explica la mayor parte de esa variable; la tensión superficial y la densidad aportan el resto.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Piel</th>
-<th>Empieza por</th>
-<th>Evita al principio</th>
+<th>Emoliente</th>
+<th>Extensibilidad (mm² en 10 min)</th>
+<th>Viscosidad (mPa s)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dicaprylyl Carbonate</td>
+<td>1600</td>
+<td>18 a 21</td>
+</tr>
+<tr class="even">
+<td>Dibutyl Adipate</td>
+<td>1000</td>
+<td>18 a 21</td>
+</tr>
+<tr class="odd">
+<td>Octyldodecanol</td>
+<td>600</td>
+<td>114</td>
+</tr>
+<tr class="even">
+<td>Caprylic/Capric Triglyceride</td>
+<td>550</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Aceites vegetales</td>
+<td></td>
+<td>73 a 112</td>
+</tr>
+</tbody>
+</table>
+<p>Los datos son de Ogorzałek y colaboradores <span class="citation" data-cites="ogorzalek2024">(<a href="#ref-ogorzalek2024" role="doc-biblioref">Ogorzałek et&nbsp;al. 2024</a>)</span>. El 550 del triglicérido coincide con la ficha de su fabricante, lo que sugiere que el artículo tomó valores de proveedor.</p>
+<p>La industria combina emolientes de extensión rápida, media y lenta para que la sensación cambie con el tiempo. Las fuentes consultadas no cuantifican ese efecto; conviene tratarlo como criterio de diseño.</p>
+<p>En el mismo estudio los aceites corporales con base vegetal se extendieron peor y aumentaron más la hidratación que los sintéticos <span class="citation" data-cites="ogorzalek2024">(<a href="#ref-ogorzalek2024" role="doc-biblioref">Ogorzałek et&nbsp;al. 2024</a>)</span>. Una proporción alta de linoleico frente a oleico se asocia con mejor reparación de la barrera. El aceite de oliva, con proporción baja, puede desordenar los lípidos del estrato córneo <span class="citation" data-cites="purnamawati2017">(<a href="#ref-purnamawati2017" role="doc-biblioref">Purnamawati et&nbsp;al. 2017</a>)</span>.</p>
+</section>
+<section id="lección-4.-diseño-de-una-loción-ow" class="level2">
+<h2 class="anchored" data-anchor-id="lección-4.-diseño-de-una-loción-ow">Lección 4. Diseño de una loción O/W</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Decisión</th>
+<th>Intervalo de partida</th>
+<th>Justificación</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fase oleosa</td>
+<td>10 a 20 % cuerpo; menos en cara</td>
+<td>residuo y sensación</td>
+</tr>
+<tr class="even">
+<td>Emulsionante</td>
+<td>3 a 5 %</td>
+<td>cubrir la interfase; véase <a href="../fundamentos/emulsiones.html">emulsiones</a></td>
+</tr>
+<tr class="odd">
+<td>Humectante</td>
+<td>glicerina 3 a 6 %</td>
+<td>retención de agua sin pegajosidad</td>
+</tr>
+<tr class="even">
+<td>Estructurante</td>
+<td>goma xantana 0.1 a 0.3 % o alcohol cetílico 1 a 4 %</td>
+<td>viscosidad de la fase continua</td>
+</tr>
+<tr class="odd">
+<td>Conservante</td>
+<td>según pH</td>
+<td>véase <a href="../fundamentos/conservacion.html">conservación</a></td>
+</tr>
+</tbody>
+</table>
+<p>Los intervalos son propuestas de este proyecto, por contrastar en el laboratorio.</p>
+<p>La masa de cada componente sale de su fracción:</p>
+<p><span class="math display">\[m_i = \frac{w_i\, M}{100}\]</span></p>
+<p>con <span class="math inline">\(w_i\)</span> el porcentaje en masa y <span class="math inline">\(M\)</span> la masa del lote.</p>
+<p><strong>Ejemplo resuelto.</strong> Un lote de 200 g con 12 % de aceite de almendras lleva 200 × 12/100 = 24.0 g. A 50 g, 6.00 g. Con una balanza de ± 0.1 g el error relativo pasa de 0.4 a 1.7 %.</p>
+<p><strong>Orden de adición.</strong> El conservante y los activos entran por debajo de 40 °C. A 70 °C algunos se evaporan o se degradan.</p>
+</section>
+<section id="lección-5.-criterios-según-el-estado-de-la-piel" class="level2">
+<h2 class="anchored" data-anchor-id="lección-5.-criterios-según-el-estado-de-la-piel">Lección 5. Criterios según el estado de la piel</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Estado</th>
+<th>Forma de partida</th>
+<th>Restricción inicial</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Normal</td>
-<td>humectante con emoliente</td>
-<td>nada en especial</td>
+<td>loción con humectante y emoliente</td>
+<td>ninguna</td>
 </tr>
 <tr class="even">
 <td>Grasa</td>
@@ -486,27 +613,52 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>Seca</td>
 <td>crema con humectante y oclusivo</td>
-<td>geles sin aceite</td>
+<td>geles sin fase oleosa</td>
 </tr>
 <tr class="even">
 <td>Sensible</td>
-<td>fórmula corta y sin fragancia</td>
+<td>fórmula corta, sin fragancia</td>
 <td>aceites esenciales</td>
 </tr>
 </tbody>
 </table>
+<p>La clasificación es descriptiva. Las fuentes abiertas consultadas no dan umbrales de sebo ni de pérdida de agua para separar los tipos.</p>
 </section>
-<section id="qué-puedes-hacer" class="level2">
-<h2 class="anchored" data-anchor-id="qué-puedes-hacer">Qué puedes hacer</h2>
+<section id="alcance-de-la-evidencia" class="level2">
+<h2 class="anchored" data-anchor-id="alcance-de-la-evidencia">Alcance de la evidencia</h2>
+<p>Las cifras de composición y de reparación provienen de estudios revisados por pares. Los intervalos de formulación son propuestas sin ensayo propio. La reducción de 98 % en la pérdida de agua que suele atribuirse a la vaselina no figura en el resumen del trabajo original al que se le asigna, y por eso no se usa aquí.</p>
+</section>
+<section id="productos-de-esta-sección" class="level2">
+<h2 class="anchored" data-anchor-id="productos-de-esta-sección">Productos de esta sección</h2>
 <div class="tarjas" data-productos="piel"></div>
 </section>
-<section id="comprueba-lo-que-aprendiste" class="level2">
-<h2 class="anchored" data-anchor-id="comprueba-lo-que-aprendiste">Comprueba lo que aprendiste</h2>
+<section id="autoevaluación" class="level2">
+<h2 class="anchored" data-anchor-id="autoevaluación">Autoevaluación</h2>
 <div data-preguntas="piel"></div>
 </section>
-<section id="fuentes" class="level2">
-<h2 class="anchored" data-anchor-id="fuentes">Fuentes</h2>
-<p>Purnamawati et al.&nbsp;2017, DOI <a href="https://doi.org/10.3121/cmr.2017.1363">10.3121/cmr.2017.1363</a>. Ogorzalek et al.&nbsp;2024, DOI <a href="https://doi.org/10.3390/app14072783">10.3390/app14072783</a>. Baki 2023, ISBN 978-1-119-70977-0, pp.&nbsp;72 y 250-259. Benson et al.&nbsp;2019, DOI <a href="https://doi.org/10.1201/9780429190674">10.1201/9780429190674</a>, p.&nbsp;296. Los lípidos de la barrera: Man et al.&nbsp;1996, citado en la nota 05 de la investigación.</p>
+<section id="referencias" class="level2">
+<h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
+<p>Los criterios de proceso siguen a Baki <span class="citation" data-cites="baki2023">(<a href="#ref-baki2023" role="doc-biblioref">2023, 72</a> y 250-259)</span>.</p>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-baki2023" class="csl-entry" role="listitem">
+Baki, Gabriella. 2023. <em>Introduction to Cosmetic Formulation and Technology</em>. 2.ª ed. Wiley. ISBN 978-1-119-70977-0.
+</div>
+<div id="ref-feingold2014" class="csl-entry" role="listitem">
+Feingold, Kenneth R., y Peter M. Elias. 2014. <span>«Role of lipids in the formation and maintenance of the cutaneous permeability barrier»</span>. <em>Biochimica et Biophysica Acta, Molecular and Cell Biology of Lipids</em> 1841 (3): 280-94. <a href="https://doi.org/10.1016/j.bbalip.2013.11.007">https://doi.org/10.1016/j.bbalip.2013.11.007</a>.
+</div>
+<div id="ref-man1996" class="csl-entry" role="listitem">
+Man, Mao-Qiang, Kenneth R. Feingold, Carl R. Thornfeldt, y Peter M. Elias. 1996. <span>«Optimization of Physiological Lipid Mixtures for Barrier Repair»</span>. <em>Journal of Investigative Dermatology</em> 106 (5): 1096-101. <a href="https://doi.org/10.1111/1523-1747.ep12340135">https://doi.org/10.1111/1523-1747.ep12340135</a>.
+</div>
+<div id="ref-ogorzalek2024" class="csl-entry" role="listitem">
+Ogorzałek, Marta, Emilia Klimaszewska, Marek Mirowski, Agnieszka Kulawik-Pióro, y Ryszard Tomasiuk. 2024. <span>«Natural or Synthetic Emollients? Physicochemical Properties of Body Oils in Relation to Selected Parameters of Epidermal Barrier Function»</span>. <em>Applied Sciences</em> 14 (7): 2783. <a href="https://doi.org/10.3390/app14072783">https://doi.org/10.3390/app14072783</a>.
+</div>
+<div id="ref-purnamawati2017" class="csl-entry" role="listitem">
+Purnamawati, Schandra, Niken Indrastuti, Retno Danarti, y Tatan Saefudin. 2017. <span>«The Role of Moisturizers in Addressing Various Kinds of Dermatitis: A Review»</span>. <em>Clinical Medicine and Research</em> 15 (3-4): 75-87. <a href="https://doi.org/10.3121/cmr.2017.1363">https://doi.org/10.3121/cmr.2017.1363</a>.
+</div>
+<div id="ref-rawlings2004" class="csl-entry" role="listitem">
+Rawlings, A. V., y C. R. Harding. 2004. <span>«Moisturization and skin barrier function»</span>. <em>Dermatologic Therapy</em> 17 (s1): 43-48. <a href="https://doi.org/10.1111/j.1396-0296.2004.04s1005.x">https://doi.org/10.1111/j.1396-0296.2004.04s1005.x</a>.
+</div>
+</div>
 
 
 </section>

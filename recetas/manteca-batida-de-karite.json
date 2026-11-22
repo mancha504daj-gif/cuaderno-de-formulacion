@@ -8,7 +8,7 @@
  "lote": 100,
  "pH": null,
  "estado": "sin ensayar",
- "porque": "Batir mete aire y muchos cristales pequeños: queda ligera. Si se funde en el bolso vuelve a ser densa y quizá arenosa.",
+ "porque": "El batido incorpora aire y favorece cristales pequeños. Si se funde y recristaliza despacio, los cristales crecen y la textura se vuelve granulosa.",
  "fases": [
   {
    "nombre": "A",
@@ -38,15 +38,15 @@
   }
  ],
  "pasos": [
-  "Funde el karité a 70 °C y mézclalo con los aceites.",
-  "Enfría en el refrigerador hasta que los bordes se opaquen.",
-  "Bate 5 min, enfría otra vez y repite hasta que quede espumosa.",
-  "Agrega el tocoferol y bate 1 min.",
-  "Envasa sin aplastar."
+  "Fundir el karité a 70 °C y mezclarlo con los aceites.",
+  "Enfriar en el refrigerador hasta que los bordes se opaquen.",
+  "Batir 5 min, enfriar otra vez y repetir hasta que quede espumosa.",
+  "Agregar el tocoferol y batir 1 min.",
+  "Envasar sin aplastar."
  ],
  "cambia": [
-  "Agrega 3 % de almidón para quitar grasa.",
-  "Cambia 10 % de karité por cacao en clima cálido."
+  "Agregar 3 % de almidón para quitar grasa.",
+  "Sustituir 10 % de karité por cacao en clima cálido."
  ],
  "controles": [
   [
@@ -56,12 +56,12 @@
   ],
   [
    "Dureza",
-   "registra la penetración",
+   "registrar la penetración",
    "aguja o peso conocido"
   ],
   [
    "Punto de fusión",
-   "registra el intervalo",
+   "registrar el intervalo",
    "capilar o baño con termómetro"
   ],
   [
@@ -79,22 +79,22 @@
   [
    "Granos",
    "enfrió despacio o la manteca cristalizó mal",
-   "funde otra vez y enfría más rápido"
+   "fundir otra vez y enfriar más rápido"
   ],
   [
-   "Suda aceite",
+   "Exudación de aceite",
    "poca cera o demasiado aceite líquido",
-   "sube la cera de 1 en 1 %"
+   "aumentar la cera de 1 en 1 %"
   ],
   [
-   "Se parte",
+   "Fractura",
    "demasiada cera dura",
-   "baja la cera y sube el aceite"
+   "reducir la cera y aumentar el aceite"
   ],
   [
-   "Huele rancio",
+   "Olor rancio",
    "oxidación",
-   "usa aceite fresco, tocoferol y envase lleno"
+   "usar aceite fresco, tocoferol y envase lleno"
   ]
  ],
  "avisos": [

@@ -26,7 +26,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -45,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2cd0ff2c833b4e72470276043b4d4341.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-20f2d6b2ee51eb11c7f32a308fb87d98.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -240,8 +259,14 @@ window.Quarto = {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../guias/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guías de laboratorio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../laboratorios.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Laboratorios</span></a>
+ <span class="menu-text">Laboratorios virtuales</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -322,102 +347,111 @@ window.Quarto = {
 
 
 <figure class="cabeza figure" style="--color:#3f2463"><div class="marco"><img src="../fotos/burbuja.jpg" alt="Película de jabón con islas de colores" class="figure-img"></div><h1>Emulsiones</h1></figure>
-<p>Una emulsión reparte gotas de un líquido dentro de otro con el que no se mezcla. Cremas, lociones, bases y máscaras son emulsiones.</p>
-<section id="las-palabras-que-vas-a-usar" class="level2">
-<h2 class="anchored" data-anchor-id="las-palabras-que-vas-a-usar">Las palabras que vas a usar</h2>
+<p>Una emulsión es una dispersión de un líquido en otro con el que es inmiscible. Tiene área interfacial y energía en exceso, así que tiende a separarse. El formulador elige emulsionante, proceso y viscosidad para que tarde más que la vida útil del producto.</p>
+<section id="objetivos-de-aprendizaje" class="level2">
+<h2 class="anchored" data-anchor-id="objetivos-de-aprendizaje">Objetivos de aprendizaje</h2>
+<ol type="1">
+<li>Predecir el tipo de emulsión y comprobarlo con dos métodos.</li>
+<li>Calcular el HLB requerido y la proporción de un par de emulsionantes.</li>
+<li>Distinguir los mecanismos de inestabilidad y su reversibilidad.</li>
+<li>Aplicar los modelos de Stokes y de Krieger y Dougherty dentro de sus límites.</li>
+</ol>
+</section>
+<section id="vocabulario" class="level2">
+<h2 class="anchored" data-anchor-id="vocabulario">Vocabulario</h2>
 <div class="fichas sin-glosa">
 <div class="termino-caja">
 <p><strong>Hidrófilo</strong></p>
-<p>Que prefiere el agua. <em>La glicerina.</em></p>
+<p>Con afinidad por el agua. <em>La glicerina.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Lipófilo</strong></p>
-<p>Que prefiere el aceite. <em>La cera de abejas.</em></p>
+<p>Con afinidad por el aceite. <em>La cera de abejas.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Viscosidad</strong></p>
-<p>Resistencia a fluir. Se mide en pascal segundo. <em>La miel tiene más que el agua.</em></p>
+<p>Cociente entre el esfuerzo de corte y la velocidad de corte. Se expresa en Pa s. <em>La miel, del orden de 10 Pa s; el agua, 0.001.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Emulsión</strong></p>
-<p>Gotas de un líquido repartidas dentro de otro con el que no se mezcla. <em>La leche: grasa en agua.</em></p>
+<p>Dispersión de un líquido en otro con el que es inmiscible, estabilizada por un emulsionante. <em>La leche: grasa en agua.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>O/W</strong></p>
-<p>Aceite en agua: las gotas son de aceite. Se enjuaga y se siente ligera. <em>Casi todas las lociones.</em></p>
+<p>Emulsión con gotas de aceite en una fase continua acuosa. <em>Casi todas las lociones.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>W/O</strong></p>
-<p>Agua en aceite: las gotas son de agua. Resiste el agua y se siente más grasa. <em>Muchas bases de maquillaje.</em></p>
+<p>Emulsión con gotas de agua en una fase continua oleosa. <em>Muchas bases de maquillaje.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Emulsionante</strong></p>
-<p>Molécula con una parte que ama el agua y otra que ama el aceite. Se coloca entre los dos. <em>Tween 80.</em></p>
+<p>Molécula anfifílica que se adsorbe en la interfase y retarda la coalescencia. <em>Tween 80.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>HLB</strong></p>
-<p>Balance hidrófilo lipófilo. Escala de 0 a 20 para emulsionantes no iónicos: bajo ama el aceite, alto ama el agua. <em>Span 80 tiene 4.3 y Tween 80 tiene 15.0.</em></p>
+<p>Balance hidrófilo lipófilo: escala empírica de 0 a 20 para emulsionantes no iónicos. <em>Span 80 tiene 4.3 y Tween 80 tiene 15.0.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>HLB requerido</strong></p>
-<p>El HLB que necesita un aceite para formar una emulsión estable. <em>Almendras, de 6 a 7.</em></p>
+<p>HLB de la mezcla de emulsionantes que da la emulsión más estable con un aceite. <em>Almendras, de 6 a 7.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Cremado</strong></p>
-<p>Las gotas suben porque pesan menos que el agua. Vuelve al agitar. <em>La nata de la leche.</em></p>
+<p>Ascenso de las gotas por diferencia de densidad. Es reversible por agitación. <em>Nata de la leche.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Coalescencia</strong></p>
-<p>Dos gotas se funden en una. No tiene vuelta. <em>Aceite flotando sobre una crema vieja.</em></p>
+<p>Fusión de dos gotas tras la ruptura de la película entre ellas. Es irreversible. <em>Aceite libre sobre una crema envejecida.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Floculación</strong></p>
-<p>Las gotas se agrupan sin fundirse. Vuelve al agitar. <em>Grumos blandos.</em></p>
+<p>Agregación de gotas que conservan su identidad. Es reversible por agitación. <em>Grumos blandos.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Maduración de Ostwald</strong></p>
-<p>Las gotas pequeñas se disuelven y alimentan a las grandes. <em>Emulsiones con aceites algo solubles.</em></p>
+<p>Crecimiento de las gotas grandes a costa de las pequeñas por difusión de la fase dispersa. <em>Emulsiones con aceites algo solubles.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Cizalla</strong></p>
-<p>Esfuerzo que hace resbalar una capa sobre otra. <em>Frotar crema en la piel.</em></p>
+<p>Deformación en la que capas adyacentes de un fluido se deslizan entre sí. <em>Extender una crema sobre la piel.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Pseudoplástico</strong></p>
-<p>Se adelgaza al frotarlo y recupera cuerpo en reposo. <em>La goma xantana.</em></p>
+<p>Fluido cuya viscosidad disminuye al aumentar la velocidad de corte. <em>Solución de goma xantana.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Esfuerzo de fluencia</strong></p>
-<p>El empujón mínimo para que empiece a fluir. <em>La pasta de dientes.</em></p>
+<p>Esfuerzo mínimo que inicia el flujo. <em>Pasta dental.</em></p>
 </div>
 </div>
 </section>
-<section id="lección-1.-quién-decide-el-tipo" class="level2">
-<h2 class="anchored" data-anchor-id="lección-1.-quién-decide-el-tipo">Lección 1. Quién decide el tipo</h2>
-<p>Si el aceite queda en gotas, es O/W. Si el agua queda en gotas, es W/O. Decide el emulsionante: la fase donde es más soluble tiende a quedar por fuera (regla de Bancroft). Una fórmula con 75 % de agua puede salir W/O si elegiste un emulsionante lipófilo.</p>
+<section id="lección-1.-tipo-de-emulsión" class="level2">
+<h2 class="anchored" data-anchor-id="lección-1.-tipo-de-emulsión">Lección 1. Tipo de emulsión</h2>
+<p>En una O/W la fase dispersa es el aceite; en una W/O, el agua. La regla de Bancroft establece que la fase continua es aquella donde el emulsionante es más soluble. El volumen de las fases pesa menos: una fórmula con 75 % de agua puede resultar W/O con un emulsionante lipófilo.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th></th>
+<th>Propiedad</th>
 <th>O/W</th>
 <th>W/O</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Se enjuaga</td>
-<td>sí</td>
-<td>cuesta</td>
+<td>Dilución</td>
+<td>admite agua</td>
+<td>admite aceite</td>
 </tr>
 <tr class="even">
+<td>Conductividad</td>
+<td>apreciable</td>
+<td>casi nula</td>
+</tr>
+<tr class="odd">
 <td>Sensación</td>
 <td>ligera</td>
 <td>más grasa</td>
-</tr>
-<tr class="odd">
-<td>Conduce electricidad</td>
-<td>sí</td>
-<td>casi nada</td>
 </tr>
 <tr class="even">
 <td>Ejemplo</td>
@@ -427,70 +461,156 @@ window.Quarto = {
 </tbody>
 </table>
 </section>
-<section id="lección-2.-hlb" class="level2">
-<h2 class="anchored" data-anchor-id="lección-2.-hlb">Lección 2. HLB</h2>
-<p>Griffin ordenó los emulsionantes no iónicos de 0 a 20. Un número bajo significa que aman el aceite; uno alto, que aman el agua.</p>
+<section id="lección-2.-balance-hidrófilo-lipófilo" class="level2">
+<h2 class="anchored" data-anchor-id="lección-2.-balance-hidrófilo-lipófilo">Lección 2. Balance hidrófilo lipófilo</h2>
+<p>Griffin definió la escala por comparación experimental de mezclas <span class="citation" data-cites="griffin1949">(<a href="#ref-griffin1949" role="doc-biblioref">Griffin 1949</a>)</span> y después la calculó para no iónicos <span class="citation" data-cites="griffin1954">(<a href="#ref-griffin1954" role="doc-biblioref">Griffin 1954</a>)</span>. Para ésteres de polioles y para etoxilados:</p>
+<p><span class="math display">\[HLB = 20\left(1 - \frac{S}{A}\right) \qquad HLB = \frac{E}{5}\]</span></p>
+<p>con <span class="math inline">\(S\)</span> el índice de saponificación del éster, <span class="math inline">\(A\)</span> el índice de acidez del ácido graso y <span class="math inline">\(E\)</span> el porcentaje en masa de óxido de etileno. Las expresiones no valen para iónicos ni para moléculas con óxido de propileno.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
 <th>HLB</th>
-<th>Sirve para</th>
+<th>Aplicación</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>1 a 3</td>
-<td>romper espuma</td>
+<td>antiespumante</td>
 </tr>
 <tr class="even">
 <td>4 a 6</td>
-<td>emulsión W/O</td>
+<td>emulsionante W/O</td>
 </tr>
 <tr class="odd">
 <td>7 a 9</td>
-<td>mojar superficies</td>
+<td>humectante de superficies</td>
 </tr>
 <tr class="even">
 <td>8 a 18</td>
-<td>emulsión O/W</td>
+<td>emulsionante O/W</td>
 </tr>
 <tr class="odd">
 <td>13 a 15</td>
-<td>limpiar</td>
+<td>detergente</td>
 </tr>
 <tr class="even">
 <td>10 a 18</td>
-<td>solubilizar</td>
+<td>solubilizante</td>
 </tr>
 </tbody>
 </table>
-<p>Cada aceite pide un HLB. Para una mezcla se promedia por masa. Las tablas no coinciden: la vaselina figura con 10.5 y con 7. Por eso la <a href="../calculadoras/hlb.html">calculadora</a> trabaja con intervalos.</p>
-<p><strong>Ejemplo resuelto.</strong> 12 partes de almendras (6 a 7) y 4 de karité (8): de (12 × 6 + 4 × 8)/16 = 6.5 a (12 × 7 + 4 × 8)/16 = 7.25.</p>
-<p>Para ésteres de polioles Griffin usó <span class="math inline">\(HLB = 20(1 - S/A)\)</span>, con <span class="math inline">\(S\)</span> el índice de saponificación del éster y <span class="math inline">\(A\)</span> el índice de acidez del ácido graso. Para etoxilados, <span class="math inline">\(HLB = E/5\)</span>, con <span class="math inline">\(E\)</span> el porcentaje de óxido de etileno.</p>
-<p>El HLB orienta los primeros ensayos y no predice estabilidad. <a href="../laboratorio/balanza-de-emulsionantes.html">Laboratorio: balanza de emulsionantes</a>.</p>
+<p>El HLB requerido de una fase oleosa y la fracción de un par salen de balances lineales:</p>
+<p><span class="math display">\[HLB_{req} = \frac{\sum w_i\, HLB_i}{\sum w_i} \qquad x_A = \frac{HLB_{req} - HLB_B}{HLB_A - HLB_B}\]</span></p>
+<p><strong>Ejemplo resuelto.</strong> 12 partes de almendras (6 a 7) y 4 de karité (8): de (12 × 6 + 4 × 8)/16 = 6.5 a (12 × 7 + 4 × 8)/16 = 7.25. Con Span 80 (4.3) y Tween 80 (15.0), para 6.875: x = (6.875 − 15.0)/(4.3 − 15.0) = 0.759 de Span 80.</p>
+<p><strong>Límites.</strong> Griffin estimó una precisión de ±1. Salager señala ±2 en la práctica y que la escala ignora temperatura, electrolitos y tipo de aceite; propone la desviación hidrófilo lipófila normalizada, HLDN <span class="citation" data-cites="salager2020">(<a href="#ref-salager2020" role="doc-biblioref">Salager et&nbsp;al. 2020</a>)</span>. Las tablas difieren: la vaselina figura con 10.5 en Griffin y con 7 a 8 en compilaciones posteriores. El HLB de aceites vegetales cambia con origen y proceso <span class="citation" data-cites="smejkal2024">(<a href="#ref-smejkal2024" role="doc-biblioref">Smejkal et&nbsp;al. 2024</a>)</span>. Alam y colaboradores hallaron inestables las fórmulas cuyo par se alejaba de 10.5 a 12 <span class="citation" data-cites="alam2020">(<a href="#ref-alam2020" role="doc-biblioref">Alam et&nbsp;al. 2020</a>)</span>.</p>
+<p>La <a href="../calculadoras/hlb.html">calculadora</a> trabaja con intervalos. <a href="../laboratorio/balanza-de-emulsionantes.html">Laboratorio virtual: balanza de emulsionantes</a>.</p>
 </section>
-<section id="lección-3.-por-qué-se-separan" class="level2">
-<h2 class="anchored" data-anchor-id="lección-3.-por-qué-se-separan">Lección 3. Por qué se separan</h2>
+<section id="lección-3.-mecanismos-de-inestabilidad" class="level2">
+<h2 class="anchored" data-anchor-id="lección-3.-mecanismos-de-inestabilidad">Lección 3. Mecanismos de inestabilidad</h2>
 <div class="modelo" data-escena="fallas">
 <div class="acto">
-<p>Una emulsión estable: gotas repartidas, que se cruzan sin unirse.</p>
+<p>Emulsión estable: gotas dispersas que se cruzan sin unirse.</p>
 </div>
 <div class="acto">
-<p><strong>Cremado.</strong> Suben por ser más ligeras, y las grandes primero. Al agitar vuelven.</p>
+<p><strong>Cremado.</strong> Las gotas ascienden por diferencia de densidad, las mayores primero. Reversible por agitación.</p>
 </div>
 <div class="acto">
-<p><strong>Floculación.</strong> Se agrupan sin fundirse. También vuelven al agitar.</p>
+<p><strong>Floculación.</strong> Se agregan sin fundirse. Reversible por agitación.</p>
 </div>
 <div class="acto">
-<p><strong>Coalescencia.</strong> Se funden. Ya no hay vuelta.</p>
+<p><strong>Coalescencia.</strong> La película se rompe y dos gotas forman una. Irreversible.</p>
 </div>
 <div class="acto">
-<p><strong>Maduración de Ostwald.</strong> Las pequeñas se disuelven y alimentan a las grandes, sin tocarse.</p>
+<p><strong>Maduración de Ostwald.</strong> El aceite difunde de las gotas pequeñas a las grandes por diferencia de presión capilar.</p>
 </div>
 <div class="acto">
-<p><strong>Inversión.</strong> El aceite pasa a ser el medio y el agua queda en gotas.</p>
+<p><strong>Inversión.</strong> La fase dispersa pasa a continua.</p>
 </div>
 </div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Mecanismo</th>
+<th>Fuerza impulsora</th>
+<th>Reversible</th>
+<th>Medida</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cremado o sedimentación</td>
+<td>gravedad</td>
+<td>sí</td>
+<td>altura de crema con el tiempo</td>
+</tr>
+<tr class="even">
+<td>Floculación</td>
+<td>atracción entre gotas</td>
+<td>sí</td>
+<td>microscopía, reología</td>
+</tr>
+<tr class="odd">
+<td>Coalescencia</td>
+<td>ruptura de película</td>
+<td>no</td>
+<td>distribución de tamaño</td>
+</tr>
+<tr class="even">
+<td>Maduración de Ostwald</td>
+<td>presión de Laplace</td>
+<td>no</td>
+<td>radio al cubo contra tiempo</td>
+</tr>
+<tr class="odd">
+<td>Inversión</td>
+<td>cambio de afinidad</td>
+<td>no</td>
+<td>conductividad</td>
+</tr>
+</tbody>
+</table>
+<p>La velocidad de cremado de una gota aislada sigue a Stokes:</p>
+<p><span class="math display">\[v = \frac{2\,r^2\,(\rho_c - \rho_d)\,g}{9\,\eta_c}\]</span></p>
+<p>Es válida para gotas rígidas, diluidas y en medio newtoniano. Una crema con esfuerzo de fluencia puede no cremar aunque la ecuación dé una velocidad. <a href="../calculadoras/stokes.html">Calculadora de Stokes</a>.</p>
+</section>
+<section id="lección-4.-viscosidad-y-fracción-dispersa" class="level2">
+<h2 class="anchored" data-anchor-id="lección-4.-viscosidad-y-fracción-dispersa">Lección 4. Viscosidad y fracción dispersa</h2>
+<div class="modelo" data-escena="cizalla">
+<div class="acto">
+<p>Con 20 % de gotas, cada una encuentra espacio para pasar.</p>
+</div>
+<div class="acto">
+<p>Con 45 % se estorban y el mismo esfuerzo produce menos flujo.</p>
+</div>
+<div class="acto">
+<p>Cerca del empaque máximo la viscosidad diverge <span class="citation" data-cites="krieger1959">(<a href="#ref-krieger1959" role="doc-biblioref">Krieger y Dougherty 1959</a>)</span>:</p>
+<p><span class="math display">\[\frac{\eta}{\eta_0} = \left(1 - \frac{\phi}{\phi_m}\right)^{-[\eta]\,\phi_m}, \qquad [\eta] = 2.5\]</span></p>
+<p><a href="../laboratorio/viscosidad-de-una-emulsion.html">Laboratorio virtual: viscosidad de una emulsión</a>.</p>
+</div>
+</div>
+<p>El modelo describe esferas rígidas. Una gota líquida se deforma y ofrece menos resistencia.</p>
+</section>
+<section id="lección-5.-proceso" class="level2">
+<h2 class="anchored" data-anchor-id="lección-5.-proceso">Lección 5. Proceso</h2>
+<ol type="1">
+<li>Calentar ambas fases por separado a la misma temperatura, unos 5 °C sobre el punto de fusión más alto.</li>
+<li>Incorporar la fase interna sobre la externa con cizalla intensa.</li>
+<li>Homogeneizar de 2 a 5 min y registrar velocidad y tiempo.</li>
+<li>Enfriar con agitación suave. Sin agitación, las ceras cristalizan en granos grandes.</li>
+<li>Agregar la fase C por debajo de 40 °C.</li>
+<li>Reponer el agua evaporada por diferencia de masa.</li>
+</ol>
+<p>El proceso en frío ahorra energía y no sirve con ceras.</p>
+</section>
+<section id="lección-6.-verificación-del-tipo" class="level2">
+<h2 class="anchored" data-anchor-id="lección-6.-verificación-del-tipo">Lección 6. Verificación del tipo</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -499,84 +619,65 @@ window.Quarto = {
 </colgroup>
 <thead>
 <tr class="header">
-<th>Falla</th>
-<th>Qué ocurre</th>
-<th>¿Vuelve al agitar?</th>
+<th>Ensayo</th>
+<th>O/W</th>
+<th>W/O</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Cremado o sedimentación</td>
-<td>Las gotas suben o bajan por densidad</td>
-<td>Sí</td>
+<td>Colorante hidrosoluble al microscopio</td>
+<td>fondo coloreado</td>
+<td>gotas coloreadas</td>
 </tr>
 <tr class="even">
-<td>Floculación</td>
-<td>Las gotas se agrupan sin fundirse</td>
-<td>Sí</td>
+<td>Dilución con agua</td>
+<td>se dispersa</td>
+<td>forma grumos</td>
 </tr>
 <tr class="odd">
-<td>Coalescencia</td>
-<td>Las gotas se funden</td>
-<td>No</td>
-</tr>
-<tr class="even">
-<td>Maduración de Ostwald</td>
-<td>Las grandes crecen a costa de las pequeñas</td>
-<td>No</td>
-</tr>
-<tr class="odd">
-<td>Inversión de fases</td>
-<td>O/W pasa a W/O o al revés</td>
-<td>No</td>
+<td>Conductividad</td>
+<td>del orden de la fase acuosa</td>
+<td>casi cero</td>
 </tr>
 </tbody>
 </table>
-<p>La <a href="../calculadoras/stokes.html">calculadora de Stokes</a> estima la primera fila. Las demás piden ensayo.</p>
+<p>Dos ensayos concordantes bastan. Se registra además el tamaño de gota: promedio de 200 gotas medidas en micrografía con escala.</p>
 </section>
-<section id="lección-4.-por-qué-más-gotas-espesan" class="level2">
-<h2 class="anchored" data-anchor-id="lección-4.-por-qué-más-gotas-espesan">Lección 4. Por qué más gotas espesan</h2>
-<div class="modelo" data-escena="cizalla">
-<div class="acto">
-<p>Con 20 % de gotas, cada una encuentra por dónde pasar.</p>
-</div>
-<div class="acto">
-<p>Con 45 % se estorban, y el mismo esfuerzo mueve menos.</p>
-</div>
-<div class="acto">
-<p>Cerca del empaque máximo casi no fluye. Krieger y Dougherty lo escribieron así, con <span class="math inline">\(\phi\)</span> la fracción de gotas:</p>
-<p><span class="math display">\[\frac{\eta}{\eta_0} = \left(1 - \frac{\phi}{\phi_m}\right)^{-2.5\,\phi_m}\]</span></p>
-<p><a href="../laboratorio/viscosidad-de-una-emulsion.html">Laboratorio: viscosidad de una emulsión</a>.</p>
-</div>
-</div>
-<p>Es un modelo de esferas rígidas; una gota líquida se deforma y estorba menos.</p>
+<section id="alcance-de-la-evidencia" class="level2">
+<h2 class="anchored" data-anchor-id="alcance-de-la-evidencia">Alcance de la evidencia</h2>
+<p>El HLB sirve para elegir los primeros ensayos. La estabilidad se determina con el plan de <a href="../fundamentos/estabilidad.html">estabilidad</a>.</p>
 </section>
-<section id="lección-5.-hacerla" class="level2">
-<h2 class="anchored" data-anchor-id="lección-5.-hacerla">Lección 5. Hacerla</h2>
-<ol type="1">
-<li>Calienta las dos fases por separado, unos grados sobre la cera que funde más alto, a la misma temperatura.</li>
-<li>Agrega la fase interna sobre la externa con agitación intensa.</li>
-<li>Agita hasta enfriar. Si dejas de agitar, las ceras cristalizan en granos.</li>
-<li>Agrega lo sensible al calor por debajo de 40 °C.</li>
-</ol>
-<p>En frío se ahorra energía, pero no sirve con ceras.</p>
-</section>
-<section id="lección-6.-saber-qué-tipo-obtuviste" class="level2">
-<h2 class="anchored" data-anchor-id="lección-6.-saber-qué-tipo-obtuviste">Lección 6. Saber qué tipo obtuviste</h2>
-<ol type="1">
-<li>Agrega un colorante hidrosoluble y mira al microscopio. Fondo coloreado: O/W. Gotas coloreadas: W/O.</li>
-<li>Diluye una muestra. La emulsión acepta su fase externa y se rompe con la interna.</li>
-<li>Mide la conductividad. Una O/W conduce; una W/O casi no.</li>
-</ol>
-<p>Haz dos de las tres: una sola puede engañar.</p>
-</section>
-<section id="comprueba-lo-que-aprendiste" class="level2">
-<h2 class="anchored" data-anchor-id="comprueba-lo-que-aprendiste">Comprueba lo que aprendiste</h2>
+<section id="autoevaluación" class="level2">
+<h2 class="anchored" data-anchor-id="autoevaluación">Autoevaluación</h2>
 <div data-preguntas="emulsiones"></div>
 </section>
-<section id="fuentes" class="level2">
-<h2 class="anchored" data-anchor-id="fuentes">Fuentes</h2>
-<p>Griffin 1949, <em>J. Soc. Cosmet. Chem.</em> 1:311 (sin DOI). Griffin 1954, 5:249 (sin DOI). Salager et al.&nbsp;2020, DOI <a href="https://doi.org/10.3390/cosmetics7030057">10.3390/cosmetics7030057</a>. Krieger y Dougherty 1959, DOI <a href="https://doi.org/10.1122/1.548848">10.1122/1.548848</a>. Baki 2023, ISBN 978-1-119-70977-0, pp.&nbsp;52-53, 69-72, 213-215 y 260.</p>
+<section id="referencias" class="level2">
+<h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
+<p>La clasificación y los ensayos de tipo siguen a Baki <span class="citation" data-cites="baki2023">(<a href="#ref-baki2023" role="doc-biblioref">2023, 52-53, 69-72, 213-15</a> y 260)</span>.</p>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-alam2020" class="csl-entry" role="listitem">
+Alam, Shoaib, Mohammed S. Algahtani, Mohammad Zaki Ahmad, y Javed Ahmad. 2020. <span>«Investigation Utilizing the <span>HLB</span> Concept for the Development of Moisturizing Cream and Lotion: In-Vitro Characterization and Stability Evaluation»</span>. <em>Cosmetics</em> 7 (2): 43. <a href="https://doi.org/10.3390/cosmetics7020043">https://doi.org/10.3390/cosmetics7020043</a>.
+</div>
+<div id="ref-baki2023" class="csl-entry" role="listitem">
+Baki, Gabriella. 2023. <em>Introduction to Cosmetic Formulation and Technology</em>. 2.ª ed. Wiley. ISBN 978-1-119-70977-0.
+</div>
+<div id="ref-griffin1949" class="csl-entry" role="listitem">
+Griffin, William C. 1949. <span>«Classification of surface-active agents by <span>HLB</span>»</span>. <em>Journal of the Society of Cosmetic Chemists</em> 1 (5): 311-26.
+</div>
+<div id="ref-griffin1954" class="csl-entry" role="listitem">
+Griffin, William C. 1954. <span>«Calculation of <span>HLB</span> values of non-ionic surfactants»</span>. <em>Journal of the Society of Cosmetic Chemists</em> 5 (4): 249-56.
+</div>
+<div id="ref-krieger1959" class="csl-entry" role="listitem">
+Krieger, Irvin M., y Thomas J. Dougherty. 1959. <span>«A Mechanism for Non-Newtonian Flow in Suspensions of Rigid Spheres»</span>. <em>Transactions of the Society of Rheology</em> 3 (1): 137-52. <a href="https://doi.org/10.1122/1.548848">https://doi.org/10.1122/1.548848</a>.
+</div>
+<div id="ref-salager2020" class="csl-entry" role="listitem">
+Salager, Jean-Louis, Raquel Antón, Johnny Bullón, Ana Forgiarini, y Ronald Marquez. 2020. <span>«How to Use the Normalized Hydrophilic-Lipophilic Deviation (<span>HLDN</span>) Concept for the Formulation of Equilibrated and Emulsified Surfactant-Oil-Water Systems for Cosmetics and Pharmaceutical Products»</span>. <em>Cosmetics</em> 7 (3): 57. <a href="https://doi.org/10.3390/cosmetics7030057">https://doi.org/10.3390/cosmetics7030057</a>.
+</div>
+<div id="ref-smejkal2024" class="csl-entry" role="listitem">
+Smejkal, Gary, Vera Gross, y Alexander Lazarev. 2024. <span>«Theoretical and Experimental Determinations of the Hydrophilic-Lipophilic Balance (<span>HLB</span>) of Representative Oils and Lecithins»</span>. <em>Colloids and Interfaces</em> 8 (2): 21. <a href="https://doi.org/10.3390/colloids8020021">https://doi.org/10.3390/colloids8020021</a>.
+</div>
+</div>
 
 
 </section>

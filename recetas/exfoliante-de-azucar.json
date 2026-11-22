@@ -8,7 +8,7 @@
  "lote": 100,
  "pH": null,
  "estado": "sin ensayar",
- "porque": "El azúcar no se disuelve en aceite y arrastra. El Tween 80 hace que el aceite se emulsione al enjuagar.",
+ "porque": "La sacarosa es insoluble en aceite y actúa como abrasivo. El polisorbato 80 permite emulsionar el aceite al enjuagar.",
  "fases": [
   {
    "nombre": "A",
@@ -47,10 +47,10 @@
   }
  ],
  "pasos": [
-  "Funde la fase A a 65 °C.",
-  "Deja bajar a 40 °C y agrega el tocoferol.",
-  "Incorpora el azúcar seca y mezcla.",
-  "Envasa en tarro de boca ancha."
+  "Fundir la fase A a 65 °C.",
+  "Dejar bajar a 40 °C y agregar el tocoferol.",
+  "Incorporar el azúcar seca y mezclar.",
+  "Envasar en tarro de boca ancha."
  ],
  "cambia": [
   "Azúcar más fina para la cara.",
@@ -64,12 +64,12 @@
   ],
   [
    "Dureza",
-   "registra la penetración",
+   "registrar la penetración",
    "aguja o peso conocido"
   ],
   [
    "Punto de fusión",
-   "registra el intervalo",
+   "registrar el intervalo",
    "capilar o baño con termómetro"
   ],
   [
@@ -87,27 +87,27 @@
   [
    "Granos",
    "enfrió despacio o la manteca cristalizó mal",
-   "funde otra vez y enfría más rápido"
+   "fundir otra vez y enfriar más rápido"
   ],
   [
-   "Suda aceite",
+   "Exudación de aceite",
    "poca cera o demasiado aceite líquido",
-   "sube la cera de 1 en 1 %"
+   "aumentar la cera de 1 en 1 %"
   ],
   [
-   "Se parte",
+   "Fractura",
    "demasiada cera dura",
-   "baja la cera y sube el aceite"
+   "reducir la cera y aumentar el aceite"
   ],
   [
-   "Huele rancio",
+   "Olor rancio",
    "oxidación",
-   "usa aceite fresco, tocoferol y envase lleno"
+   "usar aceite fresco, tocoferol y envase lleno"
   ]
  ],
  "avisos": [
-  "Si le entra agua del baño puede contaminarse: sácalo con cuchara seca.",
-  "Deja resbaloso el piso de la ducha."
+  "El agua de la ducha puede contaminarlo: dosificar con espátula seca.",
+  "Deja residuo resbaladizo."
  ],
  "fuentes": [
   "Proporciones propuestas en este proyecto."

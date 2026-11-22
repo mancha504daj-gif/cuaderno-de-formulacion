@@ -8,7 +8,7 @@
  "lote": 729.4,
  "pH": "9 a 10.5",
  "estado": "sin ensayar",
- "porque": "La sosa rompe las grasas en jabón y glicerina. Se calcula con el SAP más bajo de la norma y 5 % de sobreengrase: queda aceite de más y ninguna sosa libre, si pesaste bien.",
+ "porque": "La base hidroliza los triglicéridos a jabón y glicerina. El cálculo toma el SAP menor de la norma y 5 % de sobreengrase, de modo que queda grasa en exceso y no álcali libre.",
  "fases": [
   {
    "nombre": "A, aceites",
@@ -56,19 +56,19 @@
   "lejia": 30
  },
  "pasos": [
-  "Ponte guantes, lentes y manga larga. Trabaja con ventilación y sin niños ni mascotas cerca.",
-  "Pesa el agua en un recipiente resistente al calor y la sosa aparte.",
-  "Agrega la sosa al agua, poco a poco, y agita. Nunca al revés. Se calienta y suelta vapor: no lo respires.",
-  "Deja que la lejía baje a unos 40 °C. Aquí lejía significa la solución de sosa; el cloro de lavar es otra sustancia.",
-  "Funde los aceites sólidos, mézclalos con los líquidos y déjalos a unos 40 °C.",
-  "Vierte la lejía sobre los aceites y mezcla con batidora de mano, a pulsos, hasta que una gota deje huella en la superficie.",
-  "Vacía en el molde, tapa y espera de 24 a 48 h.",
-  "Desmolda, corta y cura de 4 a 6 semanas en un lugar seco y ventilado.",
-  "Antes de usarlo, mide el pH de una solución al 1 %."
+  "Usar guantes, lentes y manga larga. Trabajar con ventilación y sin niños ni mascotas cerca.",
+  "Pesar el agua en un recipiente resistente al calor y la sosa aparte.",
+  "Agregar la sosa al agua, poco a poco, y agitar. El orden inverso proyecta líquido. Se calienta y suelta vapor: evitar inhalarlo.",
+  "Dejar que la lejía baje a unos 40 °C. Aquí lejía significa la solución de sosa; el cloro de lavar es otra sustancia.",
+  "Fundir los aceites sólidos, mezclarlos con los líquidos y dejarlos a unos 40 °C.",
+  "Verter la lejía sobre los aceites y mezclar con batidora de mano, a pulsos, hasta que una gota deje huella en la superficie.",
+  "Vaciar en el molde, tapar y esperar de 24 a 48 h.",
+  "Desmoldar, cortar y curar de 4 a 6 semanas en un lugar seco y ventilado.",
+  "Antes de usarlo, medir el pH de una solución al 1 %."
  ],
  "cambia": [
   "Más coco, más espuma y más seco.",
-  "Cualquier cambio de aceite cambia la sosa: vuelve a calcular."
+  "Cualquier cambio de aceite cambia la sosa: volver a calcular."
  ],
  "controles": [
   [
@@ -79,12 +79,12 @@
   [
    "Álcali libre",
    "sin color con fenolftaleína en el centro",
-   "corta una barra y pon una gota; maneja el indicador con guantes"
+   "cortar una barra y aplicar una gota; manejar el indicador con guantes"
   ],
   [
    "Pérdida de peso",
    "hasta que se estabilice",
-   "pesa la misma barra cada semana"
+   "pesar la misma barra cada semana"
   ],
   [
    "Espuma",
@@ -96,27 +96,27 @@
   [
    "Polvo blanco en la superficie",
    "ceniza de carbonato",
-   "cubre el molde y cura con menos aire"
+   "cubrir el molde y curar con menos aire"
   ],
   [
    "Se separa en el molde",
    "faltó mezclar o temperatura baja",
-   "vuelve a fundir y mezcla"
+   "volver a fundir y mezclar"
   ],
   [
-   "Pica o quema",
+   "Irritación",
    "álcali sin reaccionar",
-   "no lo uses; revisa la pesada y el SAP"
+   "no usarlo; revisar la pesada y el SAP"
   ],
   [
    "Queda blando",
    "mucho aceite líquido o sobreengrase",
-   "cura más tiempo o sube el coco"
+   "curar más tiempo o aumentar el coco"
   ]
  ],
  "avisos": [
-  "La sosa quema piel y ojos. Si te cae, enjuaga con agua 15 min y busca atención médica.",
-  "Pesa con balanza de 0.1 g. Un error de 5 g cambia el jabón."
+  "El NaOH es corrosivo. Ante contacto, agua 15 min y atención médica.",
+  "Pesar con resolución de 0.1 g. Un error de 5 g deja álcali libre."
  ],
  "fuentes": [
   "SAP: Codex CXS 210-1999 y CXS 33 (ed. 2015); ricino, JECFA.",

@@ -26,7 +26,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -45,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2cd0ff2c833b4e72470276043b4d4341.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-20f2d6b2ee51eb11c7f32a308fb87d98.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -211,8 +230,14 @@ ul.task-list li input[type="checkbox"] {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../guias/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guías de laboratorio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../laboratorios.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Laboratorios</span></a>
+ <span class="menu-text">Laboratorios virtuales</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -293,159 +318,177 @@ ul.task-list li input[type="checkbox"] {
 
 
 <figure class="cabeza figure" style="--color:#00616f"><div class="marco"><img src="../fotos/champu.jpg" alt="Champú sólido con espuma" class="figure-img"></div><h1>Cabello</h1></figure>
-<p>Aquí aprendes cómo es la fibra, por qué un champú limpia y por qué un acondicionador se queda.</p>
-<section id="las-palabras-que-vas-a-usar" class="level2">
-<h2 class="anchored" data-anchor-id="las-palabras-que-vas-a-usar">Las palabras que vas a usar</h2>
+<p>La fibra capilar es un material sin actividad biológica cuya superficie cambia de carga con el pH. Esta sección usa esa propiedad para explicar el depósito de acondicionadores y el diseño de champús.</p>
+<section id="objetivos-de-aprendizaje" class="level2">
+<h2 class="anchored" data-anchor-id="objetivos-de-aprendizaje">Objetivos de aprendizaje</h2>
+<ol type="1">
+<li>Describir la cutícula y las consecuencias de su daño.</li>
+<li>Relacionar punto isoeléctrico, pH y adsorción de catiónicos.</li>
+<li>Explicar la coacervación en un champú y la red laminar en un acondicionador.</li>
+<li>Verificar el cumplimiento de límites expresados como activo.</li>
+</ol>
+</section>
+<section id="vocabulario" class="level2">
+<h2 class="anchored" data-anchor-id="vocabulario">Vocabulario</h2>
 <div class="fichas sin-glosa">
 <div class="termino-caja">
 <p><strong>pH</strong></p>
-<p>Medida de acidez. De 0 a 7 es ácido, 7 es neutro y hasta 14 es alcalino. <em>La piel ronda de 4 a 6.</em></p>
+<p>Logaritmo negativo de la actividad del ion hidrógeno. A 25 °C, 7 es neutro; por debajo es ácido y por encima, alcalino. <em>La piel ronda de 4 a 6.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Tensioactivo</strong></p>
-<p>Molécula con cabeza que ama el agua y cola que ama la grasa. Limpia, hace espuma o emulsiona. <em>Sodium Laureth Sulfate.</em></p>
+<p>Molécula con cabeza hidrófila y cola hidrófoba que reduce la tensión interfacial. <em>Sodium Laureth Sulfate.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Aniónico</strong></p>
-<p>Tensioactivo con carga negativa: limpia y hace espuma. <em>SLES.</em></p>
+<p>Tensioactivo con cabeza de carga negativa. Aporta detergencia y espuma. <em>SLES.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Catiónico</strong></p>
-<p>Tensioactivo con carga positiva: se pega al cabello y lo suaviza. <em>Cloruro de cetrimonio.</em></p>
+<p>Tensioactivo con cabeza de carga positiva. Se adsorbe en superficies negativas como el cabello. <em>Cloruro de cetrimonio.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Anfótero</strong></p>
-<p>Cambia de carga con el pH. Suaviza la mezcla. <em>Cocamidopropil betaína.</em></p>
+<p>Tensioactivo cuya carga depende del pH. Se usa como cotensioactivo. <em>Cocamidopropil betaína.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>No iónico</strong></p>
-<p>Sin carga. Suave. <em>Coco glucósido.</em></p>
+<p>Tensioactivo sin carga en la cabeza. <em>Coco glucósido.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Materia activa</strong></p>
-<p>La parte del ingrediente que es tensioactivo. El resto es agua. <em>SLES líquido: 27 %.</em></p>
+<p>Fracción en masa del ingrediente comercial que corresponde al tensioactivo. <em>SLES líquido: 27 %.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Curva de sal</strong></p>
-<p>Cómo cambia la viscosidad al agregar sal: sube hasta un máximo y luego baja.</p>
+<p>Viscosidad en función de la concentración de electrolito. Presenta un máximo.</p>
 </div>
 <div class="termino-caja">
 <p><strong>Queratina</strong></p>
-<p>Proteína del cabello y la piel.</p>
+<p>Proteína estructural del cabello y del estrato córneo.</p>
 </div>
 <div class="termino-caja">
 <p><strong>Cutícula</strong></p>
-<p>Escamas que cubren la fibra del cabello.</p>
+<p>Capa de escamas superpuestas que cubre la fibra capilar.</p>
 </div>
 <div class="termino-caja">
 <p><strong>Punto isoeléctrico</strong></p>
-<p>pH donde una superficie no tiene carga neta. <em>Cabello, cerca de 3.67.</em></p>
+<p>pH en que una superficie o molécula tiene carga neta nula. <em>Cabello, cerca de 3.67.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Acondicionar</strong></p>
-<p>Bajar fricción y estática del cabello.</p>
+<p>Reducir la fricción y la carga electrostática de la fibra.</p>
 </div>
 <div class="termino-caja">
 <p><strong>Coacervado</strong></p>
-<p>Complejo que precipita al diluir y se deposita en la fibra.</p>
+<p>Fase rica en polímero que se separa al diluir una mezcla de polímero y tensioactivo de carga opuesta.</p>
 </div>
 </div>
 </section>
-<section id="lección-1.-la-fibra" class="level2">
-<h2 class="anchored" data-anchor-id="lección-1.-la-fibra">Lección 1. La fibra</h2>
-<p>El cabello es queratina cubierta de escamas, la cutícula. No está vivo: lo que se daña no se repara, se cubre. El roce, el calor y los tintes levantan o arrancan escamas, y una superficie dispareja se enreda y pierde brillo.</p>
+<section id="lección-1.-estructura-de-la-fibra" class="level2">
+<h2 class="anchored" data-anchor-id="lección-1.-estructura-de-la-fibra">Lección 1. Estructura de la fibra</h2>
+<p>El cabello es queratina organizada en corteza y cubierta por escamas superpuestas, la cutícula. La parte visible no se regenera. El roce, el calor y los tratamientos oxidantes levantan o desprenden escamas; aumentan la fricción, la electricidad estática y la dispersión de luz. Un acondicionador recubre y lubrica esa superficie <span class="citation" data-cites="gavazzoni2015">(<a href="#ref-gavazzoni2015" role="doc-biblioref">Gavazzoni Dias 2015</a>)</span>.</p>
 </section>
-<section id="lección-2.-la-carga" class="level2">
-<h2 class="anchored" data-anchor-id="lección-2.-la-carga">Lección 2. La carga</h2>
+<section id="lección-2.-carga-superficial" class="level2">
+<h2 class="anchored" data-anchor-id="lección-2.-carga-superficial">Lección 2. Carga superficial</h2>
 <div class="modelo" data-escena="cabello">
 <div class="acto">
-<p>Por encima de pH 3.67 la fibra queda negativa. Los catiónicos buscan esas cargas y dejan sus colas hacia afuera.</p>
+<p>Con pH mayor que 3.67 la fibra tiene carga neta negativa. Los catiónicos se adsorben y orientan sus colas hacia afuera.</p>
 </div>
 <div class="acto">
-<p>Cerca del punto isoeléctrico casi no hay carga, y se sueltan.</p>
+<p>Cerca del punto isoeléctrico la carga neta se anula y la adsorción disminuye.</p>
 </div>
 <div class="acto">
-<p>A más pH, más sitios negativos. Mueve tú el pH.</p>
+<p>Al subir el pH aumentan los sitios negativos. Varíe el pH y observe.</p>
 </div>
 </div>
-<p>El cabello decolorado tiene más sitios negativos y une más acondicionador. El valor 3.67 viene de un grupo de autores; otros podrían dar algo menos.</p>
-<p>En 123 champús comerciales el pH iba de 3.5 a 9.0. Solo 38 % tenía 5.5 o menos.</p>
+<p>El valor 3.67 procede de un grupo de autores <span class="citation" data-cites="gavazzoni2015">(<a href="#ref-gavazzoni2015" role="doc-biblioref">Gavazzoni Dias 2015</a>)</span>. El cabello decolorado tiene un punto isoeléctrico menor, más sitios negativos y mayor adsorción de acondicionador.</p>
+<p>En 123 champús comerciales el pH varió de 3.5 a 9.0 y solo 38 % tenía 5.5 o menos <span class="citation" data-cites="gavazzoni2014">(<a href="#ref-gavazzoni2014" role="doc-biblioref">Gavazzoni Dias et&nbsp;al. 2014</a>)</span>. Un pH alto aumenta la carga negativa y con ella la repulsión entre fibras y la fricción.</p>
 </section>
-<section id="lección-3.-un-champú" class="level2">
-<h2 class="anchored" data-anchor-id="lección-3.-un-champú">Lección 3. Un champú</h2>
+<section id="lección-3.-champú" class="level2">
+<h2 class="anchored" data-anchor-id="lección-3.-champú">Lección 3. Champú</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Parte</th>
-<th>Activo</th>
+<th>Componente</th>
+<th>Activo (%)</th>
+<th>Función</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Aniónico</td>
-<td>8 a 10 %</td>
+<td>8 a 10</td>
+<td>detergencia</td>
 </tr>
 <tr class="even">
 <td>Anfótero</td>
-<td>1 a 5 %</td>
+<td>1 a 5</td>
+<td>suavidad, viscosidad</td>
 </tr>
 <tr class="odd">
 <td>Polímero catiónico</td>
-<td>0.1 a 0.3 %</td>
+<td>0.1 a 0.3</td>
+<td>depósito al enjuagar</td>
 </tr>
 <tr class="even">
-<td>Sal</td>
-<td>según la curva</td>
+<td>NaCl</td>
+<td>según curva</td>
+<td>viscosidad</td>
 </tr>
 <tr class="odd">
 <td>Conservante y ácido</td>
 <td>según pH</td>
+<td>protección y ajuste</td>
 </tr>
 </tbody>
 </table>
-<p>El polímero catiónico se junta con las micelas. Al enjuagar, el complejo se rompe, precipita y se deposita en la fibra: es un coacervado. Así un champú deja algo de acondicionador.</p>
-<p>No hay datos publicados de que un champú sin sulfato dañe menos el cabello.</p>
-<p><strong>Ejemplo resuelto.</strong> 250 g de champú con 9 % de SLES, del líquido al 27 %: 250 × 9/27 = 83.3 g.</p>
+<p>Los intervalos de tensioactivo siguen a Thompson y colaboradores <span class="citation" data-cites="thompson2023">(<a href="#ref-thompson2023" role="doc-biblioref">Thompson et&nbsp;al. 2023</a>)</span>; el del polímero es una propuesta.</p>
+<p><strong>Coacervación.</strong> El polímero catiónico se asocia con las micelas aniónicas en un complejo soluble. Al enjuagar, la dilución lo saca de la zona soluble, se separa una fase rica en polímero y se deposita en la fibra.</p>
+<p><strong>Sulfatos.</strong> No hay datos publicados sobre daño capilar o poder limpiador de los champús sin sulfato que permitan afirmar una ventaja <span class="citation" data-cites="gavazzoni2015">(<a href="#ref-gavazzoni2015" role="doc-biblioref">Gavazzoni Dias 2015</a>)</span>.</p>
+<p><strong>Ejemplo resuelto.</strong> 250 g de champú con 9 % de SLES a partir de un líquido al 27 %: 250 × 9/27 = 83.3 g.</p>
 </section>
-<section id="lección-4.-un-acondicionador" class="level2">
-<h2 class="anchored" data-anchor-id="lección-4.-un-acondicionador">Lección 4. Un acondicionador</h2>
-<p>Un catiónico y un alcohol graso de cadena larga forman láminas. El alcohol graso es la columna y el catiónico lo pega a la fibra.</p>
+<section id="lección-4.-acondicionador" class="level2">
+<h2 class="anchored" data-anchor-id="lección-4.-acondicionador">Lección 4. Acondicionador</h2>
+<p>Un catiónico de cadena larga y un alcohol graso forman una red de gel laminar. El alcohol graso construye la bicapa y lubrica; el catiónico le da carga y la fija a la fibra.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Función</th>
 <th>Ejemplo</th>
-<th>%</th>
+<th>Contenido (%)</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>alcohol graso</td>
+<td>Alcohol graso</td>
 <td>Cetyl o Stearyl Alcohol</td>
 <td>2.5 a 6.0</td>
 </tr>
 <tr class="even">
-<td>amidoamina</td>
+<td>Amidoamina</td>
 <td>Stearamidopropyl Dimethylamine</td>
 <td>1.0 a 1.5</td>
 </tr>
 <tr class="odd">
-<td>cuaternario</td>
+<td>Cuaternario</td>
 <td>Distearyldimonium Chloride</td>
 <td>0.75 a 1.0</td>
 </tr>
 <tr class="even">
-<td>ajuste de pH</td>
+<td>Ácido</td>
 <td>Citric Acid</td>
 <td>0.2</td>
 </tr>
 </tbody>
 </table>
-<p>La amidoamina no tiene carga hasta que la neutralizas con ácido. Por eso el pH baja a 4 o 4.5.</p>
-<p><strong>Error frecuente.</strong> Espesar con goma xantana. Es aniónica y precipita con el catiónico.</p>
+<p>Los valores son del manual de Barel, Paye y Maibach <span class="citation" data-cites="barel2009">(<a href="#ref-barel2009" role="doc-biblioref">Barel et&nbsp;al. 2009, 690-91</a>)</span>.</p>
+<p><strong>Neutralización.</strong> La amidoamina es una base sin carga. El ácido la protona y la convierte en catiónico, y por eso el producto queda a pH 4 a 4.5. La cantidad de ácido se fija con una titulación de la base, agregando ácido cítrico al 10 % y registrando el pH.</p>
+<p><strong>Incompatibilidad.</strong> La goma xantana es aniónica y precipita con el catiónico. Se espesa con alcohol graso o con hidroxietilcelulosa.</p>
+<p><strong>Evaluación.</strong> La fuerza de peinado en húmedo, medida con dinamómetro sobre mechones de la misma procedencia, compara tratamientos. Se asignan al azar y se trabaja con seis mechones por tratamiento como mínimo.</p>
 </section>
-<section id="lección-5.-límites-europeos" class="level2">
-<h2 class="anchored" data-anchor-id="lección-5.-límites-europeos">Lección 5. Límites europeos</h2>
+<section id="lección-5.-límites-reglamentarios" class="level2">
+<h2 class="anchored" data-anchor-id="lección-5.-límites-reglamentarios">Lección 5. Límites reglamentarios</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -458,7 +501,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>Cetrimonium Chloride</td>
 <td>2.5 %</td>
-<td>1.0 % en cabello, 0.5 % en cara</td>
+<td>1.0 % en cabello; 0.5 % en cara</td>
 </tr>
 <tr class="even">
 <td>Behentrimonium Chloride</td>
@@ -467,19 +510,44 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<p>Se cuentan como activo. Un cetrimonio al 25 % puesto al 2.8 % aporta 0.7 %.</p>
+<p>Son porcentajes de activo <span class="citation" data-cites="cosing">(<a href="#ref-cosing" role="doc-biblioref">CosIng 2026</a>)</span>. El límite del cetrimonio incluye la suma con Steartrimonium Chloride.</p>
+<p><strong>Ejemplo resuelto.</strong> Cetrimonio comercial al 25 %, usado al 2.8 % en una crema sin enjuague: 0.25 × 2.8 = 0.70 % de activo, por debajo de 1.0 %.</p>
 </section>
-<section id="qué-puedes-hacer" class="level2">
-<h2 class="anchored" data-anchor-id="qué-puedes-hacer">Qué puedes hacer</h2>
+<section id="alcance-de-la-evidencia" class="level2">
+<h2 class="anchored" data-anchor-id="alcance-de-la-evidencia">Alcance de la evidencia</h2>
+<p>El punto isoeléctrico y la distribución de pH vienen de un mismo grupo. Los porcentajes de mascarilla, crema para peinar y gel fijador son propuestas sin ensayo.</p>
+</section>
+<section id="productos-de-esta-sección" class="level2">
+<h2 class="anchored" data-anchor-id="productos-de-esta-sección">Productos de esta sección</h2>
 <div class="tarjas" data-productos="cabello"></div>
 </section>
-<section id="comprueba-lo-que-aprendiste" class="level2">
-<h2 class="anchored" data-anchor-id="comprueba-lo-que-aprendiste">Comprueba lo que aprendiste</h2>
+<section id="autoevaluación" class="level2">
+<h2 class="anchored" data-anchor-id="autoevaluación">Autoevaluación</h2>
 <div data-preguntas="cabello"></div>
 </section>
-<section id="fuentes" class="level2">
-<h2 class="anchored" data-anchor-id="fuentes">Fuentes</h2>
-<p>Gavazzoni Dias 2015, DOI <a href="https://doi.org/10.4103/0974-7753.153450">10.4103/0974-7753.153450</a>. Benson et al.&nbsp;2019, DOI <a href="https://doi.org/10.1201/9780429190674">10.1201/9780429190674</a>, p.&nbsp;157. Barel, Paye y Maibach 2009, DOI <a href="https://doi.org/10.1201/b15273">10.1201/b15273</a>, pp.&nbsp;690-691. CosIng, Anexo III, entradas 286 y 287, exportación del 13-11-2026. Thompson et al.&nbsp;2023, citado en la nota 02.</p>
+<section id="referencias" class="level2">
+<h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
+<p>Sobre la sustantividad de los catiónicos, véase también Benson y colaboradores <span class="citation" data-cites="benson2019">(<a href="#ref-benson2019" role="doc-biblioref">2019, 157</a>)</span>.</p>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-barel2009" class="csl-entry" role="listitem">
+Barel, André O., Marc Paye, y Howard I. Maibach, eds. 2009. <em>Handbook of Cosmetic Science and Technology</em>. CRC Press. <a href="https://doi.org/10.1201/b15273">https://doi.org/10.1201/b15273</a>.
+</div>
+<div id="ref-benson2019" class="csl-entry" role="listitem">
+Benson, Heather A. E., Michael S. Roberts, Vânia Rodrigues Leite-Silva, y Kenneth A. Walters, eds. 2019. <em>Cosmetic Formulation: Principles and Practice</em>. CRC Press. <a href="https://doi.org/10.1201/9780429190674">https://doi.org/10.1201/9780429190674</a>.
+</div>
+<div id="ref-cosing" class="csl-entry" role="listitem">
+CosIng. 2026. <em><span>CosIng</span>. Anexos <span>III</span> y <span>VI</span> del Reglamento (<span>CE</span>) 1223/2009</em>.
+</div>
+<div id="ref-gavazzoni2015" class="csl-entry" role="listitem">
+Gavazzoni Dias, Maria Fernanda Reis. 2015. <span>«Hair cosmetics: An overview»</span>. <em>International Journal of Trichology</em> 7 (1): 2-15. <a href="https://doi.org/10.4103/0974-7753.153450">https://doi.org/10.4103/0974-7753.153450</a>.
+</div>
+<div id="ref-gavazzoni2014" class="csl-entry" role="listitem">
+Gavazzoni Dias, Maria Fernanda Reis, Andreia Munck de Almeida, Patricia Cecato, Andre Ricardo Adriano, y Janine Pichler. 2014. <span>«The shampoo <span>pH</span> can affect the hair: myth or reality?»</span> <em>International Journal of Trichology</em> 6 (3): 95-99. <a href="https://doi.org/10.4103/0974-7753.139078">https://doi.org/10.4103/0974-7753.139078</a>.
+</div>
+<div id="ref-thompson2023" class="csl-entry" role="listitem">
+Thompson, Courtney J., Nick Ainger, Pierre Starck, Oleksandr O. Mykhaylyk, y Anthony J. Ryan. 2023. <span>«Shampoo Science: A Review of the Physiochemical Processes behind the Function of a Shampoo»</span>. <em>Macromolecular Chemistry and Physics</em> 224 (3): 2200420. <a href="https://doi.org/10.1002/macp.202200420">https://doi.org/10.1002/macp.202200420</a>.
+</div>
+</div>
 
 
 </section>

@@ -8,7 +8,7 @@
  "lote": 100,
  "pH": "5.5 a 6.5",
  "estado": "sin ensayar",
- "porque": "El copolímero deja una película entre fibras. La glicerina evita que se descame.",
+ "porque": "El copolímero forma una película que une fibras vecinas. La glicerina lo plastifica y evita el descamado.",
  "fases": [
   {
    "nombre": "A",
@@ -51,12 +51,12 @@
   }
  ],
  "pasos": [
-  "Dispersa la hidroxietilcelulosa en la glicerina hasta tener una pasta sin grumos.",
-  "Agrega el agua poco a poco, con agitación media, y espera de 30 a 60 min a que se hidrate.",
-  "Incorpora los activos de la fase B, uno por uno.",
-  "Agrega la fase C y mezcla despacio para no meter aire.",
-  "Mide el pH y ajústalo.",
-  "Deja reposar 24 h, revisa burbujas y grumos, y envasa."
+  "Dispersar la hidroxietilcelulosa en la glicerina hasta tener una pasta sin grumos.",
+  "Agregar el agua poco a poco, con agitación media, y esperar de 30 a 60 min a que se hidrate.",
+  "Incorporar los activos de la fase B, uno por uno.",
+  "Agregar la fase C y mezclar despacio para no incorporar aire.",
+  "Medir el pH y ajustarlo.",
+  "Dejar reposar 24 h, revisar burbujas y grumos, y envasar."
  ],
  "cambia": [
   "Copolímero de 2 a 6 %: más fijación.",
@@ -75,7 +75,7 @@
   ],
   [
    "Viscosidad",
-   "registra husillo, rpm y temperatura",
+   "registrar husillo, rpm y temperatura",
    "viscosímetro o tiempo de caída"
   ],
   [
@@ -93,22 +93,22 @@
   [
    "Grumos",
    "el polímero se mojó de golpe",
-   "prehumecta con glicerina"
+   "prehumectar con glicerina"
   ],
   [
    "Muchas burbujas",
    "agitación rápida",
-   "agita lento y deja reposar"
+   "agitar lento y dejar reposar"
   ],
   [
-   "Se aguó",
+   "Pérdida de viscosidad",
    "sal, pH o microbios",
-   "mide pH; si huele raro, descártalo"
+   "medir pH; ante olor anómalo, descartarlo"
   ]
  ],
  "avisos": [
-  "Lleva agua: sin un conservante probado puede contaminarse sin que lo notes.",
-  "No la pongas en la piel hasta tener el control microbiológico y la evaluación de seguridad."
+  "Contiene agua. Sin ensayo del conservante puede contaminarse sin cambios visibles.",
+  "No se aplica en la piel sin control microbiológico y evaluación de seguridad."
  ],
  "fuentes": [
   "Proporciones propuestas en este proyecto.",

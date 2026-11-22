@@ -26,7 +26,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -45,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2cd0ff2c833b4e72470276043b4d4341.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-20f2d6b2ee51eb11c7f32a308fb87d98.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -73,6 +92,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -211,8 +259,14 @@ ul.task-list li input[type="checkbox"] {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../guias/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guías de laboratorio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../laboratorios.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Laboratorios</span></a>
+ <span class="menu-text">Laboratorios virtuales</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -293,81 +347,92 @@ ul.task-list li input[type="checkbox"] {
 
 
 <figure class="cabeza figure" style="--color:#15171f"><div class="marco"><img src="../fotos/frasco.jpg" alt="Frasco de perfume de vidrio" class="figure-img"></div><h1>Fragancias</h1></figure>
-<p>Aquí aprendes a ordenar aromas por cuánto duran, a diluirlos y a cuidar la piel de quien los usa.</p>
-<section id="las-palabras-que-vas-a-usar" class="level2">
-<h2 class="anchored" data-anchor-id="las-palabras-que-vas-a-usar">Las palabras que vas a usar</h2>
+<p>Un perfume es una mezcla de sustancias volátiles cuya composición en fase vapor cambia con el tiempo. Esta sección relaciona volatilidad con percepción, presenta el cálculo de diluciones y resume los límites de seguridad.</p>
+<section id="objetivos-de-aprendizaje" class="level2">
+<h2 class="anchored" data-anchor-id="objetivos-de-aprendizaje">Objetivos de aprendizaje</h2>
+<ol type="1">
+<li>Explicar el orden de las notas a partir de la presión de vapor.</li>
+<li>Construir un acorde con registro cuantitativo y control de variables.</li>
+<li>Calcular la concentración de un componente en el producto final.</li>
+<li>Aplicar la regla de suma para furocumarinas y los umbrales de etiquetado.</li>
+</ol>
+</section>
+<section id="vocabulario" class="level2">
+<h2 class="anchored" data-anchor-id="vocabulario">Vocabulario</h2>
 <div class="fichas sin-glosa">
 <div class="termino-caja">
 <p><strong>Notas de salida</strong></p>
-<p>Lo que hueles primero y se va antes. <em>Cítricos.</em></p>
+<p>Componentes más volátiles de una fragancia, percibidos primero. <em>Cítricos.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Notas de corazón</strong></p>
-<p>Lo que queda cuando se van las de salida. <em>Florales.</em></p>
+<p>Componentes de volatilidad intermedia. <em>Florales.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Notas de fondo</strong></p>
-<p>Lo que dura más. <em>Maderas, vainilla.</em></p>
+<p>Componentes menos volátiles, de mayor persistencia. <em>Maderas, vainilla.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Acorde</strong></p>
-<p>Varios aromas que suenan como uno.</p>
+<p>Mezcla de materiales percibida como un olor unitario.</p>
 </div>
 <div class="termino-caja">
 <p><strong>Fijador</strong></p>
-<p>Ingrediente poco volátil que frena a los demás.</p>
+<p>Material de baja volatilidad que reduce la presión de vapor de los demás.</p>
 </div>
 <div class="termino-caja">
 <p><strong>Presión de vapor</strong></p>
-<p>Cuánto tiende a evaporarse una sustancia. <em>Limoneno 1.55 mmHg; vainillina 0.000118.</em></p>
+<p>Presión del vapor en equilibrio con su líquido o sólido a una temperatura dada. <em>Limoneno 1.55 mmHg; vainillina 0.000118.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Alérgeno</strong></p>
-<p>Sustancia que puede sensibilizar y se declara. <em>Linalool.</em></p>
+<p>Sustancia capaz de inducir sensibilización. Las listadas se declaran en la etiqueta. <em>Linalool.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>Fototóxico</strong></p>
-<p>Reacciona con el sol y quema la piel. <em>Bergamota exprimida.</em></p>
+<p>Que causa daño cutáneo al combinarse con radiación ultravioleta. <em>Bergamota exprimida.</em></p>
 </div>
 <div class="termino-caja">
 <p><strong>IFRA</strong></p>
-<p>Asociación que fija límites de uso para fragancias.</p>
+<p>Asociación internacional que publica estándares de uso para materiales de fragancia.</p>
 </div>
 <div class="termino-caja">
 <p><strong>Maceración</strong></p>
-<p>Semanas de reposo para que el perfume se integre.</p>
+<p>Reposo de una solución alcohólica hasta que su olor se estabiliza.</p>
 </div>
 </div>
 </section>
-<section id="lección-1.-por-qué-cambia-un-perfume" class="level2">
-<h2 class="anchored" data-anchor-id="lección-1.-por-qué-cambia-un-perfume">Lección 1. Por qué cambia un perfume</h2>
-<p>Cada sustancia se evapora a su paso. Las de mayor presión de vapor se van primero.</p>
+<section id="lección-1.-volatilidad" class="level2">
+<h2 class="anchored" data-anchor-id="lección-1.-volatilidad">Lección 1. Volatilidad</h2>
+<p>La velocidad de evaporación de un componente en una mezcla ideal es proporcional a su fracción molar y a su presión de vapor (ley de Raoult):</p>
+<p><span class="math display">\[p_i = x_i\, p_i^{*}\]</span></p>
+<p>Los componentes con mayor <span class="math inline">\(p_i^{*}\)</span> dominan el vapor al principio y se agotan antes. De ahí la clasificación en notas de salida, corazón y fondo.</p>
 <div class="modelo" data-escena="notas">
 <div class="acto">
-<p>Tres sustancias recién puestas: limoneno, linalool y vainillina.</p>
+<p>Tres sustancias recién aplicadas: limoneno, linalool y vainillina.</p>
 </div>
 <div class="acto">
-<p>A las tres vidas medias del limoneno queda 12.5 % de él y cerca de 81 % del linalool.</p>
+<p>A tres vidas medias del limoneno queda 12.5 % de él y cerca de 81 % del linalool.</p>
 </div>
 <div class="acto">
-<p>A las 25, del limoneno no queda casi nada y del linalool cerca de 17 %. La vainillina sigue entera. <a href="../laboratorio/notas-de-perfume.html">Laboratorio: notas de un perfume</a>.</p>
+<p>A veinticinco, el limoneno se agotó, del linalool queda cerca de 17 % y la vainillina casi no cambia. <a href="../laboratorio/notas-de-perfume.html">Laboratorio virtual: notas de un perfume</a>.</p>
 </div>
 </div>
-<p>El modelo toma cada sustancia por separado y no da horas. En una mezcla real también cuentan la piel, el alcohol y los fijadores.</p>
+<p>El modelo toma cada sustancia por separado, con cinética de primer orden y constante proporcional a la presión de vapor <span class="citation" data-cites="pubchem">(<a href="#ref-pubchem" role="doc-biblioref">PubChem 2026</a>)</span>. No da horas. En una mezcla real intervienen la piel, el disolvente y las interacciones entre componentes.</p>
 </section>
-<section id="lección-2.-construir-un-acorde" class="level2">
-<h2 class="anchored" data-anchor-id="lección-2.-construir-un-acorde">Lección 2. Construir un acorde</h2>
+<section id="lección-2.-construcción-de-un-acorde" class="level2">
+<h2 class="anchored" data-anchor-id="lección-2.-construcción-de-un-acorde">Lección 2. Construcción de un acorde</h2>
 <ol type="1">
-<li>Elige un fondo, un corazón y una salida.</li>
-<li>Pesa gotas en gramos: las gotas cambian de tamaño.</li>
-<li>Huele en tira de papel a 0, 15 min, 1 h y 4 h. Anota.</li>
-<li>Cambia una cosa a la vez.</li>
+<li>Elegir un material de salida, uno de corazón y uno de fondo.</li>
+<li>Pesar en gramos. El volumen de una gota cambia con la viscosidad y con el gotero.</li>
+<li>Evaluar en tira de papel a 0, 15 min, 1 h y 4 h, con códigos que oculten la identidad de la mezcla.</li>
+<li>Cambiar una proporción por vez y conservar un testigo.</li>
 </ol>
-<p><strong>Ejemplo resuelto.</strong> Un acorde de 10 g con 40 % de naranja lleva 4 g. Si lo diluyes al 12 % en un perfume, la naranja queda en 0.40 × 12 = 4.8 % del producto.</p>
+<p><strong>Evaluación sensorial.</strong> Con tres o más evaluadores, el orden de presentación se asigna al azar. Una prueba triangular decide si dos versiones se distinguen: con 18 evaluadores hacen falta 10 aciertos para una significancia de 5 %.</p>
+<p><strong>Ejemplo resuelto.</strong> Un acorde de 10 g con 40 % de naranja lleva 4.00 g. Diluido al 12 % en un perfume, la naranja queda en 0.40 × 12 = 4.8 %.</p>
 </section>
-<section id="lección-3.-concentraciones" class="level2">
-<h2 class="anchored" data-anchor-id="lección-3.-concentraciones">Lección 3. Concentraciones</h2>
-<p>Son convenciones del oficio; la ley no las define y las fuentes no coinciden.</p>
+<section id="lección-3.-concentración-y-solubilidad" class="level2">
+<h2 class="anchored" data-anchor-id="lección-3.-concentración-y-solubilidad">Lección 3. Concentración y solubilidad</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -404,16 +469,18 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<p>Si agregas demasiada agua, la fragancia deja de disolverse y se enturbia.</p>
+<p>Son convenciones del oficio <span class="citation" data-cites="dermato">(<a href="#ref-dermato" role="doc-biblioref">EDUCC, s.&nbsp;f.</a>)</span>; la ley no las define y las fuentes difieren. Al agregar agua, los componentes hidrófobos superan su solubilidad y la mezcla se enturbia. El punto de turbidez se determina titulando la solución alcohólica con agua a temperatura fija.</p>
 </section>
-<section id="lección-4.-lo-que-puede-hacer-daño" class="level2">
-<h2 class="anchored" data-anchor-id="lección-4.-lo-que-puede-hacer-daño">Lección 4. Lo que puede hacer daño</h2>
-<p><strong>Cítricos y sol.</strong> Los límites de IFRA para aceites <strong>exprimidos o prensados en frío</strong>, en productos sin enjuague:</p>
+<section id="lección-4.-seguridad" class="level2">
+<h2 class="anchored" data-anchor-id="lección-4.-seguridad">Lección 4. Seguridad</h2>
+<section id="fototoxicidad" class="level3">
+<h3 class="anchored" data-anchor-id="fototoxicidad">Fototoxicidad</h3>
+<p>Las furocumarinas de los aceites cítricos <strong>exprimidos o prensados en frío</strong> reaccionan con la radiación UVA. Límites de IFRA para productos sin enjuague <span class="citation" data-cites="ifra51">(<a href="#ref-ifra51" role="doc-biblioref">IFRA 2023</a>)</span>:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Aceite</th>
-<th>%</th>
+<th>Límite (%)</th>
 </tr>
 </thead>
 <tbody>
@@ -439,27 +506,58 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<p>Los destilados casi no traen furocumarinas y no siguen estos números. Si combinas varios exprimidos, suma la parte que cada uno usa de su límite: el total no pasa de 100 %.</p>
-<p><strong>Ejemplo resuelto.</strong> 0.20 % de bergamota usa 0.20/0.40 = 50 % del límite. 1.0 % de limón usa 1.0/2.0 = 50 %. Juntos llegan a 100 %.</p>
-<p><strong>Oxidación.</strong> El limoneno y el linalool oxidados sensibilizan. En 2900 pacientes, el limoneno oxidado dio 5.2 % de reacciones y el linalool oxidado, 6.9 %. Guarda los aceites llenos, fríos y a oscuras.</p>
-<p><strong>Alérgenos.</strong> El Reglamento (UE) 2023/1545 deja 81 entradas para rotular por encima de 0.001 % sin enjuague o 0.01 % con enjuague. Rige desde el 31-07-2026 para lo que se coloca por primera vez en el mercado.</p>
+<p>Los destilados casi no contienen furocumarinas y no siguen estos valores. Si se combinan varios exprimidos:</p>
+<p><span class="math display">\[\sum_i \frac{c_i}{L_i} \times 100 \le 100\]</span></p>
+<p><strong>Ejemplo resuelto.</strong> 0.20 % de bergamota consume 0.20/0.40 = 50 %. 1.0 % de limón consume 1.0/2.0 = 50 %. La suma llega a 100 %.</p>
+</section>
+<section id="sensibilización" class="level3">
+<h3 class="anchored" data-anchor-id="sensibilización">Sensibilización</h3>
+<p>El aire oxida limoneno y linalool a hidroperóxidos sensibilizantes. En 2900 pacientes del Reino Unido, 5.2 % reaccionó al limoneno oxidado y 6.9 % al linalool oxidado <span class="citation" data-cites="audrain2014">(<a href="#ref-audrain2014" role="doc-biblioref">Audrain et&nbsp;al. 2014</a>)</span>. Los materiales se guardan en envase lleno, frío y oscuro, con fecha de apertura.</p>
+</section>
+<section id="etiquetado" class="level3">
+<h3 class="anchored" data-anchor-id="etiquetado">Etiquetado</h3>
+<p>El Reglamento (UE) 2023/1545 exige declarar los alérgenos listados por encima de 0.001 % sin enjuague o 0.01 % con enjuague, y rige desde el 31-07-2026 para productos nuevos en el mercado <span class="citation" data-cites="reg1545">(<a href="#ref-reg1545" role="doc-biblioref">Comisión Europea 2023</a>)</span>. El conteo directo del anexo da 81 entradas; el considerando habla de 80.</p>
+<p>La concentración de un alérgeno en el producto suma los aportes de cada material:</p>
+<p><span class="math display">\[c_a = \sum_j w_j\, f_{a,j}\]</span></p>
+<p>con <span class="math inline">\(w_j\)</span> el porcentaje del material <span class="math inline">\(j\)</span> y <span class="math inline">\(f_{a,j}\)</span> la fracción del alérgeno en él.</p>
 <figure class="lado figure"><img src="../fotos/perfume.jpg" alt="Frascos de perfume de piel" loading="lazy" class="figure-img"></figure>
 </section>
-<section id="lección-5.-certificado-ifra" class="level2">
-<h2 class="anchored" data-anchor-id="lección-5.-certificado-ifra">Lección 5. Certificado IFRA</h2>
-<p>El proveedor de una fragancia entrega un certificado con el máximo por tipo de producto. La misma mezcla puede permitir 1 % en un champú y menos en una crema. Sin ese papel no conoces tu límite.</p>
 </section>
-<section id="qué-puedes-hacer" class="level2">
-<h2 class="anchored" data-anchor-id="qué-puedes-hacer">Qué puedes hacer</h2>
+<section id="lección-5.-certificado-de-conformidad" class="level2">
+<h2 class="anchored" data-anchor-id="lección-5.-certificado-de-conformidad">Lección 5. Certificado de conformidad</h2>
+<p>El proveedor emite un certificado IFRA para cada mezcla, con el máximo por categoría de producto y el número de enmienda. La categoría depende del producto final: una misma fragancia puede admitir 1 % en un champú y menos en una crema facial. El certificado no sustituye la evaluación de seguridad.</p>
+</section>
+<section id="alcance-de-la-evidencia" class="level2">
+<h2 class="anchored" data-anchor-id="alcance-de-la-evidencia">Alcance de la evidencia</h2>
+<p>La 52.ª enmienda de IFRA está anunciada para 2027 y puede cambiar los límites de furocumarinas. Los acordes y perfumes de esta sección son ejercicios.</p>
+</section>
+<section id="productos-de-esta-sección" class="level2">
+<h2 class="anchored" data-anchor-id="productos-de-esta-sección">Productos de esta sección</h2>
 <div class="tarjas" data-productos="fragancias"></div>
 </section>
-<section id="comprueba-lo-que-aprendiste" class="level2">
-<h2 class="anchored" data-anchor-id="comprueba-lo-que-aprendiste">Comprueba lo que aprendiste</h2>
+<section id="autoevaluación" class="level2">
+<h2 class="anchored" data-anchor-id="autoevaluación">Autoevaluación</h2>
 <div data-preguntas="fragancias"></div>
 </section>
-<section id="fuentes" class="level2">
-<h2 class="anchored" data-anchor-id="fuentes">Fuentes</h2>
-<p><em>Dermatocosmética</em>, EDUCC, ISBN 978-987-626-467-9, cap. 20. IFRA, 51.ª enmienda, estándares 086 a 093. Reglamento (UE) 2023/1545. Presiones de vapor: PubChem, CID 22311, 6549 y 1183. La cifra de 2900 pacientes está en la nota 06 de la investigación.</p>
+<section id="referencias" class="level2">
+<h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-audrain2014" class="csl-entry" role="listitem">
+Audrain, H., C. Kenward, C. R. Lovell, et&nbsp;al. 2014. <span>«Allergy to oxidized limonene and linalool is frequent in the <span>U.K.</span>»</span> <em>British Journal of Dermatology</em> 171 (2): 292-97. <a href="https://doi.org/10.1111/bjd.13037">https://doi.org/10.1111/bjd.13037</a>.
+</div>
+<div id="ref-reg1545" class="csl-entry" role="listitem">
+Comisión Europea. 2023. <em>Reglamento (<span>UE</span>) 2023/1545 sobre el etiquetado de fragancias alergénicas</em>.
+</div>
+<div id="ref-dermato" class="csl-entry" role="listitem">
+EDUCC. s.&nbsp;f. <em>Dermatocosmética: criterios de formulación</em>. Editorial de la Universidad Católica de Córdoba.
+</div>
+<div id="ref-ifra51" class="csl-entry" role="listitem">
+IFRA. 2023. <em><span>IFRA</span> Standards, 51st Amendment. Estándares 086 a 093</em>. International Fragrance Association.
+</div>
+<div id="ref-pubchem" class="csl-entry" role="listitem">
+PubChem. 2026. <em><span>PubChem</span> Compound Summary</em>.
+</div>
+</div>
 
 
 </section>
